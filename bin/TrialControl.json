@@ -1,0 +1,24 @@
+{
+  "700101": {
+    "Id": 700101,
+    "GroupIds": [
+      14401
+    ],
+    "Gachas": [
+      10144
+    ],
+    "UIAssets": "Trial",
+    "CtrlName": "TrialCtrl"
+  },
+  "700104": {
+    "Id": 700104,
+    "GroupIds": [
+      15501
+    ],
+    "Gachas": [
+      10155
+    ],
+    "UIAssets": "Trial",
+    "CtrlName": "TrialCtrl"
+  }
+}

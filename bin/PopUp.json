@@ -1,0 +1,24 @@
+{
+  "1000": {
+    "Id": 1000,
+    "SortId": 1000,
+    "PopUpType": 2,
+    "ActivityId": 10100,
+    "PopUpRes": "Swim/PopUp",
+    "ScriptName": "ActivitySwimPopUpCtrl",
+    "PopRefreshType": 2,
+    "PopJumpType": 2,
+    "JumpToParams": 149
+  },
+  "2005": {
+    "Id": 2005,
+    "SortId": 2005,
+    "PopUpType": 1,
+    "ActivityId": 510001,
+    "PopUpRes": "JointDrill/PopUp",
+    "ScriptName": "ActivityJointDrillPopUpCtrl",
+    "PopRefreshType": 2,
+    "PopJumpType": 2,
+    "JumpToParams": 149
+  }
+}
