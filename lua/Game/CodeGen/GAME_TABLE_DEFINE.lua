@@ -85,6 +85,9 @@ GameTableDefine.CommonTable =
             "Desc",
         },
     },
+    ActivityTaskControl = 
+    {
+    },
     ActivityTaskGroup = 
     {
         Key = true,

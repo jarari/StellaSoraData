@@ -728,6 +728,10 @@ function Actor2DManager.SetActor2D(nPanelId, rawImg, nCharId, nSkinId, param, nI
         Actor2DManager.UnSetDisc2D(true, nIndex)
     elseif mapCurrent.L2DType == L2DType.CG then
         Actor2DManager.UnSetCg2D(true, nIndex)
+    else
+        Actor2DManager.UnsetActor2D(true, nIndex)
+        Actor2DManager.UnSetDisc2D(true, nIndex)
+        Actor2DManager.UnSetCg2D(true, nIndex)
     end
     -- 2.根据此界面的默认偏好设置，确定： png/L2D  全/半身  TN/TF  背景图  复用微调数据。
     local sAssetPath,sOffset,bL,nOffsetDataPanelId,nT,bF,sBg,bSetSuccess = GetActor2DParams(nPanelId, nCharId, nSkinId, param)
@@ -759,7 +763,7 @@ function Actor2DManager.SetActor2D(nPanelId, rawImg, nCharId, nSkinId, param, nI
     local nAnimLength = 0
     if bL == true then
         if type(param) == "table" and param[1] == "TalentL2D" then
-            local nL2DStatus = param[2] --【0】角色：闭眼、静态【1】角色：睁眼、静态【2】角色：睁眼微动【3】角色：睁眼大动态【4】特效：星相石点亮【5】特效：整体氛围光效
+            local nL2DStatus = param[2] --【0】角色：闭眼、静态【1】角色：睁眼、静态【2】角色：睁眼微动【3】角色：睁眼大动【4】特效：星相石点亮【5】特效：整体氛围光效
             local sAnimName = "idle_0"
             if nL2DStatus == 0 then sAnimName = "idle_0" -- 闭眼不动
             elseif nL2DStatus == 1 then sAnimName = "idle_0a" -- 睁眼不动
@@ -817,13 +821,14 @@ function Actor2DManager.UnsetActor2D(bKeepData, nIndex, bForce, tbRenderer)
         mapCurChar.sFace = nil
         mapCurChar.sOffset = nil
         mapCurChar.rawImg = nil
+        mapCurChar.dragPos = Vector3.zero
+
         mapCurrent.nOffsetPanelId = 0
         mapCurrent.nActor2DType = 0
         mapCurrent.bUseL2D = false
         mapCurrent.nPanelId = 0
         mapCurrent.bUseFull = false
         mapCurrent.L2DType = L2DType.None
-        mapCurChar.dragPos = Vector3.zero
     end
 end
 function Actor2DManager.SwitchFullHalf(nIndex) -- 切换全/半身时调用

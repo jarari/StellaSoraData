@@ -47,7 +47,8 @@
       "STm01_01"
     ],
     "AvgLuaName": "STm01_02",
-    "Aim": "Story.102.3"
+    "Aim": "Story.102.3",
+    "AvgMotion": "style_20"
   },
   "103": {
     "Id": 103,
@@ -63,7 +64,8 @@
       "STm01_02"
     ],
     "AvgLuaName": "STm01_03",
-    "Aim": "Story.103.3"
+    "Aim": "Story.103.3",
+    "AvgMotion": "style_20"
   },
   "104": {
     "Id": 104,
@@ -79,7 +81,8 @@
       "STm01_03"
     ],
     "AvgLuaName": "STm01_04",
-    "Aim": "Story.104.3"
+    "Aim": "Story.104.3",
+    "AvgMotion": "style_20"
   },
   "105": {
     "Id": 105,
@@ -95,7 +98,8 @@
       "STm01_04"
     ],
     "AvgLuaName": "STm01_05",
-    "Aim": "Story.105.3"
+    "Aim": "Story.105.3",
+    "AvgMotion": "style_20"
   },
   "106": {
     "Id": 106,
@@ -111,7 +115,8 @@
       "BAm01_05"
     ],
     "AvgLuaName": "STm01_06",
-    "Aim": "Story.106.3"
+    "Aim": "Story.106.3",
+    "AvgMotion": "style_20"
   },
   "107": {
     "Id": 107,
@@ -127,7 +132,8 @@
       "STm01_06"
     ],
     "AvgLuaName": "STm01_07",
-    "Aim": "Story.107.3"
+    "Aim": "Story.107.3",
+    "AvgMotion": "style_20"
   },
   "108": {
     "Id": 108,
@@ -143,7 +149,8 @@
       "STm01_07"
     ],
     "AvgLuaName": "STm01_08_a",
-    "Aim": "Story.108.3"
+    "Aim": "Story.108.3",
+    "AvgMotion": "style_20"
   },
   "109": {
     "Id": 109,
@@ -159,7 +166,8 @@
       "STm01_07"
     ],
     "AvgLuaName": "STm01_08_c",
-    "Aim": "Story.109.3"
+    "Aim": "Story.109.3",
+    "AvgMotion": "style_20"
   },
   "110": {
     "Id": 110,
@@ -176,7 +184,8 @@
       "STm01_07"
     ],
     "AvgLuaName": "STm01_08_b",
-    "Aim": "Story.110.3"
+    "Aim": "Story.110.3",
+    "AvgMotion": "style_20"
   },
   "111": {
     "Id": 111,
@@ -193,7 +202,8 @@
       "STm01_08_c"
     ],
     "AvgLuaName": "STm01_09",
-    "Aim": "Story.111.3"
+    "Aim": "Story.111.3",
+    "AvgMotion": "style_20"
   },
   "112": {
     "Id": 112,
@@ -210,7 +220,8 @@
     ],
     "AvgLuaName": "STm01_10",
     "Aim": "Story.112.3",
-    "IsLast": true
+    "IsLast": true,
+    "AvgMotion": "style_20"
   },
   "201": {
     "Id": 201,
@@ -289,7 +300,8 @@
     "Reward": 102,
     "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
     "AvgLuaName": "STm02_01",
-    "Aim": "Story.204.3"
+    "Aim": "Story.204.3",
+    "AvgMotion": "style_20"
   },
   "205": {
     "Id": 205,
@@ -305,7 +317,8 @@
       "STm02_01"
     ],
     "AvgLuaName": "STm02_02_a",
-    "Aim": "Story.205.3"
+    "Aim": "Story.205.3",
+    "AvgMotion": "style_20"
   },
   "206": {
     "Id": 206,
@@ -321,7 +334,8 @@
       "STm02_01"
     ],
     "AvgLuaName": "STm02_02_b",
-    "Aim": "Story.206.3"
+    "Aim": "Story.206.3",
+    "AvgMotion": "style_20"
   },
   "207": {
     "Id": 207,
@@ -338,7 +352,8 @@
       "STm02_01"
     ],
     "AvgLuaName": "STm02_02_c",
-    "Aim": "Story.207.3"
+    "Aim": "Story.207.3",
+    "AvgMotion": "style_20"
   },
   "208": {
     "Id": 208,
@@ -354,7 +369,8 @@
       "STm02_02_a"
     ],
     "AvgLuaName": "STm02_03_a",
-    "Aim": "Story.208.3"
+    "Aim": "Story.208.3",
+    "AvgMotion": "style_20"
   },
   "209": {
     "Id": 209,
@@ -370,7 +386,8 @@
       "STm02_02_b"
     ],
     "AvgLuaName": "STm02_03_b",
-    "Aim": "Story.209.3"
+    "Aim": "Story.209.3",
+    "AvgMotion": "style_20"
   },
   "210": {
     "Id": 210,
@@ -386,7 +403,8 @@
       "BAm02_03"
     ],
     "AvgLuaName": "STm02_04",
-    "Aim": "Story.210.3"
+    "Aim": "Story.210.3",
+    "AvgMotion": "style_20"
   },
   "211": {
     "Id": 211,
@@ -402,7 +420,8 @@
       "STm02_04"
     ],
     "AvgLuaName": "STm02_05",
-    "Aim": "Story.211.3"
+    "Aim": "Story.211.3",
+    "AvgMotion": "style_20"
   },
   "212": {
     "Id": 212,
@@ -418,7 +437,8 @@
       "STm02_05"
     ],
     "AvgLuaName": "STm02_06",
-    "Aim": "Story.212.3"
+    "Aim": "Story.212.3",
+    "AvgMotion": "style_20"
   },
   "213": {
     "Id": 213,
@@ -434,7 +454,8 @@
       "STm02_06"
     ],
     "AvgLuaName": "STm02_07",
-    "Aim": "Story.213.3"
+    "Aim": "Story.213.3",
+    "AvgMotion": "style_20"
   },
   "214": {
     "Id": 214,
@@ -450,7 +471,8 @@
       "STm02_07"
     ],
     "AvgLuaName": "STm02_08",
-    "Aim": "Story.214.3"
+    "Aim": "Story.214.3",
+    "AvgMotion": "style_20"
   },
   "215": {
     "Id": 215,
@@ -466,7 +488,8 @@
       "STm02_08"
     ],
     "AvgLuaName": "STm02_09",
-    "Aim": "Story.215.3"
+    "Aim": "Story.215.3",
+    "AvgMotion": "style_20"
   },
   "216": {
     "Id": 216,
@@ -482,7 +505,8 @@
       "BAm02_09"
     ],
     "AvgLuaName": "STm02_10",
-    "Aim": "Story.216.3"
+    "Aim": "Story.216.3",
+    "AvgMotion": "style_20"
   },
   "217": {
     "Id": 217,
@@ -499,6 +523,7 @@
     ],
     "AvgLuaName": "STm02_11",
     "Aim": "Story.217.3",
-    "IsLast": true
+    "IsLast": true,
+    "AvgMotion": "style_20"
   }
 }

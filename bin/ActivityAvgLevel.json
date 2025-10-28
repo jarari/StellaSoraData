@@ -37,7 +37,6 @@
   "10004": {
     "Id": 10004,
     "ActivityId": 1010002,
-    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10004.1",
     "Name": "ActivityAvgLevel.10004.2",
     "IconRes": "Icon/ActivityStory/ep_event01_04",
@@ -50,7 +49,6 @@
   "10005": {
     "Id": 10005,
     "ActivityId": 1010002,
-    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10005.1",
     "Name": "ActivityAvgLevel.10005.2",
     "IconRes": "Icon/ActivityStory/ep_event01_05",
@@ -63,7 +61,7 @@
   "10006": {
     "Id": 10006,
     "ActivityId": 1010002,
-    "DayOpen": 2,
+    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10006.1",
     "Name": "ActivityAvgLevel.10006.2",
     "IconRes": "Icon/ActivityStory/ep_event01_06",
@@ -76,7 +74,7 @@
   "10007": {
     "Id": 10007,
     "ActivityId": 1010002,
-    "DayOpen": 3,
+    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10007.1",
     "Name": "ActivityAvgLevel.10007.2",
     "IconRes": "Icon/ActivityStory/ep_event01_07",
@@ -89,7 +87,7 @@
   "10008": {
     "Id": 10008,
     "ActivityId": 1010002,
-    "DayOpen": 4,
+    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10008.1",
     "Name": "ActivityAvgLevel.10008.2",
     "IconRes": "Icon/ActivityStory/ep_event01_08",
@@ -102,7 +100,7 @@
   "10009": {
     "Id": 10009,
     "ActivityId": 1010002,
-    "DayOpen": 5,
+    "DayOpen": 1,
     "Index": "ActivityAvgLevel.10009.1",
     "Name": "ActivityAvgLevel.10009.2",
     "IconRes": "Icon/ActivityStory/ep_event01_09",
@@ -115,7 +113,7 @@
   "10010": {
     "Id": 10010,
     "ActivityId": 1010002,
-    "DayOpen": 6,
+    "DayOpen": 2,
     "Index": "ActivityAvgLevel.10010.1",
     "Name": "ActivityAvgLevel.10010.2",
     "IconRes": "Icon/ActivityStory/ep_event01_10",
@@ -128,7 +126,7 @@
   "10011": {
     "Id": 10011,
     "ActivityId": 1010002,
-    "DayOpen": 7,
+    "DayOpen": 2,
     "Index": "ActivityAvgLevel.10011.1",
     "Name": "ActivityAvgLevel.10011.2",
     "IconRes": "Icon/ActivityStory/ep_event01_11",

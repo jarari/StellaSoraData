@@ -3590,18 +3590,14 @@
     "Id": 15503011,
     "Name": "主控潜能03 导弹增伤计数",
     "GroupId": 15503011,
-    "BuffTag1": 943565682,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
-    "IsShow": true
+    "BuffTag1": 943565682
   },
   "15507011": {
     "Id": 15507011,
     "Name": "主控潜能07 白色无人机增伤",
     "GroupId": 15507011,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
-    "IsShow": true
+    "BuffTag2": -719983267
   },
   "15510011": {
     "Id": 15510011,
@@ -3646,16 +3642,14 @@
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
     "BuffTag3": 1397128752,
-    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_Stun",
     "IsShow": true
   },
   "15529011": {
     "Id": 15529011,
     "Name": "支援潜能29 主角增伤逻辑计数",
     "GroupId": 15529011,
-    "BuffTag1": 943565682,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
-    "IsShow": true
+    "BuffTag1": 943565682
   },
   "15530011": {
     "Id": 15530011,
@@ -3663,7 +3657,7 @@
     "GroupId": 15530011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
   },
   "15531011": {
@@ -3672,7 +3666,7 @@
     "GroupId": 15531011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
   },
   "15532011": {
@@ -3681,7 +3675,7 @@
     "GroupId": 15532011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
   },
   "15533011": {
@@ -3700,6 +3694,11 @@
     "BuffTag2": -719983267,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
+  },
+  "15542011": {
+    "Id": 15542011,
+    "Name": "必杀潜能42 自身输出属性提升",
+    "BuffTag1": 943565682
   },
   "15593011": {
     "Id": 15593011,
@@ -8292,14 +8291,12 @@
     "Name": "剧院魅影_初始减伤",
     "GroupId": 700010010,
     "Icon": "Icon/Buff/Icon_CommonBuff_DefenseDown",
-    "IsShow": true,
-    "ChangeTeamNotRemove": true
+    "IsShow": true
   },
   "700010011": {
     "Id": 700010011,
     "Name": "剧院魅影_受击监测",
-    "GroupId": 700010011,
-    "ChangeTeamNotRemove": true
+    "GroupId": 700010011
   },
   "700010012": {
     "Id": 700010012,
@@ -8312,14 +8309,12 @@
     "Id": 700010013,
     "Name": "剧院魅影_减伤表现",
     "GroupId": 700010013,
-    "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_shield",
-    "ChangeTeamNotRemove": true
+    "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_shield"
   },
   "700010014": {
     "Id": 700010014,
     "Name": "剧院魅影_初始减伤破除",
-    "GroupId": 700010014,
-    "ChangeTeamNotRemove": true
+    "GroupId": 700010014
   },
   "700010015": {
     "Id": 700010015,
@@ -10057,7 +10052,8 @@
     "Id": 4001041,
     "Name": "【buff效果】获得「炎铠」：受到伤害降低{4}，持续{5}秒。",
     "GroupId": 4001041,
-    "BuffTag1": -719983267
+    "BuffTag1": -719983267,
+    "BindEffect": "FX/Astrolabe/Buff/fx_astrolabe_buff_fire_1"
   },
   "4001106": {
     "Id": 4001106,
@@ -10123,7 +10119,8 @@
     "Id": 4002021,
     "Name": "【buff效果】割裂：受到风系伤害提升{3}，持续{4}秒。",
     "GroupId": 4002021,
-    "BuffTag1": -2138561627
+    "BuffTag1": -2138561627,
+    "BindEffect": "FX/Astrolabe/Buff/fx_astrolabe_buff_wind_1"
   },
   "4002206": {
     "Id": 4002206,
@@ -11801,7 +11798,8 @@
     "Id": 4030021,
     "Name": "【buff效果】{2}概率附加「静电」：受到光系伤害提升{3}，持续{4}秒。",
     "GroupId": 4030021,
-    "BuffTag1": -2138561627
+    "BuffTag1": -2138561627,
+    "BindEffect": "FX/Astrolabe/Buff/fx_astrolabe_buff_light_1"
   },
   "4030206": {
     "Id": 4030206,
@@ -11843,7 +11841,8 @@
     "Id": 4031041,
     "Name": "【buff效果】获得「碧佑」：受到伤害降低{4}，持续{5}秒。",
     "GroupId": 4031041,
-    "BuffTag1": -719983267
+    "BuffTag1": -719983267,
+    "BindEffect": "FX/Astrolabe/Buff/fx_astrolabe_buff_water_1"
   },
   "4031106": {
     "Id": 4031106,
@@ -11909,7 +11908,8 @@
     "Id": 4032021,
     "Name": "【buff效果】{2}概率附加「腐蚀」：受到暗系伤害提升{3}，持续{4}秒。",
     "GroupId": 4032021,
-    "BuffTag1": -2138561627
+    "BuffTag1": -2138561627,
+    "BindEffect": "FX/Buff/fx_common_buff_astrolabe_dark_1"
   },
   "4032101": {
     "Id": 4032101,
@@ -12017,7 +12017,8 @@
     "Id": 4033041,
     "Name": "【脚本buff】获得「磐石」：受到伤害降低{3}。",
     "GroupId": 4033041,
-    "BuffTag1": -719983267
+    "BuffTag1": -719983267,
+    "BindEffect": "FX/Astrolabe/Buff/fx_astrolabe_buff_earth_1"
   },
   "4033106": {
     "Id": 4033106,
@@ -12473,7 +12474,9 @@
     "Id": 4039200,
     "Name": "【脚本buff】衍射",
     "GroupId": 4039200,
-    "BuffTag1": -719983267
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214039",
+    "IsShow": true
   },
   "4039201": {
     "Id": 4039201,

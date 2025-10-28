@@ -1388,7 +1388,6 @@ function PlayerStarTowerData:GMChangeNpcAffinity(mapInfo)
     self:UpdateNpcAffinityRedDot()
 end
 function PlayerStarTowerData:UpdateNpcAffinityRedDot()
-    RedDotManager.SetValid(RedDotDefine.StarTowerBook_Affinity, nil, false)
     local function forEachNpc(mapData)
         RedDotManager.SetValid(RedDotDefine.StarTowerBook_Affinity_Reward, mapData.Id, false)
     end
@@ -1399,7 +1398,6 @@ function PlayerStarTowerData:UpdateNpcAffinityRedDot()
             if self.mapNpcAffinity[nNpcId].Level >= mapData.AffinityLevel and
             table.indexof(self.mapNpcAffinity[nNpcId].tbPlotIds,mapData.Id) < 1 then
                 RedDotManager.SetValid(RedDotDefine.StarTowerBook_Affinity_Reward, nNpcId, true)
-                RedDotManager.SetValid(RedDotDefine.StarTowerBook_Affinity, nil, true)
             end
         end
     end

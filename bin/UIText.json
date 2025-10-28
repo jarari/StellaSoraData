@@ -5583,6 +5583,10 @@
     "Id": "Recruit_one",
     "Text": "UIText.Recruit_one.1"
   },
+  "Recruit_history_empty": {
+    "Id": "Recruit_history_empty",
+    "Text": "UIText.Recruit_history_empty.1"
+  },
   "Recruit_history": {
     "Id": "Recruit_history",
     "Text": "UIText.Recruit_history.1"
@@ -12390,6 +12394,14 @@
   "MiningGame_Guide": {
     "Id": "MiningGame_Guide",
     "Text": "UIText.MiningGame_Guide.1"
+  },
+  "MiningGame_Finish": {
+    "Id": "MiningGame_Finish",
+    "Text": "UIText.MiningGame_Finish.1"
+  },
+  "MiningGame_FinishLevel": {
+    "Id": "MiningGame_FinishLevel",
+    "Text": "UIText.MiningGame_FinishLevel.1"
   },
   "CharList_Sort_Toggle_Time": {
     "Id": "CharList_Sort_Toggle_Time",

@@ -257,6 +257,29 @@
     "EndSceneName": "Levels/VampireSurvivor/VampireSurvivor_Scene_04a_Victory01",
     "BGM": "music_victory_setState_rogueLike"
   },
+  "401": {
+    "Id": 401,
+    "Theme": 401,
+    "EndSceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_Victory01",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "406": {
+    "Id": 406,
+    "Theme": 406,
+    "EndSceneName": "Levels/Main/Forest_New/Forest_Main_2_5_Victory01",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "411": {
+    "Id": 411,
+    "Theme": 411,
+    "EndSceneName": "Levels/Main/Forest_New/Forest_Main_2_6_Victory01",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "416": {
+    "Id": 416,
+    "Theme": 416,
+    "BGM": "music_victory_setState_rogueLike"
+  },
   "901": {
     "Id": 901,
     "Theme": 901,

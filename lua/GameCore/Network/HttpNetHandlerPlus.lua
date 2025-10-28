@@ -124,21 +124,21 @@ end
 --总力战---------------------------------------------------------
 function HttpNetHandlerPlus.joint_drill_game_over_failed_ack(mapMsgData)
     --挑战不存在
-    if mapMsgData.Code == 112701 then
+    if mapMsgData ~= nil and mapMsgData.Code ~= nil and mapMsgData.Code == 112701 then
         --挑战不存在，此时需要刷新下客户端状态防止卡死
         EventManager.Hit("JointDrillChallengeFinishError")
     end
 end
 function HttpNetHandlerPlus.joint_drill_sync_failed_ack(mapMsgData)
     --挑战已结束
-    if mapMsgData.Code == 112704 then
+    if mapMsgData ~= nil and mapMsgData.Code ~= nil and mapMsgData.Code == 112704 then
         --挑战不存在，此时需要刷新下客户端状态防止卡死
         EventManager.Hit("JointDrillChallengeFinishError")
     end
 end
 function HttpNetHandlerPlus.joint_drill_give_up_failed_ack(mapMsgData)
     --挑战已结束
-    if mapMsgData.Code == 112704 then
+    if mapMsgData ~= nil and mapMsgData.Code ~= nil and mapMsgData.Code == 112704 then
         --挑战不存在，此时需要刷新下客户端状态防止卡死
         EventManager.Hit("JointDrillChallengeFinishError")
     end

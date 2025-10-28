@@ -2310,7 +2310,7 @@
     "AssistUltimateAngle": 300000,
     "AssistUltimateRadius": 30000,
     "SkillSemiAutoRng": 50000,
-    "UltimateSemiAutoRng": 50000,
+    "UltimateSemiAutoRng": 35000,
     "SwitchCD": 200,
     "EnergyConvRatio": 7500,
     "EnergyEfficiency": 10000,
@@ -2636,6 +2636,8 @@
   "155": {
     "Id": 155,
     "Name": "Character.155.1",
+    "Visible": true,
+    "Available": true,
     "Grade": 1,
     "DefaultSkinId": 15501,
     "AdvanceSkinId": 15502,

@@ -66,6 +66,11 @@ function PlayerActivityData:InitActivityCfg()
         CacheTable.InsertData("_LoginRewardGroup", line.RewardGroupId, line)
     end
     ForEachTableLine(DataTable.LoginRewardGroup, foreachLoginRewardGroup)
+
+    local function foreachTableLine(line)
+        CacheTable.SetData("_ActivityTaskControl", line.ActivityId, line)
+    end
+    ForEachTableLine(DataTable.ActivityTaskControl, foreachTableLine)
 end
 
 --活动详情数据
@@ -109,6 +114,8 @@ function PlayerActivityData:CacheAllActivityData(mapNetMsg)
                         self.tbAllActivity[nActId] = actIns
                     end
                     actIns:CacheData(v.Task)
+                    --刷新活动任务弹窗用
+                    EventManager.Hit("RefreshActivityTask")
                 elseif actCfg.ActivityType == GameEnum.activityType.Shop then
                     self:RefreshActivityShopData(nActId, v.Shop)
                 elseif actCfg.ActivityType == GameEnum.activityType.Advertise then
@@ -146,6 +153,8 @@ end
 function PlayerActivityData:RefreshActivityData(mapNetMsg)
     if nil == self.tbAllActivity[mapNetMsg.Id] then
         self:CreateActivityIns(mapNetMsg)
+        --有新活动开启时主动请求下活动详情数据
+        self:SendActivityDetailMsg(nil, true)
     else
         self.tbAllActivity[mapNetMsg.Id]:RefreshActivityData(mapNetMsg)
     end
@@ -157,6 +166,7 @@ end
 function PlayerActivityData:RefreshActivityStateData(mapNetMsg)
     if nil ~= self.tbAllActivity[mapNetMsg.Id] then
         self.tbAllActivity[mapNetMsg.Id]:RefreshStateData(mapNetMsg.RedDot, mapNetMsg.Banner)
+        self:RefreshActivityRedDot()
     end
 end
 
@@ -359,6 +369,7 @@ function PlayerActivityData:RefreshSingleQuest(questData)
         PlayerData.JointDrill:RefreshQuestData(questData)
     elseif actCfg.ActivityType == GameEnum.activityType.Task then -- xiajiabin
         self.tbAllActivity[questData.ActivityId]:RefreshSingleQuest(questData)
+        EventManager.Hit("RefreshActivityTask")
     end
 end
 

@@ -2735,7 +2735,7 @@
     "Icon": "Icon/Skill/15501_Ultra",
     "SkillCD": 400000,
     "MaxLevel": 10,
-    "UltraEnergy": 3800000,
+    "UltraEnergy": 3400000,
     "Param1": "HitDamage,DamageNum,155400001",
     "Param2": "HitDamage,DamageNum,155000001",
     "CheckSkillInterval": true

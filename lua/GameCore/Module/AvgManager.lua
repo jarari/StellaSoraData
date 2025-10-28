@@ -4,6 +4,7 @@ local AvgManager = {}
 local objAvgPanel = nil
 local objAvgBubblePanel = nil   -- avg气泡
 local nTransitionType = 0
+local bInAvg = false    -- 是否在播放avg剧情
 local function OnEvent_AvgBBEnd(_)
     if objAvgBubblePanel ~= nil then
         objAvgBubblePanel:_PreExit()
@@ -21,8 +22,17 @@ local function OnEvent_AvgBBStart(_, sAvgId, sGroupId, sLanguage, sVoLan)
     objAvgBubblePanel:_PreEnter()
     objAvgBubblePanel:_Enter()
 end
-local function OnEvent_AvgSTStart(_, sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID)
+local function OnEvent_AvgSTStart(_, sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID, sTransStyle)
 
+    local nStyle = 11 -- 默认的转场效果
+    if type(sTransStyle) == "string" and sTransStyle ~= "" then
+        local sStyle = string.gsub(sTransStyle, "style_", "")
+        local _n = tonumber(sStyle)
+        if type(_n) == "number" then
+            nStyle = _n
+        end
+    end
+    bInAvg = true
     local func_DoStart = function()
         if sLanguage == nil then sLanguage = Settings.sCurrentTxtLanguage end
         if sVoLan == nil then sVoLan = Settings.sCurrentVoLanguage end
@@ -49,7 +59,7 @@ local function OnEvent_AvgSTStart(_, sAvgId, sLanguage, sVoLan, sGroupId, nStart
         else
             local sAvgIdHead = string.sub(sAvgId, 1, 2)
             if sAvgIdHead == "ST" or sAvgIdHead == "CG" or sAvgIdHead == "DP" then
-                nTransitionType = sAvgIdHead == "DP" and 12 or 11 -- 类型12是派遣类演出专用的转场动画需要在派遣类演出结束时播
+                nTransitionType = sAvgIdHead == "DP" and 12 or nStyle -- 类型12是派遣类演出专用的转场动画需要在派遣类演出结束时播
                 EventManager.Hit(EventId.SetTransition, nTransitionType, func_OnEvent_TransAnimInClear)
             else
                 func_DoStart() -- 那些不需要转场动画的演出就直接开始播了
@@ -73,6 +83,7 @@ local function OnEvent_AvgSTEnd(_)
         end
         GameResourceLoader.Unload("ImageAvg") -- 卸载所有 AVG 用的背景图资源
         GameResourceLoader.Unload("Actor2DAvg") -- 卸载所有 AVG 用的角色资源（png + live2d）
+        bInAvg = false
     end
 
     local function func_OnEvent_TransAnimInClear()
@@ -108,5 +119,8 @@ function AvgManager.Init()
     EventManager.Add(EventId.AvgBubbleExit, AvgManager, OnEvent_AvgBBEnd)
     -- 游戏app关闭
     EventManager.Add(EventId.CSLuaManagerShutdown, AvgManager, Uninit)
+end
+function AvgManager.CheckInAvg()
+    return bInAvg
 end
 return AvgManager

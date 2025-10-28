@@ -26,9 +26,13 @@
     "OpenDay": [
       0,
       1,
-      4
+      2,
+      3,
+      4,
+      5,
+      6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type2"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   },
   "3": {
     "Id": 3,
@@ -39,10 +43,14 @@
     "PreTowerLevelId": 11020,
     "OpenDay": [
       0,
+      1,
       2,
-      5
+      3,
+      4,
+      5,
+      6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type3"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   },
   "4": {
     "Id": 4,
@@ -53,10 +61,14 @@
     "PreTowerLevelId": 11020,
     "OpenDay": [
       0,
+      1,
+      2,
       3,
+      4,
+      5,
       6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type4"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   },
   "5": {
     "Id": 5,
@@ -68,9 +80,13 @@
     "OpenDay": [
       0,
       1,
-      4
+      2,
+      3,
+      4,
+      5,
+      6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type2"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   },
   "6": {
     "Id": 6,
@@ -81,10 +97,14 @@
     "PreTowerLevelId": 11020,
     "OpenDay": [
       0,
+      1,
       2,
-      5
+      3,
+      4,
+      5,
+      6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type3"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   },
   "7": {
     "Id": 7,
@@ -95,9 +115,13 @@
     "PreTowerLevelId": 11020,
     "OpenDay": [
       0,
+      1,
+      2,
       3,
+      4,
+      5,
       6
     ],
-    "OpenDayDesc": "Infinity_OpenDay_Type4"
+    "OpenDayDesc": "Infinity_OpenDay_Type1"
   }
 }

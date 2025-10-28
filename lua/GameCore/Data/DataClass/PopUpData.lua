@@ -80,6 +80,8 @@ function PopUpData:IsNeedPopUp(actId)
         if cfg.PopRefreshType == GameEnum.PopRefreshType.WholeFirst then
             if nil == localData then
                 return cfg.PopUpRes ~= nil
+            else
+                return false
             end
         elseif cfg.PopRefreshType == GameEnum.PopRefreshType.DailyFirst then
             if nil == localData then

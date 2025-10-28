@@ -1,5 +1,5 @@
 
-Ù•	
+æ—	
 client_table.protonova.client"Ù
 Achievement
 Id (RId
@@ -231,7 +231,16 @@ AimNumShow$
 Tid3 (RTid3
 Qty3 (RQty3"C
 table_ActivityTask-
-list (2.nova.client.ActivityTaskRlist"…
+list (2.nova.client.ActivityTaskRlist"™
+ActivityTaskControl
+
+ActivityId (R
+ActivityId
+UIAssets (	RUIAssets
+CtrlName (	RCtrlName*
+FastEntranceIcon (	RFastEntranceIcon"Q
+table_ActivityTaskControl4
+list (2 .nova.client.ActivityTaskControlRlist"…
 ActivityTaskGroup
 Id (RId 
 TaskTabType (RTaskTabType,
@@ -4679,7 +4688,7 @@ RewardQty3"G
 Level (RLevel
 NeedExp (RNeedExp"K
 table_StarTowerTeamExp1
-list (2.nova.client.StarTowerTeamExpRlist"Ý
+list (2.nova.client.StarTowerTeamExpRlist"û
 Story
 Id (RId
 StoryId (	RStoryId
@@ -4706,7 +4715,8 @@ AvgLuaName
 PreviewMonsterGroupId (RPreviewMonsterGroupId
 	Recommend (	R	Recommend
 Aim (	RAim
-IsLast (RIsLast"5
+IsLast (RIsLast
+	AvgMotion (	R	AvgMotion"5
 table_Story&
 list (2.nova.client.StoryRlist"¤
 StoryChapter

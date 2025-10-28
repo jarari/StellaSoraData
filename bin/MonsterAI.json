@@ -3472,6 +3472,17 @@
     ],
     "ThinkInterval": 5000
   },
+  "5009181": {
+    "Id": 5009181,
+    "ComboGroupPath": "Monster/50091GuanZi/Combo/None/ComboGroup_None",
+    "SpawnShowSkillId": 9999988,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      500910102,
+      500910199
+    ],
+    "ThinkInterval": 5000
+  },
   "5011101": {
     "Id": 5011101,
     "ComboGroupPath": "Monster/50111BuffJingLing/Combo/Water/ComboGroup",

@@ -925,6 +925,20 @@
       1
     ]
   },
+  "11201": {
+    "Id": 11201,
+    "Name": "TrialCharacter.11201.1",
+    "CharId": 112,
+    "CharacterSkin": 11201,
+    "Break": 8,
+    "Level": 90,
+    "SkillLevel": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
   "14401": {
     "Id": 14401,
     "Name": "TrialCharacter.14401.1",

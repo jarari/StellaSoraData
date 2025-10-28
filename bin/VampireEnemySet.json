@@ -20647,5 +20647,1017 @@
     "DropGet": [
       110
     ]
+  },
+  "762": {
+    "SetId": 110501,
+    "GroupNum": 1,
+    "MonsterId": 8101910,
+    "MaxNum": 16,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      4,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ]
+  },
+  "763": {
+    "SetId": 110502,
+    "GroupNum": 1,
+    "MonsterId": 8101910,
+    "MaxNum": 16,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      3,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "764": {
+    "SetId": 110502,
+    "GroupNum": 2,
+    "MonsterId": 8112000,
+    "MaxNum": 5,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "765": {
+    "SetId": 110511,
+    "GroupNum": 1,
+    "MonsterId": 8101910,
+    "MaxNum": 16,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      15,
+      3,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ]
+  },
+  "766": {
+    "SetId": 110511,
+    "GroupNum": 2,
+    "MonsterId": 8100220,
+    "DelayTime": 5,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      5
+    ],
+    "MaxNumImproveData": [
+      20,
+      2,
+      1
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "767": {
+    "SetId": 110511,
+    "GroupNum": 3,
+    "MonsterId": 8100600,
+    "MaxNum": 4,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "768": {
+    "SetId": 110512,
+    "GroupNum": 1,
+    "MonsterId": 8150920,
+    "MaxNum": 1,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      90
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ],
+    "MonsterWarning": 2
+  },
+  "769": {
+    "SetId": 110512,
+    "GroupNum": 2,
+    "MonsterId": 8112000,
+    "MaxNum": 2,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ]
+  },
+  "770": {
+    "SetId": 110512,
+    "GroupNum": 3,
+    "MonsterId": 8100220,
+    "MaxNum": 5,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "771": {
+    "SetId": 110513,
+    "GroupNum": 1,
+    "MonsterId": 8102520,
+    "MaxNum": 12,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      15,
+      3,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "772": {
+    "SetId": 110513,
+    "GroupNum": 2,
+    "MonsterId": 8100600,
+    "DelayTime": 5,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ]
+  },
+  "773": {
+    "SetId": 110513,
+    "GroupNum": 3,
+    "MonsterId": 8100220,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "774": {
+    "SetId": 110514,
+    "GroupNum": 1,
+    "MonsterId": 8102520,
+    "MaxNum": 12,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      6,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "775": {
+    "SetId": 110514,
+    "GroupNum": 2,
+    "MonsterId": 8100600,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "776": {
+    "SetId": 110514,
+    "GroupNum": 3,
+    "MonsterId": 8103650,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "777": {
+    "SetId": 110515,
+    "GroupNum": 1,
+    "MonsterId": 8150230,
+    "DelayTime": 1,
+    "MaxNum": 1,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      90
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ],
+    "MonsterWarning": 1
+  },
+  "778": {
+    "SetId": 110515,
+    "GroupNum": 2,
+    "MonsterId": 8103650,
+    "DelayTime": 5,
+    "MaxNum": 4,
+    "AddData": [
+      1,
+      5
+    ],
+    "MaxNumImproveData": [
+      10,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "779": {
+    "SetId": 110515,
+    "GroupNum": 3,
+    "MonsterId": 8100151,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 3,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "780": {
+    "SetId": 110515,
+    "GroupNum": 4,
+    "MonsterId": 8112000,
+    "MaxNum": 4,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 2,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "781": {
+    "SetId": 110601,
+    "GroupNum": 1,
+    "MonsterId": 8100310,
+    "MaxNum": 20,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      3,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "782": {
+    "SetId": 110601,
+    "GroupNum": 2,
+    "MonsterId": 8100151,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ]
+  },
+  "783": {
+    "SetId": 110601,
+    "GroupNum": 3,
+    "MonsterId": 8100450,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      15,
+      2,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "784": {
+    "SetId": 110602,
+    "GroupNum": 1,
+    "MonsterId": 8100310,
+    "MaxNum": 9,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      3,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "785": {
+    "SetId": 110602,
+    "GroupNum": 2,
+    "MonsterId": 8102210,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "786": {
+    "SetId": 110602,
+    "GroupNum": 3,
+    "MonsterId": 8101600,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      15,
+      2,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropMp": [
+      107
+    ]
+  },
+  "787": {
+    "SetId": 110606,
+    "GroupNum": 1,
+    "MonsterId": 8101601,
+    "MaxNum": 1,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      90
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ],
+    "MonsterWarning": 2
+  },
+  "788": {
+    "SetId": 110606,
+    "GroupNum": 2,
+    "MonsterId": 8102210,
+    "MaxNum": 2,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      15,
+      2,
+      1
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "789": {
+    "SetId": 110606,
+    "GroupNum": 3,
+    "MonsterId": 8101600,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      1
+    ],
+    "MaxNumImproveData": [
+      10,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "790": {
+    "SetId": 110608,
+    "GroupNum": 1,
+    "MonsterId": 8100310,
+    "MaxNum": 8,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "791": {
+    "SetId": 110608,
+    "GroupNum": 2,
+    "MonsterId": 8100151,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "792": {
+    "SetId": 110608,
+    "GroupNum": 3,
+    "MonsterId": 8102410,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      12,
+      1,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "793": {
+    "SetId": 110609,
+    "GroupNum": 1,
+    "MonsterId": 8170100,
+    "MaxNum": 1,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      90
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ],
+    "MonsterWarning": 1
+  },
+  "794": {
+    "SetId": 110609,
+    "GroupNum": 2,
+    "MonsterId": 8102410,
+    "DelayTime": 10,
+    "MaxNum": 3,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      12,
+      1,
+      4
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropHp": [
+      106
+    ],
+    "DropAtk": [
+      108
+    ]
+  },
+  "795": {
+    "SetId": 110609,
+    "GroupNum": 3,
+    "MonsterId": 8100151,
+    "MaxNum": 4,
+    "AddData": [
+      1,
+      3
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      2
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropMp": [
+      107
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "796": {
+    "SetId": 110609,
+    "GroupNum": 4,
+    "MonsterId": 8100110,
+    "DelayTime": 20,
+    "MaxNum": 8,
+    "AddData": [
+      4,
+      0
+    ],
+    "MaxNumImproveData": [
+      10,
+      2,
+      3
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropGet": [
+      110
+    ]
+  },
+  "797": {
+    "SetId": 110599,
+    "GroupNum": 1,
+    "MonsterId": 8103200,
+    "LevelChange": 2,
+    "MaxNum": 4,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "798": {
+    "SetId": 110599,
+    "GroupNum": 2,
+    "MonsterId": 8103300,
+    "LevelChange": 2,
+    "MaxNum": 2,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      4
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropAtk": [
+      108
+    ],
+    "DropGet": [
+      110
+    ],
+    "DropClear": [
+      109
+    ]
+  },
+  "799": {
+    "SetId": 110699,
+    "GroupNum": 1,
+    "MonsterId": 8100401,
+    "LevelChange": 2,
+    "MaxNum": 1,
+    "AddData": [
+      0,
+      0
+    ],
+    "MaxNumImproveData": [
+      0,
+      0,
+      0
+    ],
+    "MonsterSpawnType": 1,
+    "MonsterPoint": 1,
+    "DropExp": [
+      104,
+      90
+    ],
+    "DropChest": [
+      105
+    ],
+    "DropGet": [
+      110
+    ]
   }
 }

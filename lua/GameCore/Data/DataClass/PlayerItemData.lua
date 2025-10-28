@@ -309,7 +309,12 @@ function PlayerItemData:GetItemCountByID(Tid)
     end
     if itemCfgData.Type == GameEnum.itemType.Energy then
         return PlayerData.Base:GetCurEnergy().nEnergy
-     end
+    end
+    if itemCfgData.Type == GameEnum.itemType.Honor then
+        local tbHonor = PlayerData.Base:GetPlayerHonorTitleList()
+        local bHas = table.indexof(tbHonor, Tid) > 0
+        return bHas and 1 or 0
+    end
     if self._mapItem[Tid] ~= nil then
         local count = 0
         for key, value in pairs(self._mapItem[Tid].mapExpires) do

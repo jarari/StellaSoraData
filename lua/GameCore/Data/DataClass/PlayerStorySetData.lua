@@ -128,6 +128,7 @@ function PlayerStorySetData:ReceiveStorySetReward(nChapterId, nSectionId, callba
         if callback ~= nil then
             callback(netMsg)
         end
+        EventManager.Hit("ReceiveStorySetRewardSuc")
     end
     local msg = {
         ChapterId = nChapterId,

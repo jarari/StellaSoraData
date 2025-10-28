@@ -9,11 +9,11 @@ CharBgPanel._tbDefine = {
     {sPrefabPath = "CharSkill/CharSkillPanel.prefab", sCtrlName = "Game.UI.CharSkill.CharSkillCtrl"},
     {sPrefabPath = "CharacterInfoEx/CharPotentialPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharPotentialCtrl"},
     {sPrefabPath = "CharacterInfoEx/CharTalentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharTalentCtrl"},
-    {sPrefabPath = "CharacterInfoEx/CharacterRelationPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharacterRelationCtrl"},
     {sPrefabPath = "CharacterInfoEx/CharEquipmentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharEquipmentCtrl"},
     --{sPrefabPath = "CharacterFavour/CharFavourGiftPanel.prefab", sCtrlName = "Game.UI.CharacterFavour.CharFavourGiftCtrl"},
     -- 最前面
     {sPrefabPath = "CharacterInfoEx/CharFgPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharFgCtrl"},
+    {sPrefabPath = "CharacterInfoEx/CharacterRelationPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharacterRelationCtrl"},
 }
 
 CharBgPanel._mapEventConfig = {

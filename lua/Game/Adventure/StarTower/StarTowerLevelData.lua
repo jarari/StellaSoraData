@@ -2508,6 +2508,7 @@ function StarTowerLevelData:ReBattle()
     end
     EventManager.Add("ADVENTURE_LEVEL_UNLOAD_COMPLETE",self,OnLevelUnloadComplete)
     safe_call_cs_func(CS.AdventureModuleHelper.ClearCharacterDamageRecord, false)
+    NovaAPI.DispatchEventWithData("Level_Restart",nil,{})
     safe_call_cs_func(CS.AdventureModuleHelper.LevelStateChanged,false)
 end
 function StarTowerLevelData:GetRecommondPotential(tbPotentialData)

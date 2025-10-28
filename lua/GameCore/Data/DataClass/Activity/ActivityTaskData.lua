@@ -68,7 +68,19 @@ function ActivityTaskData:RefreshSingleQuest(questData)
     end
     local data = self.mapActivityTaskDatas[nActivityTaskId]
     if data == nil then
-        return
+        local _nCur, _nMax = 0, 0
+        for __, QuestProgress in ipairs(questData.Progress) do
+            _nCur = _nCur + QuestProgress.Cur
+            _nMax = _nMax + QuestProgress.Max
+        end
+        self.mapActivityTaskDatas[nActivityTaskId] = {
+            nStatus = MAPSTATUS[questData.Status],
+            nExpire = questData.Expire, -- 过期时间戳，客户端需要自行重置进度，主要用于日常和周常
+            -- nType = Quest.Type, -- （似乎没太大用处所以注掉不记录了）
+            nCur = (questData.Status == 2) and _nMax or _nCur,
+            nMax = _nMax,
+        }
+        data = self.mapActivityTaskDatas[nActivityTaskId]
     end
     data.nStatus = MAPSTATUS[questData.Status]
     local _nCur, _nMax = 0, 0
@@ -102,6 +114,22 @@ function ActivityTaskData:RefreshTaskRedDot()
             end
         end
         local bTotalReceived = table.indexof(self.tbActivityTaskGroupIds, nGroupId) > 0
+        local bHasReward = false
+        --判断该任务组是否有组奖励
+        local mapGroupCfg = ConfigTable.GetData("ActivityTaskGroup", nGroupId)
+        if mapGroupCfg ~= nil then
+            for i = 1, 6 do
+                local nTid = mapGroupCfg["Reward" .. i]
+                local nCount = mapGroupCfg["RewardQty" .. i]
+                if nTid ~= 0 and nCount > 0 then
+                    bHasReward = true
+                    break
+                end
+            end
+        end
+        if bHasReward == false then
+            bTotalReceived = true
+        end
         local bCanReceive = nCompleteCount > 0 or (nReceivedCount == nAllCount and not bTotalReceived )
         local bInActGroup,nActGroupId = PlayerData.Activity:IsActivityInActivityGroup(self.nActId)
         local bActGroupUnlock = true
@@ -118,8 +146,10 @@ function ActivityTaskData:SendMsg_ActivityTaskRewardReceiveReq(nActivityTaskGrou
     mapSend.TabType = nTabType -- GameEnum.ActivityTaskTabType
     mapSend.QuestId = nActivityTaskId
     local succ_cb = function(_, mapData)
-        if type(ui_ctrl_callback) == "function" then ui_ctrl_callback() end
-        UTILS.OpenReceiveByChangeInfo(mapData)
+        local function receiveCallback()
+            if type(ui_ctrl_callback) == "function" then ui_ctrl_callback() end
+        end
+        UTILS.OpenReceiveByChangeInfo(mapData, receiveCallback)
     end
     HttpNetHandler.SendMsg(NetMsgId.Id.activity_task_reward_receive_req, mapSend, nil, succ_cb)
 end
@@ -144,5 +174,9 @@ function ActivityTaskData:CalcTotalProgress()
     end
     -- printLog("XIA: " .. tostring(nDone) .. "," .. tostring(nTotal))
     return nDone, nTotal
+end
+
+function ActivityTaskData:GetAllTaskList()
+    return self.mapActivityTaskGroupData, self.mapActivityTaskDatas
 end
 return ActivityTaskData

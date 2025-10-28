@@ -178,12 +178,49 @@
     "Id": 27,
     "Source": "Icon/Loading/loading_comic_27",
     "Title": "MangaLoading.27.1",
-    "ConditionType": 1
+    "ConditionType": 1,
+    "Weight": 100
   },
   "28": {
     "Id": 28,
     "Source": "Icon/Loading/loading_comic_28",
     "Title": "MangaLoading.28.1",
-    "ConditionType": 1
+    "ConditionType": 1,
+    "Weight": 100
+  },
+  "29": {
+    "Id": 29,
+    "Source": "Icon/Loading/loading_comic_29",
+    "Title": "MangaLoading.29.1",
+    "ConditionType": 1,
+    "Weight": 100
+  },
+  "30": {
+    "Id": 30,
+    "Source": "Icon/Loading/loading_comic_30",
+    "Title": "MangaLoading.30.1",
+    "ConditionType": 1,
+    "Weight": 100
+  },
+  "31": {
+    "Id": 31,
+    "Source": "Icon/Loading/loading_comic_31",
+    "Title": "MangaLoading.31.1",
+    "ConditionType": 1,
+    "Weight": 100
+  },
+  "32": {
+    "Id": 32,
+    "Source": "Icon/Loading/loading_comic_32",
+    "Title": "MangaLoading.32.1",
+    "ConditionType": 1,
+    "Weight": 100
+  },
+  "33": {
+    "Id": 33,
+    "Source": "Icon/Loading/loading_comic_33",
+    "Title": "MangaLoading.33.1",
+    "ConditionType": 1,
+    "Weight": 100
   }
 }

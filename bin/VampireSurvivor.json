@@ -725,16 +725,15 @@
     "Name1": "VampireSurvivor.301.2",
     "Name2": "VampireSurvivor.301.3",
     "EET": [
-      5,
-      3
+      1,
+      5
     ],
     "NotEET": [
-      1,
       6,
       3
     ],
-    "SuggestedPower": 85,
-    "RecommendBuildRank": 30,
+    "SuggestedPower": 70,
+    "RecommendBuildRank": 23,
     "Mode": 2,
     "Type": 3,
     "PreLevelId": 201,
@@ -753,14 +752,14 @@
     "TimeScore2": 6000,
     "TimeLimit2": 800,
     "EETScore1": [
-      3,
+      1,
       5
     ],
     "EETScore2": [
       4,
       5
     ],
-    "FHPreviewMonsterGroupId": 83001,
+    "FHPreviewMonsterGroupId": 83007,
     "SHPreviewMonsterGroupId": 83016,
     "CoverEpisode": "Icon/MapChallenge/zs_survivor_entrancepic_301",
     "Episode": "Icon/MapChallenge/zs_survivor_entrancepic_301_L1",
@@ -789,8 +788,8 @@
       5,
       1
     ],
-    "SuggestedPower": 85,
-    "RecommendBuildRank": 30,
+    "SuggestedPower": 70,
+    "RecommendBuildRank": 23,
     "Mode": 2,
     "Type": 3,
     "PreLevelId": 201,
@@ -845,8 +844,8 @@
       2,
       6
     ],
-    "SuggestedPower": 85,
-    "RecommendBuildRank": 30,
+    "SuggestedPower": 70,
+    "RecommendBuildRank": 23,
     "Mode": 2,
     "Type": 3,
     "PreLevelId": 201,

@@ -437,7 +437,7 @@ function JointDrillLevelData:JointDrillSuccess(netMsg)
         local nResultType = AllEnum.JointDrillResultType.Success
         local nScore = netMsg.FightScore + netMsg.HpScore + netMsg.DifficultyScore
         local mapScore = {FightScore = netMsg.FightScore, HpScore = netMsg.HpScore, DifficultyScore = netMsg.DifficultyScore, 
-                          nTotalScoreOld = self.parent.nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
+                          nTotalScore = self.parent.nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
         local bSimulate = self.parent:GetBattleSimulate()
         local nBattleCount = self.parent:GetJointDrillBattleCount()
         EventManager.Hit(EventId.OpenPanel, PanelId.JointDrillResult,  nResultType, self.nCurLevel, 0, self.nLevelId, 
@@ -495,7 +495,7 @@ function JointDrillLevelData:JointDrillFail(nResultType, netMsg)
     if netMsg ~= nil then
         local nScore = netMsg.FightScore + netMsg.HpScore + netMsg.DifficultyScore
         mapScore = {FightScore = netMsg.FightScore, HpScore = netMsg.HpScore, DifficultyScore = netMsg.DifficultyScore,
-                    nTotalScoreOld = self.parent.nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
+                    nTotalScore = self.parent.nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
         nOld = netMsg.Old
         nNew = netMsg.New
         mapReward = netMsg.Items or {}

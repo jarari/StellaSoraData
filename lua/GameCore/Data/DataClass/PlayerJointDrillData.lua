@@ -518,7 +518,7 @@ function PlayerJointDrillData:JointDrillGameOver(callback, bSettle)
                 mapItems = netMsg.Items or {}
                 local nScore = netMsg.FightScore + netMsg.HpScore + netMsg.DifficultyScore
                 mapScore = {FightScore = netMsg.FightScore, HpScore = netMsg.HpScore, DifficultyScore = netMsg.DifficultyScore, 
-                            nTotalScoreOld = nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
+                            nTotalScore = nTotalScore, nScore = nScore, nScoreOld = nScoreOld}
                 nOld = netMsg.Old
                 nNew = netMsg.New
             end
@@ -577,7 +577,7 @@ function PlayerJointDrillData:JointDrillSettle(mapBuild, nTime, nDamage, callbac
     self:SetRecorderExcludeIds()
     self:StopRecord()
     --记录队伍信息
-    self:AddJointDrillTeam(mapBuild, nDamage, nTime)
+    self:AddJointDrillTeam(mapBuild, nTime, nDamage)
     self._EndTime = ClientManager.serverTimeStamp
     local function NetCallback(_, netMsg)
         self:UploadRecordFile(netMsg.Token)
@@ -745,7 +745,7 @@ function PlayerJointDrillData:GetBossHpBarNum()
     return 40 --默认值修改为40
 end
 
-function PlayerJointDrillData:AddJointDrillTeam(mapBuildData, nDamage, nTime)
+function PlayerJointDrillData:AddJointDrillTeam(mapBuildData, nTime, nDamage)
     local bInsert = false
     for _, v in ipairs(self.tbTeams) do
         if v.BuildId == mapBuildData.nBuildId then

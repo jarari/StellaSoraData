@@ -13271,14 +13271,12 @@
     "TemplateId": 111,
     "Name": "飞行灯泡（ 区域Boss）",
     "EET": 7,
-    "HpRatio": -9000,
     "WERFix": 570,
     "FERFix": 570,
     "SERFix": 570,
     "AERFix": 570,
     "LERFix": 570,
-    "DERFix": 570,
-    "ToughnessRatio": -9000
+    "DERFix": 570
   },
   "6009121": {
     "Id": 6009121,

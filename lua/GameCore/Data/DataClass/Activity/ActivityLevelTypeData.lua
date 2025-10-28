@@ -30,20 +30,9 @@ function ActivityLevelTypeData:RefreshActivityLevelGameActData(actId, msgData)
     if nCurTime > self.nEndTime then
         isEnding = true
     end
-    --printError(self.nOpenTime .. "  " .. nCurTime  .. "  " .. self.nEndTime)
-    local actCfg = ConfigTable.GetData("Activity", actId)
-    if actCfg ~= nil then
-        local strTmp = string.split(actCfg.StartTime,"T")
-        local strTmpHour = string.split(strTmp[2],"+")
-        local tmpHour = "0"..newDayTime
-        if newDayTime > 10 then
-            tmpHour = newDayTime
-        end
-        local startTimeTmp = strTmp[1] .. "T" ..tmpHour..":00:00+" ..strTmpHour[2]
-        self.startTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(actCfg.StartTime)
-        --printError("startTimeTmp" .. startTimeTmp)
-        self.startTimeRefreshTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(startTimeTmp)
-    end
+    local openTime = self.nOpenTime
+
+    self.startTimeRefreshTime = CS.ClientManager.Instance:GetNextRefreshTime(openTime) - 86400
     self.nActId = actId
     local function foreach_Base(baseData)
         if actId == baseData.ActivityId then
@@ -228,7 +217,7 @@ function ActivityLevelTypeData:GetUnLockHour(nType,id)
         local nRemainTime = openTime - nCurTime
         local hour = math.floor(nRemainTime / 3600)
         local min = math.floor((nRemainTime - hour * 3600) / 60)
-        local sec = math.floor((nRemainTime - hour * 3600 - min * 60) / 60)
+        local sec = nRemainTime - hour * 3600 - min * 60
         return hour,min,sec
     else
         local dayOpen = self.levelTabAdventure[id].baseData.DayOpen
@@ -237,7 +226,7 @@ function ActivityLevelTypeData:GetUnLockHour(nType,id)
         local nRemainTime = openTime - nCurTime
         local hour = math.floor(nRemainTime / 3600)
         local min = math.floor((nRemainTime - hour * 3600) / 60)
-        local sec = math.floor((nRemainTime - hour * 3600 - min * 60) / 60)
+        local sec = nRemainTime - hour * 3600 - min * 60
         return hour,min,sec
     end
     return 1,0,0

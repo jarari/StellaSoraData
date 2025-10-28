@@ -8086,169 +8086,169 @@
     "Id": 15503011,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 1900
+    "Value1": 500
   },
   "15505011": {
     "Id": 15505011,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 8300
+    "Value1": 15100
   },
   "15505021": {
     "Id": 15505021,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 13300
+    "Value1": 24100
   },
   "15505031": {
     "Id": 15505031,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 18200
+    "Value1": 33200
   },
   "15505041": {
     "Id": 15505041,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 23200
+    "Value1": 42200
   },
   "15505051": {
     "Id": 15505051,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 28200
+    "Value1": 51300
   },
   "15505061": {
     "Id": 15505061,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 33100
+    "Value1": 60300
   },
   "15505071": {
     "Id": 15505071,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 38100
+    "Value1": 69400
   },
   "15505081": {
     "Id": 15505081,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 43100
+    "Value1": 78400
   },
   "15505091": {
     "Id": 15505091,
     "AttributeType1": 56,
     "ParameterType1": 1,
-    "Value1": 48000
+    "Value1": 87500
   },
   "15506011": {
     "Id": 15506011,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 2000
+    "Value1": 4300
   },
   "15506021": {
     "Id": 15506021,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 3300
+    "Value1": 6800
   },
   "15506031": {
     "Id": 15506031,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 4500
+    "Value1": 9400
   },
   "15506041": {
     "Id": 15506041,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 5700
+    "Value1": 11900
   },
   "15506051": {
     "Id": 15506051,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 6900
+    "Value1": 14500
   },
   "15506061": {
     "Id": 15506061,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 8100
+    "Value1": 17100
   },
   "15506071": {
     "Id": 15506071,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 9400
+    "Value1": 19600
   },
   "15506081": {
     "Id": 15506081,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 10600
+    "Value1": 22200
   },
   "15506091": {
     "Id": 15506091,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 11800
+    "Value1": 24700
   },
   "15507011": {
     "Id": 15507011,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 2000
+    "Value1": 600
   },
   "15507021": {
     "Id": 15507021,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 3200
+    "Value1": 900
   },
   "15507031": {
     "Id": 15507031,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 4400
+    "Value1": 1200
   },
   "15507041": {
     "Id": 15507041,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 5600
+    "Value1": 1500
   },
   "15507051": {
     "Id": 15507051,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 6900
+    "Value1": 1900
   },
   "15507061": {
     "Id": 15507061,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 8100
+    "Value1": 2200
   },
   "15507071": {
     "Id": 15507071,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 9300
+    "Value1": 2500
   },
   "15507081": {
     "Id": 15507081,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 10500
+    "Value1": 2900
   },
   "15507091": {
     "Id": 15507091,
     "AttributeType1": 1,
     "ParameterType1": 2,
-    "Value1": 11700
+    "Value1": 3200
   },
   "15508011": {
     "Id": 15508011,
@@ -8308,109 +8308,109 @@
     "Id": 15510011,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 1200
+    "Value1": 1800
   },
   "15510021": {
     "Id": 15510021,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 2000
+    "Value1": 2900
   },
   "15510031": {
     "Id": 15510031,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 2700
+    "Value1": 4000
   },
   "15510041": {
     "Id": 15510041,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 3500
+    "Value1": 5100
   },
   "15510051": {
     "Id": 15510051,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 4200
+    "Value1": 6200
   },
   "15510061": {
     "Id": 15510061,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 4900
+    "Value1": 7300
   },
   "15510071": {
     "Id": 15510071,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 5700
+    "Value1": 8400
   },
   "15510081": {
     "Id": 15510081,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 6400
+    "Value1": 9500
   },
   "15510091": {
     "Id": 15510091,
     "AttributeType1": 57,
     "ParameterType1": 1,
-    "Value1": 7200
+    "Value1": 10600
   },
   "15511011": {
     "Id": 15511011,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 1100
+    "Value1": 2400
   },
   "15511021": {
     "Id": 15511021,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 1800
+    "Value1": 3800
   },
   "15511031": {
     "Id": 15511031,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 2500
+    "Value1": 5300
   },
   "15511041": {
     "Id": 15511041,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 3100
+    "Value1": 6700
   },
   "15511051": {
     "Id": 15511051,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 3800
+    "Value1": 8200
   },
   "15511061": {
     "Id": 15511061,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 4500
+    "Value1": 9600
   },
   "15511071": {
     "Id": 15511071,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 5100
+    "Value1": 11000
   },
   "15511081": {
     "Id": 15511081,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 5800
+    "Value1": 12500
   },
   "15511091": {
     "Id": 15511091,
     "AttributeType1": 21,
     "ParameterType1": 1,
-    "Value1": 6500
+    "Value1": 13900
   },
   "15513011": {
     "Id": 15513011,
@@ -8791,55 +8791,55 @@
     "Id": 15542011,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 4900
+    "Value1": 3200
   },
   "15542021": {
     "Id": 15542021,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 7800
+    "Value1": 5200
   },
   "15542031": {
     "Id": 15542031,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 10700
+    "Value1": 7100
   },
   "15542041": {
     "Id": 15542041,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 13600
+    "Value1": 9100
   },
   "15542051": {
     "Id": 15542051,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 16500
+    "Value1": 11000
   },
   "15542061": {
     "Id": 15542061,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 19400
+    "Value1": 12900
   },
   "15542071": {
     "Id": 15542071,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 22300
+    "Value1": 14900
   },
   "15542081": {
     "Id": 15542081,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 25200
+    "Value1": 16800
   },
   "15542091": {
     "Id": 15542091,
     "AttributeType1": 58,
     "ParameterType1": 1,
-    "Value1": 28000
+    "Value1": 19000
   },
   "15543011": {
     "Id": 15543011,
@@ -14021,55 +14021,55 @@
   },
   "14943011": {
     "Id": 14943011,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 2900
   },
   "14943021": {
     "Id": 14943021,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 4700
   },
   "14943031": {
     "Id": 14943031,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 6500
   },
   "14943041": {
     "Id": 14943041,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 8200
   },
   "14943051": {
     "Id": 14943051,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 10000
   },
   "14943061": {
     "Id": 14943061,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 11700
   },
   "14943071": {
     "Id": 14943071,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 13500
   },
   "14943081": {
     "Id": 14943081,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 15300
   },
   "14943091": {
     "Id": 14943091,
-    "AttributeType1": 37,
+    "AttributeType1": 19,
     "ParameterType1": 1,
     "Value1": 17000
   },

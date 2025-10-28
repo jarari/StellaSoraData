@@ -69,7 +69,6 @@ function EquipmentInstanceLevel:OnEvent_LevelResult(tbStar,bAbandon)
     local function callback(tbStarReward, tbFirstReward, tbSurpriseItems, nExp, mapChangeInfo)
         local function waitCallback()
             NovaAPI.InputEnable()
-            EventManager.Hit("EquipmentInstanceLevelEnd",mapDILevelCfgData.FloorId)
             if nStar > 0 then
                 self:PlaySuccessPerform(tbFirstReward,tbStarReward,tbSurpriseItems,nExp,tbStar, mapChangeInfo)
             else
@@ -95,9 +94,7 @@ function EquipmentInstanceLevel:OnEvent_LevelResult(tbStar,bAbandon)
                 self.parent:LevelEnd()
             end
         end
-        if nStarCount ~= 3 then
-            EventManager.Hit("EquipmentInstanceLevelEnd",mapDILevelCfgData.FloorId)
-        end
+        EventManager.Hit("EquipmentInstanceLevelEnd",mapDILevelCfgData.FloorId)
         if bAbandon then
             waitCallback()
         else

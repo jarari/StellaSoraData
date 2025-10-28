@@ -69,7 +69,6 @@ function DailyInstanceLevel:OnEvent_LevelResult(tbStar,bAbandon)
     local function callback(tbSelectReward,tbFirstReward,nExp, mapChangeInfo)
         local function waitCallback()
             NovaAPI.InputEnable()
-            EventManager.Hit("DailyInstanceLevelEnd",mapDILevelCfgData.FloorId)
             if nStar > 0 then
                 self:PlaySuccessPerform(tbFirstReward,tbSelectReward,nExp,tbStar, mapChangeInfo)
             else
@@ -94,9 +93,7 @@ function DailyInstanceLevel:OnEvent_LevelResult(tbStar,bAbandon)
                 self.parent:LevelEnd()
             end
         end
-        if nStarCount ~= 3 then
-            EventManager.Hit("DailyInstanceLevelEnd",mapDILevelCfgData.FloorId)
-        end
+        EventManager.Hit("DailyInstanceLevelEnd",mapDILevelCfgData.FloorId)
         if bAbandon then
             waitCallback()
         else 

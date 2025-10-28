@@ -27,7 +27,7 @@ AllEnum.SortingLayerName = {
     Overlay = "Overlay"
 }
 AllEnum.Const = {
-    MAX_TEAM_COUNT = 5,
+    MAX_TEAM_COUNT = 6,
     ICON_SCALE = 0.68, -- 所有圆形icon与品质底组合使用是，统一设置缩放值�?
 }
 AllEnum.CoinItemId = { -- 各货币的道具Id

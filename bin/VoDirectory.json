@@ -17639,6 +17639,126 @@
     "characterId": 156,
     "votype": "catchphrase"
   },
+  "91550101": {
+    "Id": 91550101,
+    "voResource": "vo_155_ui_greet_001",
+    "characterId": 9155,
+    "votype": "greet_npc"
+  },
+  "91550102": {
+    "Id": 91550102,
+    "voResource": "vo_155_ui_greet_002",
+    "characterId": 9155,
+    "votype": "greet_npc"
+  },
+  "91550201": {
+    "Id": 91550201,
+    "voResource": "vo_155_ui_greetmorn_001",
+    "characterId": 9155,
+    "votype": "greetmorn_npc"
+  },
+  "91550301": {
+    "Id": 91550301,
+    "voResource": "vo_155_ui_greetnoon_001",
+    "characterId": 9155,
+    "votype": "greetnoon_npc"
+  },
+  "91550401": {
+    "Id": 91550401,
+    "voResource": "vo_155_ui_greetnight_001",
+    "characterId": 9155,
+    "votype": "greetnight_npc"
+  },
+  "91550501": {
+    "Id": 91550501,
+    "voResource": "vo_155_ui_posterchat_001",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550502": {
+    "Id": 91550502,
+    "voResource": "vo_155_ui_posterchat_002",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550503": {
+    "Id": 91550503,
+    "voResource": "vo_155_ui_posterchat_003",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550504": {
+    "Id": 91550504,
+    "voResource": "vo_155_ui_posterchat_004",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550505": {
+    "Id": 91550505,
+    "voResource": "vo_155_ui_posterchat_005",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550506": {
+    "Id": 91550506,
+    "voResource": "vo_155_ui_posterchat_006",
+    "characterId": 9155,
+    "votype": "posterchat_npc"
+  },
+  "91550601": {
+    "Id": 91550601,
+    "voResource": "vo_story_155_001_confirm",
+    "characterId": 9155,
+    "votype": "limited"
+  },
+  "91550602": {
+    "Id": 91550602,
+    "voResource": "vo_story_155_008_happy",
+    "characterId": 9155,
+    "votype": "limited"
+  },
+  "91550603": {
+    "Id": 91550603,
+    "voResource": "vo_story_155_012_catchphrase",
+    "characterId": 9155,
+    "votype": "limited"
+  },
+  "91550604": {
+    "Id": 91550604,
+    "voResource": "vo_story_155_014_catchphrase",
+    "characterId": 9155,
+    "votype": "limited"
+  },
+  "91550701": {
+    "Id": 91550701,
+    "voResource": "vo_155_ui_hfc_001",
+    "characterId": 9155,
+    "votype": "hfc_npc"
+  },
+  "91550702": {
+    "Id": 91550702,
+    "voResource": "vo_155_ui_hfc_002",
+    "characterId": 9155,
+    "votype": "hfc_npc"
+  },
+  "91550801": {
+    "Id": 91550801,
+    "voResource": "vo_155_ui_hang_001",
+    "characterId": 9155,
+    "votype": "hang_npc"
+  },
+  "91550802": {
+    "Id": 91550802,
+    "voResource": "vo_155_ui_hang_002",
+    "characterId": 9155,
+    "votype": "hang_npc"
+  },
+  "91550901": {
+    "Id": 91550901,
+    "voResource": "vo_155_ui_exhang_001",
+    "characterId": 9155,
+    "votype": "exhang_npc"
+  },
   "91020101": {
     "Id": 91020101,
     "voResource": "vo_npc102_ui_greet_001",

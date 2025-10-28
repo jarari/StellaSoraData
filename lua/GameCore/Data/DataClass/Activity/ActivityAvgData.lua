@@ -167,6 +167,7 @@ function ActivityAvgData:IsActivityAvgUnlock(activityId, storyId)
     local cfg = ConfigTable.GetData("ActivityAvgLevel", storyId)
     local isPreReaded = self:IsActivityAvgReaded(activityId, cfg.PreLevelId) or cfg.PreLevelId == 0
     local nOpenTime = self.tbActAvgList[activityId].nOpenTime
+    nOpenTime = CS.ClientManager.Instance:GetNextRefreshTime(nOpenTime) - 86400
     local curTime = CS.ClientManager.Instance.serverTimeStamp
     local days = math.floor((curTime - nOpenTime) / 86400)
     return days >= cfg.DayOpen, isPreReaded, nOpenTime

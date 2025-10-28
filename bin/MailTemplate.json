@@ -241,7 +241,7 @@
   },
   "10001": {
     "Id": 10001,
-    "Explanation": "???",
+    "Explanation": "泳装活动结束倒计时邮件",
     "Icon": "Icon/Head/head_npc10201",
     "Author": "MailTemplate.10001.1",
     "LetterPaper": "background2",
@@ -251,7 +251,7 @@
   },
   "10002": {
     "Id": 10002,
-    "Explanation": "???",
+    "Explanation": "泳装活动结束货币转换邮件",
     "Icon": "Icon/Head/head_npc10201",
     "Author": "MailTemplate.10002.1",
     "LetterPaper": "background2",
@@ -261,7 +261,7 @@
   },
   "10003": {
     "Id": 10003,
-    "Explanation": "???",
+    "Explanation": "泳装活动任务结束未领取邮件",
     "Icon": "Icon/Head/head_npc10201",
     "Author": "MailTemplate.10003.1",
     "LetterPaper": "background2",

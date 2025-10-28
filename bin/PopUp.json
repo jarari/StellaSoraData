@@ -20,5 +20,15 @@
     "PopRefreshType": 2,
     "PopJumpType": 2,
     "JumpToParams": 149
+  },
+  "2006": {
+    "Id": 2006,
+    "SortId": 2006,
+    "PopUpType": 1,
+    "ActivityId": 101003,
+    "PopUpRes": "_101003/PopUp_01",
+    "ScriptName": "ActivityTaskPopUpCtrl_01",
+    "PopRefreshType": 1,
+    "PopJumpType": 1
   }
 }

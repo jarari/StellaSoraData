@@ -6,7 +6,7 @@
 
 local PlayerBaseData = class("PlayerBaseData")
 local TimerManager = require "GameCore.Timer.TimerManager"
-
+local AvgManager = require "GameCore.Module.AvgManager"
 
 local TimerScaleType = require "GameCore.Timer.TimerScaleType"
 local ModuleManager = require "GameCore.Module.ModuleManager"
@@ -610,6 +610,7 @@ function PlayerBaseData:OnNextDayRefresh()
         self.NextRefreshTimer:Cancel()
         self.NextRefreshTimer = nil
     end
+    
     local function callback(_, msgData)
         local curNextRefreshTime = self.NextRefreshTime
         self:SetNextRefreshTime(msgData.ServerTs)
@@ -622,10 +623,13 @@ function PlayerBaseData:OnNextDayRefresh()
         local bInAdventure = ModuleManager.GetIsAdventure()
         local bInStarTowerSweep = not bInAdventure and (PlayerData.State:GetStarTowerSweepState() or 
         PanelManager.GetCurPanelId() == PanelId.StarTowerResult or PanelManager.GetCurPanelId() == PanelId.StarTowerBuildSave)
-        local bInPureAvgStory = PanelManager.GetCurPanelId() == PanelId.PureAvgStory
-        if bInAdventure or bInStarTowerSweep or bInPureAvgStory then
+        local bInAvg = AvgManager.CheckInAvg()
+        if bInAdventure or bInStarTowerSweep or bInAvg then
             print("Inlevel")
             self.bNewDay = true
+            if bInAvg then
+                self.bShowNewDayWind = true
+            end
             return
         end
         self:BackToHome()

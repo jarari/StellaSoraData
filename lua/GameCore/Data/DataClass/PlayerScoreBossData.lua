@@ -627,6 +627,7 @@ function PlayerScoreBossData:InitRankData()
     self.RankSelfMsg = nil
     self.RankPlayerMsg = {}
     self.RankBorder = {}
+    self.nRankTotalCount = 0
 end
 
 function PlayerScoreBossData:SetRankMsg(mapMsgData,cb)
@@ -644,6 +645,11 @@ function PlayerScoreBossData:SetRankMsg(mapMsgData,cb)
             table.insert(self.RankBorder,v)
         end
     end
+    
+    if mapMsgData.Total then
+        self.nRankTotalCount = mapMsgData.Total
+    end
+    
     cb()
 end
 
@@ -692,9 +698,13 @@ function PlayerScoreBossData:GetSelfBorderIndex()
     return 1
 end
 
---获取排名数据长度 最多一百名
+--获取排行榜总人数
 function PlayerScoreBossData:GetRankPlayerCount()
-    return #self.RankPlayerMsg
+    return self.nRankTotalCount or 0
+end
+--获取排名信息数量
+function PlayerScoreBossData:GetRankTableCount()
+    return #self.RankPlayerMsg or 0
 end
 --获取排名信息
 function PlayerScoreBossData:GetPlayerRankMsg(index)

@@ -4,6 +4,7 @@
     "MonsterLv": 1,
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_001_A_01",
     "ConfigPrefabName": "StoryActivity_001_A_N1",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -12,6 +13,7 @@
     "MonsterLv": 2,
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_015_A_01",
     "ConfigPrefabName": "StoryActivity_015_A_N2",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -20,6 +22,7 @@
     "MonsterLv": 3,
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_007_B_01",
     "ConfigPrefabName": "StoryActivity_007_B_N3",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -28,6 +31,7 @@
     "MonsterLv": 4,
     "SceneName": "Levels/Main/Coast/Coast_Main_7_1",
     "ConfigPrefabName": "StoryActivity_HaiTu_N4",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -37,6 +41,7 @@
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_001_A_01_Mir",
     "ConfigPrefabName": "StoryActivity_001_A_N5_Mir",
     "Mir": true,
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -46,6 +51,7 @@
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_011_A_01_Mir",
     "ConfigPrefabName": "StoryActivity_011_A_N6_Mir",
     "Mir": true,
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -55,6 +61,7 @@
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_007_B_01_Mir",
     "ConfigPrefabName": "StoryActivity_007_B_N7_Mir",
     "Mir": true,
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -63,6 +70,7 @@
     "MonsterLv": 8,
     "SceneName": "Levels/Main/Coast/Coast_Main_7_1",
     "ConfigPrefabName": "StoryActivity_HaiTu_N8",
+    "Theme": 401,
     "BGM": "haiTu_realChallenge_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop"
   },
@@ -71,6 +79,7 @@
     "MonsterLv": 9,
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_011_A_01",
     "ConfigPrefabName": "StoryActivity_011_A_H1",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -79,6 +88,7 @@
     "MonsterLv": 10,
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_007_B_01",
     "ConfigPrefabName": "StoryActivity_007_B_H2",
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -88,6 +98,7 @@
     "SceneName": "Levels/StoryActivity/StoryActivity_1/StoryActivity_1_015_A_01_Mir",
     "ConfigPrefabName": "StoryActivity_015_A_H3_Mir",
     "Mir": true,
+    "Theme": 401,
     "BGM": "swimsuit_combatNormal_setState",
     "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   },
@@ -96,109 +107,8 @@
     "MonsterLv": 12,
     "SceneName": "Levels/Main/Coast/Coast_Main_7_1",
     "ConfigPrefabName": "StoryActivity_HaiTu_H4",
+    "Theme": 401,
     "BGM": "haiTu_realChallenge_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop"
-  },
-  "300121": {
-    "Id": 300121,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01",
-    "ConfigPrefabName": "StoryActivity_016_A_N1",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300122": {
-    "Id": 300122,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01",
-    "ConfigPrefabName": "StoryActivity_013_A_N2",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300123": {
-    "Id": 300123,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01",
-    "ConfigPrefabName": "StoryActivity_001_A_N3",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300124": {
-    "Id": 300124,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01",
-    "ConfigPrefabName": "StoryActivity_006_A_N4",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300125": {
-    "Id": 300125,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_013_A_Mir_N5",
-    "Mir": true,
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300126": {
-    "Id": 300126,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_001_A_Mir_N6",
-    "Mir": true,
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300127": {
-    "Id": 300127,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_006_A_Mir_N7",
-    "Mir": true,
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300128": {
-    "Id": 300128,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_016_A_Mir_N8",
-    "Mir": true,
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300129": {
-    "Id": 300129,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01",
-    "ConfigPrefabName": "StoryActivity_001_A_H1",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300130": {
-    "Id": 300130,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01",
-    "ConfigPrefabName": "StoryActivity_013_A_H2",
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300131": {
-    "Id": 300131,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_006_A_Mir_H3",
-    "Mir": true,
-    "BGM": "swimsuit_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
-  },
-  "300132": {
-    "Id": 300132,
-    "MonsterLv": 2,
-    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01_Mir",
-    "ConfigPrefabName": "StoryActivity_016_A_Mir_H4",
-    "Mir": true,
-    "BGM": "roguelike_combatHaitu_setState",
-    "LeaveTriggerEvent": "amb_swimsuit_all_stop"
   }
 }

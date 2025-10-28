@@ -37,6 +37,17 @@ function PlayerBoardData:GetSelectBoardData()
     return self.tbSelectBoardList
 end
 
+--检查看板中是否有角色
+function PlayerBoardData:CheckSelectBoardChar()
+    for _, nId in ipairs(self.tbSelectBoardList) do
+        local handbookData = PlayerHandbookData:GetHandbookDataById(nId)
+        if handbookData ~= nil and handbookData:GetType() == GameEnum.handbookType.SKIN then
+            return true
+        end
+    end
+    return false
+end
+
 ---------------主界面看板播放-----------------------
 function PlayerBoardData:GetCurBoardData()
     if self.tbSelectBoardList[self.nCurBoardIdx] ~= nil then

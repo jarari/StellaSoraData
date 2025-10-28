@@ -9232,7 +9232,7 @@
       15512001
     ],
     "Time": 80000,
-    "LaminatedNum": 1,
+    "LaminatedNum": 2,
     "Num": 1,
     "TimeSuperposition": 2,
     "Timing": 1,
@@ -9345,6 +9345,18 @@
     ],
     "Time": 100000,
     "LaminatedNum": 20,
+    "Num": 1,
+    "TimeSuperposition": 2,
+    "Timing": 1,
+    "ReplaceType": true,
+    "ReplaceMode": true
+  },
+  "15542011": {
+    "Id": 15542011,
+    "Name": "希娅 必杀潜能42 自身输出属性提升",
+    "Sort": 1,
+    "Time": 60000,
+    "LaminatedNum": 1,
     "Num": 1,
     "TimeSuperposition": 2,
     "Timing": 1,

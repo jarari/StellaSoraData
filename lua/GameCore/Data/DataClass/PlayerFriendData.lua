@@ -152,12 +152,9 @@ function PlayerFriendData:JudgeLogin(nNanoTime)
     local nDay = tonumber(os.date("%d", nTime))
 
     local nCurTime = CS.ClientManager.Instance.serverTimeStamp
-    local nThisYear = tonumber(os.date("%Y", nCurTime))
-    local nThisMontn = tonumber(os.date("%m", nCurTime))
-    local nToday = tonumber(os.date("%d", nCurTime))
 
-    if nYear == nThisYear and nMonth == nThisMontn and nDay == nToday then
-        -- 今日
+    if nCurTime - nTime <= 86400 then
+        -- 24小时
         return ConfigTable.GetUIText("Friend_Today"), AllEnum.LoginTime.Today
         -- elseif nYear == nThisYear and nMonth == nThisMontn and nDay + 1 == nToday then
         --     -- 昨日

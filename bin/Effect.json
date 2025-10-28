@@ -70084,6 +70084,7 @@
   },
   "4038001": {
     "Id": 4038001,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70097,6 +70098,7 @@
   },
   "4038002": {
     "Id": 4038002,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70110,6 +70112,7 @@
   },
   "4038003": {
     "Id": 4038003,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70123,6 +70126,7 @@
   },
   "4038004": {
     "Id": 4038004,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70136,6 +70140,7 @@
   },
   "4038005": {
     "Id": 4038005,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70149,6 +70154,7 @@
   },
   "4038006": {
     "Id": 4038006,
+    "Name": "全队光系伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70162,6 +70168,7 @@
   },
   "4038021": {
     "Id": 4038021,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70179,6 +70186,7 @@
   },
   "4038022": {
     "Id": 4038022,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70196,6 +70204,7 @@
   },
   "4038023": {
     "Id": 4038023,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70213,6 +70222,7 @@
   },
   "4038024": {
     "Id": 4038024,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70230,6 +70240,7 @@
   },
   "4038025": {
     "Id": 4038025,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70247,6 +70258,7 @@
   },
   "4038026": {
     "Id": 4038026,
+    "Name": "\\u000b光系主控角色对目标造成绝招伤害时，该目标",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70264,6 +70276,7 @@
   },
   "4038027": {
     "Id": 4038027,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70277,6 +70290,7 @@
   },
   "4038028": {
     "Id": 4038028,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70290,6 +70304,7 @@
   },
   "4038029": {
     "Id": 4038029,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70303,6 +70318,7 @@
   },
   "4038030": {
     "Id": 4038030,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70316,6 +70332,7 @@
   },
   "4038031": {
     "Id": 4038031,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70329,6 +70346,7 @@
   },
   "4038032": {
     "Id": 4038032,
+    "Name": "受到光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70342,6 +70360,7 @@
   },
   "4038101": {
     "Id": 4038101,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70358,6 +70377,7 @@
   },
   "4038102": {
     "Id": 4038102,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70374,6 +70394,7 @@
   },
   "4038103": {
     "Id": 4038103,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70390,6 +70411,7 @@
   },
   "4038104": {
     "Id": 4038104,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70406,6 +70428,7 @@
   },
   "4038105": {
     "Id": 4038105,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70422,6 +70445,7 @@
   },
   "4038121": {
     "Id": 4038121,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70438,6 +70462,7 @@
   },
   "4038122": {
     "Id": 4038122,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70454,6 +70479,7 @@
   },
   "4038123": {
     "Id": 4038123,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70470,6 +70496,7 @@
   },
   "4038124": {
     "Id": 4038124,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70486,6 +70513,7 @@
   },
   "4038125": {
     "Id": 4038125,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70502,6 +70530,7 @@
   },
   "4038141": {
     "Id": 4038141,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70520,6 +70549,7 @@
   },
   "4038142": {
     "Id": 4038142,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70538,6 +70568,7 @@
   },
   "4038143": {
     "Id": 4038143,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70556,6 +70587,7 @@
   },
   "4038144": {
     "Id": 4038144,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70574,6 +70606,7 @@
   },
   "4038145": {
     "Id": 4038145,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70592,6 +70625,7 @@
   },
   "4038146": {
     "Id": 4038146,
+    "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70605,6 +70639,7 @@
   },
   "4038147": {
     "Id": 4038147,
+    "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70618,6 +70653,7 @@
   },
   "4038148": {
     "Id": 4038148,
+    "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70631,6 +70667,7 @@
   },
   "4038149": {
     "Id": 4038149,
+    "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70644,6 +70681,7 @@
   },
   "4038150": {
     "Id": 4038150,
+    "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70657,6 +70695,7 @@
   },
   "4038161": {
     "Id": 4038161,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70675,6 +70714,7 @@
   },
   "4038162": {
     "Id": 4038162,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70693,6 +70733,7 @@
   },
   "4038163": {
     "Id": 4038163,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70711,6 +70752,7 @@
   },
   "4038164": {
     "Id": 4038164,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70729,6 +70771,7 @@
   },
   "4038165": {
     "Id": 4038165,
+    "Name": "【触发buff条件】\\u000b光系主控角色造成技能伤害时，光系主控角色",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -70747,6 +70790,7 @@
   },
   "4038166": {
     "Id": 4038166,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70760,6 +70804,7 @@
   },
   "4038167": {
     "Id": 4038167,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70773,6 +70818,7 @@
   },
   "4038168": {
     "Id": 4038168,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70786,6 +70832,7 @@
   },
   "4038169": {
     "Id": 4038169,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70799,6 +70846,7 @@
   },
   "4038170": {
     "Id": 4038170,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70812,6 +70860,7 @@
   },
   "4038201": {
     "Id": 4038201,
+    "Name": "【脚本buff】光系主控角色累计造成{1}次技能伤害后，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70825,6 +70874,7 @@
   },
   "4038202": {
     "Id": 4038202,
+    "Name": "【脚本buff】光系主控角色累计造成{1}次技能伤害后，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70838,6 +70888,7 @@
   },
   "4038203": {
     "Id": 4038203,
+    "Name": "【脚本buff】光系主控角色累计造成{1}次技能伤害后，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70851,6 +70902,7 @@
   },
   "4038204": {
     "Id": 4038204,
+    "Name": "【脚本buff】光系主控角色累计造成{1}次技能伤害后，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70864,6 +70916,7 @@
   },
   "4038205": {
     "Id": 4038205,
+    "Name": "【脚本buff】光系主控角色累计造成{1}次技能伤害后，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -70877,6 +70930,7 @@
   },
   "4039001": {
     "Id": 4039001,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70893,6 +70947,7 @@
   },
   "4039002": {
     "Id": 4039002,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70909,6 +70964,7 @@
   },
   "4039003": {
     "Id": 4039003,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70925,6 +70981,7 @@
   },
   "4039004": {
     "Id": 4039004,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70941,6 +70998,7 @@
   },
   "4039005": {
     "Id": 4039005,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70957,6 +71015,7 @@
   },
   "4039006": {
     "Id": 4039006,
+    "Name": "光系主控角色普攻伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70973,6 +71032,7 @@
   },
   "4039021": {
     "Id": 4039021,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -70989,6 +71049,7 @@
   },
   "4039022": {
     "Id": 4039022,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71005,6 +71066,7 @@
   },
   "4039023": {
     "Id": 4039023,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71021,6 +71083,7 @@
   },
   "4039024": {
     "Id": 4039024,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71037,6 +71100,7 @@
   },
   "4039025": {
     "Id": 4039025,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71053,6 +71117,7 @@
   },
   "4039026": {
     "Id": 4039026,
+    "Name": "光系主控角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71069,6 +71134,7 @@
   },
   "4039041": {
     "Id": 4039041,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71082,6 +71148,7 @@
   },
   "4039042": {
     "Id": 4039042,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71095,6 +71162,7 @@
   },
   "4039043": {
     "Id": 4039043,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71108,6 +71176,7 @@
   },
   "4039044": {
     "Id": 4039044,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71121,6 +71190,7 @@
   },
   "4039045": {
     "Id": 4039045,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71134,6 +71204,7 @@
   },
   "4039046": {
     "Id": 4039046,
+    "Name": "【脚本buff】\\u000b光系主控角色绝招持续期间，如果任意角色触发##光系印记#1015#，全队光系伤害提升<color=#ec6d21>{2}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71147,6 +71218,7 @@
   },
   "4039101": {
     "Id": 4039101,
+    "Name": "队伍中光系角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71161,6 +71233,7 @@
   },
   "4039102": {
     "Id": 4039102,
+    "Name": "队伍中光系角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71175,6 +71248,7 @@
   },
   "4039103": {
     "Id": 4039103,
+    "Name": "队伍中光系角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71189,6 +71263,7 @@
   },
   "4039104": {
     "Id": 4039104,
+    "Name": "队伍中光系角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71203,6 +71278,7 @@
   },
   "4039105": {
     "Id": 4039105,
+    "Name": "队伍中光系角色技能伤害提升<color=#ec6d21>{1}</color>。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 10,
@@ -71217,6 +71293,7 @@
   },
   "4039121": {
     "Id": 4039121,
+    "Name": "【触发buff条件】\\u000b任意光系角色释放技能时，光系角色",
     "Trigger": 6,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71235,6 +71312,7 @@
   },
   "4039122": {
     "Id": 4039122,
+    "Name": "【触发buff条件】\\u000b任意光系角色释放技能时，光系角色",
     "Trigger": 6,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71253,6 +71331,7 @@
   },
   "4039123": {
     "Id": 4039123,
+    "Name": "【触发buff条件】\\u000b任意光系角色释放技能时，光系角色",
     "Trigger": 6,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71271,6 +71350,7 @@
   },
   "4039124": {
     "Id": 4039124,
+    "Name": "【触发buff条件】\\u000b任意光系角色释放技能时，光系角色",
     "Trigger": 6,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71289,6 +71369,7 @@
   },
   "4039125": {
     "Id": 4039125,
+    "Name": "【触发buff条件】\\u000b任意光系角色释放技能时，光系角色",
     "Trigger": 6,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71307,6 +71388,7 @@
   },
   "4039126": {
     "Id": 4039126,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71320,6 +71402,7 @@
   },
   "4039127": {
     "Id": 4039127,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71333,6 +71416,7 @@
   },
   "4039128": {
     "Id": 4039128,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71346,6 +71430,7 @@
   },
   "4039129": {
     "Id": 4039129,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71359,6 +71444,7 @@
   },
   "4039130": {
     "Id": 4039130,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{1}</color>，持续{3}秒，可叠加{4}层。",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71372,6 +71458,7 @@
   },
   "4039200": {
     "Id": 4039200,
+    "Name": "【脚本buff】衍射",
     "Trigger": 2,
     "TriggerTarget": 1,
     "TriggerCondition1": 7,
@@ -71390,6 +71477,7 @@
   },
   "4039201": {
     "Id": 4039201,
+    "Name": "【脚本buff】基础技能伤害buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71403,6 +71491,7 @@
   },
   "4039202": {
     "Id": 4039202,
+    "Name": "【脚本buff】基础技能伤害buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71416,6 +71505,7 @@
   },
   "4039203": {
     "Id": 4039203,
+    "Name": "【脚本buff】基础技能伤害buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71429,6 +71519,7 @@
   },
   "4039204": {
     "Id": 4039204,
+    "Name": "【脚本buff】基础技能伤害buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,
@@ -71442,6 +71533,7 @@
   },
   "4039205": {
     "Id": 4039205,
+    "Name": "【脚本buff】基础技能伤害buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerCondition1": 1,

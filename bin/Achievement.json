@@ -3916,7 +3916,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 10,
     "Tid1": 2,
     "Qty1": 5
   },
@@ -3928,7 +3928,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 10,
     "Tid1": 2,
     "Qty1": 5
   },
@@ -3940,7 +3940,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 10,
     "Tid1": 2,
     "Qty1": 5
   },
@@ -3952,7 +3952,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 10,
     "Tid1": 2,
     "Qty1": 5
   },
@@ -4000,7 +4000,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 20,
     "Prerequisites": [
       276
     ],
@@ -4015,7 +4015,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 20,
     "Prerequisites": [
       277
     ],
@@ -4030,7 +4030,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 20,
     "Prerequisites": [
       278
     ],
@@ -4045,7 +4045,7 @@
     "Rarity": 3,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 20,
     "Prerequisites": [
       279
     ],
@@ -4105,7 +4105,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 30,
     "Prerequisites": [
       283
     ],
@@ -4120,7 +4120,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 30,
     "Prerequisites": [
       284
     ],
@@ -4135,7 +4135,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 30,
     "Prerequisites": [
       285
     ],
@@ -4150,7 +4150,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 30,
     "Prerequisites": [
       286
     ],
@@ -4210,7 +4210,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 40,
     "Prerequisites": [
       290
     ],
@@ -4225,7 +4225,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 40,
     "Prerequisites": [
       291
     ],
@@ -4240,7 +4240,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 40,
     "Prerequisites": [
       292
     ],
@@ -4255,7 +4255,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 40,
     "Prerequisites": [
       293
     ],
@@ -4315,7 +4315,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 50,
     "Prerequisites": [
       297
     ],
@@ -4330,7 +4330,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 50,
     "Prerequisites": [
       298
     ],
@@ -4345,7 +4345,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 50,
     "Prerequisites": [
       299
     ],
@@ -4360,7 +4360,7 @@
     "Rarity": 2,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 50,
     "Prerequisites": [
       300
     ],
@@ -4420,7 +4420,7 @@
     "Rarity": 1,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 60,
     "Prerequisites": [
       304
     ],
@@ -4435,7 +4435,7 @@
     "Rarity": 1,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 60,
     "Prerequisites": [
       305
     ],
@@ -4450,7 +4450,7 @@
     "Rarity": 1,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 60,
     "Prerequisites": [
       306
     ],
@@ -4465,7 +4465,7 @@
     "Rarity": 1,
     "Type": 3,
     "CompleteCond": 46,
-    "AimNumShow": 1,
+    "AimNumShow": 60,
     "Prerequisites": [
       307
     ],

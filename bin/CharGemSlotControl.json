@@ -25,7 +25,7 @@
     "UnlockLevel": 80,
     "UniqueAttrGroupProb": 4000,
     "UniqueAttrGroupId": 11,
-    "GuaranteeCount": 10,
+    "GuaranteeCount": 40,
     "AttrGroupId": [
       5,
       6,
@@ -45,7 +45,7 @@
     "UnlockLevel": 90,
     "UniqueAttrGroupProb": 3330,
     "UniqueAttrGroupId": 12,
-    "GuaranteeCount": 12,
+    "GuaranteeCount": 48,
     "AttrGroupId": [
       9,
       10

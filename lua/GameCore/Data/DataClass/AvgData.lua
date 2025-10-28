@@ -73,12 +73,50 @@ function AvgData:UnInit()
         EventManager.Remove("StoryDialog_DialogEnd", self, self.OnEvent_AvgSTEnd)
     end
 end
+function AvgData:ClearTempData()
+    self.tbTempStoryIds = {}
+    self.tbTempEvIds = {}
+    self.mapTempCL = {}
+    self.mapTempLatestCnt = {}
+    self.mapTempPersonality = {}
+    self.mapTempPersonalityFactor = {}
+    self.mapTempPersonalityCnt = {}
+    self.CURRENT_STORY_ID = 0
+end
+function AvgData:SafeCheck()
+    if type(self.tbTempStoryIds) ~= "table" then
+        return false
+    end
+    if #self.tbTempStoryIds <= 0 then
+        return false
+    end
+    local _sStoryId = self.tbTempStoryIds[1]
+    if type(_sStoryId) ~= "string" then
+        return false
+    end
+    local _nStoryId = self.CFG_Story[_sStoryId]
+    if type(_nStoryId) ~= "number" then
+        return false
+    end
+    if type(self.CURRENT_STORY_ID) ~= "number" then
+        return false
+    end
+    if _nStoryId ~= self.CURRENT_STORY_ID then
+        return false
+    end
+    local cfgdata = ConfigTable.GetData_Story(_nStoryId)
+    if cfgdata == nil then
+        return false
+    end
+    return true
+end
 function AvgData:CacheAvgData(StoryInfo)
     self.tbStoryIds = {}
     self.tbTempStoryIds = {}
     self.tbEvIds = {}
     self.tbTempEvIds = {}
     self.mapChosen = {}
+    self.mapTempCL = {}
         -- self.mapTempChosen = {}
     self.mapLatest = {}
         -- self.mapTempLatest = {}
@@ -179,7 +217,7 @@ end
 function AvgData:CheckIfTrue(bIsMajor, sAvgId, nGroupId, nIndex, nCheckount)
     local n, sCheckTarget = self:AvgLuaNameToStoryId(sAvgId)
     if table.indexof(self.tbTempStoryIds, sCheckTarget) > 0 then
-        -- 判断的是当前在播的演出，则从本地临时数据中判断，能判断所选次数。
+        -- 判断的是当前在播的演出，则从本地临时数据中判断，只能判断所选次数。
         return self:CheckIfTrue_Client(bIsMajor, sAvgId, nGroupId, nIndex, nCheckount)
     else
         -- 判断的并非当前在播的演出，则从记服务器数据中判断，只能判断最后一次所选，不能判断次数。
@@ -286,9 +324,22 @@ function AvgData:IsUnlock(sConditionId)
     return bResult, tbResult
 end
 function AvgData:MarkStoryId(sAvgId)
-    if AVG_EDITOR ~= true and self.CURRENT_STORY_ID <= 0 then return end
+    if AVG_EDITOR == true then
+        -- nothing need to be done.
+    else
+        if type(self.CURRENT_STORY_ID) == "number" then
+            local cfgdata = ConfigTable.GetData_Story(self.CURRENT_STORY_ID)
+            if cfgdata == nil then
+                return
+            end
+        else
+            return
+        end
+    end
     local nId, storyId = self:AvgLuaNameToStoryId(sAvgId)
-    if storyId == nil then return end
+    if storyId == nil then
+        return
+    end
     if table.indexof(self.tbTempStoryIds, storyId) <= 0 --[[ and table.indexof(self.tbStoryIds, storyId) <= 0 ]] then -- 重打关卡时仍然临时记录它们
         table.insert(self.tbTempStoryIds, storyId)
     end
@@ -480,9 +531,23 @@ function AvgData:IsStoryChapterUnlock(nChapterId)
 end
 -- 与服务器通信，将临时记录的 证据、路线、性格 存库，返回成功时合并本地数据。
 function AvgData:SendMsg_STORY_ENTER(nStoryId, nBuildId, bNewestStory)
-    if type(nStoryId) ~= "number" then nStoryId = self.CFG_Story[nStoryId] end
+    if type(nStoryId) == "string" then
+        nStoryId = self.CFG_Story[nStoryId]
+        if type(nStoryId) ~= "number" then
+            return
+        end
+    end
+    if type(nStoryId) == "number" then
+        local cfgdata = ConfigTable.GetData_Story(nStoryId)
+        if cfgdata == nil then
+            return
+        end
+    else
+        return
+    end
     if nBuildId == nil then nBuildId = 0 end
     local func_cb = function()
+        self:ClearTempData() -- 成功收到 进关卡消息 的返回时复位临时数据
         if bNewestStory == true then
             self:SetRecentStoryId(nStoryId)
         end
@@ -517,7 +582,7 @@ function AvgData:SendMsg_STORY_ENTER(nStoryId, nBuildId, bNewestStory)
             end
             printLog("进AVG演出了 " .. mapCfgData_Story.AvgLuaName)
             EventManager.Add("StoryDialog_DialogEnd", self, self.OnEvent_AvgSTEnd)
-            EventManager.Hit("StoryDialog_DialogStart", mapCfgData_Story.AvgLuaName)
+            EventManager.Hit("StoryDialog_DialogStart", mapCfgData_Story.AvgLuaName, nil, nil, nil, nil, mapCfgData_Story.AvgMotion)
         end
     end
     HttpNetHandler.SendMsg(NetMsgId.Id.story_apply_req, {Idx = nStoryId, BuildId = nBuildId}, nil, func_cb)
@@ -532,7 +597,20 @@ function AvgData:SendMsg_STORY_DONE(callBack,tbBattleEvents)
             table.insert(self.tbTempStoryIds, mapStoryCfg.StoryId)
         end
     else -- 演出关
+        if self:SafeCheck() ~= true then
+            self:ClearTempData()
+            local sErrorLog = "error:"
+            for i, v in ipairs(self.tbTempStoryIds) do
+                sErrorLog = sErrorLog .. tostring(v) .. ","
+            end
+            sErrorLog = sErrorLog .. tostring(self.CURRENT_STORY_ID)
+            printError(sErrorLog)
+            local msg = { nType = AllEnum.MessageBox.Desc, sContent = sErrorLog, callbackConfirm = nil, bBlur = false }
+            EventManager.Hit(EventId.OpenMessageBox, msg)
+            return
+        end
         if #self.tbTempStoryIds > 0 then
+            -- 组织正常通关数据逻辑
             for i, sStoryId in ipairs(self.tbTempStoryIds) do
                 local nStoryId = self.CFG_Story[sStoryId]
                 mapSendMsgData.List[i] = {Idx = nStoryId, Major = {}, Personality = {}}
@@ -579,8 +657,10 @@ function AvgData:SendMsg_STORY_DONE(callBack,tbBattleEvents)
         PlayerData.Char:StoryPass(tbPassId)
     end
 
-    local bCBTSpecialNotice = false
-    local nStoryId, sNoticeTextId = nil, nil
+    --[[ CBT only
+        local bCBTSpecialNotice = false
+        local nStoryId, sNoticeTextId = nil, nil
+    ]]
     --[[
         -- CBT1特殊提示
         if self.CURRENT_STORY_ID == 102 or self.CURRENT_STORY_ID == 321 then
@@ -588,14 +668,16 @@ function AvgData:SendMsg_STORY_DONE(callBack,tbBattleEvents)
             sNoticeTextId = "CBT1SpecialNotice_" .. tostring(nStoryId)
         end
     ]]
-    -- CBT2特殊提示
-    if self.CURRENT_STORY_ID == 217 then
-        nStoryId = self.CURRENT_STORY_ID
-        sNoticeTextId = "CBT1SpecialNotice_321"
-    end
-    if nStoryId ~= nil then
-        bCBTSpecialNotice = table.indexof(self.tbStoryIds, nStoryId) <= 0
-    end
+    --[[ 
+        -- CBT2特殊提示
+        if self.CURRENT_STORY_ID == 217 then
+            nStoryId = self.CURRENT_STORY_ID
+            sNoticeTextId = "CBT1SpecialNotice_321"
+        end
+        if nStoryId ~= nil then
+            bCBTSpecialNotice = table.indexof(self.tbStoryIds, nStoryId) <= 0
+        end
+    ]]
 
     -- 发送消息成功后回调
     local func_merge = function(tbSrc, tbTarget)
@@ -686,16 +768,18 @@ function AvgData:SendMsg_STORY_DONE(callBack,tbBattleEvents)
                     table.insert(tbItem, {Tid = value.Tid, Qty = value.Qty, rewardType = AllEnum.RewardType.First})
                 end
             end
-            -- local function CBT_SpecialNotice()--CBT第一张第二节首次通关时弹CBT特别提示。
-            --     if bCBTSpecialNotice ~= true then return end
-            --     local msg = {
-            --         nType = AllEnum.MessageBox.Desc,
-            --         sContent = ConfigTable.GetUIText(sNoticeTextId),
-            --         callbackConfirm = nil,
-            --         bBlur = false,
-            --     }
-            --     EventManager.Hit(EventId.OpenMessageBox, msg)
-            -- end
+            --[[ CBT only
+                local function CBT_SpecialNotice()--CBT第一张第二节首次通关时弹CBT特别提示。
+                    if bCBTSpecialNotice ~= true then return end
+                    local msg = {
+                        nType = AllEnum.MessageBox.Desc,
+                        sContent = ConfigTable.GetUIText(sNoticeTextId),
+                        callbackConfirm = nil,
+                        bBlur = false,
+                    }
+                    EventManager.Hit(EventId.OpenMessageBox, msg)
+                end
+            ]]
             local function AfterRewardDisplay()
                 --CBT_SpecialNotice() --如果还需要该提示打开此函数注释即可。
                 EventManager.Hit("Story_RewardClosed")
@@ -722,6 +806,7 @@ function AvgData:OnEvent_AvgSTEnd()
         self.tbTempEvIds = {}
         --[[ self.mapTempChosen = {}
         self.mapTempLatest = {} ]]
+        self.mapTempCL = {}
         self.mapTempLatestCnt = {}
         self.mapTempPersonality = {}
         self.mapTempPersonalityCnt = {}

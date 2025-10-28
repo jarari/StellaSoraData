@@ -23,6 +23,14 @@
   "MallPackage.pack.01_role_m.2": "盈月特选·青空礼券套装",
   "MallPackage.pack.01_role_w.1": "每周物资优选\u000b旅人养成组合",
   "MallPackage.pack.01_role_w.2": "每周物资优选·旅人养成组合",
+  "MallPackage.pack.02_disc.1": "欢腾巨浪\u000b灿金闪碟组合",
+  "MallPackage.pack.02_disc.2": "欢腾巨浪·灿金闪碟组合",
+  "MallPackage.pack.02_gift.1": "欢腾巨浪\u000b倾心礼品组合",
+  "MallPackage.pack.02_gift.2": "欢腾巨浪·倾心礼品组合",
+  "MallPackage.pack.02_res.1": "欢腾巨浪\u000b旅人养成组合",
+  "MallPackage.pack.02_res.2": "欢腾巨浪·旅人养成组合",
+  "MallPackage.pack.02_role.1": "欢腾巨浪\u000b青空礼券组合",
+  "MallPackage.pack.02_role.2": "欢腾巨浪·青空礼券组合",
   "MallPackage.pack.disc.1": "启程限定\u000b灿金闪碟组合",
   "MallPackage.pack.disc.2": "启程限定·灿金闪碟组合",
   "MallPackage.pack.first.1": "启程限定\u000b6元特惠组合",
@@ -36,5 +44,7 @@
   "MallPackage.pack.role_common.1": "启程限定\u000b萌芽礼券套装",
   "MallPackage.pack.role_common.2": "启程限定·萌芽礼券套装",
   "MallPackage.pack.sr.1": "启程限定\u000b自选旅人组合",
-  "MallPackage.pack.sr.2": "启程限定·自选旅人组合"
+  "MallPackage.pack.sr.2": "启程限定·自选旅人组合",
+  "MallPackage.skin.98.01.1": "日晒的余温",
+  "MallPackage.skin.98.01.2": "解锁尘沙专属形象「日晒的余温」的凭证！"
 }
