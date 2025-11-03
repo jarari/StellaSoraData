@@ -256,34 +256,28 @@
     "Id": 1190101,
     "QuestName": "LevelQuest.1190101.1",
     "LevelQuestTargetIds": [
-      11901011
+      11901011,
+      11901012
     ]
   },
   "1190102": {
     "Id": 1190102,
     "QuestName": "LevelQuest.1190102.1",
     "LevelQuestTargetIds": [
-      11901021
+      11901031,
+      11901032
     ]
   },
   "1190103": {
     "Id": 1190103,
     "QuestName": "LevelQuest.1190103.1",
     "LevelQuestTargetIds": [
-      11901031,
-      11901032
+      11901041
     ]
   },
   "1190104": {
     "Id": 1190104,
     "QuestName": "LevelQuest.1190104.1",
-    "LevelQuestTargetIds": [
-      11901041
-    ]
-  },
-  "1190105": {
-    "Id": 1190105,
-    "QuestName": "LevelQuest.1190105.1",
     "LevelQuestTargetIds": [
       11901051
     ]
@@ -292,34 +286,28 @@
     "Id": 1190201,
     "QuestName": "LevelQuest.1190201.1",
     "LevelQuestTargetIds": [
-      11902011
+      11902011,
+      11902012
     ]
   },
   "1190202": {
     "Id": 1190202,
     "QuestName": "LevelQuest.1190202.1",
     "LevelQuestTargetIds": [
-      11902021
+      11902031,
+      11902032
     ]
   },
   "1190203": {
     "Id": 1190203,
     "QuestName": "LevelQuest.1190203.1",
     "LevelQuestTargetIds": [
-      11902031,
-      11902032
+      11902041
     ]
   },
   "1190204": {
     "Id": 1190204,
     "QuestName": "LevelQuest.1190204.1",
-    "LevelQuestTargetIds": [
-      11902041
-    ]
-  },
-  "1190205": {
-    "Id": 1190205,
-    "QuestName": "LevelQuest.1190205.1",
     "LevelQuestTargetIds": [
       11902051
     ]
@@ -328,7 +316,8 @@
     "Id": 1190301,
     "QuestName": "LevelQuest.1190301.1",
     "LevelQuestTargetIds": [
-      11903011
+      11903011,
+      11903012
     ]
   },
   "1190302": {
@@ -357,7 +346,8 @@
     "Id": 1190401,
     "QuestName": "LevelQuest.1190401.1",
     "LevelQuestTargetIds": [
-      11904011
+      11904011,
+      11904012
     ]
   },
   "1190402": {
@@ -386,22 +376,23 @@
     "Id": 1550101,
     "QuestName": "LevelQuest.1550101.1",
     "LevelQuestTargetIds": [
-      15501011
+      15501011,
+      15501012
     ]
   },
   "1550102": {
     "Id": 1550102,
     "QuestName": "LevelQuest.1550102.1",
     "LevelQuestTargetIds": [
-      15501021
+      15501021,
+      15501022
     ]
   },
   "1550103": {
     "Id": 1550103,
     "QuestName": "LevelQuest.1550103.1",
     "LevelQuestTargetIds": [
-      15501031,
-      15501032
+      15501031
     ]
   },
   "1550104": {
@@ -411,33 +402,27 @@
       15501041
     ]
   },
-  "1550105": {
-    "Id": 1550105,
-    "QuestName": "LevelQuest.1550105.1",
-    "LevelQuestTargetIds": [
-      15501051
-    ]
-  },
   "1550201": {
     "Id": 1550201,
     "QuestName": "LevelQuest.1550201.1",
     "LevelQuestTargetIds": [
-      15502011
+      15502011,
+      15502012
     ]
   },
   "1550202": {
     "Id": 1550202,
     "QuestName": "LevelQuest.1550202.1",
     "LevelQuestTargetIds": [
-      15502021
+      15502021,
+      15502022
     ]
   },
   "1550203": {
     "Id": 1550203,
     "QuestName": "LevelQuest.1550203.1",
     "LevelQuestTargetIds": [
-      15502031,
-      15502032
+      15502031
     ]
   },
   "1550204": {
@@ -447,18 +432,12 @@
       15502041
     ]
   },
-  "1550205": {
-    "Id": 1550205,
-    "QuestName": "LevelQuest.1550205.1",
-    "LevelQuestTargetIds": [
-      15502051
-    ]
-  },
   "1550301": {
     "Id": 1550301,
     "QuestName": "LevelQuest.1550301.1",
     "LevelQuestTargetIds": [
-      15503011
+      15503011,
+      15503012
     ]
   },
   "1550302": {
@@ -487,7 +466,8 @@
     "Id": 1550401,
     "QuestName": "LevelQuest.1550401.1",
     "LevelQuestTargetIds": [
-      15504011
+      15504011,
+      15504012
     ]
   },
   "1550402": {

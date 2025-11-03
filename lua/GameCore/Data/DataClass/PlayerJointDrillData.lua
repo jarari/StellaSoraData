@@ -28,11 +28,8 @@ function PlayerJointDrillData:Init()
     self.nChallengeCount = 0        -- 挑战次数
     self.tbRecordFloors = {}
     
-    
     --奖励任务相关
     self.tbQuests = {}              -- 奖励任务
-    
-    
     
     --排行榜相关
     self.nTotalScore = 0                        -- 累计赛季积分
@@ -235,6 +232,7 @@ function  PlayerJointDrillData:CacheJointDrillData(nActId, msgData)
     if msgData.Quests ~= nil then
         self.tbQuests = msgData.Quests
     end
+    self:RefreshJointDrillQuestRedDot()
     self:StartActTimer()
 end
 
@@ -374,6 +372,17 @@ function PlayerJointDrillData:StartActTimer()
                     refreshTime, true, true, true)
         end
     end
+end
+
+function PlayerJointDrillData:RefreshJointDrillQuestRedDot()
+    local bHasReward = false
+    for _, v in ipairs(self.tbQuests) do
+        if v.Status == 1 then
+            bHasReward = true
+            break
+        end
+    end
+    RedDotManager.SetValid(RedDotDefine.JointDrillQuest, nil, bHasReward)
 end
 
 --region 总力战关卡
@@ -955,6 +964,7 @@ function PlayerJointDrillData:RefreshQuestData(questData)
     if not bHasData then
         table.insert(self.tbQuests, questData)
     end
+    self:RefreshJointDrillQuestRedDot()
 end
 
 function PlayerJointDrillData:GetRewardQuestList()

@@ -284,7 +284,7 @@
   },
   "greet": {
     "Id": "greet",
-    "probability": 30,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -296,7 +296,7 @@
   },
   "greetmorn": {
     "Id": "greetmorn",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -308,7 +308,7 @@
   },
   "greetnoon": {
     "Id": "greetnoon",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -320,7 +320,7 @@
   },
   "greetnight": {
     "Id": "greetnight",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11

@@ -57490,7 +57490,7 @@
   },
   "70021011": {
     "Id": 70021011,
-    "HitdamageInfo": "猫眼-狙击-普通射击",
+    "HitdamageInfo": "???-狙击-普通射击",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57508,7 +57508,7 @@
   },
   "70021031": {
     "Id": 70021031,
-    "HitdamageInfo": "猫眼-通用-魔神之眼",
+    "HitdamageInfo": "???-通用-魔神之眼",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57526,7 +57526,7 @@
   },
   "70021041": {
     "Id": 70021041,
-    "HitdamageInfo": "猫眼-突袭-普通射击",
+    "HitdamageInfo": "???-突袭-普通射击",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57544,7 +57544,7 @@
   },
   "70021061": {
     "Id": 70021061,
-    "HitdamageInfo": "猫眼-弹幕-猫头子弹",
+    "HitdamageInfo": "???-弹幕-猫头子弹",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57562,7 +57562,7 @@
   },
   "70021071": {
     "Id": 70021071,
-    "HitdamageInfo": "猫眼-弹幕-快速子弹",
+    "HitdamageInfo": "???-弹幕-快速子弹",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57580,7 +57580,7 @@
   },
   "70021091": {
     "Id": 70021091,
-    "HitdamageInfo": "猫眼-狙击-横扫光束",
+    "HitdamageInfo": "???-狙击-横扫光束",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,
@@ -57598,7 +57598,7 @@
   },
   "70021141": {
     "Id": 70021141,
-    "HitdamageInfo": "猫眼-狙击-滋蹦",
+    "HitdamageInfo": "???-狙击-滋蹦",
     "DistanceType": 2,
     "SourceType": 2,
     "DamageType": 1,

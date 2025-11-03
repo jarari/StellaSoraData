@@ -50,6 +50,9 @@ end
 
 ---------------主界面看板播放-----------------------
 function PlayerBoardData:GetCurBoardData()
+    if #self.tbSelectBoardList <self.nCurBoardIdx then
+        self:ResetBoardIndex()
+    end
     if self.tbSelectBoardList[self.nCurBoardIdx] ~= nil then
         local nId = self.tbSelectBoardList[self.nCurBoardIdx]
         if nil ~= nId then

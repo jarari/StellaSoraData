@@ -10449,6 +10449,58 @@
     "LERFix": 250,
     "DERFix": 250
   },
+  "10001033": {
+    "Id": 10001033,
+    "TemplateId": 100032,
+    "Name": "血量调配-93%",
+    "EET": 7,
+    "HpRatio": -9300,
+    "WERFix": 250,
+    "FERFix": 250,
+    "SERFix": 250,
+    "AERFix": 250,
+    "LERFix": 250,
+    "DERFix": 250
+  },
+  "10001034": {
+    "Id": 10001034,
+    "TemplateId": 100032,
+    "Name": "血量调配-96%",
+    "EET": 7,
+    "HpRatio": -9600,
+    "WERFix": 250,
+    "FERFix": 250,
+    "SERFix": 250,
+    "AERFix": 250,
+    "LERFix": 250,
+    "DERFix": 250
+  },
+  "10001035": {
+    "Id": 10001035,
+    "TemplateId": 100032,
+    "Name": "血量调配-97%",
+    "EET": 7,
+    "HpRatio": -9700,
+    "WERFix": 250,
+    "FERFix": 250,
+    "SERFix": 250,
+    "AERFix": 250,
+    "LERFix": 250,
+    "DERFix": 250
+  },
+  "10001036": {
+    "Id": 10001036,
+    "TemplateId": 100032,
+    "Name": "血量调配-98%",
+    "EET": 7,
+    "HpRatio": -9800,
+    "WERFix": 250,
+    "FERFix": 250,
+    "SERFix": 250,
+    "AERFix": 250,
+    "LERFix": 250,
+    "DERFix": 250
+  },
   "9900101": {
     "Id": 9900101,
     "TemplateId": 20012,
@@ -13427,7 +13479,7 @@
   "7002101": {
     "Id": 7002101,
     "TemplateId": 210,
-    "Name": "旅人对决-猫眼",
+    "Name": "旅人对决-???",
     "EET": 2,
     "WeakEET": [
       1,
@@ -13511,7 +13563,7 @@
   "7003101": {
     "Id": 7003101,
     "TemplateId": 214,
-    "Name": "旅人对决 - 火垂",
+    "Name": "旅人对决 - ???",
     "EET": 5,
     "WeakEET": [
       6
@@ -13529,7 +13581,7 @@
   "7003111": {
     "Id": 7003111,
     "TemplateId": 214,
-    "Name": "旅人对决 - 火垂 - 浮游剑",
+    "Name": "旅人对决 - ??? - 浮游剑",
     "EET": 5,
     "WeakEET": [
       6
@@ -13611,7 +13663,7 @@
     "TemplateId": 300,
     "Name": "跳砸大手",
     "EET": 7,
-    "AtkRatio": 1999,
+    "AtkRatio": 2000,
     "WERFix": 570,
     "FERFix": 570,
     "SERFix": 570,

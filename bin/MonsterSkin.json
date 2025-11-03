@@ -2005,7 +2005,7 @@
   },
   "1104101": {
     "Id": 1104101,
-    "Name": "翡冷翠",
+    "Name": "???",
     "Model": "Actor/Monster/11041Firenze/11041Firenze_Actor",
     "RunAnimationSpd": 60000,
     "WalkAnimationSpd": 12000,
@@ -2015,7 +2015,7 @@
   },
   "1104103": {
     "Id": 1104103,
-    "Name": "翡冷翠分身",
+    "Name": "???分身",
     "Model": "Actor/Character/11001/11001_Actor_Monster",
     "RunAnimationSpd": 60000,
     "WalkAnimationSpd": 12000,
@@ -5272,7 +5272,7 @@
   "7002101": {
     "Id": 7002101,
     "MonsterManual": 7002136,
-    "Name": "猫眼",
+    "Name": "???",
     "Model": "Actor/Monster/70021MaoYan/70021MaoYan_Actor",
     "RunAnimationSpd": 35000,
     "WalkAnimationSpd": 20000,
@@ -5294,7 +5294,7 @@
   "7003101": {
     "Id": 7003101,
     "MonsterManual": 7003156,
-    "Name": "火垂",
+    "Name": "???",
     "Model": "Actor/Monster/70031Huochui/70031Huochui_Actor",
     "RunAnimationSpd": 35000,
     "WalkAnimationSpd": 20000,
@@ -5304,7 +5304,7 @@
   },
   "7003111": {
     "Id": 7003111,
-    "Name": "火垂 - 浮游剑",
+    "Name": "??? - 浮游剑",
     "Model": "Actor/Monster/70031Huochui/700311FuYouJian_Actor",
     "RunAnimationSpd": 35000,
     "WalkAnimationSpd": 20000,
@@ -6100,7 +6100,7 @@
   },
   "13001111": {
     "Id": 13001111,
-    "Name": "多娜主控召唤喇叭",
+    "Name": "主控召唤喇叭",
     "Desc": "标准",
     "Model": "Actor/Character/13001/13001_Pet",
     "RunAnimationSpd": 60000,

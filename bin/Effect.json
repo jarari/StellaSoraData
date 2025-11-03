@@ -27681,7 +27681,7 @@
   },
   "1104101": {
     "Id": 1104101,
-    "Name": "翡冷翠Buff",
+    "Name": "???Buff",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerLogicType": 2,
@@ -27693,7 +27693,7 @@
   },
   "1104102": {
     "Id": 1104102,
-    "Name": "翡冷翠闪避",
+    "Name": "???闪避",
     "Trigger": 1,
     "TriggerTarget": 1,
     "TriggerLogicType": 2,

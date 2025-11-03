@@ -214,6 +214,10 @@ local RedDotDefine = {
    VampireQuest_Season = "VampireQuest.Season",
 
    VampireTalent = "VampireTalent",
+   
+   
+   --总力战任务
+   JointDrillQuest = "JointDrillQuest",
 }
 
 return RedDotDefine

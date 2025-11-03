@@ -180,7 +180,7 @@ return {
     {id="avg3_198",name="갱단의 도도한 여성",name_bg_color="#0ABEC5"},
     {id="avg3_199",name="갱단의 키 작은 소녀",name_bg_color="#0ABEC5"},
     {id="avg3_200",name="평범한 애시 에리어 어린 소년B",name_bg_color="#0ABEC5"},
-    {id="avg3_201",name="마린",name_bg_color="#d9cdff"},
+    {id="avg3_201",name="마레",name_bg_color="#d9cdff"},
     {id="avg3_202",name="이츠키",name_bg_color="#d4ba8d"},
     {id="avg3_203",name="스즈노",name_bg_color="#b5bdeb"},
     {id="avg3_205",name="이그나",name_bg_color="#0ABEC5"},
