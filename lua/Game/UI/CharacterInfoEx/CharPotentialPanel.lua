@@ -1,19 +1,22 @@
--- CharPotentialPanel Panel
-
 local CharPotentialPanel = class("CharPotentialPanel", BasePanel)
--- Panel 定义
 CharPotentialPanel._tbDefine = {
-    {sPrefabPath = "CharacterInfoEx/CharPotentialPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharPotentialCtrl"},
+{sPrefabPath = "CharacterInfoEx/CharPotentialPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharPotentialCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function CharPotentialPanel:Awake()
+CharPotentialPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function CharPotentialPanel:OnEnable()
+
+CharPotentialPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharPotentialPanel:OnDisable()
+
+CharPotentialPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharPotentialPanel:OnDestroy()
+
+CharPotentialPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return CharPotentialPanel
+

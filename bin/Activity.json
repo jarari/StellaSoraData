@@ -1,12 +1,11 @@
 {
   "101002": {
     "Id": 101002,
-    "SortId": 1,
+    "SortId": 99,
     "ActivityType": 1,
     "Name": "启明计划",
     "StartType": 1,
     "EndType": 1,
-    "BannerRes": "banner_l_10",
     "TabBgRes": "Icon/Banner/tab_activity_04"
   },
   "101003": {
@@ -26,6 +25,21 @@
     "EndType": 1,
     "TabBgRes": "Icon/Banner/tab_activity_101003"
   },
+  "102001": {
+    "Id": 102001,
+    "SortId": 5,
+    "ActivityType": 5,
+    "Name": "塔防",
+    "PreLimit": 1,
+    "LimitParam": "5",
+    "PlayCond": 1,
+    "PlayCondParams": "5",
+    "StartType": 2,
+    "StartTime": "2025-12-02T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T11:00:00+08:00",
+    "TabBgRes": "Icon/Banner/tab_activity_towerdef"
+  },
   "301001": {
     "Id": 301001,
     "SortId": 3,
@@ -42,7 +56,6 @@
     ],
     "EndType": 3,
     "EndDuration": 14,
-    "BannerRes": "banner_l_4",
     "TabBgRes": "Icon/Banner/tab_activity_02"
   },
   "201001": {
@@ -81,6 +94,27 @@
     "EndTime": "2025-11-18T04:00:00+08:00",
     "TabBgRes": "Icon/Banner/tab_activity_sidestory"
   },
+  "201004": {
+    "Id": 201004,
+    "SortId": 1,
+    "ActivityType": 13,
+    "Name": "新人魔王必修课",
+    "StartType": 1,
+    "EndType": 1,
+    "BannerRes": "banner_beginner",
+    "TabBgRes": "Icon/Banner/tab_activity_beginner"
+  },
+  "201005": {
+    "Id": 201005,
+    "SortId": 14,
+    "ActivityType": 13,
+    "Name": "诺瓦异闻-菈露缇莉娅",
+    "StartType": 2,
+    "StartTime": "2025-11-29T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T10:59:59+08:00",
+    "TabBgRes": "Icon/Banner/tab_activity_sidestory"
+  },
   "400000": {
     "Id": 400000,
     "MidGroupId": 10100,
@@ -93,6 +127,35 @@
     "EndType": 2,
     "EndTime": "2025-11-11T04:00:00+08:00",
     "TabBgRes": "Icon/Banner/tab_activity_02"
+  },
+  "400001": {
+    "Id": 400001,
+    "MidGroupId": 10101,
+    "SortId": 4,
+    "ActivityType": 4,
+    "Name": "曲奇工坊",
+    "ActivityThemeType": 2,
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-02T04:00:00+08:00",
+    "TabBgRes": "Icon/Banner/tab_activity_cookie"
+  },
+  "500001": {
+    "Id": 500001,
+    "SortId": 6,
+    "ActivityType": 14,
+    "Name": "BD兑换活动",
+    "PreLimit": 1,
+    "LimitParam": "10",
+    "PlayCond": 1,
+    "PlayCondParams": "10",
+    "StartType": 2,
+    "StartTime": "2025-12-02T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T11:00:00+08:00",
+    "BannerRes": "banner_activity_05",
+    "TabBgRes": "Icon/Banner/tab_activity_05"
   },
   "510001": {
     "Id": 510001,
@@ -119,6 +182,17 @@
     "EndTime": "2025-11-11T04:00:00+08:00",
     "TabBgRes": "Icon/Banner/tab_activity_trial_144"
   },
+  "700102": {
+    "Id": 700102,
+    "SortId": 7,
+    "ActivityType": 6,
+    "Name": "浅试身手-冬香",
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T10:59:59+08:00",
+    "TabBgRes": "Icon/Banner/tab_activity_trial_134"
+  },
   "700103": {
     "Id": 700103,
     "SortId": 8,
@@ -140,6 +214,17 @@
     "EndType": 2,
     "EndTime": "2025-11-18T04:00:00+08:00",
     "TabBgRes": "Icon/Banner/tab_activity_trial_155"
+  },
+  "700107": {
+    "Id": 700107,
+    "SortId": 7,
+    "ActivityType": 6,
+    "Name": "浅试身手-格芮",
+    "StartType": 2,
+    "StartTime": "2025-12-02T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-23T10:59:59+08:00",
+    "TabBgRes": "Icon/Banner/tab_activity_trial_149"
   },
   "1010001": {
     "Id": 1010001,
@@ -188,5 +273,41 @@
     "StartTime": "2025-10-28T12:00:00+08:00",
     "EndType": 2,
     "EndTime": "2025-11-18T04:00:00+08:00"
+  },
+  "1010101": {
+    "Id": 1010101,
+    "MidGroupId": 10101,
+    "SortId": 8,
+    "ActivityType": 9,
+    "Name": "冬香战斗关卡",
+    "ActivityThemeType": 2,
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-02T04:00:00+08:00"
+  },
+  "1010103": {
+    "Id": 1010103,
+    "MidGroupId": 10101,
+    "SortId": 11,
+    "ActivityType": 11,
+    "Name": "冬香活动任务",
+    "ActivityThemeType": 2,
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T11:00:00+08:00"
+  },
+  "1010104": {
+    "Id": 1010104,
+    "MidGroupId": 10101,
+    "SortId": 12,
+    "ActivityType": 12,
+    "Name": "冬香活动商店",
+    "ActivityThemeType": 2,
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T11:00:00+08:00"
   }
 }

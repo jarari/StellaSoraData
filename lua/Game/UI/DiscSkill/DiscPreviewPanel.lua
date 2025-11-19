@@ -1,20 +1,23 @@
--- DiscPreviewPanel Panel
-
 local DiscPreviewPanel = class("DiscPreviewPanel", BasePanel)
--- Panel 定义
 DiscPreviewPanel._bIsMainPanel = false
 DiscPreviewPanel._tbDefine = {
-    {sPrefabPath = "DiscSkill/DiscPreviewPanel.prefab", sCtrlName = "Game.UI.DiscSkill.DiscPreviewCtrl"},
+{sPrefabPath = "DiscSkill/DiscPreviewPanel.prefab", sCtrlName = "Game.UI.DiscSkill.DiscPreviewCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DiscPreviewPanel:Awake()
+DiscPreviewPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function DiscPreviewPanel:OnEnable()
+
+DiscPreviewPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DiscPreviewPanel:OnDisable()
+
+DiscPreviewPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DiscPreviewPanel:OnDestroy()
+
+DiscPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DiscPreviewPanel
+

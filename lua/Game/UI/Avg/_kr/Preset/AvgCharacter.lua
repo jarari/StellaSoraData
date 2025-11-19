@@ -1,450 +1,902 @@
 return {
-    {id="0",name="",name_bg_color="#0ABEC5",surfix="旁白"},
-    {id="1",name="",name_bg_color="#0ABEC5",surfix="玩家"},
-    {id="avg1_103",name="코하쿠",name_bg_color="#99d2d9"},
-    {id="avg1_1994",name="나츠카A",name_bg_color="#99d2d9",reuse="avg1_133"},
-    {id="avg1_1997",name="졸개A",name_bg_color="#0ABEC5",reuse="avg1_103"},
-    {id="avg1_1998",name="졸개B",name_bg_color="#0ABEC5",reuse="avg1_103"},
-    {id="avg1_1999",name="졸개C",name_bg_color="#0ABEC5",reuse="avg1_103"},
-    {id="avg1_1996",name="세이나B",name_bg_color="#0ABEC5",reuse="avg1_112"},
-    {id="avg1_1995",name="수다쟁이B",name_bg_color="#0ABEC5",reuse="avg3_130"},
-    {id="avg1_1993",name="주민A",name_bg_color="#0ABEC5",reuse="avg3_175"},
-    {id="avg1_1992",name="주민B",name_bg_color="#0ABEC5",reuse="avg3_175"},
-    {id="avg1_106",name="오로라",name_bg_color="#6eb29b"},
-    {id="avg1_107",name="틸리아",name_bg_color="#3d5bbf",reuseL2DPose="c"},
-    {id="avg1_108",name="카시미라",name_bg_color="#be4139"},
-    {id="avg1_109",name="아오바",name_bg_color="#ffa8bf"},
-    {id="avg1_110",name="피렌",name_bg_color="#8db947"},
-    {id="avg1_111",name="아야메",name_bg_color="#9392ca"},
-    {id="avg1_112",name="세이나",name_bg_color="#ffe39e"},
-    {id="avg1_113",name="시먀오",name_bg_color="#c6eff3"},
-    {id="avg1_114",name="샤통",name_bg_color="#8e65ad"},
-    {id="avg1_115",name="호타루",name_bg_color="#5e76ac"},
-    {id="avg1_116",name="레이센",name_bg_color="#bfd641"},
-    {id="avg1_117",name="징린",name_bg_color="#e36463"},
-    {id="avg1_118",name="크루니스",name_bg_color="#cfbf93",reuseL2DPose="b"},
-    {id="avg1_119",name="나노하",name_bg_color="#c8708c"},
-    {id="avg1_120",name="카나체",name_bg_color="#d4bfe1",reuseL2DPose="b"},
-    {id="avg1_123",name="안즈",name_bg_color="#ed825d"},
-    {id="avg1_125",name="프리지아",name_bg_color="#90abe1"},
-    {id="avg1_126",name="플로라",name_bg_color="#c0497a"},
-    {id="avg1_127",name="테레사",name_bg_color="#a0675d"},
-    {id="avg1_129",name="유베",name_bg_color="#6a6261"},
-    {id="avg1_130",name="토나",name_bg_color="#e9be88"},
-    {id="avg1_131",name="블롯치",name_bg_color="#0ABEC5"},
-    {id="avg1_132",name="미네르바",name_bg_color="#6387e8"},
-    {id="avg1_133",name="나츠카",name_bg_color="#6fb1d2"},
-    {id="avg1_134",name="후유카",name_bg_color="#f8be56"},
-    {id="avg1_135",name="미스티",name_bg_color="#c27fe9"},
-    {id="avg1_136",name="앙주",name_bg_color="#e0dcfb"},
-    {id="avg1_137",name="엘레노어",name_bg_color="#e78fab"},
-    {id="avg1_138",name="닉스",name_bg_color="#8dcec0"},
-    {id="avg1_139",name="엘리",name_bg_color="#555559"},
-    {id="avg1_141",name="치시아",name_bg_color="#d75d5e"},
-    {id="avg1_142",name="코제트",name_bg_color="#7795d8"},
-    {id="avg1_143",name="레이스",name_bg_color="#5e6cb5"},
-    {id="avg1_144",name="치토세",name_bg_color="#a87dc0"},
-    {id="avg1_146",name="베니토",name_bg_color="#0ABEC5"},
-    {id="avg1_147",name="캐러멜",name_bg_color="#f0d2a1"},
-    {id="avg1_149",name="그레이",name_bg_color="#985b78"},
-    {id="avg1_150",name="라루",name_bg_color="#c5bbb5"},
-    {id="avg1_155",name="시아",name_bg_color="#c4a5e6"},
-    {id="avg1_156",name="나즈나",name_bg_color="#b5e6b2"},
-    {id="avg1_157",name="카린",name_bg_color="#bb788e"},
-    {id="avg2_001",name="우드모트 잔챙이",name_bg_color="#0ABEC5"},
-    {id="avg2_002",name="우드모트 허수아비",name_bg_color="#0ABEC5"},
-    {id="avg2_003",name="우드모트 척탄병",name_bg_color="#0ABEC5"},
-    {id="avg2_954",name="크리스피 미트",name_bg_color="#0ABEC5"},
-    {id="avg2_955",name="스페이스 워커",name_bg_color="#0ABEC5"},
-    {id="avg2_956",name="광기의 요리사 -매드 테이스터",name_bg_color="#0ABEC5"},
-    {id="avg2_957",name="원거리 풀",name_bg_color="#0ABEC5"},
-    {id="avg2_958",name="원거리 풀",name_bg_color="#0ABEC5"},
-    {id="avg2_960",name="바다토끼",name_bg_color="#0ABEC5"},
-    {id="avg2_961",name="바람풀",name_bg_color="#0ABEC5"},
-    {id="avg2_962",name="중독된 아그리 유니온 사원B",name_bg_color="#0ABEC5"},
-    {id="avg2_963",name="중독된 아그리 유니온 사원A",name_bg_color="#0ABEC5"},
-    {id="avg2_964",name="벌새",name_bg_color="#0ABEC5"},
-    {id="avg2_965",name="랜턴이",name_bg_color="#0ABEC5"},
-    {id="avg2_966",name="샬롯",name_bg_color="#0ABEC5"},
-    {id="avg2_967",name="백묘 용병 졸개(남)",name_bg_color="#0ABEC5"},
-    {id="avg2_968",name="백묘 용병 졸개(여)",name_bg_color="#0ABEC5"},
-    {id="avg2_969",name="사계 철새 여행가(디펜더)",name_bg_color="#0ABEC5"},
-    {id="avg2_970",name="사계 철새 여행가(원거리)",name_bg_color="#0ABEC5"},
-    {id="avg2_971",name="사계 철새 여행가(근거리)",name_bg_color="#0ABEC5"},
-    {id="avg2_972",name="쾅쾅너클",name_bg_color="#0ABEC5"},
-    {id="avg2_973",name="제너럴 탱크",name_bg_color="#0ABEC5"},
-    {id="avg2_974",name="핫 스틸 해머",name_bg_color="#0ABEC5"},
-    {id="avg2_975",name="젤리젤리",name_bg_color="#0ABEC5"},
-    {id="avg2_976",name="반생수",name_bg_color="#0ABEC5"},
-    {id="avg2_977",name="와일드 보어 킹",name_bg_color="#0ABEC5"},
-    {id="avg2_978",name="로비나",name_bg_color="#0ABEC5"},
-    {id="avg2_979",name="영혼의 사자",name_bg_color="#0ABEC5"},
-    {id="avg2_980",name="불렛 슈터(물)",name_bg_color="#0ABEC5"},
-    {id="avg2_981",name="럭키 루비(물)",name_bg_color="#0ABEC5"},
-    {id="avg2_982",name="디펜더 여행가 일반 병사",name_bg_color="#0ABEC5"},
-    {id="avg2_983",name="원거리 여행가 일반 병사",name_bg_color="#0ABEC5"},
-    {id="avg2_984",name="근거리 여행가 일반 병사",name_bg_color="#0ABEC5"},
-    {id="avg2_985",name="달리시아",name_bg_color="#0ABEC5"},
-    {id="avg2_990",name="윈드 애시 멤버A",name_bg_color="#0ABEC5"},
-    {id="avg2_991",name="윈드 애시 멤버B",name_bg_color="#0ABEC5"},
-    {id="avg2_993",name="넬몬트",name_bg_color="#0ABEC5"},
-    {id="avg2_994",name="폴몬트",name_bg_color="#0ABEC5"},
-    {id="avg2_997",name="가면 피렌",name_bg_color="#0ABEC5"},
-    {id="avg2_999",name="오로라 Rose",name_bg_color="#0ABEC5"},
-    {id="avg3_100",name="세라",name_bg_color="#0ABEC5",surfix="女"},
-    {id="avg3_101",name="세라",name_bg_color="#0ABEC5",surfix="男"},
-    {id="avg3_102",name="윌로",name_bg_color="#a8454e"},
-    {id="avg3_103",name="앨저",name_bg_color="#0ABEC5"},
-    {id="avg3_104",name="제비갈매기",name_bg_color="#0ABEC5"},
-    {id="avg3_106",name="하나",name_bg_color="#0ABEC5"},
-    {id="avg3_107",name="두리",name_bg_color="#0ABEC5"},
-    {id="avg3_108",name="크손",name_bg_color="#0ABEC5"},
-    {id="avg3_109",name="챠이 할아버지",name_bg_color="#0ABEC5"},
-    {id="avg3_110",name="코코",name_bg_color="#0ABEC5"},
-    {id="avg3_111",name="리더 남성",name_bg_color="#0ABEC5"},
-    {id="avg3_112",name="청 아저씨",name_bg_color="#0ABEC5"},
-    {id="avg3_113",name="소아",name_bg_color="#0ABEC5"},
-    {id="avg3_115",name="언치새",name_bg_color="#0ABEC5"},
-    {id="avg3_118",name="분홍 머리 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_119",name="파란 머리 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_120",name="아그리 유니온 산림 감시원",name_bg_color="#0ABEC5"},
-    {id="avg3_121",name="아그리 유니온 사원",name_bg_color="#0ABEC5"},
-    {id="avg3_122",name="아그리 유니온 매니저",name_bg_color="#0ABEC5"},
-    {id="avg3_123",name="엘레노어",name_bg_color="#0ABEC5",reuse="avg1_137"},
-    {id="avg3_124",name="에리니스",name_bg_color="#0ABEC5"},
-    {id="avg3_125",name="메이쿄",name_bg_color="#0ABEC5"},
-    {id="avg3_126",name="해연 파이낸스 여직원",name_bg_color="#0ABEC5"},
-    {id="avg3_127",name="미스티",name_bg_color="#0ABEC5"},
-    {id="avg3_128",name="오필",name_bg_color="#c2b3ec"},
-    {id="avg3_129",name="제국 호위대(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_130",name="제국 호위대 수다쟁이",name_bg_color="#0ABEC5"},
-    {id="avg3_131",name="나즈나",name_bg_color="#b5e6b2",reuse="avg1_156"},
-    {id="avg3_132",name="카에데",name_bg_color="#f192c5"},
-    {id="avg3_133",name="포셔",name_bg_color="#4fad86"},
-    {id="avg3_134",name="마이나",name_bg_color="#a7795c"},
-    {id="avg3_135",name="클레어",name_bg_color="#c97557"},
-    {id="avg3_136",name="루비",name_bg_color="#9f3a42"},
-    {id="avg3_137",name="사파이어",name_bg_color="#5480d6"},
-    {id="avg3_138",name="평범한 여행가(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_139",name="평범한 여행가(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_140",name="아그리 유니온 사원",name_bg_color="#0ABEC5"},
-    {id="avg3_141",name="아그리 유니온 작업자",name_bg_color="#0ABEC5"},
-    {id="avg3_142",name="아그리 유니온 연구원",name_bg_color="#0ABEC5"},
-    {id="avg3_143",name="평범한 주민(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_144",name="평범한 주민(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_145",name="골드 에리어 주민A",name_bg_color="#0ABEC5"},
-    {id="avg3_146",name="골드 에리어 주민B",name_bg_color="#0ABEC5"},
-    {id="avg3_147",name="골드 에리어 주민C",name_bg_color="#0ABEC5"},
-    {id="avg3_150",name="알베도",name_bg_color="#0ABEC5"},
-    {id="avg3_151",name="트루시아",name_bg_color="#0ABEC5"},
-    {id="avg3_152",name="베스티나",name_bg_color="#e6fff6"},
-    {id="avg3_154",name="라루",name_bg_color="#c5bbb5",reuse="avg1_150"},
-    {id="avg3_156",name="키작은 제국 호위대",name_bg_color="#0ABEC5"},
-    {id="avg3_157",name="제국 호위대(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_158",name="샤로 인형탈",name_bg_color="#0ABEC5"},
-    {id="avg3_159",name="피안",name_bg_color="#b73947"},
-    {id="avg3_161",name="스구하",name_bg_color="#f4e0d7"},
-    {id="avg3_164",name="이오리",name_bg_color="#0ABEC5"},
-    {id="avg3_165",name="비스케",name_bg_color="#0ABEC5"},
-    {id="avg3_166",name="평범한 마을 주민 할머니",name_bg_color="#0ABEC5"},
-    {id="avg3_167",name="평범한 소녀A",name_bg_color="#0ABEC5"},
-    {id="avg3_168",name="평범한 소녀B",name_bg_color="#0ABEC5"},
-    {id="avg3_169",name="평범한 용족 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_170",name="평범한 애시 에리어의 어린 소년",name_bg_color="#0ABEC5"},
-    {id="avg3_171",name="여직원",name_bg_color="#0ABEC5"},
-    {id="avg3_172",name="베아트리스",name_bg_color="#95c1f9"},
-    {id="avg3_173",name="베르너",name_bg_color="#c84146"},
-    {id="avg3_174",name="베르주",name_bg_color="#ceb3ce"},
-    {id="avg3_175",name="용족 주민(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_176",name="용족 주민(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_177",name="성휘 부속대학 학생(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_178",name="성휘 부속대학 학생(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_179",name="뮈샤",name_bg_color="#0ABEC5"},
-    {id="avg3_180",name="아그리 유니온 연구원B",name_bg_color="#0ABEC5"},
-    {id="avg3_181",name="네리타",name_bg_color="#8092ff"},
-    {id="avg3_182",name="이리스",name_bg_color="#a4a5d5"},
-    {id="avg3_183",name="요셉",name_bg_color="#0ABEC5"},
-    {id="avg3_184",name="그레이 부인",name_bg_color="#0ABEC5"},
-    {id="avg3_185",name="은혜 안내원",name_bg_color="#0ABEC5"},
-    {id="avg3_186",name="호두",name_bg_color="#edbfe9"},
-    {id="avg3_187",name="플라비오 주민(남)",name_bg_color="#0ABEC5"},
-    {id="avg3_188",name="플라비오 주민(여)",name_bg_color="#0ABEC5"},
-    {id="avg3_189",name="케이트",name_bg_color="#d74e4d"},
-    {id="avg3_191",name="후유카 악마",name_bg_color="#0ABEC5"},
-    {id="avg3_192",name="후유카 천사",name_bg_color="#0ABEC5"},
-    {id="avg3_193",name="필리",name_bg_color="#9a344e"},
-    {id="avg3_194",name="아크라",name_bg_color="#4c4545"},
-    {id="avg3_195",name="에이다",name_bg_color="#d5d2da"},
-    {id="avg3_196",name="여직원",name_bg_color="#0ABEC5"},
-    {id="avg3_197",name="피킨",name_bg_color="#fffebf"},
-    {id="avg3_198",name="갱단의 도도한 여성",name_bg_color="#0ABEC5"},
-    {id="avg3_199",name="갱단의 키 작은 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_200",name="평범한 애시 에리어 어린 소년B",name_bg_color="#0ABEC5"},
-    {id="avg3_201",name="마레",name_bg_color="#d9cdff"},
-    {id="avg3_202",name="이츠키",name_bg_color="#d4ba8d"},
-    {id="avg3_203",name="스즈노",name_bg_color="#b5bdeb"},
-    {id="avg3_205",name="이그나",name_bg_color="#0ABEC5"},
-    {id="avg3_206",name="암월",name_bg_color="#0ABEC5"},
-    {id="avg3_873",name="클레어",name_bg_color="#0ABEC5"},
-    {id="avg3_874",name="점원",name_bg_color="#0ABEC5"},
-    {id="avg3_875",name="하급 여행가들",name_bg_color="#0ABEC5"},
-    {id="avg3_876",name="어린 아이",name_bg_color="#0ABEC5"},
-    {id="avg3_877",name="분노한 가장",name_bg_color="#0ABEC5"},
-    {id="avg3_878",name="무력한 점주",name_bg_color="#0ABEC5"},
-    {id="avg3_879",name="다투는 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_880",name="구경하는 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_881",name="어리둥절한 노점상과 손님",name_bg_color="#0ABEC5"},
-    {id="avg3_882",name="분노한 손님",name_bg_color="#0ABEC5"},
-    {id="avg3_883",name="소곤대는 대원",name_bg_color="#0ABEC5"},
-    {id="avg3_884",name="맞장구치는 대원",name_bg_color="#0ABEC5"},
-    {id="avg3_885",name="순찰대원",name_bg_color="#0ABEC5"},
-    {id="avg3_886",name="구경하는 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_887",name="용족 주민",name_bg_color="#0ABEC5"},
-    {id="avg3_888",name="어두운 표정의 차주",name_bg_color="#0ABEC5"},
-    {id="avg3_889",name="당황한 도둑",name_bg_color="#0ABEC5"},
-    {id="avg3_890",name="수리점 점주",name_bg_color="#0ABEC5"},
-    {id="avg3_891",name="차주",name_bg_color="#0ABEC5"},
-    {id="avg3_892",name="지리 협회 사무원",name_bg_color="#0ABEC5"},
-    {id="avg3_893",name="검은 고양이",name_bg_color="#0ABEC5"},
-    {id="avg3_894",name="난폭한 토마스",name_bg_color="#0ABEC5"},
-    {id="avg3_895",name="음침한 잭",name_bg_color="#0ABEC5"},
-    {id="avg3_896",name="우아한 귀부인",name_bg_color="#0ABEC5"},
-    {id="avg3_897",name="점잖은 신사",name_bg_color="#0ABEC5"},
-    {id="avg3_898",name="계산 중인 사람",name_bg_color="#0ABEC5"},
-    {id="avg3_899",name="카메라를 든 사람",name_bg_color="#0ABEC5"},
-    {id="avg3_900",name="화려한 옷차림의 사람",name_bg_color="#0ABEC5"},
-    {id="avg3_901",name="책을 든 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_902",name="부드러운 목소리",name_bg_color="#0ABEC5"},
-    {id="avg3_903",name="아그리 유니온 직원",name_bg_color="#0ABEC5"},
-    {id="avg3_904",name="새 가면을 쓴 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_905",name="아야메&세이나",name_bg_color="#0ABEC5"},
-    {id="avg3_906",name="가면의 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_907",name="갑옷 괴인",name_bg_color="#0ABEC5"},
-    {id="avg3_908",name="집 안에서 들리는 소리",name_bg_color="#0ABEC5"},
-    {id="avg3_909",name="줄 서는 여행가들",name_bg_color="#0ABEC5"},
-    {id="avg3_910",name="마을 주민들",name_bg_color="#0ABEC5"},
-    {id="avg3_911",name="마을 주민A",name_bg_color="#0ABEC5"},
-    {id="avg3_912",name="마을 주민B",name_bg_color="#0ABEC5"},
-    {id="avg3_913",name="살충 작업자들",name_bg_color="#0ABEC5"},
-    {id="avg3_914",name="의심하는 사원",name_bg_color="#0ABEC5"},
-    {id="avg3_915",name="또 의심하는 사원",name_bg_color="#0ABEC5"},
-    {id="avg3_916",name="가면을 쓴 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_917",name="의뢰인",name_bg_color="#0ABEC5"},
-    {id="avg3_918",name="빨간 머리 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_919",name="윈드 애시 멤버A",name_bg_color="#0ABEC5"},
-    {id="avg3_920",name="윈드 애시 멤버B",name_bg_color="#0ABEC5"},
-    {id="avg3_921",name="윈드 애시 멤버A&B",name_bg_color="#0ABEC5"},
-    {id="avg3_922",name="여행가 장사꾼",name_bg_color="#0ABEC5"},
-    {id="avg3_923",name="멀리 있는 마을 주민",name_bg_color="#0ABEC5"},
-    {id="avg3_924",name="아야메의 목소리",name_bg_color="#0ABEC5"},
-    {id="avg3_925",name="고장난 \'풍차\'",name_bg_color="#0ABEC5"},
-    {id="avg3_926",name="여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_927",name="여자아이",name_bg_color="#0ABEC5"},
-    {id="avg3_928",name="젊은 아버지",name_bg_color="#0ABEC5"},
-    {id="avg3_929",name="짜증 난 손님A",name_bg_color="#0ABEC5"},
-    {id="avg3_930",name="짜증 난 손님B",name_bg_color="#0ABEC5"},
-    {id="avg3_931",name="늙은 용족 손님",name_bg_color="#0ABEC5"},
-    {id="avg3_932",name="청년 손님",name_bg_color="#0ABEC5"},
-    {id="avg3_933",name="중년 손님",name_bg_color="#0ABEC5"},
-    {id="avg3_934",name="구경하는 손님들",name_bg_color="#0ABEC5"},
-    {id="avg3_935",name="풀이 죽은 백묘",name_bg_color="#0ABEC5"},
-    {id="avg3_936",name="생각에 잠긴 백묘",name_bg_color="#0ABEC5"},
-    {id="avg3_937",name="사람들",name_bg_color="#0ABEC5"},
-    {id="avg3_938",name="신중한 갱단 멤버",name_bg_color="#0ABEC5"},
-    {id="avg3_939",name="의기양양한 갱단 멤버",name_bg_color="#0ABEC5"},
-    {id="avg3_940",name="갱단 멤버들",name_bg_color="#0ABEC5"},
-    {id="avg3_941",name="신중한 갱단 멤버",name_bg_color="#0ABEC5"},
-    {id="avg3_942",name="두목인척 하는 백묘",name_bg_color="#0ABEC5"},
-    {id="avg3_943",name="용병A",name_bg_color="#0ABEC5"},
-    {id="avg3_944",name="용병B",name_bg_color="#0ABEC5"},
-    {id="avg3_945",name="멀리 있는 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_946",name="목표",name_bg_color="#0ABEC5"},
-    {id="avg3_947",name="난폭해 보이는 대장",name_bg_color="#0ABEC5"},
-    {id="avg3_948",name="음침해 보이는 대장",name_bg_color="#0ABEC5"},
-    {id="avg3_949",name="창가의 검은 고양이",name_bg_color="#0ABEC5"},
-    {id="avg3_950",name="겁쟁이 강도",name_bg_color="#0ABEC5"},
-    {id="avg3_951",name="흉악한 리더",name_bg_color="#0ABEC5"},
-    {id="avg3_952",name="강도인척 하는 백묘",name_bg_color="#0ABEC5"},
-    {id="avg3_953",name="용병A",name_bg_color="#0ABEC5"},
-    {id="avg3_954",name="용병B",name_bg_color="#0ABEC5"},
-    {id="avg3_955",name="용병C",name_bg_color="#0ABEC5"},
-    {id="avg3_956",name="용병D",name_bg_color="#0ABEC5"},
-    {id="avg3_957",name="제국 기사",name_bg_color="#0ABEC5"},
-    {id="avg3_958",name="제국 기사?",name_bg_color="#0ABEC5"},
-    {id="avg3_959",name="가짜 기사",name_bg_color="#0ABEC5"},
-    {id="avg3_960",name="백발의 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_961",name="방망이를 들고 있는 윈드 애시",name_bg_color="#0ABEC5"},
-    {id="avg3_962",name="큰 가방을 메고 있는 윈드 애시",name_bg_color="#0ABEC5"},
-    {id="avg3_963",name="윈드 애시 멤버들",name_bg_color="#0ABEC5"},
-    {id="avg3_964",name="양산을 쓴 아가씨",name_bg_color="#0ABEC5"},
-    {id="avg3_965",name="안경을 쓴 선생님",name_bg_color="#0ABEC5"},
-    {id="avg3_966",name="빗자루를 든 마녀",name_bg_color="#0ABEC5"},
-    {id="avg3_967",name="세이나&코하쿠&아야메",name_bg_color="#0ABEC5"},
-    {id="avg3_968",name="겁쟁이 기사",name_bg_color="#0ABEC5"},
-    {id="avg3_969",name="우람한 기사",name_bg_color="#0ABEC5"},
-    {id="avg3_970",name="아야메&코하쿠",name_bg_color="#0ABEC5"},
-    {id="avg3_971",name="캠프 경비병",name_bg_color="#0ABEC5"},
-    {id="avg3_972",name="후드를 쓴 여자",name_bg_color="#0ABEC5"},
-    {id="avg3_973",name="지나가는 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_974",name="세레나",name_bg_color="#e0dcfb",reuse="avg1_136"},
-    {id="avg3_975",name="인형뽑기를 좋아하는 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_976",name="인형뽑기 고수",name_bg_color="#0ABEC5"},
-    {id="avg3_977",name="초조한 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_978",name="감격한 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_979",name="창가의 사원",name_bg_color="#0ABEC5"},
-    {id="avg3_980",name="탑 입구의 경비병",name_bg_color="#0ABEC5"},
-    {id="avg3_981",name="사계 철새 여행가",name_bg_color="#0ABEC5"},
-    {id="avg3_982",name="사계 철새 여행가A",name_bg_color="#0ABEC5"},
-    {id="avg3_983",name="사계 철새 여행가B",name_bg_color="#0ABEC5"},
-    {id="avg3_984",name="상인",name_bg_color="#0ABEC5"},
-    {id="avg3_985",name="여행가A",name_bg_color="#0ABEC5"},
-    {id="avg3_986",name="여행가B",name_bg_color="#0ABEC5"},
-    {id="avg3_987",name="아그리 유니온 경비원",name_bg_color="#0ABEC5"},
-    {id="avg3_988",name="방송 속 목소리",name_bg_color="#0ABEC5"},
-    {id="avg3_997",name="??",name_bg_color="#0ABEC5"},
-    {id="avg3_998",name="아야메&프리지아",name_bg_color="#0ABEC5"},
-    {id="avg3_999",name="???",name_bg_color="#0ABEC5"},
-    {id="avg3_1022",name="이상한 남자",name_bg_color="#0ABEC5"},
-    {id="avg3_1023",name="앤드류 부인",name_bg_color="#0ABEC5"},
-    {id="avg3_1024",name="노점상 여사장",name_bg_color="#0ABEC5"},
-    {id="avg3_1025",name="복권집 사장",name_bg_color="#0ABEC5"},
-    {id="avg3_1027",name="법관",name_bg_color="#0ABEC5"},
-    {id="avg3_1028",name="나이가 많은 남성",name_bg_color="#0ABEC5"},
-    {id="avg3_1029",name="기자C",name_bg_color="#0ABEC5"},
-    {id="avg3_1030",name="기자B",name_bg_color="#0ABEC5"},
-    {id="avg3_1031",name="기자A",name_bg_color="#0ABEC5"},
-    {id="avg3_1032",name="메노",name_bg_color="#0ABEC5"},
-    {id="avg3_1033",name="낯선 여성",name_bg_color="#0ABEC5"},
-    {id="avg3_1034",name="프로덕션 경비원",name_bg_color="#0ABEC5"},
-    {id="avg3_1035",name="반디&아오이",name_bg_color="#0ABEC5"},
-    {id="avg3_1036",name="반디",name_bg_color="#0ABEC5"},
-    {id="avg3_1037",name="아오이",name_bg_color="#0ABEC5"},
-    {id="avg3_1038",name="에반 씨",name_bg_color="#0ABEC5"},
-    {id="avg3_1039",name="연로한 남성의 목소리",name_bg_color="#0ABEC5"},
-    {id="avg3_1040",name="캉 할머니",name_bg_color="#0ABEC5"},
-    {id="avg3_1041",name="배송원",name_bg_color="#0ABEC5"},
-    {id="avg3_1042",name="훠궈 가게 점장",name_bg_color="#0ABEC5"},
-    {id="avg3_1043",name="불을 끄는 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_1044",name="당황한 훠궈 가게 점원",name_bg_color="#0ABEC5"},
-    {id="avg3_1045",name="당황한 행인",name_bg_color="#0ABEC5"},
-    {id="avg3_1046",name="점원",name_bg_color="#0ABEC5"},
-    {id="avg3_1047",name="전화기 저편의 남자",name_bg_color="#0ABEC5"},
-    {id="avg3_1048",name="아궁이 괴물",name_bg_color="#0ABEC5"},
-    {id="avg3_1049",name="제너럴 탱크",name_bg_color="#0ABEC5"},
-    {id="avg3_1050",name="전기 귀신",name_bg_color="#0ABEC5"},
-    {id="avg3_1051",name="젤리젤리",name_bg_color="#0ABEC5"},
-    {id="avg3_1052",name="호루타",name_bg_color="#0ABEC5"},
-    {id="avg3_1053",name="가게 사장",name_bg_color="#0ABEC5"},
-    {id="avg3_1054",name="하울",name_bg_color="#0ABEC5"},
-    {id="avg3_1055",name="술냄새를 풍기는 환자",name_bg_color="#0ABEC5"},
-    {id="avg3_1056",name="당황한 환자",name_bg_color="#0ABEC5"},
-    {id="avg3_1057",name="길옆에서 장난치는 소년",name_bg_color="#0ABEC5"},
-    {id="avg3_1058",name="목소리가 큰 소년",name_bg_color="#0ABEC5"},
-    {id="avg3_1059",name="개구쟁이 소년",name_bg_color="#0ABEC5"},
-    {id="avg3_1060",name="대장이라 불리는 소년",name_bg_color="#0ABEC5"},
-    {id="avg3_1061",name="걱정하는 소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_1062",name="안내",name_bg_color="#0ABEC5"},
-    {id="avg3_1064",name="다른 사람",name_bg_color="#0ABEC5"},
-    {id="avg3_1065",name="레티",name_bg_color="#0ABEC5"},
-    {id="avg3_1066",name="마이크",name_bg_color="#0ABEC5"},
-    {id="avg3_1067",name="와일드 보어",name_bg_color="#0ABEC5"},
-    {id="avg3_1068",name="훤칠한 귀족 선생님",name_bg_color="#0ABEC5"},
-    {id="avg3_1069",name="뚱뚱한 귀족 선생님",name_bg_color="#0ABEC5"},
-    {id="avg3_1070",name="소녀",name_bg_color="#0ABEC5"},
-    {id="avg3_1071",name="엄숙한 귀족 선생님",name_bg_color="#0ABEC5"},
-    {id="avg3_1072",name="흉악한 귀족 선생님",name_bg_color="#0ABEC5"},
-    {id="avg3_1073",name="클리프",name_bg_color="#0ABEC5"},
-    {id="avg3_1074",name="뮈샤",name_bg_color="#0ABEC5"},
-    {id="avg3_1075",name="여학생",name_bg_color="#0ABEC5"},
-    {id="avg3_1076",name="오로라",name_bg_color="#0ABEC5"},
-    {id="avg3_1077",name="에반",name_bg_color="#0ABEC5"},
-    {id="avg3_1078",name="디저트 가게 여사장",name_bg_color="#0ABEC5"},
-    {id="avg3_1079",name="디저트 가게 사장",name_bg_color="#0ABEC5"},
-    {id="avg3_1080",name="남자아이",name_bg_color="#0ABEC5"},
-    {id="avg3_1081",name="마술사",name_bg_color="#0ABEC5"},
-    {id="avg3_1082",name="지나가던 아주머니",name_bg_color="#0ABEC5"},
-    {id="avg3_1083",name="지나가던 꼬마",name_bg_color="#0ABEC5"},
-    {id="avg3_1084",name="행인B",name_bg_color="#0ABEC5"},
-    {id="avg3_1085",name="행인A",name_bg_color="#0ABEC5"},
-    {id="avg3_1086",name="노점상B",name_bg_color="#0ABEC5"},
-    {id="avg3_1087",name="노점상A",name_bg_color="#0ABEC5"},
-    {id="avg3_1088",name="열성적인 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1089",name="옆집 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1090",name="난폭한 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1091",name="아이스크림 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1092",name="간식 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1093",name="다른 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1094",name="쿠키 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1095",name="푸딩 노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1096",name="노점상",name_bg_color="#0ABEC5"},
-    {id="avg3_1097",name="아그리 유니온 인원",name_bg_color="#0ABEC5"},
-    {id="avg3_1098",name="우드모트 형제",name_bg_color="#0ABEC5"},
-    {id="avg3_1099",name="제국 호위대",name_bg_color="#0ABEC5"},
-    {id="avg1_1190",name="릴리스",name_bg_color="#0ABEC5"},
-    {id="avg1_1191",name="문약한 비서",name_bg_color="#0ABEC5"},
-    {id="avg1_1192",name="수석",name_bg_color="#0ABEC5"},
-    {id="avg1_1193",name="미간에 주름진 윈드 애시",name_bg_color="#0ABEC5"},
-    {id="avg1_1194",name="흉악한 표정의 윈드 애시",name_bg_color="#0ABEC5"},
-    {id="avg1_1195",name="성해A",name_bg_color="#0ABEC5",reuse="avg2_980"},
-    {id="avg1_1196",name="성해B",name_bg_color="#0ABEC5",reuse="avg2_980"},
-    {id="avg1_1197",name="성해C",name_bg_color="#0ABEC5",reuse="avg2_980"},
-    {id="avg1_1198",name="성해D",name_bg_color="#0ABEC5",reuse="avg2_981"},
-    {id="avg1_1199",name="성해E",name_bg_color="#0ABEC5",reuse="avg2_981"},
-    {id="avg1_1200",name="성해F",name_bg_color="#0ABEC5",reuse="avg2_981"},
-    {id="avg3_1201",name="아그리 유니온 사무원A",name_bg_color="#0ABEC5",reuse="avg3_140"},
-    {id="avg3_1202",name="아그리 유니온 사무원B",name_bg_color="#0ABEC5",reuse="avg3_140"},
-    {id="avg3_1203",name="아그리 유니온 사무원C",name_bg_color="#0ABEC5",reuse="avg3_140"},
-    {id="avg1_1204",name="호루타",name_bg_color="#5e76ac",reuse="avg1_115"},
-    {id="avg1_1205",name="미네르바",name_bg_color="#0ABEC5",reuse="avg1_132"},
-    {id="avg1_1206",name="토나",name_bg_color="#e9be88",reuse="avg1_130"},
-    {id="avg1_1207",name="아야메",name_bg_color="#9392ca",reuse="avg1_111"},
-    {id="avg1_1208",name="평범한 여행가(남)",name_bg_color="#0ABEC5",reuse="avg3_139"},
-    {id="avg1_1209",name="윌로",name_bg_color="#0ABEC5",reuse="avg3_102"},
-    {id="avg1_1210",name="코제트",name_bg_color="#0ABEC5",reuse="avg1_142"},
-    {id="avg1_1211",name="레이스",name_bg_color="#0ABEC5",reuse="avg1_143"},
-    {id="avg1_1212",name="프리지아",name_bg_color="#90abe1",reuse="avg1_125"},
-    {id="avg1_1213",name="라루",name_bg_color="#0ABEC5",reuse="avg3_154"},
-    {id="avg3_1214",name="호박이",name_bg_color="#0ABEC5",reuse="avg2_965"},
-    {id="avg3_1215",name="연구원A",name_bg_color="#0ABEC5",reuse="avg3_180"},
-    {id="avg3_1216",name="연구원B",name_bg_color="#0ABEC5",reuse="avg3_180"},
-    {id="avg3_1217",name="연구원C",name_bg_color="#0ABEC5",reuse="avg3_180"},
-    {id="avg3_1218",name="학생",name_bg_color="#0ABEC5",reuse="avg3_178"},
-    {id="avg1_1219",name="폴몬트",name_bg_color="#0ABEC5",reuse="avg2_994"},
-    {id="avg3_1220",name="아그리 유니온 산림 감시원A",name_bg_color="#0ABEC5",reuse="avg3_120"},
-    {id="avg3_1221",name="아그리 유니온 산림 감시원B",name_bg_color="#0ABEC5",reuse="avg3_120"},
-    {id="avg3_1222",name="호위대 사병A",name_bg_color="#0ABEC5",reuse="avg3_157"},
-    {id="avg3_1223",name="호위대 사병B",name_bg_color="#0ABEC5",reuse="avg3_157"},
-    {id="avg3_1224",name="디펜더 여행가A",name_bg_color="#0ABEC5",reuse="avg2_982"},
-    {id="avg3_1225",name="베아트리스b",name_bg_color="#0ABEC5",reuse="avg3_172"},
-    {id="avg3_1226",name="베르너b",name_bg_color="#0ABEC5",reuse="avg3_173"},
-    {id="avg3_1227",name="베르주b",name_bg_color="#0ABEC5",reuse="avg3_174"},
-    {id="avg3_1228",name="백묘 용병A",name_bg_color="#0ABEC5",reuse="avg2_967"},
-    {id="avg3_1229",name="연구원A",name_bg_color="#0ABEC5",reuse="avg3_142"},
-    {id="avg3_1230",name="여자아이A",name_bg_color="#0ABEC5",reuse="avg3_168"},
-    {id="avg3_1231",name="여자아이B",name_bg_color="#0ABEC5",reuse="avg3_168"},
-    {id="avg3_1232",name="근거리 여행가 병사A",name_bg_color="#0ABEC5",reuse="avg2_984"},
-    {id="avg3_1233",name="은혜의지 안내원A",name_bg_color="#0ABEC5",reuse="avg3_185"},
-    {id="avg3_1234",name="오로라A",name_bg_color="#6eb29b",reuse="avg1_106"},
-    {id="avg3_1235",name="오로라B",name_bg_color="#6eb29b",reuse="avg1_106"},
-    {id="avg3_1236",name="오로라C",name_bg_color="#6eb29b",reuse="avg1_106"},
-    {id="avg3_1237",name="갱단의 도도한 여성A",name_bg_color="#0ABEC5",reuse="avg3_198"},
-    {id="avg3_1238",name="갱단의 키 작은 소녀A",name_bg_color="#0ABEC5",reuse="avg3_199"},
-    {id="avg3_1239",name="제국 호위대A(남)",name_bg_color="#0ABEC5",reuse="avg3_157"},
-    {id="avg3_1240",name="제국 호위대B(남)",name_bg_color="#0ABEC5",reuse="avg3_157"},
-    {id="avg3_1241",name="제국 호위대C(남)",name_bg_color="#0ABEC5",reuse="avg3_157"},
-    {id="avg3_1242",name="치토세A",name_bg_color="#a87dc0",reuse="avg1_144"},
-    {id="avg3_1243",name="베스티나A",name_bg_color="#0ABEC5",reuse="avg3_152"},
-    {id="avg3_1244",name="스페이스 워커A",name_bg_color="#0ABEC5",reuse="avg2_955"},
-    {id="avg3_1245",name="스페이스 워커B",name_bg_color="#0ABEC5",reuse="avg2_955"},
-    {id="avg3_1246",name="마스크보어 보스A",name_bg_color="#0ABEC5",reuse="avg2_977"},
-    {id="avg3_1247",name="마스크보어 보스B",name_bg_color="#0ABEC5",reuse="avg2_977"},
-    {id="avg3_1248",name="마스크보어 보스C",name_bg_color="#0ABEC5",reuse="avg2_977"},
-    {id="avg3_1249",name="아그리 유니온 사원A",name_bg_color="#0ABEC5",reuse="avg3_121"},
-    {id="avg3_1250",name="아그리 유니온 사원B",name_bg_color="#0ABEC5",reuse="avg3_121"},
-    {id="avg3_1251",name="아그리 유니온 사원C",name_bg_color="#0ABEC5",reuse="avg3_121"},
-    {id="avg3_1252",name="클레어A",name_bg_color="#c97557",reuse="avg3_135"},
-    {id="avg3_1253",name="후유카",name_bg_color="#f8be56",reuse="avg1_134"},
-    {id="avg3_1254",name="반생수A",name_bg_color="#0ABEC5",reuse="avg2_976"},
-    {id="avg3_1255",name="반생수B",name_bg_color="#0ABEC5",reuse="avg2_976"},
-    {id="avg4_999",name="비타",name_bg_color="#0ABEC5"},
+{id = "0", name = "", name_bg_color = "#0ABEC5", surfix = "旁白"}
+, 
+{id = "1", name = "", name_bg_color = "#0ABEC5", surfix = "玩家"}
+, 
+{id = "avg1_103", name = "코하쿠", name_bg_color = "#99d2d9"}
+, 
+{id = "avg1_1994", name = "나츠카A", name_bg_color = "#99d2d9", reuse = "avg1_133"}
+, 
+{id = "avg1_1997", name = "졸개A", name_bg_color = "#0ABEC5", reuse = "avg1_103"}
+, 
+{id = "avg1_1998", name = "졸개B", name_bg_color = "#0ABEC5", reuse = "avg1_103"}
+, 
+{id = "avg1_1999", name = "졸개C", name_bg_color = "#0ABEC5", reuse = "avg1_103"}
+, 
+{id = "avg1_1996", name = "세이나B", name_bg_color = "#0ABEC5", reuse = "avg1_112"}
+, 
+{id = "avg1_1995", name = "수다쟁이B", name_bg_color = "#0ABEC5", reuse = "avg3_130"}
+, 
+{id = "avg1_1993", name = "주민A", name_bg_color = "#0ABEC5", reuse = "avg3_175"}
+, 
+{id = "avg1_1992", name = "주민B", name_bg_color = "#0ABEC5", reuse = "avg3_175"}
+, 
+{id = "avg1_106", name = "오로라", name_bg_color = "#6eb29b"}
+, 
+{id = "avg1_107", name = "틸리아", name_bg_color = "#3d5bbf", reuseL2DPose = "c"}
+, 
+{id = "avg1_108", name = "카시미라", name_bg_color = "#be4139"}
+, 
+{id = "avg1_109", name = "아오바", name_bg_color = "#ffa8bf"}
+, 
+{id = "avg1_110", name = "피렌", name_bg_color = "#8db947"}
+, 
+{id = "avg1_111", name = "아야메", name_bg_color = "#9392ca"}
+, 
+{id = "avg1_112", name = "세이나", name_bg_color = "#ffe39e"}
+, 
+{id = "avg1_113", name = "시먀오", name_bg_color = "#c6eff3"}
+, 
+{id = "avg1_114", name = "샤통", name_bg_color = "#8e65ad"}
+, 
+{id = "avg1_115", name = "호타루", name_bg_color = "#5e76ac"}
+, 
+{id = "avg1_116", name = "레이센", name_bg_color = "#bfd641"}
+, 
+{id = "avg1_117", name = "징린", name_bg_color = "#e36463"}
+, 
+{id = "avg1_118", name = "크루니스", name_bg_color = "#cfbf93", reuseL2DPose = "b"}
+, 
+{id = "avg1_119", name = "나노하", name_bg_color = "#c8708c"}
+, 
+{id = "avg1_120", name = "카나체", name_bg_color = "#d4bfe1", reuseL2DPose = "b"}
+, 
+{id = "avg1_123", name = "안즈", name_bg_color = "#ed825d"}
+, 
+{id = "avg1_125", name = "프리지아", name_bg_color = "#90abe1"}
+, 
+{id = "avg1_126", name = "플로라", name_bg_color = "#c0497a"}
+, 
+{id = "avg1_127", name = "테레사", name_bg_color = "#a0675d"}
+, 
+{id = "avg1_129", name = "유베", name_bg_color = "#6a6261"}
+, 
+{id = "avg1_130", name = "토나", name_bg_color = "#e9be88"}
+, 
+{id = "avg1_131", name = "블롯치", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_132", name = "미네르바", name_bg_color = "#6387e8"}
+, 
+{id = "avg1_133", name = "나츠카", name_bg_color = "#6fb1d2"}
+, 
+{id = "avg1_134", name = "후유카", name_bg_color = "#f8be56"}
+, 
+{id = "avg1_135", name = "미스티", name_bg_color = "#c27fe9"}
+, 
+{id = "avg1_136", name = "앙주", name_bg_color = "#e0dcfb"}
+, 
+{id = "avg1_137", name = "엘레노어", name_bg_color = "#e78fab"}
+, 
+{id = "avg1_138", name = "닉스", name_bg_color = "#8dcec0"}
+, 
+{id = "avg1_139", name = "엘리", name_bg_color = "#555559"}
+, 
+{id = "avg1_141", name = "치시아", name_bg_color = "#d75d5e"}
+, 
+{id = "avg1_142", name = "코제트", name_bg_color = "#7795d8"}
+, 
+{id = "avg1_143", name = "레이스", name_bg_color = "#5e6cb5"}
+, 
+{id = "avg1_144", name = "치토세", name_bg_color = "#a87dc0"}
+, 
+{id = "avg1_146", name = "베니토", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_147", name = "캐러멜", name_bg_color = "#f0d2a1"}
+, 
+{id = "avg1_149", name = "그레이", name_bg_color = "#985b78"}
+, 
+{id = "avg1_150", name = "라루", name_bg_color = "#c5bbb5"}
+, 
+{id = "avg1_155", name = "시아", name_bg_color = "#c4a5e6"}
+, 
+{id = "avg1_156", name = "나즈나", name_bg_color = "#b5e6b2"}
+, 
+{id = "avg1_157", name = "카린", name_bg_color = "#bb788e"}
+, 
+{id = "avg1_158", name = "라루", name_bg_color = "#c5bbb5"}
+, 
+{id = "avg1_159", name = "크루니스", name_bg_color = "#cfbf93"}
+, 
+{id = "avg2_001", name = "우드모트 잔챙이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_002", name = "우드모트 허수아비", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_003", name = "우드모트 척탄병", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_954", name = "크리스피 미트", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_955", name = "스페이스 워커", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_956", name = "광기의 요리사 -매드 테이스터", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_957", name = "원거리 풀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_958", name = "원거리 풀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_960", name = "바다토끼", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_961", name = "바람풀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_962", name = "중독된 아그리 유니온 사원B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_963", name = "중독된 아그리 유니온 사원A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_964", name = "벌새", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_965", name = "랜턴이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_966", name = "샬롯", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_967", name = "백묘 용병 졸개(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_968", name = "백묘 용병 졸개(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_969", name = "사계 철새 여행가(디펜더)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_970", name = "사계 철새 여행가(원거리)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_971", name = "사계 철새 여행가(근거리)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_972", name = "쾅쾅너클", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_973", name = "제너럴 탱크", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_974", name = "핫 스틸 해머", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_975", name = "젤리젤리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_976", name = "반생수", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_977", name = "와일드 보어 킹", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_978", name = "로비나", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_979", name = "영혼의 사자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_980", name = "불렛 슈터(물)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_981", name = "럭키 루비(물)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_982", name = "디펜더 여행가 일반 병사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_983", name = "원거리 여행가 일반 병사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_984", name = "근거리 여행가 일반 병사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_985", name = "달리시아", name_bg_color = "#a1516c"}
+, 
+{id = "avg2_990", name = "윈드 애시 멤버A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_991", name = "윈드 애시 멤버B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_993", name = "넬몬트", name_bg_color = "#c088b1"}
+, 
+{id = "avg2_994", name = "폴몬트", name_bg_color = "#d55d89"}
+, 
+{id = "avg2_997", name = "가면 피렌", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg2_999", name = "오로라 Rose", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_100", name = "세라", name_bg_color = "#0ABEC5", surfix = "女"}
+, 
+{id = "avg3_101", name = "세라", name_bg_color = "#0ABEC5", surfix = "男"}
+, 
+{id = "avg3_102", name = "윌로", name_bg_color = "#a8454e"}
+, 
+{id = "avg3_103", name = "앨저", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_104", name = "제비갈매기", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_106", name = "하나", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_107", name = "두리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_108", name = "크손", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_109", name = "챠이 할아버지", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_110", name = "코코", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_111", name = "리더 남성", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_112", name = "청 아저씨", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_113", name = "소아", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_115", name = "언치새", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_118", name = "분홍 머리 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_119", name = "파란 머리 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_120", name = "아그리 유니온 산림 감시원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_121", name = "아그리 유니온 사원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_122", name = "아그리 유니온 매니저", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_123", name = "엘레노어", name_bg_color = "#0ABEC5", reuse = "avg1_137"}
+, 
+{id = "avg3_124", name = "에리니스", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_125", name = "메이쿄", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_126", name = "해연 파이낸스 여직원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_127", name = "미스티", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_128", name = "오필", name_bg_color = "#c2b3ec"}
+, 
+{id = "avg3_129", name = "제국 호위대(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_130", name = "제국 호위대 수다쟁이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_131", name = "나즈나", name_bg_color = "#b5e6b2", reuse = "avg1_156"}
+, 
+{id = "avg3_132", name = "카에데", name_bg_color = "#f192c5"}
+, 
+{id = "avg3_133", name = "포셔", name_bg_color = "#4fad86"}
+, 
+{id = "avg3_134", name = "마이나", name_bg_color = "#a7795c"}
+, 
+{id = "avg3_135", name = "클레어", name_bg_color = "#c97557"}
+, 
+{id = "avg3_136", name = "루비", name_bg_color = "#9f3a42"}
+, 
+{id = "avg3_137", name = "사파이어", name_bg_color = "#5480d6"}
+, 
+{id = "avg3_138", name = "평범한 여행가(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_139", name = "평범한 여행가(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_140", name = "아그리 유니온 사원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_141", name = "아그리 유니온 작업자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_142", name = "아그리 유니온 연구원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_143", name = "평범한 주민(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_144", name = "평범한 주민(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_145", name = "골드 에리어 주민A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_146", name = "골드 에리어 주민B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_147", name = "골드 에리어 주민C", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_150", name = "알베도", name_bg_color = "#faf1d2"}
+, 
+{id = "avg3_151", name = "트루시아", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_152", name = "베스티나", name_bg_color = "#e6fff6"}
+, 
+{id = "avg3_154", name = "라루", name_bg_color = "#c5bbb5", reuse = "avg1_150"}
+, 
+{id = "avg3_156", name = "키작은 제국 호위대", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_157", name = "제국 호위대(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_158", name = "샤로 인형탈", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_159", name = "피안", name_bg_color = "#b73947"}
+, 
+{id = "avg3_161", name = "스구하", name_bg_color = "#f4e0d7"}
+, 
+{id = "avg3_164", name = "이오리", name_bg_color = "#fac89b"}
+, 
+{id = "avg3_165", name = "비스케", name_bg_color = "#88594b"}
+, 
+{id = "avg3_166", name = "평범한 마을 주민 할머니", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_167", name = "평범한 소녀A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_168", name = "평범한 소녀B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_169", name = "평범한 용족 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_170", name = "평범한 애시 에리어의 어린 소년", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_171", name = "여직원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_172", name = "베아트리스", name_bg_color = "#95c1f9"}
+, 
+{id = "avg3_173", name = "베르너", name_bg_color = "#c84146"}
+, 
+{id = "avg3_174", name = "베르주", name_bg_color = "#ceb3ce"}
+, 
+{id = "avg3_175", name = "용족 주민(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_176", name = "용족 주민(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_177", name = "성휘 부속대학 학생(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_178", name = "성휘 부속대학 학생(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_179", name = "뮈샤", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_180", name = "아그리 유니온 연구원B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_181", name = "네리타", name_bg_color = "#8092ff"}
+, 
+{id = "avg3_182", name = "이리스", name_bg_color = "#a4a5d5"}
+, 
+{id = "avg3_183", name = "요셉", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_184", name = "그레이 부인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_185", name = "은혜 안내원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_186", name = "호두", name_bg_color = "#edbfe9"}
+, 
+{id = "avg3_187", name = "플라비오 주민(남)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_188", name = "플라비오 주민(여)", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_189", name = "케이트", name_bg_color = "#d74e4d"}
+, 
+{id = "avg3_191", name = "후유카 악마", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_192", name = "후유카 천사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_193", name = "필리", name_bg_color = "#9a344e"}
+, 
+{id = "avg3_194", name = "아크라", name_bg_color = "#4c4545"}
+, 
+{id = "avg3_195", name = "에이다", name_bg_color = "#d5d2da"}
+, 
+{id = "avg3_196", name = "여직원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_197", name = "피킨", name_bg_color = "#fffebf"}
+, 
+{id = "avg3_198", name = "갱단의 도도한 여성", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_199", name = "갱단의 키 작은 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_200", name = "평범한 애시 에리어 어린 소년B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_201", name = "마레", name_bg_color = "#d9cdff"}
+, 
+{id = "avg3_202", name = "이츠키", name_bg_color = "#d4ba8d"}
+, 
+{id = "avg3_203", name = "스즈노", name_bg_color = "#b5bdeb"}
+, 
+{id = "avg3_205", name = "이그나", name_bg_color = "#4579b4"}
+, 
+{id = "avg3_206", name = "암월", name_bg_color = "#394444"}
+, 
+{id = "avg3_873", name = "클레어", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_874", name = "점원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_875", name = "하급 여행가들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_876", name = "어린 아이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_877", name = "분노한 가장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_878", name = "무력한 점주", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_879", name = "다투는 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_880", name = "구경하는 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_881", name = "어리둥절한 노점상과 손님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_882", name = "분노한 손님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_883", name = "소곤대는 대원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_884", name = "맞장구치는 대원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_885", name = "순찰대원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_886", name = "구경하는 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_887", name = "용족 주민", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_888", name = "어두운 표정의 차주", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_889", name = "당황한 도둑", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_890", name = "수리점 점주", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_891", name = "차주", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_892", name = "지리 협회 사무원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_893", name = "검은 고양이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_894", name = "난폭한 토마스", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_895", name = "음침한 잭", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_896", name = "우아한 귀부인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_897", name = "점잖은 신사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_898", name = "계산 중인 사람", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_899", name = "카메라를 든 사람", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_900", name = "화려한 옷차림의 사람", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_901", name = "책을 든 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_902", name = "부드러운 목소리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_903", name = "아그리 유니온 직원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_904", name = "새 가면을 쓴 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_905", name = "아야메&세이나", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_906", name = "가면의 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_907", name = "갑옷 괴인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_908", name = "집 안에서 들리는 소리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_909", name = "줄 서는 여행가들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_910", name = "마을 주민들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_911", name = "마을 주민A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_912", name = "마을 주민B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_913", name = "살충 작업자들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_914", name = "의심하는 사원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_915", name = "또 의심하는 사원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_916", name = "가면을 쓴 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_917", name = "의뢰인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_918", name = "빨간 머리 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_919", name = "윈드 애시 멤버A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_920", name = "윈드 애시 멤버B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_921", name = "윈드 애시 멤버A&B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_922", name = "여행가 장사꾼", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_923", name = "멀리 있는 마을 주민", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_924", name = "아야메의 목소리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_925", name = "고장난 \'풍차\'", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_926", name = "여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_927", name = "여자아이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_928", name = "젊은 아버지", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_929", name = "짜증 난 손님A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_930", name = "짜증 난 손님B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_931", name = "늙은 용족 손님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_932", name = "청년 손님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_933", name = "중년 손님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_934", name = "구경하는 손님들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_935", name = "풀이 죽은 백묘", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_936", name = "생각에 잠긴 백묘", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_937", name = "사람들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_938", name = "신중한 갱단 멤버", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_939", name = "의기양양한 갱단 멤버", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_940", name = "갱단 멤버들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_941", name = "신중한 갱단 멤버", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_942", name = "두목인척 하는 백묘", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_943", name = "용병A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_944", name = "용병B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_945", name = "멀리 있는 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_946", name = "목표", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_947", name = "난폭해 보이는 대장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_948", name = "음침해 보이는 대장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_949", name = "창가의 검은 고양이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_950", name = "겁쟁이 강도", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_951", name = "흉악한 리더", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_952", name = "강도인척 하는 백묘", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_953", name = "용병A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_954", name = "용병B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_955", name = "용병C", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_956", name = "용병D", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_957", name = "제국 기사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_958", name = "제국 기사?", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_959", name = "가짜 기사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_960", name = "백발의 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_961", name = "방망이를 들고 있는 윈드 애시", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_962", name = "큰 가방을 메고 있는 윈드 애시", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_963", name = "윈드 애시 멤버들", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_964", name = "양산을 쓴 아가씨", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_965", name = "안경을 쓴 선생님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_966", name = "빗자루를 든 마녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_967", name = "세이나&코하쿠&아야메", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_968", name = "겁쟁이 기사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_969", name = "우람한 기사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_970", name = "아야메&코하쿠", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_971", name = "캠프 경비병", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_972", name = "후드를 쓴 여자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_973", name = "지나가는 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_974", name = "세레나", name_bg_color = "#e0dcfb", reuse = "avg1_136"}
+, 
+{id = "avg3_975", name = "인형뽑기를 좋아하는 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_976", name = "인형뽑기 고수", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_977", name = "초조한 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_978", name = "감격한 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_979", name = "창가의 사원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_980", name = "탑 입구의 경비병", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_981", name = "사계 철새 여행가", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_982", name = "사계 철새 여행가A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_983", name = "사계 철새 여행가B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_984", name = "상인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_985", name = "여행가A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_986", name = "여행가B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_987", name = "아그리 유니온 경비원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_988", name = "방송 속 목소리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_997", name = "??", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_998", name = "아야메&프리지아", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_999", name = "???", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1022", name = "이상한 남자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1023", name = "앤드류 부인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1024", name = "노점상 여사장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1025", name = "복권집 사장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1027", name = "법관", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1028", name = "나이가 많은 남성", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1029", name = "기자C", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1030", name = "기자B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1031", name = "기자A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1032", name = "메노", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1033", name = "낯선 여성", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1034", name = "프로덕션 경비원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1035", name = "반디&아오이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1036", name = "반디", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1037", name = "아오이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1038", name = "에반 씨", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1039", name = "연로한 남성의 목소리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1040", name = "캉 할머니", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1041", name = "배송원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1042", name = "훠궈 가게 점장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1043", name = "불을 끄는 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1044", name = "당황한 훠궈 가게 점원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1045", name = "당황한 행인", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1046", name = "점원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1047", name = "전화기 저편의 남자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1048", name = "아궁이 괴물", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1049", name = "제너럴 탱크", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1050", name = "전기 귀신", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1051", name = "젤리젤리", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1052", name = "호루타", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1053", name = "가게 사장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1054", name = "하울", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1055", name = "술냄새를 풍기는 환자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1056", name = "당황한 환자", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1057", name = "길옆에서 장난치는 소년", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1058", name = "목소리가 큰 소년", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1059", name = "개구쟁이 소년", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1060", name = "대장이라 불리는 소년", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1061", name = "걱정하는 소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1062", name = "안내", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1064", name = "다른 사람", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1065", name = "레티", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1066", name = "마이크", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1067", name = "와일드 보어", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1068", name = "훤칠한 귀족 선생님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1069", name = "뚱뚱한 귀족 선생님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1070", name = "소녀", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1071", name = "엄숙한 귀족 선생님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1072", name = "흉악한 귀족 선생님", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1073", name = "클리프", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1074", name = "뮈샤", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1075", name = "여학생", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1076", name = "오로라", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1077", name = "에반", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1078", name = "디저트 가게 여사장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1079", name = "디저트 가게 사장", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1080", name = "남자아이", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1081", name = "마술사", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1082", name = "지나가던 아주머니", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1083", name = "지나가던 꼬마", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1084", name = "행인B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1085", name = "행인A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1086", name = "노점상B", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1087", name = "노점상A", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1088", name = "열성적인 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1089", name = "옆집 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1090", name = "난폭한 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1091", name = "아이스크림 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1092", name = "간식 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1093", name = "다른 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1094", name = "쿠키 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1095", name = "푸딩 노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1096", name = "노점상", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1097", name = "아그리 유니온 인원", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1098", name = "우드모트 형제", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg3_1099", name = "제국 호위대", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1190", name = "릴리스", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1191", name = "문약한 비서", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1192", name = "수석", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1193", name = "미간에 주름진 윈드 애시", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1194", name = "흉악한 표정의 윈드 애시", name_bg_color = "#0ABEC5"}
+, 
+{id = "avg1_1195", name = "성해A", name_bg_color = "#0ABEC5", reuse = "avg2_980"}
+, 
+{id = "avg1_1196", name = "성해B", name_bg_color = "#0ABEC5", reuse = "avg2_980"}
+, 
+{id = "avg1_1197", name = "성해C", name_bg_color = "#0ABEC5", reuse = "avg2_980"}
+, 
+{id = "avg1_1198", name = "성해D", name_bg_color = "#0ABEC5", reuse = "avg2_981"}
+, 
+{id = "avg1_1199", name = "성해E", name_bg_color = "#0ABEC5", reuse = "avg2_981"}
+, 
+{id = "avg1_1200", name = "성해F", name_bg_color = "#0ABEC5", reuse = "avg2_981"}
+, 
+{id = "avg3_1201", name = "아그리 유니온 사무원A", name_bg_color = "#0ABEC5", reuse = "avg3_140"}
+, 
+{id = "avg3_1202", name = "아그리 유니온 사무원B", name_bg_color = "#0ABEC5", reuse = "avg3_140"}
+, 
+{id = "avg3_1203", name = "아그리 유니온 사무원C", name_bg_color = "#0ABEC5", reuse = "avg3_140"}
+, 
+{id = "avg1_1204", name = "호루타", name_bg_color = "#5e76ac", reuse = "avg1_115"}
+, 
+{id = "avg1_1205", name = "미네르바", name_bg_color = "#0ABEC5", reuse = "avg1_132"}
+, 
+{id = "avg1_1206", name = "토나", name_bg_color = "#e9be88", reuse = "avg1_130"}
+, 
+{id = "avg1_1207", name = "아야메", name_bg_color = "#9392ca", reuse = "avg1_111"}
+, 
+{id = "avg1_1208", name = "평범한 여행가(남)", name_bg_color = "#0ABEC5", reuse = "avg3_139"}
+, 
+{id = "avg1_1209", name = "윌로", name_bg_color = "#0ABEC5", reuse = "avg3_102"}
+, 
+{id = "avg1_1210", name = "코제트", name_bg_color = "#0ABEC5", reuse = "avg1_142"}
+, 
+{id = "avg1_1211", name = "레이스", name_bg_color = "#0ABEC5", reuse = "avg1_143"}
+, 
+{id = "avg1_1212", name = "프리지아", name_bg_color = "#90abe1", reuse = "avg1_125"}
+, 
+{id = "avg1_1213", name = "라루", name_bg_color = "#0ABEC5", reuse = "avg3_154"}
+, 
+{id = "avg3_1214", name = "호박이", name_bg_color = "#0ABEC5", reuse = "avg2_965"}
+, 
+{id = "avg3_1215", name = "연구원A", name_bg_color = "#0ABEC5", reuse = "avg3_180"}
+, 
+{id = "avg3_1216", name = "연구원B", name_bg_color = "#0ABEC5", reuse = "avg3_180"}
+, 
+{id = "avg3_1217", name = "연구원C", name_bg_color = "#0ABEC5", reuse = "avg3_180"}
+, 
+{id = "avg3_1218", name = "학생", name_bg_color = "#0ABEC5", reuse = "avg3_178"}
+, 
+{id = "avg1_1219", name = "폴몬트", name_bg_color = "#0ABEC5", reuse = "avg2_994"}
+, 
+{id = "avg3_1220", name = "아그리 유니온 산림 감시원A", name_bg_color = "#0ABEC5", reuse = "avg3_120"}
+, 
+{id = "avg3_1221", name = "아그리 유니온 산림 감시원B", name_bg_color = "#0ABEC5", reuse = "avg3_120"}
+, 
+{id = "avg3_1222", name = "호위대 사병A", name_bg_color = "#0ABEC5", reuse = "avg3_157"}
+, 
+{id = "avg3_1223", name = "호위대 사병B", name_bg_color = "#0ABEC5", reuse = "avg3_157"}
+, 
+{id = "avg3_1224", name = "디펜더 여행가A", name_bg_color = "#0ABEC5", reuse = "avg2_982"}
+, 
+{id = "avg3_1225", name = "베아트리스b", name_bg_color = "#0ABEC5", reuse = "avg3_172"}
+, 
+{id = "avg3_1226", name = "베르너b", name_bg_color = "#0ABEC5", reuse = "avg3_173"}
+, 
+{id = "avg3_1227", name = "베르주b", name_bg_color = "#0ABEC5", reuse = "avg3_174"}
+, 
+{id = "avg3_1228", name = "백묘 용병A", name_bg_color = "#0ABEC5", reuse = "avg2_967"}
+, 
+{id = "avg3_1229", name = "연구원A", name_bg_color = "#0ABEC5", reuse = "avg3_142"}
+, 
+{id = "avg3_1230", name = "여자아이A", name_bg_color = "#0ABEC5", reuse = "avg3_168"}
+, 
+{id = "avg3_1231", name = "여자아이B", name_bg_color = "#0ABEC5", reuse = "avg3_168"}
+, 
+{id = "avg3_1232", name = "근거리 여행가 병사A", name_bg_color = "#0ABEC5", reuse = "avg2_984"}
+, 
+{id = "avg3_1233", name = "은혜의지 안내원A", name_bg_color = "#0ABEC5", reuse = "avg3_185"}
+, 
+{id = "avg3_1234", name = "오로라A", name_bg_color = "#6eb29b", reuse = "avg1_106"}
+, 
+{id = "avg3_1235", name = "오로라B", name_bg_color = "#6eb29b", reuse = "avg1_106"}
+, 
+{id = "avg3_1236", name = "오로라C", name_bg_color = "#6eb29b", reuse = "avg1_106"}
+, 
+{id = "avg3_1237", name = "갱단의 도도한 여성A", name_bg_color = "#0ABEC5", reuse = "avg3_198"}
+, 
+{id = "avg3_1238", name = "갱단의 키 작은 소녀A", name_bg_color = "#0ABEC5", reuse = "avg3_199"}
+, 
+{id = "avg3_1239", name = "제국 호위대A(남)", name_bg_color = "#0ABEC5", reuse = "avg3_157"}
+, 
+{id = "avg3_1240", name = "제국 호위대B(남)", name_bg_color = "#0ABEC5", reuse = "avg3_157"}
+, 
+{id = "avg3_1241", name = "제국 호위대C(남)", name_bg_color = "#0ABEC5", reuse = "avg3_157"}
+, 
+{id = "avg3_1242", name = "치토세A", name_bg_color = "#a87dc0", reuse = "avg1_144"}
+, 
+{id = "avg3_1243", name = "베스티나A", name_bg_color = "#0ABEC5", reuse = "avg3_152"}
+, 
+{id = "avg3_1244", name = "스페이스 워커A", name_bg_color = "#0ABEC5", reuse = "avg2_955"}
+, 
+{id = "avg3_1245", name = "스페이스 워커B", name_bg_color = "#0ABEC5", reuse = "avg2_955"}
+, 
+{id = "avg3_1246", name = "마스크보어 보스A", name_bg_color = "#0ABEC5", reuse = "avg2_977"}
+, 
+{id = "avg3_1247", name = "마스크보어 보스B", name_bg_color = "#0ABEC5", reuse = "avg2_977"}
+, 
+{id = "avg3_1248", name = "마스크보어 보스C", name_bg_color = "#0ABEC5", reuse = "avg2_977"}
+, 
+{id = "avg3_1249", name = "아그리 유니온 사원A", name_bg_color = "#0ABEC5", reuse = "avg3_121"}
+, 
+{id = "avg3_1250", name = "아그리 유니온 사원B", name_bg_color = "#0ABEC5", reuse = "avg3_121"}
+, 
+{id = "avg3_1251", name = "아그리 유니온 사원C", name_bg_color = "#0ABEC5", reuse = "avg3_121"}
+, 
+{id = "avg3_1252", name = "클레어A", name_bg_color = "#c97557", reuse = "avg3_135"}
+, 
+{id = "avg3_1253", name = "후유카", name_bg_color = "#f8be56", reuse = "avg1_134"}
+, 
+{id = "avg3_1254", name = "반생수A", name_bg_color = "#0ABEC5", reuse = "avg2_976"}
+, 
+{id = "avg3_1255", name = "반생수B", name_bg_color = "#0ABEC5", reuse = "avg2_976"}
+, 
+{id = "avg4_999", name = "비타", name_bg_color = "#0ABEC5"}
 }
+

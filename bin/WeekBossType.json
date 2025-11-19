@@ -11,7 +11,7 @@
       6
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_02",
-    "BossBg": "forest_daylight_3"
+    "BossBg": "Image/UIBG/forest_daylight_3"
   },
   "62021": {
     "Id": 62021,
@@ -25,7 +25,7 @@
       3
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_03",
-    "BossBg": "forest"
+    "BossBg": "Image/UIBG/forest"
   },
   "62031": {
     "Id": 62031,
@@ -39,7 +39,7 @@
       2
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_01",
-    "BossBg": "ttc_canal_top"
+    "BossBg": "Image/UIBG/ttc_canal_top"
   },
   "62041": {
     "Id": 62041,
@@ -53,7 +53,7 @@
       4
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_05",
-    "BossBg": "uniseed_basement"
+    "BossBg": "Image/UIBG/uniseed_basement"
   },
   "62051": {
     "Id": 62051,
@@ -67,7 +67,7 @@
       5
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_04",
-    "BossBg": "uniseed_greenhouse_inside_night"
+    "BossBg": "Image/UIBG/uniseed_greenhouse_inside_night"
   },
   "62061": {
     "Id": 62061,
@@ -81,6 +81,6 @@
       1
     ],
     "Episode": "Icon/MapChallenge/boss_Tachie_06",
-    "BossBg": "ttc_harbour_daylight"
+    "BossBg": "Image/UIBG/ttc_harbour_daylight"
   }
 }

@@ -1,21 +1,24 @@
 local StarTowerFastBattleLogPanel = class("StarTowerFastBattleLogPanel", BasePanel)
--- Panel 定义
-
 StarTowerFastBattleLogPanel._bIsMainPanel = false
-
 StarTowerFastBattleLogPanel._tbDefine = {
-    {sPrefabPath = "StarTowerFastBattle/StarTowerFastBattleLogPanel.prefab", sCtrlName = "Game.UI.StarTowerFastBattle.StarTowerFastBattleLogCtrl"},
+{sPrefabPath = "StarTowerFastBattle/StarTowerFastBattleLogPanel.prefab", sCtrlName = "Game.UI.StarTowerFastBattle.StarTowerFastBattleLogCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function StarTowerFastBattleLogPanel:Awake()
-    self.tbHistoryLog = self:GetPanelParam()[1]
+StarTowerFastBattleLogPanel.Awake = function(self)
+  -- function num : 0_0
+  self.tbHistoryLog = (self:GetPanelParam())[1]
 end
-function StarTowerFastBattleLogPanel:OnEnable()
+
+StarTowerFastBattleLogPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerFastBattleLogPanel:OnDisable()
+
+StarTowerFastBattleLogPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function StarTowerFastBattleLogPanel:OnDestroy()
+
+StarTowerFastBattleLogPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return StarTowerFastBattleLogPanel
+

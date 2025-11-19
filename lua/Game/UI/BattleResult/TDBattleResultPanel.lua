@@ -1,22 +1,23 @@
-
 local TDBattleResultPanel = class("TDBattleResultPanel", BasePanel)
-
 TDBattleResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 TDBattleResultPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/TravelerDuelBattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.TDBattleResultCtrl"}
+{sPrefabPath = "BattleResult/TravelerDuelBattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.TDBattleResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+TDBattleResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function TDBattleResultPanel:Awake()
+TDBattleResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TDBattleResultPanel:OnEnable()
+
+TDBattleResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function TDBattleResultPanel:OnDisable()
+
+TDBattleResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function TDBattleResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return TDBattleResultPanel
+

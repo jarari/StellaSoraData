@@ -1,37 +1,36 @@
--- Panel 模板
-
 local SubSkillDisplayPanel = class("SubSkillDisplayPanel", BasePanel)
 SubSkillDisplayPanel._bIsMainPanel = false
--- Panel 定义
---[[
-SubSkillDisplayPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-SubSkillDisplayPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-SubSkillDisplayPanel._bIsMainPanel = true
-SubSkillDisplayPanel._bAddToBackHistory = true
-SubSkillDisplayPanel._nSnapshotPrePanel = 0
-SubSkillDisplayPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 SubSkillDisplayPanel._tbDefine = {
-    {sPrefabPath = "Battle/SubSkillDisplay_forActor2dEditor.prefab"},
-    {sPrefabPath = "Battle/SubSkillDisplay.prefab", sCtrlName = "Game.UI.Battle.SubSkillDisplay.SubSkillDisplayCtrl"},
+{sPrefabPath = "Battle/SubSkillDisplay_forActor2dEditor.prefab"}
+, 
+{sPrefabPath = "Battle/SubSkillDisplay.prefab", sCtrlName = "Game.UI.Battle.SubSkillDisplay.SubSkillDisplayCtrl"}
 }
 if RUNNING_ACTOR2D_EDITOR ~= true then
-    table.remove(SubSkillDisplayPanel._tbDefine, 1)
+  (table.remove)(SubSkillDisplayPanel._tbDefine, 1)
 end
--------------------- local function --------------------
+SubSkillDisplayPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function SubSkillDisplayPanel:Awake()
+SubSkillDisplayPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SubSkillDisplayPanel:OnEnable()
+
+SubSkillDisplayPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function SubSkillDisplayPanel:OnAfterEnter()
+
+SubSkillDisplayPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function SubSkillDisplayPanel:OnDisable()
+
+SubSkillDisplayPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function SubSkillDisplayPanel:OnDestroy()
+
+SubSkillDisplayPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function SubSkillDisplayPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return SubSkillDisplayPanel
+

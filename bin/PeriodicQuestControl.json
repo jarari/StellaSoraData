@@ -4,8 +4,8 @@
     "FinalReward1": 86002,
     "FinalRewardQty1": 1,
     "DesText": "PeriodicQuestControl.101002.1",
-    "UIAssets": "periodic_act_01",
-    "CtrlName": "PeriodicQuestCtrl_01",
+    "UIAssets": "_101002/periodic_act_01",
+    "CtrlName": "_101002/PeriodicQuestCtrl_01",
     "PreviewType": 2
   }
 }

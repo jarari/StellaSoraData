@@ -1,35 +1,29 @@
--- Panel 模板
-
 local ItemTipsPanel = class("ItemTipsPanel", BasePanel)
 ItemTipsPanel._bIsMainPanel = false
 ItemTipsPanel._bAddToBackHistory = false
-
-ItemTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
--- Panel 定义
---[[
-ItemTipsPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-ItemTipsPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-ItemTipsPanel._bIsMainPanel = true
-ItemTipsPanel._bAddToBackHistory = true
-ItemTipsPanel._nSnapshotPrePanel = 0
-
-ItemTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
+ItemTipsPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 ItemTipsPanel._tbDefine = {
-    {sPrefabPath = "CommonTipsEx/ItemTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.ItemTipsCtrl"}
+{sPrefabPath = "CommonTipsEx/ItemTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.ItemTipsCtrl"}
 }
--------------------- local function --------------------
+ItemTipsPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function ItemTipsPanel:Awake()
+ItemTipsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ItemTipsPanel:OnEnable()
+
+ItemTipsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ItemTipsPanel:OnDisable()
+
+ItemTipsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function ItemTipsPanel:OnDestroy()
+
+ItemTipsPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function ItemTipsPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return ItemTipsPanel
+

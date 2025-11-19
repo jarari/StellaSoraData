@@ -3,8 +3,8 @@
     "Id": 301001,
     "RewardsGroup": 301001,
     "DesText": "LoginRewardControl.301001.1",
-    "UIAssets": "loginReward_act_01",
-    "CtrlName": "LoginRewardCtrl_01",
-    "PopUpUIAssets": "LoginReward_01"
+    "UIAssets": "_301001/loginReward_act_01",
+    "CtrlName": "_301001/LoginRewardCtrl_01",
+    "PopUpUIAssets": "_301001/LoginReward_01"
   }
 }

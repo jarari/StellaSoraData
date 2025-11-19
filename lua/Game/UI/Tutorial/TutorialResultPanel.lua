@@ -1,33 +1,31 @@
--- Panel 模板
-
 local TutorialResultPanel = class("TutorialResultPanel", BasePanel)
 TutorialResultPanel._bAddToBackHistory = false
--- Panel 定义
---[[
-TutorialResultPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-TutorialResultPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-TutorialResultPanel._bIsMainPanel = true
-TutorialResultPanel._bAddToBackHistory = true
-TutorialResultPanel._nSnapshotPrePanel = 0
-TutorialResultPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 TutorialResultPanel._tbDefine = {
-    {sPrefabPath = "Tutorial/TutorialResultPanel.prefab", sCtrlName = "Game.UI.Tutorial.TutorialResultCtrl"}
+{sPrefabPath = "Tutorial/TutorialResultPanel.prefab", sCtrlName = "Game.UI.Tutorial.TutorialResultCtrl"}
 }
--------------------- local function --------------------
+TutorialResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TutorialResultPanel:Awake()
+TutorialResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TutorialResultPanel:OnEnable()
+
+TutorialResultPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TutorialResultPanel:OnAfterEnter()
+
+TutorialResultPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TutorialResultPanel:OnDisable()
+
+TutorialResultPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TutorialResultPanel:OnDestroy()
+
+TutorialResultPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TutorialResultPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TutorialResultPanel
+

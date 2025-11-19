@@ -1,33 +1,29 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local CharFavourLevelUpPanel = class("CharFavourLevelUpPanel", BasePanel)
-
--- Panel 定义
---[[
-CharFavourLevelUpPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-CharFavourLevelUpPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-CharFavourLevelUpPanel._bIsMainPanel = true
-CharFavourLevelUpPanel._bAddToBackHistory = true
-CharFavourLevelUpPanel._nSnapshotPrePanel = 0
-local SortingLayerName = require "GameCore.UI.SortingLayerName"
-CharFavourLevelUpPanel._sSortingLayerName = SortingLayerName.UI
-]]
 CharFavourLevelUpPanel._bIsMainPanel = false
-CharFavourLevelUpPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+CharFavourLevelUpPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 CharFavourLevelUpPanel._tbDefine = {
-    {sPrefabPath = "CharacterFavour/CharFavourLevelUpPanel.prefab", sCtrlName = "Game.UI.CharacterFavour.CharFavourLevelUpCtrl"}
+{sPrefabPath = "CharacterFavour/CharFavourLevelUpPanel.prefab", sCtrlName = "Game.UI.CharacterFavour.CharFavourLevelUpCtrl"}
 }
--------------------- local funcion --------------------
+CharFavourLevelUpPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base funcion --------------------
-function CharFavourLevelUpPanel:Awake()
+CharFavourLevelUpPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharFavourLevelUpPanel:OnEnable()
+
+CharFavourLevelUpPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharFavourLevelUpPanel:OnDisable()
+
+CharFavourLevelUpPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function CharFavourLevelUpPanel:OnDestroy()
+
+CharFavourLevelUpPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function CharFavourLevelUpPanel:OnRelease()
-end
--------------------- callback funcion --------------------
+
 return CharFavourLevelUpPanel
+

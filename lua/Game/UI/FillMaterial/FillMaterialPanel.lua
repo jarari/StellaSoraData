@@ -1,20 +1,23 @@
--- FillMaterialPanel Panel
-
 local FillMaterialPanel = class("FillMaterialPanel", BasePanel)
--- Panel 定义
 FillMaterialPanel._bIsMainPanel = false
 FillMaterialPanel._tbDefine = {
-    {sPrefabPath = "FillMaterial/FillMaterialPanel.prefab", sCtrlName = "Game.UI.FillMaterial.FillMaterialCtrl"},
+{sPrefabPath = "FillMaterial/FillMaterialPanel.prefab", sCtrlName = "Game.UI.FillMaterial.FillMaterialCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function FillMaterialPanel:Awake()
+FillMaterialPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function FillMaterialPanel:OnEnable()
+
+FillMaterialPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function FillMaterialPanel:OnDisable()
+
+FillMaterialPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FillMaterialPanel:OnDestroy()
+
+FillMaterialPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return FillMaterialPanel
+

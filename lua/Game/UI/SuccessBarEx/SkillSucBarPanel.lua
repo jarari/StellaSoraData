@@ -1,29 +1,28 @@
--- SkillSucBarPanel Panel
-
 local SkillSucBarPanel = class("SkillSucBarPanel", BasePanel)
--- Panel 定义
-
-
-
-
 SkillSucBarPanel._bIsMainPanel = false
 SkillSucBarPanel._tbDefine = {
-    {sPrefabPath = "SuccessBarEx/SkillSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.SkillSucBarCtrl"},
+{sPrefabPath = "SuccessBarEx/SkillSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.SkillSucBarCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function SkillSucBarPanel:Awake()
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.mapData = tbParam[1]
-        self.callback = tbParam[2]
-    end
+SkillSucBarPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.mapData = tbParam[1]
+    self.callback = tbParam[2]
+  end
 end
-function SkillSucBarPanel:OnEnable()
+
+SkillSucBarPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SkillSucBarPanel:OnDisable()
+
+SkillSucBarPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function SkillSucBarPanel:OnDestroy()
+
+SkillSucBarPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return SkillSucBarPanel
+

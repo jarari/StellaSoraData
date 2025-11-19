@@ -7,5 +7,8 @@
     "UIAssets": "ActivityTask_act_01",
     "CtrlName": "ActivityTaskCtrl_01",
     "FastEntranceIcon": "banner_activity_101003"
+  },
+  "2": {
+    "ActivityId": 1010103
   }
 }

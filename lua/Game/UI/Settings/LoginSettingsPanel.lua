@@ -1,55 +1,42 @@
--- SettingsPanel Panel
-
 local LoginSettingsPanel = class("LoginSettingsPanel", BasePanel)
--- Panel 定义
 LoginSettingsPanel._bAddToBackHistory = false
 LoginSettingsPanel._nSnapshotPrePanel = 1
 LoginSettingsPanel._bIsMainPanel = false
-
-local LocalSettingData = require "GameCore.Data.LocalSettingData"
-
+local LocalSettingData = require("GameCore.Data.LocalSettingData")
 LoginSettingsPanel._tbDefine = {
-    {sPrefabPath = "Settings/LoginSettingsPanel.prefab", sCtrlName = "Game.UI.Settings.LoginSettingsCtrl"},
+{sPrefabPath = "Settings/LoginSettingsPanel.prefab", sCtrlName = "Game.UI.Settings.LoginSettingsCtrl"}
 }
--------------------- local function --------------------
-function LoginSettingsPanel:LoadLocalData(key)
-    return LocalSettingData.GetLocalSettingData(key)
+LoginSettingsPanel.LoadLocalData = function(self, key)
+  -- function num : 0_0 , upvalues : LocalSettingData
+  return (LocalSettingData.GetLocalSettingData)(key)
 end
 
-function LoginSettingsPanel:SaveLocalData(subKey, value)
-    LocalSettingData.SetLocalSettingData(subKey, value)
+LoginSettingsPanel.SaveLocalData = function(self, subKey, value)
+  -- function num : 0_1 , upvalues : LocalSettingData
+  (LocalSettingData.SetLocalSettingData)(subKey, value)
 end
--------------------- base function --------------------
-function LoginSettingsPanel:Awake()
-    self.mapKeyboardBind = {}
-    self.mapGamepadBind = {}
-    self.Action = {
-        "Fire1",
-        "Fire2",
-        "Fire4",
-        "Interactive",
-        "ActorSwitch1",
-        "ActorSwitch2",
-        "SwitchWithUltra1",
-        "SwitchWithUltra2",
-    }
-    self.Move = {
-        "Up",
-        "Down",
-        "Left",
-        "Right",
-    }
-    self.ControlType = { -- 和action内定义的顺序一样
-        Gamepad = 0,
-        Keyboard = 1,
-    }
-    self.ShowUserCenter=false
+
+LoginSettingsPanel.Awake = function(self)
+  -- function num : 0_2
+  self.mapKeyboardBind = {}
+  self.mapGamepadBind = {}
+  self.Action = {"Fire1", "Fire2", "Fire4", "Interactive", "ActorSwitch1", "ActorSwitch2", "SwitchWithUltra1", "SwitchWithUltra2"}
+  self.Move = {"Up", "Down", "Left", "Right"}
+  self.ControlType = {Gamepad = 0, Keyboard = 1}
+  self.ShowUserCenter = false
 end
-function LoginSettingsPanel:OnEnable()
+
+LoginSettingsPanel.OnEnable = function(self)
+  -- function num : 0_3
 end
-function LoginSettingsPanel:OnDisable()
+
+LoginSettingsPanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function LoginSettingsPanel:OnDestroy()
+
+LoginSettingsPanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
--------------------- callback function --------------------
+
 return LoginSettingsPanel
+

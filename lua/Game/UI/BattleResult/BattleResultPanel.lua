@@ -1,22 +1,23 @@
-
 local BattleResultPanel = class("BattleResultPanel", BasePanel)
-
 BattleResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 BattleResultPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleResultCtrl"}
+{sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+BattleResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function BattleResultPanel:Awake()
+BattleResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BattleResultPanel:OnEnable()
+
+BattleResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BattleResultPanel:OnDisable()
+
+BattleResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function BattleResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return BattleResultPanel
+

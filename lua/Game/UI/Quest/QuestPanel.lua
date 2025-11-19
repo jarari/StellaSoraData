@@ -1,21 +1,27 @@
-
 local QuestPanel = class("QuestPanel", BasePanel)
 QuestPanel._tbDefine = {
-    {sPrefabPath = "Quest/QuestPanel.prefab", sCtrlName = "Game.UI.Quest.QuestCtrl"},
+{sPrefabPath = "Quest/QuestPanel.prefab", sCtrlName = "Game.UI.Quest.QuestCtrl"}
 }
--------------------- local function --------------------
+QuestPanel.Awake = function(self)
+  -- function num : 0_0
+  self.nCurTab = nil
+end
 
--------------------- base function --------------------
-function QuestPanel:Awake()
-    self.nCurTab = nil
+QuestPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function QuestPanel:OnEnable()
+
+QuestPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function QuestPanel:OnDisable()
+
+QuestPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function QuestPanel:OnDestroy()
+
+QuestPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function QuestPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return QuestPanel
+

@@ -1,31 +1,29 @@
--- CharSucBarPanel Panel
-
 local CharSucBarPanel = class("CharSucBarPanel", BasePanel)
--- Panel 定义
-
-
-
-
 CharSucBarPanel._bIsMainPanel = false
-
 CharSucBarPanel._tbDefine = {
-    {sPrefabPath = "SuccessBarEx/CharSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.CharSucBarCtrl"},
+{sPrefabPath = "SuccessBarEx/CharSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.CharSucBarCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function CharSucBarPanel:Awake()
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.mapData = tbParam[1]
-        self.bUp = tbParam[2]
-        self.callback = tbParam[3]
-    end
+CharSucBarPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.mapData = tbParam[1]
+    self.bUp = tbParam[2]
+    self.callback = tbParam[3]
+  end
 end
-function CharSucBarPanel:OnEnable()
+
+CharSucBarPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharSucBarPanel:OnDisable()
+
+CharSucBarPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharSucBarPanel:OnDestroy()
+
+CharSucBarPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return CharSucBarPanel
+

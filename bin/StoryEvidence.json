@@ -52,35 +52,23 @@
     "EvId": "E301",
     "Name": "StoryEvidence.301.1",
     "Desc": "StoryEvidence.301.2",
-    "Icon": "Icon/AvgChoice/AvgEvi_item_03_02",
-    "IconBg": "Icon/AvgChoice/db_avg_choice_s_3",
-    "visible": 1
+    "Icon": "Icon/AvgChoice/AvgChoice_item_03_10",
+    "IconBg": "Icon/AvgChoice/db_avg_choice_s_1"
   },
   "302": {
     "Id": 302,
     "EvId": "E302",
     "Name": "StoryEvidence.302.1",
     "Desc": "StoryEvidence.302.2",
-    "Icon": "Icon/AvgChoice/AvgEvi_item_03_04",
-    "IconBg": "Icon/AvgChoice/db_avg_choice_s_2",
-    "visible": 1
+    "Icon": "Icon/AvgChoice/AvgChoice_item_02_01",
+    "IconBg": "Icon/AvgChoice/db_avg_choice_s_2"
   },
   "303": {
     "Id": 303,
     "EvId": "E303",
     "Name": "StoryEvidence.303.1",
     "Desc": "StoryEvidence.303.2",
-    "Icon": "Icon/AvgChoice/AvgEvi_item_03_08",
-    "IconBg": "Icon/AvgChoice/db_avg_choice_s_3",
-    "visible": 1
-  },
-  "304": {
-    "Id": 304,
-    "EvId": "E304",
-    "Name": "StoryEvidence.304.1",
-    "Desc": "StoryEvidence.304.2",
-    "Icon": "Icon/AvgChoice/AvgEvi_item_03_07",
-    "IconBg": "Icon/AvgChoice/db_avg_choice_s_1",
-    "visible": 1
+    "Icon": "Icon/AvgChoice/AvgChoice_item_02_01",
+    "IconBg": "Icon/AvgChoice/db_avg_choice_s_3"
   }
 }

@@ -1,32 +1,26 @@
--- Panel 模板
-
 local BuildSavePanel = class("BuildSavePanel", BasePanel)
-
--- Panel 定义
---[[
-BuildSavePanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-BuildSavePanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-BuildSavePanel._bIsMainPanel = true
-BuildSavePanel._bAddToBackHistory = true
-BuildSavePanel._nSnapshotPrePanel = 0
-
-BuildSavePanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 BuildSavePanel._tbDefine = {
-    {sPrefabPath = "RoguelikeBuildEX/RoguelikeBuildSavePanel.prefab", sCtrlName = "Game.UI.BuildPanelEx.BuildSaveCtrl"}
+{sPrefabPath = "RoguelikeBuildEX/RoguelikeBuildSavePanel.prefab", sCtrlName = "Game.UI.BuildPanelEx.BuildSaveCtrl"}
 }
--------------------- local function --------------------
+BuildSavePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function BuildSavePanel:Awake()
+BuildSavePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BuildSavePanel:OnEnable()
+
+BuildSavePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BuildSavePanel:OnDisable()
+
+BuildSavePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function BuildSavePanel:OnDestroy()
+
+BuildSavePanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function BuildSavePanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return BuildSavePanel
+

@@ -1,24 +1,31 @@
 local StarTowerQuestPanel = class("StarTowerQuestPanel", BasePanel)
-
 StarTowerQuestPanel._bAddToBackHistory = false
-
 StarTowerQuestPanel._tbDefine = {
-    {sPrefabPath = "StarTowerQuest/StarTowerQuestPanel.prefab", sCtrlName = "Game.UI.StarTowerQuest.StarTowerQuestCtrl"}
+{sPrefabPath = "StarTowerQuest/StarTowerQuestPanel.prefab", sCtrlName = "Game.UI.StarTowerQuest.StarTowerQuestCtrl"}
 }
--------------------- local function --------------------
+StarTowerQuestPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function StarTowerQuestPanel:Awake()
+StarTowerQuestPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerQuestPanel:OnEnable()
+
+StarTowerQuestPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function StarTowerQuestPanel:OnAfterEnter()
+
+StarTowerQuestPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function StarTowerQuestPanel:OnDisable()
+
+StarTowerQuestPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function StarTowerQuestPanel:OnDestroy()
+
+StarTowerQuestPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function StarTowerQuestPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return StarTowerQuestPanel
+

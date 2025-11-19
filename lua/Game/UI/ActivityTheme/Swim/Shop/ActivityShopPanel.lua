@@ -1,28 +1,30 @@
--- ActivityShopPanel Panel
-
 local ActivityShopPanel = class("ActivityShopPanel", BasePanel)
--- Panel 定义
 ActivityShopPanel._sUIResRootPath = "UI_Activity/"
 ActivityShopPanel._tbDefine = {
-    {sPrefabPath = "Swim/Shop/ActivityShopPanel.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.Shop.ActivityShopCtrl"},
+{sPrefabPath = "Swim/Shop/ActivityShopPanel.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.Shop.ActivityShopCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function ActivityShopPanel:Awake()
-    self.nDefaultId = nil
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.nActId = tbParam[1]
-        self.nDefaultId = tbParam[2]
-    end
+ActivityShopPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.nDefaultId = nil
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.nActId = tbParam[1]
+    self.nDefaultId = tbParam[2]
+  end
+  self.actShopData = (PlayerData.Activity):GetActivityDataById(self.nActId)
+end
 
-    self.actShopData = PlayerData.Activity:GetActivityDataById(self.nActId)
+ActivityShopPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ActivityShopPanel:OnEnable()
+
+ActivityShopPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ActivityShopPanel:OnDisable()
+
+ActivityShopPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function ActivityShopPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return ActivityShopPanel
+

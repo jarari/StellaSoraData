@@ -222,5 +222,19 @@
     "Title": "MangaLoading.33.1",
     "ConditionType": 1,
     "Weight": 100
+  },
+  "34": {
+    "Id": 34,
+    "Source": "Icon/Loading/loading_comic_34",
+    "Title": "MangaLoading.34.1",
+    "ConditionType": 1,
+    "Weight": 300
+  },
+  "35": {
+    "Id": 35,
+    "Source": "Icon/Loading/loading_comic_35",
+    "Title": "MangaLoading.35.1",
+    "ConditionType": 1,
+    "Weight": 300
   }
 }

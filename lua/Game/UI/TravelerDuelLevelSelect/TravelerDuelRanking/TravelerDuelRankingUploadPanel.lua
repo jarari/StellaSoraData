@@ -1,24 +1,31 @@
--- Panel 模板
-
 local TravelerDuelRankingUploadPanel = class("TravelerDuelRankingUploadPanel", BasePanel)
 TravelerDuelRankingUploadPanel._bIsMainPanel = false
 TravelerDuelRankingUploadPanel._tbDefine = {
-    {sPrefabPath = "TravelerDuelLevelSelect/TDRankingUploadPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelRanking.TravelerDuelRankingUploadCtrl"}
+{sPrefabPath = "TravelerDuelLevelSelect/TDRankingUploadPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelRanking.TravelerDuelRankingUploadCtrl"}
 }
--------------------- local function --------------------
+TravelerDuelRankingUploadPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TravelerDuelRankingUploadPanel:Awake()
+TravelerDuelRankingUploadPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TravelerDuelRankingUploadPanel:OnEnable()
+
+TravelerDuelRankingUploadPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TravelerDuelRankingUploadPanel:OnAfterEnter()
+
+TravelerDuelRankingUploadPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TravelerDuelRankingUploadPanel:OnDisable()
+
+TravelerDuelRankingUploadPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TravelerDuelRankingUploadPanel:OnDestroy()
+
+TravelerDuelRankingUploadPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TravelerDuelRankingUploadPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TravelerDuelRankingUploadPanel
+

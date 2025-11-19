@@ -215,6 +215,10 @@
     "Id": "Activity_Banner_Interval_Time",
     "Value": "3"
   },
+  "Cookie_ErrorTime": {
+    "Id": "Cookie_ErrorTime",
+    "Value": "0.8"
+  },
   "JointDrill_Challenge_Tickets_Id": {
     "Id": "JointDrill_Challenge_Tickets_Id",
     "Value": "36"
@@ -521,7 +525,7 @@
   },
   "BattlePassWeeklyExpLimit": {
     "Id": "BattlePassWeeklyExpLimit",
-    "Value": "12000"
+    "Value": "15000"
   },
   "BloodSpecialEffectThresholdValue": {
     "Id": "BloodSpecialEffectThresholdValue",
@@ -794,5 +798,9 @@
   "CharGemHighQualityNum": {
     "Id": "CharGemHighQualityNum",
     "Value": "2"
+  },
+  "NickNameResetTimeLimit": {
+    "Id": "NickNameResetTimeLimit",
+    "Value": "604800"
   }
 }

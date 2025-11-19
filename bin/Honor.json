@@ -117,6 +117,24 @@
     "SubRes": "Icon/HonorTitle/HonorTitle_116001_S",
     "BGType": 2
   },
+  "116002": {
+    "Id": 116002,
+    "Name": "Honor.116002.1",
+    "Type": 1,
+    "TabType": 3,
+    "MainRes": "Icon/HonorTitle/HonorTitle_116002_L",
+    "SubRes": "Icon/HonorTitle/HonorTitle_116002_S",
+    "BGType": 2
+  },
+  "116003": {
+    "Id": 116003,
+    "Name": "Honor.116003.1",
+    "Type": 1,
+    "TabType": 3,
+    "MainRes": "Icon/HonorTitle/HonorTitle_116003_L",
+    "SubRes": "Icon/HonorTitle/HonorTitle_116003_S",
+    "BGType": 2
+  },
   "117001": {
     "Id": 117001,
     "Name": "Honor.117001.1",

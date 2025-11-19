@@ -1,22 +1,25 @@
--- PotentialDetailPanel Panel
-
 local PotentialDetailPanel = class("PotentialDetailPanel", BasePanel)
--- Panel 定义
 PotentialDetailPanel._bIsMainPanel = false
 PotentialDetailPanel._bAddToBackHistory = false
-PotentialDetailPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+PotentialDetailPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 PotentialDetailPanel._tbDefine = {
-    {sPrefabPath = "PotentialDetail/PotentialDetailPanel.prefab", sCtrlName = "Game.UI.PotentialDetail.PotentialDetailCtrl"},
+{sPrefabPath = "PotentialDetail/PotentialDetailPanel.prefab", sCtrlName = "Game.UI.PotentialDetail.PotentialDetailCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function PotentialDetailPanel:Awake()
+PotentialDetailPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function PotentialDetailPanel:OnEnable()
+
+PotentialDetailPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function PotentialDetailPanel:OnDisable()
+
+PotentialDetailPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function PotentialDetailPanel:OnDestroy()
+
+PotentialDetailPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return PotentialDetailPanel
+

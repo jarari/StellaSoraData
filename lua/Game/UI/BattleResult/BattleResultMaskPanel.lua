@@ -1,23 +1,24 @@
-
 local BattleResultMaskPanel = class("BattleResultMaskPanel", BasePanel)
-
 BattleResultMaskPanel._bIsMainPanel = false
-BattleResultMaskPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-
--- Panel 定义
+BattleResultMaskPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 BattleResultMaskPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleResultMaskPanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleResultMaskCtrl"}
+{sPrefabPath = "BattleResult/BattleResultMaskPanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleResultMaskCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+BattleResultMaskPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function BattleResultMaskPanel:Awake()
+BattleResultMaskPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BattleResultMaskPanel:OnEnable()
+
+BattleResultMaskPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BattleResultMaskPanel:OnDisable()
+
+BattleResultMaskPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function BattleResultMaskPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return BattleResultMaskPanel
+

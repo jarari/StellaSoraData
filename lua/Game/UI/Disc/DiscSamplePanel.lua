@@ -1,21 +1,24 @@
--- DiscSamplePanel Panel
-
 local DiscSamplePanel = class("DiscSamplePanel", BasePanel)
-
 DiscSamplePanel._bIsMainPanel = false
-DiscSamplePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+DiscSamplePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 DiscSamplePanel._tbDefine = {
-    {sPrefabPath = "Disc/DiscSamplePanel.prefab", sCtrlName = "Game.UI.Disc.DiscSampleCtrl"},
+{sPrefabPath = "Disc/DiscSamplePanel.prefab", sCtrlName = "Game.UI.Disc.DiscSampleCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DiscSamplePanel:Awake()
+DiscSamplePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function DiscSamplePanel:OnEnable()
+
+DiscSamplePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DiscSamplePanel:OnDisable()
+
+DiscSamplePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DiscSamplePanel:OnDestroy()
+
+DiscSamplePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DiscSamplePanel
+

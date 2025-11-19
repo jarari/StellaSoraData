@@ -1,24 +1,30 @@
-
 local JointDrillBuildListPanel = class("JointDrillBuildListPanel", BasePanel)
-
 JointDrillBuildListPanel._tbDefine = {
-    {sPrefabPath = "Play_JointDrill/JointDrillBuildList.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillBuildListCtrl"}
+{sPrefabPath = "Play_JointDrill/JointDrillBuildList.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillBuildListCtrl"}
 }
--------------------- local function --------------------
+JointDrillBuildListPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
+JointDrillBuildListPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
--------------------- base function --------------------
-function JointDrillBuildListPanel:Awake()
+JointDrillBuildListPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function JointDrillBuildListPanel:OnEnable()
+
+JointDrillBuildListPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function JointDrillBuildListPanel:OnAfterEnter()
+
+JointDrillBuildListPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function JointDrillBuildListPanel:OnDisable()
+
+JointDrillBuildListPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function JointDrillBuildListPanel:OnDestroy()
-end
-function JointDrillBuildListPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return JointDrillBuildListPanel
+

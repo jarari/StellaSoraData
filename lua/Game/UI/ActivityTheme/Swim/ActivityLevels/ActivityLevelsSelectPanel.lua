@@ -1,25 +1,31 @@
 local ActivityLevelsSelectPanel = class("ActivityLevelsSelectPanel", BasePanel)
--- Panel 定义
 ActivityLevelsSelectPanel._sUIResRootPath = "UI_Activity/"
 ActivityLevelsSelectPanel._tbDefine = {
-    {sPrefabPath = "Swim/ActivityLevels/ActivityLevelsSelect.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.ActivityLevels.ActivityLevelsSelectCtrl"}
+{sPrefabPath = "Swim/ActivityLevels/ActivityLevelsSelect.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.ActivityLevels.ActivityLevelsSelectCtrl"}
 }
--------------------- local function --------------------
+ActivityLevelsSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function ActivityLevelsSelectPanel:Awake()
-    -- self.nActId = nil
-    -- self.actData = nil
+ActivityLevelsSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ActivityLevelsSelectPanel:OnEnable()
+
+ActivityLevelsSelectPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function ActivityLevelsSelectPanel:OnAfterEnter()
+
+ActivityLevelsSelectPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function ActivityLevelsSelectPanel:OnDisable()
+
+ActivityLevelsSelectPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function ActivityLevelsSelectPanel:OnDestroy()
+
+ActivityLevelsSelectPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function ActivityLevelsSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return ActivityLevelsSelectPanel
+

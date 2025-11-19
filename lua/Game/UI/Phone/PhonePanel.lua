@@ -1,38 +1,47 @@
--- 手机界面
 local PhonePanel = class("PhonePanel", BasePanel)
--- Panel 定义
 PhonePanel._nSnapshotPrePanel = 4
-
 PhonePanel._tbDefine = {
-    {sPrefabPath = "Phone/PhonePanel.prefab", sCtrlName = "Game.UI.Phone.PhoneCtrl"},
+{sPrefabPath = "Phone/PhonePanel.prefab", sCtrlName = "Game.UI.Phone.PhoneCtrl"}
 }
--------------------- local function --------------------
-function PhonePanel:GetAvgContactsData(sContactsId)
-    local tbContacts = PlayerData.Phone:GetAvgContactsData(sContactsId)
-    if tbContacts == nil then
-        return sContactsId
-    else
-        return tbContacts
-    end
+PhonePanel.GetAvgContactsData = function(self, sContactsId)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbContacts = (PlayerData.Phone):GetAvgContactsData(sContactsId)
+  if tbContacts == nil then
+    return sContactsId
+  else
+    return tbContacts
+  end
 end
--------------------- base function --------------------
-function PhonePanel:Awake()
-    self.nCurTog = nil
-    self.nSelectCharId = nil
 
-    self.sTxtLan = Settings.sCurrentTxtLanguage
-    self.sVoLan = Settings.sCurrentVoLanguage
-    self.bIsPlayerMale = PlayerData.Base:GetPlayerSex() == true
+PhonePanel.Awake = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  self.nCurTog = nil
+  self.nSelectCharId = nil
+  self.sTxtLan = Settings.sCurrentTxtLanguage
+  self.sVoLan = Settings.sCurrentVoLanguage
+  self.bIsPlayerMale = (PlayerData.Base):GetPlayerSex() == true
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-function PhonePanel:OnEnable()
+
+PhonePanel.OnEnable = function(self)
+  -- function num : 0_2
 end
-function PhonePanel:OnAfterEnter()
+
+PhonePanel.OnAfterEnter = function(self)
+  -- function num : 0_3
 end
-function PhonePanel:OnDisable()
+
+PhonePanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function PhonePanel:OnDestroy()
+
+PhonePanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
-function PhonePanel:OnRelease()
+
+PhonePanel.OnRelease = function(self)
+  -- function num : 0_6
 end
--------------------- callback function --------------------
+
 return PhonePanel
+

@@ -659,7 +659,8 @@
     "Desc": "Word.2014.2",
     "Color": "6A90EB",
     "Icon": "0",
-    "Param1": "EffectValue,NoLevel,12594001,EffectTypeParam1,HdPct"
+    "Param1": "EffectValue,NoLevel,12594001,EffectTypeParam1,HdPct",
+    "Param2": "Character,NoLevel,125,Name,Text"
   },
   "2015": {
     "Id": 2015,
@@ -667,7 +668,8 @@
     "Type": 1,
     "Desc": "Word.2015.2",
     "Color": "6A90EB",
-    "Icon": "0"
+    "Icon": "0",
+    "Param1": "Character,NoLevel,130,Name,Text"
   },
   "2019": {
     "Id": 2019,
@@ -727,7 +729,8 @@
     "Type": 1,
     "Desc": "Word.4002.2",
     "Color": "6A90EB",
-    "Icon": "0"
+    "Icon": "0",
+    "Param1": "Character,NoLevel,110,Name,Text"
   },
   "4500": {
     "Id": 4500,

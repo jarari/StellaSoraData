@@ -1,52 +1,39 @@
--- BattleSettingsPanel Panel
-
 local BattleSettingsPanel = class("BattleSettingsPanel", BasePanel)
--- Panel 定义
 BattleSettingsPanel._bIsMainPanel = false
-
-local LocalSettingData = require "GameCore.Data.LocalSettingData"
-
+local LocalSettingData = require("GameCore.Data.LocalSettingData")
 BattleSettingsPanel._tbDefine = {
-    {sPrefabPath = "Settings/BattleSettingsPanel.prefab", sCtrlName = "Game.UI.Settings.BattleSettingsCtrl"},
+{sPrefabPath = "Settings/BattleSettingsPanel.prefab", sCtrlName = "Game.UI.Settings.BattleSettingsCtrl"}
 }
--------------------- local function --------------------
-function BattleSettingsPanel:LoadLocalData(key)
-    return LocalSettingData.GetLocalSettingData(key)
+BattleSettingsPanel.LoadLocalData = function(self, key)
+  -- function num : 0_0 , upvalues : LocalSettingData
+  return (LocalSettingData.GetLocalSettingData)(key)
 end
 
-function BattleSettingsPanel:SaveLocalData(subKey, value)
-    LocalSettingData.SetLocalSettingData(subKey, value)
+BattleSettingsPanel.SaveLocalData = function(self, subKey, value)
+  -- function num : 0_1 , upvalues : LocalSettingData
+  (LocalSettingData.SetLocalSettingData)(subKey, value)
 end
--------------------- base function --------------------
-function BattleSettingsPanel:Awake()
-    self.mapKeyboardBind = {}
-    self.mapGamepadBind = {}
-    self.Action = {
-        "Fire1",
-        "Fire2",
-        "Fire4",
-        "Interactive",
-        "ActorSwitch1",
-        "ActorSwitch2",
-        "SwitchWithUltra1",
-        "SwitchWithUltra2",
-    }
-    self.Move = {
-        "Up",
-        "Down",
-        "Left",
-        "Right",
-    }
-    self.ControlType = { -- 和action内定义的顺序一样
-        Gamepad = 0,
-        Keyboard = 1,
-    }
+
+BattleSettingsPanel.Awake = function(self)
+  -- function num : 0_2
+  self.mapKeyboardBind = {}
+  self.mapGamepadBind = {}
+  self.Action = {"Fire1", "Fire2", "Fire4", "Interactive", "ActorSwitch1", "ActorSwitch2", "SwitchWithUltra1", "SwitchWithUltra2"}
+  self.Move = {"Up", "Down", "Left", "Right"}
+  self.ControlType = {Gamepad = 0, Keyboard = 1}
 end
-function BattleSettingsPanel:OnEnable()
+
+BattleSettingsPanel.OnEnable = function(self)
+  -- function num : 0_3
 end
-function BattleSettingsPanel:OnDisable()
+
+BattleSettingsPanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function BattleSettingsPanel:OnDestroy()
+
+BattleSettingsPanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
--------------------- callback function --------------------
+
 return BattleSettingsPanel
+

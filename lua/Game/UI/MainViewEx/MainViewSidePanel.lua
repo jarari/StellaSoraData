@@ -1,20 +1,23 @@
--- MainViewSidePanel Panel
-
 local MainViewSidePanel = class("MainViewSidePanel", BasePanel)
--- Panel 定义
 MainViewSidePanel._nSnapshotPrePanel = 3
 MainViewSidePanel._tbDefine = {
-    {sPrefabPath = "MainViewEx/MainViewSidePanel.prefab", sCtrlName = "Game.UI.MainViewEx.MainViewSideCtrl"},
+{sPrefabPath = "MainViewEx/MainViewSidePanel.prefab", sCtrlName = "Game.UI.MainViewEx.MainViewSideCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function MainViewSidePanel:Awake()
+MainViewSidePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function MainViewSidePanel:OnEnable()
+
+MainViewSidePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MainViewSidePanel:OnDisable()
+
+MainViewSidePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function MainViewSidePanel:OnDestroy()
+
+MainViewSidePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return MainViewSidePanel
+

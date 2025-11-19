@@ -1,23 +1,28 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local ExChangePanel = class("ExChangePanel", BasePanel)
-
--- Panel 定义
 ExChangePanel._bIsMainPanel = false
 ExChangePanel._tbDefine = {
-    {sPrefabPath = "ExChange/ExChangePanel.prefab", sCtrlName = "Game.UI.ExChange.ExChangeCtrl"}
+{sPrefabPath = "ExChange/ExChangePanel.prefab", sCtrlName = "Game.UI.ExChange.ExChangeCtrl"}
 }
--------------------- local funcion --------------------
+ExChangePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base funcion --------------------
-function ExChangePanel:Awake()
+ExChangePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ExChangePanel:OnEnable()
+
+ExChangePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ExChangePanel:OnDisable()
+
+ExChangePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function ExChangePanel:OnDestroy()
+
+ExChangePanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function ExChangePanel:OnRelease()
-end
--------------------- callback funcion --------------------
+
 return ExChangePanel
+

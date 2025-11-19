@@ -1,23 +1,28 @@
--- DictionaryPanel Panel
-
 local DictionaryPanel = class("DictionaryPanel", BasePanel)
--- Panel 定义
 DictionaryPanel._tbDefine = {
-    {sPrefabPath = "Dictionary/DictionaryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryCtrl"},
+{sPrefabPath = "Dictionary/DictionaryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DictionaryPanel:Awake()
-    self.bStarTowerFastBattle = self:GetPanelParam()[1]
+DictionaryPanel.Awake = function(self)
+  -- function num : 0_0
+  self.bStarTowerFastBattle = (self:GetPanelParam())[1]
 end
-function DictionaryPanel:OnEnable()
+
+DictionaryPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DictionaryPanel:OnAfterEnter()
-    EventManager.Hit("CloseSideBanner")
+
+DictionaryPanel.OnAfterEnter = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  (EventManager.Hit)("CloseSideBanner")
 end
-function DictionaryPanel:OnDisable()
+
+DictionaryPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function DictionaryPanel:OnDestroy()
+
+DictionaryPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
--------------------- callback function --------------------
+
 return DictionaryPanel
+

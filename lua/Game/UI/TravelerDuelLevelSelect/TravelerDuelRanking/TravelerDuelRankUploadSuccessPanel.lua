@@ -1,34 +1,31 @@
--- Panel 模板
-
 local TravelerDuelRankUploadSuccessPanel = class("TravelerDuelRankUploadSuccessPanel", BasePanel)
-
--- Panel 定义
---[[
-TravelerDuelRankUploadSuccessPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-TravelerDuelRankUploadSuccessPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-TravelerDuelRankUploadSuccessPanel._bIsMainPanel = true
-TravelerDuelRankUploadSuccessPanel._bAddToBackHistory = true
-TravelerDuelRankUploadSuccessPanel._nSnapshotPrePanel = 0
-TravelerDuelRankUploadSuccessPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 TravelerDuelRankUploadSuccessPanel._bIsMainPanel = false
 TravelerDuelRankUploadSuccessPanel._tbDefine = {
-    {sPrefabPath = "TravelerDuelLevelSelect/TDUploadSuccessPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelRanking.TravelerDuelRankUploadSuccessCtrl"}
+{sPrefabPath = "TravelerDuelLevelSelect/TDUploadSuccessPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelRanking.TravelerDuelRankUploadSuccessCtrl"}
 }
--------------------- local function --------------------
+TravelerDuelRankUploadSuccessPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TravelerDuelRankUploadSuccessPanel:Awake()
+TravelerDuelRankUploadSuccessPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TravelerDuelRankUploadSuccessPanel:OnEnable()
+
+TravelerDuelRankUploadSuccessPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TravelerDuelRankUploadSuccessPanel:OnAfterEnter()
+
+TravelerDuelRankUploadSuccessPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TravelerDuelRankUploadSuccessPanel:OnDisable()
+
+TravelerDuelRankUploadSuccessPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TravelerDuelRankUploadSuccessPanel:OnDestroy()
+
+TravelerDuelRankUploadSuccessPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TravelerDuelRankUploadSuccessPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TravelerDuelRankUploadSuccessPanel
+

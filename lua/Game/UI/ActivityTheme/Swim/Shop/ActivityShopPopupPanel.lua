@@ -1,21 +1,24 @@
--- ActivityShopPopupPanel Panel
-
 local ActivityShopPopupPanel = class("ActivityShopPopupPanel", BasePanel)
--- Panel 定义
 ActivityShopPopupPanel._sUIResRootPath = "UI_Activity/"
 ActivityShopPopupPanel._bIsMainPanel = false
 ActivityShopPopupPanel._tbDefine = {
-    {sPrefabPath = "Swim/Shop/ActivityShopPopupPanel.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.Shop.ActivityShopPopupCtrl"},
+{sPrefabPath = "Swim/Shop/ActivityShopPopupPanel.prefab", sCtrlName = "Game.UI.ActivityTheme.Swim.Shop.ActivityShopPopupCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function ActivityShopPopupPanel:Awake()
+ActivityShopPopupPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function ActivityShopPopupPanel:OnEnable()
+
+ActivityShopPopupPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ActivityShopPopupPanel:OnDisable()
+
+ActivityShopPopupPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ActivityShopPopupPanel:OnDestroy()
+
+ActivityShopPopupPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return ActivityShopPopupPanel
+

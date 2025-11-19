@@ -6,7 +6,7 @@
 value (Rvalue!
 NextPackageˇ (RNextPackageBv
 com.google.protobufBAnyProtoPZ,google.golang.org/protobuf/types/known/anypb¢GPB™Google.Protobuf.WellKnownTypesbproto3
-ÿá
+Ÿç
 public.protoprotogoogle/protobuf/any.proto"(
 Nil!
 NextPackageˇ (RNextPackage">
@@ -185,7 +185,7 @@ TemplateId
 CharIds (RCharIds
 EventIds (REventIds
 Bundles (RBundles!
-NextPackageˇ (RNextPackage"®
+NextPackageˇ (RNextPackage"÷
 	StateInfo$
 Mail (2.proto.MailStateRMail$
 InfinityTower (RInfinityTower
@@ -199,7 +199,8 @@ BattlePassH
 CharAffinityRewards (2.proto.CharAffinityRewardStateRCharAffinityRewards,
 NpcAffinityReward	 (RNpcAffinityReward9
 MallPackage
- (2.proto.MallPackageStateRMallPackage9
+ (2.proto.MallPackageStateRMallPackage,
+VampireSurvivorId (RVampireSurvivorId9
 Achievement (2.proto.AchievementStateRAchievement?
 TravelerDuelQuest (2.proto.QuestStateRTravelerDuelQuestQ
 TravelerDuelChallengeQuest (2.proto.QuestStateRTravelerDuelChallengeQuest3
@@ -601,7 +602,7 @@ AffinityLV!
 VampireSurvivorFateCardSelect%
 Cards (2.proto.CardInfoRCards
 ReRoll (RReRoll!
-NextPackageˇ (RNextPackage"±
+NextPackageˇ (RNextPackage"À
 ScoreBossLevel
 LevelId (RLevelId
 BuildId (RBuildId
@@ -609,7 +610,8 @@ AffinityLV!
 Star (RStar
 
 SkillScore (R
-SkillScore!
+SkillScore
+CharIds (RCharIds!
 NextPackageˇ (RNextPackage"ì
 VampireSurvivorLevel
 Id (RId
@@ -680,6 +682,30 @@ Attributes(
 LevelId (RLevelId
 Passed (RPassed&
 RewardReceived (RRewardReceived!
+NextPackageˇ (RNextPackage"Z
+BuildConvertContent
+Id (RId
+Num (RNum!
+NextPackageˇ (RNextPackage"ü
+ActivityBuildConvert6
+Contents (2.proto.BuildConvertContentRContents,
+Quests (2.proto.ActivityQuestRQuests!
+NextPackageˇ (RNextPackage"·
+VampireClientData)
+Efts (2.proto.FateCardEftCntREfts0
+Limits (2.proto.FateCardTimeLimitRLimits$
+FateCardTimer (RFateCardTimer
+Level (RLevel
+Exp (RExp!
+NextPackageˇ (RNextPackage"o
+FateCardEftCnt
+Id (RId
+EftId (REftId
+Count (RCount!
+NextPackageˇ (RNextPackage"d
+FateCardTimeLimit
+Id (RId
+	TimeLimit (R	TimeLimit!
 NextPackageˇ (RNextPackage*˘
 	QuestType
 UnknownQuest 
@@ -723,8 +749,8 @@ ActivityId (R
 ActivityId
 QuestId (RQuestId!
 NextPackageˇ (RNextPackagebproto3
-æ
-activity_cookie_settle.protoproto"é
+Ï
+activity_cookie_settle.protoproto"º
 ActivityCookieSettleReq
 
 ActivityId (R
@@ -738,7 +764,9 @@ PackageNum
 
 PerfectNum (R
 PerfectNum"
-ExcellentNum (RExcellentNum!
+ExcellentNum (RExcellentNum
+MissNum (RMissNum
+Good	 (RGood!
 NextPackageˇ (RNextPackagebproto3
 Ñ
 
@@ -790,8 +818,8 @@ FightScore
 New (RNew
 Token (	RToken!
 NextPackageˇ (RNextPackageP bproto3
-¡
-activity_detail.protoprotopublic.protopublic_joint_drill.proto"ë
+˛
+activity_detail.protoprotopublic.protopublic_joint_drill.proto"Œ
 ActivityMsg
 Id (RId5
 Periodic (2.proto.ActivityPeriodicH RPeriodic,
@@ -808,7 +836,8 @@ JointDrill/
  (2.proto.ActivityLevelsH RLevels&
 Avg (2.proto.ActivityAvgH RAvg)
 Task (2.proto.ActivityTaskH RTask)
-Shop (2.proto.ActivityShopH RShop!
+Shop (2.proto.ActivityShopH RShop;
+	BdConvert (2.proto.ActivityBuildConvertH R	BdConvert!
 NextPackageˇ (RNextPackageB
 Data"Y
 ActivityResp&
@@ -1142,625 +1171,6 @@ ActivityId
 PremiumReward (RPremiumReward)
 Change (2.proto.ChangeInfoRChange!
 NextPackageˇ (RNextPackageP bproto3
-π
-!char_advance_reward_receive.protoprotopublic.proto"r
-CharAdvanceRewardReceiveReq
-CharId (RCharId
-Advance (RAdvance!
-NextPackageˇ (RNextPackage"Ä
-CharAdvanceRewardReceiveResp
-Flag (RFlag)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-3
-char_advance.protoprotopublic.protoP bproto3
-
-char_affinity_gift_send.protoprotopublic.proto"z
-CharAffinityGiftSendReq
-CharId (RCharId$
-Items (2.proto.ItemTplRItems!
-NextPackageˇ (RNextPackage"≥
-CharAffinityGiftSendResp'
-Info (2.proto.AffinityInfoRInfo)
-Change (2.proto.ChangeInfoRChange 
-SendGiftCnt (RSendGiftCnt!
-NextPackageˇ (RNextPackageP bproto3
-·
-(char_affinity_quset_reward_receive.protoprotopublic.proto"x
-!CharAffinityQuestRewardReceiveReq
-CharId (RCharId
-QuestId (RQuestId!
-NextPackageˇ (RNextPackage"õ
-"CharAffinityQuestRewardReceiveResp'
-Info (2.proto.AffinityInfoRInfo)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-ì
-char_archive.protoprotopublic.proto"^
-CharArchiveRewardReceiveReq
-	ArchiveId (R	ArchiveId!
-NextPackageˇ (RNextPackageP bproto3
-∫
-!char_dating_branch_a_select.protoprotopublic.proto"[
-CharDatingBranchASelectReq
-OptionId (ROptionId!
-NextPackageˇ (RNextPackage"ò
-CharDatingBranchASelectResp*
-LandmarkEventIds (RLandmarkEventIds*
-BranchBOptionIds (RBranchBOptionIds!
-NextPackageˇ (RNextPackageP bproto3
-à
-!char_dating_branch_b_select.protoprotopublic.proto"[
-CharDatingBranchBSelectReq
-OptionId (ROptionId!
-NextPackageˇ (RNextPackage"Ê
-CharDatingBranchBSelectResp*
-CharacterEventId (RCharacterEventId$
-AfterBranchId (RAfterBranchId'
-Info (2.proto.AffinityInfoRInfo)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-ø
-&char_dating_event_reward_receive.protoprotopublic.proto"v
-CharDatingEventRewardReceiveReq
-CharId (RCharId
-EventId (REventId!
-NextPackageˇ (RNextPackageP bproto3
-Ï
-char_dating_gift_send.protoprotopublic.proto"x
-CharDatingGiftSendReq
-CharId (RCharId$
-Items (2.proto.ItemTplRItems!
-NextPackageˇ (RNextPackage"≥
-CharDatingGiftSendResp'
-Info (2.proto.AffinityInfoRInfo)
-Change (2.proto.ChangeInfoRChange"
-Show (2.proto.ItemTplRShow!
-NextPackageˇ (RNextPackageP bproto3
-®
-!char_dating_landmark_select.protoprotopublic.proto"x
-CharDatingLandmarkSelectReq
-CharId (RCharId
-
-LandmarkId (R
-LandmarkId!
-NextPackageˇ (RNextPackage"È
-CharDatingLandmarkSelectResp&
-BeforeBranchId (RBeforeBranchId*
-BranchAOptionIds (RBranchAOptionIds'
-Info (2.proto.AffinityInfoRInfo)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-À
-char_gem_equip_gem.protoproto"ü
-CharGemEquipGemReq
-CharId (RCharId
-SlotId (RSlotId
-GemIndex (RGemIndex
-PresetId (RPresetId!
-NextPackageˇ (RNextPackagebproto3
-π
-char_gem_generate.protoprotopublic.proto"g
-CharGemGenerateReq
-CharId (RCharId
-SlotId (RSlotId!
-NextPackageˇ (RNextPackage"ï
-CharGemGenerateResp(
-CharGem (2.proto.CharGemRCharGem1
-
-ChangeInfo (2.proto.ChangeInfoR
-ChangeInfo!
-NextPackageˇ (RNextPackageP bproto3
-¶
-char_gem_instance_apply.protoprotopublic.proto"f
-CharGemInstanceApplyReq
-Id (RId
-BuildId (RBuildId!
-NextPackageˇ (RNextPackageP bproto3
-π
-char_gem_instance_settle.protoprotopublic.proto"x
-CharGemInstanceSettleReq
-Star (RStar%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackage"˝
-CharGemInstanceSettleResp
-First (RFirst
-	ThreeStar (R	ThreeStar)
-Change (2.proto.ChangeInfoRChange.
-
-AwardItems (2.proto.ItemTplR
-AwardItems.
-
-FirstItems (2.proto.ItemTplR
-FirstItems6
-ThreeStarItems (2.proto.ItemTplRThreeStarItems
-Exp (RExp4
-SurpriseItems (2.proto.ItemTplRSurpriseItems!
-NextPackageˇ (RNextPackageP bproto3
-ˆ
-char_gem_instance_sweep.protoprotopublic.proto"â
-CharGemInstanceSweepReq
-Id (RId
-Times (RTimes%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackage"Å
-CharGemInstanceSweepReward.
-
-AwardItems (2.proto.ItemTplR
-AwardItems
-Exp (RExp!
-NextPackageˇ (RNextPackage"•
-CharGemInstanceSweepResp)
-Change (2.proto.ChangeInfoRChange;
-Rewards (2!.proto.CharGemInstanceSweepRewardRRewards!
-NextPackageˇ (RNextPackageP bproto3
-Á
-char_gem_refresh.protoprotopublic.proto"†
-CharGemRefreshReq
-CharId (RCharId
-SlotId (RSlotId
-GemIndex (RGemIndex
-	LockAttrs (R	LockAttrs!
-NextPackageˇ (RNextPackage"ä
-CharGemRefreshResp
-
-Attributes (R
-Attributes1
-
-ChangeInfo (2.proto.ChangeInfoR
-ChangeInfo!
-NextPackageˇ (RNextPackageP bproto3
-π
-char_gem_rename_preset.protoproto"â
-CharGemRenamePresetReq
-CharId (RCharId
-PresetId (RPresetId
-NewName (	RNewName!
-NextPackageˇ (RNextPackagebproto3
-ø
- char_gem_replace_attribute.protoproto"ã
-CharGemReplaceAttributeReq
-CharId (RCharId
-SlotId (RSlotId
-GemIndex (RGemIndex!
-NextPackageˇ (RNextPackagebproto3
-€
-%char_gem_update_gem_lock_status.protoproto"¢
-CharGemUpdateGemLockStatusReq
-CharId (RCharId
-SlotId (RSlotId
-GemIndex (RGemIndex
-Lock (RLock!
-NextPackageˇ (RNextPackagebproto3
-ò
-char_gem_use_preset.protoproto"l
-CharGemUsePresetReq
-CharId (RCharId
-PresetId (RPresetId!
-NextPackageˇ (RNextPackagebproto3
-7
-char_recruitment.protoprotopublic.protoP bproto3
-°
-char_skill_upgrade.protoprotopublic.proto"f
-CharSkillUpgradeReq
-CharId (RCharId
-Index (RIndex!
-NextPackageˇ (RNextPackageP bproto3
-ô
-char_skin_set.protoprotopublic.proto"c
-CharSkinSetReq
-CharId (RCharId
-SkinId (RSkinId!
-NextPackageˇ (RNextPackageP bproto3
-∞
-char_upgrade.protoprotopublic.proto"q
-CharUpgradeReq
-CharId (RCharId$
-Items (2.proto.ItemTplRItems!
-NextPackageˇ (RNextPackage"á
-CharUpgradeResp
-Level (RLevel
-Exp (RExp)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-:
-client_event_report.protoprotopublic.protoP bproto3
-¬
-daily_instance_apply.protoprotopublic.proto"Ñ
-DailyInstanceApplyReq
-Id (RId
-
-RewardType (R
-RewardType
-BuildId (RBuildId!
-NextPackageˇ (RNextPackageP bproto3
-Ú
-daily_instance_raid.protoprotopublic.proto"¶
-DailyInstanceRaidReq
-Id (RId
-
-RewardType (R
-RewardType
-Times (RTimes%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackage"o
-DailyInstanceReward#
-Select (2.proto.ItemRSelect
-Exp (RExp!
-NextPackageˇ (RNextPackage"õ
-DailyInstanceRaidResp4
-Rewards (2.proto.DailyInstanceRewardRRewards)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-¯
-daily_instance_settle.protoprotopublic.proto"v
-DailyInstanceSettleReq
-Star (RStar%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackage"¡
-DailyInstanceSettleResp#
-Select (2.proto.ItemRSelect!
-First (2.proto.ItemRFirst
-Exp (RExp)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-@
-daily_shop_reward_receive.protoprotopublic.protoP bproto3
-†
-dictionary_reward_receive.protoprotopublic.proto"^
-DictRewardReq
-TabId (RTabId
-Index (RIndex!
-NextPackageˇ (RNextPackageP bproto3
-â
-disc_limit_break.protoprotopublic.proto"X
-DiscLimitBreakReq
-Id (RId
-Qty (RQty!
-NextPackageˇ (RNextPackage"v
-DiscLimitBreakResp
-Star (RStar)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-Ô
-disc_promote.protoprotopublic.proto"C
-DiscPromoteReq
-Id (RId!
-NextPackageˇ (RNextPackage"u
-DiscPromoteResp
-Phase (RPhase)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-¸
-disc_read_reward_receive.protoprotopublic.proto"~
-DiscReadRewardReceiveReq
-Id (RId/
-ReadType (2.proto.DiscReadTypeRReadType!
-NextPackageˇ (RNextPackage*;
-DiscReadType
-UnknownType 
-	DiscStory
-DiscAVGP bproto3
-≤
-disc_strengthen.protoprotopublic.proto"m
-DiscStrengthenReq
-Id (RId%
-Items (2.proto.ItemInfoRItems!
-NextPackageˇ (RNextPackage"ä
-DiscStrengthenResp
-Level (RLevel
-Exp (RExp)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-¶
-energy_buy.protoprotopublic.proto"s
-EnergyBuyResp
-Count (RCount)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-5
-energy_extract.protoprotopublic.protoP bproto3
-8
-fragments_convert.protoprotopublic.protoP bproto3
-·
-friend_add_agree.protoprotopublic.proto"H
-FriendAddAgreeReq
-UId (RUId!
-NextPackageˇ (RNextPackage"^
-FriendAddAgreeResp%
-Friend (2.proto.FriendRFriend!
-NextPackageˇ (RNextPackageP bproto3
-v
-friend_add.protoprotopublic.proto"C
-FriendAddReq
-UId (RUId!
-NextPackageˇ (RNextPackageP bproto3
-Ÿ
-friend_all_agree.protoprotopublic.proto"ü
-FriendAllAgreeResp
-Limit (RLimit'
-Friends (2.proto.FriendRFriends'
-Invites (2.proto.FriendRInvites!
-NextPackageˇ (RNextPackageP bproto3
-|
-friend_delete.protoprotopublic.proto"F
-FriendDeleteReq
-UId (RUId!
-NextPackageˇ (RNextPackageP bproto3
-ç
-friend_invites_delete.protoprotopublic.proto"O
-FriendInvitesDeleteReq
-UIds (RUIds!
-NextPackageˇ (RNextPackageP bproto3
-Û
-friend_list_get.protoprotopublic.proto"∫
-FriendListGetResp-
-Friends (2.proto.FriendDetailRFriends'
-Invites (2.proto.FriendRInvites*
-ReceiveEnergyCnt (RReceiveEnergyCnt!
-NextPackageˇ (RNextPackageP bproto3
-Î
-friend_name_search.protoprotopublic.proto"L
-FriendNameSearchReq
-Name (	RName!
-NextPackageˇ (RNextPackage"b
-FriendNameSearchResp'
-Friends (2.proto.FriendRFriends!
-NextPackageˇ (RNextPackageP bproto3
-∑
-friend_receive_energy.protoprotopublic.proto"O
-FriendReceiveEnergyReq
-UIds (RUIds!
-NextPackageˇ (RNextPackage"ß
-FriendReceiveEnergyResp
-UIds (RUIds)
-Change (2.proto.ChangeInfoRChange*
-ReceiveEnergyCnt (RReceiveEnergyCnt!
-NextPackageˇ (RNextPackageP bproto3
-´
-friend_recommendation_get.protoprotopublic.proto"i
-FriendRecommendationGetResp'
-Friends (2.proto.FriendRFriends!
-NextPackageˇ (RNextPackageP bproto3
-÷
-friend_send_energy.protoprotopublic.proto"L
-FriendSendEnergyReq
-UIds (RUIds!
-NextPackageˇ (RNextPackage"M
-FriendSendEnergyResp
-UIds (RUIds!
-NextPackageˇ (RNextPackageP bproto3
-ï
-friend_star_set.protoprotopublic.proto"]
-FriendStarSetReq
-UIds (RUIds
-Star (RStar!
-NextPackageˇ (RNextPackageP bproto3
-‚
-friend_uid_search.protoprotopublic.proto"G
-FriendUIdSearchReq
-Id (RId!
-NextPackageˇ (RNextPackage"_
-FriendUIdSearchResp%
-Friend (2.proto.FriendRFriend!
-NextPackageˇ (RNextPackageP bproto3
-E
-$gacha_guarantee_reward_receive.protoprotopublic.protoP bproto3
-ˇ
-gacha_histories.protoprotopublic.proto"i
-GachaHistory
-Ids (RIds
-Time (RTime
-Gid (RGid!
-NextPackageˇ (RNextPackage"\
-GachaHistories'
-List (2.proto.GachaHistoryRList!
-NextPackageˇ (RNextPackageP bproto3
-§
-gacha_information.protoprotopublic.proto"˙
-	GachaInfo
-Id (RId
-	DaysCount (R	DaysCount"
-AupMissTimes (RAupMissTimes
-
-AMissTimes (R
-AMissTimes.
-ReveFirstTenReward (RReveFirstTenReward0
-RecvGuaranteeReward (RRecvGuaranteeReward(
-GachaTotalTimes (RGachaTotalTimes
-
-TotalTimes (R
-TotalTimes,
-AupGuaranteeTimes (RAupGuaranteeTimes!
-NextPackageˇ (RNextPackage"m
-GachaInformationResp2
-Information (2.proto.GachaInfoRInformation!
-NextPackageˇ (RNextPackageP bproto3
-ü
-gacha_newbie_info.protoprotopublic.proto"B
-UI32s
-Values (RValues!
-NextPackageˇ (RNextPackage"∫
-GachaNewbieInfo
-Id (RId
-Receive (RReceive
-Times (RTimes"
-Cards (2.proto.UI32sRCards 
-Temp (2.proto.UI32sRTemp!
-NextPackageˇ (RNextPackage"d
-GachaNewbieInfoResp*
-List (2.proto.GachaNewbieInfoRList!
-NextPackageˇ (RNextPackageP bproto3
-ó
-gacha_newbie_obtain.protoprotopublic.proto"[
-GachaNewbieObtainReq
-Id (RId
-Idx (RIdx!
-NextPackageˇ (RNextPackageP bproto3
-ì
-gacha_newbie_save.protoprotopublic.proto"Y
-GachaNewbieSaveReq
-Id (RId
-Idx (RIdx!
-NextPackageˇ (RNextPackageP bproto3
-à
-gacha_newbie_spin.protoprotopublic.proto"N
-GachaNewbieSpinResp
-Cards (RCards!
-NextPackageˇ (RNextPackageP bproto3
-¸
-gacha_spin.protoprotopublic.proto"U
-GachaSpinReq
-Id (RId
-Mode (RMode!
-NextPackageˇ (RNextPackage"Û
-GachaSpinResp&
-Cards (2.proto.GachaCardRCards)
-Change (2.proto.ChangeInfoRChange
-Time (RTime
-
-AMissTimes
- (R
-AMissTimes(
-GachaTotalTimes (RGachaTotalTimes
-
-TotalTimes (R
-TotalTimes,
-AupGuaranteeTimes (RAupGuaranteeTimes"
-AupMissTimes (RAupMissTimes
-	DaysCount (R	DaysCount!
-NextPackageˇ (RNextPackage"|
-	GachaCard"
-Card (2.proto.ItemTplRCard(
-Rewards (2.proto.ItemTplRRewards!
-NextPackageˇ (RNextPackageP bproto3
-2
-gem_convert.protoprotopublic.protoP bproto3
-|
-gm_sudo.protoproto"\
-SudoCommand
-Action (	RAction
-Args (	RArgs!
-NextPackageˇ (RNextPackagebproto3
-¡
-	ike.protoprotopublic.proto"É
-IKEReq"
-ProtoVersion (RProtoVersion
-ClientTs (RClientTs
-PubKey (RPubKey!
-NextPackageˇ (RNextPackage"é
-IKEResp
-Token (	RToken
-Cipher (RCipher
-ServerTs (RServerTs
-PubKey (RPubKey!
-NextPackageˇ (RNextPackageP bproto3
-´
-infinity_tower_apply.protoprotopublic.proto"n
-InfinityTowerApplyReq
-LevelId (RLevelId
-BuildId (RBuildId!
-NextPackageˇ (RNextPackageP bproto3
-‰
-)infinity_tower_daily_reward_receive.protoprotopublic.proto"ó
-#InfinityTowerDailyRewardReceiveResp"
-Show (2.proto.ItemTplRShow)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-Í
-infinity_tower_info.protoprotopublic.proto"≠
-InfinityTowerInfoResp 
-BountyLevel (RBountyLevel
-PlotsIds (RPlotsIds3
-Infos (2.proto.InfinityTowerLevelInfoRInfos!
-NextPackageˇ (RNextPackageP bproto3
-‚
-(infinity_tower_plot_reward_receive.protoprotopublic.proto"ñ
-"InfinityTowerPlotRewardReceiveResp"
-Show (2.proto.ItemTplRShow)
-Change (2.proto.ChangeInfoRChange!
-NextPackageˇ (RNextPackageP bproto3
-ç
-infinity_tower_settle.protoprotopublic.proto"x
-InfinityTowerSettleReq
-Value (RValue%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackage"‘
-InfinityTowerSettleResp 
-NextLevelId (RNextLevelId"
-Show (2.proto.ItemTplRShow)
-Change (2.proto.ChangeInfoRChange 
-BountyLevel (RBountyLevel;
-Value (2%.proto.InfinityTowerSettleResp.ReasonRValue!
-NextPackageˇ (RNextPackage"F
-Reason
-Nil 
-PreLevel
-
-WorldClass	
-Build
-
-NoOpenP bproto3
-ä
-item_product.protoprotopublic.proto"U
-ItemProductReq
-Id (RId
-Num (RNum!
-NextPackageˇ (RNextPackageP bproto3
-ﬁ
-item_use.protoprotopublic.proto"
-PickItem
-Id (RId
-Tid (RTid
-	SelectTid (R	SelectTid
-Qty (RQty!
-NextPackageˇ (RNextPackage"S
-	PickItems#
-List (2.proto.PickItemRList!
-NextPackageˇ (RNextPackage"Q
-UseItem#
-List (2.proto.ItemInfoRList!
-NextPackageˇ (RNextPackage"É
-
-ItemUseReq&
-Pick (2.proto.PickItemsH RPick"
-Use (2.proto.UseItemH RUse!
-NextPackageˇ (RNextPackageB
-ModeP bproto3
-ß
-item_quick_growth.protoprotopublic.protoitem_use.protoitem_product.proto"U
-PickItemReq#
-List (2.proto.PickItemRList!
-NextPackageˇ (RNextPackage"ñ
-
-GrowthStep1
-Product (2.proto.ItemProductReqH RProduct(
-Pick (2.proto.PickItemReqH RPick!
-NextPackageˇ (RNextPackageB
-Action"Y
-ItemGrowthReq%
-List (2.proto.GrowthStepRList!
-NextPackageˇ (RNextPackageP bproto3
-˘
-joint_drill_apply.protoprotopublic.proto"Ω
-JointDrillApplyReq
-LevelId (RLevelId
-BuildId (RBuildId
-BossHp (RBossHp
-	BossHpMax (R	BossHpMax
-Simulate (RSimulate!
-NextPackageˇ (RNextPackage"
-JointDrillApplyResp)
-Change (2.proto.ChangeInfoRChange
-StarTime (RStarTime!
-NextPackageˇ (RNextPackageP bproto3
-Å
-joint_drill_continue.protoproto"T
-JointDrillContinueReq
-BuildId (RBuildId!
-NextPackageˇ (RNextPackagebproto3
-H
-joint_drill_game_over.protoprotopublic_joint_drill.protoP bproto3
 Í
 traveler_duel_rank_upload.protoprotopublic.proto"ì
 TravelerDuelBattleSamples7
@@ -1815,171 +1225,6 @@ RankChange
 Old (ROld
 New (RNew
 Token (	RToken!
-NextPackageˇ (RNextPackageP bproto3
-ñ
-joint_drill_give_up.protoprotopublic_joint_drill.prototraveler_duel_rank_upload.proto"™
-JointDrillGiveUpReq
-Floor (RFloor
-Time (RTime
-Damage (RDamage
-BossHp (RBossHp
-Record (RRecord!
-NextPackageˇ (RNextPackageP Pbproto3
-G
-&joint_drill_quest_reward_receive.protoprotopublic.protoP bproto3
-¨
-joint_drill_rank.protoprotopublic.protopublic_joint_drill.proto"’
-JointDrillRankInfo(
-LastRefreshTime (RLastRefreshTime-
-Self (2.proto.JointDrillRankDataRSelf-
-Rank (2.proto.JointDrillRankDataRRank
-Total (RTotal!
-NextPackageˇ (RNextPackage"]
-JointDrillRankChar
-Id (RId
-Level (RLevel!
-NextPackageˇ (RNextPackage"¥
-JointDrillRankTeam/
-Chars (2.proto.JointDrillRankCharRChars
-
-BuildScore (R
-BuildScore
-Damage (RDamage
-Time (RTime!
-NextPackageˇ (RNextPackage"Ë
-JointDrillRankData
-Id (RId
-NickName (	RNickName
-
-WorldClass (R
-WorldClass
-HeadIcon (RHeadIcon
-Score (RScore
-Rank (RRank 
-TitlePrefix (RTitlePrefix 
-TitleSuffix (RTitleSuffix(
-Honors	 (2.proto.HonorInfoRHonors/
-Teams
- (2.proto.JointDrillRankTeamRTeams!
-NextPackageˇ (RNextPackageP Pbproto3
-*
-joint_drill_retreat.protoprotobproto3
-‹
-joint_drill_settle.protoprotopublic.protopublic_joint_drill.prototraveler_duel_rank_upload.proto"·
-JointDrillSettleReq
-Time (RTime
-Damage (RDamage8
-sample (2 .proto.TravelerDuelBattleSamplesRsample
-Checksum (RChecksum%
-Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackageP PPbproto3
-»
-joint_drill_sweep.protoprotopublic.proto"g
-JointDrillSweepReq
-LevelId (RLevelId
-Count (RCount!
-NextPackageˇ (RNextPackage"§
-JointDrillSweepResp)
-Change (2.proto.ChangeInfoRChange)
-Rewards (2.proto.ItemTplsRRewards
-Score (RScore!
-NextPackageˇ (RNextPackageP bproto3
-Ä
-joint_drill_sync.protoprotopublic.proto"∆
-JointDrillSyncReq
-Floor (RFloor
-Time (RTime
-Damage (RDamage
-BossHp (RBossHp
-	BossHpMax (R	BossHpMax
-Record (RRecord!
-NextPackageˇ (RNextPackageP bproto3
-0
-mail_list.protoprotopublic.protoP bproto3
-ö
-mail_pin.protoprotopublic.proto"i
-MailPinRequest
-Id (RId
-Flag (RFlag
-Pin (RPin!
-NextPackageˇ (RNextPackageP bproto3
-0
-mail_read.protoprotopublic.protoP bproto3
-û
-mail_recv.protoprotopublic.proto"l
-MailRecvResp
-Ids (RIds'
-Items (2.proto.ChangeInfoRItems!
-NextPackageˇ (RNextPackageP bproto3
-y
-mail_remove.protoprotopublic.proto"E
-MailRemoveResp
-Ids (RIds!
-NextPackageˇ (RNextPackageP bproto3
-‡
-mall_gem_list.protoprotopublic.proto"T
-GemInfo
-Id (	RId
-Maiden (RMaiden!
-NextPackageˇ (RNextPackage"T
-MallGemList"
-List (2.proto.GemInfoRList!
-NextPackageˇ (RNextPackageP bproto3
-±
-mall_gem_order.protoprotopublic.proto"z
-	OrderInfo
-Id (	RId
-	ExtraData (	R	ExtraData
-	NotifyUrl (	R	NotifyUrl!
-NextPackageˇ (RNextPackageP bproto3
-¢
-mall_monthlycard_list.protoprotopublic.proto"~
-MonthlyCardInfo
-Id (	RId
-	Remaining (R	Remaining
-Received (RReceived!
-NextPackageˇ (RNextPackage"d
-MallMonthlyCardList*
-List (2.proto.MonthlyCardInfoRList!
-NextPackageˇ (RNextPackageP bproto3
-=
-mall_monthlycard_order.protoprotopublic.protoP bproto3
-8
-mall_order_cancel.protoprotopublic.protoP bproto3
-9
-mall_order_collect.protoprotopublic.protoP bproto3
-ê
-mall_package_list.protoprotopublic.proto"x
-PackageInfo
-Id (	RId
-Stock (RStock 
-RefreshTime (RRefreshTime!
-NextPackageˇ (RNextPackage"\
-MallPackageList&
-List (2.proto.PackageInfoRList!
-NextPackageˇ (RNextPackageP bproto3
-Ê
-mall_package_order.protoprotopublic.protomall_gem_order.proto"î
-MallPackageOrder+
-Change (2.proto.ChangeInfoH RChange(
-Order (2.proto.OrderInfoH ROrder!
-NextPackageˇ (RNextPackageB
-RespP bproto3
-ë
-mall_shop_list.protoprotopublic.proto"x
-ProductInfo
-Id (	RId
-Stock (RStock 
-RefreshTime (RRefreshTime!
-NextPackageˇ (RNextPackage"`
-MallShopProductList&
-List (2.proto.ProductInfoRList!
-NextPackageˇ (RNextPackageP bproto3
-•
-mall_shop_order.protoprotopublic.protomall_gem_order.proto"W
-MallShopOrderReq
-Id (	RId
-Qty (RQty!
 NextPackageˇ (RNextPackageP bproto3
 ÛN
 public_star_tower.protoprotopublic.prototraveler_duel_rank_upload.proto"≠
@@ -2335,6 +1580,830 @@ Potentials!
 Change (2.proto.NPCAffinityChangeRChange$
 Items (2.proto.ItemTplRItems!
 NextPackageˇ (RNextPackageP Pbproto3
+»
+#build_convert_detail_list_get.protoprotopublic_star_tower.proto"w
+BuildConvertDetailListGetResp3
+Details (2.proto.StarTowerBuildInfoRDetails!
+NextPackageˇ (RNextPackageP bproto3
+Ä
+(build_convert_group_reward_receive.protoprotopublic.proto"¥
+"BuildConvertGroupRewardReceiveResp
+Ids (RIds)
+Change (2.proto.ChangeInfoRChange.
+
+AwardItems (2.proto.ItemTplR
+AwardItems!
+NextPackageˇ (RNextPackageP bproto3
+É
+build_convert_submit.protoprotopublic.proto"î
+BuildConvertSubmitReq
+
+ActivityId (R
+ActivityId
+	ContentId (R	ContentId
+BuildIds (RBuildIds!
+NextPackageˇ (RNextPackage"Æ
+BuildConvertSubmitResp)
+Change (2.proto.ChangeInfoRChange.
+
+AwardItems (2.proto.ItemTplR
+AwardItems
+Number (RNumber!
+NextPackageˇ (RNextPackageP bproto3
+π
+!char_advance_reward_receive.protoprotopublic.proto"r
+CharAdvanceRewardReceiveReq
+CharId (RCharId
+Advance (RAdvance!
+NextPackageˇ (RNextPackage"Ä
+CharAdvanceRewardReceiveResp
+Flag (RFlag)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+3
+char_advance.protoprotopublic.protoP bproto3
+
+char_affinity_gift_send.protoprotopublic.proto"z
+CharAffinityGiftSendReq
+CharId (RCharId$
+Items (2.proto.ItemTplRItems!
+NextPackageˇ (RNextPackage"≥
+CharAffinityGiftSendResp'
+Info (2.proto.AffinityInfoRInfo)
+Change (2.proto.ChangeInfoRChange 
+SendGiftCnt (RSendGiftCnt!
+NextPackageˇ (RNextPackageP bproto3
+·
+(char_affinity_quset_reward_receive.protoprotopublic.proto"x
+!CharAffinityQuestRewardReceiveReq
+CharId (RCharId
+QuestId (RQuestId!
+NextPackageˇ (RNextPackage"õ
+"CharAffinityQuestRewardReceiveResp'
+Info (2.proto.AffinityInfoRInfo)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+ì
+char_archive.protoprotopublic.proto"^
+CharArchiveRewardReceiveReq
+	ArchiveId (R	ArchiveId!
+NextPackageˇ (RNextPackageP bproto3
+∫
+!char_dating_branch_a_select.protoprotopublic.proto"[
+CharDatingBranchASelectReq
+OptionId (ROptionId!
+NextPackageˇ (RNextPackage"ò
+CharDatingBranchASelectResp*
+LandmarkEventIds (RLandmarkEventIds*
+BranchBOptionIds (RBranchBOptionIds!
+NextPackageˇ (RNextPackageP bproto3
+à
+!char_dating_branch_b_select.protoprotopublic.proto"[
+CharDatingBranchBSelectReq
+OptionId (ROptionId!
+NextPackageˇ (RNextPackage"Ê
+CharDatingBranchBSelectResp*
+CharacterEventId (RCharacterEventId$
+AfterBranchId (RAfterBranchId'
+Info (2.proto.AffinityInfoRInfo)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+ø
+&char_dating_event_reward_receive.protoprotopublic.proto"v
+CharDatingEventRewardReceiveReq
+CharId (RCharId
+EventId (REventId!
+NextPackageˇ (RNextPackageP bproto3
+Ï
+char_dating_gift_send.protoprotopublic.proto"x
+CharDatingGiftSendReq
+CharId (RCharId$
+Items (2.proto.ItemTplRItems!
+NextPackageˇ (RNextPackage"≥
+CharDatingGiftSendResp'
+Info (2.proto.AffinityInfoRInfo)
+Change (2.proto.ChangeInfoRChange"
+Show (2.proto.ItemTplRShow!
+NextPackageˇ (RNextPackageP bproto3
+®
+!char_dating_landmark_select.protoprotopublic.proto"x
+CharDatingLandmarkSelectReq
+CharId (RCharId
+
+LandmarkId (R
+LandmarkId!
+NextPackageˇ (RNextPackage"È
+CharDatingLandmarkSelectResp&
+BeforeBranchId (RBeforeBranchId*
+BranchAOptionIds (RBranchAOptionIds'
+Info (2.proto.AffinityInfoRInfo)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+À
+char_gem_equip_gem.protoproto"ü
+CharGemEquipGemReq
+CharId (RCharId
+SlotId (RSlotId
+GemIndex (RGemIndex
+PresetId (RPresetId!
+NextPackageˇ (RNextPackagebproto3
+π
+char_gem_generate.protoprotopublic.proto"g
+CharGemGenerateReq
+CharId (RCharId
+SlotId (RSlotId!
+NextPackageˇ (RNextPackage"ï
+CharGemGenerateResp(
+CharGem (2.proto.CharGemRCharGem1
+
+ChangeInfo (2.proto.ChangeInfoR
+ChangeInfo!
+NextPackageˇ (RNextPackageP bproto3
+¶
+char_gem_instance_apply.protoprotopublic.proto"f
+CharGemInstanceApplyReq
+Id (RId
+BuildId (RBuildId!
+NextPackageˇ (RNextPackageP bproto3
+π
+char_gem_instance_settle.protoprotopublic.proto"x
+CharGemInstanceSettleReq
+Star (RStar%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackage"˝
+CharGemInstanceSettleResp
+First (RFirst
+	ThreeStar (R	ThreeStar)
+Change (2.proto.ChangeInfoRChange.
+
+AwardItems (2.proto.ItemTplR
+AwardItems.
+
+FirstItems (2.proto.ItemTplR
+FirstItems6
+ThreeStarItems (2.proto.ItemTplRThreeStarItems
+Exp (RExp4
+SurpriseItems (2.proto.ItemTplRSurpriseItems!
+NextPackageˇ (RNextPackageP bproto3
+ˆ
+char_gem_instance_sweep.protoprotopublic.proto"â
+CharGemInstanceSweepReq
+Id (RId
+Times (RTimes%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackage"Å
+CharGemInstanceSweepReward.
+
+AwardItems (2.proto.ItemTplR
+AwardItems
+Exp (RExp!
+NextPackageˇ (RNextPackage"•
+CharGemInstanceSweepResp)
+Change (2.proto.ChangeInfoRChange;
+Rewards (2!.proto.CharGemInstanceSweepRewardRRewards!
+NextPackageˇ (RNextPackageP bproto3
+Á
+char_gem_refresh.protoprotopublic.proto"†
+CharGemRefreshReq
+CharId (RCharId
+SlotId (RSlotId
+GemIndex (RGemIndex
+	LockAttrs (R	LockAttrs!
+NextPackageˇ (RNextPackage"ä
+CharGemRefreshResp
+
+Attributes (R
+Attributes1
+
+ChangeInfo (2.proto.ChangeInfoR
+ChangeInfo!
+NextPackageˇ (RNextPackageP bproto3
+π
+char_gem_rename_preset.protoproto"â
+CharGemRenamePresetReq
+CharId (RCharId
+PresetId (RPresetId
+NewName (	RNewName!
+NextPackageˇ (RNextPackagebproto3
+ø
+ char_gem_replace_attribute.protoproto"ã
+CharGemReplaceAttributeReq
+CharId (RCharId
+SlotId (RSlotId
+GemIndex (RGemIndex!
+NextPackageˇ (RNextPackagebproto3
+€
+%char_gem_update_gem_lock_status.protoproto"¢
+CharGemUpdateGemLockStatusReq
+CharId (RCharId
+SlotId (RSlotId
+GemIndex (RGemIndex
+Lock (RLock!
+NextPackageˇ (RNextPackagebproto3
+ò
+char_gem_use_preset.protoproto"l
+CharGemUsePresetReq
+CharId (RCharId
+PresetId (RPresetId!
+NextPackageˇ (RNextPackagebproto3
+7
+char_recruitment.protoprotopublic.protoP bproto3
+°
+char_skill_upgrade.protoprotopublic.proto"f
+CharSkillUpgradeReq
+CharId (RCharId
+Index (RIndex!
+NextPackageˇ (RNextPackageP bproto3
+ô
+char_skin_set.protoprotopublic.proto"c
+CharSkinSetReq
+CharId (RCharId
+SkinId (RSkinId!
+NextPackageˇ (RNextPackageP bproto3
+∞
+char_upgrade.protoprotopublic.proto"q
+CharUpgradeReq
+CharId (RCharId$
+Items (2.proto.ItemTplRItems!
+NextPackageˇ (RNextPackage"á
+CharUpgradeResp
+Level (RLevel
+Exp (RExp)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+:
+client_event_report.protoprotopublic.protoP bproto3
+¬
+daily_instance_apply.protoprotopublic.proto"Ñ
+DailyInstanceApplyReq
+Id (RId
+
+RewardType (R
+RewardType
+BuildId (RBuildId!
+NextPackageˇ (RNextPackageP bproto3
+Ú
+daily_instance_raid.protoprotopublic.proto"¶
+DailyInstanceRaidReq
+Id (RId
+
+RewardType (R
+RewardType
+Times (RTimes%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackage"o
+DailyInstanceReward#
+Select (2.proto.ItemRSelect
+Exp (RExp!
+NextPackageˇ (RNextPackage"õ
+DailyInstanceRaidResp4
+Rewards (2.proto.DailyInstanceRewardRRewards)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+¯
+daily_instance_settle.protoprotopublic.proto"v
+DailyInstanceSettleReq
+Star (RStar%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackage"¡
+DailyInstanceSettleResp#
+Select (2.proto.ItemRSelect!
+First (2.proto.ItemRFirst
+Exp (RExp)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+@
+daily_shop_reward_receive.protoprotopublic.protoP bproto3
+†
+dictionary_reward_receive.protoprotopublic.proto"^
+DictRewardReq
+TabId (RTabId
+Index (RIndex!
+NextPackageˇ (RNextPackageP bproto3
+¡
+disc_all_limit_break.protoprotopublic.proto"§
+DiscAllLimitBreakResp=
+LimitBreaks (2.proto.DiscLimitBreakChangeRLimitBreaks)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackage"]
+DiscLimitBreakChange
+Id (RId
+Star (RStar!
+NextPackageˇ (RNextPackageP bproto3
+â
+disc_limit_break.protoprotopublic.proto"X
+DiscLimitBreakReq
+Id (RId
+Qty (RQty!
+NextPackageˇ (RNextPackage"v
+DiscLimitBreakResp
+Star (RStar)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+Ô
+disc_promote.protoprotopublic.proto"C
+DiscPromoteReq
+Id (RId!
+NextPackageˇ (RNextPackage"u
+DiscPromoteResp
+Phase (RPhase)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+¸
+disc_read_reward_receive.protoprotopublic.proto"~
+DiscReadRewardReceiveReq
+Id (RId/
+ReadType (2.proto.DiscReadTypeRReadType!
+NextPackageˇ (RNextPackage*;
+DiscReadType
+UnknownType 
+	DiscStory
+DiscAVGP bproto3
+≤
+disc_strengthen.protoprotopublic.proto"m
+DiscStrengthenReq
+Id (RId%
+Items (2.proto.ItemInfoRItems!
+NextPackageˇ (RNextPackage"ä
+DiscStrengthenResp
+Level (RLevel
+Exp (RExp)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+¶
+energy_buy.protoprotopublic.proto"s
+EnergyBuyResp
+Count (RCount)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+5
+energy_extract.protoprotopublic.protoP bproto3
+8
+fragments_convert.protoprotopublic.protoP bproto3
+·
+friend_add_agree.protoprotopublic.proto"H
+FriendAddAgreeReq
+UId (RUId!
+NextPackageˇ (RNextPackage"^
+FriendAddAgreeResp%
+Friend (2.proto.FriendRFriend!
+NextPackageˇ (RNextPackageP bproto3
+v
+friend_add.protoprotopublic.proto"C
+FriendAddReq
+UId (RUId!
+NextPackageˇ (RNextPackageP bproto3
+Ÿ
+friend_all_agree.protoprotopublic.proto"ü
+FriendAllAgreeResp
+Limit (RLimit'
+Friends (2.proto.FriendRFriends'
+Invites (2.proto.FriendRInvites!
+NextPackageˇ (RNextPackageP bproto3
+|
+friend_delete.protoprotopublic.proto"F
+FriendDeleteReq
+UId (RUId!
+NextPackageˇ (RNextPackageP bproto3
+ç
+friend_invites_delete.protoprotopublic.proto"O
+FriendInvitesDeleteReq
+UIds (RUIds!
+NextPackageˇ (RNextPackageP bproto3
+Û
+friend_list_get.protoprotopublic.proto"∫
+FriendListGetResp-
+Friends (2.proto.FriendDetailRFriends'
+Invites (2.proto.FriendRInvites*
+ReceiveEnergyCnt (RReceiveEnergyCnt!
+NextPackageˇ (RNextPackageP bproto3
+Î
+friend_name_search.protoprotopublic.proto"L
+FriendNameSearchReq
+Name (	RName!
+NextPackageˇ (RNextPackage"b
+FriendNameSearchResp'
+Friends (2.proto.FriendRFriends!
+NextPackageˇ (RNextPackageP bproto3
+∑
+friend_receive_energy.protoprotopublic.proto"O
+FriendReceiveEnergyReq
+UIds (RUIds!
+NextPackageˇ (RNextPackage"ß
+FriendReceiveEnergyResp
+UIds (RUIds)
+Change (2.proto.ChangeInfoRChange*
+ReceiveEnergyCnt (RReceiveEnergyCnt!
+NextPackageˇ (RNextPackageP bproto3
+´
+friend_recommendation_get.protoprotopublic.proto"i
+FriendRecommendationGetResp'
+Friends (2.proto.FriendRFriends!
+NextPackageˇ (RNextPackageP bproto3
+÷
+friend_send_energy.protoprotopublic.proto"L
+FriendSendEnergyReq
+UIds (RUIds!
+NextPackageˇ (RNextPackage"M
+FriendSendEnergyResp
+UIds (RUIds!
+NextPackageˇ (RNextPackageP bproto3
+ï
+friend_star_set.protoprotopublic.proto"]
+FriendStarSetReq
+UIds (RUIds
+Star (RStar!
+NextPackageˇ (RNextPackageP bproto3
+‚
+friend_uid_search.protoprotopublic.proto"G
+FriendUIdSearchReq
+Id (RId!
+NextPackageˇ (RNextPackage"_
+FriendUIdSearchResp%
+Friend (2.proto.FriendRFriend!
+NextPackageˇ (RNextPackageP bproto3
+E
+$gacha_guarantee_reward_receive.protoprotopublic.protoP bproto3
+ˇ
+gacha_histories.protoprotopublic.proto"i
+GachaHistory
+Ids (RIds
+Time (RTime
+Gid (RGid!
+NextPackageˇ (RNextPackage"\
+GachaHistories'
+List (2.proto.GachaHistoryRList!
+NextPackageˇ (RNextPackageP bproto3
+§
+gacha_information.protoprotopublic.proto"˙
+	GachaInfo
+Id (RId
+	DaysCount (R	DaysCount"
+AupMissTimes (RAupMissTimes
+
+AMissTimes (R
+AMissTimes.
+ReveFirstTenReward (RReveFirstTenReward0
+RecvGuaranteeReward (RRecvGuaranteeReward(
+GachaTotalTimes (RGachaTotalTimes
+
+TotalTimes (R
+TotalTimes,
+AupGuaranteeTimes (RAupGuaranteeTimes!
+NextPackageˇ (RNextPackage"m
+GachaInformationResp2
+Information (2.proto.GachaInfoRInformation!
+NextPackageˇ (RNextPackageP bproto3
+ü
+gacha_newbie_info.protoprotopublic.proto"B
+UI32s
+Values (RValues!
+NextPackageˇ (RNextPackage"∫
+GachaNewbieInfo
+Id (RId
+Receive (RReceive
+Times (RTimes"
+Cards (2.proto.UI32sRCards 
+Temp (2.proto.UI32sRTemp!
+NextPackageˇ (RNextPackage"d
+GachaNewbieInfoResp*
+List (2.proto.GachaNewbieInfoRList!
+NextPackageˇ (RNextPackageP bproto3
+ó
+gacha_newbie_obtain.protoprotopublic.proto"[
+GachaNewbieObtainReq
+Id (RId
+Idx (RIdx!
+NextPackageˇ (RNextPackageP bproto3
+ì
+gacha_newbie_save.protoprotopublic.proto"Y
+GachaNewbieSaveReq
+Id (RId
+Idx (RIdx!
+NextPackageˇ (RNextPackageP bproto3
+à
+gacha_newbie_spin.protoprotopublic.proto"N
+GachaNewbieSpinResp
+Cards (RCards!
+NextPackageˇ (RNextPackageP bproto3
+¸
+gacha_spin.protoprotopublic.proto"U
+GachaSpinReq
+Id (RId
+Mode (RMode!
+NextPackageˇ (RNextPackage"Û
+GachaSpinResp&
+Cards (2.proto.GachaCardRCards)
+Change (2.proto.ChangeInfoRChange
+Time (RTime
+
+AMissTimes
+ (R
+AMissTimes(
+GachaTotalTimes (RGachaTotalTimes
+
+TotalTimes (R
+TotalTimes,
+AupGuaranteeTimes (RAupGuaranteeTimes"
+AupMissTimes (RAupMissTimes
+	DaysCount (R	DaysCount!
+NextPackageˇ (RNextPackage"|
+	GachaCard"
+Card (2.proto.ItemTplRCard(
+Rewards (2.proto.ItemTplRRewards!
+NextPackageˇ (RNextPackageP bproto3
+2
+gem_convert.protoprotopublic.protoP bproto3
+|
+gm_sudo.protoproto"\
+SudoCommand
+Action (	RAction
+Args (	RArgs!
+NextPackageˇ (RNextPackagebproto3
+¡
+	ike.protoprotopublic.proto"É
+IKEReq"
+ProtoVersion (RProtoVersion
+ClientTs (RClientTs
+PubKey (RPubKey!
+NextPackageˇ (RNextPackage"é
+IKEResp
+Token (	RToken
+Cipher (RCipher
+ServerTs (RServerTs
+PubKey (RPubKey!
+NextPackageˇ (RNextPackageP bproto3
+´
+infinity_tower_apply.protoprotopublic.proto"n
+InfinityTowerApplyReq
+LevelId (RLevelId
+BuildId (RBuildId!
+NextPackageˇ (RNextPackageP bproto3
+‰
+)infinity_tower_daily_reward_receive.protoprotopublic.proto"ó
+#InfinityTowerDailyRewardReceiveResp"
+Show (2.proto.ItemTplRShow)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+Í
+infinity_tower_info.protoprotopublic.proto"≠
+InfinityTowerInfoResp 
+BountyLevel (RBountyLevel
+PlotsIds (RPlotsIds3
+Infos (2.proto.InfinityTowerLevelInfoRInfos!
+NextPackageˇ (RNextPackageP bproto3
+‚
+(infinity_tower_plot_reward_receive.protoprotopublic.proto"ñ
+"InfinityTowerPlotRewardReceiveResp"
+Show (2.proto.ItemTplRShow)
+Change (2.proto.ChangeInfoRChange!
+NextPackageˇ (RNextPackageP bproto3
+ç
+infinity_tower_settle.protoprotopublic.proto"x
+InfinityTowerSettleReq
+Value (RValue%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackage"‘
+InfinityTowerSettleResp 
+NextLevelId (RNextLevelId"
+Show (2.proto.ItemTplRShow)
+Change (2.proto.ChangeInfoRChange 
+BountyLevel (RBountyLevel;
+Value (2%.proto.InfinityTowerSettleResp.ReasonRValue!
+NextPackageˇ (RNextPackage"F
+Reason
+Nil 
+PreLevel
+
+WorldClass	
+Build
+
+NoOpenP bproto3
+ä
+item_product.protoprotopublic.proto"U
+ItemProductReq
+Id (RId
+Num (RNum!
+NextPackageˇ (RNextPackageP bproto3
+ﬁ
+item_use.protoprotopublic.proto"
+PickItem
+Id (RId
+Tid (RTid
+	SelectTid (R	SelectTid
+Qty (RQty!
+NextPackageˇ (RNextPackage"S
+	PickItems#
+List (2.proto.PickItemRList!
+NextPackageˇ (RNextPackage"Q
+UseItem#
+List (2.proto.ItemInfoRList!
+NextPackageˇ (RNextPackage"É
+
+ItemUseReq&
+Pick (2.proto.PickItemsH RPick"
+Use (2.proto.UseItemH RUse!
+NextPackageˇ (RNextPackageB
+ModeP bproto3
+ß
+item_quick_growth.protoprotopublic.protoitem_use.protoitem_product.proto"U
+PickItemReq#
+List (2.proto.PickItemRList!
+NextPackageˇ (RNextPackage"ñ
+
+GrowthStep1
+Product (2.proto.ItemProductReqH RProduct(
+Pick (2.proto.PickItemReqH RPick!
+NextPackageˇ (RNextPackageB
+Action"Y
+ItemGrowthReq%
+List (2.proto.GrowthStepRList!
+NextPackageˇ (RNextPackageP bproto3
+˘
+joint_drill_apply.protoprotopublic.proto"Ω
+JointDrillApplyReq
+LevelId (RLevelId
+BuildId (RBuildId
+BossHp (RBossHp
+	BossHpMax (R	BossHpMax
+Simulate (RSimulate!
+NextPackageˇ (RNextPackage"
+JointDrillApplyResp)
+Change (2.proto.ChangeInfoRChange
+StarTime (RStarTime!
+NextPackageˇ (RNextPackageP bproto3
+Å
+joint_drill_continue.protoproto"T
+JointDrillContinueReq
+BuildId (RBuildId!
+NextPackageˇ (RNextPackagebproto3
+H
+joint_drill_game_over.protoprotopublic_joint_drill.protoP bproto3
+ñ
+joint_drill_give_up.protoprotopublic_joint_drill.prototraveler_duel_rank_upload.proto"™
+JointDrillGiveUpReq
+Floor (RFloor
+Time (RTime
+Damage (RDamage
+BossHp (RBossHp
+Record (RRecord!
+NextPackageˇ (RNextPackageP Pbproto3
+G
+&joint_drill_quest_reward_receive.protoprotopublic.protoP bproto3
+¨
+joint_drill_rank.protoprotopublic.protopublic_joint_drill.proto"’
+JointDrillRankInfo(
+LastRefreshTime (RLastRefreshTime-
+Self (2.proto.JointDrillRankDataRSelf-
+Rank (2.proto.JointDrillRankDataRRank
+Total (RTotal!
+NextPackageˇ (RNextPackage"]
+JointDrillRankChar
+Id (RId
+Level (RLevel!
+NextPackageˇ (RNextPackage"¥
+JointDrillRankTeam/
+Chars (2.proto.JointDrillRankCharRChars
+
+BuildScore (R
+BuildScore
+Damage (RDamage
+Time (RTime!
+NextPackageˇ (RNextPackage"Ë
+JointDrillRankData
+Id (RId
+NickName (	RNickName
+
+WorldClass (R
+WorldClass
+HeadIcon (RHeadIcon
+Score (RScore
+Rank (RRank 
+TitlePrefix (RTitlePrefix 
+TitleSuffix (RTitleSuffix(
+Honors	 (2.proto.HonorInfoRHonors/
+Teams
+ (2.proto.JointDrillRankTeamRTeams!
+NextPackageˇ (RNextPackageP Pbproto3
+*
+joint_drill_retreat.protoprotobproto3
+‹
+joint_drill_settle.protoprotopublic.protopublic_joint_drill.prototraveler_duel_rank_upload.proto"·
+JointDrillSettleReq
+Time (RTime
+Damage (RDamage8
+sample (2 .proto.TravelerDuelBattleSamplesRsample
+Checksum (RChecksum%
+Events (2.proto.EventsREvents!
+NextPackageˇ (RNextPackageP PPbproto3
+»
+joint_drill_sweep.protoprotopublic.proto"g
+JointDrillSweepReq
+LevelId (RLevelId
+Count (RCount!
+NextPackageˇ (RNextPackage"§
+JointDrillSweepResp)
+Change (2.proto.ChangeInfoRChange)
+Rewards (2.proto.ItemTplsRRewards
+Score (RScore!
+NextPackageˇ (RNextPackageP bproto3
+Ä
+joint_drill_sync.protoprotopublic.proto"∆
+JointDrillSyncReq
+Floor (RFloor
+Time (RTime
+Damage (RDamage
+BossHp (RBossHp
+	BossHpMax (R	BossHpMax
+Record (RRecord!
+NextPackageˇ (RNextPackageP bproto3
+0
+mail_list.protoprotopublic.protoP bproto3
+ö
+mail_pin.protoprotopublic.proto"i
+MailPinRequest
+Id (RId
+Flag (RFlag
+Pin (RPin!
+NextPackageˇ (RNextPackageP bproto3
+0
+mail_read.protoprotopublic.protoP bproto3
+û
+mail_recv.protoprotopublic.proto"l
+MailRecvResp
+Ids (RIds'
+Items (2.proto.ChangeInfoRItems!
+NextPackageˇ (RNextPackageP bproto3
+y
+mail_remove.protoprotopublic.proto"E
+MailRemoveResp
+Ids (RIds!
+NextPackageˇ (RNextPackageP bproto3
+‡
+mall_gem_list.protoprotopublic.proto"T
+GemInfo
+Id (	RId
+Maiden (RMaiden!
+NextPackageˇ (RNextPackage"T
+MallGemList"
+List (2.proto.GemInfoRList!
+NextPackageˇ (RNextPackageP bproto3
+±
+mall_gem_order.protoprotopublic.proto"z
+	OrderInfo
+Id (	RId
+	ExtraData (	R	ExtraData
+	NotifyUrl (	R	NotifyUrl!
+NextPackageˇ (RNextPackageP bproto3
+¢
+mall_monthlycard_list.protoprotopublic.proto"~
+MonthlyCardInfo
+Id (	RId
+	Remaining (R	Remaining
+Received (RReceived!
+NextPackageˇ (RNextPackage"d
+MallMonthlyCardList*
+List (2.proto.MonthlyCardInfoRList!
+NextPackageˇ (RNextPackageP bproto3
+=
+mall_monthlycard_order.protoprotopublic.protoP bproto3
+8
+mall_order_cancel.protoprotopublic.protoP bproto3
+9
+mall_order_collect.protoprotopublic.protoP bproto3
+ê
+mall_package_list.protoprotopublic.proto"x
+PackageInfo
+Id (	RId
+Stock (RStock 
+RefreshTime (RRefreshTime!
+NextPackageˇ (RNextPackage"\
+MallPackageList&
+List (2.proto.PackageInfoRList!
+NextPackageˇ (RNextPackageP bproto3
+Ê
+mall_package_order.protoprotopublic.protomall_gem_order.proto"î
+MallPackageOrder+
+Change (2.proto.ChangeInfoH RChange(
+Order (2.proto.OrderInfoH ROrder!
+NextPackageˇ (RNextPackageB
+RespP bproto3
+ë
+mall_shop_list.protoprotopublic.proto"x
+ProductInfo
+Id (	RId
+Stock (RStock 
+RefreshTime (RRefreshTime!
+NextPackageˇ (RNextPackage"`
+MallShopProductList&
+List (2.proto.ProductInfoRList!
+NextPackageˇ (RNextPackageP bproto3
+•
+mall_shop_order.protoprotopublic.protomall_gem_order.proto"W
+MallShopOrderReq
+Id (	RId
+Qty (RQty!
+NextPackageˇ (RNextPackageP bproto3
 Ô
 notify_gm.protoprotopublic.protopublic_star_tower.proto"£
 GmWorldClass
@@ -2538,8 +2607,8 @@ SkinChange
 PlayerCharsShowReq
 CharIds (RCharIds!
 NextPackageˇ (RNextPackageP bproto3
-û
-player_data.protoprotopublic.proto"™
+Ã
+player_data.protoprotopublic.proto"ÿ
 
 PlayerInfo 
 Acc (2.proto.AccInfoRAcc
@@ -2585,7 +2654,8 @@ Activities&
 SkillInstances" (2.proto.SkillInstanceRSkillInstances<
 WeekBossLevels# (2.proto.WeekBossLevelRWeekBossLevelsB
 CharGemInstances$ (2.proto.CharGemInstanceRCharGemInstances<
-TutorialLevels% (2.proto.TutorialLevelRTutorialLevels
+TutorialLevels% (2.proto.TutorialLevelRTutorialLevels,
+NicknameResetTimey (RNicknameResetTime
 	MusicInfoz (R	MusicInfo
 	HonorList{ (R	HonorList(
 Honors| (2.proto.HonorInfoRHonors4
@@ -2685,13 +2755,14 @@ EnergyInfo%
 	HarmonyosP bproto3
 7
 player_music_set.protoprotopublic.protoP bproto3
-÷
+Ù
 player_name_edit.protoprotopublic.proto"J
 PlayerNameEditReq
 Name (	RName!
-NextPackageˇ (RNextPackage"Q
+NextPackageˇ (RNextPackage"o
 PlayerNameEditResp
-Hashtag (RHashtag!
+Hashtag (RHashtag
+	ResetTime (R	ResetTime!
 NextPackageˇ (RNextPackageP bproto3
 §
 player_ping.protoprotopublic.proto")
@@ -3310,13 +3381,16 @@ D
 Select (2$.proto.VampireSurvivorFateCardSelectRSelect9
 Reward (2!.proto.VampireSurvivorLevelRewardRReward!
 NextPackageˇ (RNextPackageP bproto3
-É
-"vampire_survivor_area_change.protoprotopublic.prototraveler_duel_rank_upload.proto"ö
+ö
+"vampire_survivor_area_change.protoprotopublic.proto"‘
 VampireSurvivorAreaChangeReq
 	KillCount (R	KillCount
-Time (RTime%
+Time (RTime8
+
+ClientData (2.proto.VampireClientDataR
+ClientData%
 Events (2.proto.EventsREvents!
-NextPackageˇ (RNextPackageP Pbproto3
+NextPackageˇ (RNextPackageP bproto3
 Ø
 $vampire_survivor_reward_select.protoprotopublic.proto"
 VampireSurvivorRewardSelectReq
@@ -3339,6 +3413,24 @@ ExtraCardsB
 ResultP bproto3
 c
 *vampire_survivor_extra_reward_select.protoproto$vampire_survivor_reward_select.protoP bproto3
+™
+vampire_survivor_info.protoprotopublic.proto"…
+VampireSurvivorInfoResp
+Id (RId3
+Events (2.proto.VampireSurvivorEventREvents9
+Reward (2!.proto.VampireSurvivorLevelRewardRReward/
+Scenes (2.proto.VampireSceneInfoRScenes 
+FateCardIds (RFateCardIds8
+
+ClientData (2.proto.VampireClientDataR
+ClientData!
+NextPackageˇ (RNextPackage"ü
+VampireSceneInfo
+	SceneType (R	SceneType
+BuildId (RBuildId
+	KillCount (R	KillCount
+Time (RTime!
+NextPackageˇ (RNextPackageP bproto3
 “
 +vampire_survivor_quest_reward_receive.protoprotopublic.proto"É
 $VampireSurvivorQuestRewardReceiveReq

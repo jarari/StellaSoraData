@@ -1,35 +1,29 @@
--- Panel 模板
-
 local PerkTipsPanel = class("PerkTipsPanel", BasePanel)
 PerkTipsPanel._bIsMainPanel = false
 PerkTipsPanel._bAddToBackHistory = false
-
-PerkTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
--- Panel 定义
---[[
-PerkTipsPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-PerkTipsPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-PerkTipsPanel._bIsMainPanel = true
-PerkTipsPanel._bAddToBackHistory = true
-PerkTipsPanel._nSnapshotPrePanel = 0
-
-PerkTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
+PerkTipsPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 PerkTipsPanel._tbDefine = {
-    {sPrefabPath = "CommonTipsEx/PerkTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.PerkTipsCtrl"}
+{sPrefabPath = "CommonTipsEx/PerkTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.PerkTipsCtrl"}
 }
--------------------- local function --------------------
+PerkTipsPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function PerkTipsPanel:Awake()
+PerkTipsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function PerkTipsPanel:OnEnable()
+
+PerkTipsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function PerkTipsPanel:OnDisable()
+
+PerkTipsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function PerkTipsPanel:OnDestroy()
+
+PerkTipsPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function PerkTipsPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return PerkTipsPanel
+

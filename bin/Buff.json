@@ -685,30 +685,30 @@
   },
   "13498011": {
     "Id": 13498011,
-    "Name": "天赋1 霸体",
+    "Name": "冬香 天赋1 霸体",
     "GroupId": 13498011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
   "13403011": {
     "Id": 13403011,
-    "Name": "主控技能 潜能03 标记用BUFF",
+    "Name": "冬香 主控技能 潜能03 标记用BUFF",
     "GroupId": 13403011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P03_CatPaw"
   },
   "13404011": {
     "Id": 13404011,
-    "Name": "主控技能 潜能04 攻速提升",
+    "Name": "冬香 主控技能 潜能04 攻速提升",
     "GroupId": 13404011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackSpeedUp",
     "IsShow": true
   },
   "13407011": {
     "Id": 13407011,
-    "Name": "主控技能 潜能07 标记用BUFF",
+    "Name": "冬香 主控技能 潜能07 标记用BUFF",
     "GroupId": 13407011,
     "BuffTag1": 943565682,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
@@ -716,15 +716,14 @@
   },
   "13408011": {
     "Id": 13408011,
-    "Name": "主控技能 潜能08 攻速提升",
+    "Name": "冬香 主控技能 潜能08 攻速提升",
     "GroupId": 13408011,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267,
-    "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P08_SpeedUp"
+    "BuffTag2": -719983267
   },
   "13408012": {
     "Id": 13408012,
-    "Name": "主控技能 潜能08 普攻伤害",
+    "Name": "冬香 主控技能 潜能08 普攻伤害",
     "GroupId": 13408012,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -733,42 +732,42 @@
   },
   "13409011": {
     "Id": 13409011,
-    "Name": "主控技能 潜能09 叠加1层",
+    "Name": "冬香 主控技能 潜能09 叠加1层",
     "GroupId": 13409011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P09_4Hit_1"
   },
   "13409012": {
     "Id": 13409012,
-    "Name": "主控技能 潜能09 叠加2层",
+    "Name": "冬香 主控技能 潜能09 叠加2层",
     "GroupId": 13409012,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P09_4Hit_2"
   },
   "13409013": {
     "Id": 13409013,
-    "Name": "主控技能 潜能09 叠加3层",
+    "Name": "冬香 主控技能 潜能09 叠加3层",
     "GroupId": 13409013,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P09_4Hit_3"
   },
   "13409014": {
     "Id": 13409014,
-    "Name": "主控技能 潜能09 叠加4层",
+    "Name": "冬香 主控技能 潜能09 叠加4层",
     "GroupId": 13409014,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P09_4Hit_4"
   },
   "13410011": {
     "Id": 13410011,
-    "Name": "主控技能 潜能10 标记用BUFF",
+    "Name": "冬香 主控技能 潜能10 标记用BUFF",
     "GroupId": 13410011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P10_AttackStrengthen"
   },
   "13411011": {
     "Id": 13411011,
-    "Name": "主控技能 潜能11 自身火元素伤害提高",
+    "Name": "冬香 主控技能 潜能11 自身火元素伤害提高",
     "GroupId": 13411011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -777,7 +776,7 @@
   },
   "13412011": {
     "Id": 13412011,
-    "Name": "主控技能 潜能12 自身火元素伤害提高",
+    "Name": "冬香 主控技能 潜能12 自身火元素伤害提高",
     "GroupId": 13412011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -786,7 +785,7 @@
   },
   "13421011": {
     "Id": 13421011,
-    "Name": "支援技能 潜能21 眩晕目标",
+    "Name": "冬香 支援技能 潜能21 眩晕目标",
     "GroupId": 13421011,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -796,7 +795,7 @@
   },
   "13425011": {
     "Id": 13425011,
-    "Name": "支援技能 潜能25 暴击伤害提高",
+    "Name": "冬香 支援技能 潜能25 暴击伤害提高",
     "GroupId": 13425011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -805,7 +804,7 @@
   },
   "13427011": {
     "Id": 13427011,
-    "Name": "支援技能 潜能27 技能伤害提高",
+    "Name": "冬香 支援技能 潜能27 技能伤害提高",
     "GroupId": 13427011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -814,7 +813,7 @@
   },
   "13429011": {
     "Id": 13429011,
-    "Name": "支援技能 潜能29 暴击伤害提高",
+    "Name": "冬香 支援技能 潜能29 暴击伤害提高",
     "GroupId": 13429011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -823,7 +822,7 @@
   },
   "13432011": {
     "Id": 13432011,
-    "Name": "支援技能 潜能32 火焰抗性穿透提高",
+    "Name": "冬香 支援技能 潜能32 火焰抗性穿透提高",
     "GroupId": 13432011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -832,15 +831,13 @@
   },
   "13433011": {
     "Id": 13433011,
-    "Name": "支援技能 潜能33 全队火系暴击伤害提升",
+    "Name": "冬香 支援技能 潜能33 全队火系暴击伤害提升",
     "GroupId": 13433011,
-    "BuffTag1": 943565682,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
-    "IsShow": true
+    "BuffTag1": 943565682
   },
   "13441011": {
     "Id": 13441011,
-    "Name": "支援技能 潜能41 所有伤害提高",
+    "Name": "冬香 支援技能 潜能41 所有伤害提高",
     "GroupId": 13441011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -849,12 +846,40 @@
   },
   "13443011": {
     "Id": 13443011,
-    "Name": "支援技能 潜能43 绝招伤害提高",
+    "Name": "冬香 支援技能 潜能43 绝招伤害提高",
     "GroupId": 13443011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
+  },
+  "13496111": {
+    "Id": 13496111,
+    "Name": "1命冬香触发##火系印记#1016#后，暴击伤害提升",
+    "GroupId": 13496111,
+    "BuffTag1": 943565682,
+    "BuffTag2": -719983267
+  },
+  "13496211": {
+    "Id": 13496211,
+    "Name": "2命冬香每次释放技能后，自身绝招伤害提升",
+    "GroupId": 13496211,
+    "BuffTag1": 943565682,
+    "BuffTag2": -719983267
+  },
+  "13496311": {
+    "Id": 13496311,
+    "Name": "3命冬香施放绝招时，火系伤害提升",
+    "GroupId": 13496311,
+    "BuffTag1": 943565682,
+    "BuffTag2": -719983267
+  },
+  "13496411": {
+    "Id": 13496411,
+    "Name": "4命冬香的绝招伤害提升",
+    "GroupId": 13496411,
+    "BuffTag1": 943565682,
+    "BuffTag2": -719983267
   },
   "14191011": {
     "Id": 14191011,
@@ -1209,14 +1234,14 @@
   },
   "15804011": {
     "Id": 15804011,
-    "Name": "主控 潜能04 召唤物标记",
+    "Name": "主控潜能04召唤物标记",
     "GroupId": 15804011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/15801/Buff/fx_15801_buff_Main_Skill_P04_Gift"
   },
   "15805011": {
     "Id": 15805011,
-    "Name": "主控 潜能05 仆从增伤",
+    "Name": "主控潜能05仆从增伤",
     "GroupId": 15805011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1225,7 +1250,7 @@
   },
   "15808011": {
     "Id": 15808011,
-    "Name": "主控 潜能08 普攻增伤",
+    "Name": "主控潜能08普攻增伤",
     "GroupId": 15808011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1234,7 +1259,7 @@
   },
   "15810011": {
     "Id": 15810011,
-    "Name": "主控 潜能10 暴击率提升",
+    "Name": "主控潜能10暴击率提升",
     "GroupId": 15810011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1243,7 +1268,7 @@
   },
   "15812011": {
     "Id": 15812011,
-    "Name": "主控 潜能12 绝招伤害提升",
+    "Name": "主控潜能12绝招伤害提升",
     "GroupId": 15812011,
     "BuffTag1": 943565682,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
@@ -1251,7 +1276,7 @@
   },
   "15813011": {
     "Id": 15813011,
-    "Name": "主控 潜能13 次数盾表现",
+    "Name": "主控潜能13次数盾表现",
     "GroupId": 15813011,
     "BuffTag1": 943565682,
     "Icon": "Icon/Buff/Icon_CommonBuff_CritDamageUp",
@@ -1259,7 +1284,7 @@
   },
   "15822011": {
     "Id": 15822011,
-    "Name": "支援 潜能22 技能易伤",
+    "Name": "支援潜能22技能易伤",
     "GroupId": 11452901,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -1268,7 +1293,7 @@
   },
   "15823011": {
     "Id": 15823011,
-    "Name": "支援 潜能23 勇士仆从伤害提升",
+    "Name": "支援潜能23勇士仆从伤害提升",
     "GroupId": 15823011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1277,7 +1302,7 @@
   },
   "15826011": {
     "Id": 15826011,
-    "Name": "支援 潜能26 召唤物和菈露攻击力提升",
+    "Name": "支援潜能26召唤物和攻击力提升",
     "GroupId": 15826011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1286,7 +1311,7 @@
   },
   "15828011": {
     "Id": 15828011,
-    "Name": "支援 潜能28 友军增伤",
+    "Name": "支援潜能28友军增伤",
     "GroupId": 15828011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1295,7 +1320,7 @@
   },
   "15829011": {
     "Id": 15829011,
-    "Name": "支援 潜能29 仆从增伤",
+    "Name": "支援潜能29仆从增伤",
     "GroupId": 15829011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1304,7 +1329,7 @@
   },
   "15830011": {
     "Id": 15830011,
-    "Name": "支援 潜能30 仆从攻速提升",
+    "Name": "支援潜能30仆从攻速提升",
     "GroupId": 15830011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1313,7 +1338,7 @@
   },
   "15830012": {
     "Id": 15830012,
-    "Name": "支援 潜能30 仆从伤害提升",
+    "Name": "支援潜能30仆从伤害提升",
     "GroupId": 15830012,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1322,7 +1347,7 @@
   },
   "15831011": {
     "Id": 15831011,
-    "Name": "主控 潜能31 全队攻击力提升",
+    "Name": "主控潜能31全队攻击力提升",
     "GroupId": 15831011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1331,7 +1356,7 @@
   },
   "15832011": {
     "Id": 15832011,
-    "Name": "支援 潜能32 绝招期间攻击力提升",
+    "Name": "支援潜能32绝招期间攻击力提升",
     "GroupId": 11452901,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1340,7 +1365,7 @@
   },
   "15833011": {
     "Id": 15833011,
-    "Name": "支援 潜能33 火系角色增伤光环",
+    "Name": "支援潜能33火系角色增伤光环",
     "GroupId": 15833011,
     "BuffTag1": 943565682,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
@@ -1348,7 +1373,7 @@
   },
   "15841011": {
     "Id": 15841011,
-    "Name": "主控 潜能41 绝招伤害提升",
+    "Name": "主控潜能41绝招伤害提升",
     "GroupId": 15841011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1357,7 +1382,7 @@
   },
   "15842011": {
     "Id": 15842011,
-    "Name": "支援 潜能42 绝招伤害提升",
+    "Name": "支援潜能42绝招伤害提升",
     "GroupId": 11452901,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -1366,7 +1391,7 @@
   },
   "15843011": {
     "Id": 15843011,
-    "Name": "支援 潜能43 攻击力提升",
+    "Name": "支援潜能43攻击力提升",
     "GroupId": 15843011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2766,7 +2791,9 @@
     "Name": "缇莉娅 支援潜能27 全队攻击力提升",
     "GroupId": 10727011,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267
+    "BuffTag2": -719983267,
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "IsShow": true
   },
   "10728011": {
     "Id": 10728011,
@@ -2886,14 +2913,14 @@
   },
   "11502011": {
     "Id": 11502011,
-    "Name": "主控技能 潜能02  计数buff",
+    "Name": "主控技能潜能02计数buff",
     "GroupId": 11502011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/11501/Buff/fx_11501_buff_B1P02_Self"
   },
   "11502012": {
     "Id": 11502012,
-    "Name": "主控技能 潜能02  触发表现Buff",
+    "Name": "主控技能潜能02触发表现Buff",
     "GroupId": 11502012,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/11501/Buff/fx_11501_buff_B1P02_Self_full",
@@ -2903,13 +2930,13 @@
   },
   "11503011": {
     "Id": 11503011,
-    "Name": "主控技能 潜能03  计时buff",
+    "Name": "主控技能潜能03计时buff",
     "GroupId": 11503011,
     "BuffTag1": 943565682
   },
   "11505011": {
     "Id": 11505011,
-    "Name": "主控技能 潜能05  攻击力提高",
+    "Name": "主控技能潜能05攻击力提高",
     "GroupId": 11505011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2918,7 +2945,7 @@
   },
   "11510011": {
     "Id": 11510011,
-    "Name": "主控技能 潜能10  攻击力提高",
+    "Name": "主控技能潜能10攻击力提高",
     "GroupId": 11510011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2927,7 +2954,7 @@
   },
   "11512011": {
     "Id": 11512011,
-    "Name": "主控技能 潜能12  攻击力提高",
+    "Name": "主控技能潜能12攻击力提高",
     "GroupId": 11512011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2936,7 +2963,7 @@
   },
   "11513011": {
     "Id": 11513011,
-    "Name": "主控技能 潜能13  极限闪避击晕",
+    "Name": "主控技能潜能13极限闪避击晕",
     "GroupId": 11513011,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -2946,7 +2973,7 @@
   },
   "11523011": {
     "Id": 11523011,
-    "Name": "主控技能 潜能23  攻击力提高",
+    "Name": "主控技能潜能23攻击力提高",
     "GroupId": 11523011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2955,14 +2982,14 @@
   },
   "11524011": {
     "Id": 11524011,
-    "Name": "主控技能 潜能24  标记buff",
+    "Name": "主控技能潜能24标记buff",
     "GroupId": 11524011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/11501/Buff/fx_11501_Buff_Support_Skill_Blade_P24_Locked"
   },
   "11525011": {
     "Id": 11525011,
-    "Name": "支援技能 潜能25  计数buff",
+    "Name": "支援技能潜能25计数buff",
     "GroupId": 11525011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/11501/Buff/fx_11501_buff_B2P25_Blade_LightPiece",
@@ -2970,13 +2997,13 @@
   },
   "11526011": {
     "Id": 11526011,
-    "Name": "支援技能 潜能26  增伤计数buff",
+    "Name": "支援技能潜能26增伤计数buff",
     "GroupId": 11526011,
     "BuffTag1": 943565682
   },
   "11528011": {
     "Id": 11528011,
-    "Name": "支援技能 潜能28  普攻增伤",
+    "Name": "支援技能潜能28普攻增伤",
     "GroupId": 11528011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2985,7 +3012,7 @@
   },
   "11529011": {
     "Id": 11529011,
-    "Name": "支援技能 潜能29  光系增伤",
+    "Name": "支援技能潜能29光系增伤",
     "GroupId": 11529011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -2994,7 +3021,7 @@
   },
   "11531011": {
     "Id": 11531011,
-    "Name": "支援技能 潜能21  绝招增伤",
+    "Name": "支援技能潜能21绝招增伤",
     "GroupId": 11531011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3003,7 +3030,7 @@
   },
   "11533011": {
     "Id": 11533011,
-    "Name": "支援技能 潜能33  光系增伤",
+    "Name": "支援技能潜能33光系增伤",
     "GroupId": 11533011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3012,13 +3039,13 @@
   },
   "11533012": {
     "Id": 11533012,
-    "Name": "支援技能 潜能33  额外光系增伤",
+    "Name": "支援技能潜能33额外光系增伤",
     "GroupId": 11533012,
     "BuffTag1": 943565682
   },
   "11541011": {
     "Id": 11541011,
-    "Name": "绝招技能 潜能41  霸体和攻击力",
+    "Name": "绝招技能潜能41霸体和攻击力",
     "GroupId": 11541011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3028,7 +3055,7 @@
   },
   "11543011": {
     "Id": 11543011,
-    "Name": "绝招技能 潜能43  光系增伤",
+    "Name": "绝招技能潜能43光系增伤",
     "GroupId": 11543011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3581,27 +3608,35 @@
   },
   "15501011": {
     "Id": 15501011,
-    "Name": "主控潜能01 爆裂子弹叠层",
+    "Name": "希娅 主控潜能01 爆裂子弹叠层",
     "GroupId": 15501011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/15501/Buff/fx_15501_buff_Skill_Mail_Summon_1_BulletNum"
   },
   "15503011": {
     "Id": 15503011,
-    "Name": "主控潜能03 导弹增伤计数",
+    "Name": "希娅 主控潜能03 导弹增伤计数",
     "GroupId": 15503011,
+    "BuffTag1": 943565682
+  },
+  "15504011": {
+    "Id": 15504011,
+    "Name": "希娅 主控潜能04 导弹增伤计数",
+    "GroupId": 15504011,
     "BuffTag1": 943565682
   },
   "15507011": {
     "Id": 15507011,
-    "Name": "主控潜能07 白色无人机增伤",
+    "Name": "希娅 主控潜能07 白色无人机增伤",
     "GroupId": 15507011,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267
+    "BuffTag2": -719983267,
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "IsShow": true
   },
   "15510011": {
     "Id": 15510011,
-    "Name": "主控潜能10 黑色无人机技能加速且增伤",
+    "Name": "希娅 主控潜能10 黑色无人机技能加速且增伤",
     "GroupId": 15510011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3610,7 +3645,7 @@
   },
   "15511011": {
     "Id": 15511011,
-    "Name": "主控潜能11 移动速度提升",
+    "Name": "希娅 主控潜能11 希娅移动速度提升",
     "GroupId": 15511011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3619,7 +3654,7 @@
   },
   "15512011": {
     "Id": 15512011,
-    "Name": "主控潜能12 输出属性提升",
+    "Name": "希娅 主控潜能12 输出属性提升",
     "GroupId": 15512011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3628,32 +3663,30 @@
   },
   "15527011": {
     "Id": 15527011,
-    "Name": "支援潜能27 黑色无人机增伤",
+    "Name": "希娅 支援潜能27 黑色无人机增伤",
     "GroupId": 15527011,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
-    "IsShow": true
+    "BuffTag2": -719983267
   },
   "15528011": {
     "Id": 15528011,
-    "Name": "支援潜能28 眩晕",
+    "Name": "希娅 支援潜能28 眩晕",
     "GroupId": 15528011,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
     "BuffTag3": 1397128752,
-    "Icon": "Icon/Buff/Icon_CommonBuff_Stun",
+    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
     "IsShow": true
   },
   "15529011": {
     "Id": 15529011,
-    "Name": "支援潜能29 主角增伤逻辑计数",
+    "Name": "希娅 支援潜能29 主角增伤逻辑计数",
     "GroupId": 15529011,
     "BuffTag1": 943565682
   },
   "15530011": {
     "Id": 15530011,
-    "Name": "支援潜能30 增伤",
+    "Name": "希娅 支援潜能30 希娅增伤",
     "GroupId": 15530011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3662,7 +3695,7 @@
   },
   "15531011": {
     "Id": 15531011,
-    "Name": "支援潜能31 无人机增伤",
+    "Name": "希娅 支援潜能31 无人机增伤",
     "GroupId": 15531011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3671,16 +3704,16 @@
   },
   "15532011": {
     "Id": 15532011,
-    "Name": "支援潜能32 无人机增伤",
+    "Name": "希娅 支援潜能32 无人机增伤",
     "GroupId": 15532011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
-    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
     "IsShow": true
   },
   "15533011": {
     "Id": 15533011,
-    "Name": "支援潜能33 爆伤光环",
+    "Name": "希娅 支援潜能33 爆伤光环",
     "GroupId": 15533011,
     "BuffTag1": 943565682,
     "Icon": "Icon/Buff/Icon_CommonBuff_CritUp",
@@ -3688,7 +3721,7 @@
   },
   "15541011": {
     "Id": 15541011,
-    "Name": "必杀潜能41 自身输出属性提升",
+    "Name": "希娅 必杀潜能41 自身输出属性提升",
     "GroupId": 15541011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -3697,47 +3730,49 @@
   },
   "15542011": {
     "Id": 15542011,
-    "Name": "必杀潜能42 自身输出属性提升",
-    "BuffTag1": 943565682
+    "Name": "希娅 必杀潜能42 自身输出属性提升",
+    "GroupId": 15542011,
+    "BuffTag1": 943565682,
+    "BuffTag2": -719983267
   },
   "15593011": {
     "Id": 15593011,
-    "Name": "主控技能   白色主控无人机材质",
+    "Name": "希娅 主控技能   白色主控无人机材质",
     "GroupId": 15593011,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/15501/Buff/fx_15501_buff_Skill_Main_Summon_mat"
   },
   "15593012": {
     "Id": 15593012,
-    "Name": "主控技能   黑色主控无人机材质",
+    "Name": "希娅 主控技能   黑色主控无人机材质",
     "GroupId": 15593012,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/15501/Buff/fx_15501_buff_Skill_Main_Summon_mat_2"
   },
   "15596111": {
     "Id": 15596111,
-    "Name": "1命对目标造成绝招伤害时，攻击力提升",
+    "Name": "1命希娅对目标造成绝招伤害时，攻击力提升",
     "GroupId": 15596111,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
   "15596311": {
     "Id": 15596311,
-    "Name": "3命触发##光系印记#1015#后，光系伤害提升",
+    "Name": "3命希娅触发##光系印记#1015#后，光系伤害提升",
     "GroupId": 15596311,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
   "15596411": {
     "Id": 15596411,
-    "Name": "4命对目标造成技能伤害时，绝招伤害提升",
+    "Name": "4命希娅对目标造成技能伤害时，绝招伤害提升",
     "GroupId": 15596411,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
   "15596511": {
     "Id": 15596511,
-    "Name": "5命任意角色对目标附加##光系印记#1015#后，光系伤害提升",
+    "Name": "5命任意角色对目标附加##光系印记#1015#后，希娅光系伤害提升",
     "GroupId": 15596511,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
@@ -4046,7 +4081,7 @@
   },
   "13590000": {
     "Id": 13590000,
-    "Name": "雾语/暗系反应/暗灼",
+    "Name": "/暗系反应/暗灼",
     "GroupId": 13590000,
     "BuffTag1": -781530621,
     "BuffTag2": -684703624,
@@ -4055,17 +4090,17 @@
   },
   "13590011": {
     "Id": 13590011,
-    "Name": "雾语大头幽灵减少血量上限",
+    "Name": "大头幽灵减少血量上限",
     "GroupId": 13590011
   },
   "13590021": {
     "Id": 13590021,
-    "Name": "雾语自爆幽灵减少血量上限",
+    "Name": "自爆幽灵减少血量上限",
     "GroupId": 13590021
   },
   "13590031": {
     "Id": 13590031,
-    "Name": "雾语主控招灵状态",
+    "Name": "主控招灵状态",
     "GroupId": 13590031,
     "BuffTag1": 943565682,
     "BindEffect": "Actor/Character/13501/Buff/fx_13501_buff_Main_Skill",
@@ -4073,13 +4108,13 @@
   },
   "13550311": {
     "Id": 13550311,
-    "Name": "雾语潜能03/「诏灵」增加幽灵伤害",
+    "Name": "潜能03/「诏灵」增加幽灵伤害",
     "GroupId": 13550311,
     "BuffTag1": 943565682
   },
   "13550511": {
     "Id": 13550511,
-    "Name": "雾语潜能05/幽灵死亡诅咒易伤",
+    "Name": "潜能05/幽灵死亡诅咒易伤",
     "GroupId": 13550511,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -4088,7 +4123,7 @@
   },
   "13550711": {
     "Id": 13550711,
-    "Name": "雾语潜能07/幽灵死亡增加主控攻击力",
+    "Name": "潜能07/幽灵死亡增加主控攻击力",
     "GroupId": 13550711,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4097,7 +4132,7 @@
   },
   "13550811": {
     "Id": 13550811,
-    "Name": "雾语潜能08/幽灵攻击概率眩晕",
+    "Name": "潜能08/幽灵攻击概率眩晕",
     "GroupId": 13550811,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -4107,19 +4142,19 @@
   },
   "13551011": {
     "Id": 13551011,
-    "Name": "雾语潜能10/幽灵的攻击速度提升X%",
+    "Name": "潜能10/幽灵的攻击速度提升X%",
     "GroupId": 13551011,
     "BuffTag1": 943565682
   },
   "13551111": {
     "Id": 13551111,
-    "Name": "雾语潜能11/普攻给幽灵回血",
+    "Name": "潜能11/普攻给幽灵回血",
     "GroupId": 13551111,
     "IsShow": true
   },
   "13551211": {
     "Id": 13551211,
-    "Name": "雾语潜能12/闪避增加攻击力",
+    "Name": "潜能12/闪避增加攻击力",
     "GroupId": 13551211,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4128,7 +4163,7 @@
   },
   "13551311": {
     "Id": 13551311,
-    "Name": "雾语潜能13/触发印记增加攻击力",
+    "Name": "潜能13/触发印记增加攻击力",
     "GroupId": 13551311,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4137,19 +4172,19 @@
   },
   "13552211": {
     "Id": 13552211,
-    "Name": "雾语潜能22/幽灵逐渐增加攻击力",
+    "Name": "潜能22/幽灵逐渐增加攻击力",
     "GroupId": 13552211,
     "BuffTag1": 943565682
   },
   "13552611": {
     "Id": 13552611,
-    "Name": "雾语潜能26/幽灵增加暴击",
+    "Name": "潜能26/幽灵增加暴击",
     "GroupId": 13552611,
     "BuffTag1": 943565682
   },
   "13552911": {
     "Id": 13552911,
-    "Name": "雾语潜能29/召唤幽灵时雾语增加暗强",
+    "Name": "潜能29/召唤幽灵时增加暗强",
     "GroupId": 13552911,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4158,7 +4193,7 @@
   },
   "13553011": {
     "Id": 13553011,
-    "Name": "雾语潜能30/幽灵之门上降低暗抗",
+    "Name": "潜能30/幽灵之门上降低暗抗",
     "GroupId": 13553011,
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
@@ -4167,13 +4202,13 @@
   },
   "13553311": {
     "Id": 13553311,
-    "Name": "雾语潜能33/暗属性防御提升",
+    "Name": "潜能33/暗属性防御提升",
     "GroupId": 13553311,
     "BuffTag1": 943565682
   },
   "13554111": {
     "Id": 13554111,
-    "Name": "雾语潜能41/大招伤害增加",
+    "Name": "潜能41/大招伤害增加",
     "GroupId": 13554111,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4182,7 +4217,7 @@
   },
   "13554211": {
     "Id": 13554211,
-    "Name": "雾语潜能42/提升前后台能量转化",
+    "Name": "潜能42/提升前后台能量转化",
     "GroupId": 13554211,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4191,7 +4226,7 @@
   },
   "13554311": {
     "Id": 13554311,
-    "Name": "雾语潜能43/大招伤害增加",
+    "Name": "潜能43/大招伤害增加",
     "GroupId": 13554311,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -4588,8 +4623,7 @@
     "BuffTag1": 943565682,
     "BuffTag2": -2138561627,
     "BuffTag3": 1798294993,
-    "Icon": "Icon/Buff/Icon_CommonBuff_Bleed",
-    "IsShow": true
+    "BindEffect": "Actor/Character/14501/Buff/fx_14501_Buff_Skill_Sup_Slay"
   },
   "14526011": {
     "Id": 14526011,
@@ -5519,7 +5553,9 @@
     "Name": "潜能13 闪避后属性提升",
     "GroupId": 13351311,
     "BuffTag1": 943565682,
-    "BuffTag2": -719983267
+    "BuffTag2": -719983267,
+    "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "IsShow": true
   },
   "13332001": {
     "Id": 13332001,
@@ -5601,6 +5637,15 @@
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
+    "IsShow": true
+  },
+  "13354311": {
+    "Id": 13354311,
+    "Name": "潜能43 龙卷风造成伤害时debuff",
+    "GroupId": 13354311,
+    "BuffTag1": 943565682,
+    "BuffTag2": -2138561627,
+    "Icon": "Icon/Buff/Icon_CommonBuff_DefenseDown",
     "IsShow": true
   },
   "13380211": {
@@ -6320,6 +6365,12 @@
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
+  "15900001": {
+    "Id": 15900001,
+    "Name": "/主控/基础buff",
+    "GroupId": 15900001,
+    "BindEffect": "Actor/Character/15901/Buff/fx_15901_buff_Skill_loop"
+  },
   "15906011": {
     "Id": 15906011,
     "Name": "主控 潜能06 结晶体伤害",
@@ -6348,9 +6399,17 @@
     "BuffTag1": 943565682,
     "BuffTag2": -719983267
   },
+  "15991012": {
+    "Id": 15991012,
+    "Name": "援护 枯萎buff",
+    "GroupId": 15991012,
+    "BuffTag1": 943565682,
+    "BuffTag2": -2138561627,
+    "BindEffect": "Actor/Character/15901/Buff/fx_15901_Buff_skill_sup_withered_rose"
+  },
   "15926011": {
     "Id": 15926011,
-    "Name": "/援护/潜能26/玫瑰药剂附加1层易伤",
+    "Name": "援护 潜能26 玫瑰药剂附加1层易伤",
     "GroupId": 15926011,
     "BuffTag1": 943565682,
     "BuffTag2": -719983267,
@@ -6359,19 +6418,20 @@
   },
   "15927011": {
     "Id": 15927011,
-    "Name": "/援护/潜能27/玫瑰药剂附加印记的标记",
-    "GroupId": 15927011
+    "Name": "援护 潜能27 玫瑰药剂附加印记的标记",
+    "GroupId": 15927011,
+    "BuffTag3": 969542625
   },
   "15929011": {
     "Id": 15929011,
-    "Name": "/援护/潜能29/有药剂时主控属性提升",
+    "Name": "援护 潜能29 有药剂时主控属性提升",
     "GroupId": 15929011,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
   },
   "15933011": {
     "Id": 15933011,
-    "Name": "/援护/潜能33/光环",
+    "Name": "援护 潜能33 光环",
     "GroupId": 15933011
   },
   "980131": {
@@ -7036,45 +7096,50 @@
   },
   "631002001": {
     "Id": 631002001,
-    "Name": "Boss自身伤害提升",
     "GroupId": 631002001
   },
   "631002002": {
     "Id": 631002002,
-    "Name": "提供玩家普攻伤害提升",
     "GroupId": 631002002,
     "BindEffect": "FX/Bossrush/Buff/fx_common_buff_actor_strengthen"
   },
   "631003001": {
     "Id": 631003001,
-    "Name": "Boss自身狂暴，伤害提升",
     "GroupId": 631003001,
     "BindEffect": "FX/Bossrush/Buff/fx_common_buff_monster_explode_l"
   },
   "631003002": {
     "Id": 631003002,
-    "Name": "提供玩家伤害增幅",
     "GroupId": 631003002,
     "BindEffect": "FX/Bossrush/Buff/fx_common_buff_actor_strengthen"
   },
   "631004001": {
     "Id": 631004001,
-    "Name": "Boss自身伤害提升",
-    "GroupId": 631004001
+    "GroupId": 631004001,
+    "BindEffect": "FX/Bossrush/Buff/fx_common_buff_actor_strengthen",
+    "Icon": "Icon/Buff/Icon_BossRushBuff_JinDuanLiRong",
+    "IsShow": true
   },
   "631004002": {
     "Id": 631004002,
-    "Name": "提供玩家普攻伤害提升",
-    "GroupId": 631004002
+    "GroupId": 631004002,
+    "Icon": "Icon/Buff/Icon_CommonBuff_DefenseDown",
+    "IsShow": true
+  },
+  "631005001": {
+    "Id": 631005001,
+    "GroupId": 631005001
+  },
+  "631005002": {
+    "Id": 631005002,
+    "GroupId": 631005002
   },
   "631009901": {
     "Id": 631009901,
-    "Name": "测试--Boss受击检测",
     "GroupId": 631009901
   },
   "631009902": {
     "Id": 631009902,
-    "Name": "测试--Boss受击叠加",
     "GroupId": 631009902,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackSpeedUp",
     "IsShow": true,
@@ -7082,19 +7147,16 @@
   },
   "631009903": {
     "Id": 631009903,
-    "Name": "测试--书本受击检测",
     "GroupId": 631009903
   },
   "631009904": {
     "Id": 631009904,
-    "Name": "测试--书本伤害免疫",
     "GroupId": 631009904,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackSpeedUp",
     "IsShow": true
   },
   "631009905": {
     "Id": 631009905,
-    "Name": "测试--换队保留Buff",
     "GroupId": 631009905,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackDown",
     "IsShow": true,
@@ -7102,92 +7164,76 @@
   },
   "100090310": {
     "Id": 100090310,
-    "Name": "半身树免疫自身毒",
     "GroupId": 1000901
   },
   "100100210": {
     "Id": 100100210,
-    "Name": "半身树捆绑",
     "GroupId": 1001002,
     "BuffTag1": -2138561627,
     "BindEffect": "Actor/Monster/10010BanShenShu/Buff/fx_buff_10010_skill3"
   },
   "100100410": {
     "Id": 100100410,
-    "Name": "半身树免疫捆绑",
     "GroupId": 1001002
   },
   "100100710": {
     "Id": 100100710,
-    "Name": "半身树的无用BUFF（暂时）",
     "GroupId": 1001007
   },
   "100100810": {
     "Id": 100100810,
-    "Name": "半身树免伤（主线用）",
     "GroupId": 1001005,
     "BindEffect": "Actor/Monster/10010BanShenShu/Buff/fx_buff_10010_def_up"
   },
   "100030110": {
     "Id": 100030110,
-    "Name": "树桩鼠1.5s晕眩",
     "GroupId": 1000301,
     "BuffTag1": -2138561627
   },
   "100030210": {
     "Id": 100030210,
-    "Name": "树桩鼠2s晕眩",
     "GroupId": 1000302,
     "BuffTag1": -2138561627
   },
   "100030310": {
     "Id": 100030310,
-    "Name": "树桩鼠1s晕眩",
     "GroupId": 1000303,
     "BuffTag1": -2138561627
   },
   "100030410": {
     "Id": 100030410,
-    "Name": "树桩鼠SlowBuff",
     "GroupId": 1000304,
     "BuffTag1": -2138561627,
     "BindEffect": "Actor/Monster/90001SaoDiJiQiRen/Buff/buff_speeddown"
   },
   "100030510": {
     "Id": 100030510,
-    "Name": "树桩鼠小弟移速增加100%",
     "GroupId": 1000305
   },
   "100030610": {
     "Id": 100030610,
-    "Name": "树桩鼠小弟攻击力提升200%",
     "GroupId": 1000306
   },
   "100030710": {
     "Id": 100030710,
-    "Name": "树桩鼠（1-4）战斗结束",
     "GroupId": 1000307
   },
   "100030810": {
     "Id": 100030810,
-    "Name": "土拨鼠（1-4）战斗初始版0.01晕眩",
     "GroupId": 1000308,
     "BuffTag1": -2138561627
   },
   "100030910": {
     "Id": 100030910,
-    "Name": "土拨鼠（1-4）防御增加",
     "GroupId": 1000309,
     "BindEffect": "Actor/Monster/10003ShuZhuangShu/FX/fx_10701_buff_shield_life_ForSZS"
   },
   "100031010": {
     "Id": 100031010,
-    "Name": "土拨鼠（1-4）出生隐藏模型",
     "GroupId": 1000310
   },
   "100170110": {
     "Id": 100170110,
-    "Name": "吸尘器喷吐长时间晕眩",
     "GroupId": 1001701,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627,
@@ -7195,19 +7241,16 @@
   },
   "100170210": {
     "Id": 100170210,
-    "Name": "吸尘器黄光状态",
     "GroupId": 1001702,
     "BindEffect": "Actor/Monster/10017XiChenQi/Buff/fx_buff_10017xichenqi_fuwen_01"
   },
   "100170310": {
     "Id": 100170310,
-    "Name": "吸尘器红光状态",
     "GroupId": 1001703,
     "BindEffect": "Actor/Monster/10017XiChenQi/Buff/fx_buff_10017xichenqi_fuwen_02"
   },
   "100180210": {
     "Id": 100180210,
-    "Name": "高压锅Plus晕眩",
     "GroupId": 1001802,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627,
@@ -7215,79 +7258,61 @@
   },
   "800010110": {
     "Id": 800010110,
-    "Name": "水柱雕像冲击",
     "GroupId": 8000101,
     "BindEffect": "Actor/Monster/80001ForestRuinCat/Buff/fx_80001ForestRuinCat01_buff_1"
   },
   "900070110": {
     "Id": 900070110,
-    "Name": "极光弓瞄准固定瞄准特效",
     "GroupId": 9000701,
     "BindEffect": "Actor/Monster/90007JiGuangXiaoDui_GongJianNan/FX/Buff/fx_90007_miaozhun_buff_1"
   },
   "900070210": {
     "Id": 900070210,
-    "Name": "极光弓瞄准随机瞄准特效",
     "GroupId": 9000702,
     "BindEffect": "Actor/Monster/90007JiGuangXiaoDui_GongJianNan/FX/Buff/fx_90007_miaozhun_buff_2"
   },
   "101990110": {
     "Id": 101990110,
-    "Name": "水泵控制buff1",
     "GroupId": 10199
   },
   "118010110": {
     "Id": 118010110,
-    "Name": "捕兽夹晕眩",
     "GroupId": 11801
   },
   "110030110": {
     "Id": 110030110,
-    "Name": "近战农机-关机",
     "GroupId": 11003,
     "BindEffect": "Monster/11003JinZhanNongJi/Buff/fx_m11003_buff_shootdown_01"
   },
   "110040110": {
     "Id": 110040110,
-    "Name": "远程农机-关机",
     "GroupId": 11004,
     "BindEffect": "Monster/11003JinZhanNongJi/Buff/fx_m11003_buff_shootdown_01"
   },
-  "110310110": {
-    "Id": 110310110,
-    "Name": "伐木蟹1段攻击标记",
-    "GroupId": 11031
-  },
   "110410110": {
     "Id": 110410110,
-    "Name": "???Buff",
     "GroupId": 1104101
   },
   "110410210": {
     "Id": 110410210,
-    "Name": "???全免疫",
     "GroupId": 1104102,
     "BindEffect": "Monster/11041Firenze/Buff/fx_m11041_buff_1"
   },
   "110410310": {
     "Id": 110410310,
-    "Name": "???闪避",
     "GroupId": 1104103
   },
   "501010110": {
     "Id": 501010110,
-    "Name": "阴影-标记",
     "GroupId": 50101011
   },
   "501010120": {
     "Id": 501010120,
-    "Name": "阴影-Stun",
     "GroupId": 50101012,
     "ReduceTime": 5000
   },
   "501010710": {
     "Id": 501010710,
-    "Name": "阴影-水属性Slow",
     "GroupId": 50101071,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7295,7 +7320,6 @@
   },
   "501411110": {
     "Id": 501411110,
-    "Name": "塔炉-水属性Slow",
     "GroupId": 50141111,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7303,7 +7327,6 @@
   },
   "100180110": {
     "Id": 100180110,
-    "Name": "高压锅-水属性Slow",
     "GroupId": 10018011,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7311,7 +7334,6 @@
   },
   "502110110": {
     "Id": 502110110,
-    "Name": "探照灯-水属性Slow",
     "GroupId": 50211011,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7319,7 +7341,6 @@
   },
   "500010110": {
     "Id": 500010110,
-    "Name": "大手-潮湿Slow",
     "GroupId": 50001011,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7327,7 +7348,6 @@
   },
   "500161510": {
     "Id": 500161510,
-    "Name": "变速刺客-水泡子弹Slow",
     "GroupId": 50016151,
     "BuffTag1": -1791631645,
     "BuffTag2": -2138561627,
@@ -7335,40 +7355,33 @@
   },
   "501611210": {
     "Id": 501611210,
-    "Name": "变速刺客-钻地移动过程Fast",
     "GroupId": 50161121
   },
   "500210010": {
     "Id": 500210010,
-    "Name": "剑盾--Fast",
     "GroupId": 50021001,
     "BuffTag1": -2058033414,
     "BuffTag2": -719983267
   },
   "500510010": {
     "Id": 500510010,
-    "Name": "通用Dot区域--检测",
     "GroupId": 50051001
   },
   "500510020": {
     "Id": 500510020,
-    "Name": "通用Dot区域--每1秒Hit",
     "GroupId": 50051002
   },
   "500510030": {
     "Id": 500510030,
-    "Name": "通用Dot区域--每0.5秒Hit",
     "GroupId": 50051003
   },
   "501110310": {
     "Id": 501110310,
-    "Name": "风灵 - 怪物CD缩短",
     "GroupId": 50111031,
     "BindEffect": "FX/Buff/fx_buff_effect_atk_up"
   },
   "501110990": {
     "Id": 501110990,
-    "Name": "鲨鲨水域通用Slow",
     "GroupId": 50111099,
     "BuffTag1": -1621066197,
     "BuffTag2": -2138561627,
@@ -7376,183 +7389,151 @@
   },
   "505010110": {
     "Id": 505010110,
-    "Name": "鲨鲨狂暴BUFF",
     "GroupId": 50501011,
     "BuffTag1": -549433963,
     "BindEffect": "Actor/Monster/50501ShaSha/FX/Buff/fx_50501_loop_Berserk_Dark_Buff"
   },
   "505210310": {
     "Id": 505210310,
-    "Name": "未参战",
     "GroupId": 50521031
   },
   "505210320": {
     "Id": 505210320,
-    "Name": "隐藏模型",
     "GroupId": 50521032
   },
   "500710510": {
     "Id": 500710510,
-    "Name": "中史莱姆-为目标添加标记",
     "GroupId": 50071051
   },
   "500710520": {
     "Id": 500710520,
-    "Name": "中史莱姆-自杀",
     "GroupId": 50071051
   },
   "130010210": {
     "Id": 130010210,
-    "Name": "灰风近战-入场隐藏模型",
     "GroupId": 13001
   },
   "130010220": {
     "Id": 130010220,
-    "Name": "灰风-滑板入场前1.5s未参战",
     "GroupId": 13003
   },
   "130310110": {
     "Id": 130310110,
-    "Name": "新月",
     "GroupId": 13031
   },
   "130020110": {
     "Id": 130020110,
-    "Name": "小满入场1秒内不可选中",
     "GroupId": 13031
   },
   "130010310": {
     "Id": 130010310,
-    "Name": "表演出场6s内不能被选中",
     "GroupId": 13002
   },
   "130010110": {
     "Id": 130010110,
-    "Name": "灰风近战精英BUFF特效",
     "GroupId": 13011,
     "BindEffect": "Actor/Monster/13001JinZhanHuiFeng/FX/Buff/Buff_JinZhanHuiFeng_Weapon_glow"
   },
   "130010120": {
     "Id": 130010120,
-    "Name": "灰风近战精英BUFF特效",
     "GroupId": 13012,
     "BindEffect": "Actor/Monster/13001JinZhanHuiFeng/FX/Buff/Buff_JinZhanHuiFeng_Elite_Burst"
   },
   "140010110": {
     "Id": 140010110,
-    "Name": "近战旅人精英_BUFF特效",
     "GroupId": 13011,
     "BindEffect": "Actor/Monster/14001JinZhanLvRen/FX/Buff/Buff_JinZhanLvRen_Weapon_glow"
   },
   "140011000": {
     "Id": 140011000,
-    "Name": "降低大招CD_3-1关卡",
     "GroupId": 140011000
   },
   "100102110": {
     "Id": 100102110,
-    "Name": "半身树捆绑",
     "GroupId": 1001021,
     "BuffTag1": -2138561627,
     "BindEffect": "Actor/Monster/10010BanShenShu/Buff/fx_buff_10010_skill3"
   },
   "100102120": {
     "Id": 100102120,
-    "Name": "半身树免疫捆绑",
     "GroupId": 1001021
   },
   "100102130": {
     "Id": 100102130,
-    "Name": "荆棘墙标识",
     "GroupId": 10010213
   },
   "130510110": {
     "Id": 130510110,
-    "Name": "高达-火箭飞拳-1s晕眩",
     "GroupId": 13051011,
     "BuffTag1": -2138561627
   },
   "130519210": {
     "Id": 130519210,
-    "Name": "高达3阶段本体",
     "GroupId": 1305192,
     "BindEffect": "Actor/Monster/13051_GaoDa/Buff/fx_m13051_buff_idle_3_body"
   },
   "130519220": {
     "Id": 130519220,
-    "Name": "高达3阶段左手",
     "GroupId": 1305192,
     "BindEffect": "Actor/Monster/13051_GaoDa/Buff/fx_m13051_buff_idle_3_hand_l"
   },
   "130519230": {
     "Id": 130519230,
-    "Name": "高达3阶段右手",
     "GroupId": 1305192,
     "BindEffect": "Actor/Monster/13051_GaoDa/Buff/fx_m13051_buff_idle_3_hand_r"
   },
   "130519240": {
     "Id": 130519240,
-    "Name": "高达-被拳头破韧",
     "GroupId": 13051924
   },
   "130519250": {
     "Id": 130519250,
-    "Name": "高达-被拳头破韧（序章特供）",
     "GroupId": 13051925
   },
   "100050110": {
     "Id": 100050110,
-    "Name": "假面野猪愤怒",
     "GroupId": 1000501,
     "BindEffect": "Actor/Monster/10005JiaMianYeZhu/Buff/fx_buff_10005_angry"
   },
   "100050410": {
     "Id": 100050410,
-    "Name": "假面野猪0.7s晕眩",
     "GroupId": 1000504,
     "BuffTag1": -2138561627
   },
   "100050510": {
     "Id": 100050510,
-    "Name": "假面野猪1s晕眩",
     "GroupId": 1000505,
     "BuffTag1": -2138561627
   },
   "508010110": {
     "Id": 508010110,
-    "Name": "企鹅短时间内的霸体",
     "GroupId": 5080101,
     "BuffTag1": -719983267
   },
   "508010120": {
     "Id": 508010120,
-    "Name": "企鹅炸弹的Stun",
     "GroupId": 5080102,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627
   },
   "100120110": {
     "Id": 100120110,
-    "Name": "繁荣（火）环绕--Lv1",
     "GroupId": 1001201,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1"
   },
   "100120210": {
     "Id": 100120210,
-    "Name": "繁荣（火）环绕--Lv2",
     "GroupId": 1001202,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2"
   },
   "100120310": {
     "Id": 100120310,
-    "Name": "繁荣之实体冲刺撞晕",
     "GroupId": 1001203,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627
   },
   "100120610": {
     "Id": 100120610,
-    "Name": "繁荣之实体吹飞Stun",
     "GroupId": 1001206,
     "ReduceTime": 20000,
     "BuffTag1": 1397128752,
@@ -7560,968 +7541,804 @@
   },
   "100120710": {
     "Id": 100120710,
-    "Name": "繁荣之实体炸弹挂接",
     "GroupId": 1001207,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_debuff_fireboom"
   },
   "100120810": {
     "Id": 100120810,
-    "Name": "繁荣（无）环绕--Lv1",
     "GroupId": 1001208,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_none"
   },
   "100120910": {
     "Id": 100120910,
-    "Name": "繁荣（风）环绕--Lv1",
     "GroupId": 1001209,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_wind"
   },
   "100121010": {
     "Id": 100121010,
-    "Name": "繁荣（光）环绕--Lv1",
     "GroupId": 1001210,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_light"
   },
   "100121110": {
     "Id": 100121110,
-    "Name": "繁荣（地）环绕--Lv1",
     "GroupId": 1001211,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_earth"
   },
   "100121210": {
     "Id": 100121210,
-    "Name": "繁荣（水）环绕--Lv1",
     "GroupId": 1001212,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_water"
   },
   "100121310": {
     "Id": 100121310,
-    "Name": "繁荣（风）环绕--Lv2",
     "GroupId": 1001213,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2_wind"
   },
   "100121410": {
     "Id": 100121410,
-    "Name": "繁荣（光）环绕--Lv2",
     "GroupId": 1001214,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2_light"
   },
   "100121510": {
     "Id": 100121510,
-    "Name": "繁荣（地）环绕--Lv2",
     "GroupId": 1001215,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2_earth"
   },
   "100121610": {
     "Id": 100121610,
-    "Name": "繁荣（水）环绕--Lv2",
     "GroupId": 1001216,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2_water"
   },
   "100122110": {
     "Id": 100122110,
-    "Name": "繁荣之实体冲撞Stun",
     "GroupId": 1001206,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627
   },
   "100122210": {
     "Id": 100122210,
-    "Name": "繁荣（暗）环绕--Lv1",
     "GroupId": 1001201,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_1_dark"
   },
   "100122310": {
     "Id": 100122310,
-    "Name": "繁荣（暗）环绕--Lv2",
     "GroupId": 1001202,
     "BindEffect": "Actor/Monster/10012FanRongZhiShiTi/Buff/fx_10012_buff_lv_2_dark"
   },
   "100122410": {
     "Id": 100122410,
-    "Name": "繁荣之实体-破防状态Stun",
     "GroupId": 1000302
   },
   "100129910": {
     "Id": 100129910,
-    "Name": "繁荣之实体-难度2标识",
     "GroupId": 1001299
   },
   "110210110": {
     "Id": 110210110,
-    "Name": "陷阱对怪物增伤",
     "GroupId": 9900101
   },
   "110210210": {
     "Id": 110210210,
-    "Name": "加伤30%",
     "GroupId": 9900101
+  },
+  "110310010": {
+    "Id": 110310010,
+    "GroupId": 110310010
   },
   "130610110": {
     "Id": 130610110,
-    "Name": "小高达虚弱移速BUFF",
     "GroupId": 130610101,
     "BindEffect": "Actor/Monster/13061_XiaoGaoDa/Buff/fx_m13061_buff_skill2"
   },
   "130610210": {
     "Id": 130610210,
-    "Name": "小高达爆发BUFF",
     "GroupId": 130610201,
     "BindEffect": "Actor/Monster/13061_XiaoGaoDa/Buff/fx_m13061_buff_skill1"
   },
   "130610310": {
     "Id": 130610310,
-    "Name": "小高达通常状态BUFF",
     "GroupId": 130610301,
     "BindEffect": "Actor/Monster/13061_XiaoGaoDa/Buff/fx_m13061_buff_skill3"
   },
   "760133714": {
     "Id": 760133714,
-    "Name": "大招后坐力撞击Stun",
     "GroupId": 1001206,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627
   },
   "700210000": {
     "Id": 700210000,
-    "Name": "???-切换-突击标签",
     "GroupId": 70021000
   },
   "700210010": {
     "Id": 700210010,
-    "Name": "???-切换-狙击标签",
     "GroupId": 70021001
   },
   "700210020": {
     "Id": 700210020,
-    "Name": "???-切换-取消激活",
     "GroupId": 70021002
   },
   "700210030": {
     "Id": 700210030,
-    "Name": "开场等待",
     "GroupId": 70021003
   },
   "700210040": {
     "Id": 700210040,
-    "Name": "开场等待",
     "GroupId": 70021003
   },
   "505210100": {
     "Id": 505210100,
-    "Name": "跳舞机-AOE-钢铁标签",
     "GroupId": 505210100
   },
   "505210110": {
     "Id": 505210110,
-    "Name": "跳舞机-AOE-月环标签",
     "GroupId": 505210110
   },
   "505210120": {
     "Id": 505210120,
-    "Name": "跳舞机-AOE-交叉标签",
     "GroupId": 505210120
   },
   "150010110": {
     "Id": 150010110,
-    "Name": "种业杂兵追击移速BUFF",
     "GroupId": 150010110
   },
   "150010120": {
     "Id": 150010120,
-    "Name": "种业杂兵追击移速BUFF_Slow",
     "GroupId": 150010120
   },
   "160110110": {
     "Id": 160110110,
-    "Name": "风草吹风期间移速放缓",
     "GroupId": 160110110
   },
   "160210110": {
     "Id": 160210110,
-    "Name": "光鸟激活风草标记BUFF（无效果）",
     "GroupId": 160210110
   },
   "160210120": {
     "Id": 160210120,
-    "Name": "光鸟强化友方BUFF",
     "GroupId": 160210120,
     "BindEffect": "Actor/Monster/15520XiaoFengNiao/Buff/fx_15520XiaoFengNiao_buff_Skill5"
   },
   "160210130": {
     "Id": 160210130,
-    "Name": "光鸟释放激活技能期间免死",
     "GroupId": 160210130
   },
   "160510110": {
     "Id": 160510110,
-    "Name": "风草二阶段材质特效（无效果）",
     "GroupId": 160510110,
     "BindEffect": "Actor/Monster/16510FengCao/Buff/fx_m16510_buff_show_02_change"
   },
   "160510120": {
     "Id": 160510120,
-    "Name": "风草二阶段花粉特效（无效果）",
     "GroupId": 160210120,
     "BindEffect": "Actor/Monster/16510FengCao/Buff/fx_m16510_buff_show_02_pollen"
   },
   "160510130": {
     "Id": 160510130,
-    "Name": "风草花朵技能激活Buff",
     "GroupId": 160510130
   },
   "160510131": {
     "Id": 160510131,
-    "Name": "风草花朵技能取消激活Buff",
     "GroupId": 160510130
   },
   "160510132": {
     "Id": 160510132,
-    "Name": "风草花朵唤醒Buff",
     "GroupId": 160510132
   },
   "500110010": {
     "Id": 500110010,
-    "Name": "BUFF精灵（水）- 提示特效",
     "GroupId": 500110010,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Water"
   },
   "500110110": {
     "Id": 500110110,
-    "Name": "BUFF精灵（地）- 提示特效",
     "GroupId": 500110110,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Earth"
   },
   "500110210": {
     "Id": 500110210,
-    "Name": "BUFF精灵（暗）- 提示特效",
     "GroupId": 500110210,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Dark"
   },
   "500110310": {
     "Id": 500110310,
-    "Name": "BUFF精灵（火）- 提示特效",
     "GroupId": 500110310,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Fire"
   },
   "500110410": {
     "Id": 500110410,
-    "Name": "BUFF精灵（风）- 提示特效",
     "GroupId": 500110410,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Wind"
   },
   "500110510": {
     "Id": 500110510,
-    "Name": "BUFF精灵（光）- 提示特效",
     "GroupId": 500110510,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_TiXing_Light"
   },
   "501110010": {
     "Id": 501110010,
-    "Name": "buff精灵 - 持续回血 - 水",
     "GroupId": 50111001,
     "BuffTag1": -719983267,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/Fx_50111BuffJiLing_buff_HuiXue_Common"
   },
   "501110020": {
     "Id": 501110020,
-    "Name": "buff精灵 - 霸体 - 地",
     "GroupId": 50111002,
     "BuffTag1": -719983267
   },
   "501110030": {
     "Id": 501110030,
-    "Name": "buff精灵 - 闪避提高 - 暗",
     "GroupId": 50111003,
     "BuffTag1": -719983267,
     "BindEffect": "Actor/Monster/50111BuffJingLing/Buff/fx_50111buffjingling_buff_poison"
   },
   "501110040": {
     "Id": 501110040,
-    "Name": "buff精灵 - 攻击力提升 - 火",
     "GroupId": 50111004,
     "BuffTag1": -719983267,
     "BindEffect": "FX/Buff/fx_buff_effect_atk_up"
   },
   "501110050": {
     "Id": 501110050,
-    "Name": "buff精灵 - 冷却CD减少 - 风",
     "GroupId": 50111005,
     "BuffTag1": -719983267,
     "BindEffect": "FX/Buff/fx_buff_common_MoveSpd_Up"
   },
   "501110060": {
     "Id": 501110060,
-    "Name": "buff精灵 - 血量护盾 - 光",
     "GroupId": 50111006,
     "BuffTag1": -719983267,
     "BindEffect": "FX/Buff/fx_buff_common_Shield"
   },
   "155109310": {
     "Id": 155109310,
-    "Name": "蜂鸟基础永续Buff（形态1）",
     "GroupId": 15510931,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_normal_idle"
   },
   "155109320": {
     "Id": 155109320,
-    "Name": "蜂鸟额外永续Buff（形态2）",
     "GroupId": 15510932,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_high_idle"
   },
   "155109330": {
     "Id": 155109330,
-    "Name": "蜂鸟7.5m光buff（初始）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_75"
   },
   "155109350": {
     "Id": 155109350,
-    "Name": "蜂鸟12.5m光buff（初始）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_125"
   },
   "155109370": {
     "Id": 155109370,
-    "Name": "蜂鸟0m光buff（从7.5m来）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_75_up"
   },
   "155109380": {
     "Id": 155109380,
-    "Name": "蜂鸟0m光buff（从12.5m来）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_125_up"
   },
   "155109390": {
     "Id": 155109390,
-    "Name": "蜂鸟7.5m光buff（从0m来）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_75_down"
   },
   "155109400": {
     "Id": 155109400,
-    "Name": "蜂鸟12.5光buff（从0m来）",
     "GroupId": 15510933,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FenNiao_buff_light_125_down"
   },
   "155100210": {
     "Id": 155100210,
-    "Name": "蜂鸟飞天瞄准",
     "GroupId": 15510021,
     "BindEffect": "Actor/Monster/15510FengNiao/Buff/fx_15510_FengNiao_buff_FlyupAim"
   },
   "155105310": {
     "Id": 155105310,
-    "Name": "蜂鸟花在沉睡状态下的恢复",
     "GroupId": 15510531
   },
   "155105320": {
     "Id": 155105320,
-    "Name": "蜂鸟花光照buff",
     "GroupId": 15510532,
     "BindEffect": "Actor/Monster/15530FengNiaoHua/Buff/fx_15530_FenNiaoHua_Idle_Awake"
   },
   "700220000": {
     "Id": 700220000,
-    "Name": "花原重量-3",
     "GroupId": 70022000
   },
   "500710000": {
     "Id": 500710000,
-    "Name": "中史莱姆分裂标签-水",
     "GroupId": 500710000
   },
   "500710001": {
     "Id": 500710001,
-    "Name": "中史莱姆分裂标签-火",
     "GroupId": 500710000
   },
   "500710002": {
     "Id": 500710002,
-    "Name": "中史莱姆分裂标签-风",
     "GroupId": 500710000
   },
   "500710003": {
     "Id": 500710003,
-    "Name": "中史莱姆分裂标签-地",
     "GroupId": 500710000
   },
   "500710004": {
     "Id": 500710004,
-    "Name": "中史莱姆分裂标签-光",
     "GroupId": 500710000
   },
   "500710005": {
     "Id": 500710005,
-    "Name": "中史莱姆分裂标签-暗",
     "GroupId": 500710000
   },
   "500710006": {
     "Id": 500710006,
-    "Name": "中史莱姆分裂标签-无属性",
     "GroupId": 500710000
   },
   "500710007": {
     "Id": 500710007,
-    "Name": "中史莱姆分裂标签-不分裂小史莱姆",
     "GroupId": 500710000
   },
   "505719901": {
     "Id": 505719901,
-    "Name": "风扇姬-尖锐标签",
     "GroupId": 50571990
   },
   "505719910": {
     "Id": 505719910,
-    "Name": "风扇姬-小风扇形态",
     "GroupId": 50571991,
     "BindEffect": "Actor/Monster/50571FengShanJi/Buff/fx_m50571_buff_type_1"
   },
   "505719911": {
     "Id": 505719911,
-    "Name": "风扇姬-中风扇形态",
     "GroupId": 50571991,
     "BindEffect": "Actor/Monster/50571FengShanJi/Buff/fx_m50571_buff_type_2"
   },
   "505719912": {
     "Id": 505719912,
-    "Name": "风扇姬-中→大风扇形态",
     "GroupId": 50571991,
     "BindEffect": "Actor/Monster/50571FengShanJi/Buff/fx_m50571_buff_type_2_to_3"
   },
   "505719913": {
     "Id": 505719913,
-    "Name": "风扇姬-大→中风扇形态",
     "GroupId": 50571991,
     "BindEffect": "Actor/Monster/50571FengShanJi/Buff/fx_m50571_buff_type_3_to_2"
   },
   "505719914": {
     "Id": 505719914,
-    "Name": "风扇姬-小→大风扇形态",
     "GroupId": 50571991,
     "BindEffect": "Actor/Monster/50571FengShanJi/Buff/fx_m50571_buff_type_1_to_3"
   },
   "505729901": {
     "Id": 505729901,
-    "Name": "气球-慢速警告",
     "GroupId": 50572990,
     "BindEffect": "Actor/Monster/50572QiQiuJingLing/Buff/fx_m50572_buff_warning_slow"
   },
   "505729902": {
     "Id": 505729902,
-    "Name": "气球-快速警告",
     "GroupId": 50572990,
     "BindEffect": "Actor/Monster/50572QiQiuJingLing/Buff/fx_m50572_buff_warning_fast"
   },
   "105010000": {
     "Id": 105010000,
-    "Name": "半身树召唤难度标签-简单",
     "GroupId": 105010000
   },
   "105010001": {
     "Id": 105010001,
-    "Name": "半身树召唤难度标签-中等",
     "GroupId": 105010000
   },
   "105010002": {
     "Id": 105010002,
-    "Name": "半身树召唤难度标签-困难",
     "GroupId": 105010000
   },
   "500810000": {
     "Id": 500810000,
-    "Name": "大史莱姆难度标签-简单",
     "GroupId": 500810000
   },
   "500810001": {
     "Id": 500810001,
-    "Name": "大史莱姆难度标签-中等",
     "GroupId": 500810000
   },
   "500810002": {
     "Id": 500810002,
-    "Name": "大史莱姆难度标签-困难",
     "GroupId": 500810000
   },
   "501810000": {
     "Id": 501810000,
-    "Name": "传送怪（地）--Idle效果",
     "GroupId": 501810000,
     "BindEffect": "Actor/Monster/50181ShunYiGuai/Buff/fx_m50181_buff_Earth_Idle"
   },
   "501810001": {
     "Id": 501810001,
-    "Name": "传送怪（地）--阶段标签",
     "GroupId": 501810001
   },
   "501810002": {
     "Id": 501810002,
-    "Name": "传送怪（地）--难度标签",
     "GroupId": 501810002
   },
   "503010000": {
     "Id": 503010000,
-    "Name": "已有弩机计数",
     "GroupId": 503010000
   },
   "503010001": {
     "Id": 503010001,
-    "Name": "弩机强化攻击",
     "GroupId": 503010001
   },
   "503010002": {
     "Id": 503010002,
-    "Name": "回旋镖隐藏",
     "GroupId": 503010002,
     "BindEffect": "Actor/Monster/50301MaoDa/Buff/fx_m50301_buff_weapon1_off"
   },
   "503010003": {
     "Id": 503010003,
-    "Name": "二阶段",
     "GroupId": 503010003
   },
   "503010004": {
     "Id": 503010004,
-    "Name": "高难度",
     "GroupId": 503010004
   },
   "503010005": {
     "Id": 503010005,
-    "Name": "弩机立即攻击",
     "GroupId": 503010005
   },
   "503010006": {
     "Id": 503010006,
-    "Name": "弩机停止攻击",
     "GroupId": 503010006
   },
   "503110000": {
     "Id": 503110000,
-    "Name": "结晶击中标记",
     "GroupId": 503110000
   },
   "503110001": {
     "Id": 503110001,
-    "Name": "结晶大招标记",
     "GroupId": 503110001
   },
   "503110002": {
     "Id": 503110002,
-    "Name": "高难度",
     "GroupId": 503110002
   },
   "505210000": {
     "Id": 505210000,
-    "Name": "跳舞机难度标签-简单",
     "GroupId": 505210000
   },
   "505210001": {
     "Id": 505210001,
-    "Name": "跳舞机难度标签-中等",
     "GroupId": 505210000
   },
   "505210002": {
     "Id": 505210002,
-    "Name": "跳舞机难度标签-困难",
     "GroupId": 505210000
   },
   "505810001": {
     "Id": 505810001,
-    "Name": "多臂台灯--落灯检测",
     "GroupId": 505810001
   },
   "505810002": {
     "Id": 505810002,
-    "Name": "多臂台灯--充能检测",
     "GroupId": 505810002
   },
   "505810003": {
     "Id": 505810003,
-    "Name": "多臂台灯--摧毁检测",
     "GroupId": 505810003
   },
   "505810099": {
     "Id": 505810099,
-    "Name": "多臂台灯--二阶段标记",
     "GroupId": 505810001
   },
   "502510001": {
     "Id": 502510001,
-    "Name": "闪电猎犬电量充沛Buff",
     "GroupId": 502510001,
     "BindEffect": "Actor/Monster/50251ShanDianLieQuan/Buff/fx_m50251_Light_Buff"
   },
   "502510002": {
     "Id": 502510002,
-    "Name": "闪电猎犬电量不足短暂Stun",
     "GroupId": 502510002,
     "BuffTag1": 1397128752,
     "BuffTag2": -2138561627
   },
   "502510003": {
     "Id": 502510003,
-    "Name": "闪电猎犬伤害检测",
     "GroupId": 502510003
   },
   "502510004": {
     "Id": 502510004,
-    "Name": "闪电猎犬超额伤害免疫",
     "GroupId": 502510004
   },
   "502510005": {
     "Id": 502510005,
-    "Name": "闪电猎犬大招击晕检测",
     "GroupId": 502510005
   },
   "502510006": {
     "Id": 502510006,
-    "Name": "闪电猎犬大招击晕",
     "GroupId": 502510006
+  },
+  "502510007": {
+    "Id": 502510007,
+    "GroupId": 502510007,
+    "BindEffect": "Actor/Monster/50251ShanDianLieQuan/Buff/fx_m50251_Fire_Buff"
   },
   "501010001": {
     "Id": 501010001,
-    "Name": "阴影-水法师-死亡标记",
     "GroupId": 501010001
   },
   "501010002": {
     "Id": 501010002,
-    "Name": "阴影-暗法师-死亡标记",
     "GroupId": 501010002
   },
   "502810010": {
     "Id": 502810010,
-    "Name": "大招Stunbuff",
     "GroupId": 502810010
   },
   "502810020": {
     "Id": 502810020,
-    "Name": "大招Stun计时buff",
     "GroupId": 502810020,
     "BindEffect": "FX/Buff/fx_buff_paralysis"
   },
   "505415010": {
     "Id": 505415010,
-    "Name": "厨师2阶段buff",
     "GroupId": 50541501
   },
   "501619920": {
     "Id": 501619920,
-    "Name": "变速刺客队员未参战表现效果",
     "GroupId": 50161992,
     "BindEffect": "Actor/Monster/50161BianSuCiKe/Buff/fx_m50161_buff_born"
   },
   "175100000": {
     "Id": 175100000,
-    "Name": "咕噜海兔_重生保护_免疫次数伤害",
     "GroupId": 175100000,
     "BindEffect": "FX/Buff/fx_buff_common_Shield"
   },
   "175100010": {
     "Id": 175100010,
-    "Name": "咕噜海兔_重生保护_晕眩",
     "GroupId": 175100010
   },
   "175100030": {
     "Id": 175100030,
-    "Name": "咕噜海兔_重生保护_玩家下沉过程标识",
     "GroupId": 175100030
   },
   "700310010": {
     "Id": 700310010,
-    "Name": "???1阶段隐藏武器A",
     "GroupId": 700310010,
     "BindEffect": "Actor/Monster/70031Huochui/Buff/fx_70031HuoChui_buff_swordA_off"
   },
   "700310020": {
     "Id": 700310020,
-    "Name": "???1阶段隐藏武器B",
     "GroupId": 700310020,
     "BindEffect": "Actor/Monster/70031Huochui/Buff/fx_70031HuoChui_buff_swordB_off"
   },
   "700310030": {
     "Id": 700310030,
-    "Name": "???1阶段转3阶段武器出现特效",
     "GroupId": 700310030,
     "BindEffect": "Actor/Monster/70031Huochui/Buff/fx_70031HuoChui_buff_swordA_on"
   },
   "700310040": {
     "Id": 700310040,
-    "Name": "???1阶段杀死浮游剑死亡标签",
     "GroupId": 700310040
   },
   "700310050": {
     "Id": 700310050,
-    "Name": "???1阶段催动浮游剑攻击标签",
     "GroupId": 700310050
   },
   "700310060": {
     "Id": 700310060,
-    "Name": "???热力阶段特效",
     "GroupId": 700310060,
     "BindEffect": "Actor/Character/11501/Buff/fx_11501_buff_B1P02_Self_full"
   },
   "502610010": {
     "Id": 502610010,
-    "Name": "风灵 - 地属性 - 沉默",
     "GroupId": 502610010
   },
   "502610020": {
     "Id": 502610020,
-    "Name": "风灵 - 火属性 - 持续扣血",
     "GroupId": 502610020
   },
   "502610030": {
     "Id": 502610030,
-    "Name": "风灵 - 水属性 - 缓速",
     "GroupId": 502610030
   },
   "502610040": {
     "Id": 502610040,
-    "Name": "风灵 - 光属性 - 短暂Stun0.25s",
     "GroupId": 502610040
   },
   "502610050": {
     "Id": 502610050,
-    "Name": "风灵 - 暗属性 - 致盲",
     "GroupId": 502610050
   },
   "700010010": {
     "Id": 700010010,
-    "Name": "剧院魅影_初始减伤",
     "GroupId": 700010010,
     "Icon": "Icon/Buff/Icon_CommonBuff_DefenseDown",
     "IsShow": true
   },
   "700010011": {
     "Id": 700010011,
-    "Name": "剧院魅影_受击监测",
     "GroupId": 700010011
   },
   "700010012": {
     "Id": 700010012,
-    "Name": "剧院魅影_伤害增加",
     "GroupId": 700010012,
     "Icon": "Icon/Buff/Icon_CommonBuff_AttackUp",
     "IsShow": true
   },
   "700010013": {
     "Id": 700010013,
-    "Name": "剧院魅影_减伤表现",
     "GroupId": 700010013,
     "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_shield"
   },
   "700010014": {
     "Id": 700010014,
-    "Name": "剧院魅影_初始减伤破除",
     "GroupId": 700010014
   },
   "700010015": {
     "Id": 700010015,
-    "Name": "剧院魅影_大招强度计数",
     "GroupId": 700010015
+  },
+  "700010016": {
+    "Id": 700010016,
+    "GroupId": 700010016,
+    "BindEffect": "FX/Bossrush/Buff/fx_common_buff_actor_strengthen"
   },
   "700010020": {
     "Id": 700010020,
-    "Name": "书本_记录计数_红色",
     "GroupId": 700010020,
     "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_skill_icon"
   },
   "700010021": {
     "Id": 700010021,
-    "Name": "书本_记录计数_蓝色",
     "GroupId": 700010021,
     "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_skill_icon_blue"
   },
   "700010022": {
     "Id": 700010022,
-    "Name": "书本_记录计数_金色",
     "GroupId": 700010022,
     "BindEffect": "Actor/Monster/70001JuYuanMeiYing/Buff/fx_m70001_buff_skill_icon_yellow"
   },
   "700010023": {
     "Id": 700010023,
-    "Name": "书本_免疫印记",
     "GroupId": 700010023
   },
   "991210010": {
     "Id": 991210010,
-    "Name": "企鹅-被击检测",
     "GroupId": 991210010
   },
   "991210011": {
     "Id": 991210011,
-    "Name": "企鹅-被击中",
     "GroupId": 991210011
   },
   "991210012": {
     "Id": 991210012,
-    "Name": "企鹅-免疫死亡",
     "GroupId": 991210012
   },
   "991210020": {
     "Id": 991210020,
-    "Name": "企鹅-生命恢复",
     "GroupId": 991210020
   },
   "990011100": {
     "Id": 990011100,
-    "Name": "潜行",
     "GroupId": 9900110
   },
   "990011200": {
     "Id": 990011200,
-    "Name": "潜行（1秒）",
     "GroupId": 9900110
   },
   "990012100": {
     "Id": 990012100,
-    "Name": "关卡内隐身",
     "GroupId": 9900120
   },
   "990013100": {
     "Id": 990013100,
-    "Name": "无法选定",
     "GroupId": 9900130
   },
   "990021100": {
     "Id": 990021100,
-    "Name": "无敌",
     "GroupId": 9900210
   },
   "990031100": {
     "Id": 990031100,
-    "Name": "霸体（免疫击飞击退、且免控）",
     "GroupId": 9900311
   },
   "990031200": {
     "Id": 990031200,
-    "Name": "小霸体（只免疫击退）",
     "GroupId": 9900312
   },
   "990041100": {
     "Id": 990041100,
-    "Name": "免控",
     "GroupId": 9900410
   },
   "990010100": {
     "Id": 990010100,
-    "Name": "陷阱对怪物10倍增伤",
     "GroupId": 9900101
   },
   "990010200": {
     "Id": 990010200,
-    "Name": "取消碰撞",
     "GroupId": 9900102
   },
   "990010300": {
     "Id": 990010300,
-    "Name": "正面120°受击减伤60%",
     "GroupId": 9900103
   },
   "990010400": {
     "Id": 990010400,
-    "Name": "正面120°受击减伤80%",
     "GroupId": 9900104
   },
   "990010010": {
     "Id": 990010010,
-    "Name": "潜行（不可选中+无碰撞）",
     "GroupId": 99001001
   },
   "990010020": {
     "Id": 990010020,
-    "Name": "无敌",
     "GroupId": 99001002
   },
   "990010030": {
     "Id": 990010030,
-    "Name": "取消碰撞",
     "GroupId": 99001003
   },
   "990010040": {
     "Id": 990010040,
-    "Name": "隐藏模型",
     "GroupId": 99001004
   },
   "990010050": {
     "Id": 990010050,
-    "Name": "未参战",
     "GroupId": 99001005
   },
   "990010060": {
     "Id": 990010060,
-    "Name": "霸体",
     "GroupId": 99001006
   },
   "990010070": {
     "Id": 990010070,
-    "Name": "免疫控制",
     "GroupId": 99001007
   },
   "990010080": {
     "Id": 990010080,
-    "Name": "即死",
     "GroupId": 99001008
   },
   "990010082": {
     "Id": 990010082,
-    "Name": "免疫即死",
     "GroupId": 990010082
   },
   "990010090": {
     "Id": 990010090,
-    "Name": "不可选中",
     "GroupId": 99001009
   },
   "990020010": {
     "Id": 990020010,
-    "Name": "重量+1",
     "GroupId": 99002001
   },
   "990020020": {
     "Id": 990020020,
-    "Name": "重量=1",
     "GroupId": 99002002
   },
   "990020110": {
     "Id": 990020110,
-    "Name": "最大生命值+30%",
     "GroupId": 99002011
   },
   "990020120": {
     "Id": 990020120,
-    "Name": "重量-2",
     "GroupId": 99002012
   },
   "990020130": {
     "Id": 990020130,
-    "Name": "重量+2",
     "GroupId": 99002013
   },
   "990020140": {
     "Id": 990020140,
-    "Name": "重量+99",
     "GroupId": 99002014
   },
   "990030160": {
     "Id": 990030160,
-    "Name": "怪物普攻CD减半",
     "GroupId": 99003016
   },
   "990030170": {
     "Id": 990030170,
-    "Name": "怪物普攻CD加倍",
     "GroupId": 99003017
   },
   "990040010": {
     "Id": 990040010,
-    "Name": "陷阱对怪物增伤（序章专用）",
     "GroupId": 99004001
   },
   "990050010": {
     "Id": 990050010,
-    "Name": "通用破韧（失控+易伤）",
     "GroupId": 99005001,
     "BuffTag1": -2138561627,
     "BindEffect": "FX/Buff/fx_common_buff_tenacity_break",
@@ -8530,335 +8347,405 @@
   },
   "990050020": {
     "Id": 990050020,
-    "Name": "通用眩晕（EffectID占位）",
     "GroupId": 99005002
   },
   "990050030": {
     "Id": 990050030,
-    "Name": "通用眩晕（EffectID占位）",
     "GroupId": 99005003
   },
   "990050040": {
     "Id": 990050040,
-    "Name": "通用眩晕（EffectID占位）",
     "GroupId": 99005004
   },
   "990050050": {
     "Id": 990050050,
-    "Name": "破韧眩晕（配合AI使用）",
     "GroupId": 99005001
   },
   "990060010": {
     "Id": 990060010,
-    "Name": "回血",
     "GroupId": 99006001
   },
   "990060020": {
     "Id": 990060020,
-    "Name": "回能",
     "GroupId": 99006002
   },
   "990060030": {
     "Id": 990060030,
-    "Name": "回血+回能",
     "GroupId": 99006003
   },
   "990060040": {
     "Id": 990060040,
-    "Name": "回能50%",
     "GroupId": 99006004
   },
   "990060050": {
     "Id": 990060050,
-    "Name": "移动提升30%",
     "GroupId": 99006004
   },
   "990070010": {
     "Id": 990070010,
-    "Name": "回血掉落物（血量恢复5%）",
     "GroupId": 990070011
   },
   "990070020": {
     "Id": 990070020,
-    "Name": "大招掉落物（能量恢复25%+冷却-25%）",
     "GroupId": 990070021
   },
   "990070021": {
     "Id": 990070021,
-    "Name": "大招掉落物（能量恢复50%+冷却-50%）",
     "GroupId": 990070021
   },
   "990070030": {
     "Id": 990070030,
-    "Name": "技能掉落物（冷却-10秒）",
     "GroupId": 990070031
   },
   "990080010": {
     "Id": 990080010,
-    "Name": "延迟添加--0.25秒",
     "GroupId": 99008001
   },
   "990080020": {
     "Id": 990080020,
-    "Name": "延迟添加--0.5秒",
     "GroupId": 99008002
   },
   "990080030": {
     "Id": 990080030,
-    "Name": "延迟添加--1秒",
     "GroupId": 99008003
   },
   "916100310": {
     "Id": 916100310,
-    "Name": "中毒（土拨鼠排队副本）",
     "GroupId": 91610031,
     "BindEffect": "FX/Buff/fx_buff_effect_fierce_poison1"
   },
   "911200110": {
     "Id": 911200110,
-    "Name": "序章里琥珀的眼镜",
     "GroupId": 91120011,
     "BindEffect": "Actor/Character/10301/Buff/fx_10301_buff_prologue_sunglass"
   },
   "911200610": {
     "Id": 911200610,
-    "Name": "大招立刻充满+冷却走完",
     "GroupId": 91120061
   },
   "911210100": {
     "Id": 911210100,
-    "Name": "教学关内的角色不死效果",
     "GroupId": 91121000
   },
   "911210110": {
     "Id": 911210110,
-    "Name": "教学关内的角色技能CD减半效果",
     "GroupId": 91121011
   },
   "911210120": {
     "Id": 911210120,
-    "Name": "教学关1内的角色充能大幅度提升",
     "GroupId": 91121012
   },
   "911210130": {
     "Id": 911210130,
-    "Name": "教学关1内的角色绝招伤害大幅度提升",
     "GroupId": 91121013
   },
   "911210210": {
     "Id": 911210210,
-    "Name": "教学关2的鲨鱼的标记buff1",
     "GroupId": 91121021
   },
   "911210220": {
     "Id": 911210220,
-    "Name": "教学关2的鲨鱼的标记buff1",
     "GroupId": 91121021
   },
   "911210310": {
     "Id": 911210310,
-    "Name": "教学关3内的角色充能归零",
     "GroupId": 91121031
   },
   "911210320": {
     "Id": 911210320,
-    "Name": "教学关3内的角色充能大幅度提升",
     "GroupId": 91121032
   },
   "911210410": {
     "Id": 911210410,
-    "Name": "教学关4内的角色印记伤害大幅度提升",
     "GroupId": 91121041
   },
   "911210420": {
     "Id": 911210420,
-    "Name": "教学关4内让怪物免疫紫槿火蝶",
     "GroupId": 12632001
   },
   "911210430": {
     "Id": 911210430,
-    "Name": "教学关4内角色技能CD清零容错",
     "GroupId": 91121043
   },
   "509521010": {
     "Id": 509521010,
-    "Name": "火焰持续灼烧",
     "GroupId": 509521010,
     "BindEffect": "Actor/Monster/99052RectAreaTrap/FX/fx_m99052_buff_firedot"
   },
   "509729010": {
     "Id": 509729010,
-    "Name": "减速30%，持续1s",
     "GroupId": 509729010
   },
   "710010030": {
     "Id": 710010030,
-    "Name": "无尽塔精英层护盾150%",
     "GroupId": 710010030
   },
   "710010020": {
     "Id": 710010020,
-    "Name": "无尽塔精英层护盾100%",
     "GroupId": 710010020
   },
   "710010010": {
     "Id": 710010010,
-    "Name": "无尽塔精英层护盾50%",
     "GroupId": 710010010
   },
   "710010301": {
     "Id": 710010301,
-    "Name": "攻击力提升30%，持续5s",
     "GroupId": 710010301
   },
   "710010302": {
     "Id": 710010302,
-    "Name": "攻击力提升50%，持续5s",
     "GroupId": 710010302
   },
   "710010303": {
     "Id": 710010303,
-    "Name": "攻击力提升50%，持续10s",
     "GroupId": 710010303
   },
   "710020001": {
     "Id": 710020001,
-    "Name": "禁疗5s",
     "GroupId": 710020001
   },
   "710010305": {
     "Id": 710010305,
-    "Name": "攻击力提升50%，无限时间",
     "GroupId": 710010302
   },
   "710012001": {
     "Id": 710012001,
-    "Name": "血量高于80%时攻击提高50%",
     "GroupId": 710012001
   },
   "710012002": {
     "Id": 710012002,
-    "Name": "血量高于70%时攻击提高50%",
     "GroupId": 710012002
   },
   "710012003": {
     "Id": 710012003,
-    "Name": "血量高于60%时攻击提高50%",
     "GroupId": 710012003
   },
   "710017001": {
     "Id": 710017001,
-    "Name": "移动提升30%",
     "GroupId": 710017001
   },
   "710019001": {
     "Id": 710019001,
-    "Name": "每3s恢复10%的生命值",
     "GroupId": 710019001,
     "BindEffect": "FX/Buff/fx_common_buff_health_keep"
   },
   "710019002": {
     "Id": 710019002,
-    "Name": "每3s恢复15%的生命值",
     "GroupId": 710019002,
     "BindEffect": "FX/Buff/fx_common_buff_health_keep"
   },
   "710019003": {
     "Id": 710019003,
-    "Name": "每3s恢复20%的生命值",
     "GroupId": 710019003,
     "BindEffect": "FX/Buff/fx_common_buff_health_keep"
   },
   "710024004": {
     "Id": 710024004,
-    "Name": "攻击速度提升30%，持续5s",
     "GroupId": 710024004
   },
   "710024005": {
     "Id": 710024005,
-    "Name": "攻击速度提升50%，持续5s",
     "GroupId": 710024005
   },
   "710024006": {
     "Id": 710024006,
-    "Name": "攻击速度提升50%，持续10s",
     "GroupId": 710024006
   },
   "710025004": {
     "Id": 710025004,
-    "Name": "3s不消耗子弹",
     "GroupId": 710025004
   },
   "710025005": {
     "Id": 710025005,
-    "Name": "5s不消耗子弹",
     "GroupId": 710025005
   },
   "710025006": {
     "Id": 710025006,
-    "Name": "7s不消耗子弹",
     "GroupId": 710025006
   },
   "710029004": {
     "Id": 710029004,
-    "Name": "减速30%，持续3s",
     "GroupId": 710029004
   },
   "710029005": {
     "Id": 710029005,
-    "Name": "减速30%，持续5s",
     "GroupId": 710029005
   },
   "710029006": {
     "Id": 710029006,
-    "Name": "减速30%，持续7s",
     "GroupId": 710029006
   },
   "880010101": {
     "Id": 880010101,
-    "Name": "怪物碰撞伤害",
     "GroupId": 880010101
   },
   "880010112": {
     "Id": 880010112,
-    "Name": "怪物被击移除碰撞伤害BUFF",
     "GroupId": 880010112
   },
   "880010113": {
     "Id": 880010113,
-    "Name": "2s计时BUFF",
     "GroupId": 880010113
   },
   "880010114": {
     "Id": 880010114,
-    "Name": "计时BUFF完结重新挂碰撞BUFF",
     "GroupId": 880010114
   },
   "880010115": {
     "Id": 880010115,
-    "Name": "碰撞BUFF移除挂计时BUFF",
     "GroupId": 880010115
   },
   "880010102": {
     "Id": 880010102,
-    "Name": "怪物消除子弹",
     "GroupId": 880010102
   },
   "880011101": {
     "Id": 880011101,
-    "Name": "拾取经验半径提升20m",
     "GroupId": 880011101,
     "BindEffect": "FX/Buff/fx_buff_drop_item_get_range"
   },
   "880012101": {
     "Id": 880012101,
-    "Name": "范围清屏（秒杀普通/精英）",
     "GroupId": 880012101
   },
   "880013101": {
     "Id": 880013101,
-    "Name": "BOSS扣1/4血",
     "GroupId": 880013101
+  },
+  "809001010": {
+    "Id": 809001010,
+    "GroupId": 80900101,
+    "BindEffect": "FX/Buff/fx_debuff_speed_down_water"
+  },
+  "809001020": {
+    "Id": 809001020,
+    "GroupId": 80900102,
+    "BindEffect": "FX/Buff/fx_buff_ice"
+  },
+  "801030110": {
+    "Id": 801030110,
+    "GroupId": 80103011,
+    "BindEffect": "FX/Buff/fx_buff_effect_atk_up"
+  },
+  "801030120": {
+    "Id": 801030120,
+    "GroupId": 80103012
+  },
+  "801039010": {
+    "Id": 801039010,
+    "GroupId": 80103901
+  },
+  "801039110": {
+    "Id": 801039110,
+    "GroupId": 80103911
+  },
+  "801039210": {
+    "Id": 801039210,
+    "GroupId": 80103921
+  },
+  "801110110": {
+    "Id": 801110110,
+    "GroupId": 80111011,
+    "BindEffect": "FX/Buff/fx_debuff_speed_down_water"
+  },
+  "801110210": {
+    "Id": 801110210,
+    "GroupId": 80111021,
+    "BuffTag1": 1761158456,
+    "BindEffect": "FX/Buff/fx_buff_Clod"
+  },
+  "801110220": {
+    "Id": 801110220,
+    "GroupId": 80111022,
+    "BuffTag1": 1761158456,
+    "BindEffect": "FX/Buff/fx_buff_Clod"
+  },
+  "801110230": {
+    "Id": 801110230,
+    "GroupId": 80111023,
+    "BindEffect": "FX/Buff/fx_buff_ice"
+  },
+  "801110240": {
+    "Id": 801110240,
+    "GroupId": 80111024
+  },
+  "801119010": {
+    "Id": 801119010,
+    "GroupId": 80111901
+  },
+  "801119110": {
+    "Id": 801119110,
+    "GroupId": 80111911
+  },
+  "801129010": {
+    "Id": 801129010,
+    "GroupId": 80112901
+  },
+  "801129110": {
+    "Id": 801129110,
+    "GroupId": 80112911
+  },
+  "801340110": {
+    "Id": 801340110,
+    "GroupId": 80134011,
+    "BindEffect": "Actor/Character/13401/Buff/fx_13401_buff_Main_Skill_P03_CatPaw"
+  },
+  "801340210": {
+    "Id": 801340210,
+    "GroupId": 80134021
+  },
+  "801349010": {
+    "Id": 801349010,
+    "GroupId": 80134901
+  },
+  "801349110": {
+    "Id": 801349110,
+    "GroupId": 80134911
+  },
+  "801349210": {
+    "Id": 801349210,
+    "GroupId": 80134921
+  },
+  "801270210": {
+    "Id": 801270210,
+    "GroupId": 80127021,
+    "BindEffect": "FX/Buff/fx_buff_common_Shield"
+  },
+  "801270220": {
+    "Id": 801270220,
+    "GroupId": 80127022
+  },
+  "801279010": {
+    "Id": 801279010,
+    "GroupId": 80127901
+  },
+  "801560210": {
+    "Id": 801560210,
+    "GroupId": 80156021,
+    "BindEffect": "FX/Buff/fx_buff_effect_def_down"
+  },
+  "801560220": {
+    "Id": 801560220,
+    "GroupId": 80156022,
+    "BindEffect": "FX/Buff/fx_buff_effect_def_down"
+  },
+  "801569010": {
+    "Id": 801569010,
+    "GroupId": 80156901
+  },
+  "801569020": {
+    "Id": 801569020,
+    "GroupId": 80156902
+  },
+  "807010110": {
+    "Id": 807010110,
+    "GroupId": 80701011,
+    "BindEffect": "FX/Buff/fx_Buff_Effect_SpeedUp"
+  },
+  "808010110": {
+    "Id": 808010110,
+    "GroupId": 80801011,
+    "BindEffect": "FX/Buff/fx_Buff_Effect_SpeedUp"
   },
   "8001021": {
     "Id": 8001021,
@@ -10152,136 +10039,6 @@
     "GroupId": 4002210,
     "BuffTag1": -719983267
   },
-  "4003010": {
-    "Id": 4003010,
-    "GroupId": 4003010,
-    "BuffTag1": -719983267
-  },
-  "4003011": {
-    "Id": 4003011,
-    "GroupId": 4003011,
-    "BuffTag1": -719983267
-  },
-  "4003012": {
-    "Id": 4003012,
-    "GroupId": 4003012,
-    "BuffTag1": -719983267
-  },
-  "4003013": {
-    "Id": 4003013,
-    "GroupId": 4003013,
-    "BuffTag1": -719983267
-  },
-  "4003014": {
-    "Id": 4003014,
-    "GroupId": 4003014,
-    "BuffTag1": -719983267
-  },
-  "4003020": {
-    "Id": 4003020,
-    "GroupId": 4003020,
-    "BuffTag1": -719983267
-  },
-  "4003021": {
-    "Id": 4003021,
-    "GroupId": 4003021,
-    "BuffTag1": -719983267
-  },
-  "4003022": {
-    "Id": 4003022,
-    "GroupId": 4003022,
-    "BuffTag1": -719983267
-  },
-  "4003023": {
-    "Id": 4003023,
-    "GroupId": 4003023,
-    "BuffTag1": -719983267
-  },
-  "4003024": {
-    "Id": 4003024,
-    "GroupId": 4003024,
-    "BuffTag1": -719983267
-  },
-  "4003111": {
-    "Id": 4003111,
-    "GroupId": 4003111,
-    "BuffTag1": -719983267
-  },
-  "4003112": {
-    "Id": 4003112,
-    "GroupId": 4003112,
-    "BuffTag1": -719983267
-  },
-  "4003113": {
-    "Id": 4003113,
-    "GroupId": 4003113,
-    "BuffTag1": -719983267
-  },
-  "4003114": {
-    "Id": 4003114,
-    "GroupId": 4003114,
-    "BuffTag1": -719983267
-  },
-  "4004000": {
-    "Id": 4004000,
-    "GroupId": 4004000,
-    "BuffTag1": -719983267
-  },
-  "4004001": {
-    "Id": 4004001,
-    "GroupId": 4004001,
-    "BuffTag1": -719983267
-  },
-  "4004002": {
-    "Id": 4004002,
-    "GroupId": 4004002,
-    "BuffTag1": -719983267
-  },
-  "4004003": {
-    "Id": 4004003,
-    "GroupId": 4004003,
-    "BuffTag1": -719983267
-  },
-  "4004004": {
-    "Id": 4004004,
-    "GroupId": 4004004,
-    "BuffTag1": -719983267
-  },
-  "4004005": {
-    "Id": 4004005,
-    "GroupId": 4004005,
-    "BuffTag1": -719983267
-  },
-  "4004006": {
-    "Id": 4004006,
-    "GroupId": 4004006,
-    "BuffTag1": -719983267
-  },
-  "4004007": {
-    "Id": 4004007,
-    "GroupId": 4004007,
-    "BuffTag1": -719983267
-  },
-  "4004008": {
-    "Id": 4004008,
-    "GroupId": 4004008,
-    "BuffTag1": -719983267
-  },
-  "4004009": {
-    "Id": 4004009,
-    "GroupId": 4004009,
-    "BuffTag1": -719983267
-  },
-  "4004101": {
-    "Id": 4004101,
-    "GroupId": 4004101,
-    "BuffTag1": -719983267
-  },
-  "4004201": {
-    "Id": 4004201,
-    "GroupId": 4004201,
-    "BuffTag1": -719983267
-  },
   "4005106": {
     "Id": 4005106,
     "Name": "【buff效果】普攻伤害提升<color=#ec6d21>{1}</color>，持续{2}秒。",
@@ -10660,56 +10417,6 @@
     "GroupId": 4007210,
     "BuffTag1": -2138561627
   },
-  "4008010": {
-    "Id": 4008010,
-    "GroupId": 4008010,
-    "BuffTag1": -719983267
-  },
-  "4008011": {
-    "Id": 4008011,
-    "GroupId": 4008011,
-    "BuffTag1": -719983267
-  },
-  "4008012": {
-    "Id": 4008012,
-    "GroupId": 4008012,
-    "BuffTag1": -719983267
-  },
-  "4008013": {
-    "Id": 4008013,
-    "GroupId": 4008013,
-    "BuffTag1": -719983267
-  },
-  "4008014": {
-    "Id": 4008014,
-    "GroupId": 4008014,
-    "BuffTag1": -719983267
-  },
-  "4008020": {
-    "Id": 4008020,
-    "GroupId": 4008020,
-    "BuffTag1": -719983267
-  },
-  "4008021": {
-    "Id": 4008021,
-    "GroupId": 4008021,
-    "BuffTag1": -719983267
-  },
-  "4008022": {
-    "Id": 4008022,
-    "GroupId": 4008022,
-    "BuffTag1": -719983267
-  },
-  "4008023": {
-    "Id": 4008023,
-    "GroupId": 4008023,
-    "BuffTag1": -719983267
-  },
-  "4008024": {
-    "Id": 4008024,
-    "GroupId": 4008024,
-    "BuffTag1": -719983267
-  },
   "4009106": {
     "Id": 4009106,
     "Name": "【buff效果】风系伤害提升<color=#ec6d21>{1}</color>，持续{2}秒。",
@@ -11046,56 +10753,6 @@
     "GroupId": 4014210,
     "BuffTag1": -719983267
   },
-  "4017010": {
-    "Id": 4017010,
-    "GroupId": 4017010,
-    "BuffTag1": -719983267
-  },
-  "4017011": {
-    "Id": 4017011,
-    "GroupId": 4017011,
-    "BuffTag1": -719983267
-  },
-  "4017012": {
-    "Id": 4017012,
-    "GroupId": 4017012,
-    "BuffTag1": -719983267
-  },
-  "4017013": {
-    "Id": 4017013,
-    "GroupId": 4017013,
-    "BuffTag1": -719983267
-  },
-  "4017014": {
-    "Id": 4017014,
-    "GroupId": 4017014,
-    "BuffTag1": -719983267
-  },
-  "4017020": {
-    "Id": 4017020,
-    "GroupId": 4017020,
-    "BuffTag1": -719983267
-  },
-  "4017021": {
-    "Id": 4017021,
-    "GroupId": 4017021,
-    "BuffTag1": -719983267
-  },
-  "4017022": {
-    "Id": 4017022,
-    "GroupId": 4017022,
-    "BuffTag1": -719983267
-  },
-  "4017023": {
-    "Id": 4017023,
-    "GroupId": 4017023,
-    "BuffTag1": -719983267
-  },
-  "4017024": {
-    "Id": 4017024,
-    "GroupId": 4017024,
-    "BuffTag1": -719983267
-  },
   "4018001": {
     "Id": 4018001,
     "Name": "全队风系伤害提升<color=#ec6d21>{1}</color>。",
@@ -11404,31 +11061,26 @@
   },
   "4023002": {
     "Id": 4023002,
-    "Name": "全队地系伤害提升<color=#ec6d21>{1}</color>。",
     "GroupId": 4023002,
     "BuffTag1": -719983267
   },
   "4023003": {
     "Id": 4023003,
-    "Name": "全队地系伤害提升<color=#ec6d21>{1}</color>。",
     "GroupId": 4023003,
     "BuffTag1": -719983267
   },
   "4023004": {
     "Id": 4023004,
-    "Name": "全队地系伤害提升<color=#ec6d21>{1}</color>。",
     "GroupId": 4023004,
     "BuffTag1": -719983267
   },
   "4023005": {
     "Id": 4023005,
-    "Name": "全队地系伤害提升<color=#ec6d21>{1}</color>。",
     "GroupId": 4023005,
     "BuffTag1": -719983267
   },
   "4023006": {
     "Id": 4023006,
-    "Name": "全队地系伤害提升<color=#ec6d21>{1}</color>。",
     "GroupId": 4023006,
     "BuffTag1": -719983267
   },
@@ -11478,12 +11130,6 @@
     "Id": 4023205,
     "Name": "地系角色大招和技能伤害提升",
     "GroupId": 4023205,
-    "BuffTag1": -719983267
-  },
-  "4025011": {
-    "Id": 4025011,
-    "Name": "【buff效果】破韧效率提升{2}，持续{3}秒。",
-    "GroupId": 4025011,
     "BuffTag1": -719983267
   },
   "4026027": {
@@ -11742,56 +11388,6 @@
     "Id": 4028205,
     "Name": "风系主控角色对同一目标造成{1}次伤害后，目标受到风系伤害提升{2}，持续{3}秒，同一目标每{4}秒最多触发1次。",
     "GroupId": 4028205,
-    "BuffTag1": -719983267
-  },
-  "4029000": {
-    "Id": 4029000,
-    "GroupId": 4029000,
-    "BuffTag1": -719983267
-  },
-  "4029001": {
-    "Id": 4029001,
-    "GroupId": 4029001,
-    "BuffTag1": -719983267
-  },
-  "4029002": {
-    "Id": 4029002,
-    "GroupId": 4029002,
-    "BuffTag1": -719983267
-  },
-  "4029003": {
-    "Id": 4029003,
-    "GroupId": 4029003,
-    "BuffTag1": -719983267
-  },
-  "4029004": {
-    "Id": 4029004,
-    "GroupId": 4029004,
-    "BuffTag1": -719983267
-  },
-  "4029005": {
-    "Id": 4029005,
-    "GroupId": 4029005,
-    "BuffTag1": -719983267
-  },
-  "4029006": {
-    "Id": 4029006,
-    "GroupId": 4029006,
-    "BuffTag1": -719983267
-  },
-  "4029100": {
-    "Id": 4029100,
-    "GroupId": 4029100,
-    "BuffTag1": -719983267
-  },
-  "4029200": {
-    "Id": 4029200,
-    "GroupId": 4029200,
-    "BuffTag1": -719983267
-  },
-  "4029999": {
-    "Id": 4029999,
-    "GroupId": 4029999,
     "BuffTag1": -719983267
   },
   "4030021": {
@@ -12506,6 +12102,288 @@
     "Id": 4039205,
     "Name": "【脚本buff】基础技能伤害buff",
     "GroupId": 4039205,
+    "BuffTag1": -719983267
+  },
+  "4017001": {
+    "Id": 4017001,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017001,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017002": {
+    "Id": 4017002,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017002,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017003": {
+    "Id": 4017003,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017003,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017004": {
+    "Id": 4017004,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017004,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017005": {
+    "Id": 4017005,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017005,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017006": {
+    "Id": 4017006,
+    "Name": "【脚本buff】燃星：普攻伤害提升<color=#ec6d21>{2}</color>。",
+    "GroupId": 4017006,
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214017",
+    "IsShow": true
+  },
+  "4017021": {
+    "Id": 4017021,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017021,
+    "BuffTag1": -2138561627
+  },
+  "4017022": {
+    "Id": 4017022,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017022,
+    "BuffTag1": -2138561627
+  },
+  "4017023": {
+    "Id": 4017023,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017023,
+    "BuffTag1": -2138561627
+  },
+  "4017024": {
+    "Id": 4017024,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017024,
+    "BuffTag1": -2138561627
+  },
+  "4017025": {
+    "Id": 4017025,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017025,
+    "BuffTag1": -2138561627
+  },
+  "4017026": {
+    "Id": 4017026,
+    "Name": "【脚本buff】焰色反应：造成普攻伤害时为目标附加受到普攻伤害提升<color=#ec6d21>{4}</color>，持续{5}秒。",
+    "GroupId": 4017026,
+    "BuffTag1": -2138561627
+  },
+  "4017126": {
+    "Id": 4017126,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4017126,
+    "BuffTag1": -719983267
+  },
+  "4017127": {
+    "Id": 4017127,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4017127,
+    "BuffTag1": -719983267
+  },
+  "4017128": {
+    "Id": 4017128,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4017128,
+    "BuffTag1": -719983267
+  },
+  "4017129": {
+    "Id": 4017129,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4017129,
+    "BuffTag1": -719983267
+  },
+  "4017130": {
+    "Id": 4017130,
+    "Name": "【buff效果】技能伤害提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4017130,
+    "BuffTag1": -719983267
+  },
+  "4017201": {
+    "Id": 4017201,
+    "Name": "【脚本buff】燃星plus：暴击伤害提升<color=#ec6d21>{1}</color>。",
+    "GroupId": 4017201,
+    "BuffTag1": -719983267
+  },
+  "4017202": {
+    "Id": 4017202,
+    "Name": "【脚本buff】燃星plus：暴击伤害提升<color=#ec6d21>{1}</color>。",
+    "GroupId": 4017202,
+    "BuffTag1": -719983267
+  },
+  "4017203": {
+    "Id": 4017203,
+    "Name": "【脚本buff】燃星plus：暴击伤害提升<color=#ec6d21>{1}</color>。",
+    "GroupId": 4017203,
+    "BuffTag1": -719983267
+  },
+  "4017204": {
+    "Id": 4017204,
+    "Name": "【脚本buff】燃星plus：暴击伤害提升<color=#ec6d21>{1}</color>。",
+    "GroupId": 4017204,
+    "BuffTag1": -719983267
+  },
+  "4017205": {
+    "Id": 4017205,
+    "Name": "【脚本buff】燃星plus：暴击伤害提升<color=#ec6d21>{1}</color>。",
+    "GroupId": 4017205,
+    "BuffTag1": -719983267
+  },
+  "4017099": {
+    "Id": 4017099,
+    "Name": "【脚本buff】燃星满层标识buff",
+    "GroupId": 4017099,
+    "BuffTag1": -719983267
+  },
+  "4040001": {
+    "Id": 4040001,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040002": {
+    "Id": 4040002,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040003": {
+    "Id": 4040003,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040004": {
+    "Id": 4040004,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040005": {
+    "Id": 4040005,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040006": {
+    "Id": 4040006,
+    "Name": "【once脚本标识buff】勇气」：绝招伤害提升<color=#ec6d21>{1}</color>",
+    "BuffTag1": -719983267,
+    "Icon": "Icon/Buff/Icon_DiscBuff_214040",
+    "IsShow": true
+  },
+  "4040126": {
+    "Id": 4040126,
+    "Name": "【buff效果】攻击力提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4040126,
+    "BuffTag1": -719983267
+  },
+  "4040127": {
+    "Id": 4040127,
+    "Name": "【buff效果】攻击力提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4040127,
+    "BuffTag1": -719983267
+  },
+  "4040128": {
+    "Id": 4040128,
+    "Name": "【buff效果】攻击力提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4040128,
+    "BuffTag1": -719983267
+  },
+  "4040129": {
+    "Id": 4040129,
+    "Name": "【buff效果】攻击力提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4040129,
+    "BuffTag1": -719983267
+  },
+  "4040130": {
+    "Id": 4040130,
+    "Name": "【buff效果】攻击力提升<color=#ec6d21>{2}</color>，持续{3}秒。",
+    "GroupId": 4040130,
+    "BuffTag1": -719983267
+  },
+  "4040201": {
+    "Id": 4040201,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色普攻伤害提升<color=#ec6d21>{1}</color>，",
+    "GroupId": 4040201,
+    "BuffTag1": -719983267
+  },
+  "4040202": {
+    "Id": 4040202,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色普攻伤害提升<color=#ec6d21>{1}</color>，",
+    "GroupId": 4040202,
+    "BuffTag1": -719983267
+  },
+  "4040203": {
+    "Id": 4040203,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色普攻伤害提升<color=#ec6d21>{1}</color>，",
+    "GroupId": 4040203,
+    "BuffTag1": -719983267
+  },
+  "4040204": {
+    "Id": 4040204,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色普攻伤害提升<color=#ec6d21>{1}</color>，",
+    "GroupId": 4040204,
+    "BuffTag1": -719983267
+  },
+  "4040205": {
+    "Id": 4040205,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色普攻伤害提升<color=#ec6d21>{1}</color>，",
+    "GroupId": 4040205,
+    "BuffTag1": -719983267
+  },
+  "4040221": {
+    "Id": 4040221,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色获得{2}点防御力，持续{3}秒。",
+    "GroupId": 4040221,
+    "BuffTag1": -719983267
+  },
+  "4040222": {
+    "Id": 4040222,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色获得{2}点防御力，持续{3}秒。",
+    "GroupId": 4040222,
+    "BuffTag1": -719983267
+  },
+  "4040223": {
+    "Id": 4040223,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色获得{2}点防御力，持续{3}秒。",
+    "GroupId": 4040223,
+    "BuffTag1": -719983267
+  },
+  "4040224": {
+    "Id": 4040224,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色获得{2}点防御力，持续{3}秒。",
+    "GroupId": 4040224,
+    "BuffTag1": -719983267
+  },
+  "4040225": {
+    "Id": 4040225,
+    "Name": "【脚本buff】每层「勇气」被清除时，火系主控角色获得{2}点防御力，持续{3}秒。",
+    "GroupId": 4040225,
     "BuffTag1": -719983267
   },
   "1": {
@@ -13417,7 +13295,7 @@
   },
   "11001": {
     "Id": 11001,
-    "Name": "???突击免伤",
+    "Name": "FLC突击免伤",
     "GroupId": 11001,
     "BuffTag1": -739953836,
     "BuffTag2": -769207219,

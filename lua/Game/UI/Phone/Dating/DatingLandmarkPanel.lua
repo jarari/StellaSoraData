@@ -1,22 +1,31 @@
 local DatingLandmarkPanel = class("DatingLandmarkPanel", BasePanel)
 DatingLandmarkPanel._bIsMainPanel = false
 DatingLandmarkPanel._tbDefine = {
-    {sPrefabPath = "Phone/DatingLandmarkPanel.prefab", sCtrlName = "Game.UI.Phone.Dating.DatingLandmarkCtrl"}
+{sPrefabPath = "Phone/DatingLandmarkPanel.prefab", sCtrlName = "Game.UI.Phone.Dating.DatingLandmarkCtrl"}
 }
--------------------- local function --------------------
+DatingLandmarkPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function DatingLandmarkPanel:Awake()
+DatingLandmarkPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DatingLandmarkPanel:OnEnable()
+
+DatingLandmarkPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function DatingLandmarkPanel:OnAfterEnter()
+
+DatingLandmarkPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function DatingLandmarkPanel:OnDisable()
+
+DatingLandmarkPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function DatingLandmarkPanel:OnDestroy()
+
+DatingLandmarkPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function DatingLandmarkPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return DatingLandmarkPanel
+

@@ -10,13 +10,13 @@
     "UIAssets": "Trial",
     "CtrlName": "TrialCtrl"
   },
-  "700104": {
-    "Id": 700104,
+  "700102": {
+    "Id": 700102,
     "GroupIds": [
-      15501
+      13401
     ],
     "Gachas": [
-      10155
+      10134
     ],
     "UIAssets": "Trial",
     "CtrlName": "TrialCtrl"
@@ -28,6 +28,28 @@
     ],
     "Gachas": [
       10119
+    ],
+    "UIAssets": "Trial",
+    "CtrlName": "TrialCtrl"
+  },
+  "700104": {
+    "Id": 700104,
+    "GroupIds": [
+      15501
+    ],
+    "Gachas": [
+      10155
+    ],
+    "UIAssets": "Trial",
+    "CtrlName": "TrialCtrl"
+  },
+  "700107": {
+    "Id": 700107,
+    "GroupIds": [
+      14901
+    ],
+    "Gachas": [
+      10149
     ],
     "UIAssets": "Trial",
     "CtrlName": "TrialCtrl"

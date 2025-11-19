@@ -525,5 +525,301 @@
     "Aim": "Story.217.3",
     "IsLast": true,
     "AvgMotion": "style_20"
+  },
+  "301": {
+    "Id": 301,
+    "StoryId": "BAm03_04",
+    "Chapter": 3,
+    "Index": "Story.301.4",
+    "Title": "Story.301.1",
+    "Desc": "Story.301.2",
+    "TrialBuild": 301,
+    "ConditionId": "C03_04",
+    "IsBattle": true,
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_04"
+    ],
+    "FloorId": [
+      1030101
+    ],
+    "PreviewMonsterGroupId": 10301,
+    "Aim": "Story.301.3"
+  },
+  "302": {
+    "Id": 302,
+    "StoryId": "BAm03_09",
+    "Chapter": 3,
+    "Index": "Story.302.4",
+    "Title": "Story.302.1",
+    "Desc": "Story.302.2",
+    "TrialBuild": 302,
+    "ConditionId": "C03_09",
+    "IsBattle": true,
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_09"
+    ],
+    "FloorId": [
+      1030201
+    ],
+    "PreviewMonsterGroupId": 10302,
+    "Aim": "Story.302.3"
+  },
+  "304": {
+    "Id": 304,
+    "StoryId": "STm03_00_a",
+    "Chapter": 3,
+    "Index": "Story.304.4",
+    "Title": "Story.304.1",
+    "Desc": "Story.304.2",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "AvgLuaName": "STm03_00_a",
+    "Aim": "Story.304.3",
+    "AvgMotion": "style_19"
+  },
+  "305": {
+    "Id": 305,
+    "StoryId": "STm03_00_b",
+    "Chapter": 3,
+    "Index": "Story.305.4",
+    "Title": "Story.305.1",
+    "Desc": "Story.305.2",
+    "ConditionId": "C03_00_a",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_00_a"
+    ],
+    "AvgLuaName": "STm03_00_b",
+    "Aim": "Story.305.3",
+    "AvgMotion": "style_19"
+  },
+  "306": {
+    "Id": 306,
+    "StoryId": "STm03_01",
+    "Chapter": 3,
+    "Index": "Story.306.4",
+    "Title": "Story.306.1",
+    "Desc": "Story.306.2",
+    "ConditionId": "C03_00_b",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_00_b"
+    ],
+    "AvgLuaName": "STm03_01",
+    "Aim": "Story.306.3",
+    "AvgMotion": "style_19"
+  },
+  "307": {
+    "Id": 307,
+    "StoryId": "STm03_02",
+    "Chapter": 3,
+    "Index": "Story.307.4",
+    "Title": "Story.307.1",
+    "Desc": "Story.307.2",
+    "ConditionId": "C03_01",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_01"
+    ],
+    "AvgLuaName": "STm03_02",
+    "Aim": "Story.307.3",
+    "AvgMotion": "style_19"
+  },
+  "308": {
+    "Id": 308,
+    "StoryId": "STm03_03",
+    "Chapter": 3,
+    "Index": "Story.308.4",
+    "Title": "Story.308.1",
+    "Desc": "Story.308.2",
+    "ConditionId": "C03_02",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_02"
+    ],
+    "AvgLuaName": "STm03_03",
+    "Aim": "Story.308.3",
+    "AvgMotion": "style_19"
+  },
+  "309": {
+    "Id": 309,
+    "StoryId": "STm03_04",
+    "Chapter": 3,
+    "Index": "Story.309.4",
+    "Title": "Story.309.1",
+    "Desc": "Story.309.2",
+    "ConditionId": "C03_03",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_03"
+    ],
+    "AvgLuaName": "STm03_04",
+    "Aim": "Story.309.3",
+    "AvgMotion": "style_19"
+  },
+  "310": {
+    "Id": 310,
+    "StoryId": "STm03_05",
+    "Chapter": 3,
+    "Index": "Story.310.4",
+    "Title": "Story.310.1",
+    "Desc": "Story.310.2",
+    "ConditionId": "CBA03_04",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "BAm03_04"
+    ],
+    "AvgLuaName": "STm03_05",
+    "Aim": "Story.310.3",
+    "AvgMotion": "style_19"
+  },
+  "311": {
+    "Id": 311,
+    "StoryId": "STm03_06_a",
+    "Chapter": 3,
+    "Index": "Story.311.4",
+    "Title": "Story.311.1",
+    "Desc": "Story.311.2",
+    "ConditionId": "C03_05_a",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_05"
+    ],
+    "AvgLuaName": "STm03_06_a",
+    "Aim": "Story.311.3",
+    "AvgMotion": "style_19"
+  },
+  "312": {
+    "Id": 312,
+    "StoryId": "STm03_06_b",
+    "Chapter": 3,
+    "Index": "Story.312.4",
+    "Title": "Story.312.1",
+    "Desc": "Story.312.2",
+    "ConditionId": "C03_05_b",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_05"
+    ],
+    "AvgLuaName": "STm03_06_b",
+    "Aim": "Story.312.3",
+    "AvgMotion": "style_19"
+  },
+  "313": {
+    "Id": 313,
+    "StoryId": "STm03_06_c",
+    "Chapter": 3,
+    "Index": "Story.313.4",
+    "Title": "Story.313.1",
+    "Desc": "Story.313.2",
+    "ConditionId": "C03_05_c",
+    "IsBranch": true,
+    "Reward": 112,
+    "RewardDisplay": "[{\"Tid\":1,\"Qty\":666}]",
+    "ParentStoryId": [
+      "STm03_05"
+    ],
+    "AvgLuaName": "STm03_06_c",
+    "Aim": "Story.313.3",
+    "AvgMotion": "style_19"
+  },
+  "314": {
+    "Id": 314,
+    "StoryId": "STm03_07",
+    "Chapter": 3,
+    "Index": "Story.314.4",
+    "Title": "Story.314.1",
+    "Desc": "Story.314.2",
+    "ConditionId": "C03_06",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_06_a",
+      "STm03_06_b"
+    ],
+    "AvgLuaName": "STm03_07",
+    "Aim": "Story.314.3",
+    "AvgMotion": "style_19"
+  },
+  "315": {
+    "Id": 315,
+    "StoryId": "STm03_08",
+    "Chapter": 3,
+    "Index": "Story.315.4",
+    "Title": "Story.315.1",
+    "Desc": "Story.315.2",
+    "ConditionId": "C03_07",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_07"
+    ],
+    "AvgLuaName": "STm03_08",
+    "Aim": "Story.315.3",
+    "AvgMotion": "style_19"
+  },
+  "316": {
+    "Id": 316,
+    "StoryId": "STm03_09",
+    "Chapter": 3,
+    "Index": "Story.316.4",
+    "Title": "Story.316.1",
+    "Desc": "Story.316.2",
+    "ConditionId": "C03_08",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "STm03_08"
+    ],
+    "AvgLuaName": "STm03_09",
+    "Aim": "Story.316.3",
+    "AvgMotion": "style_19"
+  },
+  "317": {
+    "Id": 317,
+    "StoryId": "STm03_10",
+    "Chapter": 3,
+    "Index": "Story.317.4",
+    "Title": "Story.317.1",
+    "Desc": "Story.317.2",
+    "ConditionId": "CBA03_09",
+    "Reward": 102,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":30}]",
+    "ParentStoryId": [
+      "BAm03_09"
+    ],
+    "AvgLuaName": "STm03_10",
+    "Aim": "Story.317.3",
+    "AvgMotion": "style_19"
+  },
+  "318": {
+    "Id": 318,
+    "StoryId": "STm03_11",
+    "Chapter": 3,
+    "Index": "Story.318.4",
+    "Title": "Story.318.1",
+    "Desc": "Story.318.2",
+    "ConditionId": "C03_10",
+    "Reward": 104,
+    "RewardDisplay": "[{\"Tid\":2,\"Qty\":50}]",
+    "ParentStoryId": [
+      "STm03_10"
+    ],
+    "AvgLuaName": "STm03_11",
+    "Aim": "Story.318.3",
+    "IsLast": true,
+    "AvgMotion": "style_19"
   }
 }

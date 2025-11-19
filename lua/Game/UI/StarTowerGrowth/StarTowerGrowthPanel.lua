@@ -1,24 +1,31 @@
 local StarTowerGrowthPanel = class("StarTowerGrowthPanel", BasePanel)
-
 StarTowerGrowthPanel._bAddToBackHistory = false
-
 StarTowerGrowthPanel._tbDefine = {
-    {sPrefabPath = "StarTowerGrowth/StarTowerGrowthPanel.prefab", sCtrlName = "Game.UI.StarTowerGrowth.StarTowerGrowthCtrl"}
+{sPrefabPath = "StarTowerGrowth/StarTowerGrowthPanel.prefab", sCtrlName = "Game.UI.StarTowerGrowth.StarTowerGrowthCtrl"}
 }
--------------------- local function --------------------
+StarTowerGrowthPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function StarTowerGrowthPanel:Awake()
+StarTowerGrowthPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerGrowthPanel:OnEnable()
+
+StarTowerGrowthPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function StarTowerGrowthPanel:OnAfterEnter()
+
+StarTowerGrowthPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function StarTowerGrowthPanel:OnDisable()
+
+StarTowerGrowthPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function StarTowerGrowthPanel:OnDestroy()
+
+StarTowerGrowthPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function StarTowerGrowthPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return StarTowerGrowthPanel
+

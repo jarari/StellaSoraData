@@ -1,26 +1,32 @@
-
-
 local VampireFateCardInfoPanel = class("VampireFateCardInfoPanel", BasePanel)
 VampireFateCardInfoPanel._bIsMainPanel = false
 VampireFateCardInfoPanel._bAddToBackHistory = false
-
 VampireFateCardInfoPanel._tbDefine = {
-    {sPrefabPath = "VampireLevelSelect/VampireFateCardInfoPanel.prefab", sCtrlName = "Game.UI.VampireLevelSelect.VampireFateCardInfo.VampireFateCardInfoCtrl"}
+{sPrefabPath = "VampireLevelSelect/VampireFateCardInfoPanel.prefab", sCtrlName = "Game.UI.VampireLevelSelect.VampireFateCardInfo.VampireFateCardInfoCtrl"}
 }
--------------------- local function --------------------
+VampireFateCardInfoPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function VampireFateCardInfoPanel:Awake()
+VampireFateCardInfoPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function VampireFateCardInfoPanel:OnEnable()
+
+VampireFateCardInfoPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function VampireFateCardInfoPanel:OnAfterEnter()
+
+VampireFateCardInfoPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function VampireFateCardInfoPanel:OnDisable()
+
+VampireFateCardInfoPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function VampireFateCardInfoPanel:OnDestroy()
+
+VampireFateCardInfoPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function VampireFateCardInfoPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return VampireFateCardInfoPanel
+

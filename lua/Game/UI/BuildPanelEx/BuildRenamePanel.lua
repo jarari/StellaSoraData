@@ -1,20 +1,23 @@
--- BuildRenamePanel Panel
-
 local BuildRenamePanel = class("BuildRenamePanel", BasePanel)
--- Panel 定义
 BuildRenamePanel._bIsMainPanel = false
 BuildRenamePanel._tbDefine = {
-    {sPrefabPath = "StarTowerBuild/BuildRenamePanel.prefab", sCtrlName = "Game.UI.BuildPanelEx.BuildRenameCtrl"},
+{sPrefabPath = "StarTowerBuild/BuildRenamePanel.prefab", sCtrlName = "Game.UI.BuildPanelEx.BuildRenameCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function BuildRenamePanel:Awake()
+BuildRenamePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function BuildRenamePanel:OnEnable()
+
+BuildRenamePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BuildRenamePanel:OnDisable()
+
+BuildRenamePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BuildRenamePanel:OnDestroy()
+
+BuildRenamePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return BuildRenamePanel
+

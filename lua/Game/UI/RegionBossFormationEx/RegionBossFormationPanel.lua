@@ -1,25 +1,23 @@
-
 local RegionBossFormationPanel = class("RegionBossFormationPanel", BasePanel)
-
-
-
-
 RegionBossFormationPanel._tbDefine = {
-    {sPrefabPath = "RegionBossFormationEx/RegionBossFormationPanel.prefab", sCtrlName = "Game.UI.RegionBossFormationEx.RegionBossFormationCtrl"},
+{sPrefabPath = "RegionBossFormationEx/RegionBossFormationPanel.prefab", sCtrlName = "Game.UI.RegionBossFormationEx.RegionBossFormationCtrl"}
 }
--------------------- local function --------------------
+RegionBossFormationPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  local nId = (PlayerData.RogueBoss):GetRegionBossId()
+end
 
--------------------- base function --------------------
-function RegionBossFormationPanel:Awake()
-    local nId = PlayerData.RogueBoss:GetRegionBossId()
-   -- CS.AdventureModuleHelper.EnterSelectTeam(AllEnum.WorldMapNodeType.Rogueboss, nId, nil, 0)
+RegionBossFormationPanel.OnEnable = function(self, bPlayFadeIn)
+  -- function num : 0_1
 end
-function RegionBossFormationPanel:OnEnable(bPlayFadeIn)
+
+RegionBossFormationPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function RegionBossFormationPanel:OnDisable()
+
+RegionBossFormationPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function RegionBossFormationPanel:OnDestroy()
-end
--------------------- callback function --------------------
 
 return RegionBossFormationPanel
+

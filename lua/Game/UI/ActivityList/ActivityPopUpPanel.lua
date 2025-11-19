@@ -1,26 +1,31 @@
--- 活动弹窗界面
-
 local ActivityPopUpPanel = class("ActivityPopUpPanel", BasePanel)
 ActivityPopUpPanel._bIsMainPanel = false
-
 ActivityPopUpPanel._tbDefine = {
-    {sPrefabPath = "ActivityList/ActivityPopUpPanel.prefab", sCtrlName = "Game.UI.ActivityList.ActivityPopUpCtrl"}
+{sPrefabPath = "ActivityList/ActivityPopUpPanel.prefab", sCtrlName = "Game.UI.ActivityList.ActivityPopUpCtrl"}
 }
--------------------- local function --------------------
+ActivityPopUpPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function ActivityPopUpPanel:Awake()
+ActivityPopUpPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ActivityPopUpPanel:OnEnable()
+
+ActivityPopUpPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function ActivityPopUpPanel:OnAfterEnter()
-    
+
+ActivityPopUpPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function ActivityPopUpPanel:OnDisable()
+
+ActivityPopUpPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function ActivityPopUpPanel:OnDestroy()
+
+ActivityPopUpPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function ActivityPopUpPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return ActivityPopUpPanel
+

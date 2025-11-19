@@ -1,30 +1,28 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local CharacterStoryPanel = class("CharacterStoryPanel", BasePanel)
-
--- Panel 定义
---[[
-CharacterStoryPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-CharacterStoryPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-CharacterStoryPanel._bAddToBackHistory = true
-CharacterStoryPanel._nSnapshotPrePanel = 0
-local SortingLayerName = require "GameCore.UI.SortingLayerName"
-]]
 CharacterStoryPanel._bIsMainPanel = false
 CharacterStoryPanel._tbDefine = {
-    {sPrefabPath = "CharacterInfoEx/CharacterStoryPanel.prefab", sCtrlName = "Game.UI.CharacterRecord.CharacterStoryCtrl"}
+{sPrefabPath = "CharacterInfoEx/CharacterStoryPanel.prefab", sCtrlName = "Game.UI.CharacterRecord.CharacterStoryCtrl"}
 }
--------------------- local funcion --------------------
+CharacterStoryPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base funcion --------------------
-function CharacterStoryPanel:Awake()
+CharacterStoryPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharacterStoryPanel:OnEnable()
+
+CharacterStoryPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharacterStoryPanel:OnDisable()
+
+CharacterStoryPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function CharacterStoryPanel:OnDestroy()
+
+CharacterStoryPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function CharacterStoryPanel:OnRelease()
-end
--------------------- callback funcion --------------------
+
 return CharacterStoryPanel
+

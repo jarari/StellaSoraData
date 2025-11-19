@@ -1,33 +1,31 @@
--- Panel 模板
-
 local TowerDefenseResultPanel = class("TowerDefenseResultPanel", BasePanel)
 TowerDefenseResultPanel._nSnapshotPrePanel = 1
--- Panel 定义
---[[
-AAAPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-AAAPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-AAAPanel._bIsMainPanel = true
-AAAPanel._bAddToBackHistory = true
-AAAPanel._nSnapshotPrePanel = 0
-AAAPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 TowerDefenseResultPanel._tbDefine = {
-    {sPrefabPath = "Play_TowerDefence/TowerDefenseResultPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseResultCtrl"}
+{sPrefabPath = "Play_TowerDefence/TowerDefenseResultPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseResultCtrl"}
 }
--------------------- local function --------------------
+TowerDefenseResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TowerDefenseResultPanel:Awake()
+TowerDefenseResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TowerDefenseResultPanel:OnEnable()
+
+TowerDefenseResultPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TowerDefenseResultPanel:OnAfterEnter()
+
+TowerDefenseResultPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TowerDefenseResultPanel:OnDisable()
+
+TowerDefenseResultPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TowerDefenseResultPanel:OnDestroy()
+
+TowerDefenseResultPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TowerDefenseResultPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TowerDefenseResultPanel
+

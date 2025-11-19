@@ -1,23 +1,31 @@
-
 local NpcOptionPanel = class("NpcOptionPanel", BasePanel)
 NpcOptionPanel._bIsMainPanel = false
 NpcOptionPanel._tbDefine = {
-    {sPrefabPath = "StarTower/NpcOptionPanel.prefab", sCtrlName = "Game.UI.StarTower.NpcOption.NpcOptionCtrl"}
+{sPrefabPath = "StarTower/NpcOptionPanel.prefab", sCtrlName = "Game.UI.StarTower.NpcOption.NpcOptionCtrl"}
 }
--------------------- local function --------------------
+NpcOptionPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function NpcOptionPanel:Awake()
+NpcOptionPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function NpcOptionPanel:OnEnable()
+
+NpcOptionPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function NpcOptionPanel:OnAfterEnter()
+
+NpcOptionPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function NpcOptionPanel:OnDisable()
+
+NpcOptionPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function NpcOptionPanel:OnDestroy()
+
+NpcOptionPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function NpcOptionPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return NpcOptionPanel
+

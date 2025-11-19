@@ -1,22 +1,24 @@
--- BattlePassUpgradePanel Panel
-
 local BattlePassUpgradePanel = class("BattlePassUpgradePanel", BasePanel)
 BattlePassUpgradePanel._bIsMainPanel = false
-
-BattlePassUpgradePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-
+BattlePassUpgradePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 BattlePassUpgradePanel._tbDefine = {
-    {sPrefabPath = "BattlePass/BattlePassUpgradePanel.prefab", sCtrlName = "Game.UI.BattlePass.BattlePassUpgradeCtrl"},
+{sPrefabPath = "BattlePass/BattlePassUpgradePanel.prefab", sCtrlName = "Game.UI.BattlePass.BattlePassUpgradeCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function BattlePassUpgradePanel:Awake()
+BattlePassUpgradePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function BattlePassUpgradePanel:OnEnable()
+
+BattlePassUpgradePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BattlePassUpgradePanel:OnDisable()
+
+BattlePassUpgradePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BattlePassUpgradePanel:OnDestroy()
+
+BattlePassUpgradePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return BattlePassUpgradePanel
+

@@ -199,6 +199,26 @@
     "Desc": "MailTemplate.3013.3",
     "Type": 1
   },
+  "3014": {
+    "Id": 3014,
+    "Explanation": "游棋保卫战-3天",
+    "Icon": "Icon/Head/head_12501",
+    "Author": "MailTemplate.3014.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.3014.2",
+    "Desc": "MailTemplate.3014.3",
+    "Type": 1
+  },
+  "3015": {
+    "Id": 3015,
+    "Explanation": "攻略纪录大征集-3天",
+    "Icon": "Icon/Head/head_12501",
+    "Author": "MailTemplate.3015.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.3015.2",
+    "Desc": "MailTemplate.3015.3",
+    "Type": 1
+  },
   "4001": {
     "Id": 4001,
     "Explanation": "活动结束补偿邮件",
@@ -217,6 +237,26 @@
     "LetterPaper": "background2",
     "Subject": "MailTemplate.4002.2",
     "Desc": "MailTemplate.4002.3",
+    "Type": 1
+  },
+  "4003": {
+    "Id": 4003,
+    "Explanation": "活动结束补偿邮件",
+    "Icon": "Icon/Head/head_12501",
+    "Author": "MailTemplate.4003.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.4003.2",
+    "Desc": "MailTemplate.4003.3",
+    "Type": 1
+  },
+  "4004": {
+    "Id": 4004,
+    "Explanation": "活动结束补偿邮件",
+    "Icon": "Icon/Head/head_12501",
+    "Author": "MailTemplate.4004.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.4004.2",
+    "Desc": "MailTemplate.4004.3",
     "Type": 1
   },
   "5001": {
@@ -267,6 +307,36 @@
     "LetterPaper": "background2",
     "Subject": "MailTemplate.10003.2",
     "Desc": "MailTemplate.10003.3",
+    "Type": 1
+  },
+  "10101": {
+    "Id": 10101,
+    "Explanation": "第三章剧情活动结束倒计时邮件",
+    "Icon": "Icon/Head/head_npc10201",
+    "Author": "MailTemplate.10101.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.10101.2",
+    "Desc": "MailTemplate.10101.3",
+    "Type": 1
+  },
+  "10102": {
+    "Id": 10102,
+    "Explanation": "第三章剧情活动结束货币转换邮件",
+    "Icon": "Icon/Head/head_npc10201",
+    "Author": "MailTemplate.10102.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.10102.2",
+    "Desc": "MailTemplate.10102.3",
+    "Type": 1
+  },
+  "10103": {
+    "Id": 10103,
+    "Explanation": "第三章剧情活动任务结束未领取邮件",
+    "Icon": "Icon/Head/head_npc10201",
+    "Author": "MailTemplate.10103.1",
+    "LetterPaper": "background2",
+    "Subject": "MailTemplate.10103.2",
+    "Desc": "MailTemplate.10103.3",
     "Type": 1
   },
   "9999": {

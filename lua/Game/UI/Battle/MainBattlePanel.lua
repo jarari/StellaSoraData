@@ -1,46 +1,60 @@
-
 local MainBattlePanel = class("MainBattlePanel", BasePanel)
-local GamepadUIManager = require "GameCore.Module.GamepadUIManager"
-
-
+local GamepadUIManager = require("GameCore.Module.GamepadUIManager")
 MainBattlePanel.OpenMinMap = true
 MainBattlePanel._bAddToBackHistory = false
-MainBattlePanel._tbDefine = 
-{   -- 定义当前 Panel 由哪些 prefab 组成，以及每个 prefab 分别由哪个 ctrl 关联控制
-    { sPrefabPath = "RoguelikeItemTip/RoguelikeItemTipPanel.prefab",        sCtrlName = "Game.UI.RoguelikeItemTips.RoguelikeItemTipsCtrl" },
-    { sPrefabPath = "Battle/BattleDashboard.prefab",                        sCtrlName = "Game.UI.Battle.BattleDashboardCtrl" },
-    { sPrefabPath = "Battle/MainBattleMenu.prefab",                         sCtrlName = "Game.UI.Battle.MainBattleMenuCtrl" },
-    -- { sPrefabPath = "Battle/VirtualJoystickUI/VirtualJoystickUI.prefab",    sCtrlName = "Game.UI.Battle.VirtualJoystickCtrl" },
-    { sPrefabPath = "Battle/AdventureMainUI/AdventureMainUI.prefab",        sCtrlName = "Game.UI.Battle.MainBattleCtrl" },
-    { sPrefabPath = "GuideProloguel/GuideProloguelPanel.prefab",            sCtrlName = "Game.UI.GuideProloguel.GuideProloguelCtrl" },
-    { sPrefabPath = "Battle/AdventureMainUI/BattlePopupTips.prefab",        sCtrlName = "Game.UI.Battle.BattlePopupTipsCtrl" },
-    { sPrefabPath = "Battle/SkillHintIndicators.prefab",                    sCtrlName = "Game.UI.Battle.SkillHintIndicator.HintIndicators" },
-    {
-        sPrefabPath = "Battle/SubSkillDisplay.prefab", 
-        sCtrlName = "Game.UI.Battle.SubSkillDisplay.SubSkillDisplayCtrl"
-    },
+MainBattlePanel._tbDefine = {
+{sPrefabPath = "RoguelikeItemTip/RoguelikeItemTipPanel.prefab", sCtrlName = "Game.UI.RoguelikeItemTips.RoguelikeItemTipsCtrl"}
+, 
+{sPrefabPath = "Battle/BattleDashboard.prefab", sCtrlName = "Game.UI.Battle.BattleDashboardCtrl"}
+, 
+{sPrefabPath = "Battle/MainBattleMenu.prefab", sCtrlName = "Game.UI.Battle.MainBattleMenuCtrl"}
+, 
+{sPrefabPath = "Battle/AdventureMainUI/AdventureMainUI.prefab", sCtrlName = "Game.UI.Battle.MainBattleCtrl"}
+, 
+{sPrefabPath = "GuideProloguel/GuideProloguelPanel.prefab", sCtrlName = "Game.UI.GuideProloguel.GuideProloguelCtrl"}
+, 
+{sPrefabPath = "Battle/AdventureMainUI/BattlePopupTips.prefab", sCtrlName = "Game.UI.Battle.BattlePopupTipsCtrl"}
+, 
+{sPrefabPath = "Battle/SkillHintIndicators.prefab", sCtrlName = "Game.UI.Battle.SkillHintIndicator.HintIndicators"}
+, 
+{sPrefabPath = "Battle/SubSkillDisplay.prefab", sCtrlName = "Game.UI.Battle.SubSkillDisplay.SubSkillDisplayCtrl"}
 }
-function MainBattlePanel:Awake()
-    GamepadUIManager.EnterAdventure()
-    GamepadUIManager.EnableGamepadUI("BattleMenu", {}) -- 菜单和AdventureMainUI ctrl在OnEnable的时候会添加节点
-    self.BattleType = GameEnum.worldLevelType.Mainline
-end
-function MainBattlePanel:OnEnable()
-    local wait = function()
-        coroutine.yield(CS.UnityEngine.WaitForEndOfFrame())
-        EventManager.Hit(EventId.OpenPanel, PanelId.Hud)
-        EventManager.Hit(EventId.ClosePanel, PanelId.MainlineFormation)
-        EventManager.Hit(EventId.ClosePanel, PanelId.RegionBossFormation)
-    end
-    cs_coroutine.start(wait)
-end
-function MainBattlePanel:OnAfterEnter()
-    EventManager.Hit(EventId.SubSkillDisplayInit,self._tbParam[1])
+MainBattlePanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : GamepadUIManager, _ENV
+  (GamepadUIManager.EnterAdventure)()
+  ;
+  (GamepadUIManager.EnableGamepadUI)("BattleMenu", {})
+  self.BattleType = (GameEnum.worldLevelType).Mainline
 end
 
-function MainBattlePanel:OnDisable()
-    GamepadUIManager.DisableGamepadUI("BattleMenu")
-    GamepadUIManager.QuitAdventure()
+MainBattlePanel.OnEnable = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  local wait = function()
+    -- function num : 0_1_0 , upvalues : _ENV
+    (coroutine.yield)(((CS.UnityEngine).WaitForEndOfFrame)())
+    ;
+    (EventManager.Hit)(EventId.OpenPanel, PanelId.Hud)
+    ;
+    (EventManager.Hit)(EventId.ClosePanel, PanelId.MainlineFormation)
+    ;
+    (EventManager.Hit)(EventId.ClosePanel, PanelId.RegionBossFormation)
+  end
+
+  ;
+  (cs_coroutine.start)(wait)
+end
+
+MainBattlePanel.OnAfterEnter = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  (EventManager.Hit)(EventId.SubSkillDisplayInit, (self._tbParam)[1])
+end
+
+MainBattlePanel.OnDisable = function(self)
+  -- function num : 0_3 , upvalues : GamepadUIManager
+  (GamepadUIManager.DisableGamepadUI)("BattleMenu")
+  ;
+  (GamepadUIManager.QuitAdventure)()
 end
 
 return MainBattlePanel
+

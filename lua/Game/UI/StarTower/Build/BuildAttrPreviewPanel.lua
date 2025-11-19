@@ -1,25 +1,31 @@
 local BuildAttrPreviewPanel = class("BuildAttrPreviewPanel", BasePanel)
-
 BuildAttrPreviewPanel._bIsMainPanel = false
 BuildAttrPreviewPanel._tbDefine = {
-    {sPrefabPath = "StarTowerBuild/BuildAttrPreviewPanel.prefab", sCtrlName = "Game.UI.StarTower.Build.BuildAttrPreviewCtrl"}
+{sPrefabPath = "StarTowerBuild/BuildAttrPreviewPanel.prefab", sCtrlName = "Game.UI.StarTower.Build.BuildAttrPreviewCtrl"}
 }
--------------------- local function --------------------
+BuildAttrPreviewPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
+BuildAttrPreviewPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
--------------------- base function --------------------
-function BuildAttrPreviewPanel:Awake()
-    
+BuildAttrPreviewPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function BuildAttrPreviewPanel:OnEnable()
+
+BuildAttrPreviewPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function BuildAttrPreviewPanel:OnAfterEnter()
+
+BuildAttrPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function BuildAttrPreviewPanel:OnDisable()
+
+BuildAttrPreviewPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function BuildAttrPreviewPanel:OnDestroy()
-end
-function BuildAttrPreviewPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return BuildAttrPreviewPanel
+

@@ -1,17 +1,22 @@
--- CraftingPanel Panel
 local CraftingPanel = class("CraftingPanel", BasePanel)
 CraftingPanel._tbDefine = {
-    {sPrefabPath = "Crafting/CraftingPanel.prefab", sCtrlName = "Game.UI.Crafting.CraftingCtrl"},
+{sPrefabPath = "Crafting/CraftingPanel.prefab", sCtrlName = "Game.UI.Crafting.CraftingCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function CraftingPanel:Awake()
+CraftingPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function CraftingPanel:OnEnable()
+
+CraftingPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CraftingPanel:OnDisable()
+
+CraftingPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CraftingPanel:OnDestroy()
+
+CraftingPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return CraftingPanel
+

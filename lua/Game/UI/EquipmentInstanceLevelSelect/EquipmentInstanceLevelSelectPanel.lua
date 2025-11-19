@@ -1,22 +1,26 @@
--- Panel 模板
-
 local EquipmentInstanceLevelSelectPanel = class("EquipmentInstanceLevelSelectPanel", BasePanel)
-
 EquipmentInstanceLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "EquipmentInstanceLevelSelect/EquipmentInstanceLevelSelect.prefab", sCtrlName = "Game.UI.EquipmentInstanceLevelSelect.EquipmentInstanceLevelSelectCtrl"}
+{sPrefabPath = "EquipmentInstanceLevelSelect/EquipmentInstanceLevelSelect.prefab", sCtrlName = "Game.UI.EquipmentInstanceLevelSelect.EquipmentInstanceLevelSelectCtrl"}
 }
--------------------- local function --------------------
+EquipmentInstanceLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function EquipmentInstanceLevelSelectPanel:Awake()
+EquipmentInstanceLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function EquipmentInstanceLevelSelectPanel:OnEnable()
+
+EquipmentInstanceLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function EquipmentInstanceLevelSelectPanel:OnDisable()
+
+EquipmentInstanceLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function EquipmentInstanceLevelSelectPanel:OnDestroy()
+
+EquipmentInstanceLevelSelectPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function EquipmentInstanceLevelSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return EquipmentInstanceLevelSelectPanel
+

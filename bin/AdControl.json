@@ -1,7 +1,7 @@
 {
   "201001": {
     "Id": 201001,
-    "UIAssets": "storyCollection_act_01",
+    "UIAssets": "Advertise/storyCollection_act_01",
     "CtrlName": "StoryCollectionActCtrl",
     "StartTime": "2025-10-20T10:00:00+08:00",
     "JumpTo": [
@@ -10,7 +10,7 @@
   },
   "201002": {
     "Id": 201002,
-    "UIAssets": "infinityTower_act_01",
+    "UIAssets": "Advertise/infinityTower_act_01",
     "CtrlName": "InfinityTowerActCtrl",
     "JumpTo": [
       42
@@ -18,9 +18,24 @@
   },
   "201003": {
     "Id": 201003,
-    "UIAssets": "storyCollection_act_02",
+    "UIAssets": "Advertise/storyCollection_act_02",
     "CtrlName": "StoryCollectionActCtrl",
     "StartTime": "2025-11-11T04:00:00+08:00",
+    "JumpTo": [
+      71
+    ]
+  },
+  "201004": {
+    "Id": 201004,
+    "UIAssets": "_201004/NewTutorials_act_01",
+    "CtrlName": "NewTutorialsActCtrl",
+    "IsMove": true
+  },
+  "201005": {
+    "Id": 201005,
+    "UIAssets": "_201005/storyCollection_act_03",
+    "CtrlName": "StoryCollectionActCtrl",
+    "StartTime": "2025-12-02T12:00:00+08:00",
     "JumpTo": [
       71
     ]

@@ -1,33 +1,30 @@
--- Panel 模板
-
 local VampireLevelSelectPanel = class("VampireLevelSelectPanel", BasePanel)
-
--- Panel 定义
---[[
-VampireLevelSelectPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-VampireLevelSelectPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-VampireLevelSelectPanel._bIsMainPanel = true
-VampireLevelSelectPanel._bAddToBackHistory = true
-VampireLevelSelectPanel._nSnapshotPrePanel = 0
-VampireLevelSelectPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 VampireLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "VampireLevelSelect/VampireLevelSelectPanel.prefab", sCtrlName = "Game.UI.VampireLevelSelect.VampireLevelSelectCtrl"}
+{sPrefabPath = "VampireLevelSelect/VampireLevelSelectPanel.prefab", sCtrlName = "Game.UI.VampireLevelSelect.VampireLevelSelectCtrl"}
 }
--------------------- local function --------------------
+VampireLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function VampireLevelSelectPanel:Awake()
+VampireLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function VampireLevelSelectPanel:OnEnable()
+
+VampireLevelSelectPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function VampireLevelSelectPanel:OnAfterEnter()
+
+VampireLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function VampireLevelSelectPanel:OnDisable()
+
+VampireLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function VampireLevelSelectPanel:OnDestroy()
+
+VampireLevelSelectPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function VampireLevelSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return VampireLevelSelectPanel
+

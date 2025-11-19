@@ -474,5 +474,107 @@
   "SkinPreviewPanel": {
     "Id": "SkinPreviewPanel",
     "Title": "TopBar.SkinPreviewPanel.1"
+  },
+  "CookieBoardPanel": {
+    "Id": "CookieBoardPanel",
+    "Title": "TopBar.CookieBoardPanel.1"
+  },
+  "CookieGamePanel": {
+    "Id": "CookieGamePanel",
+    "Title": "TopBar.CookieGamePanel.1",
+    "EntryId": 400301,
+    "Coin": true,
+    "CoinIds": [
+      73102
+    ]
+  },
+  "CookieQuestPanel": {
+    "Id": "CookieQuestPanel",
+    "Title": "TopBar.CookieQuestPanel.1"
+  },
+  "OurRegimentThemePanel": {
+    "Id": "OurRegimentThemePanel",
+    "Title": "TopBar.OurRegimentThemePanel.1",
+    "Coin": true,
+    "CoinIds": [
+      73102
+    ]
+  },
+  "DreamThemePanel": {
+    "Id": "DreamThemePanel",
+    "Title": "TopBar.DreamThemePanel.1",
+    "Coin": true,
+    "CoinIds": [
+      73103
+    ]
+  },
+  "Shop_10101": {
+    "Id": "Shop_10101",
+    "Title": "TopBar.Shop_10101.1",
+    "Coin": true
+  },
+  "ShopPopup_10101": {
+    "Id": "ShopPopup_10101",
+    "Title": "TopBar.ShopPopup_10101.1",
+    "HideBack": true,
+    "Coin": true
+  },
+  "Shop_10102": {
+    "Id": "Shop_10102",
+    "Title": "TopBar.Shop_10102.1",
+    "Coin": true
+  },
+  "ShopPopup_10102": {
+    "Id": "ShopPopup_10102",
+    "Title": "TopBar.ShopPopup_10102.1",
+    "HideBack": true,
+    "Coin": true
+  },
+  "ActivityLevelsSelectPanel_10101": {
+    "Id": "ActivityLevelsSelectPanel_10101",
+    "Title": "TopBar.ActivityLevelsSelectPanel_10101.1",
+    "Energy": true
+  },
+  "ActivityLevelsSelectPanel_10102": {
+    "Id": "ActivityLevelsSelectPanel_10102",
+    "Title": "TopBar.ActivityLevelsSelectPanel_10102.1",
+    "Energy": true
+  },
+  "Task_10101": {
+    "Id": "Task_10101",
+    "Title": "TopBar.Task_10101.1",
+    "Coin": true,
+    "CoinIds": [
+      73102
+    ]
+  },
+  "Task_10102": {
+    "Id": "Task_10102",
+    "Title": "TopBar.Task_10102.1",
+    "Coin": true,
+    "CoinIds": [
+      73103
+    ]
+  },
+  "BdConvertPanel": {
+    "Id": "BdConvertPanel",
+    "Title": "TopBar.BdConvertPanel.1"
+  },
+  "BdConvertBuildDetail": {
+    "Id": "BdConvertBuildDetail",
+    "Title": "TopBar.BdConvertBuildDetail.1"
+  },
+  "BdConvertBuildPanel": {
+    "Id": "BdConvertBuildPanel",
+    "Title": "TopBar.BdConvertBuildPanel.1"
+  },
+  "MiningGame_400002": {
+    "Id": "MiningGame_400002",
+    "Title": "TopBar.MiningGame_400002.1",
+    "EntryId": 400101
+  },
+  "MiningGameGuidePanel_400002": {
+    "Id": "MiningGameGuidePanel_400002",
+    "Title": "TopBar.MiningGameGuidePanel_400002.1"
   }
 }

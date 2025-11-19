@@ -1,27 +1,33 @@
--- Panel 模板
-
 local LoginRewardPopUpPanel = class("LoginRewardPopUpPanel", BasePanel)
--- Panel 定义
 LoginRewardPopUpPanel._bIsMainPanel = false
 LoginRewardPopUpPanel._tbDefine = {
-    {sPrefabPath = "LoginRewardPopUp/LoginRewardPopUpPanel.prefab", sCtrlName = "Game.UI.Activity.LoginReward.LoginRewardPopUpCtrl"}
+{sPrefabPath = "LoginRewardPopUp/LoginRewardPopUpPanel.prefab", sCtrlName = "Game.UI.Activity.LoginReward.LoginRewardPopUpCtrl"}
 }
--------------------- local function --------------------
+LoginRewardPopUpPanel.Awake = function(self)
+  -- function num : 0_0
+  self.nActId = nil
+  self.actData = nil
+end
 
--------------------- base function --------------------
-function LoginRewardPopUpPanel:Awake()
-    self.nActId = nil
-    self.actData = nil
+LoginRewardPopUpPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function LoginRewardPopUpPanel:OnEnable()
+
+LoginRewardPopUpPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function LoginRewardPopUpPanel:OnAfterEnter()
+
+LoginRewardPopUpPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function LoginRewardPopUpPanel:OnDisable()
+
+LoginRewardPopUpPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function LoginRewardPopUpPanel:OnDestroy()
+
+LoginRewardPopUpPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function LoginRewardPopUpPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return LoginRewardPopUpPanel
+

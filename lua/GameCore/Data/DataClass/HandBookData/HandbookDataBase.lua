@@ -1,35 +1,37 @@
 local HandbookDataBase = class("HandbookDataBase")
-
----@diagnostic disable-next-line: duplicate-set-field
-function HandbookDataBase:ctor(id, unlock)
-    self.nId = id
-    self.tbCfgData = ConfigTable.GetData("Handbook", self.nId)
-    self.nUnlock = unlock
-    if nil == self.tbCfgData then
-        printError("Get handbook data fail!!! id = ".. id)
-        return
-    end
-    
-    self.nIndex = self.tbCfgData.Index
-    self:Init()
+HandbookDataBase.ctor = function(self, id, unlock)
+  -- function num : 0_0 , upvalues : _ENV
+  self.nId = id
+  self.tbCfgData = (ConfigTable.GetData)("Handbook", self.nId)
+  self.nUnlock = unlock
+  if self.tbCfgData == nil then
+    printError("Get handbook data fail!!! id = " .. id)
+    return 
+  end
+  self.nIndex = (self.tbCfgData).Index
+  self:Init()
 end
 
-function HandbookDataBase:UpdateUnlockState(unlock)
-    self.nUnlock = unlock
+HandbookDataBase.UpdateUnlockState = function(self, unlock)
+  -- function num : 0_1
+  self.nUnlock = unlock
 end
 
-function HandbookDataBase:GetType()
-    return self.tbCfgData.Type
+HandbookDataBase.GetType = function(self)
+  -- function num : 0_2
+  return (self.tbCfgData).Type
 end
 
-function HandbookDataBase:GetId()
-    return self.nId
+HandbookDataBase.GetId = function(self)
+  -- function num : 0_3
+  return self.nId
 end
 
-function HandbookDataBase:CheckUnlock()
-    return self.nUnlock == 1
+HandbookDataBase.CheckUnlock = function(self)
+  -- function num : 0_4
+  do return self.nUnlock == 1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-
-
 
 return HandbookDataBase
+

@@ -1,0 +1,44 @@
+{
+  "1": {
+    "Id": 1,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8010301
+  },
+  "2": {
+    "Id": 2,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8011101
+  },
+  "3": {
+    "Id": 3,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8011201
+  },
+  "4": {
+    "Id": 4,
+    "ActivityId": 102001,
+    "GuideType": 2,
+    "ObjectId": 1001
+  },
+  "5": {
+    "Id": 5,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8012701
+  },
+  "6": {
+    "Id": 6,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8013401
+  },
+  "7": {
+    "Id": 7,
+    "ActivityId": 102001,
+    "GuideType": 1,
+    "ObjectId": 8015601
+  }
+}

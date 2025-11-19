@@ -6,92 +6,115 @@
   },
   "2": {
     "Id": 2,
-    "FloorId": 1001,
-    "PackageNum": 6,
-    "Size": 4
+    "FloorId": 1002,
+    "Size": 3
   },
   "3": {
     "Id": 3,
     "FloorId": 1002,
-    "Size": 3
+    "PackageNum": 4,
+    "Size": 4
   },
   "4": {
     "Id": 4,
-    "FloorId": 1002,
-    "PackageNum": 4,
-    "Size": 4
+    "FloorId": 1003,
+    "Size": 3
   },
   "5": {
     "Id": 5,
     "FloorId": 1003,
-    "Size": 3
-  },
-  "6": {
-    "Id": 6,
-    "FloorId": 1003,
     "PackageNum": 2,
     "Size": 4
   },
+  "6": {
+    "Id": 6,
+    "FloorId": 1004,
+    "Size": 3,
+    "PackagePathsGroupId": 101
+  },
   "7": {
     "Id": 7,
-    "FloorId": 1004,
+    "FloorId": 1005,
     "Size": 3,
     "PackagePathsGroupId": 101
   },
   "8": {
     "Id": 8,
-    "FloorId": 1004,
-    "PackageNum": 4,
+    "FloorId": 1005,
+    "PackageNum": 3,
     "Size": 4,
     "PackagePathsGroupId": 102
   },
   "9": {
     "Id": 9,
-    "FloorId": 1005,
+    "FloorId": 1006,
     "Size": 3,
-    "PackagePathsGroupId": 101
+    "RhythmlTime": 40,
+    "PreRange": 50,
+    "PostRange": 50
   },
   "10": {
     "Id": 10,
-    "FloorId": 1005,
-    "PackageNum": 3,
-    "Size": 4,
-    "PackagePathsGroupId": 102
+    "FloorId": 1006,
+    "PackageNum": 2,
+    "Size": 3,
+    "RhythmlTime": 60,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "11": {
     "Id": 11,
     "FloorId": 1006,
+    "PackageNum": 4,
     "Size": 3,
-    "RhythmlTime": 1
+    "RhythmlTime": 68,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "12": {
     "Id": 12,
-    "FloorId": 1006,
-    "PackageNum": 4,
-    "Size": 4
+    "FloorId": 1007,
+    "Size": 3,
+    "RhythmlTime": 60,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "13": {
     "Id": 13,
     "FloorId": 1007,
-    "Size": 3
+    "PackageNum": 3,
+    "Size": 4,
+    "RhythmlTime": 75,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "14": {
     "Id": 14,
-    "FloorId": 1007,
-    "PackageNum": 3,
-    "Size": 4
+    "FloorId": 1008,
+    "Size": 3,
+    "PackagePathsGroupId": 101,
+    "RhythmlTime": 60,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "15": {
     "Id": 15,
     "FloorId": 1008,
-    "Size": 3,
-    "PackagePathsGroupId": 101
+    "PackageNum": 4,
+    "Size": 4,
+    "PackagePathsGroupId": 102,
+    "RhythmlTime": 68,
+    "PreRange": 35,
+    "PostRange": 35
   },
   "16": {
     "Id": 16,
     "FloorId": 1008,
-    "PackageNum": 4,
+    "PackageNum": 7,
     "Size": 4,
-    "PackagePathsGroupId": 102
+    "PackagePathsGroupId": 102,
+    "RhythmlTime": 75,
+    "PreRange": 35,
+    "PostRange": 35
   }
 }

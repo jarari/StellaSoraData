@@ -1,22 +1,23 @@
-
 local StarTowerResultPanel = class("StarTowerResultPanel", BasePanel)
-
 StarTowerResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 StarTowerResultPanel._tbDefine = {
-    {sPrefabPath = "StarTower/StarTowerResultPanel.prefab", sCtrlName = "Game.UI.StarTower.StarTowerResultCtrl"}
+{sPrefabPath = "StarTower/StarTowerResultPanel.prefab", sCtrlName = "Game.UI.StarTower.StarTowerResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+StarTowerResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function StarTowerResultPanel:Awake()
+StarTowerResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerResultPanel:OnEnable()
+
+StarTowerResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function StarTowerResultPanel:OnDisable()
+
+StarTowerResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function StarTowerResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return StarTowerResultPanel
+

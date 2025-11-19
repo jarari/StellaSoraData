@@ -1,26 +1,23 @@
--- TransitionPanel
 local TransitionPanel = class("TransitionPanel", BasePanel)
-TransitionPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+TransitionPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 TransitionPanel._bAddToBackHistory = false
--- Panel 定义
---[[
-TransitionPanel._bIsMainPanel = true
-TransitionPanel._nSnapshotPrePanel = 0
-]]
 TransitionPanel._tbDefine = {
-    {sPrefabPath = "TransitionEx/TransitionPanel.prefab", sCtrlName = "Game.UI.TransitionEx.TransitionCtrl"},
+{sPrefabPath = "TransitionEx/TransitionPanel.prefab", sCtrlName = "Game.UI.TransitionEx.TransitionCtrl"}
 }
-
-function TransitionPanel:Awake()
-    self.STATUS = AllEnum.TransitionStatus.OutAnimDone
+TransitionPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.STATUS = (AllEnum.TransitionStatus).OutAnimDone
 end
 
-function TransitionPanel:ChangeStatus(nStatus)
-    self.STATUS = nStatus
+TransitionPanel.ChangeStatus = function(self, nStatus)
+  -- function num : 0_1
+  self.STATUS = nStatus
 end
 
-function TransitionPanel:GetTransitionStatus()
-    return self.STATUS
+TransitionPanel.GetTransitionStatus = function(self)
+  -- function num : 0_2
+  return self.STATUS
 end
 
 return TransitionPanel
+

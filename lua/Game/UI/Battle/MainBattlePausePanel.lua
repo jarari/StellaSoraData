@@ -1,20 +1,23 @@
--- MainBattlePausePanel Panel
-
 local MainBattlePausePanel = class("MainBattlePausePanel", BasePanel)
--- Panel 定义
 MainBattlePausePanel._bIsMainPanel = false
 MainBattlePausePanel._tbDefine = {
-    {sPrefabPath = "Battle/MainBattlePausePanel.prefab", sCtrlName = "Game.UI.Battle.MainBattlePauseCtrl"},
+{sPrefabPath = "Battle/MainBattlePausePanel.prefab", sCtrlName = "Game.UI.Battle.MainBattlePauseCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function MainBattlePausePanel:Awake()
+MainBattlePausePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function MainBattlePausePanel:OnEnable()
+
+MainBattlePausePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MainBattlePausePanel:OnDisable()
+
+MainBattlePausePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function MainBattlePausePanel:OnDestroy()
+
+MainBattlePausePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return MainBattlePausePanel
+

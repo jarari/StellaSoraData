@@ -1,26 +1,29 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local ExchangeCodePanel = class("ExchangeCodePanel", BasePanel)
-
--- Panel 定义
 ExchangeCodePanel._bIsMainPanel = false
--- ExchangeCodePanel._nSnapshotPrePanel=1
-ExchangeCodePanel._sSortingLayerName=AllEnum.SortingLayerName.UI
-
+ExchangeCodePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI
 ExchangeCodePanel._tbDefine = {
-    {sPrefabPath = "ExchangeCode/ExchangeCodePanel.prefab", sCtrlName = "Game.UI.ExchangeCode.ExchangeCodeCtrl"}
+{sPrefabPath = "ExchangeCode/ExchangeCodePanel.prefab", sCtrlName = "Game.UI.ExchangeCode.ExchangeCodeCtrl"}
 }
--------------------- local funcion --------------------
+ExchangeCodePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base funcion --------------------
-function ExchangeCodePanel:Awake()
+ExchangeCodePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ExchangeCodePanel:OnEnable()
+
+ExchangeCodePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ExchangeCodePanel:OnDisable()
+
+ExchangeCodePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function ExchangeCodePanel:OnDestroy()
+
+ExchangeCodePanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function ExchangeCodePanel:OnRelease()
-end
--------------------- callback funcion --------------------
+
 return ExchangeCodePanel
+

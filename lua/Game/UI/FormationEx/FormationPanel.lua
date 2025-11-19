@@ -1,31 +1,31 @@
-
 local FormationPanel = class("FormationPanel", BasePanel)
-
-
-
-
 FormationPanel._tbDefine = {
-    {sPrefabPath = "MainlineFormationEx/MainlineFormationScenePanel.prefab", sCtrlName = "Game.UI.FormationEx.FormationCtrl"},
+{sPrefabPath = "MainlineFormationEx/MainlineFormationScenePanel.prefab", sCtrlName = "Game.UI.FormationEx.FormationCtrl"}
 }
--------------------- local function --------------------
+FormationPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  (EventManager.Add)("EnterModule", self, self.OnEvent_EnterModule)
+end
 
--------------------- base function --------------------
-function FormationPanel:Awake()
-    --local nId = PlayerData.Mainline:GetSelectId()
-    --CS.AdventureModuleHelper.EnterSelectTeam(AllEnum.WorldMapNodeType.Mainline, nId, nil, 0)
-    EventManager.Add("EnterModule", self, self.OnEvent_EnterModule)
+FormationPanel.OnEnable = function(self, bPlayFadeIn)
+  -- function num : 0_1
 end
-function FormationPanel:OnEnable(bPlayFadeIn)
+
+FormationPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FormationPanel:OnDisable()
+
+FormationPanel.OnDestroy = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  (EventManager.Remove)("EnterModule", self, self.OnEvent_EnterModule)
 end
-function FormationPanel:OnDestroy()
-    EventManager.Remove("EnterModule", self, self.OnEvent_EnterModule)
+
+FormationPanel.OnEvent_EnterModule = function(self, moduleMgr, sExitModuleName, sEnterModuleName)
+  -- function num : 0_4
+  if sEnterModuleName == "AdventureModuleScene" then
+    self.bAddBuild = false
+  end
 end
--------------------- callback function --------------------
-function FormationPanel:OnEvent_EnterModule(moduleMgr, sExitModuleName, sEnterModuleName)
-    if sEnterModuleName == "AdventureModuleScene" then
-        self.bAddBuild = false
-    end
-end
+
 return FormationPanel
+

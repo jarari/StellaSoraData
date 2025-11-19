@@ -115,5 +115,59 @@
     "Title": "StorySetSection.100403.1",
     "Desc": "StorySetSection.100403.2",
     "AVGId": "STsp_04_03"
+  },
+  "100501": {
+    "Id": 100501,
+    "ChapterId": 1005,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100501.1",
+    "Desc": "StorySetSection.100501.2",
+    "AVGId": "STsp_05_01"
+  },
+  "100502": {
+    "Id": 100502,
+    "ChapterId": 1005,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100502.1",
+    "Desc": "StorySetSection.100502.2",
+    "AVGId": "STsp_05_02"
+  },
+  "100503": {
+    "Id": 100503,
+    "ChapterId": 1005,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100503.1",
+    "Desc": "StorySetSection.100503.2",
+    "AVGId": "STsp_05_03"
+  },
+  "100601": {
+    "Id": 100601,
+    "ChapterId": 1006,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100601.1",
+    "Desc": "StorySetSection.100601.2",
+    "AVGId": "STsp_06_01"
+  },
+  "100602": {
+    "Id": 100602,
+    "ChapterId": 1006,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100602.1",
+    "Desc": "StorySetSection.100602.2",
+    "AVGId": "STsp_06_02"
+  },
+  "100603": {
+    "Id": 100603,
+    "ChapterId": 1006,
+    "RewardItem1Tid": 2,
+    "RewardItem1Qty": 30,
+    "Title": "StorySetSection.100603.1",
+    "Desc": "StorySetSection.100603.2",
+    "AVGId": "STsp_06_03"
   }
 }

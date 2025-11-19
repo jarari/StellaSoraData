@@ -1,34 +1,32 @@
--- Panel 模板
-
 local TowerDefenseLevelDetailPanel = class("TowerDefenseLevelDetailPanel", BasePanel)
 TowerDefenseLevelDetailPanel._bIsMainPanel = true
 TowerDefenseLevelDetailPanel._bAddToBackHistory = true
--- Panel 定义
---[[
-TowerDefenseLevelDetailPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-TowerDefenseLevelDetailPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-TowerDefenseLevelDetailPanel._bIsMainPanel = true
-TowerDefenseLevelDetailPanel._bAddToBackHistory = true
-TowerDefenseLevelDetailPanel._nSnapshotPrePanel = 0
-TowerDefenseLevelDetailPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 TowerDefenseLevelDetailPanel._tbDefine = {
-    {sPrefabPath = "Play_TowerDefence/TowerDefenseLevelDetailPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseLevelDetailCtrl"}
+{sPrefabPath = "Play_TowerDefence/TowerDefenseLevelDetailPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseLevelDetailCtrl"}
 }
--------------------- local function --------------------
+TowerDefenseLevelDetailPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TowerDefenseLevelDetailPanel:Awake()
+TowerDefenseLevelDetailPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TowerDefenseLevelDetailPanel:OnEnable()
+
+TowerDefenseLevelDetailPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TowerDefenseLevelDetailPanel:OnAfterEnter()
+
+TowerDefenseLevelDetailPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TowerDefenseLevelDetailPanel:OnDisable()
+
+TowerDefenseLevelDetailPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TowerDefenseLevelDetailPanel:OnDestroy()
+
+TowerDefenseLevelDetailPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TowerDefenseLevelDetailPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TowerDefenseLevelDetailPanel
+

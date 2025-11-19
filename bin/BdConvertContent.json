@@ -1,0 +1,54 @@
+{
+  "101": {
+    "Id": 101,
+    "ConvertConditionList": [
+      103,
+      403,
+      502
+    ],
+    "MaxSub": 1,
+    "Icon": "UI_Activity/_500001/SpriteAtlas/icon_collection_hard_s",
+    "BasicReward": "{\"73201\":600,\"82004\":120,\"82001\":120}",
+    "BasicRewardPreview": [
+      73201,
+      82001,
+      82004
+    ],
+    "DoubleCheckMinLevel": 15,
+    "Des": "BdConvertContent.101.1"
+  },
+  "102": {
+    "Id": 102,
+    "ConvertConditionList": [
+      102,
+      402,
+      501
+    ],
+    "MaxSub": 3,
+    "Icon": "UI_Activity/_500001/SpriteAtlas/icon_collection_hard_a",
+    "BasicReward": "{\"73201\":400,\"82001\":40,\"82004\":40}",
+    "BasicRewardPreview": [
+      73201,
+      82001,
+      82004
+    ],
+    "DoubleCheckMinLevel": 15,
+    "Des": "BdConvertContent.102.1"
+  },
+  "103": {
+    "Id": 103,
+    "ConvertConditionList": [
+      101,
+      601
+    ],
+    "MaxSub": 6,
+    "Icon": "UI_Activity/_500001/SpriteAtlas/icon_collection_hard_b",
+    "BasicReward": "{\"73201\":200,\"1\":200000}",
+    "BasicRewardPreview": [
+      73201,
+      1
+    ],
+    "DoubleCheckMinLevel": 15,
+    "Des": "BdConvertContent.103.1"
+  }
+}

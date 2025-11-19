@@ -121,6 +121,12 @@
     "Param1": "3",
     "Param2": "11131001"
   },
+  "10082": {
+    "Id": 10082,
+    "QuestType": 16,
+    "QuestDes": "LevelQuestTarget.10082.1",
+    "Param1": "3"
+  },
   "14401011": {
     "Id": 14401011,
     "QuestType": 8,
@@ -272,18 +278,14 @@
   },
   "13401021": {
     "Id": 13401021,
-    "QuestType": 9,
+    "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13401021.1",
-    "Param1": "9",
-    "Param5": [
-      "Attack_Strengthen_P02_1",
-      "Attack_Strengthen_P02_2",
-      "Attack_Strengthen_P02P06_3"
-    ]
+    "Param1": "8",
+    "Param2": "1230066"
   },
   "13401031": {
     "Id": 13401031,
-    "QuestType": 14,
+    "QuestType": 8,
     "QuestDes": "LevelQuestTarget.13401031.1",
     "Param1": "1",
     "Param2": "13440000"
@@ -292,15 +294,15 @@
     "Id": 13401032,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13401032.1",
-    "Param1": "4",
-    "Param2": "1230011"
+    "Param1": "9",
+    "Param2": "1230067"
   },
   "13401041": {
     "Id": 13401041,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13401041.1",
     "Param1": "12",
-    "Param2": "1230012"
+    "Param2": "1230068"
   },
   "13401051": {
     "Id": 13401051,
@@ -315,16 +317,13 @@
   },
   "13402021": {
     "Id": 13402021,
-    "QuestType": 15,
+    "QuestType": 16,
     "QuestDes": "LevelQuestTarget.13402021.1",
-    "Param1": "150",
-    "Param5": [
-      "134503001"
-    ]
+    "Param1": "6"
   },
   "13402031": {
     "Id": 13402031,
-    "QuestType": 14,
+    "QuestType": 8,
     "QuestDes": "LevelQuestTarget.13402031.1",
     "Param1": "1",
     "Param2": "13440000"
@@ -333,15 +332,15 @@
     "Id": 13402032,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13402032.1",
-    "Param1": "4",
-    "Param2": "1230011"
+    "Param1": "9",
+    "Param2": "1230071"
   },
   "13402041": {
     "Id": 13402041,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13402041.1",
     "Param1": "12",
-    "Param2": "1230012"
+    "Param2": "1230078"
   },
   "13402051": {
     "Id": 13402051,
@@ -349,67 +348,81 @@
   },
   "13403011": {
     "Id": 13403011,
-    "QuestType": 14,
-    "QuestDes": "LevelQuestTarget.13403011.1",
-    "Param1": "1",
-    "Param2": "13440000"
-  },
-  "13403021": {
-    "Id": 13403021,
     "QuestType": 8,
-    "QuestDes": "LevelQuestTarget.13403021.1",
+    "QuestDes": "LevelQuestTarget.13403011.1",
     "Param1": "1",
     "Param2": "13432000"
   },
+  "13403021": {
+    "Id": 13403021,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13403021.1",
+    "Param1": "6",
+    "Param2": "1230072"
+  },
   "13403022": {
     "Id": 13403022,
-    "QuestType": 1,
+    "QuestType": 8,
     "QuestDes": "LevelQuestTarget.13403022.1",
-    "Param1": "6",
-    "Param2": "1230011"
+    "Param1": "1",
+    "Param2": "13440000"
   },
   "13403031": {
     "Id": 13403031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13403031.1",
-    "Param1": "9",
-    "Param2": "1230012"
+    "Param1": "1",
+    "Param2": "1230073"
   },
   "13403041": {
     "Id": 13403041,
-    "QuestDes": "LevelQuestTarget.13403041.1"
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13403041.1",
+    "Param1": "4",
+    "Param2": "1230074"
+  },
+  "13403051": {
+    "Id": 13403051,
+    "QuestDes": "LevelQuestTarget.13403051.1"
   },
   "13404011": {
     "Id": 13404011,
-    "QuestType": 14,
-    "QuestDes": "LevelQuestTarget.13404011.1",
-    "Param1": "1",
-    "Param2": "13440000"
-  },
-  "13404021": {
-    "Id": 13404021,
     "QuestType": 8,
-    "QuestDes": "LevelQuestTarget.13404021.1",
+    "QuestDes": "LevelQuestTarget.13404011.1",
     "Param1": "1",
     "Param2": "13432000"
   },
+  "13404021": {
+    "Id": 13404021,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13404021.1",
+    "Param1": "2",
+    "Param2": "1230075"
+  },
   "13404022": {
     "Id": 13404022,
-    "QuestType": 1,
+    "QuestType": 8,
     "QuestDes": "LevelQuestTarget.13404022.1",
-    "Param1": "6",
-    "Param2": "1230011"
+    "Param1": "1",
+    "Param2": "13440000"
   },
   "13404031": {
     "Id": 13404031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.13404031.1",
-    "Param1": "9",
-    "Param2": "1230012"
+    "Param1": "1",
+    "Param2": "1230076"
   },
   "13404041": {
     "Id": 13404041,
-    "QuestDes": "LevelQuestTarget.13404041.1"
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13404041.1",
+    "Param1": "4",
+    "Param2": "1230077"
+  },
+  "13404051": {
+    "Id": 13404051,
+    "QuestDes": "LevelQuestTarget.13404051.1"
   },
   "11901011": {
     "Id": 11901011,
@@ -785,14 +798,14 @@
     "Id": 12501022,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12501022.1",
-    "Param1": "4",
+    "Param1": "3",
     "Param2": "1230036"
   },
   "12501031": {
     "Id": 12501031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12501031.1",
-    "Param1": "12",
+    "Param1": "9",
     "Param2": "1230037"
   },
   "12501041": {
@@ -804,7 +817,10 @@
     "QuestType": 8,
     "QuestDes": "LevelQuestTarget.12502011.1",
     "Param1": "1",
-    "Param2": "12531000"
+    "Param2": "12531000",
+    "Param5": [
+      "1"
+    ]
   },
   "12502021": {
     "Id": 12502021,
@@ -824,7 +840,7 @@
     "Id": 12502031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12502031.1",
-    "Param1": "12",
+    "Param1": "9",
     "Param2": "1230039"
   },
   "12502041": {
@@ -849,14 +865,14 @@
     "Id": 12503022,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12503022.1",
-    "Param1": "4",
+    "Param1": "3",
     "Param2": "1230040"
   },
   "12503031": {
     "Id": 12503031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12503031.1",
-    "Param1": "7",
+    "Param1": "9",
     "Param2": "1230041"
   },
   "12503041": {
@@ -881,19 +897,329 @@
     "Id": 12504022,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12504022.1",
-    "Param1": "1",
-    "Param2": "1230041"
+    "Param1": "2",
+    "Param2": "1230042"
   },
   "12504031": {
     "Id": 12504031,
     "QuestType": 1,
     "QuestDes": "LevelQuestTarget.12504031.1",
-    "Param1": "2",
-    "Param2": "1230042"
+    "Param1": "3",
+    "Param2": "1230043"
   },
   "12504041": {
     "Id": 12504041,
     "QuestDes": "LevelQuestTarget.12504041.1"
+  },
+  "14901011": {
+    "Id": 14901011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14901011.1",
+    "Param1": "1",
+    "Param2": "14931000"
+  },
+  "14901021": {
+    "Id": 14901021,
+    "QuestType": 9,
+    "QuestDes": "LevelQuestTarget.14901021.1",
+    "Param1": "10",
+    "Param5": [
+      "Atk1_Strength",
+      "Atk2_Strength",
+      "Atk3_Strength",
+      "Atk4_Strength",
+      "Atk5_Strength"
+    ]
+  },
+  "14901022": {
+    "Id": 14901022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14901022.1",
+    "Param1": "8",
+    "Param2": "1230079"
+  },
+  "14901031": {
+    "Id": 14901031,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14901031.1",
+    "Param1": "1",
+    "Param2": "14940000"
+  },
+  "14901032": {
+    "Id": 14901032,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14901032.1",
+    "Param1": "3",
+    "Param2": "1230080"
+  },
+  "14901041": {
+    "Id": 14901041,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14901041.1",
+    "Param1": "12",
+    "Param2": "1230081"
+  },
+  "14901051": {
+    "Id": 14901051,
+    "QuestDes": "LevelQuestTarget.14901051.1"
+  },
+  "14902011": {
+    "Id": 14902011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14902011.1",
+    "Param1": "1",
+    "Param2": "14931000"
+  },
+  "14902021": {
+    "Id": 14902021,
+    "QuestType": 15,
+    "QuestDes": "LevelQuestTarget.14902021.1",
+    "Param1": "30",
+    "Param5": [
+      "149310002",
+      "149310401"
+    ]
+  },
+  "14902022": {
+    "Id": 14902022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14902022.1",
+    "Param1": "8",
+    "Param2": "1230082"
+  },
+  "14902031": {
+    "Id": 14902031,
+    "QuestType": 14,
+    "QuestDes": "LevelQuestTarget.14902031.1",
+    "Param1": "1",
+    "Param2": "14940000"
+  },
+  "14902032": {
+    "Id": 14902032,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14902032.1",
+    "Param1": "3",
+    "Param2": "1230083"
+  },
+  "14902041": {
+    "Id": 14902041,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14902041.1",
+    "Param1": "12",
+    "Param2": "1230084"
+  },
+  "14902051": {
+    "Id": 14902051,
+    "QuestDes": "LevelQuestTarget.14902051.1"
+  },
+  "14903011": {
+    "Id": 14903011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14903011.1",
+    "Param1": "1",
+    "Param2": "14932000"
+  },
+  "14903021": {
+    "Id": 14903021,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14903021.1",
+    "Param1": "3",
+    "Param2": "1230085"
+  },
+  "14903022": {
+    "Id": 14903022,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14903022.1",
+    "Param1": "1",
+    "Param2": "14940000"
+  },
+  "14903031": {
+    "Id": 14903031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14903031.1",
+    "Param1": "3",
+    "Param2": "1230086"
+  },
+  "14903041": {
+    "Id": 14903041,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14903041.1",
+    "Param1": "6",
+    "Param2": "1230087"
+  },
+  "14903051": {
+    "Id": 14903051,
+    "QuestDes": "LevelQuestTarget.14903051.1"
+  },
+  "14904011": {
+    "Id": 14904011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14904011.1",
+    "Param1": "1",
+    "Param2": "14932000"
+  },
+  "14904021": {
+    "Id": 14904021,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14904021.1",
+    "Param1": "3",
+    "Param2": "1230088"
+  },
+  "14904022": {
+    "Id": 14904022,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.14904022.1",
+    "Param1": "1",
+    "Param2": "14940000"
+  },
+  "14904031": {
+    "Id": 14904031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14904031.1",
+    "Param1": "3",
+    "Param2": "1230089"
+  },
+  "14904041": {
+    "Id": 14904041,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.14904041.1",
+    "Param1": "6",
+    "Param2": "1230090"
+  },
+  "14904051": {
+    "Id": 14904051,
+    "QuestDes": "LevelQuestTarget.14904051.1"
+  },
+  "13301011": {
+    "Id": 13301011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.13301011.1",
+    "Param1": "1",
+    "Param2": "13331001"
+  },
+  "13301021": {
+    "Id": 13301021,
+    "QuestType": 14,
+    "QuestDes": "LevelQuestTarget.13301021.1",
+    "Param1": "1",
+    "Param2": "13340000"
+  },
+  "13301022": {
+    "Id": 13301022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13301022.1",
+    "Param1": "3",
+    "Param2": "1230052"
+  },
+  "13301031": {
+    "Id": 13301031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13301031.1",
+    "Param1": "5",
+    "Param2": "1230053"
+  },
+  "13301041": {
+    "Id": 13301041,
+    "QuestDes": "LevelQuestTarget.13301041.1"
+  },
+  "13302011": {
+    "Id": 13302011,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.13302011.1",
+    "Param1": "1",
+    "Param2": "13331001",
+    "Param5": [
+      "1"
+    ]
+  },
+  "13302021": {
+    "Id": 13302021,
+    "QuestType": 14,
+    "QuestDes": "LevelQuestTarget.13302021.1",
+    "Param1": "1",
+    "Param2": "13340000"
+  },
+  "13302022": {
+    "Id": 13302022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13302022.1",
+    "Param1": "3",
+    "Param2": "1230054"
+  },
+  "13302031": {
+    "Id": 13302031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13302031.1",
+    "Param1": "5",
+    "Param2": "1230055"
+  },
+  "13302041": {
+    "Id": 13302041,
+    "QuestDes": "LevelQuestTarget.13302041.1"
+  },
+  "13303011": {
+    "Id": 13303011,
+    "QuestType": 14,
+    "QuestDes": "LevelQuestTarget.13303011.1",
+    "Param1": "1",
+    "Param2": "13340000"
+  },
+  "13303021": {
+    "Id": 13303021,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.13303021.1",
+    "Param1": "1",
+    "Param2": "13332000"
+  },
+  "13303022": {
+    "Id": 13303022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13303022.1",
+    "Param1": "2",
+    "Param2": "1230056"
+  },
+  "13303031": {
+    "Id": 13303031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13303031.1",
+    "Param1": "3",
+    "Param2": "1230057"
+  },
+  "13303041": {
+    "Id": 13303041,
+    "QuestDes": "LevelQuestTarget.13303041.1"
+  },
+  "13304011": {
+    "Id": 13304011,
+    "QuestType": 14,
+    "QuestDes": "LevelQuestTarget.13304011.1",
+    "Param1": "1",
+    "Param2": "13340000"
+  },
+  "13304021": {
+    "Id": 13304021,
+    "QuestType": 8,
+    "QuestDes": "LevelQuestTarget.13304021.1",
+    "Param1": "1",
+    "Param2": "13332000"
+  },
+  "13304022": {
+    "Id": 13304022,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13304022.1",
+    "Param1": "2",
+    "Param2": "1230058"
+  },
+  "13304031": {
+    "Id": 13304031,
+    "QuestType": 1,
+    "QuestDes": "LevelQuestTarget.13304031.1",
+    "Param1": "3",
+    "Param2": "1230059"
+  },
+  "13304041": {
+    "Id": 13304041,
+    "QuestDes": "LevelQuestTarget.13304041.1"
   },
   "121010101": {
     "Id": 121010101,

@@ -1,22 +1,23 @@
-
 local StarTowerBuildSavePanel = class("StarTowerBuildSavePanel", BasePanel)
-
 StarTowerBuildSavePanel._bAddToBackHistory = false
-
--- Panel 定义
 StarTowerBuildSavePanel._tbDefine = {
-    {sPrefabPath = "StarTowerBuild/StarTowerBuildSavePanel.prefab", sCtrlName = "Game.UI.StarTower.Build.StarTowerBuildSaveCtrl"}
+{sPrefabPath = "StarTowerBuild/StarTowerBuildSavePanel.prefab", sCtrlName = "Game.UI.StarTower.Build.StarTowerBuildSaveCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+StarTowerBuildSavePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function StarTowerBuildSavePanel:Awake()
+StarTowerBuildSavePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerBuildSavePanel:OnEnable()
+
+StarTowerBuildSavePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function StarTowerBuildSavePanel:OnDisable()
+
+StarTowerBuildSavePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function StarTowerBuildSavePanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return StarTowerBuildSavePanel
+

@@ -43,7 +43,7 @@
     "LuxuryPrice": 19000,
     "LuxuryShowPrice": "₩ 19,000",
     "LuxuryBonusLevel": 10,
-    "LuxuryTid": 101002,
+    "LuxuryTid": 101007,
     "LuxuryQty": 1,
     "PremiumProductId": "battlepass.58",
     "PremiumPrice": 11000,
@@ -51,10 +51,10 @@
     "ComplementaryProductId": "battlepass.50",
     "ComplementaryPrice": 9900,
     "ComplementaryShowPrice": "₩ 9,900",
-    "ComplementaryTid": 101003,
+    "ComplementaryTid": 101008,
     "ComplementaryQty": 1,
     "OriginShowPrice": "₩ 20,900",
-    "Cover": 13203,
+    "Cover": 10703,
     "PremiumShowItems": [
       199000,
       199001,
@@ -63,8 +63,8 @@
       199007
     ],
     "LuxuryShowItems": [
-      199004,
-      199005,
+      199008,
+      199009,
       199006
     ],
     "OutfitPackageShowItem": 86005

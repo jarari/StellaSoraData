@@ -360,16 +360,20 @@
     ],
     "FirstHalfPoolId": 1105,
     "FHAffixId": [
+      81050,
+      81010,
       81001,
       9989
     ],
-    "FHBossId": 8150230,
+    "FHBossId": 8250230,
     "SecondHalfPoolId": 1086,
     "SHAffixId": [
+      81040,
+      81050,
       81001,
       9989
     ],
-    "SHBossId": 8170100,
+    "SHBossId": 8270100,
     "SpecialEnemySetId": "[[100599,100]]",
     "TreasureSetId": "[[100699,100]]"
   },
@@ -380,18 +384,22 @@
       7,
       5
     ],
-    "FirstHalfPoolId": 1055,
+    "FirstHalfPoolId": 1135,
     "FHAffixId": [
+      81020,
+      81050,
       81001,
       9989
     ],
-    "FHBossId": 8150240,
-    "SecondHalfPoolId": 1096,
+    "FHBossId": 8250200,
+    "SecondHalfPoolId": 1156,
     "SHAffixId": [
+      81020,
+      81010,
       81001,
       9989
     ],
-    "SHBossId": 8170160,
+    "SHBossId": 8250630,
     "SpecialEnemySetId": "[[105599,100]]",
     "TreasureSetId": "[[105699,100]]"
   },
@@ -402,18 +410,22 @@
       7,
       5
     ],
-    "FirstHalfPoolId": 1025,
+    "FirstHalfPoolId": 1175,
     "FHAffixId": [
+      81040,
+      81020,
       81001,
       9989
     ],
-    "FHBossId": 8150230,
-    "SecondHalfPoolId": 1086,
+    "FHBossId": 8250220,
+    "SecondHalfPoolId": 1186,
     "SHAffixId": [
+      81040,
+      81050,
       81001,
       9989
     ],
-    "SHBossId": 8170100,
+    "SHBossId": 8270130,
     "SpecialEnemySetId": "[[102599,100]]",
     "TreasureSetId": "[[102699,100]]"
   },
@@ -426,16 +438,20 @@
     ],
     "FirstHalfPoolId": 1095,
     "FHAffixId": [
+      81020,
+      81040,
       81001,
       9989
     ],
-    "FHBossId": 8150220,
+    "FHBossId": 8250220,
     "SecondHalfPoolId": 1056,
     "SHAffixId": [
+      81020,
+      81010,
       81001,
       9989
     ],
-    "SHBossId": 8170160,
+    "SHBossId": 8270160,
     "SpecialEnemySetId": "[[101599,100]]",
     "TreasureSetId": "[[101699,100]]"
   },
@@ -448,16 +464,20 @@
     ],
     "FirstHalfPoolId": 1075,
     "FHAffixId": [
+      81060,
+      81020,
       81001,
       9989
     ],
-    "FHBossId": 8150230,
+    "FHBossId": 8250230,
     "SecondHalfPoolId": 1056,
     "SHAffixId": [
+      81060,
+      81030,
       81001,
       9989
     ],
-    "SHBossId": 8170160,
+    "SHBossId": 8270160,
     "SpecialEnemySetId": "[[104599,100]]",
     "TreasureSetId": "[[104699,100]]"
   },
@@ -470,16 +490,20 @@
     ],
     "FirstHalfPoolId": 1005,
     "FHAffixId": [
+      81030,
+      81060,
       81001,
       9989
     ],
-    "FHBossId": 8150220,
+    "FHBossId": 8250220,
     "SecondHalfPoolId": 1096,
     "SHAffixId": [
+      81030,
+      81020,
       81001,
       9989
     ],
-    "SHBossId": 8150630,
+    "SHBossId": 8250630,
     "SpecialEnemySetId": "[[103599,100]]",
     "TreasureSetId": "[[103699,100]]"
   },
@@ -492,16 +516,20 @@
     ],
     "FirstHalfPoolId": 1085,
     "FHAffixId": [
+      81040,
+      81030,
       81001,
       9989
     ],
-    "FHBossId": 8150610,
+    "FHBossId": 8250610,
     "SecondHalfPoolId": 1026,
     "SHAffixId": [
+      81040,
+      81060,
       81001,
       9989
     ],
-    "SHBossId": 8170130,
+    "SHBossId": 8270130,
     "SpecialEnemySetId": "[[100599,100]]",
     "TreasureSetId": "[[100699,100]]"
   },
@@ -514,16 +542,20 @@
     ],
     "FirstHalfPoolId": 1075,
     "FHAffixId": [
+      81010,
+      81040,
       81001,
       9989
     ],
-    "FHBossId": 8150230,
+    "FHBossId": 8250230,
     "SecondHalfPoolId": 1026,
     "SHAffixId": [
+      81010,
+      81050,
       81001,
       9989
     ],
-    "SHBossId": 8170130,
+    "SHBossId": 8270130,
     "SpecialEnemySetId": "[[105599,100]]",
     "TreasureSetId": "[[105699,100]]"
   },
@@ -536,16 +568,20 @@
     ],
     "FirstHalfPoolId": 1055,
     "FHAffixId": [
+      81060,
+      81010,
       81001,
       9989
     ],
-    "FHBossId": 8150240,
+    "FHBossId": 8250240,
     "SecondHalfPoolId": 1076,
     "SHAffixId": [
+      81060,
+      81040,
       81001,
       9989
     ],
-    "SHBossId": 8170160,
+    "SHBossId": 8270160,
     "SpecialEnemySetId": "[[102599,100]]",
     "TreasureSetId": "[[102699,100]]"
   }

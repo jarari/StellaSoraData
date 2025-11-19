@@ -1,22 +1,23 @@
-
 local EquipmentInstanceResultPanel = class("EquipmentInstanceResultPanel", BasePanel)
-
 EquipmentInstanceResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 EquipmentInstanceResultPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.EquipmentInstanceResultCtrl"}
+{sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.EquipmentInstanceResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+EquipmentInstanceResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function EquipmentInstanceResultPanel:Awake()
+EquipmentInstanceResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function EquipmentInstanceResultPanel:OnEnable()
+
+EquipmentInstanceResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function EquipmentInstanceResultPanel:OnDisable()
+
+EquipmentInstanceResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function EquipmentInstanceResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return EquipmentInstanceResultPanel
+

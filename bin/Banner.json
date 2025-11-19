@@ -31,5 +31,39 @@
     "Id": 5,
     "BannerType": 7,
     "bannerName": "banner_l_16"
+  },
+  "6": {
+    "Id": 6,
+    "BannerType": 8,
+    "bannerName": "banner_Vampire_2",
+    "Param1": "2025-11-18T12:00:00+08:00",
+    "Param2": "2025-12-09T03:59:59+08:00",
+    "Param3": "61",
+    "Param4": "15"
+  },
+  "7": {
+    "Id": 7,
+    "BannerType": 8,
+    "bannerName": "banner_bossrush_2",
+    "Param1": "2025-12-01T04:00:00+08:00",
+    "Param2": "2026-01-01T03:00:00+08:00",
+    "Param3": "63",
+    "Param4": "20"
+  },
+  "8": {
+    "Id": 8,
+    "BannerType": 5,
+    "bannerName": "banner_pack_03",
+    "Param1": "2025-11-18T12:00:00+08:00",
+    "Param2": "2025-12-09T10:59:59+08:00",
+    "Param3": "73"
+  },
+  "9": {
+    "Id": 9,
+    "BannerType": 6,
+    "bannerName": "banner_skin_11903",
+    "Param1": "2025-11-18T12:00:00+08:00",
+    "Param2": "2025-12-09T10:59:59+08:00",
+    "Param3": "skin.98.02"
   }
 }

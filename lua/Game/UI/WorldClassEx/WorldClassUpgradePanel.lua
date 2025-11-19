@@ -1,22 +1,24 @@
--- WorldClassUpgradePanel Panel
-
 local WorldClassUpgradePanel = class("WorldClassUpgradePanel", BasePanel)
 WorldClassUpgradePanel._bIsMainPanel = false
-
-WorldClassUpgradePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-
+WorldClassUpgradePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 WorldClassUpgradePanel._tbDefine = {
-    {sPrefabPath = "WorldClassEx/WorldClassUpgradePanel.prefab", sCtrlName = "Game.UI.WorldClassEx.WorldClassUpgradeCtrl"},
+{sPrefabPath = "WorldClassEx/WorldClassUpgradePanel.prefab", sCtrlName = "Game.UI.WorldClassEx.WorldClassUpgradeCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function WorldClassUpgradePanel:Awake()
+WorldClassUpgradePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function WorldClassUpgradePanel:OnEnable()
+
+WorldClassUpgradePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function WorldClassUpgradePanel:OnDisable()
+
+WorldClassUpgradePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function WorldClassUpgradePanel:OnDestroy()
+
+WorldClassUpgradePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return WorldClassUpgradePanel
+

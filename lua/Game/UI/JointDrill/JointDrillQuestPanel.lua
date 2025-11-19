@@ -1,24 +1,31 @@
--- Panel 模板
 local JointDrillQuestPanel = class("JointDrillQuestPanel", BasePanel)
 JointDrillQuestPanel._bIsMainPanel = false
-
 JointDrillQuestPanel._tbDefine = {
-    {sPrefabPath = "Play_JointDrill/JointDrillQuestPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillQuestCtrl"}
+{sPrefabPath = "Play_JointDrill/JointDrillQuestPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillQuestCtrl"}
 }
--------------------- local function --------------------
+JointDrillQuestPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function JointDrillQuestPanel:Awake()
+JointDrillQuestPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function JointDrillQuestPanel:OnEnable()
+
+JointDrillQuestPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function JointDrillQuestPanel:OnAfterEnter()
+
+JointDrillQuestPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function JointDrillQuestPanel:OnDisable()
+
+JointDrillQuestPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function JointDrillQuestPanel:OnDestroy()
+
+JointDrillQuestPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function JointDrillQuestPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return JointDrillQuestPanel
+

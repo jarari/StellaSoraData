@@ -1,18 +1,23 @@
 local FilterPopupPanel = class("FilterPopupPanel", BasePanel)
--- Panel 定义
 FilterPopupPanel._bIsMainPanel = false
 FilterPopupPanel._tbDefine = {
-    {sPrefabPath = "Filter/FilterPopupPanel.prefab", sCtrlName = "Game.UI.Filter.FilterPopupCtrl"},
+{sPrefabPath = "Filter/FilterPopupPanel.prefab", sCtrlName = "Game.UI.Filter.FilterPopupCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function FilterPopupPanel:Awake()
+FilterPopupPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function FilterPopupPanel:OnEnable()
+
+FilterPopupPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function FilterPopupPanel:OnDisable()
+
+FilterPopupPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FilterPopupPanel:OnDestroy()
+
+FilterPopupPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return FilterPopupPanel
+

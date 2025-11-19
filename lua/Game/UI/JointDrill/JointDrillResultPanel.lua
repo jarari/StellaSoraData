@@ -1,24 +1,30 @@
--- Panel 模板
-
 local JointDrillResultPanel = class("JointDrillResultPanel", BasePanel)
-
 JointDrillResultPanel._tbDefine = {
-    {sPrefabPath = "Play_JointDrill/JointDrillResultPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillResultCtrl"}
+{sPrefabPath = "Play_JointDrill/JointDrillResultPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillResultCtrl"}
 }
--------------------- local function --------------------
+JointDrillResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function JointDrillResultPanel:Awake()
+JointDrillResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function JointDrillResultPanel:OnEnable()
+
+JointDrillResultPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function JointDrillResultPanel:OnAfterEnter()
+
+JointDrillResultPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function JointDrillResultPanel:OnDisable()
+
+JointDrillResultPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function JointDrillResultPanel:OnDestroy()
+
+JointDrillResultPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function JointDrillResultPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return JointDrillResultPanel
+

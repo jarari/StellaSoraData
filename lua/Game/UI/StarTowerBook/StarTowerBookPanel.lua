@@ -1,23 +1,31 @@
 local StarTowerBookPanel = class("StarTowerBookPanel", BasePanel)
-
 StarTowerBookPanel._tbDefine = {
-    {sPrefabPath = "StarTowerBook/StarTowerBookPanel.prefab", sCtrlName = "Game.UI.StarTowerBook.StarTowerBookCtrl"}
+{sPrefabPath = "StarTowerBook/StarTowerBookPanel.prefab", sCtrlName = "Game.UI.StarTowerBook.StarTowerBookCtrl"}
 }
--------------------- local function --------------------
+StarTowerBookPanel.Awake = function(self)
+  -- function num : 0_0
+  self.nPanelType = 0
+end
 
--------------------- base function --------------------
-function StarTowerBookPanel:Awake()
-    self.nPanelType = 0
+StarTowerBookPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerBookPanel:OnEnable()
+
+StarTowerBookPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function StarTowerBookPanel:OnAfterEnter()
+
+StarTowerBookPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function StarTowerBookPanel:OnDisable()
+
+StarTowerBookPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function StarTowerBookPanel:OnDestroy()
+
+StarTowerBookPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function StarTowerBookPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return StarTowerBookPanel
+

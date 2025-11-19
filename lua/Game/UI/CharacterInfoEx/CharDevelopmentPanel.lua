@@ -1,18 +1,22 @@
--- CharDevelopmentPanel Panel
 local CharDevelopmentPanel = class("CharDevelopmentPanel", BasePanel)
--- Panel 定义
 CharDevelopmentPanel._tbDefine = {
-    {sPrefabPath = "CharacterInfoEx/CharDevelopmentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharDevelopmentPanel"},
+{sPrefabPath = "CharacterInfoEx/CharDevelopmentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharDevelopmentPanel"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function CharDevelopmentPanel:Awake()
+CharDevelopmentPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function CharDevelopmentPanel:OnEnable()
+
+CharDevelopmentPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharDevelopmentPanel:OnDisable()
+
+CharDevelopmentPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharDevelopmentPanel:OnDestroy()
+
+CharDevelopmentPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return CharDevelopmentPanel
+

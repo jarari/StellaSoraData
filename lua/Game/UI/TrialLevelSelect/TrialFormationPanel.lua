@@ -1,20 +1,22 @@
 local TrialFormationPanel = class("TrialFormationPanel", BasePanel)
-
 TrialFormationPanel._tbDefine = {
-    {sPrefabPath = "Play_TrialLevelSelect/TrialFormationScenePanel.prefab", sCtrlName = "Game.UI.TrialLevelSelect.TrialFormationCtrl"},
+{sPrefabPath = "Play_TrialLevelSelect/TrialFormationScenePanel.prefab", sCtrlName = "Game.UI.TrialLevelSelect.TrialFormationCtrl"}
 }
--------------------- local function --------------------
+TrialFormationPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TrialFormationPanel:Awake()
+TrialFormationPanel.OnEnable = function(self, bPlayFadeIn)
+  -- function num : 0_1
 end
-function TrialFormationPanel:OnEnable(bPlayFadeIn)
-end
-function TrialFormationPanel:OnDisable()
-end
-function TrialFormationPanel:OnDestroy()
 
+TrialFormationPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
--------------------- callback function --------------------
+
+TrialFormationPanel.OnDestroy = function(self)
+  -- function num : 0_3
+end
 
 return TrialFormationPanel
+

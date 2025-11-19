@@ -39,5 +39,45 @@
     "DesText": "ActivityGroup.10100.1",
     "TabBgRes": "Icon/Banner/tab_activity_swimsuit",
     "TransitionId": 26
+  },
+  "10101": {
+    "Id": 10101,
+    "ActivityGroupType": 1,
+    "ActivityThemeType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndTime": "2025-12-02T04:00:00+08:00",
+    "EnterEndTime": "2025-12-09T11:00:00+08:00",
+    "EnterRes": "Icon/Banner/banner_chap3activity",
+    "PanelId": 187,
+    "PreLimit": 1,
+    "LimitParam": "3",
+    "StartCondType": 71,
+    "StartCondParams": [
+      5
+    ],
+    "Enter": "{\"MiniGame\":[400001,1,131],\"Task\":[1010103,2,351],\"Store\":[1010104,4,189],\"Level\":[1010101,5,186]}",
+    "UIAssetsPrefab": "10101",
+    "CtrlName": "ActivityOurRegimentCtrl",
+    "RewardsShow": [
+      2,
+      214040,
+      116002,
+      502,
+      503,
+      20023,
+      35000,
+      32013,
+      20083,
+      21073,
+      30004,
+      50004,
+      30,
+      33022,
+      33062,
+      33082,
+      1
+    ],
+    "DesText": "ActivityGroup.10101.1",
+    "TabBgRes": "Icon/Banner/tab_activity_chap3activity"
   }
 }

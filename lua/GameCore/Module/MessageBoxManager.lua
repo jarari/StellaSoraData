@@ -1,234 +1,157 @@
 local MessageBoxManager = {}
-local objMessageBoxPanel = nil
-local objPopupTipsPanel = nil
-local objSideBannerPanel = nil
-local objOrderWaitPanel = nil
-
-local function OnEvent_Open(_, mapMsg, sLanguageId)
-    if type(mapMsg) == "string" then -- lua用的飘字内容简化输入
-        mapMsg = {
-            nType = AllEnum.MessageBox.Tips,
-            bPositive = false,
-            sContent = mapMsg,
-        }
-    elseif mapMsg == true then -- 场景触发的飘字提示事件特殊处理
-        mapMsg = {
-            nType = AllEnum.MessageBox.Tips,
-            bPositive = true,
-            sContent = ConfigTable.GetUIText(sLanguageId),
-        }
+local objMessageBoxPanel, objPopupTipsPanel, objSideBannerPanel, objOrderWaitPanel = nil, nil, nil, nil
+local OnEvent_Open = function(_, mapMsg, sLanguageId)
+  -- function num : 0_0 , upvalues : _ENV, objPopupTipsPanel, objMessageBoxPanel
+  if type(mapMsg) == "string" then
+    mapMsg = {nType = (AllEnum.MessageBox).Tips, bPositive = false, sContent = mapMsg}
+  else
+    if mapMsg == true then
+      mapMsg = {nType = (AllEnum.MessageBox).Tips, bPositive = true, sContent = (ConfigTable.GetUIText)(sLanguageId)}
     end
-
-    if mapMsg.nType == AllEnum.MessageBox.Tips then
-        if objPopupTipsPanel == nil then
-            local PopupTipsPanel = require "Game.UI.MessageBoxEx.PopupTipsPanel"
-            objPopupTipsPanel = PopupTipsPanel.new(AllEnum.UI_SORTING_ORDER.MessageBoxOverlay, 0, mapMsg)
-            objPopupTipsPanel:_PreEnter()
-            objPopupTipsPanel:_Enter()
-        else
-            EventManager.Hit("ContinuePopupTips", mapMsg)
-        end
+  end
+  if mapMsg.nType == (AllEnum.MessageBox).Tips then
+    if objPopupTipsPanel == nil then
+      local PopupTipsPanel = require("Game.UI.MessageBoxEx.PopupTipsPanel")
+      objPopupTipsPanel = (PopupTipsPanel.new)((AllEnum.UI_SORTING_ORDER).MessageBoxOverlay, 0, mapMsg)
+      objPopupTipsPanel:_PreEnter()
+      objPopupTipsPanel:_Enter()
     else
+      do
+        ;
+        (EventManager.Hit)("ContinuePopupTips", mapMsg)
         if objMessageBoxPanel == nil then
-            local MessageBoxPanel = require "Game.UI.MessageBoxEx.MessageBoxPanel"
-            objMessageBoxPanel = MessageBoxPanel.new(AllEnum.UI_SORTING_ORDER.MessageBox, 0, mapMsg)
-            objMessageBoxPanel:_PreEnter()
-            objMessageBoxPanel:_Enter()
+          local MessageBoxPanel = require("Game.UI.MessageBoxEx.MessageBoxPanel")
+          objMessageBoxPanel = (MessageBoxPanel.new)((AllEnum.UI_SORTING_ORDER).MessageBox, 0, mapMsg)
+          objMessageBoxPanel:_PreEnter()
+          objMessageBoxPanel:_Enter()
         else
-            EventManager.Hit("ContinueMessageBox", mapMsg)
+          do
+            ;
+            (EventManager.Hit)("ContinueMessageBox", mapMsg)
+          end
         end
+      end
     end
-end
-local function OnEvent_ClosePopupTips(_)
-    if objPopupTipsPanel then
-        objPopupTipsPanel:_PreExit()
-        objPopupTipsPanel:_Exit()
-        objPopupTipsPanel:_Destroy()
-        objPopupTipsPanel = nil
-    end
-end
-local function OnEvent_CloseMessageBox(_)
-    if objMessageBoxPanel then
-        objMessageBoxPanel:_PreExit()
-        objMessageBoxPanel:_Exit()
-        objMessageBoxPanel:_Destroy()
-        objMessageBoxPanel = nil
-    end
+  end
 end
 
------- 侧边栏 ------
-local function OpenSideBannerPanel(mapMsg)
-    local SideBannerPanel = require "Game.UI.SideBanner.SideBannerPanel"
-    objSideBannerPanel = SideBannerPanel.new(AllEnum.UI_SORTING_ORDER.MessageBoxOverlay, 0, mapMsg)
-    objSideBannerPanel:_PreEnter()
-    objSideBannerPanel:_Enter()
+local OnEvent_ClosePopupTips = function(_)
+  -- function num : 0_1 , upvalues : objPopupTipsPanel
+  if objPopupTipsPanel then
+    objPopupTipsPanel:_PreExit()
+    objPopupTipsPanel:_Exit()
+    objPopupTipsPanel:_Destroy()
+    objPopupTipsPanel = nil
+  end
 end
 
-local function OnEvent_CloseSideBanner(_)
-    if objSideBannerPanel then
-        objSideBannerPanel:_PreExit()
-        objSideBannerPanel:_Exit()
-        objSideBannerPanel:_Destroy()
-        objSideBannerPanel = nil
-    end
+local OnEvent_CloseMessageBox = function(_)
+  -- function num : 0_2 , upvalues : objMessageBoxPanel
+  if objMessageBoxPanel then
+    objMessageBoxPanel:_PreExit()
+    objMessageBoxPanel:_Exit()
+    objMessageBoxPanel:_Destroy()
+    objMessageBoxPanel = nil
+  end
 end
 
-local function OnEvent_OpenSideBanner(_, mapMsg)
-    if objSideBannerPanel == nil then
-        OpenSideBannerPanel(mapMsg)
-    else
-        OnEvent_CloseSideBanner()
-        OpenSideBannerPanel(mapMsg)
-    end
+local OpenSideBannerPanel = function(mapMsg)
+  -- function num : 0_3 , upvalues : _ENV, objSideBannerPanel
+  local SideBannerPanel = require("Game.UI.SideBanner.SideBannerPanel")
+  objSideBannerPanel = (SideBannerPanel.new)((AllEnum.UI_SORTING_ORDER).MessageBoxOverlay, 0, mapMsg)
+  objSideBannerPanel:_PreEnter()
+  objSideBannerPanel:_Enter()
 end
 
------- 订单处理中提示 ------
-local function OpenOrderWaitPanel(mapMsg)
-    local OrderWaitPanel = require "Game.UI.Mall.OrderWaitPanel"
-    objOrderWaitPanel = OrderWaitPanel.new(AllEnum.UI_SORTING_ORDER.MessageBox, 0, mapMsg)
-    objOrderWaitPanel:_PreEnter()
-    objOrderWaitPanel:_Enter()
+local OnEvent_CloseSideBanner = function(_)
+  -- function num : 0_4 , upvalues : objSideBannerPanel
+  if objSideBannerPanel then
+    objSideBannerPanel:_PreExit()
+    objSideBannerPanel:_Exit()
+    objSideBannerPanel:_Destroy()
+    objSideBannerPanel = nil
+  end
 end
 
-local function OnEvent_CloseOrderWait(_)
-    if objOrderWaitPanel then
-        objOrderWaitPanel:_PreExit()
-        objOrderWaitPanel:_Exit()
-        objOrderWaitPanel:_Destroy()
-        objOrderWaitPanel = nil
-    end
+local OnEvent_OpenSideBanner = function(_, mapMsg)
+  -- function num : 0_5 , upvalues : objSideBannerPanel, OpenSideBannerPanel, OnEvent_CloseSideBanner
+  if objSideBannerPanel == nil then
+    OpenSideBannerPanel(mapMsg)
+  else
+    OnEvent_CloseSideBanner()
+    OpenSideBannerPanel(mapMsg)
+  end
 end
 
-local function OnEvent_OpenOrderWait(_, mapMsg)
-    if objOrderWaitPanel == nil then
-        OpenOrderWaitPanel(mapMsg)
-    else
-        OnEvent_CloseOrderWait()
-        OpenOrderWaitPanel(mapMsg)
-    end
+local OpenOrderWaitPanel = function(mapMsg)
+  -- function num : 0_6 , upvalues : _ENV, objOrderWaitPanel
+  local OrderWaitPanel = require("Game.UI.Mall.OrderWaitPanel")
+  objOrderWaitPanel = (OrderWaitPanel.new)((AllEnum.UI_SORTING_ORDER).MessageBox, 0, mapMsg)
+  objOrderWaitPanel:_PreEnter()
+  objOrderWaitPanel:_Enter()
 end
 
-local function Uninit(_)
-    EventManager.Remove(EventId.OpenMessageBox, MessageBoxManager, OnEvent_Open)
-    EventManager.Remove(EventId.CloseMessageBox, MessageBoxManager, OnEvent_CloseMessageBox)
-    EventManager.Remove("OpenSideBanner", MessageBoxManager, OnEvent_OpenSideBanner)
-    EventManager.Remove("CloseSideBanner", MessageBoxManager, OnEvent_CloseSideBanner)
-    EventManager.Remove("OpenOrderWait", MessageBoxManager, OnEvent_OpenOrderWait)
-    EventManager.Remove("CloseOrderWait", MessageBoxManager, OnEvent_CloseOrderWait)
-    -- 游戏app关闭
-    EventManager.Remove(EventId.CSLuaManagerShutdown, MessageBoxManager, Uninit)
+local OnEvent_CloseOrderWait = function(_)
+  -- function num : 0_7 , upvalues : objOrderWaitPanel
+  if objOrderWaitPanel then
+    objOrderWaitPanel:_PreExit()
+    objOrderWaitPanel:_Exit()
+    objOrderWaitPanel:_Destroy()
+    objOrderWaitPanel = nil
+  end
 end
 
-function MessageBoxManager.CheckOrderWaitOpen()
-    return objOrderWaitPanel ~= nil
+local OnEvent_OpenOrderWait = function(_, mapMsg)
+  -- function num : 0_8 , upvalues : objOrderWaitPanel, OpenOrderWaitPanel, OnEvent_CloseOrderWait
+  if objOrderWaitPanel == nil then
+    OpenOrderWaitPanel(mapMsg)
+  else
+    OnEvent_CloseOrderWait()
+    OpenOrderWaitPanel(mapMsg)
+  end
 end
 
-function MessageBoxManager.Init()
-    EventManager.Add(EventId.OpenMessageBox, MessageBoxManager, OnEvent_Open)
-    EventManager.Add(EventId.CloseMessageBox, MessageBoxManager, OnEvent_CloseMessageBox)
-    EventManager.Add(EventId.ClosePopupTips, MessageBoxManager, OnEvent_ClosePopupTips)
-    EventManager.Add("OpenSideBanner", MessageBoxManager, OnEvent_OpenSideBanner)
-    EventManager.Add("CloseSideBanner", MessageBoxManager, OnEvent_CloseSideBanner)
-    EventManager.Add("OpenOrderWait", MessageBoxManager, OnEvent_OpenOrderWait)
-    EventManager.Add("CloseOrderWait", MessageBoxManager, OnEvent_CloseOrderWait)
-    -- 游戏app关闭
-    EventManager.Add(EventId.CSLuaManagerShutdown, MessageBoxManager, Uninit)
+local Uninit = function(_)
+  -- function num : 0_9 , upvalues : _ENV, MessageBoxManager, OnEvent_Open, OnEvent_CloseMessageBox, OnEvent_OpenSideBanner, OnEvent_CloseSideBanner, OnEvent_OpenOrderWait, OnEvent_CloseOrderWait, Uninit
+  (EventManager.Remove)(EventId.OpenMessageBox, MessageBoxManager, OnEvent_Open)
+  ;
+  (EventManager.Remove)(EventId.CloseMessageBox, MessageBoxManager, OnEvent_CloseMessageBox)
+  ;
+  (EventManager.Remove)("OpenSideBanner", MessageBoxManager, OnEvent_OpenSideBanner)
+  ;
+  (EventManager.Remove)("CloseSideBanner", MessageBoxManager, OnEvent_CloseSideBanner)
+  ;
+  (EventManager.Remove)("OpenOrderWait", MessageBoxManager, OnEvent_OpenOrderWait)
+  ;
+  (EventManager.Remove)("CloseOrderWait", MessageBoxManager, OnEvent_CloseOrderWait)
+  ;
+  (EventManager.Remove)(EventId.CSLuaManagerShutdown, MessageBoxManager, Uninit)
 end
+
+MessageBoxManager.CheckOrderWaitOpen = function()
+  -- function num : 0_10 , upvalues : objOrderWaitPanel
+  do return objOrderWaitPanel ~= nil end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+MessageBoxManager.Init = function()
+  -- function num : 0_11 , upvalues : _ENV, MessageBoxManager, OnEvent_Open, OnEvent_CloseMessageBox, OnEvent_ClosePopupTips, OnEvent_OpenSideBanner, OnEvent_CloseSideBanner, OnEvent_OpenOrderWait, OnEvent_CloseOrderWait, Uninit
+  (EventManager.Add)(EventId.OpenMessageBox, MessageBoxManager, OnEvent_Open)
+  ;
+  (EventManager.Add)(EventId.CloseMessageBox, MessageBoxManager, OnEvent_CloseMessageBox)
+  ;
+  (EventManager.Add)(EventId.ClosePopupTips, MessageBoxManager, OnEvent_ClosePopupTips)
+  ;
+  (EventManager.Add)("OpenSideBanner", MessageBoxManager, OnEvent_OpenSideBanner)
+  ;
+  (EventManager.Add)("CloseSideBanner", MessageBoxManager, OnEvent_CloseSideBanner)
+  ;
+  (EventManager.Add)("OpenOrderWait", MessageBoxManager, OnEvent_OpenOrderWait)
+  ;
+  (EventManager.Add)("CloseOrderWait", MessageBoxManager, OnEvent_CloseOrderWait)
+  ;
+  (EventManager.Add)(EventId.CSLuaManagerShutdown, MessageBoxManager, Uninit)
+end
+
 return MessageBoxManager
 
--- 弹窗-两个按钮
--- local msg = {
---     nType = AllEnum.MessageBox.Confirm,
---     sContent = "1",
---     sContentSub = "2",
---     sTitle = "", -- 不填默认"提示"
---     sConfirm = "", -- 不填默认"确认"
---     sCancel = "", -- 不填默认"取消"
---     callbackConfirm = function () -- 不填默认直接关闭
---     end,
---     callbackCancel = function () -- 不填默认直接关闭
---     end,
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调
---     bBlur = true, -- 不填默认开启背景模糊
---     bRedCancel = true, -- 使用红色的取消
---     bGrayConfirm = true, -- 不可点击确认
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)
-
--- 弹窗-一个按钮
--- local msg = {
---     nType = AllEnum.MessageBox.Alert,
---     sContent = "1",
---     sContentSub = "2",
---     sTitle = "", -- 不填默认"提示"
---     sConfirm = "", -- 不填默认"确认"
---     callbackConfirm = function () -- 不填默认直接关闭
---     end,
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调
---     bBlur = true, -- 不填默认开启背景模糊
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)
-
--- 飘字提示
--- EventManager.Hit(EventId.OpenMessageBox, sTips)
-
--- 弹窗-说明
--- local msg = {
---     nType = AllEnum.MessageBox.Desc,
---     sContent = "1",
---     sTitle = "", -- 不填默认"说明"
---     sConfirm = "", -- 不填默认"确认"
---     callbackConfirm = function () -- 不填默认直接关闭
---     end,
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调（不填默认执行）
---     bBlur = true, -- 不填默认开启背景模糊
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)
-
--- 弹窗-两个按钮带道具格子
--- local msg = {
---     nType = AllEnum.MessageBox.Item,
---     sContent = "1",
---     sContentSub = "2",
---     tbItem = {
---         [1] = {nTid = 0, nCount = 1},
---     },
---     sTitle = "", -- 不填默认"提示"
---     sConfirm = "", -- 不填默认"确认"
---     sCancel = "", -- 不填默认"取消"
---     callbackConfirm = function () -- 不填默认直接关闭
---     end,
---     callbackCancel = function () -- 不填默认直接关闭
---     end,
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调（不填默认执行）
---     bBlur = true, -- 不填默认开启背景模糊
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)
-
--- 弹窗-道具格子
--- local msg = {
---     nType = AllEnum.MessageBox.ItemList,
---     tbItem = {
---         [1] = {nId = 0, nCount = 1},
---     },
---     sTitle = "", -- 不填默认"奖励预览"
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调（不填默认执行）
---     bBlur = true, -- 不填默认开启背景模糊
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)
-
--- 弹窗-不带确认取消按钮的说明文本
--- local msg = {
---     nType = AllEnum.MessageBox.PlainText,
---     sContent = "1",
---     sTitle = "", -- 不填默认"提示"
---     bDisableSnap = true, -- 不填默认背景可点击
---     bCloseNoHandler = true, -- 点击右上关闭按钮是否执行取消回调（不填默认执行）
---     bBlur = true, -- 不填默认开启背景模糊
--- }
--- EventManager.Hit(EventId.OpenMessageBox, msg)

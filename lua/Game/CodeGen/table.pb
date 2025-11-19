@@ -1,5 +1,5 @@
 
-Êó	
+ˆ¿	
 client_table.protonova.client"Ÿ
 Achievement
 Id (RId
@@ -183,7 +183,7 @@ PreLevelId"
 CompleteRewardPreview (	RCompleteRewardPreview&
 ThreeStarSweep (RThreeStarSweep"Q
 table_ActivityLevelsLevel4
-list (2 .nova.client.ActivityLevelsLevelRlist"Ó
+list (2 .nova.client.ActivityLevelsLevelRlist"˛
 ActivityShop
 Id (RId
 Type (RType
@@ -196,7 +196,10 @@ PreLevelId"
 CurrencyItemId	 (RCurrencyItemId&
 ExchangeItemId
  (RExchangeItemId
-Rate (RRate"C
+Rate (RRate.
+OtherExchangeItem1 (ROtherExchangeItem1.
+OtherExchangeItem2 (ROtherExchangeItem2.
+OtherExchangeItem3 (ROtherExchangeItem3"C
 table_ActivityShop-
 list (2.nova.client.ActivityShopRlist"Q
 ActivityShopControl
@@ -275,7 +278,7 @@ RewardQty5
 RewardQty6 (R
 RewardQty6"M
 table_ActivityTaskGroup2
-list (2.nova.client.ActivityTaskGroupRlist"«
+list (2.nova.client.ActivityTaskGroupRlist"ﬂ
 	AdControl
 Id (RId
 DesText (	RDesText
@@ -283,7 +286,8 @@ RewardQty6"M
 CtrlName (	RCtrlName
 	StartTime (	R	StartTime
 JumpTo (RJumpTo"
-RewardsGroup (	RRewardsGroup"=
+RewardsGroup (	RRewardsGroup
+IsMove (RIsMove"=
 table_AdControl*
 list (2.nova.client.AdControlRlist"q
 AddBuffAction
@@ -634,33 +638,87 @@ toDefAmend,
 CritRate (RCritRate
 Hp (RHp"I
 table_BattleThreshold0
-list (2.nova.client.BattleThresholdRlist"j
+list (2.nova.client.BattleThresholdRlist"ß
+	BdConvert
+Id (RId
+
+OptionList (R
+OptionList 
+RewardGroup (RRewardGroup 
+ScoreItemId (RScoreItemId&
+ScoreItemLimit (RScoreItemLimit"=
+table_BdConvert*
+list (2.nova.client.BdConvertRlist"x
+BdConvertCondition
+Id (RId
+Cond (RCond
+
+CondParams (R
+CondParams
+
+RequestDes (	R
+RequestDes"O
+table_BdConvertCondition3
+list (2.nova.client.BdConvertConditionRlist"ò
+BdConvertContent
+Id (RId2
+ConvertConditionList (RConvertConditionList
+MaxSub (RMaxSub
+Icon (	RIcon 
+BasicReward (	RBasicReward.
+BasicRewardPreview (RBasicRewardPreview0
+DoubleCheckMinLevel (RDoubleCheckMinLevel
+Des (	RDes"K
+table_BdConvertContent1
+list (2.nova.client.BdConvertContentRlist"ñ
+BdConvertControl
+Id (RId
+UIAssets (	RUIAssets
+CtrlName (	RCtrlName 
+RewardsShow (RRewardsShow
+DesText (	RDesText"K
+table_BdConvertControl1
+list (2.nova.client.BdConvertControlRlist"¿
+BdConvertRewardGroup
+Id (RId
+GroupId (RGroupId"
+CompleteCond (RCompleteCond.
+CompleteCondParams (RCompleteCondParams
+Rewards (	RRewards
+Des (	RDes"S
+table_BdConvertRewardGroup5
+list (2!.nova.client.BdConvertRewardGroupRlist"j
 BoardNPC
 Id (RId
 Name (	RName
 Alias (	RAlias$
 DefaultSkinId (RDefaultSkinId";
 table_BoardNPC)
-list (2.nova.client.BoardNPCRlist"◊
+list (2.nova.client.BoardNPCRlist"≥
 BreakOutCharacter
-Id (RId
-Name (	RName
-Model (	RModel
+Id (RId
+CharId (RCharId
+Name (	RName
 
-ModelScale (R
+UnlockCond (R
+UnlockCond"
+UnlockParams (RUnlockParams
+Model (	RModel
+
+ModelScale (R
 ModelScale
-Faction (RFaction
+Faction (RFaction
 
-FCAIAction (	R
+FCAIAction	 (	R
 FCAIAction"
-FCComboGroup (	RFCComboGroup
-SkillId (RSkillId
-MP	 (RMP
-SkillCD
- (RSkillCD
-Icon (	RIcon
-	Attribute (R	Attribute
-Level (RLevel"M
+FCComboGroup
+ (	RFCComboGroup
+SkillId (RSkillId
+MP (RMP
+SkillCD (RSkillCD
+Icon (	RIcon
+	Attribute (R	Attribute
+Level (RLevel"M
 table_BreakOutCharacter2
 list (2.nova.client.BreakOutCharacterRlist"8
 BreakOutEnemySpr
@@ -684,7 +742,32 @@ FCAIAction"
 Counts (RCounts
 	DropParam (R	DropParam"E
 table_BreakOutFloor.
-list (2.nova.client.BreakOutFloorRlist"–
+list (2.nova.client.BreakOutFloorRlist"ù
+BreakOutLevel
+Id (RId
+
+ActivityId (R
+ActivityId
+DayOpen (RDayOpen
+Name (	RName
+IconRes (	RIconRes
+Type (RType
+
+Difficulty (R
+Difficulty
+
+PreLevelId (R
+PreLevelId
+FloorId	 (RFloorId8
+FirstCompleteReward1Tid
+ (RFirstCompleteReward1Tid8
+FirstCompleteReward1Qty (RFirstCompleteReward1Qty
+
+Characters (R
+Characters
+Desc (	RDesc"E
+table_BreakOutLevel.
+list (2.nova.client.BreakOutLevelRlist"–
 Buff
 Id (RId
 Name (	RName$
@@ -1371,7 +1454,7 @@ Reward2Tid
 Reward2Qty (R
 Reward2Qty"A
 table_CookieQuest,
-list (2.nova.client.CookieQuestRlist"”
+list (2.nova.client.CookieQuestRlist"≠
 CookieRhythmlResult
 Id (RId
 
@@ -1382,7 +1465,10 @@ ResultName (	R
 ResultName.
 ResultResourceName (	RResultResourceName
 Range (RRange&
-OtherCondition (	ROtherCondition"Q
+OtherCondition (	ROtherCondition
+AddTime (RAddTime"
+AddScoreType (RAddScoreType
+AddScore	 (RAddScore"Q
 table_CookieRhythmlResult4
 list (2 .nova.client.CookieRhythmlResultRlist"â
 DailyInstance
@@ -1954,12 +2040,16 @@ EffectType6
 EndSceneName (	REndSceneName
 BGM (	RBGM"C
 table_EndSceneType-
-list (2.nova.client.EndSceneTypeRlist"è
+list (2.nova.client.EndSceneTypeRlist"Õ
 	EnergyBuy
 Id (RId&
 CurrencyItemId (RCurrencyItemId(
 CurrencyItemQty (RCurrencyItemQty 
-EnergyValue (REnergyValue"=
+EnergyValue (REnergyValue
+
+PriceGroup (R
+PriceGroup
+	GroupName (	R	GroupName"=
 table_EnergyBuy*
 list (2.nova.client.EnergyBuyRlist"N
 EnumDesc
@@ -2141,7 +2231,7 @@ ATypeGroup
 BTypeUpShowProb (RBTypeUpShowProb.
 BTypeGuaranteeProb (RBTypeGuaranteeProb"C
 table_GachaStorage-
-list (2.nova.client.GachaStorageRlist"Û
+list (2.nova.client.GachaStorageRlist"π
 	GachaType
 Id (RId
 Name (	RName
@@ -2159,7 +2249,10 @@ ATypeGroup
 Title5 (	RTitle5
 Desc6 (	RDesc6
 Desc7 (	RDesc7
-Desc8 (	RDesc8"=
+Desc8 (	RDesc8
+Desc9 (	RDesc9
+Desc10 (	RDesc10
+Desc11 (	RDesc11"=
 table_GachaType*
 list (2.nova.client.GachaTypeRlist"â
 GamepadAction
@@ -2520,7 +2613,7 @@ UnlockCond
 Icon1 (	RIcon1
 Title1 (	RTitle1"M
 table_InteractiveAction2
-list (2.nova.client.InteractiveActionRlist"Ê
+list (2.nova.client.InteractiveActionRlist"Ü
 Item
 Id (RId
 Title (	RTitle
@@ -2534,18 +2627,21 @@ UnlockCond
 
 ExpireType
  (R
-ExpireType
-UseMode (RUseMode
-	UseAction (R	UseAction
-UseArgs (	RUseArgs
-Display (RDisplay
-	DisHaving (R	DisHaving
+ExpireType
 
-ObtainWays (	R
+ExpireDate (	R
+ExpireDate
+UseMode (RUseMode
+	UseAction (R	UseAction
+UseArgs (	RUseArgs
+Display (RDisplay
+	DisHaving (R	DisHaving
+
+ObtainWays (	R
 ObtainWays
-JumpTo (RJumpTo
-Icon (	RIcon
-Icon2 (	RIcon2"3
+JumpTo (RJumpTo
+Icon (	RIcon
+Icon2 (	RIcon2"3
 
 table_Item%
 list (2.nova.client.ItemRlist"Ä
@@ -2634,7 +2730,7 @@ DetailDesc*
 DungeonDelay (RDungeonDelay$
 IntroCutscene (	RIntroCutscene"I
 table_JointDrillFloor0
-list (2.nova.client.JointDrillFloorRlist"’
+list (2.nova.client.JointDrillFloorRlist"√
 JointDrillLevel
 Id (RId
 
@@ -2666,9 +2762,8 @@ LevelImage(
 LevelImageGoing (	RLevelImageGoing
 	BossAffix (R	BossAffix.
 RecommendBuildRank (RRecommendBuildRank 
-RecommendLv (RRecommendLv
-EET (REET
-SubName (	RSubName"I
+RecommendLv (RRecommendLv
+SubName (	RSubName"I
 table_JointDrillLevel0
 list (2.nova.client.JointDrillLevelRlist"ü
 JointDrillQuest
@@ -2697,7 +2792,89 @@ LevelImage(
 AwardItemTid3 (RAwardItemTid3$
 AwardItemNum3 (RAwardItemNum3"G
 table_JointDrillRank/
-list (2.nova.client.JointDrillRankRlist"j
+list (2.nova.client.JointDrillRankRlist"»
+JointDrill_2_Floor
+Id (RId
+FloorId (RFloorId
+	BattleLvs (R	BattleLvs$
+FloorChangeID (RFloorChangeID&
+MaxEnergyValue (RMaxEnergyValue(
+SaveEnergyValue (RSaveEnergyValue0
+TeamSaveEnergyValue (RTeamSaveEnergyValue&
+SaveResilience (RSaveResilience.
+TeamSaveResilience	 (RTeamSaveResilience
+	SceneName
+ (	R	SceneName*
+ConfigPrefabName (	RConfigPrefabName
+Theme (RTheme
+BGM (	RBGM,
+LeaveTriggerEvent (	RLeaveTriggerEvent"
+DungeonDelay (RDungeonDelay$
+IntroCutscene (	RIntroCutscene"O
+table_JointDrill_2_Floor3
+list (2.nova.client.JointDrill_2_FloorRlist"ñ
+JointDrill_2_FloorChange
+Id (RId
+BossID1 (RBossID1
+BossID2 (RBossID2
+BossID3 (RBossID3
+	FloorType (R	FloorType(
+BattleLvsToggle (RBattleLvsToggle4
+BattleLvsToggleParam1 (	RBattleLvsToggleParam1:
+BattleLvsToggleParam1End (	RBattleLvsToggleParam1End4
+BattleLvsToggleParam2	 (	RBattleLvsToggleParam2:
+BattleLvsToggleParam2End
+ (	RBattleLvsToggleParam2End4
+BattleLvsToggleParam3 (	RBattleLvsToggleParam3:
+BattleLvsToggleParam3End (	RBattleLvsToggleParam3End"[
+table_JointDrill_2_FloorChange9
+list (2%.nova.client.JointDrill_2_FloorChangeRlist"Ó
+JointDrill_2_Level
+Id (RId
+
+Difficulty (R
+Difficulty,
+DrillLevelGroupId (RDrillLevelGroupId
+
+PreLevelId (R
+PreLevelId"
+MaxBattleNum (RMaxBattleNum
+FloorId (RFloorId
+
+BattleTime (R
+BattleTime
+HpBarNum (RHpBarNum
+BossId	 (RBossId&
+MonsterGroupId
+ (RMonsterGroupId$
+FirstRRDropId (RFirstRRDropId$
+RewardPreview (	RRewardPreview
+	TimeScore (R	TimeScore 
+ScorePerSec (RScorePerSec
+
+LevelScore (R
+LevelScore 
+BaseHpScore (RBaseHpScore
+
+LevelImage (	R
+LevelImage(
+LevelImageGoing (	RLevelImageGoing
+	BossAffix (R	BossAffix.
+RecommendBuildRank (RRecommendBuildRank 
+RecommendLv (RRecommendLv
+SubName (	RSubName"O
+table_JointDrill_2_Level3
+list (2.nova.client.JointDrill_2_LevelRlist"Õ
+JointDrill_2_MonsterGroup
+Id (RId
+MateId_1 (RMateId1
+MateId_2 (RMateId2
+MateId_3 (RMateId3
+MateId_4 (RMateId4
+MateId_5 (RMateId5
+MateId_6 (RMateId6"]
+table_JointDrill_2_MonsterGroup:
+list (2&.nova.client.JointDrill_2_MonsterGroupRlist"j
 JumpTo
 Id (RId
 Type (RType
@@ -3220,25 +3397,23 @@ Difficulty
 AbilityTitle3 (	RAbilityTitle3"
 AbilityDesc3 (	RAbilityDesc3"E
 table_MonsterManual.
-list (2.nova.client.MonsterManualRlist"ı
+list (2.nova.client.MonsterManualRlist"Õ
 MonsterSkin
 Id (RId$
-MonsterManual (RMonsterManual
-Name (	RName
-Desc (	RDesc
-Model (	RModel(
-RunAnimationSpd (RRunAnimationSpd*
-WalkAnimationSpd (RWalkAnimationSpd
-	BarHeight (R	BarHeight
+MonsterManual (RMonsterManual
+Model (	RModel(
+RunAnimationSpd (RRunAnimationSpd*
+WalkAnimationSpd (RWalkAnimationSpd
+	BarHeight (R	BarHeight
 
-ModelScale	 (R
+ModelScale (R
 ModelScale$
-ColliderScale
- (RColliderScale,
-ForbiddenBehitRot (RForbiddenBehitRot*
-EffectScaleValue (REffectScaleValue,
-HitFxRadialOffset (RHitFxRadialOffset0
-TagEffectScaleValue (RTagEffectScaleValue"A
+ColliderScale (RColliderScale,
+ForbiddenBehitRot	 (RForbiddenBehitRot*
+EffectScaleValue
+ (REffectScaleValue,
+HitFxRadialOffset (RHitFxRadialOffset0
+TagEffectScaleValue (RTagEffectScaleValue"A
 table_MonsterSkin,
 list (2.nova.client.MonsterSkinRlist"Ì
 MonsterTeam
@@ -3252,111 +3427,117 @@ ModelScale$
 Mate6Id (RMate6Id
 Mate7Id	 (RMate7Id"A
 table_MonsterTeam,
-list (2.nova.client.MonsterTeamRlist"ƒ
+list (2.nova.client.MonsterTeamRlist"∞
 MonsterValueTemplete
 Id (RId
 
 TemplateId (R
-TemplateId
-Name (	RName
-Lv (RLv
-Hp (RHp
-Atk (RAtk
-Def (RDef
-CritRate (RCritRate&
-NormalCritRate	 (RNormalCritRate$
-SkillCritRate
- (RSkillCritRate$
-UltraCritRate (RUltraCritRate"
-MarkCritRate (RMarkCritRate&
-SummonCritRate (RSummonCritRate.
-ProjectileCritRate (RProjectileCritRate$
-OtherCritRate (ROtherCritRate&
-CritResistance (RCritResistance
-	CritPower (R	CritPower(
-NormalCritPower (RNormalCritPower&
-SkillCritPower (RSkillCritPower&
-UltraCritPower (RUltraCritPower$
-MarkCritPower (RMarkCritPower(
-SummonCritPower (RSummonCritPower0
-ProjectileCritPower (RProjectileCritPower&
-OtherCritPower (ROtherCritPower
-HitRate (RHitRate
-Evd (REvd
-AtkSpd (RAtkSpd
-	DefPierce (R	DefPierce
-	DefIgnore (R	DefIgnore
-WEP (RWEP
-FEP (RFEP
-SEP  (RSEP
-AEP! (RAEP
-LEP" (RLEP
-DEP# (RDEP
-WEI$ (RWEI
-FEI% (RFEI
-SEI& (RSEI
-AEI' (RAEI
-LEI( (RLEI
-DEI) (RDEI
-WEE* (RWEE
-FEE+ (RFEE
-SEE, (RSEE
-AEE- (RAEE
-LEE. (RLEE
-DEE/ (RDEE
-WER0 (RWER
-FER1 (RFER
-SER2 (RSER
-AER3 (RAER
-LER4 (RLER
-DER5 (RDER
-	Toughness6 (R	Toughness
-Suppress7 (RSuppress
+TemplateId
+Lv (RLv
+Hp (RHp
+Atk (RAtk
+Def (RDef
+CritRate (RCritRate&
+NormalCritRate (RNormalCritRate$
+SkillCritRate	 (RSkillCritRate$
+UltraCritRate
+ (RUltraCritRate"
+MarkCritRate (RMarkCritRate&
+SummonCritRate (RSummonCritRate.
+ProjectileCritRate (RProjectileCritRate$
+OtherCritRate (ROtherCritRate&
+CritResistance (RCritResistance
+	CritPower (R	CritPower(
+NormalCritPower (RNormalCritPower&
+SkillCritPower (RSkillCritPower&
+UltraCritPower (RUltraCritPower$
+MarkCritPower (RMarkCritPower(
+SummonCritPower (RSummonCritPower0
+ProjectileCritPower (RProjectileCritPower&
+OtherCritPower (ROtherCritPower
+HitRate (RHitRate
+Evd (REvd
+AtkSpd (RAtkSpd
+	DefPierce (R	DefPierce
+	DefIgnore (R	DefIgnore
+WEP (RWEP
+FEP (RFEP
+SEP (RSEP
+AEP  (RAEP
+LEP! (RLEP
+DEP" (RDEP
+WEI# (RWEI
+FEI$ (RFEI
+SEI% (RSEI
+AEI& (RAEI
+LEI' (RLEI
+DEI( (RDEI
+WEE) (RWEE
+FEE* (RFEE
+SEE+ (RSEE
+AEE, (RAEE
+LEE- (RLEE
+DEE. (RDEE
+WER/ (RWER
+FER0 (RFER
+SER1 (RSER
+AER2 (RAER
+LER3 (RLER
+DER4 (RDER
+	Toughness5 (R	Toughness
+Suppress6 (RSuppress
 
-RCDMARKDMG8 (R
+RCDMARKDMG7 (R
 RCDMARKDMG"S
 table_MonsterValueTemplete5
-list (2!.nova.client.MonsterValueTempleteRlist"º
+list (2!.nova.client.MonsterValueTempleteRlist"®
 MonsterValueTempleteAdjust
 Id (RId
 
 TemplateId (R
-TemplateId
-Name (	RName
-EET (REET
-WeakEET (RWeakEET
-HpRatio (RHpRatio
-HpFix (RHpFix
-AtkRatio (RAtkRatio
-AtkFix	 (RAtkFix
-WERRatio
- (RWERRatio
-WERFix (RWERFix
-FERRatio (RFERRatio
-FERFix (RFERFix
-SERRatio (RSERRatio
-SERFix (RSERFix
-AERRatio (RAERRatio
-AERFix (RAERFix
-LERRatio (RLERRatio
-LERFix (RLERFix
-DERRatio (RDERRatio
-DERFix (RDERFix&
-ToughnessRatio (RToughnessRatio"
-ToughnessFix (RToughnessFix$
-SuppressRatio (RSuppressRatio 
-SuppressFix (RSuppressFix"_
+TemplateId
+EET (REET
+WeakEET (RWeakEET
+HpRatio (RHpRatio
+HpFix (RHpFix
+AtkRatio (RAtkRatio
+AtkFix (RAtkFix
+WERRatio	 (RWERRatio
+WERFix
+ (RWERFix
+FERRatio (RFERRatio
+FERFix (RFERFix
+SERRatio (RSERRatio
+SERFix (RSERFix
+AERRatio (RAERRatio
+AERFix (RAERFix
+LERRatio (RLERRatio
+LERFix (RLERFix
+DERRatio (RDERRatio
+DERFix (RDERFix&
+ToughnessRatio (RToughnessRatio"
+ToughnessFix (RToughnessFix$
+SuppressRatio (RSuppressRatio 
+SuppressFix (RSuppressFix"_
  table_MonsterValueTempleteAdjust;
-list (2'.nova.client.MonsterValueTempleteAdjustRlist"»
+list (2'.nova.client.MonsterValueTempleteAdjustRlist"
 MonsterValueTempleteModify
 Id (RId
 GroupId (RGroupId
 Lv (RLv
 HpFix (RHpFix
 AtkFix (RAtkFix"
-ToughnessFix (RToughnessFix
+ToughnessFix (RToughnessFix
+DefFix (RDefFix
+WERFix (RWERFix
+FERFix	 (RFERFix
+SERFix
+ (RSERFix
+AERFix (RAERFix
+LERFix (RLERFix
+DERFix (RDERFix
 
-LvUpEffect (	R
+LvUpEffect (	R
 LvUpEffect"_
  table_MonsterValueTempleteModify;
 list (2'.nova.client.MonsterValueTempleteModifyRlist"±
@@ -3956,7 +4137,7 @@ SaleNumber
  (	ROpenTime
 	CloseTime (	R	CloseTime"C
 table_ResidentShop-
-list (2.nova.client.ResidentShopRlist"¢
+list (2.nova.client.ResidentShopRlist"Ü
 ScoreBossAbility
 Id (RId
 Name (	RName
@@ -3965,7 +4146,28 @@ SaleNumber
 IconSource (	R
 IconSource
 EffectID (REffectID
-ScriptID (	RScriptID"K
+ScriptID (	RScriptID
+Param1 (	RParam1
+Param2 (	RParam2
+Param3	 (	RParam3
+Param4
+ (	RParam4
+Param5 (	RParam5
+Param6 (	RParam6
+Param7 (	RParam7
+Param8 (	RParam8
+Param9 (	RParam9
+Param10 (	RParam10
+Value1 (	RValue1
+Value2 (	RValue2
+Value3 (	RValue3
+Value4 (	RValue4
+Value5 (	RValue5
+Value6 (	RValue6
+Value7 (	RValue7
+Value8 (	RValue8
+Value9 (	RValue9
+Value10 (	RValue10"K
 table_ScoreBossAbility1
 list (2.nova.client.ScoreBossAbilityRlist"Œ
 ScoreBossBattleThreshold
@@ -4027,31 +4229,31 @@ IconSource
 	OnceScore (R	OnceScore
 MaxLimit (RMaxLimit"Q
 table_ScoreBossGetControl4
-list (2 .nova.client.ScoreBossGetControlRlist"‰
+list (2 .nova.client.ScoreBossGetControlRlist" 
 ScoreBossLevel
 Id (RId
 FloorId (RFloorId
-	MonsterId (R	MonsterId
-AntiEET (RAntiEET,
-NonDamageScoreGet (RNonDamageScoreGet*
-ScoreBossAbility (RScoreBossAbility0
-ScoreGetSwitchGroup (RScoreGetSwitchGroup
-Episode (	REpisode
-Image	 (	RImage
-BG
- (	RBG$
-SummonLevelUp (RSummonLevelUp"G
+	MonsterId (R	MonsterId,
+NonDamageScoreGet (RNonDamageScoreGet*
+ScoreBossAbility (RScoreBossAbility0
+ScoreGetSwitchGroup (RScoreGetSwitchGroup
+Episode (	REpisode
+Image (	RImage
+BG	 (	RBG$
+SummonLevelUp
+ (RSummonLevelUp"G
 table_ScoreBossLevel/
-list (2.nova.client.ScoreBossLevelRlist"°
+list (2.nova.client.ScoreBossLevelRlist"Ω
 ScoreBossRank
-Id (RId
-	RankLower (R	RankLower$
-AwardItemTid1 (RAwardItemTid1$
-AwardItemNum1 (RAwardItemNum1$
-AwardItemTid2 (RAwardItemTid2$
-AwardItemNum2 (RAwardItemNum2$
-AwardItemTid3 (RAwardItemTid3$
-AwardItemNum3 (RAwardItemNum3"E
+Id (RId
+SeasonId (RSeasonId
+	RankLower (R	RankLower$
+AwardItemTid1 (RAwardItemTid1$
+AwardItemNum1 (RAwardItemNum1$
+AwardItemTid2 (RAwardItemTid2$
+AwardItemNum2 (RAwardItemNum2$
+AwardItemTid3 (RAwardItemTid3$
+AwardItemNum3	 (RAwardItemNum3"E
 table_ScoreBossRank.
 list (2.nova.client.ScoreBossRankRlist"…
 ScoreBossReward
@@ -5010,7 +5212,7 @@ DieSkillId"
 ActionAIPath (	RActionAIPath&
 ParallelAIPath (	RParallelAIPath"Y
 table_TowerDefenceCharacterAI8
-list (2$.nova.client.TowerDefenceCharacterAIRlist"ì
+list (2$.nova.client.TowerDefenceCharacterAIRlist"Ÿ
 TowerDefenseCharacter
 Id (RId
 Name (	RName
@@ -5030,19 +5232,18 @@ DieSkillId"
 SkillId (RSkillId
 SkillCd (RSkillCd 
 CdStartTime (RCdStartTime
-Templete (RTemplete
-CardIcon (	RCardIcon
-Head (	RHead
-	Qportrait (	R	Qportrait"U
+Templete (RTemplete
+Icon (	RIcon"U
 table_TowerDefenseCharacter6
-list (2".nova.client.TowerDefenseCharacterRlist"´
+list (2".nova.client.TowerDefenseCharacterRlist"◊
 TowerDefenseControl
 Id (RId
 UIAssets (	RUIAssets
 CtrlName (	RCtrlName 
 RewardsShow (	RRewardsShow
 DesText (	RDesText
-BGM (	RBGM"Q
+BGM (	RBGM*
+FastEntranceIcon (	RFastEntranceIcon"Q
 table_TowerDefenseControl4
 list (2 .nova.client.TowerDefenseControlRlist"ı
 TowerDefenseFloor
@@ -5149,9 +5350,9 @@ Condition3
 Param4 (	RParam4
 Param5 (	RParam5"U
 table_TowerDefensePotential6
-list (2".nova.client.TowerDefensePotentialRlist"˜
-TowerDefenseQuest
-QuestId (RQuestId"
+list (2".nova.client.TowerDefensePotentialRlist"Ì
+TowerDefenseQuest
+Id (RId"
 QuestGroupId (RQuestGroupId
 	QuestType (R	QuestType
 
@@ -5163,9 +5364,9 @@ QuestParam
 Item2 (RItem2
 Qty2	 (RQty2"M
 table_TowerDefenseQuest2
-list (2.nova.client.TowerDefenseQuestRlist"p
-TowerDefenseQuestGroup
-GroupId (RGroupId
+list (2.nova.client.TowerDefenseQuestRlist"f
+TowerDefenseQuestGroup
+Id (RId
 
 ActivityId (R
 ActivityId

@@ -91552,8 +91552,8 @@
     "Id": "13300001",
     "GroupId": 133,
     "lvl": 1,
-    "Atk": 112,
-    "Hp": 1277,
+    "Atk": 114,
+    "Hp": 782,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91593,8 +91593,8 @@
     "Id": "13300002",
     "GroupId": 133,
     "lvl": 2,
-    "Atk": 145,
-    "Hp": 1659,
+    "Atk": 149,
+    "Hp": 1017,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91634,8 +91634,8 @@
     "Id": "13300003",
     "GroupId": 133,
     "lvl": 3,
-    "Atk": 179,
-    "Hp": 2042,
+    "Atk": 183,
+    "Hp": 1252,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91675,8 +91675,8 @@
     "Id": "13300004",
     "GroupId": 133,
     "lvl": 4,
-    "Atk": 212,
-    "Hp": 2425,
+    "Atk": 217,
+    "Hp": 1486,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91716,8 +91716,8 @@
     "Id": "13300005",
     "GroupId": 133,
     "lvl": 5,
-    "Atk": 246,
-    "Hp": 2808,
+    "Atk": 252,
+    "Hp": 1721,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91757,8 +91757,8 @@
     "Id": "13300006",
     "GroupId": 133,
     "lvl": 6,
-    "Atk": 279,
-    "Hp": 3191,
+    "Atk": 286,
+    "Hp": 1956,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91798,8 +91798,8 @@
     "Id": "13300007",
     "GroupId": 133,
     "lvl": 7,
-    "Atk": 313,
-    "Hp": 3574,
+    "Atk": 320,
+    "Hp": 2190,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91839,8 +91839,8 @@
     "Id": "13300008",
     "GroupId": 133,
     "lvl": 8,
-    "Atk": 346,
-    "Hp": 3957,
+    "Atk": 355,
+    "Hp": 2425,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91880,8 +91880,8 @@
     "Id": "13300009",
     "GroupId": 133,
     "lvl": 9,
-    "Atk": 380,
-    "Hp": 4340,
+    "Atk": 389,
+    "Hp": 2660,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91921,8 +91921,8 @@
     "Id": "13300010",
     "GroupId": 133,
     "lvl": 10,
-    "Atk": 414,
-    "Hp": 4723,
+    "Atk": 423,
+    "Hp": 2895,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -91963,8 +91963,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 10,
-    "Atk": 496,
-    "Hp": 5668,
+    "Atk": 508,
+    "Hp": 3474,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92005,8 +92005,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 11,
-    "Atk": 530,
-    "Hp": 6051,
+    "Atk": 542,
+    "Hp": 3708,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92047,8 +92047,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 12,
-    "Atk": 563,
-    "Hp": 6434,
+    "Atk": 577,
+    "Hp": 3943,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92089,8 +92089,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 13,
-    "Atk": 597,
-    "Hp": 6817,
+    "Atk": 611,
+    "Hp": 4178,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92131,8 +92131,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 14,
-    "Atk": 630,
-    "Hp": 7200,
+    "Atk": 645,
+    "Hp": 4412,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92173,8 +92173,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 15,
-    "Atk": 664,
-    "Hp": 7583,
+    "Atk": 680,
+    "Hp": 4647,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92215,8 +92215,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 16,
-    "Atk": 697,
-    "Hp": 7966,
+    "Atk": 714,
+    "Hp": 4882,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92257,8 +92257,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 17,
-    "Atk": 731,
-    "Hp": 8349,
+    "Atk": 748,
+    "Hp": 5116,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92299,8 +92299,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 18,
-    "Atk": 764,
-    "Hp": 8732,
+    "Atk": 782,
+    "Hp": 5351,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92341,8 +92341,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 19,
-    "Atk": 798,
-    "Hp": 9115,
+    "Atk": 817,
+    "Hp": 5586,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92383,8 +92383,8 @@
     "GroupId": 133,
     "Break": 1,
     "lvl": 20,
-    "Atk": 831,
-    "Hp": 9498,
+    "Atk": 851,
+    "Hp": 5820,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92425,8 +92425,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 20,
-    "Atk": 998,
-    "Hp": 11400,
+    "Atk": 1022,
+    "Hp": 6986,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92467,8 +92467,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 21,
-    "Atk": 1032,
-    "Hp": 11783,
+    "Atk": 1056,
+    "Hp": 7221,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92509,8 +92509,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 22,
-    "Atk": 1065,
-    "Hp": 12166,
+    "Atk": 1090,
+    "Hp": 7456,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92551,8 +92551,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 23,
-    "Atk": 1099,
-    "Hp": 12549,
+    "Atk": 1125,
+    "Hp": 7690,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92593,8 +92593,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 24,
-    "Atk": 1132,
-    "Hp": 12932,
+    "Atk": 1159,
+    "Hp": 7925,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92635,8 +92635,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 25,
-    "Atk": 1166,
-    "Hp": 13315,
+    "Atk": 1193,
+    "Hp": 8160,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92677,8 +92677,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 26,
-    "Atk": 1199,
-    "Hp": 13698,
+    "Atk": 1228,
+    "Hp": 8394,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92719,8 +92719,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 27,
-    "Atk": 1233,
-    "Hp": 14081,
+    "Atk": 1262,
+    "Hp": 8629,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92761,8 +92761,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 28,
-    "Atk": 1266,
-    "Hp": 14464,
+    "Atk": 1296,
+    "Hp": 8864,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92803,8 +92803,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 29,
-    "Atk": 1300,
-    "Hp": 14847,
+    "Atk": 1330,
+    "Hp": 9098,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92845,8 +92845,8 @@
     "GroupId": 133,
     "Break": 2,
     "lvl": 30,
-    "Atk": 1333,
-    "Hp": 15230,
+    "Atk": 1365,
+    "Hp": 9333,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92887,8 +92887,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 30,
-    "Atk": 1600,
-    "Hp": 18281,
+    "Atk": 1638,
+    "Hp": 11203,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92929,8 +92929,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 31,
-    "Atk": 1634,
-    "Hp": 18664,
+    "Atk": 1673,
+    "Hp": 11438,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -92971,8 +92971,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 32,
-    "Atk": 1667,
-    "Hp": 19047,
+    "Atk": 1707,
+    "Hp": 11672,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93013,8 +93013,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 33,
-    "Atk": 1701,
-    "Hp": 19430,
+    "Atk": 1741,
+    "Hp": 11907,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93055,8 +93055,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 34,
-    "Atk": 1735,
-    "Hp": 19814,
+    "Atk": 1775,
+    "Hp": 12142,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93097,8 +93097,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 35,
-    "Atk": 1768,
-    "Hp": 20197,
+    "Atk": 1810,
+    "Hp": 12376,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93139,8 +93139,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 36,
-    "Atk": 1802,
-    "Hp": 20580,
+    "Atk": 1844,
+    "Hp": 12611,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93181,8 +93181,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 37,
-    "Atk": 1835,
-    "Hp": 20963,
+    "Atk": 1878,
+    "Hp": 12846,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93223,8 +93223,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 38,
-    "Atk": 1869,
-    "Hp": 21346,
+    "Atk": 1913,
+    "Hp": 13080,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93265,8 +93265,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 39,
-    "Atk": 1902,
-    "Hp": 21729,
+    "Atk": 1947,
+    "Hp": 13315,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93307,8 +93307,8 @@
     "GroupId": 133,
     "Break": 3,
     "lvl": 40,
-    "Atk": 1936,
-    "Hp": 22112,
+    "Atk": 1981,
+    "Hp": 13550,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93349,8 +93349,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 40,
-    "Atk": 2322,
-    "Hp": 26530,
+    "Atk": 2377,
+    "Hp": 16257,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93391,8 +93391,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 41,
-    "Atk": 2356,
-    "Hp": 26913,
+    "Atk": 2412,
+    "Hp": 16491,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93433,8 +93433,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 42,
-    "Atk": 2389,
-    "Hp": 27296,
+    "Atk": 2446,
+    "Hp": 16726,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93475,8 +93475,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 43,
-    "Atk": 2423,
-    "Hp": 27679,
+    "Atk": 2480,
+    "Hp": 16961,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93517,8 +93517,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 44,
-    "Atk": 2456,
-    "Hp": 28062,
+    "Atk": 2515,
+    "Hp": 17195,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93559,8 +93559,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 45,
-    "Atk": 2490,
-    "Hp": 28445,
+    "Atk": 2549,
+    "Hp": 17430,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93601,8 +93601,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 46,
-    "Atk": 2524,
-    "Hp": 28828,
+    "Atk": 2583,
+    "Hp": 17665,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93643,8 +93643,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 47,
-    "Atk": 2557,
-    "Hp": 29211,
+    "Atk": 2617,
+    "Hp": 17899,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93685,8 +93685,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 48,
-    "Atk": 2591,
-    "Hp": 29594,
+    "Atk": 2652,
+    "Hp": 18134,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93727,8 +93727,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 49,
-    "Atk": 2624,
-    "Hp": 29977,
+    "Atk": 2686,
+    "Hp": 18369,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93769,8 +93769,8 @@
     "GroupId": 133,
     "Break": 4,
     "lvl": 50,
-    "Atk": 2658,
-    "Hp": 30360,
+    "Atk": 2720,
+    "Hp": 18604,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93811,8 +93811,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 50,
-    "Atk": 3190,
-    "Hp": 36437,
+    "Atk": 3265,
+    "Hp": 22327,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93853,8 +93853,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 51,
-    "Atk": 3223,
-    "Hp": 36820,
+    "Atk": 3299,
+    "Hp": 22562,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93895,8 +93895,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 52,
-    "Atk": 3257,
-    "Hp": 37203,
+    "Atk": 3334,
+    "Hp": 22797,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93937,8 +93937,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 53,
-    "Atk": 3290,
-    "Hp": 37586,
+    "Atk": 3368,
+    "Hp": 23032,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -93979,8 +93979,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 54,
-    "Atk": 3324,
-    "Hp": 37969,
+    "Atk": 3402,
+    "Hp": 23266,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94021,8 +94021,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 55,
-    "Atk": 3357,
-    "Hp": 38352,
+    "Atk": 3437,
+    "Hp": 23501,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94063,8 +94063,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 56,
-    "Atk": 3391,
-    "Hp": 38735,
+    "Atk": 3471,
+    "Hp": 23736,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94105,8 +94105,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 57,
-    "Atk": 3424,
-    "Hp": 39118,
+    "Atk": 3505,
+    "Hp": 23970,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94147,8 +94147,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 58,
-    "Atk": 3458,
-    "Hp": 39501,
+    "Atk": 3540,
+    "Hp": 24205,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94189,8 +94189,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 59,
-    "Atk": 3491,
-    "Hp": 39884,
+    "Atk": 3574,
+    "Hp": 24440,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94231,8 +94231,8 @@
     "GroupId": 133,
     "Break": 5,
     "lvl": 60,
-    "Atk": 3525,
-    "Hp": 40267,
+    "Atk": 3608,
+    "Hp": 24674,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94273,8 +94273,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 60,
-    "Atk": 4230,
-    "Hp": 48323,
+    "Atk": 4330,
+    "Hp": 29611,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94315,8 +94315,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 61,
-    "Atk": 4264,
-    "Hp": 48706,
+    "Atk": 4364,
+    "Hp": 29846,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94357,8 +94357,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 62,
-    "Atk": 4297,
-    "Hp": 49089,
+    "Atk": 4399,
+    "Hp": 30080,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94399,8 +94399,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 63,
-    "Atk": 4331,
-    "Hp": 49472,
+    "Atk": 4433,
+    "Hp": 30315,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94441,8 +94441,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 64,
-    "Atk": 4364,
-    "Hp": 49855,
+    "Atk": 4467,
+    "Hp": 30550,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94483,8 +94483,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 65,
-    "Atk": 4398,
-    "Hp": 50238,
+    "Atk": 4502,
+    "Hp": 30784,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94525,8 +94525,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 66,
-    "Atk": 4431,
-    "Hp": 50621,
+    "Atk": 4536,
+    "Hp": 31019,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94567,8 +94567,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 67,
-    "Atk": 4465,
-    "Hp": 51004,
+    "Atk": 4570,
+    "Hp": 31254,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94609,8 +94609,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 68,
-    "Atk": 4498,
-    "Hp": 51387,
+    "Atk": 4605,
+    "Hp": 31488,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94651,8 +94651,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 69,
-    "Atk": 4532,
-    "Hp": 51770,
+    "Atk": 4639,
+    "Hp": 31723,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94693,8 +94693,8 @@
     "GroupId": 133,
     "Break": 6,
     "lvl": 70,
-    "Atk": 4565,
-    "Hp": 52153,
+    "Atk": 4673,
+    "Hp": 31958,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94735,8 +94735,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 70,
-    "Atk": 5478,
-    "Hp": 62583,
+    "Atk": 5608,
+    "Hp": 38349,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94777,8 +94777,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 71,
-    "Atk": 5512,
-    "Hp": 62966,
+    "Atk": 5642,
+    "Hp": 38584,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94819,8 +94819,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 72,
-    "Atk": 5546,
-    "Hp": 63349,
+    "Atk": 5677,
+    "Hp": 38819,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94861,8 +94861,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 73,
-    "Atk": 5579,
-    "Hp": 63732,
+    "Atk": 5711,
+    "Hp": 39053,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94903,8 +94903,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 74,
-    "Atk": 5613,
-    "Hp": 64115,
+    "Atk": 5745,
+    "Hp": 39288,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94945,8 +94945,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 75,
-    "Atk": 5646,
-    "Hp": 64498,
+    "Atk": 5779,
+    "Hp": 39523,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -94987,8 +94987,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 76,
-    "Atk": 5680,
-    "Hp": 64881,
+    "Atk": 5814,
+    "Hp": 39758,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95029,8 +95029,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 77,
-    "Atk": 5713,
-    "Hp": 65264,
+    "Atk": 5848,
+    "Hp": 39992,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95071,8 +95071,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 78,
-    "Atk": 5747,
-    "Hp": 65647,
+    "Atk": 5882,
+    "Hp": 40227,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95113,8 +95113,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 79,
-    "Atk": 5780,
-    "Hp": 66030,
+    "Atk": 5917,
+    "Hp": 40462,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95155,8 +95155,8 @@
     "GroupId": 133,
     "Break": 7,
     "lvl": 80,
-    "Atk": 5814,
-    "Hp": 66413,
+    "Atk": 5951,
+    "Hp": 40696,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95197,8 +95197,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 80,
-    "Atk": 6976,
-    "Hp": 79691,
+    "Atk": 7141,
+    "Hp": 48832,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95239,8 +95239,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 81,
-    "Atk": 7010,
-    "Hp": 80074,
+    "Atk": 7175,
+    "Hp": 49067,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95281,8 +95281,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 82,
-    "Atk": 7043,
-    "Hp": 80457,
+    "Atk": 7209,
+    "Hp": 49302,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95323,8 +95323,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 83,
-    "Atk": 7077,
-    "Hp": 80840,
+    "Atk": 7244,
+    "Hp": 49537,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95365,8 +95365,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 84,
-    "Atk": 7110,
-    "Hp": 81223,
+    "Atk": 7278,
+    "Hp": 49771,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95407,8 +95407,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 85,
-    "Atk": 7144,
-    "Hp": 81606,
+    "Atk": 7312,
+    "Hp": 50006,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95449,8 +95449,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 86,
-    "Atk": 7177,
-    "Hp": 81989,
+    "Atk": 7347,
+    "Hp": 50241,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95491,8 +95491,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 87,
-    "Atk": 7211,
-    "Hp": 82372,
+    "Atk": 7381,
+    "Hp": 50475,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95533,8 +95533,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 88,
-    "Atk": 7244,
-    "Hp": 82755,
+    "Atk": 7415,
+    "Hp": 50710,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95575,8 +95575,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 89,
-    "Atk": 7278,
-    "Hp": 83138,
+    "Atk": 7450,
+    "Hp": 50945,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95617,8 +95617,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 90,
-    "Atk": 7311,
-    "Hp": 83521,
+    "Atk": 7484,
+    "Hp": 51179,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95659,8 +95659,8 @@
     "GroupId": 133,
     "Break": 8,
     "lvl": 91,
-    "Atk": 7311,
-    "Hp": 83521,
+    "Atk": 7484,
+    "Hp": 51179,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95701,7 +95701,7 @@
     "GroupId": 134,
     "lvl": 1,
     "Atk": 114,
-    "Hp": 1319,
+    "Hp": 1315,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95712,7 +95712,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95753,7 +95753,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95783,7 +95783,7 @@
     "GroupId": 134,
     "lvl": 3,
     "Atk": 183,
-    "Hp": 2108,
+    "Hp": 2109,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95794,7 +95794,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95824,7 +95824,7 @@
     "GroupId": 134,
     "lvl": 4,
     "Atk": 217,
-    "Hp": 2503,
+    "Hp": 2504,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95835,7 +95835,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95876,7 +95876,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95906,7 +95906,7 @@
     "GroupId": 134,
     "lvl": 6,
     "Atk": 286,
-    "Hp": 3294,
+    "Hp": 3295,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -95917,7 +95917,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95958,7 +95958,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -95999,7 +95999,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96029,7 +96029,7 @@
     "GroupId": 134,
     "lvl": 9,
     "Atk": 389,
-    "Hp": 4480,
+    "Hp": 4481,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96040,7 +96040,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96081,7 +96081,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96112,7 +96112,7 @@
     "Break": 1,
     "lvl": 10,
     "Atk": 508,
-    "Hp": 5851,
+    "Hp": 5852,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96123,7 +96123,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96165,7 +96165,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96207,7 +96207,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96238,7 +96238,7 @@
     "Break": 1,
     "lvl": 13,
     "Atk": 611,
-    "Hp": 7037,
+    "Hp": 7038,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96249,7 +96249,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96291,7 +96291,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96333,7 +96333,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96364,7 +96364,7 @@
     "Break": 1,
     "lvl": 16,
     "Atk": 714,
-    "Hp": 8223,
+    "Hp": 8224,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96375,7 +96375,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96417,7 +96417,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96448,7 +96448,7 @@
     "Break": 1,
     "lvl": 18,
     "Atk": 782,
-    "Hp": 9014,
+    "Hp": 9015,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96459,7 +96459,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96490,7 +96490,7 @@
     "Break": 1,
     "lvl": 19,
     "Atk": 817,
-    "Hp": 9409,
+    "Hp": 9410,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96501,7 +96501,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96543,7 +96543,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96574,7 +96574,7 @@
     "Break": 2,
     "lvl": 20,
     "Atk": 1022,
-    "Hp": 11768,
+    "Hp": 11769,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96585,7 +96585,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96616,7 +96616,7 @@
     "Break": 2,
     "lvl": 21,
     "Atk": 1056,
-    "Hp": 12163,
+    "Hp": 12164,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96627,7 +96627,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96669,7 +96669,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96700,7 +96700,7 @@
     "Break": 2,
     "lvl": 23,
     "Atk": 1125,
-    "Hp": 12954,
+    "Hp": 12955,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96711,7 +96711,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96753,7 +96753,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96795,7 +96795,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96826,7 +96826,7 @@
     "Break": 2,
     "lvl": 26,
     "Atk": 1228,
-    "Hp": 14140,
+    "Hp": 14141,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96837,7 +96837,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96879,7 +96879,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96910,7 +96910,7 @@
     "Break": 2,
     "lvl": 28,
     "Atk": 1296,
-    "Hp": 14931,
+    "Hp": 14932,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96921,7 +96921,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -96952,7 +96952,7 @@
     "Break": 2,
     "lvl": 29,
     "Atk": 1330,
-    "Hp": 15326,
+    "Hp": 15327,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -96963,7 +96963,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97005,7 +97005,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97036,7 +97036,7 @@
     "Break": 3,
     "lvl": 30,
     "Atk": 1638,
-    "Hp": 18871,
+    "Hp": 18872,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97047,7 +97047,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97089,7 +97089,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97131,7 +97131,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97162,7 +97162,7 @@
     "Break": 3,
     "lvl": 33,
     "Atk": 1741,
-    "Hp": 20057,
+    "Hp": 20058,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97173,7 +97173,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97215,7 +97215,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97246,7 +97246,7 @@
     "Break": 3,
     "lvl": 35,
     "Atk": 1810,
-    "Hp": 20848,
+    "Hp": 20849,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97257,7 +97257,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97288,7 +97288,7 @@
     "Break": 3,
     "lvl": 36,
     "Atk": 1844,
-    "Hp": 21243,
+    "Hp": 21244,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97299,7 +97299,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97341,7 +97341,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97372,7 +97372,7 @@
     "Break": 3,
     "lvl": 38,
     "Atk": 1913,
-    "Hp": 22034,
+    "Hp": 22035,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97383,7 +97383,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97425,7 +97425,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97467,7 +97467,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97509,7 +97509,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97540,7 +97540,7 @@
     "Break": 4,
     "lvl": 41,
     "Atk": 2412,
-    "Hp": 27781,
+    "Hp": 27782,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97551,7 +97551,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97582,7 +97582,7 @@
     "Break": 4,
     "lvl": 42,
     "Atk": 2446,
-    "Hp": 28176,
+    "Hp": 28177,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97593,7 +97593,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97635,7 +97635,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97666,7 +97666,7 @@
     "Break": 4,
     "lvl": 44,
     "Atk": 2515,
-    "Hp": 28967,
+    "Hp": 28968,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97677,7 +97677,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97708,7 +97708,7 @@
     "Break": 4,
     "lvl": 45,
     "Atk": 2549,
-    "Hp": 29362,
+    "Hp": 29363,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97719,7 +97719,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97761,7 +97761,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97792,7 +97792,7 @@
     "Break": 4,
     "lvl": 47,
     "Atk": 2617,
-    "Hp": 30153,
+    "Hp": 30154,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97803,7 +97803,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97845,7 +97845,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97887,7 +97887,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97918,7 +97918,7 @@
     "Break": 4,
     "lvl": 50,
     "Atk": 2720,
-    "Hp": 31339,
+    "Hp": 31340,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97929,7 +97929,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -97960,7 +97960,7 @@
     "Break": 5,
     "lvl": 50,
     "Atk": 3265,
-    "Hp": 37612,
+    "Hp": 37613,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -97971,7 +97971,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98013,7 +98013,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98055,7 +98055,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98086,7 +98086,7 @@
     "Break": 5,
     "lvl": 53,
     "Atk": 3368,
-    "Hp": 38798,
+    "Hp": 38799,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98097,7 +98097,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98139,7 +98139,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98170,7 +98170,7 @@
     "Break": 5,
     "lvl": 55,
     "Atk": 3437,
-    "Hp": 39589,
+    "Hp": 39590,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98181,7 +98181,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98212,7 +98212,7 @@
     "Break": 5,
     "lvl": 56,
     "Atk": 3471,
-    "Hp": 39984,
+    "Hp": 39985,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98223,7 +98223,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98265,7 +98265,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98296,7 +98296,7 @@
     "Break": 5,
     "lvl": 58,
     "Atk": 3540,
-    "Hp": 40775,
+    "Hp": 40776,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98307,7 +98307,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98349,7 +98349,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98391,7 +98391,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98422,7 +98422,7 @@
     "Break": 6,
     "lvl": 60,
     "Atk": 4330,
-    "Hp": 49882,
+    "Hp": 49883,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98433,7 +98433,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98464,7 +98464,7 @@
     "Break": 6,
     "lvl": 61,
     "Atk": 4364,
-    "Hp": 50277,
+    "Hp": 50278,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98475,7 +98475,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98517,7 +98517,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98548,7 +98548,7 @@
     "Break": 6,
     "lvl": 63,
     "Atk": 4433,
-    "Hp": 51068,
+    "Hp": 51069,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98559,7 +98559,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98601,7 +98601,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98643,7 +98643,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98674,7 +98674,7 @@
     "Break": 6,
     "lvl": 66,
     "Atk": 4536,
-    "Hp": 52254,
+    "Hp": 52255,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98685,7 +98685,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98727,7 +98727,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98758,7 +98758,7 @@
     "Break": 6,
     "lvl": 68,
     "Atk": 4605,
-    "Hp": 53045,
+    "Hp": 53046,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98769,7 +98769,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98800,7 +98800,7 @@
     "Break": 6,
     "lvl": 69,
     "Atk": 4639,
-    "Hp": 53440,
+    "Hp": 53441,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98811,7 +98811,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98853,7 +98853,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98895,7 +98895,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98926,7 +98926,7 @@
     "Break": 7,
     "lvl": 71,
     "Atk": 5642,
-    "Hp": 64997,
+    "Hp": 64998,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -98937,7 +98937,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -98979,7 +98979,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99010,7 +99010,7 @@
     "Break": 7,
     "lvl": 73,
     "Atk": 5711,
-    "Hp": 65788,
+    "Hp": 65789,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99021,7 +99021,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99052,7 +99052,7 @@
     "Break": 7,
     "lvl": 74,
     "Atk": 5745,
-    "Hp": 66183,
+    "Hp": 66184,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99063,7 +99063,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99105,7 +99105,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99136,7 +99136,7 @@
     "Break": 7,
     "lvl": 76,
     "Atk": 5814,
-    "Hp": 66974,
+    "Hp": 66975,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99147,7 +99147,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99178,7 +99178,7 @@
     "Break": 7,
     "lvl": 77,
     "Atk": 5848,
-    "Hp": 67369,
+    "Hp": 67370,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99189,7 +99189,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99231,7 +99231,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99262,7 +99262,7 @@
     "Break": 7,
     "lvl": 79,
     "Atk": 5917,
-    "Hp": 68160,
+    "Hp": 68161,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99273,7 +99273,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99315,7 +99315,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99357,7 +99357,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99399,7 +99399,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99430,7 +99430,7 @@
     "Break": 8,
     "lvl": 82,
     "Atk": 7209,
-    "Hp": 83052,
+    "Hp": 83053,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99441,7 +99441,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99483,7 +99483,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99514,7 +99514,7 @@
     "Break": 8,
     "lvl": 84,
     "Atk": 7278,
-    "Hp": 83843,
+    "Hp": 83844,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99525,7 +99525,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99556,7 +99556,7 @@
     "Break": 8,
     "lvl": 85,
     "Atk": 7312,
-    "Hp": 84238,
+    "Hp": 84239,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99567,7 +99567,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99609,7 +99609,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99640,7 +99640,7 @@
     "Break": 8,
     "lvl": 87,
     "Atk": 7381,
-    "Hp": 85029,
+    "Hp": 85030,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99651,7 +99651,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99693,7 +99693,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99735,7 +99735,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99766,7 +99766,7 @@
     "Break": 8,
     "lvl": 90,
     "Atk": 7484,
-    "Hp": 86215,
+    "Hp": 86216,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99777,7 +99777,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -99808,7 +99808,7 @@
     "Break": 8,
     "lvl": 91,
     "Atk": 7484,
-    "Hp": 86215,
+    "Hp": 86216,
     "Def": 190,
     "CritRate": 500,
     "CritPower": 15000,
@@ -99819,7 +99819,7 @@
     "AEE": 10000,
     "LEE": 10000,
     "DEE": 10000,
-    "ToughnessDamageAdjust": 10000,
+    "ToughnessDamageAdjust": 15000,
     "NORMALDMG": 10000,
     "SKILLDMG": 10000,
     "ULTRADMG": 10000,
@@ -159932,8 +159932,8 @@
     "GroupId": 21001,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "Hp": 140
+    "Atk": 67,
+    "Hp": 630
   },
   "21001111": {
     "Id": "21001111",
@@ -160020,8 +160020,8 @@
     "GroupId": 21001,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "Hp": 630
+    "Atk": 134,
+    "Hp": 1250
   },
   "21001221": {
     "Id": "21001221",
@@ -160108,8 +160108,8 @@
     "GroupId": 21001,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "Hp": 1250
+    "Atk": 215,
+    "Hp": 2010
   },
   "21001331": {
     "Id": "21001331",
@@ -160196,8 +160196,8 @@
     "GroupId": 21001,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "Hp": 2010
+    "Atk": 312,
+    "Hp": 2910
   },
   "21001441": {
     "Id": "21001441",
@@ -160284,8 +160284,8 @@
     "GroupId": 21001,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "Hp": 2910
+    "Atk": 428,
+    "Hp": 4000
   },
   "21001551": {
     "Id": "21001551",
@@ -160372,8 +160372,8 @@
     "GroupId": 21001,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "Hp": 4000
+    "Atk": 568,
+    "Hp": 5300
   },
   "21001661": {
     "Id": "21001661",
@@ -160460,8 +160460,8 @@
     "GroupId": 21001,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "Hp": 5300
+    "Atk": 735,
+    "Hp": 6860
   },
   "21001771": {
     "Id": "21001771",
@@ -160548,8 +160548,8 @@
     "GroupId": 21001,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "Hp": 6860
+    "Atk": 936,
+    "Hp": 8740
   },
   "21001881": {
     "Id": "21001881",
@@ -160706,8 +160706,8 @@
     "GroupId": 21002,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "Hp": 90
+    "Atk": 45,
+    "Hp": 410
   },
   "21002111": {
     "Id": "21002111",
@@ -160794,8 +160794,8 @@
     "GroupId": 21002,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "Hp": 410
+    "Atk": 89,
+    "Hp": 800
   },
   "21002221": {
     "Id": "21002221",
@@ -160882,8 +160882,8 @@
     "GroupId": 21002,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "Hp": 800
+    "Atk": 143,
+    "Hp": 1290
   },
   "21002331": {
     "Id": "21002331",
@@ -160970,8 +160970,8 @@
     "GroupId": 21002,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
-    "Hp": 1290
+    "Atk": 208,
+    "Hp": 1870
   },
   "21002441": {
     "Id": "21002441",
@@ -161058,8 +161058,8 @@
     "GroupId": 21002,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "Hp": 1870
+    "Atk": 285,
+    "Hp": 2570
   },
   "21002551": {
     "Id": "21002551",
@@ -161146,8 +161146,8 @@
     "GroupId": 21002,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "Hp": 2570
+    "Atk": 379,
+    "Hp": 3410
   },
   "21002661": {
     "Id": "21002661",
@@ -161234,8 +161234,8 @@
     "GroupId": 21002,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
-    "Hp": 3410
+    "Atk": 490,
+    "Hp": 4410
   },
   "21002771": {
     "Id": "21002771",
@@ -161322,8 +161322,8 @@
     "GroupId": 21002,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "Hp": 4410
+    "Atk": 624,
+    "Hp": 5620
   },
   "21002881": {
     "Id": "21002881",
@@ -161480,8 +161480,8 @@
     "GroupId": 21003,
     "Break": 1,
     "lvl": 10,
-    "Atk": 19,
-    "Hp": 50
+    "Atk": 22,
+    "Hp": 230
   },
   "21003111": {
     "Id": "21003111",
@@ -161568,8 +161568,8 @@
     "GroupId": 21003,
     "Break": 2,
     "lvl": 20,
-    "Atk": 37,
-    "Hp": 230
+    "Atk": 45,
+    "Hp": 450
   },
   "21003221": {
     "Id": "21003221",
@@ -161656,8 +161656,8 @@
     "GroupId": 21003,
     "Break": 3,
     "lvl": 30,
-    "Atk": 60,
-    "Hp": 450
+    "Atk": 72,
+    "Hp": 720
   },
   "21003331": {
     "Id": "21003331",
@@ -161744,8 +161744,8 @@
     "GroupId": 21003,
     "Break": 4,
     "lvl": 40,
-    "Atk": 87,
-    "Hp": 720
+    "Atk": 104,
+    "Hp": 1040
   },
   "21003441": {
     "Id": "21003441",
@@ -161832,8 +161832,8 @@
     "GroupId": 21003,
     "Break": 5,
     "lvl": 50,
-    "Atk": 119,
-    "Hp": 1040
+    "Atk": 143,
+    "Hp": 1430
   },
   "21003551": {
     "Id": "21003551",
@@ -161920,8 +161920,8 @@
     "GroupId": 21003,
     "Break": 6,
     "lvl": 60,
-    "Atk": 158,
-    "Hp": 1430
+    "Atk": 189,
+    "Hp": 1890
   },
   "21003661": {
     "Id": "21003661",
@@ -162008,8 +162008,8 @@
     "GroupId": 21003,
     "Break": 7,
     "lvl": 70,
-    "Atk": 204,
-    "Hp": 1890
+    "Atk": 245,
+    "Hp": 2450
   },
   "21003771": {
     "Id": "21003771",
@@ -162096,8 +162096,8 @@
     "GroupId": 21003,
     "Break": 8,
     "lvl": 80,
-    "Atk": 260,
-    "Hp": 2450
+    "Atk": 312,
+    "Hp": 3120
   },
   "21003881": {
     "Id": "21003881",
@@ -162254,8 +162254,8 @@
     "GroupId": 21021,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "SKILLDMG": 300
+    "Atk": 67,
+    "SKILLDMG": 500
   },
   "21021111": {
     "Id": "21021111",
@@ -162342,8 +162342,8 @@
     "GroupId": 21021,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "SKILLDMG": 500
+    "Atk": 134,
+    "SKILLDMG": 800
   },
   "21021221": {
     "Id": "21021221",
@@ -162430,8 +162430,8 @@
     "GroupId": 21021,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "SKILLDMG": 800
+    "Atk": 215,
+    "SKILLDMG": 1100
   },
   "21021331": {
     "Id": "21021331",
@@ -162518,8 +162518,8 @@
     "GroupId": 21021,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "SKILLDMG": 1100
+    "Atk": 312,
+    "SKILLDMG": 1300
   },
   "21021441": {
     "Id": "21021441",
@@ -162606,8 +162606,8 @@
     "GroupId": 21021,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "SKILLDMG": 1300
+    "Atk": 428,
+    "SKILLDMG": 1600
   },
   "21021551": {
     "Id": "21021551",
@@ -162694,8 +162694,8 @@
     "GroupId": 21021,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "SKILLDMG": 1600
+    "Atk": 568,
+    "SKILLDMG": 1900
   },
   "21021661": {
     "Id": "21021661",
@@ -162782,8 +162782,8 @@
     "GroupId": 21021,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "SKILLDMG": 1900
+    "Atk": 735,
+    "SKILLDMG": 2100
   },
   "21021771": {
     "Id": "21021771",
@@ -162870,8 +162870,8 @@
     "GroupId": 21021,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "SKILLDMG": 2100
+    "Atk": 936,
+    "SKILLDMG": 2400
   },
   "21021881": {
     "Id": "21021881",
@@ -163028,8 +163028,8 @@
     "GroupId": 21022,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "SKILLDMG": 200
+    "Atk": 45,
+    "SKILLDMG": 300
   },
   "21022111": {
     "Id": "21022111",
@@ -163116,8 +163116,8 @@
     "GroupId": 21022,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "SKILLDMG": 300
+    "Atk": 89,
+    "SKILLDMG": 500
   },
   "21022221": {
     "Id": "21022221",
@@ -163204,8 +163204,8 @@
     "GroupId": 21022,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "SKILLDMG": 500
+    "Atk": 143,
+    "SKILLDMG": 700
   },
   "21022331": {
     "Id": "21022331",
@@ -163292,8 +163292,8 @@
     "GroupId": 21022,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
-    "SKILLDMG": 700
+    "Atk": 208,
+    "SKILLDMG": 800
   },
   "21022441": {
     "Id": "21022441",
@@ -163380,8 +163380,8 @@
     "GroupId": 21022,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "SKILLDMG": 800
+    "Atk": 285,
+    "SKILLDMG": 1000
   },
   "21022551": {
     "Id": "21022551",
@@ -163468,8 +163468,8 @@
     "GroupId": 21022,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "SKILLDMG": 1000
+    "Atk": 379,
+    "SKILLDMG": 1200
   },
   "21022661": {
     "Id": "21022661",
@@ -163556,8 +163556,8 @@
     "GroupId": 21022,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
-    "SKILLDMG": 1200
+    "Atk": 490,
+    "SKILLDMG": 1400
   },
   "21022771": {
     "Id": "21022771",
@@ -163644,8 +163644,8 @@
     "GroupId": 21022,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "SKILLDMG": 1400
+    "Atk": 624,
+    "SKILLDMG": 1500
   },
   "21022881": {
     "Id": "21022881",
@@ -163802,8 +163802,8 @@
     "GroupId": 21041,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "DEE": 200
+    "Atk": 67,
+    "DEE": 300
   },
   "21041111": {
     "Id": "21041111",
@@ -163890,8 +163890,8 @@
     "GroupId": 21041,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "DEE": 300
+    "Atk": 134,
+    "DEE": 500
   },
   "21041221": {
     "Id": "21041221",
@@ -163978,8 +163978,8 @@
     "GroupId": 21041,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "DEE": 500
+    "Atk": 215,
+    "DEE": 700
   },
   "21041331": {
     "Id": "21041331",
@@ -164066,8 +164066,8 @@
     "GroupId": 21041,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "DEE": 700
+    "Atk": 312,
+    "DEE": 800
   },
   "21041441": {
     "Id": "21041441",
@@ -164154,8 +164154,8 @@
     "GroupId": 21041,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "DEE": 800
+    "Atk": 428,
+    "DEE": 1000
   },
   "21041551": {
     "Id": "21041551",
@@ -164242,8 +164242,8 @@
     "GroupId": 21041,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "DEE": 1000
+    "Atk": 568,
+    "DEE": 1200
   },
   "21041661": {
     "Id": "21041661",
@@ -164330,8 +164330,8 @@
     "GroupId": 21041,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "DEE": 1200
+    "Atk": 735,
+    "DEE": 1300
   },
   "21041771": {
     "Id": "21041771",
@@ -164418,8 +164418,8 @@
     "GroupId": 21041,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "DEE": 1300
+    "Atk": 936,
+    "DEE": 1500
   },
   "21041881": {
     "Id": "21041881",
@@ -164576,8 +164576,8 @@
     "GroupId": 21042,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "DEE": 100
+    "Atk": 45,
+    "DEE": 200
   },
   "21042111": {
     "Id": "21042111",
@@ -164664,8 +164664,8 @@
     "GroupId": 21042,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "DEE": 200
+    "Atk": 89,
+    "DEE": 300
   },
   "21042221": {
     "Id": "21042221",
@@ -164752,8 +164752,8 @@
     "GroupId": 21042,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "DEE": 300
+    "Atk": 143,
+    "DEE": 500
   },
   "21042331": {
     "Id": "21042331",
@@ -164840,7 +164840,7 @@
     "GroupId": 21042,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "DEE": 500
   },
   "21042441": {
@@ -164928,8 +164928,8 @@
     "GroupId": 21042,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "DEE": 500
+    "Atk": 285,
+    "DEE": 600
   },
   "21042551": {
     "Id": "21042551",
@@ -165016,8 +165016,8 @@
     "GroupId": 21042,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "DEE": 600
+    "Atk": 379,
+    "DEE": 800
   },
   "21042661": {
     "Id": "21042661",
@@ -165104,7 +165104,7 @@
     "GroupId": 21042,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "DEE": 800
   },
   "21042771": {
@@ -165192,8 +165192,8 @@
     "GroupId": 21042,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "DEE": 800
+    "Atk": 624,
+    "DEE": 1000
   },
   "21042881": {
     "Id": "21042881",
@@ -165350,8 +165350,8 @@
     "GroupId": 21051,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "AEE": 200
+    "Atk": 67,
+    "AEE": 300
   },
   "21051111": {
     "Id": "21051111",
@@ -165438,8 +165438,8 @@
     "GroupId": 21051,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "AEE": 300
+    "Atk": 134,
+    "AEE": 500
   },
   "21051221": {
     "Id": "21051221",
@@ -165526,8 +165526,8 @@
     "GroupId": 21051,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "AEE": 500
+    "Atk": 215,
+    "AEE": 700
   },
   "21051331": {
     "Id": "21051331",
@@ -165614,8 +165614,8 @@
     "GroupId": 21051,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "AEE": 700
+    "Atk": 312,
+    "AEE": 800
   },
   "21051441": {
     "Id": "21051441",
@@ -165702,8 +165702,8 @@
     "GroupId": 21051,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "AEE": 800
+    "Atk": 428,
+    "AEE": 1000
   },
   "21051551": {
     "Id": "21051551",
@@ -165790,8 +165790,8 @@
     "GroupId": 21051,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "AEE": 1000
+    "Atk": 568,
+    "AEE": 1200
   },
   "21051661": {
     "Id": "21051661",
@@ -165878,8 +165878,8 @@
     "GroupId": 21051,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "AEE": 1200
+    "Atk": 735,
+    "AEE": 1300
   },
   "21051771": {
     "Id": "21051771",
@@ -165966,8 +165966,8 @@
     "GroupId": 21051,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "AEE": 1300
+    "Atk": 936,
+    "AEE": 1500
   },
   "21051881": {
     "Id": "21051881",
@@ -166124,8 +166124,8 @@
     "GroupId": 21052,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "AEE": 100
+    "Atk": 45,
+    "AEE": 200
   },
   "21052111": {
     "Id": "21052111",
@@ -166212,8 +166212,8 @@
     "GroupId": 21052,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "AEE": 200
+    "Atk": 89,
+    "AEE": 300
   },
   "21052221": {
     "Id": "21052221",
@@ -166300,8 +166300,8 @@
     "GroupId": 21052,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "AEE": 300
+    "Atk": 143,
+    "AEE": 500
   },
   "21052331": {
     "Id": "21052331",
@@ -166388,7 +166388,7 @@
     "GroupId": 21052,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "AEE": 500
   },
   "21052441": {
@@ -166476,8 +166476,8 @@
     "GroupId": 21052,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "AEE": 500
+    "Atk": 285,
+    "AEE": 600
   },
   "21052551": {
     "Id": "21052551",
@@ -166564,8 +166564,8 @@
     "GroupId": 21052,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "AEE": 600
+    "Atk": 379,
+    "AEE": 800
   },
   "21052661": {
     "Id": "21052661",
@@ -166652,7 +166652,7 @@
     "GroupId": 21052,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "AEE": 800
   },
   "21052771": {
@@ -166740,8 +166740,8 @@
     "GroupId": 21052,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "AEE": 800
+    "Atk": 624,
+    "AEE": 1000
   },
   "21052881": {
     "Id": "21052881",
@@ -166898,8 +166898,8 @@
     "GroupId": 21061,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "LEE": 200
+    "Atk": 67,
+    "LEE": 300
   },
   "21061111": {
     "Id": "21061111",
@@ -166986,8 +166986,8 @@
     "GroupId": 21061,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "LEE": 300
+    "Atk": 134,
+    "LEE": 500
   },
   "21061221": {
     "Id": "21061221",
@@ -167074,8 +167074,8 @@
     "GroupId": 21061,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "LEE": 500
+    "Atk": 215,
+    "LEE": 700
   },
   "21061331": {
     "Id": "21061331",
@@ -167162,8 +167162,8 @@
     "GroupId": 21061,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "LEE": 700
+    "Atk": 312,
+    "LEE": 800
   },
   "21061441": {
     "Id": "21061441",
@@ -167250,8 +167250,8 @@
     "GroupId": 21061,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "LEE": 800
+    "Atk": 428,
+    "LEE": 1000
   },
   "21061551": {
     "Id": "21061551",
@@ -167338,8 +167338,8 @@
     "GroupId": 21061,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "LEE": 1000
+    "Atk": 568,
+    "LEE": 1200
   },
   "21061661": {
     "Id": "21061661",
@@ -167426,8 +167426,8 @@
     "GroupId": 21061,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "LEE": 1200
+    "Atk": 735,
+    "LEE": 1300
   },
   "21061771": {
     "Id": "21061771",
@@ -167514,8 +167514,8 @@
     "GroupId": 21061,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "LEE": 1300
+    "Atk": 936,
+    "LEE": 1500
   },
   "21061881": {
     "Id": "21061881",
@@ -167672,8 +167672,8 @@
     "GroupId": 21062,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "LEE": 100
+    "Atk": 45,
+    "LEE": 200
   },
   "21062111": {
     "Id": "21062111",
@@ -167760,8 +167760,8 @@
     "GroupId": 21062,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "LEE": 200
+    "Atk": 89,
+    "LEE": 300
   },
   "21062221": {
     "Id": "21062221",
@@ -167848,8 +167848,8 @@
     "GroupId": 21062,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "LEE": 300
+    "Atk": 143,
+    "LEE": 500
   },
   "21062331": {
     "Id": "21062331",
@@ -167936,7 +167936,7 @@
     "GroupId": 21062,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "LEE": 500
   },
   "21062441": {
@@ -168024,8 +168024,8 @@
     "GroupId": 21062,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "LEE": 500
+    "Atk": 285,
+    "LEE": 600
   },
   "21062551": {
     "Id": "21062551",
@@ -168112,8 +168112,8 @@
     "GroupId": 21062,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "LEE": 600
+    "Atk": 379,
+    "LEE": 800
   },
   "21062661": {
     "Id": "21062661",
@@ -168200,7 +168200,7 @@
     "GroupId": 21062,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "LEE": 800
   },
   "21062771": {
@@ -168288,8 +168288,8 @@
     "GroupId": 21062,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "LEE": 800
+    "Atk": 624,
+    "LEE": 1000
   },
   "21062881": {
     "Id": "21062881",
@@ -168446,8 +168446,8 @@
     "GroupId": 21071,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "FEE": 200
+    "Atk": 67,
+    "FEE": 300
   },
   "21071111": {
     "Id": "21071111",
@@ -168534,8 +168534,8 @@
     "GroupId": 21071,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "FEE": 300
+    "Atk": 134,
+    "FEE": 500
   },
   "21071221": {
     "Id": "21071221",
@@ -168622,8 +168622,8 @@
     "GroupId": 21071,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "FEE": 500
+    "Atk": 215,
+    "FEE": 700
   },
   "21071331": {
     "Id": "21071331",
@@ -168710,8 +168710,8 @@
     "GroupId": 21071,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "FEE": 700
+    "Atk": 312,
+    "FEE": 800
   },
   "21071441": {
     "Id": "21071441",
@@ -168798,8 +168798,8 @@
     "GroupId": 21071,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "FEE": 800
+    "Atk": 428,
+    "FEE": 1000
   },
   "21071551": {
     "Id": "21071551",
@@ -168886,8 +168886,8 @@
     "GroupId": 21071,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "FEE": 1000
+    "Atk": 568,
+    "FEE": 1200
   },
   "21071661": {
     "Id": "21071661",
@@ -168974,8 +168974,8 @@
     "GroupId": 21071,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "FEE": 1200
+    "Atk": 735,
+    "FEE": 1300
   },
   "21071771": {
     "Id": "21071771",
@@ -169062,8 +169062,8 @@
     "GroupId": 21071,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "FEE": 1300
+    "Atk": 936,
+    "FEE": 1500
   },
   "21071881": {
     "Id": "21071881",
@@ -169220,8 +169220,8 @@
     "GroupId": 21072,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "FEE": 100
+    "Atk": 45,
+    "FEE": 200
   },
   "21072111": {
     "Id": "21072111",
@@ -169308,8 +169308,8 @@
     "GroupId": 21072,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "FEE": 200
+    "Atk": 89,
+    "FEE": 300
   },
   "21072221": {
     "Id": "21072221",
@@ -169396,8 +169396,8 @@
     "GroupId": 21072,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "FEE": 300
+    "Atk": 143,
+    "FEE": 500
   },
   "21072331": {
     "Id": "21072331",
@@ -169484,7 +169484,7 @@
     "GroupId": 21072,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "FEE": 500
   },
   "21072441": {
@@ -169572,8 +169572,8 @@
     "GroupId": 21072,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "FEE": 500
+    "Atk": 285,
+    "FEE": 600
   },
   "21072551": {
     "Id": "21072551",
@@ -169660,8 +169660,8 @@
     "GroupId": 21072,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "FEE": 600
+    "Atk": 379,
+    "FEE": 800
   },
   "21072661": {
     "Id": "21072661",
@@ -169748,7 +169748,7 @@
     "GroupId": 21072,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "FEE": 800
   },
   "21072771": {
@@ -169836,8 +169836,8 @@
     "GroupId": 21072,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "FEE": 800
+    "Atk": 624,
+    "FEE": 1000
   },
   "21072881": {
     "Id": "21072881",
@@ -169994,8 +169994,8 @@
     "GroupId": 21081,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "WEE": 200
+    "Atk": 67,
+    "WEE": 300
   },
   "21081111": {
     "Id": "21081111",
@@ -170082,8 +170082,8 @@
     "GroupId": 21081,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "WEE": 300
+    "Atk": 134,
+    "WEE": 500
   },
   "21081221": {
     "Id": "21081221",
@@ -170170,8 +170170,8 @@
     "GroupId": 21081,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "WEE": 500
+    "Atk": 215,
+    "WEE": 700
   },
   "21081331": {
     "Id": "21081331",
@@ -170258,8 +170258,8 @@
     "GroupId": 21081,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "WEE": 700
+    "Atk": 312,
+    "WEE": 800
   },
   "21081441": {
     "Id": "21081441",
@@ -170346,8 +170346,8 @@
     "GroupId": 21081,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "WEE": 800
+    "Atk": 428,
+    "WEE": 1000
   },
   "21081551": {
     "Id": "21081551",
@@ -170434,8 +170434,8 @@
     "GroupId": 21081,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "WEE": 1000
+    "Atk": 568,
+    "WEE": 1200
   },
   "21081661": {
     "Id": "21081661",
@@ -170522,8 +170522,8 @@
     "GroupId": 21081,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "WEE": 1200
+    "Atk": 735,
+    "WEE": 1300
   },
   "21081771": {
     "Id": "21081771",
@@ -170610,8 +170610,8 @@
     "GroupId": 21081,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "WEE": 1300
+    "Atk": 936,
+    "WEE": 1500
   },
   "21081881": {
     "Id": "21081881",
@@ -170768,8 +170768,8 @@
     "GroupId": 21082,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "WEE": 100
+    "Atk": 45,
+    "WEE": 200
   },
   "21082111": {
     "Id": "21082111",
@@ -170856,8 +170856,8 @@
     "GroupId": 21082,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "WEE": 200
+    "Atk": 89,
+    "WEE": 300
   },
   "21082221": {
     "Id": "21082221",
@@ -170944,8 +170944,8 @@
     "GroupId": 21082,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "WEE": 300
+    "Atk": 143,
+    "WEE": 500
   },
   "21082331": {
     "Id": "21082331",
@@ -171032,7 +171032,7 @@
     "GroupId": 21082,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "WEE": 500
   },
   "21082441": {
@@ -171120,8 +171120,8 @@
     "GroupId": 21082,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "WEE": 500
+    "Atk": 285,
+    "WEE": 600
   },
   "21082551": {
     "Id": "21082551",
@@ -171208,8 +171208,8 @@
     "GroupId": 21082,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "WEE": 600
+    "Atk": 379,
+    "WEE": 800
   },
   "21082661": {
     "Id": "21082661",
@@ -171296,7 +171296,7 @@
     "GroupId": 21082,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "WEE": 800
   },
   "21082771": {
@@ -171384,8 +171384,8 @@
     "GroupId": 21082,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "WEE": 800
+    "Atk": 624,
+    "WEE": 1000
   },
   "21082881": {
     "Id": "21082881",
@@ -171542,8 +171542,8 @@
     "GroupId": 21083,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "SEE": 200
+    "Atk": 67,
+    "SEE": 300
   },
   "21083111": {
     "Id": "21083111",
@@ -171630,8 +171630,8 @@
     "GroupId": 21083,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "SEE": 300
+    "Atk": 134,
+    "SEE": 500
   },
   "21083221": {
     "Id": "21083221",
@@ -171718,8 +171718,8 @@
     "GroupId": 21083,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "SEE": 500
+    "Atk": 215,
+    "SEE": 700
   },
   "21083331": {
     "Id": "21083331",
@@ -171806,8 +171806,8 @@
     "GroupId": 21083,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "SEE": 700
+    "Atk": 312,
+    "SEE": 800
   },
   "21083441": {
     "Id": "21083441",
@@ -171894,8 +171894,8 @@
     "GroupId": 21083,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "SEE": 800
+    "Atk": 428,
+    "SEE": 1000
   },
   "21083551": {
     "Id": "21083551",
@@ -171982,8 +171982,8 @@
     "GroupId": 21083,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "SEE": 1000
+    "Atk": 568,
+    "SEE": 1200
   },
   "21083661": {
     "Id": "21083661",
@@ -172070,8 +172070,8 @@
     "GroupId": 21083,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "SEE": 1200
+    "Atk": 735,
+    "SEE": 1300
   },
   "21083771": {
     "Id": "21083771",
@@ -172158,8 +172158,8 @@
     "GroupId": 21083,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "SEE": 1300
+    "Atk": 936,
+    "SEE": 1500
   },
   "21083881": {
     "Id": "21083881",
@@ -172316,8 +172316,8 @@
     "GroupId": 21084,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "SEE": 100
+    "Atk": 45,
+    "SEE": 200
   },
   "21084111": {
     "Id": "21084111",
@@ -172404,8 +172404,8 @@
     "GroupId": 21084,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "SEE": 200
+    "Atk": 89,
+    "SEE": 300
   },
   "21084221": {
     "Id": "21084221",
@@ -172492,8 +172492,8 @@
     "GroupId": 21084,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "SEE": 300
+    "Atk": 143,
+    "SEE": 500
   },
   "21084331": {
     "Id": "21084331",
@@ -172580,7 +172580,7 @@
     "GroupId": 21084,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
+    "Atk": 208,
     "SEE": 500
   },
   "21084441": {
@@ -172668,8 +172668,8 @@
     "GroupId": 21084,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "SEE": 500
+    "Atk": 285,
+    "SEE": 600
   },
   "21084551": {
     "Id": "21084551",
@@ -172756,8 +172756,8 @@
     "GroupId": 21084,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "SEE": 600
+    "Atk": 379,
+    "SEE": 800
   },
   "21084661": {
     "Id": "21084661",
@@ -172844,7 +172844,7 @@
     "GroupId": 21084,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
+    "Atk": 490,
     "SEE": 800
   },
   "21084771": {
@@ -172932,8 +172932,8 @@
     "GroupId": 21084,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "SEE": 800
+    "Atk": 624,
+    "SEE": 1000
   },
   "21084881": {
     "Id": "21084881",
@@ -173090,8 +173090,8 @@
     "GroupId": 21085,
     "Break": 1,
     "lvl": 10,
-    "Atk": 56,
-    "ULTRADMG": 600
+    "Atk": 67,
+    "ULTRADMG": 1100
   },
   "21085111": {
     "Id": "21085111",
@@ -173178,8 +173178,8 @@
     "GroupId": 21085,
     "Break": 2,
     "lvl": 20,
-    "Atk": 112,
-    "ULTRADMG": 1100
+    "Atk": 134,
+    "ULTRADMG": 1700
   },
   "21085221": {
     "Id": "21085221",
@@ -173266,8 +173266,8 @@
     "GroupId": 21085,
     "Break": 3,
     "lvl": 30,
-    "Atk": 179,
-    "ULTRADMG": 1700
+    "Atk": 215,
+    "ULTRADMG": 2200
   },
   "21085331": {
     "Id": "21085331",
@@ -173354,8 +173354,8 @@
     "GroupId": 21085,
     "Break": 4,
     "lvl": 40,
-    "Atk": 260,
-    "ULTRADMG": 2200
+    "Atk": 312,
+    "ULTRADMG": 2800
   },
   "21085441": {
     "Id": "21085441",
@@ -173442,8 +173442,8 @@
     "GroupId": 21085,
     "Break": 5,
     "lvl": 50,
-    "Atk": 357,
-    "ULTRADMG": 2800
+    "Atk": 428,
+    "ULTRADMG": 3300
   },
   "21085551": {
     "Id": "21085551",
@@ -173530,8 +173530,8 @@
     "GroupId": 21085,
     "Break": 6,
     "lvl": 60,
-    "Atk": 473,
-    "ULTRADMG": 3300
+    "Atk": 568,
+    "ULTRADMG": 3900
   },
   "21085661": {
     "Id": "21085661",
@@ -173618,8 +173618,8 @@
     "GroupId": 21085,
     "Break": 7,
     "lvl": 70,
-    "Atk": 613,
-    "ULTRADMG": 3900
+    "Atk": 735,
+    "ULTRADMG": 4400
   },
   "21085771": {
     "Id": "21085771",
@@ -173706,8 +173706,8 @@
     "GroupId": 21085,
     "Break": 8,
     "lvl": 80,
-    "Atk": 780,
-    "ULTRADMG": 4400
+    "Atk": 936,
+    "ULTRADMG": 5000
   },
   "21085881": {
     "Id": "21085881",
@@ -173864,8 +173864,8 @@
     "GroupId": 21086,
     "Break": 1,
     "lvl": 10,
-    "Atk": 37,
-    "ULTRADMG": 400
+    "Atk": 45,
+    "ULTRADMG": 700
   },
   "21086111": {
     "Id": "21086111",
@@ -173952,8 +173952,8 @@
     "GroupId": 21086,
     "Break": 2,
     "lvl": 20,
-    "Atk": 75,
-    "ULTRADMG": 700
+    "Atk": 89,
+    "ULTRADMG": 1100
   },
   "21086221": {
     "Id": "21086221",
@@ -174040,8 +174040,8 @@
     "GroupId": 21086,
     "Break": 3,
     "lvl": 30,
-    "Atk": 119,
-    "ULTRADMG": 1100
+    "Atk": 143,
+    "ULTRADMG": 1400
   },
   "21086331": {
     "Id": "21086331",
@@ -174128,8 +174128,8 @@
     "GroupId": 21086,
     "Break": 4,
     "lvl": 40,
-    "Atk": 173,
-    "ULTRADMG": 1400
+    "Atk": 208,
+    "ULTRADMG": 1800
   },
   "21086441": {
     "Id": "21086441",
@@ -174216,8 +174216,8 @@
     "GroupId": 21086,
     "Break": 5,
     "lvl": 50,
-    "Atk": 238,
-    "ULTRADMG": 1800
+    "Atk": 285,
+    "ULTRADMG": 2100
   },
   "21086551": {
     "Id": "21086551",
@@ -174304,8 +174304,8 @@
     "GroupId": 21086,
     "Break": 6,
     "lvl": 60,
-    "Atk": 315,
-    "ULTRADMG": 2100
+    "Atk": 379,
+    "ULTRADMG": 2500
   },
   "21086661": {
     "Id": "21086661",
@@ -174392,8 +174392,8 @@
     "GroupId": 21086,
     "Break": 7,
     "lvl": 70,
-    "Atk": 409,
-    "ULTRADMG": 2500
+    "Atk": 490,
+    "ULTRADMG": 2800
   },
   "21086771": {
     "Id": "21086771",
@@ -174480,8 +174480,8 @@
     "GroupId": 21086,
     "Break": 8,
     "lvl": 80,
-    "Atk": 520,
-    "ULTRADMG": 2800
+    "Atk": 624,
+    "ULTRADMG": 3200
   },
   "21086881": {
     "Id": "21086881",
@@ -174638,8 +174638,8 @@
     "GroupId": 21087,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "Hp": 140
+    "Atk": 64,
+    "Hp": 630
   },
   "21087111": {
     "Id": "21087111",
@@ -174726,8 +174726,8 @@
     "GroupId": 21087,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "Hp": 630
+    "Atk": 127,
+    "Hp": 1250
   },
   "21087221": {
     "Id": "21087221",
@@ -174814,8 +174814,8 @@
     "GroupId": 21087,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "Hp": 1250
+    "Atk": 204,
+    "Hp": 2010
   },
   "21087331": {
     "Id": "21087331",
@@ -174902,8 +174902,8 @@
     "GroupId": 21087,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "Hp": 2010
+    "Atk": 296,
+    "Hp": 2910
   },
   "21087441": {
     "Id": "21087441",
@@ -174990,8 +174990,8 @@
     "GroupId": 21087,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "Hp": 2910
+    "Atk": 407,
+    "Hp": 4000
   },
   "21087551": {
     "Id": "21087551",
@@ -175078,8 +175078,8 @@
     "GroupId": 21087,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "Hp": 4000
+    "Atk": 540,
+    "Hp": 5300
   },
   "21087661": {
     "Id": "21087661",
@@ -175166,8 +175166,8 @@
     "GroupId": 21087,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "Hp": 5300
+    "Atk": 698,
+    "Hp": 6860
   },
   "21087771": {
     "Id": "21087771",
@@ -175254,8 +175254,8 @@
     "GroupId": 21087,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "Hp": 6860
+    "Atk": 889,
+    "Hp": 8740
   },
   "21087881": {
     "Id": "21087881",
@@ -175412,8 +175412,8 @@
     "GroupId": 21088,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "SKILLDMG": 300
+    "Atk": 64,
+    "SKILLDMG": 500
   },
   "21088111": {
     "Id": "21088111",
@@ -175500,8 +175500,8 @@
     "GroupId": 21088,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "SKILLDMG": 500
+    "Atk": 127,
+    "SKILLDMG": 800
   },
   "21088221": {
     "Id": "21088221",
@@ -175588,8 +175588,8 @@
     "GroupId": 21088,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "SKILLDMG": 800
+    "Atk": 204,
+    "SKILLDMG": 1100
   },
   "21088331": {
     "Id": "21088331",
@@ -175676,8 +175676,8 @@
     "GroupId": 21088,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "SKILLDMG": 1100
+    "Atk": 296,
+    "SKILLDMG": 1300
   },
   "21088441": {
     "Id": "21088441",
@@ -175764,8 +175764,8 @@
     "GroupId": 21088,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "SKILLDMG": 1300
+    "Atk": 407,
+    "SKILLDMG": 1600
   },
   "21088551": {
     "Id": "21088551",
@@ -175852,8 +175852,8 @@
     "GroupId": 21088,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "SKILLDMG": 1600
+    "Atk": 540,
+    "SKILLDMG": 1900
   },
   "21088661": {
     "Id": "21088661",
@@ -175940,8 +175940,8 @@
     "GroupId": 21088,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "SKILLDMG": 1900
+    "Atk": 698,
+    "SKILLDMG": 2100
   },
   "21088771": {
     "Id": "21088771",
@@ -176028,8 +176028,8 @@
     "GroupId": 21088,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "SKILLDMG": 2100
+    "Atk": 889,
+    "SKILLDMG": 2400
   },
   "21088881": {
     "Id": "21088881",
@@ -176186,8 +176186,8 @@
     "GroupId": 21089,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "DEE": 200
+    "Atk": 64,
+    "DEE": 300
   },
   "21089111": {
     "Id": "21089111",
@@ -176274,8 +176274,8 @@
     "GroupId": 21089,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "DEE": 300
+    "Atk": 127,
+    "DEE": 500
   },
   "21089221": {
     "Id": "21089221",
@@ -176362,8 +176362,8 @@
     "GroupId": 21089,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "DEE": 500
+    "Atk": 204,
+    "DEE": 700
   },
   "21089331": {
     "Id": "21089331",
@@ -176450,8 +176450,8 @@
     "GroupId": 21089,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "DEE": 700
+    "Atk": 296,
+    "DEE": 800
   },
   "21089441": {
     "Id": "21089441",
@@ -176538,8 +176538,8 @@
     "GroupId": 21089,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "DEE": 800
+    "Atk": 407,
+    "DEE": 1000
   },
   "21089551": {
     "Id": "21089551",
@@ -176626,8 +176626,8 @@
     "GroupId": 21089,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "DEE": 1000
+    "Atk": 540,
+    "DEE": 1200
   },
   "21089661": {
     "Id": "21089661",
@@ -176714,8 +176714,8 @@
     "GroupId": 21089,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "DEE": 1200
+    "Atk": 698,
+    "DEE": 1300
   },
   "21089771": {
     "Id": "21089771",
@@ -176802,8 +176802,8 @@
     "GroupId": 21089,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "DEE": 1300
+    "Atk": 889,
+    "DEE": 1500
   },
   "21089881": {
     "Id": "21089881",
@@ -176960,8 +176960,8 @@
     "GroupId": 21090,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "AEE": 200
+    "Atk": 64,
+    "AEE": 300
   },
   "21090111": {
     "Id": "21090111",
@@ -177048,8 +177048,8 @@
     "GroupId": 21090,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "AEE": 300
+    "Atk": 127,
+    "AEE": 500
   },
   "21090221": {
     "Id": "21090221",
@@ -177136,8 +177136,8 @@
     "GroupId": 21090,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "AEE": 500
+    "Atk": 204,
+    "AEE": 700
   },
   "21090331": {
     "Id": "21090331",
@@ -177224,8 +177224,8 @@
     "GroupId": 21090,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "AEE": 700
+    "Atk": 296,
+    "AEE": 800
   },
   "21090441": {
     "Id": "21090441",
@@ -177312,8 +177312,8 @@
     "GroupId": 21090,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "AEE": 800
+    "Atk": 407,
+    "AEE": 1000
   },
   "21090551": {
     "Id": "21090551",
@@ -177400,8 +177400,8 @@
     "GroupId": 21090,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "AEE": 1000
+    "Atk": 540,
+    "AEE": 1200
   },
   "21090661": {
     "Id": "21090661",
@@ -177488,8 +177488,8 @@
     "GroupId": 21090,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "AEE": 1200
+    "Atk": 698,
+    "AEE": 1300
   },
   "21090771": {
     "Id": "21090771",
@@ -177576,8 +177576,8 @@
     "GroupId": 21090,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "AEE": 1300
+    "Atk": 889,
+    "AEE": 1500
   },
   "21090881": {
     "Id": "21090881",
@@ -177734,8 +177734,8 @@
     "GroupId": 21091,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "LEE": 200
+    "Atk": 64,
+    "LEE": 300
   },
   "21091111": {
     "Id": "21091111",
@@ -177822,8 +177822,8 @@
     "GroupId": 21091,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "LEE": 300
+    "Atk": 127,
+    "LEE": 500
   },
   "21091221": {
     "Id": "21091221",
@@ -177910,8 +177910,8 @@
     "GroupId": 21091,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "LEE": 500
+    "Atk": 204,
+    "LEE": 700
   },
   "21091331": {
     "Id": "21091331",
@@ -177998,8 +177998,8 @@
     "GroupId": 21091,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "LEE": 700
+    "Atk": 296,
+    "LEE": 800
   },
   "21091441": {
     "Id": "21091441",
@@ -178086,8 +178086,8 @@
     "GroupId": 21091,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "LEE": 800
+    "Atk": 407,
+    "LEE": 1000
   },
   "21091551": {
     "Id": "21091551",
@@ -178174,8 +178174,8 @@
     "GroupId": 21091,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "LEE": 1000
+    "Atk": 540,
+    "LEE": 1200
   },
   "21091661": {
     "Id": "21091661",
@@ -178262,8 +178262,8 @@
     "GroupId": 21091,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "LEE": 1200
+    "Atk": 698,
+    "LEE": 1300
   },
   "21091771": {
     "Id": "21091771",
@@ -178350,8 +178350,8 @@
     "GroupId": 21091,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "LEE": 1300
+    "Atk": 889,
+    "LEE": 1500
   },
   "21091881": {
     "Id": "21091881",
@@ -178508,8 +178508,8 @@
     "GroupId": 21092,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "FEE": 200
+    "Atk": 64,
+    "FEE": 300
   },
   "21092111": {
     "Id": "21092111",
@@ -178596,8 +178596,8 @@
     "GroupId": 21092,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "FEE": 300
+    "Atk": 127,
+    "FEE": 500
   },
   "21092221": {
     "Id": "21092221",
@@ -178684,8 +178684,8 @@
     "GroupId": 21092,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "FEE": 500
+    "Atk": 204,
+    "FEE": 700
   },
   "21092331": {
     "Id": "21092331",
@@ -178772,8 +178772,8 @@
     "GroupId": 21092,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "FEE": 700
+    "Atk": 296,
+    "FEE": 800
   },
   "21092441": {
     "Id": "21092441",
@@ -178860,8 +178860,8 @@
     "GroupId": 21092,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "FEE": 800
+    "Atk": 407,
+    "FEE": 1000
   },
   "21092551": {
     "Id": "21092551",
@@ -178948,8 +178948,8 @@
     "GroupId": 21092,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "FEE": 1000
+    "Atk": 540,
+    "FEE": 1200
   },
   "21092661": {
     "Id": "21092661",
@@ -179036,8 +179036,8 @@
     "GroupId": 21092,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "FEE": 1200
+    "Atk": 698,
+    "FEE": 1300
   },
   "21092771": {
     "Id": "21092771",
@@ -179124,8 +179124,8 @@
     "GroupId": 21092,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "FEE": 1300
+    "Atk": 889,
+    "FEE": 1500
   },
   "21092881": {
     "Id": "21092881",
@@ -179282,8 +179282,8 @@
     "GroupId": 21093,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "WEE": 200
+    "Atk": 64,
+    "WEE": 300
   },
   "21093111": {
     "Id": "21093111",
@@ -179370,8 +179370,8 @@
     "GroupId": 21093,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "WEE": 300
+    "Atk": 127,
+    "WEE": 500
   },
   "21093221": {
     "Id": "21093221",
@@ -179458,8 +179458,8 @@
     "GroupId": 21093,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "WEE": 500
+    "Atk": 204,
+    "WEE": 700
   },
   "21093331": {
     "Id": "21093331",
@@ -179546,8 +179546,8 @@
     "GroupId": 21093,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "WEE": 700
+    "Atk": 296,
+    "WEE": 800
   },
   "21093441": {
     "Id": "21093441",
@@ -179634,8 +179634,8 @@
     "GroupId": 21093,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "WEE": 800
+    "Atk": 407,
+    "WEE": 1000
   },
   "21093551": {
     "Id": "21093551",
@@ -179722,8 +179722,8 @@
     "GroupId": 21093,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "WEE": 1000
+    "Atk": 540,
+    "WEE": 1200
   },
   "21093661": {
     "Id": "21093661",
@@ -179810,8 +179810,8 @@
     "GroupId": 21093,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "WEE": 1200
+    "Atk": 698,
+    "WEE": 1300
   },
   "21093771": {
     "Id": "21093771",
@@ -179898,8 +179898,8 @@
     "GroupId": 21093,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "WEE": 1300
+    "Atk": 889,
+    "WEE": 1500
   },
   "21093881": {
     "Id": "21093881",
@@ -180056,8 +180056,8 @@
     "GroupId": 21094,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "SEE": 200
+    "Atk": 64,
+    "SEE": 300
   },
   "21094111": {
     "Id": "21094111",
@@ -180144,8 +180144,8 @@
     "GroupId": 21094,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "SEE": 300
+    "Atk": 127,
+    "SEE": 500
   },
   "21094221": {
     "Id": "21094221",
@@ -180232,8 +180232,8 @@
     "GroupId": 21094,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "SEE": 500
+    "Atk": 204,
+    "SEE": 700
   },
   "21094331": {
     "Id": "21094331",
@@ -180320,8 +180320,8 @@
     "GroupId": 21094,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "SEE": 700
+    "Atk": 296,
+    "SEE": 800
   },
   "21094441": {
     "Id": "21094441",
@@ -180408,8 +180408,8 @@
     "GroupId": 21094,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "SEE": 800
+    "Atk": 407,
+    "SEE": 1000
   },
   "21094551": {
     "Id": "21094551",
@@ -180496,8 +180496,8 @@
     "GroupId": 21094,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "SEE": 1000
+    "Atk": 540,
+    "SEE": 1200
   },
   "21094661": {
     "Id": "21094661",
@@ -180584,8 +180584,8 @@
     "GroupId": 21094,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "SEE": 1200
+    "Atk": 698,
+    "SEE": 1300
   },
   "21094771": {
     "Id": "21094771",
@@ -180672,8 +180672,8 @@
     "GroupId": 21094,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "SEE": 1300
+    "Atk": 889,
+    "SEE": 1500
   },
   "21094881": {
     "Id": "21094881",
@@ -180830,8 +180830,8 @@
     "GroupId": 21095,
     "Break": 1,
     "lvl": 10,
-    "Atk": 53,
-    "ULTRADMG": 600
+    "Atk": 64,
+    "ULTRADMG": 1100
   },
   "21095111": {
     "Id": "21095111",
@@ -180918,8 +180918,8 @@
     "GroupId": 21095,
     "Break": 2,
     "lvl": 20,
-    "Atk": 106,
-    "ULTRADMG": 1100
+    "Atk": 127,
+    "ULTRADMG": 1700
   },
   "21095221": {
     "Id": "21095221",
@@ -181006,8 +181006,8 @@
     "GroupId": 21095,
     "Break": 3,
     "lvl": 30,
-    "Atk": 170,
-    "ULTRADMG": 1700
+    "Atk": 204,
+    "ULTRADMG": 2200
   },
   "21095331": {
     "Id": "21095331",
@@ -181094,8 +181094,8 @@
     "GroupId": 21095,
     "Break": 4,
     "lvl": 40,
-    "Atk": 247,
-    "ULTRADMG": 2200
+    "Atk": 296,
+    "ULTRADMG": 2800
   },
   "21095441": {
     "Id": "21095441",
@@ -181182,8 +181182,8 @@
     "GroupId": 21095,
     "Break": 5,
     "lvl": 50,
-    "Atk": 339,
-    "ULTRADMG": 2800
+    "Atk": 407,
+    "ULTRADMG": 3300
   },
   "21095551": {
     "Id": "21095551",
@@ -181270,8 +181270,8 @@
     "GroupId": 21095,
     "Break": 6,
     "lvl": 60,
-    "Atk": 449,
-    "ULTRADMG": 3300
+    "Atk": 540,
+    "ULTRADMG": 3900
   },
   "21095661": {
     "Id": "21095661",
@@ -181358,8 +181358,8 @@
     "GroupId": 21095,
     "Break": 7,
     "lvl": 70,
-    "Atk": 582,
-    "ULTRADMG": 3900
+    "Atk": 698,
+    "ULTRADMG": 4400
   },
   "21095771": {
     "Id": "21095771",
@@ -181446,8 +181446,8 @@
     "GroupId": 21095,
     "Break": 8,
     "lvl": 80,
-    "Atk": 741,
-    "ULTRADMG": 4400
+    "Atk": 889,
+    "ULTRADMG": 5000
   },
   "21095881": {
     "Id": "21095881",
@@ -181604,8 +181604,8 @@
     "GroupId": 21096,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
-    "Hp": 110
+    "Atk": 60,
+    "Hp": 500
   },
   "21096111": {
     "Id": "21096111",
@@ -181692,8 +181692,8 @@
     "GroupId": 21096,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "Hp": 500
+    "Atk": 121,
+    "Hp": 1000
   },
   "21096221": {
     "Id": "21096221",
@@ -181780,8 +181780,8 @@
     "GroupId": 21096,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "Hp": 1000
+    "Atk": 194,
+    "Hp": 1610
   },
   "21096331": {
     "Id": "21096331",
@@ -181868,8 +181868,8 @@
     "GroupId": 21096,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
-    "Hp": 1610
+    "Atk": 281,
+    "Hp": 2330
   },
   "21096441": {
     "Id": "21096441",
@@ -181956,8 +181956,8 @@
     "GroupId": 21096,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "Hp": 2330
+    "Atk": 385,
+    "Hp": 3200
   },
   "21096551": {
     "Id": "21096551",
@@ -182044,8 +182044,8 @@
     "GroupId": 21096,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "Hp": 3200
+    "Atk": 511,
+    "Hp": 4240
   },
   "21096661": {
     "Id": "21096661",
@@ -182132,8 +182132,8 @@
     "GroupId": 21096,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
-    "Hp": 4240
+    "Atk": 662,
+    "Hp": 5490
   },
   "21096771": {
     "Id": "21096771",
@@ -182220,8 +182220,8 @@
     "GroupId": 21096,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "Hp": 5490
+    "Atk": 842,
+    "Hp": 6990
   },
   "21096881": {
     "Id": "21096881",
@@ -182378,8 +182378,8 @@
     "GroupId": 21097,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
-    "SKILLDMG": 200
+    "Atk": 60,
+    "SKILLDMG": 400
   },
   "21097111": {
     "Id": "21097111",
@@ -182466,8 +182466,8 @@
     "GroupId": 21097,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "SKILLDMG": 400
+    "Atk": 121,
+    "SKILLDMG": 600
   },
   "21097221": {
     "Id": "21097221",
@@ -182554,8 +182554,8 @@
     "GroupId": 21097,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "SKILLDMG": 600
+    "Atk": 194,
+    "SKILLDMG": 900
   },
   "21097331": {
     "Id": "21097331",
@@ -182642,8 +182642,8 @@
     "GroupId": 21097,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
-    "SKILLDMG": 900
+    "Atk": 281,
+    "SKILLDMG": 1000
   },
   "21097441": {
     "Id": "21097441",
@@ -182730,8 +182730,8 @@
     "GroupId": 21097,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "SKILLDMG": 1000
+    "Atk": 385,
+    "SKILLDMG": 1300
   },
   "21097551": {
     "Id": "21097551",
@@ -182818,8 +182818,8 @@
     "GroupId": 21097,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "SKILLDMG": 1300
+    "Atk": 511,
+    "SKILLDMG": 1500
   },
   "21097661": {
     "Id": "21097661",
@@ -182906,8 +182906,8 @@
     "GroupId": 21097,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
-    "SKILLDMG": 1500
+    "Atk": 662,
+    "SKILLDMG": 1700
   },
   "21097771": {
     "Id": "21097771",
@@ -182994,8 +182994,8 @@
     "GroupId": 21097,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "SKILLDMG": 1700
+    "Atk": 842,
+    "SKILLDMG": 2000
   },
   "21097881": {
     "Id": "21097881",
@@ -183152,7 +183152,7 @@
     "GroupId": 21098,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "DEE": 200
   },
   "21098111": {
@@ -183240,8 +183240,8 @@
     "GroupId": 21098,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "DEE": 200
+    "Atk": 121,
+    "DEE": 400
   },
   "21098221": {
     "Id": "21098221",
@@ -183328,8 +183328,8 @@
     "GroupId": 21098,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "DEE": 400
+    "Atk": 194,
+    "DEE": 600
   },
   "21098331": {
     "Id": "21098331",
@@ -183416,7 +183416,7 @@
     "GroupId": 21098,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "DEE": 600
   },
   "21098441": {
@@ -183504,8 +183504,8 @@
     "GroupId": 21098,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "DEE": 600
+    "Atk": 385,
+    "DEE": 800
   },
   "21098551": {
     "Id": "21098551",
@@ -183592,8 +183592,8 @@
     "GroupId": 21098,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "DEE": 800
+    "Atk": 511,
+    "DEE": 1000
   },
   "21098661": {
     "Id": "21098661",
@@ -183680,7 +183680,7 @@
     "GroupId": 21098,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "DEE": 1000
   },
   "21098771": {
@@ -183768,8 +183768,8 @@
     "GroupId": 21098,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "DEE": 1000
+    "Atk": 842,
+    "DEE": 1200
   },
   "21098881": {
     "Id": "21098881",
@@ -183926,7 +183926,7 @@
     "GroupId": 21099,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "AEE": 200
   },
   "21099111": {
@@ -184014,8 +184014,8 @@
     "GroupId": 21099,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "AEE": 200
+    "Atk": 121,
+    "AEE": 400
   },
   "21099221": {
     "Id": "21099221",
@@ -184102,8 +184102,8 @@
     "GroupId": 21099,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "AEE": 400
+    "Atk": 194,
+    "AEE": 600
   },
   "21099331": {
     "Id": "21099331",
@@ -184190,7 +184190,7 @@
     "GroupId": 21099,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "AEE": 600
   },
   "21099441": {
@@ -184278,8 +184278,8 @@
     "GroupId": 21099,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "AEE": 600
+    "Atk": 385,
+    "AEE": 800
   },
   "21099551": {
     "Id": "21099551",
@@ -184366,8 +184366,8 @@
     "GroupId": 21099,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "AEE": 800
+    "Atk": 511,
+    "AEE": 1000
   },
   "21099661": {
     "Id": "21099661",
@@ -184454,7 +184454,7 @@
     "GroupId": 21099,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "AEE": 1000
   },
   "21099771": {
@@ -184542,8 +184542,8 @@
     "GroupId": 21099,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "AEE": 1000
+    "Atk": 842,
+    "AEE": 1200
   },
   "21099881": {
     "Id": "21099881",
@@ -184700,7 +184700,7 @@
     "GroupId": 21100,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "LEE": 200
   },
   "21100111": {
@@ -184788,8 +184788,8 @@
     "GroupId": 21100,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "LEE": 200
+    "Atk": 121,
+    "LEE": 400
   },
   "21100221": {
     "Id": "21100221",
@@ -184876,8 +184876,8 @@
     "GroupId": 21100,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "LEE": 400
+    "Atk": 194,
+    "LEE": 600
   },
   "21100331": {
     "Id": "21100331",
@@ -184964,7 +184964,7 @@
     "GroupId": 21100,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "LEE": 600
   },
   "21100441": {
@@ -185052,8 +185052,8 @@
     "GroupId": 21100,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "LEE": 600
+    "Atk": 385,
+    "LEE": 800
   },
   "21100551": {
     "Id": "21100551",
@@ -185140,8 +185140,8 @@
     "GroupId": 21100,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "LEE": 800
+    "Atk": 511,
+    "LEE": 1000
   },
   "21100661": {
     "Id": "21100661",
@@ -185228,7 +185228,7 @@
     "GroupId": 21100,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "LEE": 1000
   },
   "21100771": {
@@ -185316,8 +185316,8 @@
     "GroupId": 21100,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "LEE": 1000
+    "Atk": 842,
+    "LEE": 1200
   },
   "21100881": {
     "Id": "21100881",
@@ -185474,7 +185474,7 @@
     "GroupId": 21101,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "FEE": 200
   },
   "21101111": {
@@ -185562,8 +185562,8 @@
     "GroupId": 21101,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "FEE": 200
+    "Atk": 121,
+    "FEE": 400
   },
   "21101221": {
     "Id": "21101221",
@@ -185650,8 +185650,8 @@
     "GroupId": 21101,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "FEE": 400
+    "Atk": 194,
+    "FEE": 600
   },
   "21101331": {
     "Id": "21101331",
@@ -185738,7 +185738,7 @@
     "GroupId": 21101,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "FEE": 600
   },
   "21101441": {
@@ -185826,8 +185826,8 @@
     "GroupId": 21101,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "FEE": 600
+    "Atk": 385,
+    "FEE": 800
   },
   "21101551": {
     "Id": "21101551",
@@ -185914,8 +185914,8 @@
     "GroupId": 21101,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "FEE": 800
+    "Atk": 511,
+    "FEE": 1000
   },
   "21101661": {
     "Id": "21101661",
@@ -186002,7 +186002,7 @@
     "GroupId": 21101,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "FEE": 1000
   },
   "21101771": {
@@ -186090,8 +186090,8 @@
     "GroupId": 21101,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "FEE": 1000
+    "Atk": 842,
+    "FEE": 1200
   },
   "21101881": {
     "Id": "21101881",
@@ -186248,7 +186248,7 @@
     "GroupId": 21102,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "WEE": 200
   },
   "21102111": {
@@ -186336,8 +186336,8 @@
     "GroupId": 21102,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "WEE": 200
+    "Atk": 121,
+    "WEE": 400
   },
   "21102221": {
     "Id": "21102221",
@@ -186424,8 +186424,8 @@
     "GroupId": 21102,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "WEE": 400
+    "Atk": 194,
+    "WEE": 600
   },
   "21102331": {
     "Id": "21102331",
@@ -186512,7 +186512,7 @@
     "GroupId": 21102,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "WEE": 600
   },
   "21102441": {
@@ -186600,8 +186600,8 @@
     "GroupId": 21102,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "WEE": 600
+    "Atk": 385,
+    "WEE": 800
   },
   "21102551": {
     "Id": "21102551",
@@ -186688,8 +186688,8 @@
     "GroupId": 21102,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "WEE": 800
+    "Atk": 511,
+    "WEE": 1000
   },
   "21102661": {
     "Id": "21102661",
@@ -186776,7 +186776,7 @@
     "GroupId": 21102,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "WEE": 1000
   },
   "21102771": {
@@ -186864,8 +186864,8 @@
     "GroupId": 21102,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "WEE": 1000
+    "Atk": 842,
+    "WEE": 1200
   },
   "21102881": {
     "Id": "21102881",
@@ -187022,7 +187022,7 @@
     "GroupId": 21103,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
+    "Atk": 60,
     "SEE": 200
   },
   "21103111": {
@@ -187110,8 +187110,8 @@
     "GroupId": 21103,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "SEE": 200
+    "Atk": 121,
+    "SEE": 400
   },
   "21103221": {
     "Id": "21103221",
@@ -187198,8 +187198,8 @@
     "GroupId": 21103,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "SEE": 400
+    "Atk": 194,
+    "SEE": 600
   },
   "21103331": {
     "Id": "21103331",
@@ -187286,7 +187286,7 @@
     "GroupId": 21103,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
+    "Atk": 281,
     "SEE": 600
   },
   "21103441": {
@@ -187374,8 +187374,8 @@
     "GroupId": 21103,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "SEE": 600
+    "Atk": 385,
+    "SEE": 800
   },
   "21103551": {
     "Id": "21103551",
@@ -187462,8 +187462,8 @@
     "GroupId": 21103,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "SEE": 800
+    "Atk": 511,
+    "SEE": 1000
   },
   "21103661": {
     "Id": "21103661",
@@ -187550,7 +187550,7 @@
     "GroupId": 21103,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
+    "Atk": 662,
     "SEE": 1000
   },
   "21103771": {
@@ -187638,8 +187638,8 @@
     "GroupId": 21103,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "SEE": 1000
+    "Atk": 842,
+    "SEE": 1200
   },
   "21103881": {
     "Id": "21103881",
@@ -187796,8 +187796,8 @@
     "GroupId": 21104,
     "Break": 1,
     "lvl": 10,
-    "Atk": 50,
-    "ULTRADMG": 500
+    "Atk": 60,
+    "ULTRADMG": 900
   },
   "21104111": {
     "Id": "21104111",
@@ -187884,8 +187884,8 @@
     "GroupId": 21104,
     "Break": 2,
     "lvl": 20,
-    "Atk": 101,
-    "ULTRADMG": 900
+    "Atk": 121,
+    "ULTRADMG": 1400
   },
   "21104221": {
     "Id": "21104221",
@@ -187972,8 +187972,8 @@
     "GroupId": 21104,
     "Break": 3,
     "lvl": 30,
-    "Atk": 161,
-    "ULTRADMG": 1400
+    "Atk": 194,
+    "ULTRADMG": 1800
   },
   "21104331": {
     "Id": "21104331",
@@ -188060,8 +188060,8 @@
     "GroupId": 21104,
     "Break": 4,
     "lvl": 40,
-    "Atk": 234,
-    "ULTRADMG": 1800
+    "Atk": 281,
+    "ULTRADMG": 2200
   },
   "21104441": {
     "Id": "21104441",
@@ -188148,8 +188148,8 @@
     "GroupId": 21104,
     "Break": 5,
     "lvl": 50,
-    "Atk": 321,
-    "ULTRADMG": 2200
+    "Atk": 385,
+    "ULTRADMG": 2600
   },
   "21104551": {
     "Id": "21104551",
@@ -188236,8 +188236,8 @@
     "GroupId": 21104,
     "Break": 6,
     "lvl": 60,
-    "Atk": 426,
-    "ULTRADMG": 2600
+    "Atk": 511,
+    "ULTRADMG": 3100
   },
   "21104661": {
     "Id": "21104661",
@@ -188324,8 +188324,8 @@
     "GroupId": 21104,
     "Break": 7,
     "lvl": 70,
-    "Atk": 552,
-    "ULTRADMG": 3100
+    "Atk": 662,
+    "ULTRADMG": 3500
   },
   "21104771": {
     "Id": "21104771",
@@ -188412,8 +188412,8 @@
     "GroupId": 21104,
     "Break": 8,
     "lvl": 80,
-    "Atk": 702,
-    "ULTRADMG": 3500
+    "Atk": 842,
+    "ULTRADMG": 4000
   },
   "21104881": {
     "Id": "21104881",

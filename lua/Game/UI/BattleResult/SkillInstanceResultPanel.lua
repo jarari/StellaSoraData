@@ -1,22 +1,23 @@
-
 local SkillInstanceResultPanel = class("SkillInstanceResultPanel", BasePanel)
-
 SkillInstanceResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 SkillInstanceResultPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.SkillInstanceResultCtrl"}
+{sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.SkillInstanceResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+SkillInstanceResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function SkillInstanceResultPanel:Awake()
+SkillInstanceResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SkillInstanceResultPanel:OnEnable()
+
+SkillInstanceResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function SkillInstanceResultPanel:OnDisable()
+
+SkillInstanceResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function SkillInstanceResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return SkillInstanceResultPanel
+

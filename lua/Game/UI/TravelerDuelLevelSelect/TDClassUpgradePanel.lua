@@ -1,22 +1,24 @@
--- TDClassUpgradePanel Panel
-
 local TDClassUpgradePanel = class("TDClassUpgradePanel", BasePanel)
 TDClassUpgradePanel._bIsMainPanel = false
-
-TDClassUpgradePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-
+TDClassUpgradePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 TDClassUpgradePanel._tbDefine = {
-    {sPrefabPath = "TravelerDuelLevelSelect/TDClassUpgradePanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TDClassUpgradeCtrl"},
+{sPrefabPath = "TravelerDuelLevelSelect/TDClassUpgradePanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TDClassUpgradeCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function TDClassUpgradePanel:Awake()
+TDClassUpgradePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function TDClassUpgradePanel:OnEnable()
+
+TDClassUpgradePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TDClassUpgradePanel:OnDisable()
+
+TDClassUpgradePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function TDClassUpgradePanel:OnDestroy()
+
+TDClassUpgradePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return TDClassUpgradePanel
+

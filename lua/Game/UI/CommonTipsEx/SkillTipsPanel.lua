@@ -1,35 +1,29 @@
--- Panel 模板
-
 local SkillTipsPanel = class("SkillTipsPanel", BasePanel)
 SkillTipsPanel._bIsMainPanel = false
 SkillTipsPanel._bAddToBackHistory = false
-
-SkillTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
--- Panel 定义
---[[
-SkillTipsPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-SkillTipsPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-SkillTipsPanel._bIsMainPanel = true
-SkillTipsPanel._bAddToBackHistory = true
-SkillTipsPanel._nSnapshotPrePanel = 0
-
-SkillTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
+SkillTipsPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 SkillTipsPanel._tbDefine = {
-    {sPrefabPath = "CommonTipsEx/SkillTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.SkillTipsCtrl"}
+{sPrefabPath = "CommonTipsEx/SkillTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.SkillTipsCtrl"}
 }
--------------------- local function --------------------
+SkillTipsPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function SkillTipsPanel:Awake()
+SkillTipsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SkillTipsPanel:OnEnable()
+
+SkillTipsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function SkillTipsPanel:OnDisable()
+
+SkillTipsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function SkillTipsPanel:OnDestroy()
+
+SkillTipsPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function SkillTipsPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return SkillTipsPanel
+

@@ -23,5 +23,19 @@
     "ChapterIcon": "Icon/MapChapter/chapter_stage_02",
     "ChapterYear": "StoryChapter.2.3",
     "UnlockShowStoryId": 204
+  },
+  "3": {
+    "Id": 3,
+    "Type": 1,
+    "WorldClass": 9,
+    "PrevStories": [
+      "STm02_11"
+    ],
+    "Index": "03",
+    "Name": "StoryChapter.3.1",
+    "Desc": "StoryChapter.3.2",
+    "ChapterIcon": "Icon/MapChapter/chapter_stage_03",
+    "ChapterYear": "StoryChapter.3.3",
+    "UnlockShowStoryId": 304
   }
 }

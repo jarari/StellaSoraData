@@ -589,18 +589,6 @@
     ],
     "ThinkInterval": 2000
   },
-  "1103101": {
-    "Id": 1103101,
-    "ComboGroupPath": "Monster/11031FaMuXie/Combo/ComboGroup_FixedRogueLikeStageTwo",
-    "ActionBranchIds": [
-      110310101,
-      110310102,
-      110310103,
-      110310106,
-      110310107
-    ],
-    "ThinkInterval": 2000
-  },
   "1104101": {
     "Id": 1104101,
     "ComboGroupPath": "Monster/11041Firenze/Combo/ComboGroup",
@@ -672,55 +660,6 @@
       110110203
     ],
     "ThinkInterval": 5000
-  },
-  "1100301": {
-    "Id": 1100301,
-    "ComboGroupPath": "Monster/11003JinZhanNongJi/Combo/ComboGroup",
-    "SpawnShowSkillId": 9999989,
-    "DieSkillId": 9999990,
-    "ActionBranchIds": [
-      110030101,
-      110039999
-    ],
-    "ThinkInterval": 2000,
-    "WanderRange": 30000,
-    "WanderRate": 5000
-  },
-  "1100401": {
-    "Id": 1100401,
-    "ComboGroupPath": "Monster/11004YuanChengNongJi/Combo/ComboGroup",
-    "SpawnShowSkillId": 9999989,
-    "DieSkillId": 9999990,
-    "ActionBranchIds": [
-      110040101,
-      110040102,
-      110049999
-    ],
-    "ThinkInterval": 2000,
-    "WanderRange": 30000,
-    "WanderRate": 5000
-  },
-  "1102101": {
-    "Id": 1102101,
-    "ComboGroupPath": "Monster/11021XunHuiQuan/Combo/ComboGroup",
-    "SpawnShowSkillId": 9999989,
-    "DieSkillId": 9999990,
-    "ActionBranchIds": [
-      110210201
-    ],
-    "ThinkInterval": 2000,
-    "WanderRange": 30000,
-    "WanderRate": 5000
-  },
-  "1102102": {
-    "Id": 1102102,
-    "ComboGroupPath": "Monster/11021XunHuiQuan/Combo/ComboGroup",
-    "SpawnShowSkillId": 1102103,
-    "DieSkillId": 9999990,
-    "ActionBranchIds": [
-      110210202
-    ],
-    "ThinkInterval": 2000
   },
   "1000303": {
     "Id": 1000303,
@@ -1002,6 +941,84 @@
       100080199
     ],
     "ThinkInterval": 2000
+  },
+  "1100301": {
+    "Id": 1100301,
+    "ComboGroupPath": "Monster/11003JinZhanNongJi/Combo/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      110030101,
+      110039999
+    ],
+    "ThinkInterval": 2000,
+    "WanderRange": 30000,
+    "WanderRate": 5000
+  },
+  "1100401": {
+    "Id": 1100401,
+    "ComboGroupPath": "Monster/11004YuanChengNongJi/Combo/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      110040101,
+      110040102,
+      110049999
+    ],
+    "ThinkInterval": 2000,
+    "WanderRange": 30000,
+    "WanderRate": 5000
+  },
+  "1102101": {
+    "Id": 1102101,
+    "ComboGroupPath": "Monster/11021XunHuiQuan/Combo/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      110210201
+    ],
+    "ThinkInterval": 2000,
+    "WanderRange": 30000,
+    "WanderRate": 5000
+  },
+  "1102102": {
+    "Id": 1102102,
+    "ComboGroupPath": "Monster/11021XunHuiQuan/Combo/ComboGroup",
+    "SpawnShowSkillId": 1102103,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      110210202
+    ],
+    "ThinkInterval": 2000
+  },
+  "1103101": {
+    "Id": 1103101,
+    "ComboGroupPath": "Monster/11031FaMuXie/Combo/DXHuoDong/ComboGroup",
+    "SpawnShowSkillId": 1103109,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._11031FaMuXie.Action_Lv1",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._11031FaMuXie.Parallel"
+  },
+  "1103102": {
+    "Id": 1103102,
+    "ComboGroupPath": "Monster/11031FaMuXie/Combo/DXHuoDong/ComboGroup",
+    "SpawnShowSkillId": 1103109,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._11031FaMuXie.Action_Lv2",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._11031FaMuXie.Parallel"
+  },
+  "3028201": {
+    "Id": 3028201,
+    "ComboGroupPath": "Monster/30282ShengDanLiWuJi/Combo/ComboGroup",
+    "SpawnShowSkillId": 3028201,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      9999999
+    ],
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._11031FaMuXie.Parallel"
   },
   "5000101": {
     "Id": 5000101,
@@ -1919,6 +1936,19 @@
     "ThinkInterval": 2000,
     "CheckAchievement": true
   },
+  "5002140": {
+    "Id": 5002140,
+    "ComboGroupPath": "Monster/30201ShengDanJianDun/Combo/Christmas_1/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      500210101,
+      500219998,
+      500219999
+    ],
+    "ThinkInterval": 2000,
+    "CheckAchievement": true
+  },
   "5004101": {
     "Id": 5004101,
     "ComboGroupPath": "Monster/50041XiaoFa/Combo/ComboGroup",
@@ -2371,6 +2401,20 @@
     "ThinkInterval": 2000,
     "CheckAchievement": true
   },
+  "5004140": {
+    "Id": 5004140,
+    "ComboGroupPath": "Monster/30211ShengDanXiaoFa/Combo/Christmas_1/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      500412001,
+      500413001,
+      500410991,
+      500410999
+    ],
+    "ThinkInterval": 2000,
+    "CheckAchievement": true
+  },
   "5005117": {
     "Id": 5005117,
     "ComboGroupPath": "Monster/50051DanZhuTouShou/Combo/Fire/ComboGroup",
@@ -2722,6 +2766,22 @@
       500510199,
       500510103,
       500513501
+    ],
+    "ThinkInterval": 2000,
+    "CheckAchievement": true,
+    "WanderRange": 50000,
+    "WanderInterval": 30000,
+    "WanderRate": 5000
+  },
+  "5005140": {
+    "Id": 5005140,
+    "ComboGroupPath": "Monster/50051DanZhuTouShou/Combo/Earth/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      500510199,
+      500510103,
+      500513001
     ],
     "ThinkInterval": 2000,
     "CheckAchievement": true,
@@ -3464,6 +3524,17 @@
   "5009107": {
     "Id": 5009107,
     "ComboGroupPath": "Monster/50091GuanZi/Combo/None/ComboGroup_None",
+    "SpawnShowSkillId": 9999988,
+    "DieSkillId": 5009101,
+    "ActionBranchIds": [
+      500910102,
+      500910199
+    ],
+    "ThinkInterval": 5000
+  },
+  "5009110": {
+    "Id": 5009110,
+    "ComboGroupPath": "Monster/30231ShengDanXiaoGuanzi/Combo/Christmas_1/ComboGroup",
     "SpawnShowSkillId": 9999988,
     "DieSkillId": 5009101,
     "ActionBranchIds": [
@@ -5097,6 +5168,18 @@
     ],
     "ThinkInterval": 2000
   },
+  "1001870": {
+    "Id": 1001870,
+    "ComboGroupPath": "Monster/30241ShengDanPangPang/Combo/Christmas_1/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      100185101,
+      100189991,
+      100189999
+    ],
+    "ThinkInterval": 2000
+  },
   "5016101": {
     "Id": 5016101,
     "ComboGroupPath": "Monster/50161BianSuCiKe/Combo/None/ComboGroup",
@@ -5566,6 +5649,36 @@
   },
   "5051103": {
     "Id": 5051103,
+    "ComboGroupPath": "Monster/50511TaLou/Combo/Fire/ComboGroup",
+    "SpawnShowSkillId": 5051110,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._50511TaLou.Action_Fire_Lv3",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._50511TaLou.Parallel_Fire",
+    "CheckAchievement": true
+  },
+  "5051110": {
+    "Id": 5051110,
+    "ComboGroupPath": "Monster/50511TaLou/Combo/Fire/ComboGroup",
+    "SpawnShowSkillId": 5051110,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._50511TaLou.Action_Fire_Lv1",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._50511TaLou.Parallel_Fire",
+    "CheckAchievement": true
+  },
+  "5051111": {
+    "Id": 5051111,
+    "ComboGroupPath": "Monster/50511TaLou/Combo/Fire/ComboGroup",
+    "SpawnShowSkillId": 5051110,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._50511TaLou.Action_Fire_Lv2",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._50511TaLou.Parallel_Fire",
+    "CheckAchievement": true
+  },
+  "5051112": {
+    "Id": 5051112,
     "ComboGroupPath": "Monster/50511TaLou/Combo/Fire/ComboGroup",
     "SpawnShowSkillId": 5051110,
     "DieSkillId": 9999990,
@@ -7715,6 +7828,17 @@
     ],
     "ThinkInterval": 2000
   },
+  "5019110": {
+    "Id": 5019110,
+    "ComboGroupPath": "Monster/50191ZhongGuanZi/Combo/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      501910101,
+      501910199
+    ],
+    "ThinkInterval": 2000
+  },
   "5019181": {
     "Id": 5019181,
     "ComboGroupPath": "Monster/50191ZhongGuanZi/Combo/ComboGroup",
@@ -7802,20 +7926,19 @@
   "1050101": {
     "Id": 1050101,
     "ComboGroupPath": "Monster/10501BanShenShu/Combo/ComboGroup",
-    "SpawnShowSkillId": 1050100,
+    "SpawnShowSkillId": 1050190,
     "DieSkillId": 1050104,
     "ActionBranchIds": [
-      105010101,
+      105010110,
       105010111,
       105010112,
+      105010120,
+      105010130,
+      105010140,
       105010121,
+      105010141,
       105010131,
-      105010151,
-      105010201,
-      105010211,
-      105010221,
-      105010231,
-      105010241
+      105010520
     ],
     "ThinkInterval": 2000,
     "ParallelAIPath": "AIScript.Monster._10501BanShenShu.Parallel",
@@ -8230,6 +8353,16 @@
     ],
     "ThinkInterval": 2000
   },
+  "1100751": {
+    "Id": 1100751,
+    "ComboGroupPath": "Monster/11007ZhongYeYuanGong/Combo/ComboGroup_New",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      110071291,
+      110075201
+    ]
+  },
   "1600101": {
     "Id": 1600101,
     "ComboGroupPath": "Monster/16001JinZhanFengCao/Combo/ComboGroup",
@@ -8300,8 +8433,8 @@
     "DieSkillId": 9999990,
     "ActionBranchIds": [
       160210101,
-      160210201,
-      501110198,
+      160210301,
+      500019996,
       160219901
     ],
     "ThinkInterval": 2000,
@@ -8315,7 +8448,7 @@
     "SpawnShowSkillId": 9999989,
     "DieSkillId": 9999990,
     "ActionBranchIds": [
-      160210201,
+      160210301,
       501110198,
       160219901
     ],
@@ -8397,6 +8530,28 @@
     "SpawnShowSkillId": 1551035,
     "DieSkillId": 1551036,
     "ActionAIPath": "AIScript.Monster._15510FengNiao.Action_SmallBird",
+    "ThinkInterval": 2000
+  },
+  "1551005": {
+    "Id": 1551005,
+    "ComboGroupPath": "Monster/15510FengNiao/Combo/ComboGroup_Lv2&3",
+    "SpawnShowSkillId": 1551091,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._15510FengNiao.Action_BossRush",
+    "ThinkInterval": 2000,
+    "ParallelAIPath": "AIScript.Monster._15510FengNiao.Parallel",
+    "CheckAchievement": true
+  },
+  "1552013": {
+    "Id": 1552013,
+    "ComboGroupPath": "Monster/15530FengNiaoHua/Combo/ComboGroup",
+    "ActionAIPath": "AIScript.Monster._15510FengNiao.Action_BirdFlower_Active_BossRush",
+    "ThinkInterval": 2000
+  },
+  "1552014": {
+    "Id": 1552014,
+    "ComboGroupPath": "Monster/15530FengNiaoHua/Combo/ComboGroup",
+    "ActionAIPath": "AIScript.Monster._15510FengNiao.Action_BirdFlower_Deactive_BossRush",
     "ThinkInterval": 2000
   },
   "1200101": {
@@ -8880,6 +9035,22 @@
     "ActionAIPath": "AIScript.Monster._Boss._Light._50251ShanDianLieQuan.MiniBoss_Action_Lv2",
     "ThinkInterval": 2000
   },
+  "5025120": {
+    "Id": 5025120,
+    "ComboGroupPath": "Monster/50251ShanDianLieQuan/Combo/Boss/Fire/ComboGroup_Boss_Fire",
+    "SpawnShowSkillId": 5025129,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._Boss._Fire._50251ShanDianLieQuan.MiniBoss_Fire_Action_Lv1",
+    "ThinkInterval": 2000
+  },
+  "5025121": {
+    "Id": 5025121,
+    "ComboGroupPath": "Monster/50251ShanDianLieQuan/Combo/Boss/Fire/ComboGroup_Boss_Fire",
+    "SpawnShowSkillId": 5025129,
+    "DieSkillId": 9999990,
+    "ActionAIPath": "AIScript.Monster._Boss._Fire._50251ShanDianLieQuan.MiniBoss_Fire_Action_Lv2",
+    "ThinkInterval": 2000
+  },
   "5026101": {
     "Id": 5026101,
     "ComboGroupPath": "Monster/50261FengLing/Combo/ComboGroup",
@@ -8964,6 +9135,18 @@
     ],
     "ThinkInterval": 2000
   },
+  "5026110": {
+    "Id": 5026110,
+    "ComboGroupPath": "Monster/50261FengLing/Combo/ComboGroup",
+    "SpawnShowSkillId": 9999989,
+    "DieSkillId": 9999990,
+    "ActionBranchIds": [
+      502610199,
+      502610198,
+      502610101
+    ],
+    "ThinkInterval": 2000
+  },
   "5030100": {
     "Id": 5030100,
     "ComboGroupPath": "Monster/50301MaoDa/Combo/Wind/ComboGroup_Wind",
@@ -8983,6 +9166,30 @@
   "5030102": {
     "Id": 5030102,
     "ComboGroupPath": "Monster/50301MaoDa/Combo/Wind/ComboGroup_Wind_Nuji",
+    "SpawnShowSkillId": 5030104,
+    "DieSkillId": 5030105,
+    "ActionAIPath": "AIScript.Monster._Wind._50301MaoDa.Wind_Action_Nuji",
+    "ThinkInterval": 2000
+  },
+  "5030110": {
+    "Id": 5030110,
+    "ComboGroupPath": "Monster/50301MaoDa/Combo/Dark/ComboGroup_Dark",
+    "SpawnShowSkillId": 5030101,
+    "DieSkillId": 5030100,
+    "ActionAIPath": "AIScript.Monster._Wind._50301MaoDa.Wind_Action_Lv1",
+    "ThinkInterval": 2000
+  },
+  "5030111": {
+    "Id": 5030111,
+    "ComboGroupPath": "Monster/50301MaoDa/Combo/Dark/ComboGroup_Dark",
+    "SpawnShowSkillId": 5030101,
+    "DieSkillId": 5030100,
+    "ActionAIPath": "AIScript.Monster._Wind._50301MaoDa.Wind_Action_Lv2",
+    "ThinkInterval": 2000
+  },
+  "5030112": {
+    "Id": 5030112,
+    "ComboGroupPath": "Monster/50301MaoDa/Combo/Dark/ComboGroup_Dark_Nuji",
     "SpawnShowSkillId": 5030104,
     "DieSkillId": 5030105,
     "ActionAIPath": "AIScript.Monster._Wind._50301MaoDa.Wind_Action_Nuji",
@@ -9704,6 +9911,17 @@
     "SpawnAIPath": "AIScript.Monster._11901111Hanahara.Spawn",
     "ParallelAIPath": "AIScript.Monster._11901111Hanahara.Parallel"
   },
+  "11901311": {
+    "Id": 11901311,
+    "ComboGroupPath": "Character/11903/Combos_Monster/ComboGroup_Summon_11903",
+    "SpawnShowSkillId": 11940005,
+    "DieSkillId": 11940006,
+    "ActionAIPath": "AIScript.Monster._11901111Hanahara.Action",
+    "ThinkInterval": 1000,
+    "IdleAIPath": "AIScript.Monster._11901111Hanahara.Idle",
+    "SpawnAIPath": "AIScript.Monster._11901111Hanahara.Spawn",
+    "ParallelAIPath": "AIScript.Monster._11901111Hanahara.Parallel"
+  },
   "12301111": {
     "Id": 12301111,
     "ComboGroupPath": "Character/12301/Combos_Monster/ComboGroup_Summon_12301_Pet",
@@ -10254,5 +10472,41 @@
       100510307
     ],
     "ThinkInterval": 2000
+  },
+  "101001": {
+    "Id": 101001,
+    "ComboGroupPath": "Monster/99900EmptyMonster/ComboGroup",
+    "SpawnShowSkillId": 8000001,
+    "DieSkillId": 8000002,
+    "ActionAIPath": "AIScript.Monster.TowerDefense.AI_JustRun",
+    "ThinkInterval": 2000,
+    "SpawnAIPath": "AIScript.Monster.TowerDefense.TowerMonsterSpawn"
+  },
+  "101002": {
+    "Id": 101002,
+    "ComboGroupPath": "Character/15601/TowerDefense/PenguinDoll/ComboGroup",
+    "SpawnShowSkillId": 8015603,
+    "DieSkillId": 8015604,
+    "ActionAIPath": "AIScript.Monster.TowerDefense._15601.Action_Summon",
+    "ThinkInterval": 2000,
+    "SpawnAIPath": "AIScript.Monster.TowerDefense._15601.Spawn"
+  },
+  "101003": {
+    "Id": 101003,
+    "ComboGroupPath": "Monster/50001DaShou/TowerDefense/Combo/ComboGroup",
+    "SpawnShowSkillId": 8000001,
+    "DieSkillId": 8000002,
+    "ActionAIPath": "AIScript.Monster.TowerDefense.AI_SpeedUpDaShou",
+    "ThinkInterval": 2000,
+    "SpawnAIPath": "AIScript.Monster.TowerDefense.TowerMonsterSpawn"
+  },
+  "101004": {
+    "Id": 101004,
+    "ComboGroupPath": "Monster/50111BuffJingLing/TowerDefense/ComboGroup",
+    "SpawnShowSkillId": 8000001,
+    "DieSkillId": 8000002,
+    "ActionAIPath": "AIScript.Monster.TowerDefense.AI_BuffJingLing",
+    "ThinkInterval": 2000,
+    "SpawnAIPath": "AIScript.Monster.TowerDefense.TowerMonsterSpawn"
   }
 }

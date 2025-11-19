@@ -238,5 +238,37 @@
     "L2D": "Actor2D/NPC/915501/15501_L.prefab",
     "InteractiveAction": true,
     "InteractiveActionId": 10003
+  },
+  "813401": {
+    "Id": 813401,
+    "Name": "冬香",
+    "Desc": "常规制服",
+    "IsShow": true,
+    "CharId": 8134,
+    "Type": 1,
+    "SourceDesc": 1,
+    "ModelScale": 10000,
+    "Model": "Actor/Character/13301/13401_Actor",
+    "Portrait": "Actor2D/Character/13401/13401_a.spriteatlas",
+    "Offset": "Actor2D/Character/13401/13401.asset",
+    "L2D": "Actor2D/Character/13401/13401_L.prefab",
+    "InteractiveAction": true,
+    "InteractiveActionId": 10003
+  },
+  "813301": {
+    "Id": 813301,
+    "Name": "???",
+    "Desc": "常规制服",
+    "IsShow": true,
+    "CharId": 8133,
+    "Type": 1,
+    "SourceDesc": 1,
+    "ModelScale": 10000,
+    "Model": "Actor/Character/13301/13301_Actor",
+    "Portrait": "Actor2D/Character/13301/13301_a.spriteatlas",
+    "Offset": "Actor2D/Character/13301/13301.asset",
+    "L2D": "Actor2D/Character/13301/13301_L.prefab",
+    "InteractiveAction": true,
+    "InteractiveActionId": 10003
   }
 }

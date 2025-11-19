@@ -1,29 +1,23 @@
--- Panel 模板
-
 local RoguelikeResultPanel = class("RoguelikeResultPanel", BasePanel)
-
--- Panel 定义
---[[
-RoguelikeResultPanel._bIsMainPanel = true
-RoguelikeResultPanel._bAddToBackHistory = true
-RoguelikeResultPanel._nSnapshotPrePanel = 0
-
-RoguelikeResultPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 RoguelikeResultPanel._bAddToBackHistory = false
 RoguelikeResultPanel._tbDefine = {
-    {sPrefabPath = "RoguelikeResultPanel/RoguelikeResult.prefab", sCtrlName = "Game.UI.RoguelikeResultPanel.RoguelikeResultCtrl"}
+{sPrefabPath = "RoguelikeResultPanel/RoguelikeResult.prefab", sCtrlName = "Game.UI.RoguelikeResultPanel.RoguelikeResultCtrl"}
 }
--------------------- local function --------------------
+RoguelikeResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function RoguelikeResultPanel:Awake()
+RoguelikeResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function RoguelikeResultPanel:OnEnable()
+
+RoguelikeResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function RoguelikeResultPanel:OnDisable()
+
+RoguelikeResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function RoguelikeResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return RoguelikeResultPanel
+

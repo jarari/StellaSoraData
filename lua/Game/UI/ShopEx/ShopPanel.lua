@@ -1,25 +1,27 @@
--- ShopPanel Panel
-
 local ShopPanel = class("ShopPanel", BasePanel)
--- Panel 定义
-
 ShopPanel._tbDefine = {
-    {sPrefabPath = "ShopEx/ShopPanel.prefab", sCtrlName = "Game.UI.ShopEx.ShopCtrl"},
+{sPrefabPath = "ShopEx/ShopPanel.prefab", sCtrlName = "Game.UI.ShopEx.ShopCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function ShopPanel:Awake()
-    self.nDefaultId = nil
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.nDefaultId = tbParam[1]
-    end
+ShopPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.nDefaultId = nil
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.nDefaultId = tbParam[1]
+  end
 end
-function ShopPanel:OnEnable()
+
+ShopPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ShopPanel:OnDisable()
+
+ShopPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ShopPanel:OnDestroy()
+
+ShopPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return ShopPanel
+

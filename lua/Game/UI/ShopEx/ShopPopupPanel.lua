@@ -1,20 +1,23 @@
--- ShopPopupPanel Panel
-
 local ShopPopupPanel = class("ShopPopupPanel", BasePanel)
--- Panel 定义
 ShopPopupPanel._bIsMainPanel = false
 ShopPopupPanel._tbDefine = {
-    {sPrefabPath = "ShopEx/ShopPopupPanel.prefab", sCtrlName = "Game.UI.ShopEx.ShopPopupCtrl"},
+{sPrefabPath = "ShopEx/ShopPopupPanel.prefab", sCtrlName = "Game.UI.ShopEx.ShopPopupCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function ShopPopupPanel:Awake()
+ShopPopupPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function ShopPopupPanel:OnEnable()
+
+ShopPopupPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ShopPopupPanel:OnDisable()
+
+ShopPopupPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ShopPopupPanel:OnDestroy()
+
+ShopPopupPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return ShopPopupPanel
+

@@ -1,23 +1,30 @@
-
 local JointDrillLevelSelectPanel = class("JointDrillLevelSelectPanel", BasePanel)
-
 JointDrillLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "Play_JointDrill/JointDrillLevelSelect.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillLevelSelectCtrl"}
+{sPrefabPath = "Play_JointDrill/JointDrillLevelSelect.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillLevelSelectCtrl"}
 }
--------------------- local function --------------------
+JointDrillLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function JointDrillLevelSelectPanel:Awake()
+JointDrillLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function JointDrillLevelSelectPanel:OnEnable()
+
+JointDrillLevelSelectPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function JointDrillLevelSelectPanel:OnAfterEnter()
+
+JointDrillLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function JointDrillLevelSelectPanel:OnDisable()
+
+JointDrillLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function JointDrillLevelSelectPanel:OnDestroy()
+
+JointDrillLevelSelectPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function JointDrillLevelSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return JointDrillLevelSelectPanel
+

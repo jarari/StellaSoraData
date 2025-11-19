@@ -340,14 +340,15 @@
     "Desc": "Achievement.24.2",
     "Rarity": 2,
     "Type": 1,
-    "Hide": true,
     "CompleteCond": 63,
     "AimNumShow": 1,
     "Prerequisites": [
       23
     ],
-    "Tid1": 2,
-    "Qty1": 10
+    "Tid1": 111004,
+    "Qty1": 1,
+    "Tid2": 2,
+    "Qty2": 10
   },
   "25": {
     "Id": 25,
@@ -4002,7 +4003,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      276
+      270
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4017,7 +4018,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      277
+      271
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4032,7 +4033,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      278
+      272
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4047,7 +4048,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      279
+      273
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4062,7 +4063,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      280
+      274
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4077,7 +4078,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      281
+      275
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4092,7 +4093,7 @@
     "CompleteCond": 46,
     "AimNumShow": 20,
     "Prerequisites": [
-      282
+      276
     ],
     "Tid1": 2,
     "Qty1": 5
@@ -4107,7 +4108,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      283
+      277
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4122,7 +4123,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      284
+      278
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4137,7 +4138,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      285
+      279
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4152,7 +4153,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      286
+      280
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4167,7 +4168,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      287
+      281
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4182,7 +4183,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      288
+      282
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4197,7 +4198,7 @@
     "CompleteCond": 46,
     "AimNumShow": 30,
     "Prerequisites": [
-      289
+      283
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4212,7 +4213,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      290
+      284
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4227,7 +4228,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      291
+      285
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4242,7 +4243,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      292
+      286
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4257,7 +4258,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      293
+      287
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4272,7 +4273,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      294
+      288
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4287,7 +4288,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      295
+      289
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4302,7 +4303,7 @@
     "CompleteCond": 46,
     "AimNumShow": 40,
     "Prerequisites": [
-      296
+      290
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4317,7 +4318,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      297
+      291
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4332,7 +4333,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      298
+      292
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4347,7 +4348,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      299
+      293
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4362,7 +4363,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      300
+      294
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4377,7 +4378,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      301
+      295
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4392,7 +4393,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      302
+      296
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4407,7 +4408,7 @@
     "CompleteCond": 46,
     "AimNumShow": 50,
     "Prerequisites": [
-      303
+      297
     ],
     "Tid1": 2,
     "Qty1": 10
@@ -4422,7 +4423,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      304
+      298
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4437,7 +4438,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      305
+      299
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4452,7 +4453,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      306
+      300
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4467,7 +4468,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      307
+      301
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4482,7 +4483,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      308
+      302
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4497,7 +4498,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      309
+      303
     ],
     "Tid1": 2,
     "Qty1": 20
@@ -4512,7 +4513,7 @@
     "CompleteCond": 46,
     "AimNumShow": 60,
     "Prerequisites": [
-      310
+      304
     ],
     "Tid1": 2,
     "Qty1": 20

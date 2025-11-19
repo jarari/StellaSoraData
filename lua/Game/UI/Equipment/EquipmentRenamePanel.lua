@@ -1,20 +1,23 @@
--- EquipmentRenamePanel Panel
-
 local EquipmentRenamePanel = class("EquipmentRenamePanel", BasePanel)
--- Panel 定义
 EquipmentRenamePanel._bIsMainPanel = false
 EquipmentRenamePanel._tbDefine = {
-    {sPrefabPath = "Equipment/EquipmentRenamePanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentRenameCtrl"},
+{sPrefabPath = "Equipment/EquipmentRenamePanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentRenameCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function EquipmentRenamePanel:Awake()
+EquipmentRenamePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function EquipmentRenamePanel:OnEnable()
+
+EquipmentRenamePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function EquipmentRenamePanel:OnDisable()
+
+EquipmentRenamePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function EquipmentRenamePanel:OnDestroy()
+
+EquipmentRenamePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return EquipmentRenamePanel
+

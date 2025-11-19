@@ -70,7 +70,7 @@
     "MonsterLv": 8,
     "SceneName": "Levels/Main/Coast/Coast_Main_7_1",
     "ConfigPrefabName": "StoryActivity_HaiTu_N8",
-    "Theme": 401,
+    "Theme": 15,
     "BGM": "haiTu_realChallenge_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop"
   },
@@ -107,8 +107,118 @@
     "MonsterLv": 12,
     "SceneName": "Levels/Main/Coast/Coast_Main_7_1",
     "ConfigPrefabName": "StoryActivity_HaiTu_H4",
-    "Theme": 401,
+    "Theme": 15,
     "BGM": "haiTu_realChallenge_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop"
+  },
+  "300201": {
+    "Id": 300201,
+    "MonsterLv": 1,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01",
+    "ConfigPrefabName": "StoryActivity_016_A_N1",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300202": {
+    "Id": 300202,
+    "MonsterLv": 2,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01",
+    "ConfigPrefabName": "StoryActivity_013_A_N2",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300203": {
+    "Id": 300203,
+    "MonsterLv": 3,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01",
+    "ConfigPrefabName": "StoryActivity_001_A_N3",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300204": {
+    "Id": 300204,
+    "MonsterLv": 4,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01",
+    "ConfigPrefabName": "StoryActivity_006_A_N4",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300205": {
+    "Id": 300205,
+    "MonsterLv": 5,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_013_A_Mir_N5",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300206": {
+    "Id": 300206,
+    "MonsterLv": 6,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_001_A_Mir_N6",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300207": {
+    "Id": 300207,
+    "MonsterLv": 7,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_006_A_Mir_N7",
+    "Mir": true,
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300208": {
+    "Id": 300208,
+    "MonsterLv": 8,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_016_A_Mir_N8",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300209": {
+    "Id": 300209,
+    "MonsterLv": 9,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_001_A_01",
+    "ConfigPrefabName": "StoryActivity_001_A_H1",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300210": {
+    "Id": 300210,
+    "MonsterLv": 10,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_013_A_01",
+    "ConfigPrefabName": "StoryActivity_013_A_H2",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300211": {
+    "Id": 300211,
+    "MonsterLv": 11,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_006_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_006_A_Mir_H3",
+    "Mir": true,
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
+  },
+  "300212": {
+    "Id": 300212,
+    "MonsterLv": 12,
+    "SceneName": "Levels/StoryActivity/StoryActivity_2/StoryActivity_2_016_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_016_A_Mir_H4",
+    "Theme": 406,
+    "BGM": "mode_Dongxiang_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_forest_all_stop"
   }
 }

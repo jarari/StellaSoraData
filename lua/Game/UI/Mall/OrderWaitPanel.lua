@@ -1,21 +1,24 @@
--- OrderWaitPanel Panel
-
 local OrderWaitPanel = class("OrderWaitPanel", BasePanel)
--- Panel 定义
 OrderWaitPanel._bAddToBackHistory = false
-OrderWaitPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+OrderWaitPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 OrderWaitPanel._tbDefine = {
-    {sPrefabPath = "Mall/OrderWaitPanel.prefab", sCtrlName = "Game.UI.Mall.OrderWaitCtrl"},
+{sPrefabPath = "Mall/OrderWaitPanel.prefab", sCtrlName = "Game.UI.Mall.OrderWaitCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function OrderWaitPanel:Awake()
+OrderWaitPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function OrderWaitPanel:OnEnable()
+
+OrderWaitPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function OrderWaitPanel:OnDisable()
+
+OrderWaitPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function OrderWaitPanel:OnDestroy()
+
+OrderWaitPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return OrderWaitPanel
+

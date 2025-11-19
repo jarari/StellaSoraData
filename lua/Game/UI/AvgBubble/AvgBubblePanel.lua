@@ -1,64 +1,79 @@
 local AvgBubblePanel = class("AvgBubblePanel", BasePanel)
-AvgBubblePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+AvgBubblePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 AvgBubblePanel._bAddToBackHistory = false
-AvgBubblePanel._tbDefine = { {sPrefabPath = "AvgBubble/AvgBubbleUI.prefab", sCtrlName = "Game.UI.AvgBubble.AvgBubbleCtrl"} }
-function AvgBubblePanel:Awake()
+AvgBubblePanel._tbDefine = {
+{sPrefabPath = "AvgBubble/AvgBubbleUI.prefab", sCtrlName = "Game.UI.AvgBubble.AvgBubbleCtrl"}
+}
+AvgBubblePanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.sAvgBBCmdCfgPath = nil
+  self.tbAvgBBCmdCfg = {}
+  self.nBubbleType = 1
+  local tbParam = self:GetPanelParam()
+  self.sAvgId = tbParam[1]
+  self.sGroupId = tostring(tbParam[2])
+  self.nCurLanguageIdx = GetLanguageIndex(tbParam[3])
+  self.sTxtLan = tbParam[3]
+  self.sVoLan = tbParam[4]
+  self.bIsPlayerMale = (PlayerData.Base):GetPlayerSex() == true
+  self.bParseSuc = self:ParseAvgBubbleConfig()
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+AvgBubblePanel.OnEnable = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  if self.bParseSuc == false then
+    (EventManager.Hit)(EventId.AvgBubbleExit)
+    ;
+    (NovaAPI.DispatchEventWithData)("AVG_BB_END", nil, (string.format)("%s|%s", self.sAvgId, tostring(self.sGroupId)))
+  end
+end
+
+AvgBubblePanel.OnDestroy = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  self.tbAvgBBCmdCfg = nil
+  -- DECOMPILER ERROR at PC7: Confused about usage of register: R1 in 'UnsetPending'
+
+  if self.sAvgBBCmdCfgPath ~= nil then
+    (package.loaded)[self.sAvgBBCmdCfgPath] = nil
     self.sAvgBBCmdCfgPath = nil
-    self.tbAvgBBCmdCfg = {}
-    self.nBubbleType = 1 -- 详见 AvgCmdParamOptionDefine.BubbleType，1默认，2序章专用，3通用样式。
-    local tbParam = self:GetPanelParam()
-    self.sAvgId = tbParam[1]
-    self.sGroupId = tostring(tbParam[2])
-    self.nCurLanguageIdx = GetLanguageIndex(tbParam[3])
-    self.sTxtLan = tbParam[3]
-    self.sVoLan = tbParam[4]
-    self.bIsPlayerMale = PlayerData.Base:GetPlayerSex() == true
-    self.bParseSuc = self:ParseAvgBubbleConfig()
+  end
 end
-function AvgBubblePanel:OnEnable()
-    if self.bParseSuc == false then
-        EventManager.Hit(EventId.AvgBubbleExit)
-        --printLog("AvgBubblePanel:OnEnable   OnEnable AVG_BB_END " .. self.sAvgId .. ", " .. tostring(self.sGroupId))
-        NovaAPI.DispatchEventWithData("AVG_BB_END", nil, string.format("%s|%s", self.sAvgId, tostring(self.sGroupId)))
-    end
-end
-function AvgBubblePanel:OnDestroy()
-    self.tbAvgBBCmdCfg = nil
-    if self.sAvgBBCmdCfgPath ~= nil then
-        package.loaded[self.sAvgBBCmdCfgPath] = nil
-        self.sAvgBBCmdCfgPath = nil
-    end
-end
-function AvgBubblePanel:ParseAvgBubbleConfig()
-    self.sAvgBBCmdCfgPath = GetAvgLuaRequireRoot(self.nCurLanguageIdx) .. "Config/" .. self.sAvgId
-    local ok, tbEntireAvgBBCmdCfg = pcall(require, self.sAvgBBCmdCfgPath)
-    if not ok then
-        printError("AvgId对应的配置文件没有找到,path:" .. self.sAvgBBCmdCfgPath .. ". error: " .. tbEntireAvgBBCmdCfg)
-        return false
-    else
-        local bMatch = false
-        for _, v in ipairs(tbEntireAvgBBCmdCfg) do
-            if v.cmd == "SetGroupId" then
-                if self.sGroupId == "PLAY_ALL_PLAY_ALL" then
-                    bMatch = true
-                else
-                    bMatch = tostring(v.param[1]) == self.sGroupId
-                end
-            end
-            if bMatch == true then
-                if v.cmd == "SetBubbleUIType" then
-                    self.nBubbleType = v.param[1]
-                elseif v.cmd == "SetBubble" then
-                    table.insert(self.tbAvgBBCmdCfg, v)
-                end
-            end
-        end
-        if #self.tbAvgBBCmdCfg > 0 then
-            return true
+
+AvgBubblePanel.ParseAvgBubbleConfig = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  self.sAvgBBCmdCfgPath = GetAvgLuaRequireRoot(self.nCurLanguageIdx) .. "Config/" .. self.sAvgId
+  local ok, tbEntireAvgBBCmdCfg = pcall(require, self.sAvgBBCmdCfgPath)
+  if not ok then
+    printError("AvgId对应的配置文件没有找到,path:" .. self.sAvgBBCmdCfgPath .. ". error: " .. tbEntireAvgBBCmdCfg)
+    return false
+  else
+    local bMatch = false
+    for _,v in ipairs(tbEntireAvgBBCmdCfg) do
+      if v.cmd == "SetGroupId" then
+        if self.sGroupId == "PLAY_ALL_PLAY_ALL" then
+          bMatch = true
         else
-            printError(string.format("此AVG气泡指令配置文件里,该组未找到任何数据,path:%s, groupId:%s", self.sAvgBBCmdCfgPath, self.sGroupId))
-            return false
+          bMatch = tostring((v.param)[1]) == self.sGroupId
         end
+      end
+      if bMatch == true then
+        if v.cmd == "SetBubbleUIType" then
+          self.nBubbleType = (v.param)[1]
+        elseif v.cmd == "SetBubble" then
+          (table.insert)(self.tbAvgBBCmdCfg, v)
+        end
+      end
     end
+    if #self.tbAvgBBCmdCfg > 0 then
+      return true
+    else
+      printError((string.format)("此AVG气泡指令配置文件里,该组未找到任何数据,path:%s, groupId:%s", self.sAvgBBCmdCfgPath, self.sGroupId))
+      return false
+    end
+  end
+  -- DECOMPILER ERROR: 6 unprocessed JMP targets
 end
+
 return AvgBubblePanel
+

@@ -1,70 +1,81 @@
---活动：登录奖励
-local ActivityDataBase = require "GameCore.Data.DataClass.Activity.ActivityDataBase"
+local ActivityDataBase = require("GameCore.Data.DataClass.Activity.ActivityDataBase")
 local LoginRewardActData = class("LoginRewardActData", ActivityDataBase)
-
-function LoginRewardActData:Init()
-    self.nCanReceives = 0               -- 可以领取的奖励进度
-    self.nActual = 0                    -- 实际领取的奖励进度
-    self.tbRewardList = {}              -- 奖励列表
-    self.loginRewardActCfg = nil        -- 登录奖励表
-
-    self:InitRewardList()
+LoginRewardActData.Init = function(self)
+  -- function num : 0_0
+  self.nCanReceives = 0
+  self.nActual = 0
+  self.tbRewardList = {}
+  self.loginRewardActCfg = nil
+  self:InitRewardList()
 end
 
-function LoginRewardActData:InitRewardList()
-    local mapActCfg = ConfigTable.GetData("LoginRewardControl", self.nActId)
-    if nil == mapActCfg then
-        return
+LoginRewardActData.InitRewardList = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  local mapActCfg = (ConfigTable.GetData)("LoginRewardControl", self.nActId)
+  if mapActCfg == nil then
+    return 
+  end
+  self.loginRewardActCfg = mapActCfg
+  local tbRewardList = (CacheTable.GetData)("_LoginRewardGroup", mapActCfg.RewardsGroup)
+  if tbRewardList == nil then
+    printError((string.format)("LoginRewardGroup表中不存在奖励组id为 %s 的配置！！！", mapActCfg.RewardsGroup))
+    return 
+  end
+  ;
+  (table.sort)(tbRewardList, function(a, b)
+    -- function num : 0_1_0
+    do return a.Order < b.Order end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  self.tbRewardList = tbRewardList
+end
+
+LoginRewardActData.RefreshLoginData = function(self, nReceive, nActual)
+  -- function num : 0_2 , upvalues : _ENV
+  self.nCanReceives = nReceive
+  self.nActual = nActual
+  for k,v in ipairs(self.tbRewardList) do
+    v.Status = 0
+    if k <= nReceive then
+      v.Status = 1
     end
-    self.loginRewardActCfg = mapActCfg
-    local tbRewardList = CacheTable.GetData("_LoginRewardGroup", mapActCfg.RewardsGroup)
-    if tbRewardList == nil then
-        printError(string.format("LoginRewardGroup表中不存在奖励组id为 %s 的配置！！！", mapActCfg.RewardsGroup))
-        return
+    if k <= nActual then
+      v.Status = 2
     end
-    table.sort(tbRewardList, function(a, b)
-        return a.Order < b.Order
-    end)
-    self.tbRewardList = tbRewardList
+  end
 end
 
-function LoginRewardActData:RefreshLoginData(nReceive, nActual)
-    self.nCanReceives = nReceive
-    self.nActual = nActual
-    for k, v in ipairs(self.tbRewardList) do
-        v.Status = 0        -- 不可领取
-        if nReceive >= k then
-            v.Status = 1        -- 可领取
-        end
-        if nActual >= k then
-            v.Status = 2        -- 已领取
-        end
-    end
+LoginRewardActData.ReceiveRewardSuc = function(self)
+  -- function num : 0_3
+  self:RefreshLoginData(self.nCanReceives, self.nCanReceives)
 end
 
-function LoginRewardActData:ReceiveRewardSuc()
-    self:RefreshLoginData(self.nCanReceives, self.nCanReceives)
+LoginRewardActData.GetActLoginRewardList = function(self)
+  -- function num : 0_4
+  return self.tbRewardList
 end
 
-function LoginRewardActData:GetActLoginRewardList()
-    return self.tbRewardList
+LoginRewardActData.GetCanReceive = function(self)
+  -- function num : 0_5
+  return self.nCanReceives
 end
 
-function LoginRewardActData:GetCanReceive()
-    return self.nCanReceives
+LoginRewardActData.GetReceived = function(self)
+  -- function num : 0_6
+  return self.nActual
 end
 
-function LoginRewardActData:GetReceived()
-    return self.nActual
+LoginRewardActData.CheckCanReceive = function(self)
+  -- function num : 0_7
+  do return self.nActual < self.nCanReceives end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
-function LoginRewardActData:CheckCanReceive()
-    return self.nCanReceives > self.nActual
+LoginRewardActData.GetLoginRewardControlCfg = function(self)
+  -- function num : 0_8
+  return self.loginRewardActCfg
 end
-
-function LoginRewardActData:GetLoginRewardControlCfg()
-    return self.loginRewardActCfg
-end
-
 
 return LoginRewardActData
+

@@ -1,120 +1,120 @@
---皮肤数据
------------------------------- local ------------------------------
-
-
-
 local PlayerHandbookData = PlayerData.Handbook
 local PlayerCharSkinData = class("PlayerCharSkinData")
-local TimerManager = require "GameCore.Timer.TimerManager"
-
-
-local TimerScaleType = require "GameCore.Timer.TimerScaleType"
-
-
-local LocalData = require "GameCore.Data.LocalData"
-local RapidJson = require "rapidjson"
-local ClientManager = CS.ClientManager.Instance
-
+local TimerManager = require("GameCore.Timer.TimerManager")
+local TimerScaleType = require("GameCore.Timer.TimerScaleType")
+local LocalData = require("GameCore.Data.LocalData")
+local RapidJson = require("rapidjson")
+local ClientManager = (CS.ClientManager).Instance
 local tableInsert = table.insert
 local tableRemove = table.remove
+local SkinData = require("GameCore.Data.DataClass.SkinData")
+PlayerCharSkinData.Init = function(self)
+  -- function num : 0_0
+  self.tbSkinDataList = {}
+  self.tbSkinGainQueue = {}
+end
 
-local SkinData = require "GameCore.Data.DataClass.SkinData"
+PlayerCharSkinData.UpdateSkinData = function(self, skinId, handbookId, unlock)
+  -- function num : 0_1 , upvalues : SkinData
+  if (self.tbSkinDataList)[skinId] == nil then
+    local skinData = (SkinData.new)(skinId, handbookId, unlock)
+    -- DECOMPILER ERROR at PC10: Confused about usage of register: R5 in 'UnsetPending'
 
------------------------------- public ------------------------------
-
-function PlayerCharSkinData:Init()
-    self.tbSkinDataList = {}
-    self.tbSkinGainQueue = {}
-end 
-
-function PlayerCharSkinData:UpdateSkinData(skinId, handbookId, unlock)
-    if nil == self.tbSkinDataList[skinId] then
-        local skinData = SkinData.new(skinId, handbookId, unlock)
-        self.tbSkinDataList[skinId] = skinData
-    else
-        self.tbSkinDataList[skinId]:UpdateUnlockState(unlock)
+    ;
+    (self.tbSkinDataList)[skinId] = skinData
+  else
+    do
+      ;
+      ((self.tbSkinDataList)[skinId]):UpdateUnlockState(unlock)
     end
+  end
 end
 
---获取指定角色的皮肤列表
-function PlayerCharSkinData:GetSkinListByCharacterId(charId)
-    local tbSkinList = {}
-    for skinId, skin in pairs(self.tbSkinDataList) do
-        if skin:GetCharId() == charId then
-            tbSkinList[skinId] = skin
-        end
+PlayerCharSkinData.GetSkinListByCharacterId = function(self, charId)
+  -- function num : 0_2 , upvalues : _ENV
+  local tbSkinList = {}
+  for skinId,skin in pairs(self.tbSkinDataList) do
+    if skin:GetCharId() == charId then
+      tbSkinList[skinId] = skin
     end
-   
-    return tbSkinList
+  end
+  return tbSkinList
 end
 
-function PlayerCharSkinData:GetSkinDataBySkinId(skinId)
-    return self.tbSkinDataList[skinId]
+PlayerCharSkinData.GetSkinDataBySkinId = function(self, skinId)
+  -- function num : 0_3
+  return (self.tbSkinDataList)[skinId]
 end
 
-function PlayerCharSkinData:CheckSkinUnlock(skinId)
-    if self.tbSkinDataList[skinId] ~= nil then
-        return self.tbSkinDataList[skinId]:CheckUnlock()
+PlayerCharSkinData.CheckSkinUnlock = function(self, skinId)
+  -- function num : 0_4
+  if (self.tbSkinDataList)[skinId] ~= nil then
+    return ((self.tbSkinDataList)[skinId]):CheckUnlock()
+  end
+  return false
+end
+
+PlayerCharSkinData.SkinGainEnqueue = function(self, mapMsgData)
+  -- function num : 0_5 , upvalues : tableInsert
+  local bNew = mapMsgData.New ~= nil
+  if mapMsgData.New == nil or not (mapMsgData.New).Value then
+    local nSkinId = (mapMsgData.Duplicated).ID
+  end
+  local tbItemList = {}
+  if mapMsgData.Duplicated ~= nil then
+    tbItemList = (mapMsgData.Duplicated).Items
+  end
+  if not tbItemList then
+    local tbData = {nId = nSkinId, bNew = bNew, 
+tbItemList = {}
+}
+    tableInsert(self.tbSkinGainQueue, tbData)
+    -- DECOMPILER ERROR: 5 unprocessed JMP targets
+  end
+end
+
+PlayerCharSkinData.RemoveSkinQueue = function(self, nId)
+  -- function num : 0_6 , upvalues : tableRemove
+  for i = #self.tbSkinGainQueue, 1, -1 do
+    if ((self.tbSkinGainQueue)[i]).nId == nId then
+      tableRemove(self.tbSkinGainQueue, i)
+    end
+  end
+end
+
+PlayerCharSkinData.TryOpenSkinShowPanel = function(self, callback)
+  -- function num : 0_7 , upvalues : _ENV
+  if #self.tbSkinGainQueue == 0 then
+    if callback ~= nil then
+      callback()
     end
     return false
+  end
+  ;
+  (EventManager.Hit)(EventId.OpenPanel, PanelId.ReceiveSpecialReward, self.tbSkinGainQueue, callback)
+  return true
 end
 
---获取新皮肤播放表现
-function PlayerCharSkinData:SkinGainEnqueue(mapMsgData)
-    local bNew = nil ~= mapMsgData.New
-    local nSkinId = nil ~= mapMsgData.New and mapMsgData.New.Value or mapMsgData.Duplicated.ID
-    local tbItemList = {}
-    if nil ~= mapMsgData.Duplicated then
-        tbItemList = mapMsgData.Duplicated.Items
-    end
-    local tbData = {
-        nId = nSkinId,     --皮肤id
-        bNew = bNew,   --是否新获得
-        tbItemList = tbItemList or {}  --重复获取转换后的物品列表
-    }
-    tableInsert(self.tbSkinGainQueue, tbData)
+PlayerCharSkinData.CheckNewSkin = function(self)
+  -- function num : 0_8
+  do return #self.tbSkinGainQueue > 0 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
-function PlayerCharSkinData:RemoveSkinQueue(nId)
-    for i = #self.tbSkinGainQueue, 1, -1 do
-        if self.tbSkinGainQueue[i].nId == nId then
-            tableRemove(self.tbSkinGainQueue, i)
-        end
-    end
-end
-
-function PlayerCharSkinData:TryOpenSkinShowPanel(callback)
-    if #self.tbSkinGainQueue == 0 then
-        if callback ~= nil then callback() end
-        return false
-    end
-    EventManager.Hit(EventId.OpenPanel, PanelId.ReceiveSpecialReward, self.tbSkinGainQueue, callback)
-    return true
-end
-
-function PlayerCharSkinData:CheckNewSkin()
-    return #self.tbSkinGainQueue > 0
-end
-
-function PlayerCharSkinData:GetSkinForReward()
-    local tbSpReward = {}
-    if #self.tbSkinGainQueue == 0 then
-        return tbSpReward
-    end
-    tbSpReward = clone(self.tbSkinGainQueue)
-    self.tbSkinGainQueue = {}
+PlayerCharSkinData.GetSkinForReward = function(self)
+  -- function num : 0_9 , upvalues : _ENV
+  local tbSpReward = {}
+  if #self.tbSkinGainQueue == 0 then
     return tbSpReward
+  end
+  tbSpReward = clone(self.tbSkinGainQueue)
+  self.tbSkinGainQueue = {}
+  return tbSpReward
 end
 
-
------------------------------- update -----------------------------
---更新皮肤解锁数据
-function PlayerCharSkinData:UpdateSkinUnlock(unlockList)
-   
+PlayerCharSkinData.UpdateSkinUnlock = function(self, unlockList)
+  -- function num : 0_10
 end
-
--------------------------------------------------------------------
-
-
 
 return PlayerCharSkinData
+

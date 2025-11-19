@@ -1,30 +1,34 @@
--- SettingsPreviewPanel Panel
-
 local SettingsPreviewPanel = class("SettingsPreviewPanel", BasePanel)
--- Panel 定义
 SettingsPreviewPanel._bIsMainPanel = false
-
-local LocalSettingData = require "GameCore.Data.LocalSettingData"
-
+local LocalSettingData = require("GameCore.Data.LocalSettingData")
 SettingsPreviewPanel._tbDefine = {
-    {sPrefabPath = "Settings/SettingsPreviewPanel.prefab", sCtrlName = "Game.UI.Settings.SettingsPreviewCtrl"},
+{sPrefabPath = "Settings/SettingsPreviewPanel.prefab", sCtrlName = "Game.UI.Settings.SettingsPreviewCtrl"}
 }
--------------------- local function --------------------
-function SettingsPreviewPanel:LoadLocalData(key)
-    return LocalSettingData.GetLocalSettingData(key)
+SettingsPreviewPanel.LoadLocalData = function(self, key)
+  -- function num : 0_0 , upvalues : LocalSettingData
+  return (LocalSettingData.GetLocalSettingData)(key)
 end
 
-function SettingsPreviewPanel:SaveLocalData(subKey, value)
-    LocalSettingData.SetLocalSettingData(subKey, value)
+SettingsPreviewPanel.SaveLocalData = function(self, subKey, value)
+  -- function num : 0_1 , upvalues : LocalSettingData
+  (LocalSettingData.SetLocalSettingData)(subKey, value)
 end
--------------------- base function --------------------
-function SettingsPreviewPanel:Awake()
+
+SettingsPreviewPanel.Awake = function(self)
+  -- function num : 0_2
 end
-function SettingsPreviewPanel:OnEnable()
+
+SettingsPreviewPanel.OnEnable = function(self)
+  -- function num : 0_3
 end
-function SettingsPreviewPanel:OnDisable()
+
+SettingsPreviewPanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function SettingsPreviewPanel:OnDestroy()
+
+SettingsPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
--------------------- callback function --------------------
+
 return SettingsPreviewPanel
+

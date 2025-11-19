@@ -10,15 +10,16 @@
     "ListImg": "Icon/CGHead/story_main_00_002_L",
     "Icon": "Icon/CGHead/story_main_00_002_S",
     "Name": "MainScreenCG.1002.1",
-    "Sort": 1
+    "Sort": 9000
   },
   "1003": {
     "Id": 1003,
+    "IsShown": true,
     "FullScreenImg": "CG/1003/1003",
-    "ListImg": "Icon/CGHead/story_main_00_003_FP_L",
-    "Icon": "Icon/CGHead/story_main_00_003_FP_S",
+    "ListImg": "Icon/CGHead/story_main_00_003_L",
+    "Icon": "Icon/CGHead/story_main_00_003_S",
     "Name": "MainScreenCG.1003.1",
-    "Sort": 2
+    "Sort": 8999
   },
   "1004": {
     "Id": 1004,
@@ -43,15 +44,16 @@
     "ListImg": "Icon/CGHead/story_main_01_007_o_L",
     "Icon": "Icon/CGHead/story_main_01_007_o_S",
     "Name": "MainScreenCG.1008.1",
-    "Sort": 3
+    "Sort": 8998
   },
   "1009": {
     "Id": 1009,
+    "IsShown": true,
     "FullScreenImg": "CG/1009/1009",
-    "ListImg": "Icon/CGHead/story_main_01_024_FP_L",
-    "Icon": "Icon/CGHead/story_main_01_024_FP_S",
+    "ListImg": "Icon/CGHead/story_main_01_024_L",
+    "Icon": "Icon/CGHead/story_main_01_024_S",
     "Name": "MainScreenCG.1009.1",
-    "Sort": 4
+    "Sort": 8997
   },
   "1010": {
     "Id": 1010,
@@ -84,7 +86,7 @@
     "ListImg": "Icon/CGHead/story_main_01_025_L",
     "Icon": "Icon/CGHead/story_main_01_025_S",
     "Name": "MainScreenCG.1016.1",
-    "Sort": 5
+    "Sort": 8996
   },
   "1017": {
     "Id": 1017,
@@ -97,7 +99,7 @@
     "ListImg": "Icon/CGHead/story_main_01_009_L",
     "Icon": "Icon/CGHead/story_main_01_009_S",
     "Name": "MainScreenCG.1018.1",
-    "Sort": 6
+    "Sort": 8995
   },
   "1019": {
     "Id": 1019,
@@ -110,7 +112,7 @@
     "ListImg": "Icon/CGHead/story_main_01_005_L",
     "Icon": "Icon/CGHead/story_main_01_005_S",
     "Name": "MainScreenCG.1020.1",
-    "Sort": 7
+    "Sort": 8994
   },
   "1021": {
     "Id": 1021,
@@ -127,7 +129,7 @@
     "ListImg": "Icon/CGHead/story_main_01_012_L",
     "Icon": "Icon/CGHead/story_main_01_012_S",
     "Name": "MainScreenCG.1023.1",
-    "Sort": 8
+    "Sort": 8993
   },
   "1024": {
     "Id": 1024,
@@ -136,7 +138,7 @@
     "ListImg": "Icon/CGHead/story_main_01_027_L",
     "Icon": "Icon/CGHead/story_main_01_027_S",
     "Name": "MainScreenCG.1024.1",
-    "Sort": 9
+    "Sort": 8992
   },
   "1025": {
     "Id": 1025,
@@ -189,7 +191,7 @@
     "ListImg": "Icon/CGHead/story_main_02_003_L",
     "Icon": "Icon/CGHead/story_main_02_003_S",
     "Name": "MainScreenCG.1036.1",
-    "Sort": 10
+    "Sort": 8991
   },
   "1037": {
     "Id": 1037,
@@ -206,6 +208,100 @@
     "ListImg": "Icon/CGHead/story_main_02_009_L",
     "Icon": "Icon/CGHead/story_main_02_009_S",
     "Name": "MainScreenCG.1039.1",
-    "Sort": 11
+    "Sort": 8990
+  },
+  "1040": {
+    "Id": 1040,
+    "IsShown": true,
+    "FullScreenImg": "CG/1040/1040",
+    "ListImg": "Icon/CGHead/story_main_03_001_a_L",
+    "Icon": "Icon/CGHead/story_main_03_001_a_S",
+    "Name": "MainScreenCG.1040.1",
+    "Sort": 8989
+  },
+  "1041": {
+    "Id": 1041,
+    "IsShown": true,
+    "FullScreenImg": "CG/1041/1041",
+    "ListImg": "Icon/CGHead/story_main_03_014_L",
+    "Icon": "Icon/CGHead/story_main_03_014_S",
+    "Name": "MainScreenCG.1041.1",
+    "Sort": 8988
+  },
+  "1042": {
+    "Id": 1042,
+    "IsShown": true,
+    "FullScreenImg": "CG/1042/1042",
+    "ListImg": "Icon/CGHead/story_main_03_015_L",
+    "Icon": "Icon/CGHead/story_main_03_015_S",
+    "Name": "MainScreenCG.1042.1",
+    "Sort": 8987
+  },
+  "1043": {
+    "Id": 1043,
+    "Name": "MainScreenCG.1043.1"
+  },
+  "1044": {
+    "Id": 1044,
+    "IsShown": true,
+    "FullScreenImg": "CG/1044/1044",
+    "ListImg": "Icon/CGHead/story_main_03_013_L",
+    "Icon": "Icon/CGHead/story_main_03_013_S",
+    "Name": "MainScreenCG.1044.1",
+    "Sort": 8986
+  },
+  "2001": {
+    "Id": 2001,
+    "IsShown": true,
+    "FullScreenImg": "CG/2001/2001",
+    "ListImg": "Icon/CGHead/story_tales_01_001_L",
+    "Icon": "Icon/CGHead/story_tales_01_001_S",
+    "Name": "MainScreenCG.2001.1",
+    "Sort": 2000
+  },
+  "2002": {
+    "Id": 2002,
+    "IsShown": true,
+    "FullScreenImg": "CG/2002/2002",
+    "ListImg": "Icon/CGHead/story_tales_02_001_L",
+    "Icon": "Icon/CGHead/story_tales_02_001_S",
+    "Name": "MainScreenCG.2002.1",
+    "Sort": 1999
+  },
+  "2003": {
+    "Id": 2003,
+    "IsShown": true,
+    "FullScreenImg": "CG/2003/2003",
+    "ListImg": "Icon/CGHead/story_tales_03_001_L",
+    "Icon": "Icon/CGHead/story_tales_03_001_S",
+    "Name": "MainScreenCG.2003.1",
+    "Sort": 1998
+  },
+  "2004": {
+    "Id": 2004,
+    "IsShown": true,
+    "FullScreenImg": "CG/2004/2004",
+    "ListImg": "Icon/CGHead/story_tales_04_001_L",
+    "Icon": "Icon/CGHead/story_tales_04_001_S",
+    "Name": "MainScreenCG.2004.1",
+    "Sort": 1997
+  },
+  "2005": {
+    "Id": 2005,
+    "IsShown": true,
+    "FullScreenImg": "CG/2005/2005",
+    "ListImg": "Icon/CGHead/story_tales_05_001_L",
+    "Icon": "Icon/CGHead/story_tales_05_001_S",
+    "Name": "MainScreenCG.2005.1",
+    "Sort": 1996
+  },
+  "2006": {
+    "Id": 2006,
+    "IsShown": true,
+    "FullScreenImg": "CG/2006/2006",
+    "ListImg": "Icon/CGHead/story_tales_06_001_L",
+    "Icon": "Icon/CGHead/story_tales_06_001_S",
+    "Name": "MainScreenCG.2006.1",
+    "Sort": 1995
   }
 }

@@ -87,8 +87,7 @@
       1340101,
       1340102,
       1340103,
-      1340104,
-      1340105
+      1340104
     ],
     "BGM": "travelerTrail_combatNormal_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
@@ -107,8 +106,7 @@
       1340201,
       1340202,
       1340203,
-      1340204,
-      1340205
+      1340204
     ],
     "BGM": "travelerTrail_combatNormal_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
@@ -473,8 +471,7 @@
       1490101,
       1490102,
       1490103,
-      1490104,
-      1490105
+      1490104
     ],
     "BGM": "travelerTrail_combatNormal_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
@@ -493,8 +490,7 @@
       1490201,
       1490202,
       1490203,
-      1490204,
-      1490205
+      1490204
     ],
     "BGM": "travelerTrail_combatNormal_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",

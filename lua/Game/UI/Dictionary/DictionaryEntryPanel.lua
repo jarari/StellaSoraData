@@ -1,21 +1,23 @@
--- DictionaryEntryPanel Panel
-
 local DictionaryEntryPanel = class("DictionaryEntryPanel", BasePanel)
--- Panel 定义
 DictionaryEntryPanel._bIsMainPanel = false
-
 DictionaryEntryPanel._tbDefine = {
-    {sPrefabPath = "Dictionary/DictionaryEntryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryEntryCtrl"},
+{sPrefabPath = "Dictionary/DictionaryEntryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryEntryCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DictionaryEntryPanel:Awake()
+DictionaryEntryPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function DictionaryEntryPanel:OnEnable()
+
+DictionaryEntryPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DictionaryEntryPanel:OnDisable()
+
+DictionaryEntryPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DictionaryEntryPanel:OnDestroy()
+
+DictionaryEntryPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DictionaryEntryPanel
+

@@ -30,10 +30,16 @@ bin/BattlePassLevel.bytes
 bin/BattlePassQuest.bytes
 bin/BattlePassReward.bytes
 bin/BattleThreshold.bytes
+bin/BdConvert.bytes
+bin/BdConvertCondition.bytes
+bin/BdConvertContent.bytes
+bin/BdConvertControl.bytes
+bin/BdConvertRewardGroup.bytes
 bin/BoardNPC.bytes
 bin/BreakOutCharacter.bytes
 bin/BreakOutEnemySpr.bytes
 bin/BreakOutFloor.bytes
+bin/BreakOutLevel.bytes
 bin/Buff.bytes
 bin/BuffEffect.bytes
 bin/BuffValue.bytes
@@ -166,6 +172,10 @@ bin/JointDrillFloor.bytes
 bin/JointDrillLevel.bytes
 bin/JointDrillQuest.bytes
 bin/JointDrillRank.bytes
+bin/JointDrill_2_Floor.bytes
+bin/JointDrill_2_FloorChange.bytes
+bin/JointDrill_2_Level.bytes
+bin/JointDrill_2_MonsterGroup.bytes
 bin/JumpTo.bytes
 bin/LevelQuest.bytes
 bin/LevelQuestTarget.bytes

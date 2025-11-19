@@ -1,20 +1,23 @@
--- MonthlyCardPanel Panel
-
 local MonthlyCardPanel = class("MonthlyCardPanel", BasePanel)
--- Panel 定义
 MonthlyCardPanel._bIsMainPanel = false
 MonthlyCardPanel._tbDefine = {
-    {sPrefabPath = "MonthlyCard/MonthlyCardPanel.prefab", sCtrlName = "Game.UI.MonthlyCard.MonthlyCardCtrl"},
+{sPrefabPath = "MonthlyCard/MonthlyCardPanel.prefab", sCtrlName = "Game.UI.MonthlyCard.MonthlyCardCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function MonthlyCardPanel:Awake()
+MonthlyCardPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function MonthlyCardPanel:OnEnable()
+
+MonthlyCardPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MonthlyCardPanel:OnDisable()
+
+MonthlyCardPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function MonthlyCardPanel:OnDestroy()
+
+MonthlyCardPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return MonthlyCardPanel
+

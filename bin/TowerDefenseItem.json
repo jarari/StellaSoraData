@@ -1,0 +1,11 @@
+{
+  "1001": {
+    "Id": 1001,
+    "Name": "TowerDefenseItem.1001.1",
+    "Des": "TowerDefenseItem.1001.2",
+    "Cd": 15,
+    "Script": "AIScript.TowerDefenseItem_AreaEffect_IceArea",
+    "CardIcon": "UI/Play_TowerDefence/SpriteAtlas/Item/icon_tower_defense_Item_1",
+    "Head": "Icon/Item/item_tf_1"
+  }
+}

@@ -1,32 +1,28 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local CharFavourTaskPanel = class("CharFavourTaskPanel", BasePanel)
-
--- Panel 定义
---[[
-CharFavourTaskPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-CharFavourTaskPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-CharFavourTaskPanel._bIsMainPanel = true
-CharFavourTaskPanel._bAddToBackHistory = true
-CharFavourTaskPanel._nSnapshotPrePanel = 0
-local SortingLayerName = require "GameCore.UI.SortingLayerName"
-CharFavourTaskPanel._sSortingLayerName = SortingLayerName.UI
-]]
 CharFavourTaskPanel._bIsMainPanel = false
 CharFavourTaskPanel._tbDefine = {
-    {sPrefabPath = "CharacterFavour/CharFavourTaskPanel.prefab", sCtrlName = "Game.UI.CharacterFavour.CharFavourTaskCtrl"}
+{sPrefabPath = "CharacterFavour/CharFavourTaskPanel.prefab", sCtrlName = "Game.UI.CharacterFavour.CharFavourTaskCtrl"}
 }
--------------------- local funcion --------------------
+CharFavourTaskPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base funcion --------------------
-function CharFavourTaskPanel:Awake()
+CharFavourTaskPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharFavourTaskPanel:OnEnable()
+
+CharFavourTaskPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharFavourTaskPanel:OnDisable()
+
+CharFavourTaskPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function CharFavourTaskPanel:OnDestroy()
+
+CharFavourTaskPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function CharFavourTaskPanel:OnRelease()
-end
--------------------- callback funcion --------------------
+
 return CharFavourTaskPanel
+

@@ -15,7 +15,7 @@
     "SortId": 2005,
     "PopUpType": 1,
     "ActivityId": 510001,
-    "PopUpRes": "JointDrill/PopUp",
+    "PopUpRes": "_510001/PopUp",
     "ScriptName": "ActivityJointDrillPopUpCtrl",
     "PopRefreshType": 2,
     "PopJumpType": 2,
@@ -30,5 +30,47 @@
     "ScriptName": "ActivityTaskPopUpCtrl_01",
     "PopRefreshType": 1,
     "PopJumpType": 1
+  },
+  "1": {
+    "Id": 1,
+    "SortId": 1,
+    "PopUpType": 3,
+    "PopUpRes": "MallPkgPopup/Popup_1",
+    "ScriptName": "MallPkgPopupCtrl",
+    "PopRefreshType": 3,
+    "PopJumpType": 3,
+    "JumpToParams": 18,
+    "StartCondType": 71,
+    "StartCondParams": [
+      2
+    ],
+    "StartType": 2,
+    "StartTime": "2025-11-18T12:00:00+08:00",
+    "EndType": 2,
+    "EndTime": "2025-12-09T11:00:00+08:00"
+  },
+  "2007": {
+    "Id": 2007,
+    "SortId": 2008,
+    "PopUpType": 1,
+    "ActivityId": 102001,
+    "PopUpRes": "TowerDefense/PopUp",
+    "ScriptName": "ActivityTowerDefensePopUpCtrl",
+    "PopRefreshType": 1,
+    "PopJumpType": 2,
+    "StartCondType": 71,
+    "StartCondParams": [
+      1
+    ]
+  },
+  "1001": {
+    "Id": 1001,
+    "SortId": 1001,
+    "PopUpType": 2,
+    "ActivityId": 10101,
+    "PopUpRes": "10101/PopUp",
+    "ScriptName": "ActivityOurRegiment_10101PopUpCtrl",
+    "PopRefreshType": 2,
+    "PopJumpType": 2
   }
 }

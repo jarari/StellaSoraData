@@ -1,30 +1,37 @@
---Roguelike层数据处理：打完boss后重连
 local RenterBossDiedFloor = {}
-
-function RenterBossDiedFloor:Init()
-    self._bBossTalent = true
-    self.touchPortal = false
-end
-function RenterBossDiedFloor:OnRoguelikeEnter(PlayerRoguelikeData) --只会在重连时触发
-    PlayerRoguelikeData:SetActorEffects()
-    PlayerRoguelikeData:SetActorAttribute(false)
-    PlayerRoguelikeData:ResetBoxCount()
-    PlayerRoguelikeData:ResetPerkEffect()
-
-end
-function RenterBossDiedFloor:OnTouchPortal(PlayerRoguelikeData)
-    if self.touchPortal then
-        return
-    end
-    self.touchPortal = true
-    PlayerRoguelikeData:CacheCharAttr()
-    PlayerRoguelikeData:SendSettleReq()
-end
-function RenterBossDiedFloor:SettleCallback(PlayerRoguelikeData)
-    PlayerRoguelikeData:FloorEnd()
+RenterBossDiedFloor.Init = function(self)
+  -- function num : 0_0
+  self._bBossTalent = true
+  self.touchPortal = false
 end
 
-function RenterBossDiedFloor:OnAbandon(PlayerRoguelikeData,bFailed)
-    PlayerRoguelikeData:AbandonRoguelike(bFailed)
+RenterBossDiedFloor.OnRoguelikeEnter = function(self, PlayerRoguelikeData)
+  -- function num : 0_1
+  PlayerRoguelikeData:SetActorEffects()
+  PlayerRoguelikeData:SetActorAttribute(false)
+  PlayerRoguelikeData:ResetBoxCount()
+  PlayerRoguelikeData:ResetPerkEffect()
 end
+
+RenterBossDiedFloor.OnTouchPortal = function(self, PlayerRoguelikeData)
+  -- function num : 0_2
+  if self.touchPortal then
+    return 
+  end
+  self.touchPortal = true
+  PlayerRoguelikeData:CacheCharAttr()
+  PlayerRoguelikeData:SendSettleReq()
+end
+
+RenterBossDiedFloor.SettleCallback = function(self, PlayerRoguelikeData)
+  -- function num : 0_3
+  PlayerRoguelikeData:FloorEnd()
+end
+
+RenterBossDiedFloor.OnAbandon = function(self, PlayerRoguelikeData, bFailed)
+  -- function num : 0_4
+  PlayerRoguelikeData:AbandonRoguelike(bFailed)
+end
+
 return RenterBossDiedFloor
+

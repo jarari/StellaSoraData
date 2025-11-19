@@ -1,409 +1,477 @@
------------------------------- local ------------------------------
-local ActivityDataBase = require "GameCore.Data.DataClass.Activity.ActivityDataBase"
+local ActivityDataBase = require("GameCore.Data.DataClass.Activity.ActivityDataBase")
 local ActivityShopData = class("ActivityShopData", ActivityDataBase)
-local ClientManager = CS.ClientManager.Instance
+local ClientManager = (CS.ClientManager).Instance
+local DisplayMode = {Hide = 0, End = 1, Stay = 2}
+ActivityShopData.Init = function(self)
+  -- function num : 0_0
+  self.tbShops = {}
+  self.tbGoods = {}
+  self.tbServerData = {}
+  self.bFirstInShop = true
+  self:ParseConfig()
+end
 
-local DisplayMode = {
-    Hide = 0,
-    End = 1,
-    Stay = 2
-}
--------------------------------------------------------------------
+ActivityShopData.ParseConfig = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  local mapCfg = (ConfigTable.GetData)("ActivityShopControl", self.nActId)
+  if not mapCfg then
+    return 
+  end
+  self.mapShopControlCfg = mapCfg
+end
 
------------------------------- public -----------------------------
-function ActivityShopData:Init()
+ActivityShopData.RefreshActivityShopData = function(self, mapData)
+  -- function num : 0_2 , upvalues : _ENV
+  if mapData and mapData.Shops then
+    self:ProcessServerData(mapData.Shops)
+  end
+  if next(self.tbShops) == nil then
+    self:CreateData()
+  else
+    local tbShopIds = self:GetNeedToRefreshShops()
+    if #tbShopIds > 0 then
+      self:UpdateData(tbShopIds)
+    end
+  end
+end
+
+ActivityShopData.CheckGoodsData = function(self, nShopId)
+  -- function num : 0_3 , upvalues : _ENV
+  local tbGoods = self:GetNeedToRefreshGoods(nShopId)
+  if #tbGoods == 0 then
+    return 
+  end
+  for _,mapGoods in pairs(tbGoods) do
+    self:UpdateGoodsData(nShopId, mapGoods.nId)
+  end
+end
+
+ActivityShopData.GetShopList = function(self)
+  -- function num : 0_4 , upvalues : _ENV
+  local tbList = {}
+  for _,mapShop in pairs(self.tbShops) do
+    if mapShop.bUnlock and mapShop.bOpenAble then
+      (table.insert)(tbList, mapShop)
+    end
+  end
+  ;
+  (table.sort)(tbList, function(a, b)
+    -- function num : 0_4_0
+    do return a.nSequence < b.nSequence end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  return tbList
+end
+
+ActivityShopData.GetGoodsList = function(self, nShopId)
+  -- function num : 0_5 , upvalues : _ENV, DisplayMode
+  local tbList = {}
+  for _,mapGoods in pairs((self.tbGoods)[nShopId]) do
+    if mapGoods.bUnlock and (not mapGoods.bSoldOut or mapGoods.nDisplayMode ~= DisplayMode.Hide) then
+      (table.insert)(tbList, mapGoods)
+    end
+  end
+  local comp = function(a, b)
+    -- function num : 0_5_0 , upvalues : DisplayMode
+    -- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P1
+
+    if (a.bSoldOut and a.nDisplayMode == DisplayMode.End) or b.bSoldOut and b.nDisplayMode ~= DisplayMode.End then
+      do return not a.bSoldOut or a.nDisplayMode == DisplayMode.End == not b.bSoldOut or b.nDisplayMode == DisplayMode.End end
+      do return a.nSaleNumber < b.nSaleNumber end
+      -- DECOMPILER ERROR: 11 unprocessed JMP targets
+    end
+  end
+
+  ;
+  (table.sort)(tbList, comp)
+  return tbList
+end
+
+ActivityShopData.GetShopAutoUpdateTime = function(self)
+  -- function num : 0_6 , upvalues : _ENV, ClientManager
+  local tbTime = {}
+  for _,mapShop in pairs(self.tbShops) do
+    if mapShop.nNextRefreshTime > 0 then
+      (table.insert)(tbTime, mapShop.nNextRefreshTime)
+    end
+  end
+  if #tbTime == 0 then
+    return 0
+  end
+  ;
+  (table.sort)(tbTime)
+  return tbTime[1] - ClientManager.serverTimeStamp
+end
+
+ActivityShopData.GetGoodsAutoUpdateTime = function(self, nShopId)
+  -- function num : 0_7 , upvalues : _ENV, ClientManager
+  local tbTime = {}
+  for _,mapGoods in pairs((self.tbGoods)[nShopId]) do
+    if mapGoods.nNextRefreshTime > 0 then
+      (table.insert)(tbTime, mapGoods.nNextRefreshTime)
+    end
+  end
+  if #tbTime == 0 then
+    return 0
+  end
+  ;
+  (table.sort)(tbTime)
+  return tbTime[1] - ClientManager.serverTimeStamp
+end
+
+ActivityShopData.GetShopFirstIn = function(self)
+  -- function num : 0_8
+  local bFirst = self.bFirstInShop
+  if self.bFirstInShop == true then
+    self.bFirstInShop = false
+  end
+  return bFirst
+end
+
+ActivityShopData.CreateData = function(self)
+  -- function num : 0_9 , upvalues : ClientManager, _ENV
+  if not self.mapShopControlCfg then
+    return 
+  end
+  local nServerTimeStamp = ClientManager.serverTimeStamp
+  local nCloseTime = self.nEndTime
+  local bExpired = nCloseTime ~= 0 and nCloseTime <= nServerTimeStamp
+  if bExpired then
+    return 
+  end
+  for _,nShopId in ipairs((self.mapShopControlCfg).ShopIds) do
+    local mapCfg = (ConfigTable.GetData)("ActivityShop", nShopId)
+    if mapCfg then
+      self:CreateShopData(mapCfg)
+    end
+  end
+  local func_ForEach_Goods = function(mapCfgData)
+    -- function num : 0_9_0 , upvalues : self
+    if (self.tbShops)[mapCfgData.ShopId] then
+      self:CreateGoodsData(mapCfgData)
+    end
+  end
+
+  ForEachTableLine(DataTable.ActivityGoods, func_ForEach_Goods)
+  -- DECOMPILER ERROR: 3 unprocessed JMP targets
+end
+
+ActivityShopData.CreateShopData = function(self, mapCfgData)
+  -- function num : 0_10 , upvalues : _ENV
+  local mapShop = {nId = mapCfgData.Id, nSequence = mapCfgData.Sequence, nRefreshTimeType = mapCfgData.RefreshTimeType, nRefreshInterval = mapCfgData.RefreshInterval, nUnlockCondType = mapCfgData.UnlockCondType, tbUnlockCondParams = decodeJson(mapCfgData.UnlockCondParams), bUnlock = false, bOpenAble = false, nServerRefreshTime = 0, nNextRefreshTime = 0}
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R3 in 'UnsetPending'
+
+  ;
+  (self.tbShops)[mapCfgData.Id] = mapShop
+  self:UpdateShopData(mapCfgData.Id)
+end
+
+ActivityShopData.CreateGoodsData = function(self, mapCfgData)
+  -- function num : 0_11 , upvalues : _ENV
+  local mapGoods = {nId = mapCfgData.Id, nSaleNumber = mapCfgData.SaleNumber, nMaximumLimit = mapCfgData.MaximumLimit, nAppearCondType = mapCfgData.AppearCondType, tbAppearCondParams = decodeJson(mapCfgData.AppearCondParams), nPurchaseCondType = mapCfgData.PurchaseCondType, tbPurchaseCondParams = decodeJson(mapCfgData.PurchaseCondParams), nUnlockPurchaseTime = self:ChangeToTimeStamp(mapCfgData.UnlockPurchaseTime), nDisplayMode = mapCfgData.DisplayMode, bUnlock = false, bPurchasable = false, bPurchasTime = false, bSoldOut = false, nBoughtCount = 0, nNextRefreshTime = 0}
+  -- DECOMPILER ERROR at PC39: Confused about usage of register: R3 in 'UnsetPending'
+
+  if not (self.tbGoods)[mapCfgData.ShopId] then
+    (self.tbGoods)[mapCfgData.ShopId] = {}
+  end
+  -- DECOMPILER ERROR at PC44: Confused about usage of register: R3 in 'UnsetPending'
+
+  ;
+  ((self.tbGoods)[mapCfgData.ShopId])[mapCfgData.Id] = mapGoods
+  self:UpdateGoodsData(mapCfgData.ShopId, mapCfgData.Id)
+end
+
+ActivityShopData.ChangeToTimeStamp = function(self, sTime)
+  -- function num : 0_12 , upvalues : ClientManager
+  if sTime ~= "" or not 0 then
+    return ClientManager:ISO8601StrToTimeStamp(sTime)
+  end
+end
+
+ActivityShopData.UpdateData = function(self, tbShopIds)
+  -- function num : 0_13 , upvalues : ClientManager, _ENV
+  local nServerTimeStamp = ClientManager.serverTimeStamp
+  local nCloseTime = self.nEndTime
+  local bExpired = nCloseTime ~= 0 and nCloseTime <= nServerTimeStamp
+  if bExpired then
     self.tbShops = {}
     self.tbGoods = {}
-    self.tbServerData = {}
-    self.bFirstInShop = true
-
-    self:ParseConfig()
+    return 
+  end
+  for _,nShopId in pairs(tbShopIds) do
+    self:UpdateShopData(nShopId)
+    for nGoodsId,_ in pairs((self.tbGoods)[nShopId]) do
+      self:UpdateGoodsData(nShopId, nGoodsId)
+    end
+  end
+  -- DECOMPILER ERROR: 4 unprocessed JMP targets
 end
 
-function ActivityShopData:ParseConfig()
-    local mapCfg = ConfigTable.GetData("ActivityShopControl", self.nActId)
-    if not mapCfg then
-        return
-    end
+ActivityShopData.UpdateShopData = function(self, nId)
+  -- function num : 0_14 , upvalues : ClientManager
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R2 in 'UnsetPending'
 
-    self.mapShopControlCfg = mapCfg
+  ((self.tbShops)[nId]).bUnlock = self:CheckShopCond(((self.tbShops)[nId]).nUnlockCondType, ((self.tbShops)[nId]).tbUnlockCondParams)
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R2 in 'UnsetPending'
+
+  ;
+  ((self.tbShops)[nId]).bOpenAble = self.nOpenTime <= ClientManager.serverTimeStamp
+  -- DECOMPILER ERROR at PC32: Confused about usage of register: R2 in 'UnsetPending'
+
+  ;
+  ((self.tbShops)[nId]).nServerRefreshTime = (self.tbServerData)[nId] and ((self.tbServerData)[nId]).RefreshTime or 0
+  -- DECOMPILER ERROR at PC41: Confused about usage of register: R2 in 'UnsetPending'
+
+  ;
+  ((self.tbShops)[nId]).nNextRefreshTime = self:UpdateNextShopRefreshTime(nId, ((self.tbShops)[nId]).nServerRefreshTime)
+  -- DECOMPILER ERROR: 3 unprocessed JMP targets
 end
 
-function ActivityShopData:RefreshActivityShopData(mapData)
-    if mapData and mapData.Shops then
-        self:ProcessServerData(mapData.Shops)
-    end
+ActivityShopData.UpdateGoodsData = function(self, nShopId, nGoodsId)
+  -- function num : 0_15 , upvalues : ClientManager
+  local mapGoods = ((self.tbGoods)[nShopId])[nGoodsId]
+  local nBoughtCount = self:GetBoughtCount(nGoodsId)
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R5 in 'UnsetPending'
 
-    if next(self.tbShops) == nil then
-        self:CreateData()
-    else
-        local tbShopIds = self:GetNeedToRefreshShops()
-        if #tbShopIds > 0 then
-            self:UpdateData(tbShopIds)
-        end
-    end
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).bUnlock = self:CheckShopCond(mapGoods.nAppearCondType, mapGoods.tbAppearCondParams)
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R5 in 'UnsetPending'
+
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).bPurchasable = self:CheckShopCond(mapGoods.nPurchaseCondType, mapGoods.tbPurchaseCondParams)
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R5 in 'UnsetPending'
+
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).bPurchasTime = mapGoods.nUnlockPurchaseTime <= ClientManager.serverTimeStamp
+  -- DECOMPILER ERROR at PC42: Confused about usage of register: R5 in 'UnsetPending'
+
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).bSoldOut = nBoughtCount ~= 0 and nBoughtCount == mapGoods.nMaximumLimit
+  -- DECOMPILER ERROR at PC46: Confused about usage of register: R5 in 'UnsetPending'
+
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).nBoughtCount = nBoughtCount
+  -- DECOMPILER ERROR at PC54: Confused about usage of register: R5 in 'UnsetPending'
+
+  ;
+  (((self.tbGoods)[nShopId])[nGoodsId]).nNextRefreshTime = self:UpdateNextGoodsRefreshTime(nShopId, nGoodsId)
+  -- DECOMPILER ERROR: 3 unprocessed JMP targets
 end
 
--- 检查商品数据
-function ActivityShopData:CheckGoodsData(nShopId)
-    local tbGoods = self:GetNeedToRefreshGoods(nShopId)
-    if #tbGoods == 0 then
-        return
-    end
-    for _, mapGoods in pairs(tbGoods) do
-        self:UpdateGoodsData(nShopId, mapGoods.nId)
-    end
-end
-
--- 获取有效商店列表
-function ActivityShopData:GetShopList()
-    local tbList = {}
-    for _, mapShop in pairs(self.tbShops) do
-        if mapShop.bUnlock and mapShop.bOpenAble then
-            table.insert(tbList, mapShop)
-        end
-    end
-    table.sort(tbList, function(a, b)
-        return a.nSequence < b.nSequence
-    end)
-    return tbList
-end
-
--- 获取有效商品列表
-function ActivityShopData:GetGoodsList(nShopId)
-    local tbList = {}
-    for _, mapGoods in pairs(self.tbGoods[nShopId]) do
-        if mapGoods.bUnlock and (not mapGoods.bSoldOut or mapGoods.nDisplayMode ~= DisplayMode.Hide) then
-            table.insert(tbList, mapGoods)
-        end
-    end
-    local function comp(a, b)
-        if (a.bSoldOut and a.nDisplayMode == DisplayMode.End) ~= (b.bSoldOut and b.nDisplayMode == DisplayMode.End) then
-            return not (a.bSoldOut and a.nDisplayMode == DisplayMode.End) and
-                (b.bSoldOut and b.nDisplayMode == DisplayMode.End)
-        else
-            return a.nSaleNumber < b.nSaleNumber
-        end
-    end
-    table.sort(tbList, comp)
-    return tbList
-end
-
--- 获取所有商店中最早的下一次更新时间
-function ActivityShopData:GetShopAutoUpdateTime()
-    local tbTime = {}
-    for _, mapShop in pairs(self.tbShops) do
-        if mapShop.nNextRefreshTime > 0 then
-            table.insert(tbTime, mapShop.nNextRefreshTime)
-        end
-    end
-    if #tbTime == 0 then
-        return 0
-    end
-    table.sort(tbTime)
-    return tbTime[1] - ClientManager.serverTimeStamp
-end
-
--- 获取当前商店货物中最早的下一次更新时间
-function ActivityShopData:GetGoodsAutoUpdateTime(nShopId)
-    local tbTime = {}
-    for _, mapGoods in pairs(self.tbGoods[nShopId]) do
-        if mapGoods.nNextRefreshTime > 0 then
-            table.insert(tbTime, mapGoods.nNextRefreshTime)
-        end
-    end
-    if #tbTime == 0 then
-        return 0
-    end
-    table.sort(tbTime)
-    return tbTime[1] - ClientManager.serverTimeStamp
-end
-
-function ActivityShopData:GetShopFirstIn()
-    local bFirst = self.bFirstInShop
-    if self.bFirstInShop == true then
-        self.bFirstInShop = false
-    end
-    return bFirst
-end
-
---------------------------- Create Data ---------------------------
--- 创建本地数据
-function ActivityShopData:CreateData()
-    if not self.mapShopControlCfg then
-        return
-    end
-
-    local nServerTimeStamp = ClientManager.serverTimeStamp
-    local nCloseTime = self.nEndTime
-    local bExpired = nCloseTime ~= 0 and nServerTimeStamp >= nCloseTime
-    if bExpired then
-        return -- 过期了就没必要创建了
-    end
-
-    for _, nShopId in ipairs(self.mapShopControlCfg.ShopIds) do
-        local mapCfg = ConfigTable.GetData("ActivityShop", nShopId)
-        if mapCfg then
-            self:CreateShopData(mapCfg)
-        end
-    end
-
-    local function func_ForEach_Goods(mapCfgData)
-        if self.tbShops[mapCfgData.ShopId] then
-            self:CreateGoodsData(mapCfgData)
-        end
-    end
-    ForEachTableLine(DataTable.ActivityGoods, func_ForEach_Goods)
-end
-
-function ActivityShopData:CreateShopData(mapCfgData)
-    local mapShop = {
-        nId = mapCfgData.Id,
-        nSequence = mapCfgData.Sequence,
-        nRefreshTimeType = mapCfgData.RefreshTimeType,
-        nRefreshInterval = mapCfgData.RefreshInterval,
-        nUnlockCondType = mapCfgData.UnlockCondType,
-        tbUnlockCondParams = decodeJson(mapCfgData.UnlockCondParams),
-
-        bUnlock = false,
-        bOpenAble = false,
-        nServerRefreshTime = 0,
-        nNextRefreshTime = 0,
-    }
-    self.tbShops[mapCfgData.Id] = mapShop
-
-    self:UpdateShopData(mapCfgData.Id)
-end
-
-function ActivityShopData:CreateGoodsData(mapCfgData)
-    local mapGoods = {
-        nId = mapCfgData.Id,
-        nSaleNumber = mapCfgData.SaleNumber,
-        nMaximumLimit = mapCfgData.MaximumLimit,
-        nAppearCondType = mapCfgData.AppearCondType,
-        tbAppearCondParams = decodeJson(mapCfgData.AppearCondParams),
-        nPurchaseCondType = mapCfgData.PurchaseCondType,
-        tbPurchaseCondParams = decodeJson(mapCfgData.PurchaseCondParams),
-        nUnlockPurchaseTime = self:ChangeToTimeStamp(mapCfgData.UnlockPurchaseTime),
-        nDisplayMode = mapCfgData.DisplayMode,
-
-        bUnlock = false,
-        bPurchasable = false,
-        bPurchasTime = false,
-        bSoldOut = false,
-
-        nBoughtCount = 0,
-        nNextRefreshTime = 0,
-    }
-    if not self.tbGoods[mapCfgData.ShopId] then
-        self.tbGoods[mapCfgData.ShopId] = {}
-    end
-    self.tbGoods[mapCfgData.ShopId][mapCfgData.Id] = mapGoods
-
-    self:UpdateGoodsData(mapCfgData.ShopId, mapCfgData.Id)
-end
-
-function ActivityShopData:ChangeToTimeStamp(sTime)
-    return sTime == "" and 0 or ClientManager:ISO8601StrToTimeStamp(sTime)
-end
-
---------------------------- Update Data ---------------------------
--- 更新本地数据
-function ActivityShopData:UpdateData(tbShopIds)
-    local nServerTimeStamp = ClientManager.serverTimeStamp
-    local nCloseTime = self.nEndTime
-    local bExpired = nCloseTime ~= 0 and nServerTimeStamp >= nCloseTime
-    if bExpired then -- 所有商店共用一个过期和开启时间
-        self.tbShops = {}
-        self.tbGoods = {}
-        return
-    end
-
-    for _, nShopId in pairs(tbShopIds) do
-        self:UpdateShopData(nShopId)
-        for nGoodsId, _ in pairs(self.tbGoods[nShopId]) do
-            self:UpdateGoodsData(nShopId, nGoodsId)
-        end
-    end
-end
-
-function ActivityShopData:UpdateShopData(nId)
-    self.tbShops[nId].bUnlock = self:CheckShopCond(self.tbShops[nId].nUnlockCondType, self.tbShops[nId].tbUnlockCondParams)
-    self.tbShops[nId].bOpenAble = ClientManager.serverTimeStamp >= self.nOpenTime
-    self.tbShops[nId].nServerRefreshTime = self.tbServerData[nId] and self.tbServerData[nId].RefreshTime or 0
-    self.tbShops[nId].nNextRefreshTime = self:UpdateNextShopRefreshTime(nId, self.tbShops[nId].nServerRefreshTime)
-end
-
-function ActivityShopData:UpdateGoodsData(nShopId, nGoodsId)
-    local mapGoods = self.tbGoods[nShopId][nGoodsId]
-    local nBoughtCount = self:GetBoughtCount(nGoodsId)
-    self.tbGoods[nShopId][nGoodsId].bUnlock = self:CheckShopCond(mapGoods.nAppearCondType, mapGoods.tbAppearCondParams)
-    self.tbGoods[nShopId][nGoodsId].bPurchasable = self:CheckShopCond(mapGoods.nPurchaseCondType, mapGoods.tbPurchaseCondParams)
-    self.tbGoods[nShopId][nGoodsId].bPurchasTime = ClientManager.serverTimeStamp >= mapGoods.nUnlockPurchaseTime
-    self.tbGoods[nShopId][nGoodsId].bSoldOut = nBoughtCount ~= 0 and nBoughtCount == mapGoods.nMaximumLimit
-    self.tbGoods[nShopId][nGoodsId].nBoughtCount = nBoughtCount
-    self.tbGoods[nShopId][nGoodsId].nNextRefreshTime = self:UpdateNextGoodsRefreshTime(nShopId, nGoodsId)
-end
-
--- 更新当前商店最早的下一次刷新时间
-function ActivityShopData:UpdateNextShopRefreshTime(nId, nServerRefreshTime)
-    local mapShop = self.tbShops[nId]
-    local nOpenTime = self.nOpenTime
-    if nOpenTime > 0 then
-        if nOpenTime - ClientManager.serverTimeStamp > 0 then
-            return nOpenTime -- 开放时间没到，下一次的刷新时间优先判断开启时间
-        end
-    end
-
-    local nNextRefreshTime = 0
-    local nCloseTime = self.nEndTime
-    if nCloseTime > 0 then
-        nNextRefreshTime = nCloseTime
-    end
+ActivityShopData.UpdateNextShopRefreshTime = function(self, nId, nServerRefreshTime)
+  -- function num : 0_16 , upvalues : ClientManager
+  local mapShop = (self.tbShops)[nId]
+  local nOpenTime = self.nOpenTime
+  if nOpenTime > 0 and nOpenTime - ClientManager.serverTimeStamp > 0 then
+    return nOpenTime
+  end
+  local nNextRefreshTime = 0
+  local nCloseTime = self.nEndTime
+  if nCloseTime > 0 then
+    nNextRefreshTime = nCloseTime
+  end
+  do
     if mapShop.nRefreshTimeType > 0 then
-        local nTime = nServerRefreshTime
-        nNextRefreshTime = (nNextRefreshTime == 0 or nTime < nNextRefreshTime) and nTime or nNextRefreshTime
+      local nTime = nServerRefreshTime
     end
-    return nNextRefreshTime
+    -- DECOMPILER ERROR at PC25: Unhandled construct in 'MakeBoolean' P3
+
+    if (nNextRefreshTime == 0 or nTime < nNextRefreshTime) then
+      return nNextRefreshTime
+    end
+  end
 end
 
--- 更新当前商品最早的下一次刷新时间
-function ActivityShopData:UpdateNextGoodsRefreshTime(nShopId, nGoodsId)
-    local mapGoods = self.tbGoods[nShopId][nGoodsId]
-
-    local nNextRefreshTime = 0
+ActivityShopData.UpdateNextGoodsRefreshTime = function(self, nShopId, nGoodsId)
+  -- function num : 0_17
+  local mapGoods = ((self.tbGoods)[nShopId])[nGoodsId]
+  local nNextRefreshTime = 0
+  do
     if mapGoods.nUnlockPurchaseTime > 0 then
-        local nTime = mapGoods.nUnlockPurchaseTime
-        nNextRefreshTime = (nNextRefreshTime == 0 or nTime < nNextRefreshTime) and nTime or nNextRefreshTime
+      local nTime = mapGoods.nUnlockPurchaseTime
     end
-    return nNextRefreshTime
+    -- DECOMPILER ERROR at PC14: Unhandled construct in 'MakeBoolean' P3
+
+    if (nNextRefreshTime == 0 or nTime < nNextRefreshTime) then
+      return nNextRefreshTime
+    end
+  end
 end
 
---------------------------- Server Data ---------------------------
--- 把服务器数据换个结构，方便查找
-function ActivityShopData:ProcessServerData(mapServerData)
-    for _, mapShop in ipairs(mapServerData) do
-        self.tbServerData[mapShop.Id] = {}
-        self.tbServerData[mapShop.Id].RefreshTime = mapShop.RefreshTime or 0
-        for _, mapBoughtGoods in ipairs(mapShop.Infos) do
-            self.tbServerData[mapShop.Id][mapBoughtGoods.Id] = mapBoughtGoods.Number
-        end
+ActivityShopData.ProcessServerData = function(self, mapServerData)
+  -- function num : 0_18 , upvalues : _ENV
+  for _,mapShop in ipairs(mapServerData) do
+    -- DECOMPILER ERROR at PC7: Confused about usage of register: R7 in 'UnsetPending'
+
+    (self.tbServerData)[mapShop.Id] = {}
+    -- DECOMPILER ERROR at PC15: Confused about usage of register: R7 in 'UnsetPending'
+
+    ;
+    ((self.tbServerData)[mapShop.Id]).RefreshTime = mapShop.RefreshTime or 0
+    for _,mapBoughtGoods in ipairs(mapShop.Infos) do
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R12 in 'UnsetPending'
+
+      ((self.tbServerData)[mapShop.Id])[mapBoughtGoods.Id] = mapBoughtGoods.Number
     end
+  end
 end
 
--- 获取商品的已购买数量
-function ActivityShopData:GetBoughtCount(nGoodsId)
-    local mapGoods = ConfigTable.GetData("ActivityGoods", nGoodsId)
-    if mapGoods == nil then
-        printError("商品配置不存在" .. nGoodsId)
-        return 0
-    end
-    local nShopId = mapGoods.ShopId
-    if self.tbServerData[nShopId] and self.tbServerData[nShopId][nGoodsId] then
-        return self.tbServerData[nShopId][nGoodsId]
+ActivityShopData.GetBoughtCount = function(self, nGoodsId)
+  -- function num : 0_19 , upvalues : _ENV
+  local mapGoods = (ConfigTable.GetData)("ActivityGoods", nGoodsId)
+  if mapGoods == nil then
+    printError("商品配置不存在" .. nGoodsId)
+    return 0
+  end
+  local nShopId = mapGoods.ShopId
+  if (self.tbServerData)[nShopId] and ((self.tbServerData)[nShopId])[nGoodsId] then
+    return ((self.tbServerData)[nShopId])[nGoodsId]
+  else
+    return 0
+  end
+end
+
+ActivityShopData.GetNeedToRefreshShops = function(self)
+  -- function num : 0_20 , upvalues : ClientManager, _ENV
+  local tbShopIds = {}
+  local nServerTimeStamp = ClientManager.serverTimeStamp
+  for _,mapShop in pairs(self.tbShops) do
+    if not mapShop.bUnlock then
+      local bUnlock = self:CheckShopCond(mapShop.nUnlockCondType, mapShop.tbUnlockCondParams)
+      if bUnlock then
+        (table.insert)(tbShopIds, mapShop.nId)
+      end
     else
-        return 0
-    end
-end
+      do
+        do
+          if mapShop.nNextRefreshTime > 0 and mapShop.nNextRefreshTime <= nServerTimeStamp then
+            (table.insert)(tbShopIds, mapShop.nId)
+          end
+          -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out DO_STMT
 
------------------------------- Check ------------------------------
--- 获取需要更新数据的商店
-function ActivityShopData:GetNeedToRefreshShops()
-    local tbShopIds = {}
-    local nServerTimeStamp = ClientManager.serverTimeStamp
-    for _, mapShop in pairs(self.tbShops) do
-        if not mapShop.bUnlock then -- 被锁定限制
-            local bUnlock = self:CheckShopCond(mapShop.nUnlockCondType, mapShop.tbUnlockCondParams)
-            if bUnlock then
-                table.insert(tbShopIds, mapShop.nId)
-            end
-        elseif mapShop.nNextRefreshTime > 0 then -- 被时间限制
-            if nServerTimeStamp >= mapShop.nNextRefreshTime then
-                table.insert(tbShopIds, mapShop.nId)
-            end
+          -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+          -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out IF_STMT
+
         end
+      end
     end
-    return tbShopIds
+  end
+  return tbShopIds
 end
 
--- 获取需要更新数据的商品
-function ActivityShopData:GetNeedToRefreshGoods(nShopId)
-    local tbGoods = {}
-    local nServerTimeStamp = ClientManager.serverTimeStamp
-    for _, mapGoods in pairs(self.tbGoods[nShopId]) do
-        if not mapGoods.bUnlock then -- 被出现锁定限制
-            local bUnlock = self:CheckShopCond(mapGoods.nAppearCondType, mapGoods.tbAppearCondParams)
-            if bUnlock then
-                table.insert(tbGoods, mapGoods)
-            end
-        elseif not mapGoods.bPurchasable then -- 被购买锁定限制
+ActivityShopData.GetNeedToRefreshGoods = function(self, nShopId)
+  -- function num : 0_21 , upvalues : ClientManager, _ENV
+  local tbGoods = {}
+  local nServerTimeStamp = ClientManager.serverTimeStamp
+  if (self.tbGoods)[nShopId] then
+    for _,mapGoods in pairs((self.tbGoods)[nShopId]) do
+      if not mapGoods.bUnlock then
+        local bUnlock = self:CheckShopCond(mapGoods.nAppearCondType, mapGoods.tbAppearCondParams)
+        if bUnlock then
+          (table.insert)(tbGoods, mapGoods)
+        end
+      else
+        do
+          if not mapGoods.bPurchasable then
             local bPurchasable = self:CheckShopCond(mapGoods.nPurchaseCondType, mapGoods.tbPurchaseCondParams)
             if bPurchasable then
-                table.insert(tbGoods, mapGoods)
+              (table.insert)(tbGoods, mapGoods)
             end
-        elseif mapGoods.nNextRefreshTime > 0 then -- 被时间限制
-            if nServerTimeStamp >= mapGoods.nNextRefreshTime then
-                table.insert(tbGoods, mapGoods)
+          else
+            do
+              do
+                if mapGoods.nNextRefreshTime > 0 and mapGoods.nNextRefreshTime <= nServerTimeStamp then
+                  (table.insert)(tbGoods, mapGoods)
+                end
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
             end
+          end
         end
+      end
     end
-    return tbGoods
+  end
+  return tbGoods
 end
 
--- 检测商店和商品限制
-function ActivityShopData:CheckShopCond(eCond, tbParam)
-    if eCond == 0 then
-        return true
-    elseif eCond == GameEnum.shopCond.WorldClassSpecific and #tbParam == 1 then
-        local worldClass = PlayerData.Base:GetWorldClass()
-        return worldClass >= tbParam[1]
-    elseif eCond == GameEnum.shopCond.ShopPreGoodsSellOut and #tbParam == 2 then -- 活动的商品
-        local nBeforeId = tbParam[2]
-        local nBoughtCount = self:GetBoughtCount(nBeforeId)
-        local mapCfg = ConfigTable.GetData("ActivityGoods", nBeforeId)
-        if not mapCfg then
-            return false
-        end
-        local bSoldOut = nBoughtCount ~= 0 and nBoughtCount == mapCfg.MaximumLimit
-        return bSoldOut
-    else
-        printError("条件配置错误：")
+ActivityShopData.CheckShopCond = function(self, eCond, tbParam)
+  -- function num : 0_22 , upvalues : _ENV
+  if eCond == 0 then
+    return true
+  else
+    if eCond == (GameEnum.shopCond).WorldClassSpecific and #tbParam == 1 then
+      local worldClass = (PlayerData.Base):GetWorldClass()
+      return tbParam[1] <= worldClass
+    elseif eCond == (GameEnum.shopCond).ShopPreGoodsSellOut and #tbParam == 2 then
+      local nBeforeId = tbParam[2]
+      local nBoughtCount = self:GetBoughtCount(nBeforeId)
+      local mapCfg = (ConfigTable.GetData)("ActivityGoods", nBeforeId)
+      if not mapCfg then
         return false
+      end
+      local bSoldOut = nBoughtCount ~= 0 and nBoughtCount == mapCfg.MaximumLimit
+      return bSoldOut
+    elseif eCond == (GameEnum.shopCond).ActivityShopPreGoodsSellOut and #tbParam == 3 then
+      local nBeforeId = tbParam[3]
+      local nBoughtCount = self:GetBoughtCount(nBeforeId)
+      local mapCfg = (ConfigTable.GetData)("ActivityGoods", nBeforeId)
+      if not mapCfg then
+        return false
+      end
+      local bSoldOut = nBoughtCount ~= 0 and nBoughtCount == mapCfg.MaximumLimit
+      return bSoldOut
+    else
+      printError("条件配置错误：")
+      return false
     end
+  end
+  -- DECOMPILER ERROR: 11 unprocessed JMP targets
 end
 
------------------------------ Network -----------------------------
+ActivityShopData.SendActivityShopPurchaseReq = function(self, nShopId, nGoodsId, nCount, callback)
+  -- function num : 0_23 , upvalues : _ENV
+  local mapMsg = {ActivityId = self.nActId, GoodsId = nGoodsId, Number = nCount, RefreshTime = ((self.tbShops)[nShopId]).nServerRefreshTime, ShopId = nShopId}
+  local successCallback = function(_, mapData)
+    -- function num : 0_23_0 , upvalues : self, _ENV, nShopId, nGoodsId, callback
+    if mapData.IsRefresh then
+      self:ProcessServerData({mapData.Shop})
+      ;
+      (EventManager.Hit)("ActivityShopTimeRefresh")
+    else
+      -- DECOMPILER ERROR at PC22: Confused about usage of register: R2 in 'UnsetPending'
 
--- 购买商品
-function ActivityShopData:SendActivityShopPurchaseReq(nShopId, nGoodsId, nCount, callback)
-    local mapMsg = {
-        ActivityId = self.nActId,
-        GoodsId = nGoodsId,
-        Number = nCount,
-        RefreshTime = self.tbShops[nShopId].nServerRefreshTime,
-        ShopId = nShopId,
-    }
-    local function successCallback(_, mapData)
-        if mapData.IsRefresh then
-            self:ProcessServerData({ mapData.Shop })
-            EventManager.Hit("ActivityShopTimeRefresh")
-        else
-            if not self.tbServerData[nShopId] then
-                self.tbServerData[nShopId] = {}
-            end
-            self.tbServerData[nShopId][nGoodsId] = mapData.PurchasedNumber
-        end
-        self:UpdateData({ nShopId })
+      if not (self.tbServerData)[nShopId] then
+        (self.tbServerData)[nShopId] = {}
+      end
+      -- DECOMPILER ERROR at PC28: Confused about usage of register: R2 in 'UnsetPending'
 
-        UTILS.OpenReceiveByChangeInfo(mapData.Change)
-
-        if callback then
-            callback()
-        end
+      ;
+      ((self.tbServerData)[nShopId])[nGoodsId] = mapData.PurchasedNumber
     end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_shop_purchase_req, mapMsg, nil, successCallback)
-end
+    self:UpdateData({nShopId})
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapData.Change)
+    if callback then
+      callback()
+    end
+  end
 
--------------------------------------------------------------------
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_shop_purchase_req, mapMsg, nil, successCallback)
+end
 
 return ActivityShopData
+

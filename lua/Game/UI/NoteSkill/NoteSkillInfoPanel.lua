@@ -1,20 +1,24 @@
 local NoteSkillInfoPanel = class("NoteSkillInfoPanel", BasePanel)
--- Panel 定义
 NoteSkillInfoPanel._bIsMainPanel = false
-NoteSkillInfoPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-
+NoteSkillInfoPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 NoteSkillInfoPanel._tbDefine = {
-    {sPrefabPath = "NoteSkill/NoteSkillInfoPanel.prefab", sCtrlName = "Game.UI.NoteSkill.NoteSkillInfoCtrl"},
+{sPrefabPath = "NoteSkill/NoteSkillInfoPanel.prefab", sCtrlName = "Game.UI.NoteSkill.NoteSkillInfoCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function NoteSkillInfoPanel:Awake()
+NoteSkillInfoPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function NoteSkillInfoPanel:OnEnable()
+
+NoteSkillInfoPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function NoteSkillInfoPanel:OnDisable()
+
+NoteSkillInfoPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function NoteSkillInfoPanel:OnDestroy()
+
+NoteSkillInfoPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return NoteSkillInfoPanel
+

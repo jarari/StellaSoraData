@@ -1,28 +1,28 @@
 local EquipmentSucBarPanel = class("EquipmentSucBarPanel", BasePanel)
--- Panel 定义
-
-
-
-
 EquipmentSucBarPanel._bIsMainPanel = false
 EquipmentSucBarPanel._tbDefine = {
-    {sPrefabPath = "SuccessBarEx/EquipmentSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.EquipmentSucBarCtrl"},
+{sPrefabPath = "SuccessBarEx/EquipmentSucBarPanel.prefab", sCtrlName = "Game.UI.SuccessBarEx.EquipmentSucBarCtrl"}
 }
--------------------- local function --------------------
+EquipmentSucBarPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.mapData = tbParam[1]
+    self.callback = tbParam[2]
+  end
+end
 
--------------------- base function --------------------
-function EquipmentSucBarPanel:Awake()
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.mapData = tbParam[1]
-        self.callback = tbParam[2]
-    end
+EquipmentSucBarPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function EquipmentSucBarPanel:OnEnable()
+
+EquipmentSucBarPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function EquipmentSucBarPanel:OnDisable()
+
+EquipmentSucBarPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function EquipmentSucBarPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return EquipmentSucBarPanel
+

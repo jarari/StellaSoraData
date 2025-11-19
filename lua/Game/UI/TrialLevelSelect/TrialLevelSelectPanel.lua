@@ -1,18 +1,22 @@
--- TrialLevelSelectPanel Panel
-
 local TrialLevelSelectPanel = class("TrialLevelSelectPanel", BasePanel)
 TrialLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "Play_TrialLevelSelect/TrialLevelSelectPanel.prefab", sCtrlName = "Game.UI.TrialLevelSelect.TrialLevelSelectCtrl"},
+{sPrefabPath = "Play_TrialLevelSelect/TrialLevelSelectPanel.prefab", sCtrlName = "Game.UI.TrialLevelSelect.TrialLevelSelectCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function TrialLevelSelectPanel:Awake()
+TrialLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function TrialLevelSelectPanel:OnEnable()
+
+TrialLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TrialLevelSelectPanel:OnDisable()
+
+TrialLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function TrialLevelSelectPanel:OnDestroy()
+
+TrialLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return TrialLevelSelectPanel
+

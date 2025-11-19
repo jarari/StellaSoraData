@@ -1,32 +1,31 @@
--- Panel 模板
-
 local ConsumablePanel = class("ConsumablePanel", BasePanel)
 ConsumablePanel._bIsMainPanel = false
--- Panel 定义
---[[
-ConsumablePanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-ConsumablePanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-ConsumablePanel._bAddToBackHistory = true
-ConsumablePanel._nSnapshotPrePanel = 0
-ConsumablePanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 ConsumablePanel._tbDefine = {
-    {sPrefabPath = "ConsumablesPanel/ConsumablesPanel.prefab", sCtrlName = "Game.UI.Consumable.ConsumableCtrl"}
+{sPrefabPath = "ConsumablesPanel/ConsumablesPanel.prefab", sCtrlName = "Game.UI.Consumable.ConsumableCtrl"}
 }
--------------------- local function --------------------
+ConsumablePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function ConsumablePanel:Awake()
+ConsumablePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ConsumablePanel:OnEnable()
+
+ConsumablePanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function ConsumablePanel:OnAfterEnter()
+
+ConsumablePanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function ConsumablePanel:OnDisable()
+
+ConsumablePanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function ConsumablePanel:OnDestroy()
+
+ConsumablePanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function ConsumablePanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return ConsumablePanel
+

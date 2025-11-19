@@ -1,20 +1,23 @@
--- DiscSkillPanel Panel
-
 local DiscSkillPanel = class("DiscSkillPanel", BasePanel)
--- Panel 定义
 DiscSkillPanel._bIsMainPanel = false
 DiscSkillPanel._tbDefine = {
-    {sPrefabPath = "DiscSkill/DiscSkillPanel.prefab", sCtrlName = "Game.UI.DiscSkill.DiscSkillCtrl"},
+{sPrefabPath = "DiscSkill/DiscSkillPanel.prefab", sCtrlName = "Game.UI.DiscSkill.DiscSkillCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DiscSkillPanel:Awake()
+DiscSkillPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function DiscSkillPanel:OnEnable()
+
+DiscSkillPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DiscSkillPanel:OnDisable()
+
+DiscSkillPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DiscSkillPanel:OnDestroy()
+
+DiscSkillPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DiscSkillPanel
+

@@ -1,22 +1,26 @@
--- Panel 模板
-
 local StarTowerBuildDetailPanel = class("StarTowerBuildDetailPanel", BasePanel)
-
 StarTowerBuildDetailPanel._tbDefine = {
-    {sPrefabPath = "StarTowerBuild/StarTowerBuildDetailPanel.prefab", sCtrlName = "Game.UI.StarTower.Build.StarTowerBuildDetailCtrl"}
+{sPrefabPath = "StarTowerBuild/StarTowerBuildDetailPanel.prefab", sCtrlName = "Game.UI.StarTower.Build.StarTowerBuildDetailCtrl"}
 }
--------------------- local function --------------------
+StarTowerBuildDetailPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function StarTowerBuildDetailPanel:Awake()
+StarTowerBuildDetailPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StarTowerBuildDetailPanel:OnEnable()
+
+StarTowerBuildDetailPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function StarTowerBuildDetailPanel:OnDisable()
+
+StarTowerBuildDetailPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function StarTowerBuildDetailPanel:OnDestroy()
+
+StarTowerBuildDetailPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function StarTowerBuildDetailPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return StarTowerBuildDetailPanel
+

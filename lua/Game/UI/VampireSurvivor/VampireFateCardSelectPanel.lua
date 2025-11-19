@@ -1,35 +1,32 @@
--- Panel 模板
-
 local VampireFateCardSelectPanel = class("VampireFateCardSelectPanel", BasePanel)
-
--- Panel 定义
---[[
-VampireFateCardSelectPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-VampireFateCardSelectPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-
-VampireFateCardSelectPanel._bAddToBackHistory = true
-VampireFateCardSelectPanel._nSnapshotPrePanel = 0
-VampireFateCardSelectPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 VampireFateCardSelectPanel._bIsMainPanel = false
 VampireFateCardSelectPanel._bAddToBackHistory = false
 VampireFateCardSelectPanel._tbDefine = {
-    {sPrefabPath = "VampireBattle/VampireFateCardSelectPanel.prefab", sCtrlName = "Game.UI.VampireSurvivor.VampireFateCardSelect"}
+{sPrefabPath = "VampireBattle/VampireFateCardSelectPanel.prefab", sCtrlName = "Game.UI.VampireSurvivor.VampireFateCardSelect"}
 }
--------------------- local function --------------------
+VampireFateCardSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function VampireFateCardSelectPanel:Awake()
+VampireFateCardSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function VampireFateCardSelectPanel:OnEnable()
+
+VampireFateCardSelectPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function VampireFateCardSelectPanel:OnAfterEnter()
+
+VampireFateCardSelectPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function VampireFateCardSelectPanel:OnDisable()
+
+VampireFateCardSelectPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function VampireFateCardSelectPanel:OnDestroy()
+
+VampireFateCardSelectPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function VampireFateCardSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return VampireFateCardSelectPanel
+

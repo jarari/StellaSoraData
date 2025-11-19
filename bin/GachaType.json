@@ -19,7 +19,10 @@
     "Title5": "GachaType.1.11",
     "Desc6": "GachaType.1.12",
     "Desc7": "GachaType.1.13",
-    "Desc8": "GachaType.1.14"
+    "Desc8": "GachaType.1.14",
+    "Desc9": "GachaType.1.15",
+    "Desc10": "GachaType.1.16",
+    "Desc11": "GachaType.1.17"
   },
   "2": {
     "Id": 2,
@@ -41,7 +44,10 @@
     "Title5": "GachaType.2.11",
     "Desc6": "GachaType.2.12",
     "Desc7": "GachaType.2.13",
-    "Desc8": "GachaType.2.14"
+    "Desc8": "GachaType.2.14",
+    "Desc9": "GachaType.2.15",
+    "Desc10": "GachaType.2.16",
+    "Desc11": "GachaType.2.17"
   },
   "3": {
     "Id": 3,
@@ -63,7 +69,10 @@
     "Title5": "GachaType.3.11",
     "Desc6": "GachaType.3.12",
     "Desc7": "GachaType.3.13",
-    "Desc8": "GachaType.3.14"
+    "Desc8": "GachaType.3.14",
+    "Desc9": "GachaType.3.15",
+    "Desc10": "GachaType.3.16",
+    "Desc11": "GachaType.3.17"
   },
   "4": {
     "Id": 4,
@@ -85,7 +94,10 @@
     "Title5": "GachaType.4.11",
     "Desc6": "GachaType.4.12",
     "Desc7": "GachaType.4.13",
-    "Desc8": "GachaType.4.14"
+    "Desc8": "GachaType.4.14",
+    "Desc9": "GachaType.4.15",
+    "Desc10": "GachaType.4.16",
+    "Desc11": "GachaType.4.17"
   },
   "5": {
     "Id": 5,
@@ -106,7 +118,10 @@
     "Title5": "GachaType.5.11",
     "Desc6": "GachaType.5.12",
     "Desc7": "GachaType.5.13",
-    "Desc8": "GachaType.5.14"
+    "Desc8": "GachaType.5.14",
+    "Desc9": "GachaType.5.15",
+    "Desc10": "GachaType.5.16",
+    "Desc11": "GachaType.5.17"
   },
   "6": {
     "Id": 6,
@@ -128,7 +143,10 @@
     "Title5": "GachaType.6.11",
     "Desc6": "GachaType.6.12",
     "Desc7": "GachaType.6.13",
-    "Desc8": "GachaType.6.14"
+    "Desc8": "GachaType.6.14",
+    "Desc9": "GachaType.6.15",
+    "Desc10": "GachaType.6.16",
+    "Desc11": "GachaType.6.17"
   },
   "7": {
     "Id": 7,
@@ -150,6 +168,9 @@
     "Title5": "GachaType.7.11",
     "Desc6": "GachaType.7.12",
     "Desc7": "GachaType.7.13",
-    "Desc8": "GachaType.7.14"
+    "Desc8": "GachaType.7.14",
+    "Desc9": "GachaType.7.15",
+    "Desc10": "GachaType.7.16",
+    "Desc11": "GachaType.7.17"
   }
 }

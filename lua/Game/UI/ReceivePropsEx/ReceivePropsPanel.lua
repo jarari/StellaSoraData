@@ -1,22 +1,23 @@
-
 local ReceivePropsPanel = class("ReceivePropsPanel", BasePanel)
-
-
 ReceivePropsPanel._bIsMainPanel = false
 ReceivePropsPanel._tbDefine = {
-    {sPrefabPath = "ReceivePropsEx/ReceivePropsPanel.prefab", sCtrlName = "Game.UI.ReceivePropsEx.ReceivePropsCtrl"},
+{sPrefabPath = "ReceivePropsEx/ReceivePropsPanel.prefab", sCtrlName = "Game.UI.ReceivePropsEx.ReceivePropsCtrl"}
 }
-
-function ReceivePropsPanel:Awake()
+ReceivePropsPanel.Awake = function(self)
+  -- function num : 0_0
 end
 
-function ReceivePropsPanel:OnEnable()
+ReceivePropsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
 
-function ReceivePropsPanel:OnDisable()
+ReceivePropsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
 
-function ReceivePropsPanel:OnDestroy()
+ReceivePropsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
 
 return ReceivePropsPanel
+

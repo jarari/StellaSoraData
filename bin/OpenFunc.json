@@ -236,5 +236,13 @@
     "Icon": "Icon/ZZZOther/zs_openfunc_BattlePass",
     "Tips": "OpenFunc.BattlePass.3",
     "Param1": "3"
+  },
+  "29": {
+    "Id": 29,
+    "Name": "OpenFunc.NickNameReset.1",
+    "NeedWorldClass": 7,
+    "Desc": "OpenFunc.NickNameReset.2",
+    "Tips": "OpenFunc.NickNameReset.3",
+    "Param1": "7"
   }
 }

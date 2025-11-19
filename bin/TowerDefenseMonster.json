@@ -1,0 +1,58 @@
+{
+  "8069901": {
+    "Id": 8069901,
+    "ExpGive": 1000000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8069901.1"
+  },
+  "8069902": {
+    "Id": 8069902,
+    "ExpGive": 2000000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8069902.1"
+  },
+  "8069903": {
+    "Id": 8069903,
+    "ExpGive": 1200000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8069903.1"
+  },
+  "8069904": {
+    "Id": 8069904,
+    "ExpGive": 2400000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8069904.1"
+  },
+  "8079901": {
+    "Id": 8079901,
+    "ExpGive": 5000000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8079901.1"
+  },
+  "8079902": {
+    "Id": 8079902,
+    "ExpGive": 4000000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8079902.1"
+  },
+  "8089901": {
+    "Id": 8089901,
+    "ExpGive": 20000000,
+    "HpReduce": 2,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8089901.1"
+  },
+  "8070020": {
+    "Id": 8070020,
+    "ExpGive": 1000000,
+    "HpReduce": 1,
+    "AmountReduce": 1,
+    "Brief": "TowerDefenseMonster.8070020.1"
+  }
+}

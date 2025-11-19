@@ -1,37 +1,39 @@
--- Panel 模板
-
 local FixedRoguelikeLevelSelectPanel = class("FixedRoguelikeLevelSelectPanel", BasePanel)
-
--- Panel 定义
---[[
-FixedRoguelikeLevelSelectPanel._bIsMainPanel = true
-FixedRoguelikeLevelSelectPanel._bAddToBackHistory = true
-FixedRoguelikeLevelSelectPanel._nSnapshotPrePanel = 0
-
-FixedRoguelikeLevelSelectPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 FixedRoguelikeLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "FRLevelSelectEx/RoguelikeLevelSelect.prefab", sCtrlName = "Game.UI.FixedRoguelikeLevelSelectEx.FixedRoguelikeLevelCtrl"},
+{sPrefabPath = "FRLevelSelectEx/RoguelikeLevelSelect.prefab", sCtrlName = "Game.UI.FixedRoguelikeLevelSelectEx.FixedRoguelikeLevelCtrl"}
 }
--------------------- local function --------------------
+FixedRoguelikeLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function FixedRoguelikeLevelSelectPanel:Awake()
+FixedRoguelikeLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function FixedRoguelikeLevelSelectPanel:OnEnable()
+
+FixedRoguelikeLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FixedRoguelikeLevelSelectPanel:OnDisable()
+
+FixedRoguelikeLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function FixedRoguelikeLevelSelectPanel:OnDestroy()
+
+FixedRoguelikeLevelSelectPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function FixedRoguelikeLevelSelectPanel:OnRelease()
+
+FixedRoguelikeLevelSelectPanel.OnAfterEnter = function(self)
+  -- function num : 0_5 , upvalues : _ENV
+  local wait = function()
+    -- function num : 0_5_0 , upvalues : _ENV
+    (coroutine.yield)(((CS.UnityEngine).WaitForEndOfFrame)())
+    ;
+    (PopUpManager.OpenPopUpPanelByType)((GameEnum.PopUpSeqType).FuncUnlock)
+  end
+
+  ;
+  (cs_coroutine.start)(wait)
 end
-function FixedRoguelikeLevelSelectPanel:OnAfterEnter()
-    local function wait()
-        coroutine.yield(CS.UnityEngine.WaitForEndOfFrame())
-        PopUpManager.OpenPopUpPanelByType(GameEnum.PopUpSeqType.FuncUnlock)
-    end
-    cs_coroutine.start(wait)
-end
--------------------- callback function --------------------
+
 return FixedRoguelikeLevelSelectPanel
+

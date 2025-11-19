@@ -1,26 +1,31 @@
-local BasePanel = require "GameCore.UI.BasePanel"
+local BasePanel = require("GameCore.UI.BasePanel")
 local CharEquipmentPanel = class("CharEquipmentPanel", BasePanel)
-
 CharEquipmentPanel._tbDefine = {
-    {sPrefabPath = "CharacterInfoEx/CharEquipmentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharEquipmentCtrl"}
+{sPrefabPath = "CharacterInfoEx/CharEquipmentPanel.prefab", sCtrlName = "Game.UI.CharacterInfoEx.CharEquipmentCtrl"}
 }
--------------------- local function --------------------
+CharEquipmentPanel.Awake = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.nCharId = tbParam[1]
+  end
+end
 
--------------------- base function --------------------
-function CharEquipmentPanel:Awake()
-    local tbParam = self:GetPanelParam()
+CharEquipmentPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
-    if type(tbParam) == "table" then
-        self.nCharId = tbParam[1] -- 角色id可能为0
-    end
+CharEquipmentPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharEquipmentPanel:OnEnable()
+
+CharEquipmentPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function CharEquipmentPanel:OnDisable()
+
+CharEquipmentPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function CharEquipmentPanel:OnDestroy()
-end
-function CharEquipmentPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return CharEquipmentPanel
+

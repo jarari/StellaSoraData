@@ -1,26 +1,32 @@
--- 活动界面
-
 local ActivityListPanel = class("ActivityListPanel", BasePanel)
 ActivityListPanel._tbDefine = {
-    {sPrefabPath = "ActivityList/ActivityListPanel.prefab", sCtrlName = "Game.UI.ActivityList.ActivityListCtrl"}
+{sPrefabPath = "ActivityList/ActivityListPanel.prefab", sCtrlName = "Game.UI.ActivityList.ActivityListCtrl"}
 }
--------------------- local function --------------------
+ActivityListPanel.Awake = function(self)
+  -- function num : 0_0
+  self.nSelectGroup = nil
+end
 
--------------------- base function --------------------
-function ActivityListPanel:Awake()
-    self.nSelectGroup = nil
+ActivityListPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function ActivityListPanel:OnEnable()
+
+ActivityListPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function ActivityListPanel:OnAfterEnter()
-    
+
+ActivityListPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function ActivityListPanel:OnDisable()
+
+ActivityListPanel.OnDestroy = function(self)
+  -- function num : 0_4
+  self.nSelectGroup = nil
 end
-function ActivityListPanel:OnDestroy()
-    self.nSelectGroup = nil
+
+ActivityListPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function ActivityListPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return ActivityListPanel
+

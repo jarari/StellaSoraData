@@ -1,636 +1,953 @@
 local PlayerActivityData = class("PlayerActivityData")
-local PeriodicQuestActData = require "GameCore.Data.DataClass.Activity.PeriodicQuestActData"
-local LoginRewardActData = require "GameCore.Data.DataClass.Activity.LoginRewardActData"
-local MiningGameData = require "GameCore.Data.DataClass.Activity.MiningGameData"
-local TrialActData = require "GameCore.Data.DataClass.Activity.TrialActData"
-local CookieActData = require "GameCore.Data.DataClass.Activity.CookieGameData"
-local TowerDefenseData = require"GameCore.Data.DataClass.Activity.TowerDefenseData"
-local JointDrillActData = require"GameCore.Data.DataClass.Activity.JointDrillActData"
-local ActivityLevelTypeData = require"GameCore.Data.DataClass.Activity.ActivityLevelTypeData"
-local ActivityTaskData = require "GameCore.Data.DataClass.Activity.ActivityTaskData" -- xiajiabin
-local ActivityShopData = require "GameCore.Data.DataClass.Activity.ActivityShopData"
-local AdvertiseActData = require "GameCore.Data.DataClass.Activity.AdvertiseActData"
-local LocalData = require "GameCore.Data.LocalData"
+local PeriodicQuestActData = require("GameCore.Data.DataClass.Activity.PeriodicQuestActData")
+local LoginRewardActData = require("GameCore.Data.DataClass.Activity.LoginRewardActData")
+local MiningGameData = require("GameCore.Data.DataClass.Activity.MiningGameData")
+local TrialActData = require("GameCore.Data.DataClass.Activity.TrialActData")
+local CookieActData = require("GameCore.Data.DataClass.Activity.CookieActData")
+local TowerDefenseData = require("GameCore.Data.DataClass.Activity.TowerDefenseData")
+local JointDrillActData = require("GameCore.Data.DataClass.Activity.JointDrillActData")
+local ActivityLevelTypeData = require("GameCore.Data.DataClass.Activity.ActivityLevelTypeData")
+local ActivityTaskData = require("GameCore.Data.DataClass.Activity.ActivityTaskData")
+local ActivityShopData = require("GameCore.Data.DataClass.Activity.ActivityShopData")
+local AdvertiseActData = require("GameCore.Data.DataClass.Activity.AdvertiseActData")
+local LocalData = require("GameCore.Data.LocalData")
 local SwimThemeData = require("GameCore.Data.DataClass.Activity.SwimThemeData")
+local OurRegiment_10101Data = require("GameCore.Data.DataClass.Activity.OurRegiment_10101Data")
+local Dream_10102Data = require("GameCore.Data.DataClass.Activity.Dream_10102Data")
 local TimerManager = require("GameCore.Timer.TimerManager")
-
-function PlayerActivityData:Init()
-    self.bCacheActData = false
-    self.tbAllActivity = {}         -- 活动列表
-    self.tbAllActivityGroup = {}    -- 当前所有的活动主题（组��?
-    self.tbActivityPopUp = {}       -- 需要显示的活动开屏列��?
-    self.tbLoginRewardPopUp = {}    -- 登录奖励弹窗
-    self.tbReadedCG = {}            -- 已读的CG列表
-    self:InitActivityCfg()
-    EventManager.Add(EventId.IsNewDay, self, self.OnEvent_NewDay)
-    EventManager.Add(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
-    EventManager.Add("Story_RewardClosed", self, self.OnEvent_StoryEnd)
+local BdConvertData = require("GameCore.Data.DataClass.Activity.BdConvertData")
+local BreakOut_30101Data = require("GameCore.Data.DataClass.Activity.BreakOut_30101Data")
+local BreakOutData = require("GameCore.Data.DataClass.Activity.BreakOutData")
+PlayerActivityData.Init = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.bCacheActData = false
+  self.tbAllActivity = {}
+  self.tbAllActivityGroup = {}
+  self.tbActivityPopUp = {}
+  self.tbLoginRewardPopUp = {}
+  self.tbReadedCG = {}
+  self:InitActivityCfg()
+  ;
+  (EventManager.Add)(EventId.IsNewDay, self, self.OnEvent_NewDay)
+  ;
+  (EventManager.Add)(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
+  ;
+  (EventManager.Add)("Story_RewardClosed", self, self.OnEvent_StoryEnd)
 end
 
-function PlayerActivityData:UnInit()
-    EventManager.Remove(EventId.IsNewDay, self, self.OnEvent_NewDay)
-    EventManager.Remove(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
-    EventManager.Remove("Story_RewardClosed", self, self.OnEvent_StoryEnd)
+PlayerActivityData.UnInit = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  (EventManager.Remove)(EventId.IsNewDay, self, self.OnEvent_NewDay)
+  ;
+  (EventManager.Remove)(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
+  ;
+  (EventManager.Remove)("Story_RewardClosed", self, self.OnEvent_StoryEnd)
 end
 
-function PlayerActivityData:InitActivityCfg()
-    local function foreachTableLine(line)
-        if nil == CacheTable.GetData("_PeriodicQuestGroup", line.Belong) then
-            CacheTable.SetData("_PeriodicQuestGroup", line.Belong, {})
-        end
-        if nil == CacheTable.GetData("_PeriodicQuestGroup", line.Belong)[line.UnlockTime + 1] then
-            CacheTable.GetData("_PeriodicQuestGroup", line.Belong)[line.UnlockTime + 1] = {}
-        end
-        table.insert(CacheTable.GetData("_PeriodicQuestGroup", line.Belong)[line.UnlockTime + 1], line.GroupId)
-
-        if nil == CacheTable.GetData("_PeriodicQuestDay", line.Belong) then
-            CacheTable.SetData("_PeriodicQuestDay", line.Belong, {})
-        end
-        CacheTable.GetData("_PeriodicQuestDay", line.Belong)[line.GroupId] = line.UnlockTime + 1
-
-        if nil == CacheTable.GetData("_PeriodicQuestMaxDay", line.Belong) then
-            CacheTable.SetData("_PeriodicQuestMaxDay", line.Belong, 0)
-        end
-        if line.UnlockTime + 1 > CacheTable.GetData("_PeriodicQuestMaxDay", line.Belong) then
-            CacheTable.SetData("_PeriodicQuestMaxDay", line.Belong, line.UnlockTime + 1)
-        end
+PlayerActivityData.InitActivityCfg = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  local foreachTableLine = function(line)
+    -- function num : 0_2_0 , upvalues : _ENV
+    if (CacheTable.GetData)("_PeriodicQuestGroup", line.Belong) == nil then
+      (CacheTable.SetData)("_PeriodicQuestGroup", line.Belong, {})
     end
-    ForEachTableLine(DataTable.PeriodicQuestGroup, foreachTableLine)
+    if ((CacheTable.GetData)("_PeriodicQuestGroup", line.Belong))[line.UnlockTime + 1] == nil then
+      ((CacheTable.GetData)("_PeriodicQuestGroup", line.Belong))[line.UnlockTime + 1] = {}
+    end
+    ;
+    (table.insert)(((CacheTable.GetData)("_PeriodicQuestGroup", line.Belong))[line.UnlockTime + 1], line.GroupId)
+    if (CacheTable.GetData)("_PeriodicQuestDay", line.Belong) == nil then
+      (CacheTable.SetData)("_PeriodicQuestDay", line.Belong, {})
+    end
+    ;
+    ((CacheTable.GetData)("_PeriodicQuestDay", line.Belong))[line.GroupId] = line.UnlockTime + 1
+    if (CacheTable.GetData)("_PeriodicQuestMaxDay", line.Belong) == nil then
+      (CacheTable.SetData)("_PeriodicQuestMaxDay", line.Belong, 0)
+    end
+    if (CacheTable.GetData)("_PeriodicQuestMaxDay", line.Belong) < line.UnlockTime + 1 then
+      (CacheTable.SetData)("_PeriodicQuestMaxDay", line.Belong, line.UnlockTime + 1)
+    end
+  end
 
-    local function foreachTableLine(line)
-        CacheTable.InsertData("_PeriodicQuest", line.Belong, line)
-    end
-    ForEachTableLine(DataTable.PeriodicQuest, foreachTableLine)
-    
-    local function foreachLoginRewardGroup(line)
-        CacheTable.InsertData("_LoginRewardGroup", line.RewardGroupId, line)
-    end
-    ForEachTableLine(DataTable.LoginRewardGroup, foreachLoginRewardGroup)
+  ForEachTableLine(DataTable.PeriodicQuestGroup, foreachTableLine)
+  local foreachTableLine = function(line)
+    -- function num : 0_2_1 , upvalues : _ENV
+    (CacheTable.InsertData)("_PeriodicQuest", line.Belong, line)
+  end
 
-    local function foreachTableLine(line)
-        CacheTable.SetData("_ActivityTaskControl", line.ActivityId, line)
-    end
-    ForEachTableLine(DataTable.ActivityTaskControl, foreachTableLine)
+  ForEachTableLine(DataTable.PeriodicQuest, foreachTableLine)
+  local foreachLoginRewardGroup = function(line)
+    -- function num : 0_2_2 , upvalues : _ENV
+    (CacheTable.InsertData)("_LoginRewardGroup", line.RewardGroupId, line)
+  end
+
+  ForEachTableLine(DataTable.LoginRewardGroup, foreachLoginRewardGroup)
+  local foreachTableLine = function(line)
+    -- function num : 0_2_3 , upvalues : _ENV
+    (CacheTable.SetData)("_ActivityTaskControl", line.ActivityId, line)
+  end
+
+  ForEachTableLine(DataTable.ActivityTaskControl, foreachTableLine)
 end
 
---活动详情数据
-function PlayerActivityData:CacheAllActivityData(mapNetMsg)
-    if mapNetMsg.List ~= nil then
-        for _, v in ipairs(mapNetMsg.List) do
-            local nActId = v.Id
-            local actCfg = ConfigTable.GetData("Activity", nActId)
-            if nil ~= actCfg then
-                if actCfg.ActivityType == GameEnum.activityType.Avg then
-                    self:RefreshActivityAvgData(nActId, v.Avg)
-                end
-            end
-            if nil ~= actCfg then
-                if actCfg.ActivityType == GameEnum.activityType.PeriodicQuest then
-                    self:RefreshPeriodicActQuest(nActId, v.Periodic)
-                elseif actCfg.ActivityType == GameEnum.activityType.LoginReward then
-                    self:RefreshLoginRewardActData(nActId, v.Login)
-                elseif actCfg.ActivityType == GameEnum.activityType.Mining then
-                    self:RefreshMiningGameActData(nActId,v.Mining)
-                elseif actCfg.ActivityType == GameEnum.activityType.Cookie then
-                    self:RefreshCookieGameActData(nActId,v.Cookie)
-                elseif actCfg.ActivityType==GameEnum.activityType.TowerDefense then
-                    self:RefreshTowerDefenseActData(nActId,v.TowerDefense)
-                elseif actCfg.ActivityType == GameEnum.activityType.JointDrill then
+PlayerActivityData.CacheAllActivityData = function(self, mapNetMsg)
+  -- function num : 0_3 , upvalues : _ENV, ActivityTaskData
+  if mapNetMsg.List ~= nil then
+    for _,v in ipairs(mapNetMsg.List) do
+      local nActId = v.Id
+      local actCfg = (ConfigTable.GetData)("Activity", nActId)
+      if actCfg ~= nil and actCfg.ActivityType == (GameEnum.activityType).Avg then
+        self:RefreshActivityAvgData(nActId, v.Avg)
+      end
+      if actCfg ~= nil then
+        if actCfg.ActivityType == (GameEnum.activityType).PeriodicQuest then
+          self:RefreshPeriodicActQuest(nActId, v.Periodic)
+        else
+          if actCfg.ActivityType == (GameEnum.activityType).LoginReward then
+            self:RefreshLoginRewardActData(nActId, v.Login)
+          else
+            if actCfg.ActivityType == (GameEnum.activityType).Mining then
+              self:RefreshMiningGameActData(nActId, v.Mining)
+            else
+              if actCfg.ActivityType == (GameEnum.activityType).Cookie then
+                self:RefreshCookieGameActData(nActId, v.Cookie)
+              else
+                if actCfg.ActivityType == (GameEnum.activityType).TowerDefense then
+                  self:RefreshTowerDefenseActData(nActId, v.TowerDefense)
+                else
+                  if actCfg.ActivityType == (GameEnum.activityType).JointDrill then
                     self:RefreshJointDrillActData(nActId, v.JointDrill)
-                elseif actCfg.ActivityType == GameEnum.activityType.Levels then
-                    self:RefreshActivityLevelGameActData(nActId, v.Levels)
-                elseif actCfg.ActivityType == GameEnum.activityType.Trial then
-                    self:RefreshTrialActData(nActId, v.Trial)
-                elseif actCfg.ActivityType == GameEnum.activityType.CG then
-                    self:RefreshActivityCGData(v.CG)
-                elseif actCfg.ActivityType == GameEnum.activityType.Task then -- xiajiabin
-                    local actIns = self.tbAllActivity[nActId]
-                    if actIns == nil then
-                        local mapActData = {}
-                        mapActData.Id = nActId
-                        mapActData.StartTime = 0
-                        mapActData.EndTime = 0
-                        actIns = ActivityTaskData.new(mapActData)
-                        self.tbAllActivity[nActId] = actIns
+                  else
+                    if actCfg.ActivityType == (GameEnum.activityType).Levels then
+                      self:RefreshActivityLevelGameActData(nActId, v.Levels)
+                    else
+                      if actCfg.ActivityType == (GameEnum.activityType).Trial then
+                        self:RefreshTrialActData(nActId, v.Trial)
+                      else
+                        if actCfg.ActivityType == (GameEnum.activityType).CG then
+                          self:RefreshActivityCGData(v.CG)
+                        else
+                          if actCfg.ActivityType == (GameEnum.activityType).Task then
+                            local actIns = (self.tbAllActivity)[nActId]
+                            do
+                              do
+                                do
+                                  if actIns == nil then
+                                    local mapActData = {}
+                                    mapActData.Id = nActId
+                                    mapActData.StartTime = 0
+                                    mapActData.EndTime = 0
+                                    actIns = (ActivityTaskData.new)(mapActData)
+                                    -- DECOMPILER ERROR at PC144: Confused about usage of register: R11 in 'UnsetPending'
+
+                                    ;
+                                    (self.tbAllActivity)[nActId] = actIns
+                                  end
+                                  actIns:CacheData(v.Task)
+                                  ;
+                                  (EventManager.Hit)("RefreshActivityTask")
+                                  if actCfg.ActivityType == (GameEnum.activityType).Shop then
+                                    self:RefreshActivityShopData(nActId, v.Shop)
+                                  else
+                                    if actCfg.ActivityType == (GameEnum.activityType).Advertise then
+                                      self:RefreshInfinityTowerActData(nActId, v.Shop)
+                                    else
+                                      if actCfg.ActivityType == (GameEnum.activityType).BDConvert then
+                                        self:RefreshBdConvertData(nActId, v.BdConvert)
+                                      else
+                                        if actCfg.ActivityType == (GameEnum.activityType).Breakout then
+                                          self:RefreshBreakoutData(nActId, v.Breakout)
+                                        end
+                                      end
+                                    end
+                                  end
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out DO_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out DO_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                  -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
                     end
-                    actIns:CacheData(v.Task)
-                    --刷新活动任务弹窗用
-                    EventManager.Hit("RefreshActivityTask")
-                elseif actCfg.ActivityType == GameEnum.activityType.Shop then
-                    self:RefreshActivityShopData(nActId, v.Shop)
-                elseif actCfg.ActivityType == GameEnum.activityType.Advertise then
-                    self:RefreshInfinityTowerActData(nActId, v.Shop)
+                  end
                 end
+              end
             end
+          end
         end
+      end
     end
-    self:RefreshLoginRewardPopUpList()
+  end
+  self:RefreshLoginRewardPopUpList()
+  self:RefreshActivityRedDot()
 end
 
---活动数据处理(当前开启的活动列表)
-function PlayerActivityData:CacheActivityData(mapNetMsg)
-    if nil == mapNetMsg then
-        return
-    end
-    for _, v in ipairs(mapNetMsg) do
-        self:CreateActivityIns(v)
-    end
+PlayerActivityData.CacheActivityData = function(self, mapNetMsg)
+  -- function num : 0_4 , upvalues : _ENV
+  if mapNetMsg == nil then
+    return 
+  end
+  for _,v in ipairs(mapNetMsg) do
+    self:CreateActivityIns(v)
+  end
 end
 
-function PlayerActivityData:UpdateActivityState(mapNetMsg)
-    if nil == mapNetMsg then
-        return
+PlayerActivityData.UpdateActivityState = function(self, mapNetMsg)
+  -- function num : 0_5 , upvalues : _ENV
+  if mapNetMsg == nil then
+    return 
+  end
+  for _,v in ipairs(mapNetMsg) do
+    if (self.tbAllActivity)[v.Id] ~= nil then
+      ((self.tbAllActivity)[v.Id]):UpdateActivityState(v)
     end
-    for _, v in ipairs(mapNetMsg) do
-        if self.tbAllActivity[v.Id] ~= nil then
-            self.tbAllActivity[v.Id]:UpdateActivityState(v)
-        end
-    end
-    self:RefreshPopUpList()
+  end
+  self:RefreshPopUpList()
+  self:RefreshActivityRedDot()
+end
+
+PlayerActivityData.RefreshActivityData = function(self, mapNetMsg)
+  -- function num : 0_6
+  if (self.tbAllActivity)[mapNetMsg.Id] == nil then
+    self:CreateActivityIns(mapNetMsg)
+    self:SendActivityDetailMsg(nil, true)
+  else
+    ;
+    ((self.tbAllActivity)[mapNetMsg.Id]):RefreshActivityData(mapNetMsg)
+  end
+  self:RefreshPopUpList()
+  self:RefreshActivityRedDot()
+end
+
+PlayerActivityData.RefreshActivityStateData = function(self, mapNetMsg)
+  -- function num : 0_7
+  if (self.tbAllActivity)[mapNetMsg.Id] ~= nil then
+    ((self.tbAllActivity)[mapNetMsg.Id]):RefreshStateData(mapNetMsg.RedDot, mapNetMsg.Banner)
     self:RefreshActivityRedDot()
+  end
 end
 
-function PlayerActivityData:RefreshActivityData(mapNetMsg)
-    if nil == self.tbAllActivity[mapNetMsg.Id] then
-        self:CreateActivityIns(mapNetMsg)
-        --有新活动开启时主动请求下活动详情数据
-        self:SendActivityDetailMsg(nil, true)
-    else
-        self.tbAllActivity[mapNetMsg.Id]:RefreshActivityData(mapNetMsg)
+PlayerActivityData.RefreshActStatus = function(self)
+  -- function num : 0_8 , upvalues : _ENV
+  for _,actData in pairs(self.tbAllActivity) do
+    local bPlay = actData:GetPlayState()
+    if not bPlay then
+      actData:RefreshPlayState()
+      local bPlay_new = actData:GetPlayState()
+      if bPlay_new then
+        actData:UpdateStatus()
+      end
     end
-  
-    self:RefreshPopUpList()
+  end
+end
+
+PlayerActivityData.CreateActivityIns = function(self, actData)
+  -- function num : 0_9 , upvalues : _ENV, PeriodicQuestActData, LoginRewardActData, MiningGameData, TrialActData, CookieActData, TowerDefenseData, JointDrillActData, ActivityLevelTypeData, ActivityTaskData, ActivityShopData, AdvertiseActData, BdConvertData, BreakOutData
+  local actIns = nil
+  local actCfg = (ConfigTable.GetData)("Activity", actData.Id)
+  if actCfg == nil then
+    return 
+  end
+  if actCfg.ActivityType == (GameEnum.activityType).PeriodicQuest then
+    actIns = (PeriodicQuestActData.new)(actData)
+  else
+    if actCfg.ActivityType == (GameEnum.activityType).LoginReward then
+      actIns = (LoginRewardActData.new)(actData)
+    else
+      if actCfg.ActivityType == (GameEnum.activityType).Mining then
+        actIns = (MiningGameData.new)(actData)
+      else
+        if actCfg.ActivityType == (GameEnum.activityType).Trial then
+          actIns = (TrialActData.new)(actData)
+        else
+          if actCfg.ActivityType == (GameEnum.activityType).Cookie then
+            actIns = (CookieActData.new)(actData)
+          else
+            if actCfg.ActivityType == (GameEnum.activityType).TowerDefense then
+              actIns = (TowerDefenseData.new)(actData)
+            else
+              if actCfg.ActivityType == (GameEnum.activityType).JointDrill then
+                actIns = (JointDrillActData.new)(actData)
+              else
+                if actCfg.ActivityType == (GameEnum.activityType).Levels then
+                  actIns = (ActivityLevelTypeData.new)(actData)
+                else
+                  if actCfg.ActivityType == (GameEnum.activityType).Avg then
+                    (PlayerData.ActivityAvg):CacheActivityAvgData(actData)
+                  else
+                    if actCfg.ActivityType == (GameEnum.activityType).Task then
+                      actIns = (ActivityTaskData.new)(actData)
+                    else
+                      if actCfg.ActivityType == (GameEnum.activityType).Shop then
+                        actIns = (ActivityShopData.new)(actData)
+                      else
+                        if actCfg.ActivityType == (GameEnum.activityType).Advertise then
+                          actIns = (AdvertiseActData.new)(actData)
+                        else
+                          if actCfg.ActivityType == (GameEnum.activityType).BDConvert then
+                            actIns = (BdConvertData.new)(actData)
+                          else
+                            if actCfg.ActivityType == (GameEnum.activityType).Breakout then
+                              actIns = (BreakOutData.new)(actData)
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  -- DECOMPILER ERROR at PC167: Confused about usage of register: R4 in 'UnsetPending'
+
+  if actIns ~= nil then
+    (self.tbAllActivity)[actData.Id] = actIns
+  end
+end
+
+PlayerActivityData.RefreshActivityRedDot = function(self)
+  -- function num : 0_10 , upvalues : _ENV, LocalData
+  local bHasNewRedDot = false
+  for _,v in pairs(self.tbAllActivity) do
+    if v:CheckActShow() then
+      (RedDotManager.SetValid)(RedDotDefine.Activity_Tab, v:GetActId(), v:GetActivityRedDot())
+      if type(v.RefreshRedDot) == "function" then
+        v:RefreshRedDot()
+      end
+      local bInActGroup = false
+      if (v:GetActCfgData()).ActivityThemeType > 0 or self:IsActivityInActivityGroup(v:GetActId()) then
+        bInActGroup = true
+      end
+      if not bInActGroup and v:CheckActShow() then
+        local bTabRedDot = (RedDotManager.GetValid)(RedDotDefine.Activity_Tab, v:GetActId())
+        local sData = (LocalData.GetPlayerLocalData)("Activity_Tab_New_" .. v:GetActId())
+        local nValue = tonumber(sData == nil and "0" or sData)
+        local bNewRedDot = (nValue == 0 and not bTabRedDot)
+        if bNewRedDot then
+          bHasNewRedDot = true
+        end
+        ;
+        (RedDotManager.SetValid)(RedDotDefine.Activity_New_Tab, v:GetActId(), bNewRedDot)
+      end
+      -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+      -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out IF_STMT
+
+    end
+  end
+  local bHasGroupNewRedDot = false
+  for nId,v in pairs(self.tbAllActivityGroup) do
+    if v:CheckActGroupShow() and (RedDotManager.GetValid)(RedDotDefine.Activity_New_Tab, nId) then
+      bHasGroupNewRedDot = true
+    end
+  end
+  local bHasRedDot = (RedDotManager.GetValid)(RedDotDefine.Activity)
+  ;
+  (RedDotManager.SetValid)(RedDotDefine.Activity_New, nil, (bHasRedDot or not bHasNewRedDot) and bHasGroupNewRedDot)
+  -- DECOMPILER ERROR: 7 unprocessed JMP targets
+end
+
+PlayerActivityData.GetActivityList = function(self)
+  -- function num : 0_11
+  return self.tbAllActivity
+end
+
+PlayerActivityData.GetSortedActList = function(self)
+  -- function num : 0_12 , upvalues : _ENV
+  local tbActList = {}
+  for k,v in pairs(self.tbAllActivity) do
+    if v:CheckActShow() then
+      local bInActGroup = false
+      if (v:GetActCfgData()).ActivityThemeType > 0 or self:IsActivityInActivityGroup(v:GetActId()) then
+        bInActGroup = true
+      end
+      if not bInActGroup then
+        (table.insert)(tbActList, v)
+      end
+    end
+  end
+  ;
+  (table.sort)(tbActList, function(a, b)
+    -- function num : 0_12_0
+    if a:GetActId() >= b:GetActId() then
+      do return a:GetActSortId() ~= b:GetActSortId() end
+      do return a:GetActSortId() < b:GetActSortId() end
+      -- DECOMPILER ERROR: 3 unprocessed JMP targets
+    end
+  end
+)
+  return tbActList
+end
+
+PlayerActivityData.GetActivityDataById = function(self, nActId)
+  -- function num : 0_13
+  return (self.tbAllActivity)[nActId] or nil
+end
+
+PlayerActivityData.CacheActivityGroupData = function(self)
+  -- function num : 0_14 , upvalues : _ENV
+  local foreachActGroup = function(mapData)
+    -- function num : 0_14_0 , upvalues : self
+    self:CreateActivityGroupIns(mapData)
+  end
+
+  ForEachTableLine((ConfigTable.Get)("ActivityGroup"), foreachActGroup)
+  self:RefreshPopUpList()
+  self:RefreshActGroupNewRedDot()
+end
+
+PlayerActivityData.CreateActivityGroupIns = function(self, actData)
+  -- function num : 0_15 , upvalues : _ENV, SwimThemeData, OurRegiment_10101Data, Dream_10102Data, BreakOut_30101Data, TimerManager
+  local actIns = nil
+  local actCfg = actData
+  if actCfg == nil then
+    return 
+  end
+  local nOpenTime = ((CS.ClientManager).Instance):ISO8601StrToTimeStamp(actCfg.StartTime)
+  local nEndEnterTime = ((CS.ClientManager).Instance):ISO8601StrToTimeStamp(actCfg.EnterEndTime)
+  local curTime = ((CS.ClientManager).Instance).serverTimeStamp
+  if nOpenTime <= curTime and curTime < nEndEnterTime then
+    if actCfg.ActivityThemeType == (GameEnum.activityThemeType).Swim then
+      actIns = (SwimThemeData.new)(actData)
+    else
+      if actCfg.ActivityThemeType == (GameEnum.activityThemeType).OurRegiment_10101 then
+        actIns = (OurRegiment_10101Data.new)(actData)
+      else
+        if actCfg.ActivityThemeType == (GameEnum.activityThemeType).Dream_10102 then
+          actIns = (Dream_10102Data.new)(actData)
+        else
+          if actCfg.ActivityThemeType == (GameEnum.activityThemeType).BreakOut_30101 then
+            actIns = (BreakOut_30101Data.new)(actData)
+          end
+        end
+      end
+    end
+    -- DECOMPILER ERROR at PC70: Confused about usage of register: R7 in 'UnsetPending'
+
+    ;
+    (self.tbAllActivityGroup)[actData.Id] = actIns
+    ;
+    (PlayerData.ActivityAvg):RefreshAvgRedDot()
+  else
+    if curTime < nOpenTime then
+      (TimerManager.Add)(1, nOpenTime - curTime, nil, function()
+    -- function num : 0_15_0 , upvalues : self, actData
+    self:RefreshActivityGroupData(actData)
+  end
+, true, true, true)
+    end
+  end
+end
+
+PlayerActivityData.RefreshActivityGroupData = function(self, actData)
+  -- function num : 0_16
+  if (self.tbAllActivityGroup)[actData.Id] == nil then
+    self:CreateActivityGroupIns(actData)
+  else
+    ;
+    ((self.tbAllActivityGroup)[actData.Id]):RefreshActivityData(actData)
+  end
+  self:RefreshActGroupNewRedDot()
+end
+
+PlayerActivityData.RefreshActGroupNewRedDot = function(self)
+  -- function num : 0_17 , upvalues : _ENV, LocalData
+  for _,actIns in pairs(self.tbAllActivityGroup) do
+    if actIns:CheckActGroupShow() then
+      local sData = (LocalData.GetPlayerLocalData)("Activity_Tab_New_" .. actIns:GetActGroupId())
+      local nValue = tonumber(sData == nil and "0" or sData)
+      local bNewRedDot = nValue == 0
+      ;
+      (RedDotManager.SetValid)(RedDotDefine.Activity_New_Tab, actIns:GetActGroupId(), bNewRedDot)
+    end
+  end
+  -- DECOMPILER ERROR: 2 unprocessed JMP targets
+end
+
+PlayerActivityData.GetSortedActGroupList = function(self)
+  -- function num : 0_18 , upvalues : _ENV
+  local tbActGroupList = {}
+  for k,v in pairs(self.tbAllActivityGroup) do
+    if v:CheckActGroupShow() then
+      (table.insert)(tbActGroupList, v)
+    end
+  end
+  ;
+  (table.sort)(tbActGroupList, function(a, b)
+    -- function num : 0_18_0
+    if not a:CheckActivityGroupOpen() and b:CheckActivityGroupOpen() then
+      return false
+    else
+      if a:CheckActivityGroupOpen() and not b:CheckActivityGroupOpen() then
+        return true
+      end
+    end
+    do return a:GetActGroupId() < b:GetActGroupId() end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  return tbActGroupList
+end
+
+PlayerActivityData.GetActivityGroupDataById = function(self, nActGroupId)
+  -- function num : 0_19
+  return (self.tbAllActivityGroup)[nActGroupId]
+end
+
+PlayerActivityData.GetMainviewShowActivityGroup = function(self)
+  -- function num : 0_20 , upvalues : _ENV
+  local tbShowList = {}
+  for _,actGroupData in pairs(self.tbAllActivityGroup) do
+    if actGroupData:CheckActGroupShow() and actGroupData:IsUnlockShow() then
+      (table.insert)(tbShowList, actGroupData)
+    end
+  end
+  ;
+  (table.sort)(tbShowList, function(a, b)
+    -- function num : 0_20_0
+    if not a:CheckActivityGroupOpen() and b:CheckActivityGroupOpen() then
+      return false
+    else
+      if a:CheckActivityGroupOpen() and not b:CheckActivityGroupOpen() then
+        return true
+      end
+    end
+    do return a:GetActGroupId() < b:GetActGroupId() end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  return tbShowList
+end
+
+PlayerActivityData.IsActivityInActivityGroup = function(self, nActId)
+  -- function num : 0_21 , upvalues : _ENV
+  local isInGroup, getActId = nil, nil
+  for _,actGroupData in pairs(self.tbAllActivityGroup) do
+    if actGroupData:CheckActGroupShow() then
+      isInGroup = actGroupData:IsActivityInActivityGroup(nActId)
+      if isInGroup == true then
+        return isInGroup, getActId
+      end
+    end
+  end
+  return false
+end
+
+PlayerActivityData.RefreshPeriodicActQuest = function(self, nActId, mapMsgData)
+  -- function num : 0_22
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshQuestList(mapMsgData.Quests)
+    ;
+    ((self.tbAllActivity)[nActId]):RefreshFinalStatus(mapMsgData.FinalStatus)
+  end
+end
+
+PlayerActivityData.RefreshSingleQuest = function(self, questData)
+  -- function num : 0_23 , upvalues : _ENV
+  local actCfg = (ConfigTable.GetData)("Activity", questData.ActivityId)
+  if not actCfg then
+    return 
+  end
+  if actCfg.ActivityType == (GameEnum.activityType).PeriodicQuest then
+    local questCfg = (ConfigTable.GetData)("PeriodicQuest", questData.Id)
+    if questCfg then
+      local nActId = questCfg.Belong
+      if (self.tbAllActivity)[nActId] ~= nil then
+        ((self.tbAllActivity)[nActId]):RefreshQuestData(questData)
+      end
+      ;
+      (EventManager.Hit)("RefreshPeriodicAct", nActId)
+    end
+  else
+    do
+      -- DECOMPILER ERROR at PC53: Unhandled construct in 'MakeBoolean' P1
+
+      if actCfg.ActivityType == (GameEnum.activityType).Mining and (self.tbAllActivity)[questData.ActivityId] ~= nil then
+        ((self.tbAllActivity)[questData.ActivityId]):RefreshQuestData(questData)
+      end
+      -- DECOMPILER ERROR at PC71: Unhandled construct in 'MakeBoolean' P1
+
+      if actCfg.ActivityType == (GameEnum.activityType).Cookie and (self.tbAllActivity)[questData.ActivityId] ~= nil then
+        ((self.tbAllActivity)[questData.ActivityId]):RefreshQuestData(questData)
+      end
+      if actCfg.ActivityType == (GameEnum.activityType).JointDrill then
+        (PlayerData.JointDrill):RefreshQuestData(questData)
+      else
+        if actCfg.ActivityType == (GameEnum.activityType).Task then
+          ((self.tbAllActivity)[questData.ActivityId]):RefreshSingleQuest(questData)
+          ;
+          (EventManager.Hit)("RefreshActivityTask")
+        else
+          -- DECOMPILER ERROR at PC118: Unhandled construct in 'MakeBoolean' P1
+
+          if actCfg.ActivityType == (GameEnum.activityType).BDConvert and (self.tbAllActivity)[questData.ActivityId] ~= nil then
+            ((self.tbAllActivity)[questData.ActivityId]):RefreshQuestData(questData)
+          end
+        end
+      end
+      if actCfg.ActivityType == (GameEnum.activityType).TowerDefense and (self.tbAllActivity)[questData.ActivityId] ~= nil then
+        ((self.tbAllActivity)[questData.ActivityId]):RefreshQuestData(questData)
+      end
+    end
+  end
+end
+
+PlayerActivityData.CacheLoginRewardActData = function(self, nActId, mapMsgData)
+  -- function num : 0_24
+  self:RefreshLoginRewardActData(nActId, mapMsgData)
+  self:RefreshLoginRewardPopUpList()
+end
+
+PlayerActivityData.RefreshLoginRewardActData = function(self, nActId, actData)
+  -- function num : 0_25
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshLoginData(actData.Receive, actData.Actual)
+  end
+end
+
+PlayerActivityData.ReceiveLoginRewardSuc = function(self, nActId)
+  -- function num : 0_26
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):ReceiveRewardSuc()
+  end
+  self:RefreshLoginRewardPopUpList()
+end
+
+PlayerActivityData.RefreshPopUpList = function(self)
+  -- function num : 0_27 , upvalues : _ENV
+  self.tbActivityPopUp = {}
+  local bFuncOpen = (PlayerData.Base):CheckFunctionUnlock((GameEnum.OpenFuncType).Activity)
+  if not bFuncOpen then
+    return 
+  end
+  for _,v in pairs(self.tbAllActivity) do
+    if v:CheckPopUp() and v:CheckActPlay() then
+      (table.insert)(self.tbActivityPopUp, v:GetActId())
+    end
+  end
+  for _,v in pairs(self.tbAllActivityGroup) do
+    if v:CheckPopUp() and v:CheckActGroupPopUpShow() and v:IsUnlock() then
+      (table.insert)(self.tbActivityPopUp, v:GetActGroupId())
+    end
+  end
+  if #self.tbActivityPopUp > 0 then
+    (PlayerData.PopUp):InsertPopUpQueue(self.tbActivityPopUp)
+  end
+end
+
+PlayerActivityData.RefreshLoginRewardPopUpList = function(self)
+  -- function num : 0_28 , upvalues : _ENV
+  self.tbLoginRewardPopUp = {}
+  local bFuncOpen = (PlayerData.Base):CheckFunctionUnlock((GameEnum.OpenFuncType).Activity)
+  if not bFuncOpen then
+    return 
+  end
+  for nActId,data in pairs(self.tbAllActivity) do
+    local nActType = data:GetActType()
+    if nActType == (GameEnum.activityType).LoginReward and data:CheckCanReceive() and data:CheckActivityOpen() then
+      (table.insert)(self.tbLoginRewardPopUp, data)
+    end
+  end
+  ;
+  (table.sort)(self.tbLoginRewardPopUp, function(a, b)
+    -- function num : 0_28_0
+    if a:GetActId() >= b:GetActId() then
+      do return a:GetActSortId() ~= b:GetActSortId() end
+      do return a:GetActSortId() < b:GetActSortId() end
+      -- DECOMPILER ERROR: 3 unprocessed JMP targets
+    end
+  end
+)
+  if #self.tbLoginRewardPopUp > 0 then
+    (PopUpManager.PopUpEnQueue)((GameEnum.PopUpSeqType).ActivityLogin, self.tbLoginRewardPopUp)
+  end
+end
+
+PlayerActivityData.RefreshMiningGameActData = function(self, nActId, msgMapData)
+  -- function num : 0_29
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshMiningGameActData(nActId, msgMapData)
+  end
+end
+
+PlayerActivityData.RefreshCookieGameActData = function(self, nActId, msgMapData)
+  -- function num : 0_30
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshCookieGameActData(nActId, msgMapData)
+  end
+end
+
+PlayerActivityData.RefreshJointDrillActData = function(self, nActId, msgData)
+  -- function num : 0_31
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshJointDrillActData(msgData)
+  end
+end
+
+PlayerActivityData.RefreshTowerDefenseActData = function(self, nActId, msgData)
+  -- function num : 0_32
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshTowerDefenseActData(nActId, msgData)
+  end
+end
+
+PlayerActivityData.RefreshBdConvertData = function(self, nActId, msgData)
+  -- function num : 0_33
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshBdConvertData(nActId, msgData)
+  end
+end
+
+PlayerActivityData.RefreshBreakoutData = function(self, nActId, msgData)
+  -- function num : 0_34
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshBreakoutData(nActId, msgData)
+  end
+end
+
+PlayerActivityData.RefreshActivityLevelGameActData = function(self, nActId, msgData)
+  -- function num : 0_35
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshActivityLevelGameActData(nActId, msgData)
+  end
+end
+
+PlayerActivityData.SetActivityLevelActId = function(self, nActId)
+  -- function num : 0_36
+  self.nActivityLevelActId = nActId
+end
+
+PlayerActivityData.GetActivityLevelActId = function(self)
+  -- function num : 0_37
+  return self.nActivityLevelActId
+end
+
+PlayerActivityData.RefreshTrialActData = function(self, nActId, msgData)
+  -- function num : 0_38
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshTrialActData(msgData)
+  end
+end
+
+PlayerActivityData.RefreshActivityAvgData = function(self, nActId, msgData)
+  -- function num : 0_39 , upvalues : _ENV
+  (PlayerData.ActivityAvg):RefreshActivityAvgData(nActId, msgData)
+end
+
+PlayerActivityData.RefreshActivityShopData = function(self, nActId, msgData)
+  -- function num : 0_40
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshActivityShopData(msgData)
+  end
+end
+
+PlayerActivityData.RefreshActivityCGData = function(self, msgData)
+  -- function num : 0_41 , upvalues : _ENV
+  self.tbReadedCG = {}
+  for _,actId in pairs(msgData) do
+    (table.insert)(self.tbReadedCG, actId)
+  end
+end
+
+PlayerActivityData.IsCGPlayed = function(self, nActId)
+  -- function num : 0_42 , upvalues : _ENV
+  do return (table.indexof)(self.tbReadedCG, nActId) > 0 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+PlayerActivityData.GetActivityBannerList = function(self)
+  -- function num : 0_43 , upvalues : _ENV
+  local tbList = {}
+  for _,v in pairs(self.tbAllActivity) do
+    if v:CheckShowBanner() then
+      (table.insert)(tbList, v)
+    end
+  end
+  ;
+  (table.sort)(tbList, function(a, b)
+    -- function num : 0_43_0
+    do return a:GetActId() < b:GetActId() end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  return tbList
+end
+
+PlayerActivityData.RefreshInfinityTowerActData = function(self, nActId, msgData)
+  -- function num : 0_44
+  if (self.tbAllActivity)[nActId] ~= nil then
+    ((self.tbAllActivity)[nActId]):RefreshInfinityTowerActData(nActId, msgData)
+  end
+end
+
+PlayerActivityData.SendActivityDetailMsg = function(self, callback, bForceGet)
+  -- function num : 0_45 , upvalues : _ENV
+  local callFunc = function()
+    -- function num : 0_45_0 , upvalues : self, callback
+    self.bCacheActData = true
+    if callback ~= nil then
+      callback()
+    end
+  end
+
+  if not self.bCacheActData or bForceGet then
+    (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_detail_req, {}, nil, callFunc)
+  else
+    if callback ~= nil then
+      callback()
+    end
+  end
+end
+
+PlayerActivityData.SendReceivePerQuest = function(self, nActId, nQuestId, callback)
+  -- function num : 0_46 , upvalues : _ENV
+  local callFunc = function(_, mapChangeInfo)
+    -- function num : 0_46_0 , upvalues : self, nActId, nQuestId, _ENV, callback
+    local actData = (self.tbAllActivity)[nActId]
+    local tbQuestList = actData:RefreshQuestStatus(nQuestId)
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapChangeInfo, callback)
+  end
+
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_periodic_reward_receive_req, {ActivityId = nActId, QuestId = nQuestId}, nil, callFunc)
+end
+
+PlayerActivityData.SendReceiveFinalReward = function(self, nActId, callback)
+  -- function num : 0_47 , upvalues : _ENV
+  local callFunc = function(_, mapMsgData)
+    -- function num : 0_47_0 , upvalues : self, nActId, callback
+    self:ReceiveFinalRewardSuc(nActId, mapMsgData)
+    if callback ~= nil then
+      callback()
+    end
+  end
+
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_periodic_final_reward_receive_req, {Value = nActId}, nil, callFunc)
+end
+
+PlayerActivityData.ReceiveQuestReward = function(self, mapMsgData)
+  -- function num : 0_48 , upvalues : _ENV
+  (UTILS.OpenReceiveByChangeInfo)(mapMsgData)
+end
+
+PlayerActivityData.ReceiveFinalRewardSuc = function(self, actId, mapMsgData)
+  -- function num : 0_49 , upvalues : _ENV
+  local actData = (self.tbAllActivity)[actId]
+  if actData ~= nil then
+    actData:RefreshFinalStatus(true)
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapMsgData)
+  end
+end
+
+PlayerActivityData.SendReceiveLoginRewardMsg = function(self, nActId, callFunc)
+  -- function num : 0_50 , upvalues : _ENV
+  local callback = function(_, mapMsgData)
+    -- function num : 0_50_0 , upvalues : self, nActId, _ENV, callFunc
+    self:ReceiveLoginRewardSuc(nActId)
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapMsgData, callFunc)
+  end
+
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_login_reward_receive_req, {Value = nActId}, nil, callback)
+end
+
+PlayerActivityData.OpenActivityPanel = function(self, nActId)
+  -- function num : 0_51 , upvalues : _ENV
+  local tbList = self:GetSortedActList()
+  if next(tbList) == nil then
     self:RefreshActivityRedDot()
-end
-
-function PlayerActivityData:RefreshActivityStateData(mapNetMsg)
-    if nil ~= self.tbAllActivity[mapNetMsg.Id] then
-        self.tbAllActivity[mapNetMsg.Id]:RefreshStateData(mapNetMsg.RedDot, mapNetMsg.Banner)
-        self:RefreshActivityRedDot()
-    end
-end
-
-function PlayerActivityData:CreateActivityIns(actData)
-    local actIns
-    local actCfg = ConfigTable.GetData("Activity", actData.Id)
-    if actCfg == nil then
-        return
-    end
-    if actCfg.ActivityType == GameEnum.activityType.PeriodicQuest then
-        actIns = PeriodicQuestActData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.LoginReward then
-        actIns = LoginRewardActData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Mining then
-        actIns = MiningGameData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Trial then
-        actIns = TrialActData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Cookie then
-        actIns = CookieActData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.TowerDefense then
-        actIns = TowerDefenseData.new (actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.JointDrill then
-        actIns = JointDrillActData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Levels then
-        actIns = ActivityLevelTypeData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Avg then
-        PlayerData.ActivityAvg:CacheActivityAvgData(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Task then -- xiajiabin
-        actIns = ActivityTaskData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Shop then
-        actIns = ActivityShopData.new(actData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Advertise then
-        actIns = AdvertiseActData.new(actData)
-    end
-    if actIns ~= nil then
-        self.tbAllActivity[actData.Id] = actIns
-    end
-end
-
-function PlayerActivityData:RefreshActivityRedDot()
-    for _, v in pairs(self.tbAllActivity) do
-        RedDotManager.SetValid(RedDotDefine.Activity_Tab, v:GetActId(), v:CheckActShow() and v:GetActivityRedDot())
-        if type(v.RefreshRedDot) == "function" then
-            v:RefreshRedDot()
-        end
-    end
-end
-
-function PlayerActivityData:GetActivityList()
-    return self.tbAllActivity
-end
-
-function PlayerActivityData:GetSortedActList()
-    local tbActList = {}
-    for k, v in pairs(self.tbAllActivity) do
-        if v:CheckActShow() then
-            local bInActGroup = false
-            if v:GetActCfgData().ActivityThemeType > 0 or self:IsActivityInActivityGroup(v:GetActId()) then
-                bInActGroup = true
-            end
-            if not bInActGroup then
-                table.insert(tbActList, v)
-            end
-        end
-    end
-    table.sort(tbActList, function(a, b)
-        if a:GetActSortId() == b:GetActSortId() then
-            return a:GetActId() < b:GetActId()
-        end
-        return a:GetActSortId() < b:GetActSortId()
-    end)
-    return tbActList
-end
-
-function PlayerActivityData:GetActivityDataById(nActId)
-    return self.tbAllActivity[nActId] or nil
-end
---------------------- 活动主题（组）数��? --------------
-function PlayerActivityData:CacheActivityGroupData()
-    local function foreachActGroup(mapData)
-        self:CreateActivityGroupIns(mapData)
-    end
-    ForEachTableLine(ConfigTable.Get("ActivityGroup"),foreachActGroup)
-    self:RefreshPopUpList()
-end
-
-function PlayerActivityData:CreateActivityGroupIns(actData)
-    local actIns
-    local actCfg = actData
-    if actCfg == nil then
-        return
-    end
-    local nOpenTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(actCfg.StartTime)
-    local nEndEnterTime = CS.ClientManager.Instance:ISO8601StrToTimeStamp(actCfg.EnterEndTime)
-    local curTime = CS.ClientManager.Instance.serverTimeStamp
-    if curTime >= nOpenTime and curTime < nEndEnterTime then
-        if actCfg.ActivityGroupType == GameEnum.activityThemeType.Swim then
-            actIns = SwimThemeData.new(actData)
-        end
-        self.tbAllActivityGroup[actData.Id] = actIns
-        PlayerData.ActivityAvg:RefreshAvgRedDot()
-    elseif curTime < nOpenTime then
-        TimerManager.Add(1, nOpenTime - curTime, nil, function()
-            self:RefreshActivityGroupData(actData)
-        end, true, true, true)
-    end
-end
-
-function PlayerActivityData:RefreshActivityGroupData(actData)
-    if nil == self.tbAllActivityGroup[actData.Id] then
-        self:CreateActivityGroupIns(actData)
-    else
-        self.tbAllActivityGroup[actData.Id]:RefreshActivityData(actData)
-    end
-end
-
-function PlayerActivityData:GetSortedActGroupList()
-    local tbActGroupList = {}
-    for k, v in pairs(self.tbAllActivityGroup) do
-        if v:CheckActGroupShow() then
-            table.insert(tbActGroupList, v)
-        end
-    end
-    table.sort(tbActGroupList, function(a, b)
-        if not a:CheckActivityGroupOpen() and b:CheckActivityGroupOpen() then
-            return false
-        elseif a:CheckActivityGroupOpen() and not b:CheckActivityGroupOpen() then
-            return true
-        end
-        return a:GetActGroupId() < b:GetActGroupId()
-    end)
-    return tbActGroupList
-end
-
-function PlayerActivityData:GetActivityGroupDataById(nActGroupId)
-    return self.tbAllActivityGroup[nActGroupId]
-end
-
---获取显示在主界面的活动组
-function PlayerActivityData:GetMainviewShowActivityGroup()
-    local tbShowList = {}
-    for _, actGroupData in pairs(self.tbAllActivityGroup) do
-        if actGroupData:CheckActGroupShow() and actGroupData:IsUnlockShow() then
-            table.insert(tbShowList, actGroupData)
-        end
-    end
-    table.sort(tbShowList, function(a, b)
-        if not a:CheckActivityGroupOpen() and b:CheckActivityGroupOpen() then
-            return false
-        elseif a:CheckActivityGroupOpen() and not b:CheckActivityGroupOpen() then
-            return true
-        end
-        return a:GetActGroupId() < b:GetActGroupId()
-    end)
-    return tbShowList
-end
-
-function PlayerActivityData:IsActivityInActivityGroup(nActId)
-    for _, actGroupData in pairs(self.tbAllActivityGroup) do
-        if actGroupData:CheckActGroupShow() then
-            return actGroupData:IsActivityInActivityGroup(nActId)
-        end
-    end
-    return false
-end
-
---------------------- 周期活动数据 -------------------- 
-
-function PlayerActivityData:RefreshPeriodicActQuest(nActId, mapMsgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshQuestList(mapMsgData.Quests)
-        self.tbAllActivity[nActId]:RefreshFinalStatus(mapMsgData.FinalStatus)
-    end
-end
-
-function PlayerActivityData:RefreshSingleQuest(questData)
-    local actCfg=ConfigTable.GetData("Activity",questData.ActivityId)
-    if not actCfg then
-        return
-    end
-    if actCfg.ActivityType==GameEnum.activityType.PeriodicQuest then
-        local questCfg = ConfigTable.GetData("PeriodicQuest", questData.Id)
-        if questCfg then
-            local nActId = questCfg.Belong
-            if nil ~= self.tbAllActivity[nActId] then
-                self.tbAllActivity[nActId]:RefreshQuestData(questData)
-            end
-            --刷新活动任务
-            EventManager.Hit("RefreshPeriodicAct", nActId)
-        end
-    elseif actCfg.ActivityType==GameEnum.activityType.Mining then
-        if nil ~=self.tbAllActivity[questData.ActivityId] then
-            self.tbAllActivity[questData.ActivityId]:RefreshQuestData(questData)
-        end
-    elseif actCfg.ActivityType == GameEnum.activityType.Cookie then
-        if nil ~= self.tbAllActivity[questData.ActivityId] then
-            self.tbAllActivity[questData.ActivityId]:RefreshQuestData(questData)
-        end
-    elseif actCfg.ActivityType == GameEnum.activityType.JointDrill then
-        PlayerData.JointDrill:RefreshQuestData(questData)
-    elseif actCfg.ActivityType == GameEnum.activityType.Task then -- xiajiabin
-        self.tbAllActivity[questData.ActivityId]:RefreshSingleQuest(questData)
-        EventManager.Hit("RefreshActivityTask")
-    end
-end
-
---------------------- 登录奖励活动数据 --------------------
-function PlayerActivityData:CacheLoginRewardActData(nActId, mapMsgData)
-    self:RefreshLoginRewardActData(nActId, mapMsgData)
-    self:RefreshLoginRewardPopUpList()
-end
-
-function PlayerActivityData:RefreshLoginRewardActData(nActId, actData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshLoginData(actData.Receive, actData.Actual)
-    end
-end
-
-function PlayerActivityData:ReceiveLoginRewardSuc(nActId)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:ReceiveRewardSuc()
-    end
-    self:RefreshLoginRewardPopUpList()
-end
-
---------------------- 开屏广��? --------------------
-function PlayerActivityData:RefreshPopUpList()
-    self.tbActivityPopUp = {}
-    local bFuncOpen = PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Activity)
-    if not bFuncOpen then
-        return
-    end
-    for _, v in pairs(self.tbAllActivity) do
-        if v:CheckPopUp() and v:CheckActPlay() then
-            table.insert(self.tbActivityPopUp, v:GetActId())
-        end
-    end
-    for _, v in pairs(self.tbAllActivityGroup) do
-        if v:CheckPopUp() and v:CheckActGroupPopUpShow() and v:IsUnlock() then
-            table.insert(self.tbActivityPopUp, v:GetActGroupId())
-        end
-    end
-    if #self.tbActivityPopUp > 0 then
-        PlayerData.PopUp:InsertPopUpQueue(self.tbActivityPopUp)
-    end
-end
-
---登录奖励弹窗
-function PlayerActivityData:RefreshLoginRewardPopUpList()
-    self.tbLoginRewardPopUp = {}
-    local bFuncOpen = PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Activity)
-    if not bFuncOpen then
-        return
-    end
-    for nActId, data in pairs(self.tbAllActivity) do
-        local nActType = data:GetActType()
-        if nActType == GameEnum.activityType.LoginReward and data:CheckCanReceive() and data:CheckActivityOpen() then
-            table.insert(self.tbLoginRewardPopUp, data)
-        end
+    ;
+    (EventManager.Hit)(EventId.OpenMessageBox, (ConfigTable.GetUIText)("Activity_Empty"))
+    return 
+  end
+  local openFunc = function()
+    -- function num : 0_51_0 , upvalues : _ENV, nActId
+    local func = function()
+      -- function num : 0_51_0_0 , upvalues : _ENV, nActId
+      (EventManager.Hit)(EventId.OpenPanel, PanelId.ActivityList, nActId)
     end
 
-    table.sort(self.tbLoginRewardPopUp, function(a, b)
-        if a:GetActSortId() == b:GetActSortId() then
-            return a:GetActId() < b:GetActId()
-        end
-        return a:GetActSortId() < b:GetActSortId()
-    end)
+    ;
+    (EventManager.Hit)(EventId.SetTransition, 5, func)
+  end
 
-    if #self.tbLoginRewardPopUp > 0 then
-        PopUpManager.PopUpEnQueue(GameEnum.PopUpSeqType.ActivityLogin, self.tbLoginRewardPopUp)
-    end
+  self:SendActivityDetailMsg(openFunc)
 end
 
---------------------- Mining --------------------
-function PlayerActivityData:RefreshMiningGameActData(nActId,msgMapData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshMiningGameActData(nActId,msgMapData)
-    end
+PlayerActivityData.OnEvent_NewDay = function(self)
+  -- function num : 0_52
+  self.bCacheActData = false
 end
 
---------------------- Cookie --------------------
-function PlayerActivityData:RefreshCookieGameActData(nActId,msgMapData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshCookieGameActData(nActId,msgMapData)
-    end
+PlayerActivityData.OnEvent_UpdateWorldClass = function(self)
+  -- function num : 0_53
+  self:RefreshPopUpList()
+  self:RefreshActStatus()
+  self:RefreshActGroupNewRedDot()
 end
 
---------------------- JointDrill --------------------
-function PlayerActivityData:RefreshJointDrillActData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshJointDrillActData(msgData)
-    end
-end
---------------------- TowerDefense --------------------
-function  PlayerActivityData:RefreshTowerDefenseActData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshTowerDefenseActData(nActId,msgData)
-    end
-end
-
---------------------- ActivityLevel --------------------
-function  PlayerActivityData:RefreshActivityLevelGameActData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshActivityLevelGameActData(nActId,msgData)
-    end
-end
-
-function PlayerActivityData:SetActivityLevelActId(nActId)
-    self.nActivityLevelActId = nActId
-end
-
-function PlayerActivityData:GetActivityLevelActId()
-    return self.nActivityLevelActId
-end
-
---------------------- Trial --------------------
-function  PlayerActivityData:RefreshTrialActData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshTrialActData(msgData)
-    end
-end
---------------------- Avg ---------------------------
-function PlayerActivityData:RefreshActivityAvgData(nActId, msgData)
-    PlayerData.ActivityAvg:RefreshActivityAvgData(nActId, msgData)
-end
---------------------- Shop --------------------
-function  PlayerActivityData:RefreshActivityShopData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshActivityShopData(msgData)
-    end
-end
---------------------- cg ----------------------------
-function PlayerActivityData:RefreshActivityCGData(msgData)
-    self.tbReadedCG = {}
-    for _, actId in pairs(msgData) do
-        table.insert(self.tbReadedCG, actId)
-    end
-end
-
-function PlayerActivityData:IsCGPlayed(nActId)
-    return table.indexof(self.tbReadedCG, nActId) > 0
-end
---------------------- banner --------------------
-function PlayerActivityData:GetActivityBannerList()
-    local tbList = {}
-    for _, v in pairs(self.tbAllActivity) do
-        if v:CheckShowBanner() then
-            table.insert(tbList, v)
-        end
-    end
-    table.sort(tbList, function(a, b)
-        return a:GetActId() < b:GetActId()
-    end)
-    return tbList
-end
-
---------------------- TowerAllOpen -----------------
-function  PlayerActivityData:RefreshInfinityTowerActData(nActId, msgData)
-    if nil ~= self.tbAllActivity[nActId] then
-        self.tbAllActivity[nActId]:RefreshInfinityTowerActData(nActId,msgData)
-    end
-end
-
---------------------- http call --------------------
---获取所有活动数��?
-function PlayerActivityData:SendActivityDetailMsg(callback, bForceGet)
-    local function callFunc()
-        self.bCacheActData = true
-        if callback ~= nil then
-            callback()
-        end
-    end
-    if not self.bCacheActData or bForceGet then
-        HttpNetHandler.SendMsg(NetMsgId.Id.activity_detail_req, {}, nil, callFunc)
-    else
-        if callback ~= nil then
-            callback()
-        end
-    end
-end
-
---region#周期活动
---领取周期活动任务奖励 (QuestId = 0 表示一键领��?)
-function PlayerActivityData:SendReceivePerQuest(nActId, nQuestId, callback)
-    local callFunc = function(_, mapChangeInfo)
-        --手动刷新任务状��?
-        local actData = self.tbAllActivity[nActId]
-        local tbQuestList = actData:RefreshQuestStatus(nQuestId)
-
-        --显示奖励弹窗
-        UTILS.OpenReceiveByChangeInfo(mapChangeInfo, callback)
-    end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_periodic_reward_receive_req, 
-            {ActivityId = nActId, QuestId = nQuestId}, nil, callFunc)
-end
-
---领取周期活动最终奖��?
-function PlayerActivityData:SendReceiveFinalReward(nActId, callback)
-    local callFunc = function(_, mapMsgData)
-        self:ReceiveFinalRewardSuc(nActId, mapMsgData)
-        if nil ~= callback then
-            callback()
-        end
-    end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_periodic_final_reward_receive_req,
-            {Value = nActId}, nil, callFunc)
-end
-
-function PlayerActivityData:ReceiveQuestReward(mapMsgData)
-    UTILS.OpenReceiveByChangeInfo(mapMsgData)
-end
-
-function PlayerActivityData:ReceiveFinalRewardSuc(actId, mapMsgData)
-    local actData = self.tbAllActivity[actId]
-    if nil ~= actData then
-        actData:RefreshFinalStatus(true)
-        UTILS.OpenReceiveByChangeInfo(mapMsgData)
-    end
-end
-
---endregion
-
---region#登录奖励活动
-function PlayerActivityData:SendReceiveLoginRewardMsg(nActId, callFunc)
-    local callback = function(_, mapMsgData)
-        self:ReceiveLoginRewardSuc(nActId)
-        UTILS.OpenReceiveByChangeInfo(mapMsgData, callFunc)
-    end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_login_reward_receive_req, {Value = nActId}, nil, callback)
-end
-
---endregion
-
-
---------------------- public function --------------------
-function PlayerActivityData:OpenActivityPanel(nActId)
-    --判断当前是否有活动可以展��?
-    local tbList = self:GetSortedActList()
-    if nil == next(tbList) then
-        self:RefreshActivityRedDot()
-        EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Activity_Empty"))
-        return
-    end
-    
-    local openFunc = function()
-        local func = function() EventManager.Hit(EventId.OpenPanel, PanelId.ActivityList, nActId) end
-        EventManager.Hit(EventId.SetTransition, 5, func)
-    end
-
-    self:SendActivityDetailMsg(openFunc)
-end
-
-function PlayerActivityData:OnEvent_NewDay()
-    --跨天重新拉取活动信息
-    self.bCacheActData = false
-end
-
---升级需要刷新开屏公告
-function PlayerActivityData:OnEvent_UpdateWorldClass()
-    self:RefreshPopUpList()
-end
-
-function PlayerActivityData:OnEvent_StoryEnd()
-    self:RefreshPopUpList()
+PlayerActivityData.OnEvent_StoryEnd = function(self)
+  -- function num : 0_54
+  self:RefreshPopUpList()
+  self:RefreshActStatus()
+  self:RefreshActGroupNewRedDot()
 end
 
 return PlayerActivityData
+

@@ -1,25 +1,12 @@
--- Tencent is pleased to support the open source community by making xLua available.
--- Copyright (C) 2016 THL A29 Limited, a Tencent company. All rights reserved.
--- Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
--- http://opensource.org/licenses/MIT
--- Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
----@diagnostic disable-next-line: different-requires
-local util = require 'xlua/util'
-
---[[
-local gameobject = CS.UnityEngine.GameObject('Coroutine_Runner')
-CS.UnityEngine.Object.DontDestroyOnLoad(gameobject)
-local cs_coroutine_runner = gameobject:AddComponent(typeof(CS.Coroutine_Runner))
-]]
-local cs_coroutine_runner = CS.LuaManager.Instance
-
-return {
-    start = function(...)
-	    return cs_coroutine_runner:StartCoroutine(util.cs_generator(...))
-	end;
-
-	stop = function(coroutine)
-	    cs_coroutine_runner:StopCoroutine(coroutine)
-	end
+local util = require("xlua/util")
+local cs_coroutine_runner = (CS.LuaManager).Instance
+return {start = function(...)
+  -- function num : 0_0 , upvalues : cs_coroutine_runner, util
+  return cs_coroutine_runner:StartCoroutine((util.cs_generator)(...))
+end
+, stop = function(coroutine)
+  -- function num : 0_1 , upvalues : cs_coroutine_runner
+  cs_coroutine_runner:StopCoroutine(coroutine)
+end
 }
+

@@ -1,35 +1,29 @@
--- Panel 模板
-
 local PopupFunctionUnlockPanel = class("PopupFunctionUnlockPanel", BasePanel)
 PopupFunctionUnlockPanel._bIsMainPanel = false
 PopupFunctionUnlockPanel._bAddToBackHistory = false
-
-PopupFunctionUnlockPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
--- Panel 定义
---[[
-PopupFunctionUnlockPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-PopupFunctionUnlockPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-PopupFunctionUnlockPanel._bIsMainPanel = true
-PopupFunctionUnlockPanel._bAddToBackHistory = true
-PopupFunctionUnlockPanel._nSnapshotPrePanel = 0
-
-PopupFunctionUnlockPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
+PopupFunctionUnlockPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 PopupFunctionUnlockPanel._tbDefine = {
-    {sPrefabPath = "PopupFunctionUnlock/PopupFunctionUnlockPanel.prefab", sCtrlName = "Game.UI.PopupFunctionUnlockPanel.PopupFunctionUnlockCtrl"}
+{sPrefabPath = "PopupFunctionUnlock/PopupFunctionUnlockPanel.prefab", sCtrlName = "Game.UI.PopupFunctionUnlockPanel.PopupFunctionUnlockCtrl"}
 }
--------------------- local function --------------------
+PopupFunctionUnlockPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function PopupFunctionUnlockPanel:Awake()
+PopupFunctionUnlockPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function PopupFunctionUnlockPanel:OnEnable()
+
+PopupFunctionUnlockPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function PopupFunctionUnlockPanel:OnDisable()
+
+PopupFunctionUnlockPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function PopupFunctionUnlockPanel:OnDestroy()
+
+PopupFunctionUnlockPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function PopupFunctionUnlockPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return PopupFunctionUnlockPanel
+

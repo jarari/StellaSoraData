@@ -1,22 +1,26 @@
--- Panel 模板
-
 local TravelerDuelQuestPanel = class("TravelerDuelQuestPanel", BasePanel)
-
 TravelerDuelQuestPanel._tbDefine = {
-    {sPrefabPath = "TravelerDuelLevelSelect/TravelerDuelLevelQuestPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelQuest.TravelerDuelQuestCtrl"}
+{sPrefabPath = "TravelerDuelLevelSelect/TravelerDuelLevelQuestPanel.prefab", sCtrlName = "Game.UI.TravelerDuelLevelSelect.TravelerDuelQuest.TravelerDuelQuestCtrl"}
 }
--------------------- local function --------------------
+TravelerDuelQuestPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TravelerDuelQuestPanel:Awake()
+TravelerDuelQuestPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TravelerDuelQuestPanel:OnEnable()
+
+TravelerDuelQuestPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function TravelerDuelQuestPanel:OnDisable()
+
+TravelerDuelQuestPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function TravelerDuelQuestPanel:OnDestroy()
+
+TravelerDuelQuestPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function TravelerDuelQuestPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TravelerDuelQuestPanel
+

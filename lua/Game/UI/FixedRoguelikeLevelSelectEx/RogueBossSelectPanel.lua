@@ -1,30 +1,26 @@
--- Panel 模板
-
 local RogueBossSelectPanel = class("RogueBossSelectPanel", BasePanel)
-
--- Panel 定义
---[[
-RogueBossSelectPanel._bIsMainPanel = true
-RogueBossSelectPanel._bAddToBackHistory = true
-RogueBossSelectPanel._nSnapshotPrePanel = 0
-
-RogueBossSelectPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 RogueBossSelectPanel._tbDefine = {
-    {sPrefabPath = "FRLevelSelectEx/RogueBossSelect.prefab", sCtrlName = "Game.UI.FixedRoguelikeLevelSelectEx.RogueBossSelectCtrl"},
+{sPrefabPath = "FRLevelSelectEx/RogueBossSelect.prefab", sCtrlName = "Game.UI.FixedRoguelikeLevelSelectEx.RogueBossSelectCtrl"}
 }
--------------------- local function --------------------
+RogueBossSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function RogueBossSelectPanel:Awake()
+RogueBossSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function RogueBossSelectPanel:OnEnable()
+
+RogueBossSelectPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function RogueBossSelectPanel:OnDisable()
+
+RogueBossSelectPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function RogueBossSelectPanel:OnDestroy()
+
+RogueBossSelectPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function RogueBossSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return RogueBossSelectPanel
+

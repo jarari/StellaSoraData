@@ -74,5 +74,9 @@
   "119": {
     "Id": 119,
     "DropObjectRes": "Actor/Item/Drop_EnergyRecover/Drop_EnergyRecover_Trial"
+  },
+  "120": {
+    "Id": 120,
+    "DropObjectRes": "Actor/Item/Drop_EnergyRecover/Drop_EnergyRecover_DXHuoDong"
   }
 }

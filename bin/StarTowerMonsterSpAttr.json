@@ -4859,6 +4859,57 @@
       12
     ]
   },
+  "1200312": {
+    "Id": 1200312,
+    "MonsterPosition": 1,
+    "ContinuousKillingTime": 10,
+    "RougeMoneyDropRange": [
+      16,
+      16
+    ],
+    "RougeExpDropRange": [
+      16,
+      16
+    ],
+    "RefDistance": [
+      0,
+      12
+    ]
+  },
+  "1200313": {
+    "Id": 1200313,
+    "MonsterPosition": 1,
+    "ContinuousKillingTime": 10,
+    "RougeMoneyDropRange": [
+      16,
+      16
+    ],
+    "RougeExpDropRange": [
+      16,
+      16
+    ],
+    "RefDistance": [
+      0,
+      12
+    ]
+  },
+  "1200314": {
+    "Id": 1200314,
+    "MonsterPosition": 1,
+    "ContinuousKillingTime": 10,
+    "RougeMoneyDropRange": [
+      16,
+      16
+    ],
+    "RougeExpDropRange": [
+      16,
+      16
+    ],
+    "RefDistance": [
+      0,
+      12
+    ]
+  },
   "1200101": {
     "Id": 1200101,
     "MonsterPosition": 1,

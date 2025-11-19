@@ -1,26 +1,31 @@
-
---选择塔 第一层
 local InfinityTowerSelectTowerPanel = class("InfinityTowerSelectTowerPanel", BasePanel)
 InfinityTowerSelectTowerPanel._tbDefine = {
-    {sPrefabPath = "InfinityTower/InfinityTowerSelectT.prefab", sCtrlName = "Game.UI.InfinityTower.InfinityTowerSelectTowerCtrl"}
+{sPrefabPath = "InfinityTower/InfinityTowerSelectT.prefab", sCtrlName = "Game.UI.InfinityTower.InfinityTowerSelectTowerCtrl"}
 }
+InfinityTowerSelectTowerPanel.Awake = function(self)
+  -- function num : 0_0
+  self.openTowerId = nil
+  local tbParam = self:GetPanelParam()
+  if tbParam[1] then
+    self.openTowerId = tbParam[1]
+  end
+end
 
--------------------- base function --------------------
-function InfinityTowerSelectTowerPanel:Awake()
-    self.openTowerId = nil
-    local tbParam = self:GetPanelParam()
-    if tbParam[1] then
-        self.openTowerId = tbParam[1]
-    end
+InfinityTowerSelectTowerPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function InfinityTowerSelectTowerPanel:OnEnable()
+
+InfinityTowerSelectTowerPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function InfinityTowerSelectTowerPanel:OnDisable()
+
+InfinityTowerSelectTowerPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function InfinityTowerSelectTowerPanel:OnDestroy()
+
+InfinityTowerSelectTowerPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function InfinityTowerSelectTowerPanel:OnRelease()
-end
--------------------- callback function --------------------
 
 return InfinityTowerSelectTowerPanel
+

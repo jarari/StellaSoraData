@@ -3,36 +3,48 @@
     "Id": 1,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 30,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 1,
+    "GroupName": "EnergyBuy.1.1"
   },
   "2": {
     "Id": 2,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 30,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 1,
+    "GroupName": "EnergyBuy.2.1"
   },
   "3": {
     "Id": 3,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 30,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 1,
+    "GroupName": "EnergyBuy.3.1"
   },
   "4": {
     "Id": 4,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 90,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 2,
+    "GroupName": "EnergyBuy.4.1"
   },
   "5": {
     "Id": 5,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 90,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 2,
+    "GroupName": "EnergyBuy.5.1"
   },
   "6": {
     "Id": 6,
     "CurrencyItemId": 2,
     "CurrencyItemQty": 90,
-    "EnergyValue": 60
+    "EnergyValue": 60,
+    "PriceGroup": 2,
+    "GroupName": "EnergyBuy.6.1"
   }
 }

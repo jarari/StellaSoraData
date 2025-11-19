@@ -1,0 +1,16 @@
+{
+  "500001": {
+    "Id": 500001,
+    "UIAssets": "ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500001.1"
+  }
+}

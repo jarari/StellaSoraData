@@ -1,7 +1,13 @@
 {
-  "11201": {
-    "Id": 11201,
-    "Name": "BreakOutCharacter.11201.1",
+  "1": {
+    "Id": 1,
+    "CharId": 11201,
+    "Name": "BreakOutCharacter.1.1",
+    "UnlockCond": 117,
+    "UnlockParams": [
+      1,
+      1
+    ],
     "Model": "Actor/Character/11201/11201_Actor",
     "ModelScale": 12500,
     "Faction": 1,

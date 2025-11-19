@@ -1,28 +1,36 @@
-local HandbookDataBase = require "GameCore.Data.DataClass.HandBookData.HandbookDataBase"
-local HandbookPlotData = class("HandbookPlotData",HandbookDataBase)
+local HandbookDataBase = require("GameCore.Data.DataClass.HandBookData.HandbookDataBase")
+local HandbookPlotData = class("HandbookPlotData", HandbookDataBase)
+HandbookPlotData.Init = function(self)
+  -- function num : 0_0
+  self.nPlotId = self:GetId()
+end
 
-function HandbookPlotData:Init()
-    self.nPlotId = self:GetId()
+HandbookPlotData.GetPlotId = function(self)
+  -- function num : 0_1
+  return self.nPlotId
 end
-function HandbookPlotData:GetPlotId()
-    return self.nPlotId
+
+HandbookPlotData.GetPlotCfgData = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  local plotCfgData = (ConfigTable.GetData)("MainScreenCG", self.nPlotId)
+  if plotCfgData == nil then
+    printError("Get plot data fail!!! id = " .. self.nPlotId)
+    return 
+  end
+  return plotCfgData
 end
-function HandbookPlotData:GetPlotCfgData()
-    local plotCfgData=ConfigTable.GetData("MainScreenCG",self.nPlotId)
-    if nil == plotCfgData then
-        printError("Get plot data fail!!! id = "..self.nPlotId)
-        return
-    end
-    return plotCfgData
+
+HandbookPlotData.CheckPlotL2d = function(self)
+  -- function num : 0_3
+  local config = self:GetPlotCfgData()
+  if config == nil then
+    return false
+  end
+  if config.FullScreenL2D == "" then
+    return false
+  end
+  return true
 end
-function HandbookPlotData:CheckPlotL2d()
-    local config=self:GetPlotCfgData()
-    if config==nil then
-        return false
-    end
-    if config.FullScreenL2D=="" then
-        return false
-    end
-    return true
-end
+
 return HandbookPlotData
+

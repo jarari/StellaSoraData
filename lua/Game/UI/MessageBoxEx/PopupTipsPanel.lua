@@ -1,28 +1,24 @@
--- PopupTipsPanel Panel
-
 local PopupTipsPanel = class("PopupTipsPanel", BasePanel)
--- Panel 定义
-
-
-PopupTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+PopupTipsPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 PopupTipsPanel._bAddToBackHistory = false
---[[
-PopupTipsPanel._bIsMainPanel = true
-PopupTipsPanel._nSnapshotPrePanel = 0
-]]
 PopupTipsPanel._tbDefine = {
-    {sPrefabPath = "PopupTips/PopupTipsPanel.prefab", sCtrlName = "Game.UI.MessageBoxEx.PopupTipsCtrl"},
+{sPrefabPath = "PopupTips/PopupTipsPanel.prefab", sCtrlName = "Game.UI.MessageBoxEx.PopupTipsCtrl"}
 }
+PopupTipsPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- local function --------------------
--------------------- base function --------------------
-function PopupTipsPanel:Awake()
+PopupTipsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function PopupTipsPanel:OnEnable()
+
+PopupTipsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function PopupTipsPanel:OnDisable()
+
+PopupTipsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function PopupTipsPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return PopupTipsPanel
+

@@ -284,7 +284,7 @@
   },
   "greet": {
     "Id": "greet",
-    "probability": 40,
+    "probability": 100,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -296,7 +296,7 @@
   },
   "greetmorn": {
     "Id": "greetmorn",
-    "probability": 40,
+    "probability": 100,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -308,7 +308,7 @@
   },
   "greetnoon": {
     "Id": "greetnoon",
-    "probability": 40,
+    "probability": 100,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -320,7 +320,7 @@
   },
   "greetnight": {
     "Id": "greetnight",
-    "probability": 40,
+    "probability": 100,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -776,7 +776,7 @@
   },
   "greet_npc": {
     "Id": "greet_npc",
-    "probability": 100,
+    "probability": 90,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -787,7 +787,7 @@
   },
   "greetmorn_npc": {
     "Id": "greetmorn_npc",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -798,7 +798,7 @@
   },
   "greetnoon_npc": {
     "Id": "greetnoon_npc",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11
@@ -809,7 +809,7 @@
   },
   "greetnight_npc": {
     "Id": "greetnight_npc",
-    "probability": 100,
+    "probability": 40,
     "resType": 4,
     "worldLevelTypes": [
       11

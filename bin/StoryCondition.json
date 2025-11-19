@@ -234,155 +234,132 @@
   },
   "301": {
     "Id": 301,
+    "ConditionId": "C03_00_a",
+    "StoryId_a": [
+      "STm03_00_a"
+    ]
+  },
+  "302": {
+    "Id": 302,
+    "ConditionId": "C03_00_b",
+    "StoryId_a": [
+      "STm03_00_b"
+    ]
+  },
+  "304": {
+    "Id": 304,
     "ConditionId": "C03_01",
     "StoryId_a": [
       "STm03_01"
     ]
   },
-  "302": {
-    "Id": 302,
+  "305": {
+    "Id": 305,
     "ConditionId": "C03_02",
-    "StoryId_b": [
-      "STm03_02_a",
-      "STm03_02_b"
+    "StoryId_a": [
+      "STm03_02"
     ]
   },
-  "303": {
-    "Id": 303,
+  "306": {
+    "Id": 306,
     "ConditionId": "C03_03",
     "StoryId_a": [
       "STm03_03"
     ]
   },
-  "304": {
-    "Id": 304,
-    "ConditionId": "C03_04",
-    "StoryId_b": [
-      "BAm03_01",
-      "STm03_04_b",
-      "STm03_04_c"
-    ]
-  },
-  "305": {
-    "Id": 305,
-    "ConditionId": "C03_05",
-    "StoryId_a": [
-      "STm03_05"
-    ]
-  },
-  "306": {
-    "Id": 306,
-    "ConditionId": "C301",
-    "EvIds_a": [
-      "E301"
-    ]
-  },
   "307": {
     "Id": 307,
-    "ConditionId": "C03_06_a",
+    "ConditionId": "C03_04",
     "StoryId_a": [
-      "STm03_06_a"
+      "STm03_04"
     ]
   },
   "308": {
     "Id": 308,
+    "ConditionId": "C03_05_a",
+    "EvIds_a": [
+      "E301"
+    ],
+    "StoryId_a": [
+      "STm03_05"
+    ]
+  },
+  "309": {
+    "Id": 309,
+    "ConditionId": "C03_05_b",
+    "EvIds_a": [
+      "E302"
+    ],
+    "StoryId_a": [
+      "STm03_05"
+    ]
+  },
+  "310": {
+    "Id": 310,
+    "ConditionId": "C03_05_c",
+    "EvIds_a": [
+      "E303"
+    ],
+    "StoryId_a": [
+      "STm03_05"
+    ]
+  },
+  "311": {
+    "Id": 311,
+    "ConditionId": "C03_06",
+    "StoryId_b": [
+      "STm03_06_a",
+      "STm03_06_b"
+    ]
+  },
+  "312": {
+    "Id": 312,
     "ConditionId": "C03_07",
     "StoryId_a": [
       "STm03_07"
     ]
   },
-  "309": {
-    "Id": 309,
-    "ConditionId": "C03_08_c",
-    "StoryId_a": [
-      "STm03_08_c"
-    ]
-  },
-  "310": {
-    "Id": 310,
-    "ConditionId": "C302",
-    "EvIds_a": [
-      "E301"
-    ],
-    "StoryId_a": [
-      "STm03_07"
-    ]
-  },
-  "311": {
-    "Id": 311,
+  "313": {
+    "Id": 313,
     "ConditionId": "C03_08",
-    "StoryId_b": [
-      "STm03_08_a",
-      "STm03_08_b"
+    "StoryId_a": [
+      "STm03_08"
     ]
   },
-  "312": {
-    "Id": 312,
+  "314": {
+    "Id": 314,
     "ConditionId": "C03_09",
     "StoryId_a": [
       "STm03_09"
     ]
   },
-  "313": {
-    "Id": 313,
-    "ConditionId": "C03_10",
-    "StoryId_b": [
-      "STm03_10_a",
-      "STm03_10_b"
-    ]
-  },
-  "314": {
-    "Id": 314,
-    "ConditionId": "C03_11",
-    "StoryId_a": [
-      "STm03_11"
-    ]
-  },
   "315": {
     "Id": 315,
-    "ConditionId": "C03_04_a",
+    "ConditionId": "C03_10",
     "StoryId_a": [
-      "STm03_04_a"
+      "STm03_10"
     ]
   },
   "316": {
     "Id": 316,
-    "ConditionId": "C303",
+    "ConditionId": "CBA03_04",
     "StoryId_a": [
-      "STm03_09",
-      "STm03_08_b"
+      "BAm03_04"
     ]
   },
   "317": {
     "Id": 317,
-    "ConditionId": "C304",
+    "ConditionId": "CBA03_09",
     "StoryId_a": [
-      "STm03_09",
-      "STm03_08_a"
+      "BAm03_09"
     ]
   },
   "318": {
     "Id": 318,
-    "ConditionId": "C305",
-    "EvIds_a": [
-      "E301"
-    ],
-    "StoryId_a": [
-      "STm03_07"
-    ]
-  },
-  "319": {
-    "Id": 319,
-    "ConditionId": "C03_06",
-    "StoryId_a": [
-      "STm03_06"
-    ]
-  },
-  "320": {
-    "Id": 320,
-    "ConditionId": "CBA02",
-    "StoryId_a": [
-      "BAm03_02"
+    "ConditionId": "CE3_00_b",
+    "StoryId_b": [
+      "STm01_08_b",
+      "STm02_02_c"
     ]
   },
   "400": {

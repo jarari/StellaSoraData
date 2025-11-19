@@ -1,25 +1,23 @@
--- FriendCartePanel Panel
-
 local FriendCartePanel = class("FriendCartePanel", BasePanel)
--- Panel 定义
 FriendCartePanel._bIsMainPanel = false
---[[
-FriendCartePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
-FriendCartePanel._bAddToBackHistory = false
-FriendCartePanel._bIsMainPanel = true
-FriendCartePanel._nSnapshotPrePanel = 0
-]]
 FriendCartePanel._tbDefine = {
-    {sPrefabPath = "FriendEx/FriendCartePanel.prefab", sCtrlName = "Game.UI.FriendEx.FriendCarteCtrl"},
+{sPrefabPath = "FriendEx/FriendCartePanel.prefab", sCtrlName = "Game.UI.FriendEx.FriendCarteCtrl"}
 }
--------------------- base function --------------------
-function FriendCartePanel:Awake()
+FriendCartePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function FriendCartePanel:OnEnable()
+
+FriendCartePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function FriendCartePanel:OnDisable()
+
+FriendCartePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FriendCartePanel:OnDestroy()
+
+FriendCartePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return FriendCartePanel
+

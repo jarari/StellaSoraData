@@ -1,32 +1,49 @@
---广告活动
-local ActivityDataBase = require "GameCore.Data.DataClass.Activity.ActivityDataBase"
+local ActivityDataBase = require("GameCore.Data.DataClass.Activity.ActivityDataBase")
 local AdvertiseActData = class("AdvertiseActData", ActivityDataBase)
-
-function AdvertiseActData:Init()
-    self.nStatus = 0                    -- 活动状态
-    self.jointDrillActCfg = nil
-
-    self:InitConfig()
+AdvertiseActData.Init = function(self)
+  -- function num : 0_0 , upvalues : _ENV
+  self.nStatus = 0
+  self.jointDrillActCfg = nil
+  self.bIsMove = ((ConfigTable.GetData)("AdControl", (self.actCfg).Id)).IsMove
+  self:InitConfig()
 end
 
-
-function AdvertiseActData:InitConfig()
-
+AdvertiseActData.InitConfig = function(self)
+  -- function num : 0_1
 end
 
---待定
-function AdvertiseActData:RefreshInfinityTowerActData(msgData)
-
+AdvertiseActData.RefreshInfinityTowerActData = function(self, msgData)
+  -- function num : 0_2
 end
 
---活动开始时间
-function AdvertiseActData:GetActOpenTime()
-    return self.nOpenTime
+AdvertiseActData.GetActOpenTime = function(self)
+  -- function num : 0_3
+  return self.nOpenTime
 end
 
---活动结束时间
-function AdvertiseActData:GetActCloseTime()
-    return self.nEndTime
+AdvertiseActData.GetActCloseTime = function(self)
+  -- function num : 0_4
+  return self.nEndTime
+end
+
+AdvertiseActData.GetActSortId = function(self)
+  -- function num : 0_5
+  if self.bIsMove and self:isFinishAllTasks() then
+    return 9999
+  else
+    return (self.actCfg).SortId
+  end
+end
+
+AdvertiseActData.isFinishAllTasks = function(self)
+  -- function num : 0_6 , upvalues : _ENV
+  local nTotalCount, nReceivedCount = (PlayerData.TutorialData):GetProgress()
+  local bHasReceiveAllGroup = (PlayerData.Quest):CheckTourGroupReward((PlayerData.Quest):GetMaxTourGroupOrderIndex())
+  if bHasReceiveAllGroup and nTotalCount == nReceivedCount then
+    return true
+  end
+  return false
 end
 
 return AdvertiseActData
+

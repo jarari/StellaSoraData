@@ -2375,6 +2375,34 @@
     "Id": "Story_Set_Entrance_Tip",
     "Text": "UIText.Story_Set_Entrance_Tip.1"
   },
+  "Item_Change_Expired_Tips": {
+    "Id": "Item_Change_Expired_Tips",
+    "Text": "UIText.Item_Change_Expired_Tips.1"
+  },
+  "Mall_Package_Expired": {
+    "Id": "Mall_Package_Expired",
+    "Text": "UIText.Mall_Package_Expired.1"
+  },
+  "BdConvert_NoComQuest": {
+    "Id": "BdConvert_NoComQuest",
+    "Text": "UIText.BdConvert_NoComQuest.1"
+  },
+  "BdConvert_SelectedMaxTips": {
+    "Id": "BdConvert_SelectedMaxTips",
+    "Text": "UIText.BdConvert_SelectedMaxTips.1"
+  },
+  "BdConvert_SubmitNoneTips": {
+    "Id": "BdConvert_SubmitNoneTips",
+    "Text": "UIText.BdConvert_SubmitNoneTips.1"
+  },
+  "BdConvert_LockTips": {
+    "Id": "BdConvert_LockTips",
+    "Text": "UIText.BdConvert_LockTips.1"
+  },
+  "BdConvert_CheckTips": {
+    "Id": "BdConvert_CheckTips",
+    "Text": "UIText.BdConvert_CheckTips.1"
+  },
   "Level_2_5_1": {
     "Id": "Level_2_5_1",
     "Text": "UIText.Level_2_5_1.1"
@@ -2951,6 +2979,10 @@
     "Id": "Tutorial_GuideEnd_PC",
     "Text": "UIText.Tutorial_GuideEnd_PC.1"
   },
+  "TowerDefense_Tutorial_Tips_1_1": {
+    "Id": "TowerDefense_Tutorial_Tips_1_1",
+    "Text": "UIText.TowerDefense_Tutorial_Tips_1_1.1"
+  },
   "Lv": {
     "Id": "Lv",
     "Text": "UIText.Lv.1"
@@ -3382,6 +3414,10 @@
   "Depot_Item_LeftTime_Hour": {
     "Id": "Depot_Item_LeftTime_Hour",
     "Text": "UIText.Depot_Item_LeftTime_Hour.1"
+  },
+  "Depot_Item_Expire": {
+    "Id": "Depot_Item_Expire",
+    "Text": "UIText.Depot_Item_Expire.1"
   },
   "Depot_ItemQTY": {
     "Id": "Depot_ItemQTY",
@@ -4875,6 +4911,18 @@
     "Id": "Friend_Btn_Del",
     "Text": "UIText.Friend_Btn_Del.1"
   },
+  "Friend_Rename_TimeLimit": {
+    "Id": "Friend_Rename_TimeLimit",
+    "Text": "UIText.Friend_Rename_TimeLimit.1"
+  },
+  "Friend_Rename_TimeCDWarning1": {
+    "Id": "Friend_Rename_TimeCDWarning1",
+    "Text": "UIText.Friend_Rename_TimeCDWarning1.1"
+  },
+  "Friend_Rename_TimeCDWarning2": {
+    "Id": "Friend_Rename_TimeCDWarning2",
+    "Text": "UIText.Friend_Rename_TimeCDWarning2.1"
+  },
   "Talent_Skill_Normal": {
     "Id": "Talent_Skill_Normal",
     "Text": "UIText.Talent_Skill_Normal.1"
@@ -5778,6 +5826,10 @@
   "Mall_Package_TabAll": {
     "Id": "Mall_Package_TabAll",
     "Text": "UIText.Mall_Package_TabAll.1"
+  },
+  "Mall_Package_PopupTitle": {
+    "Id": "Mall_Package_PopupTitle",
+    "Text": "UIText.Mall_Package_PopupTitle.1"
   },
   "Mall_Cond_WorldClass": {
     "Id": "Mall_Cond_WorldClass",
@@ -8118,6 +8170,22 @@
   "Disc_Advance_L2dUnlock2": {
     "Id": "Disc_Advance_L2dUnlock2",
     "Text": "UIText.Disc_Advance_L2dUnlock2.1"
+  },
+  "Disc_BreakLimitAll_Title": {
+    "Id": "Disc_BreakLimitAll_Title",
+    "Text": "UIText.Disc_BreakLimitAll_Title.1"
+  },
+  "Disc_BreakLimitAll_Tip": {
+    "Id": "Disc_BreakLimitAll_Tip",
+    "Text": "UIText.Disc_BreakLimitAll_Tip.1"
+  },
+  "Disc_BreakLimitAll_ConsumedMaterials": {
+    "Id": "Disc_BreakLimitAll_ConsumedMaterials",
+    "Text": "UIText.Disc_BreakLimitAll_ConsumedMaterials.1"
+  },
+  "Disc_Btn_BreakLimitAll": {
+    "Id": "Disc_Btn_BreakLimitAll",
+    "Text": "UIText.Disc_Btn_BreakLimitAll.1"
   },
   "StarTower_Ranking_1": {
     "Id": "StarTower_Ranking_1",
@@ -10971,6 +11039,10 @@
     "Id": "ScoreBoss_Season_Error",
     "Text": "UIText.ScoreBoss_Season_Error.1"
   },
+  "ScoreBoss_ReminTime": {
+    "Id": "ScoreBoss_ReminTime",
+    "Text": "UIText.ScoreBoss_ReminTime.1"
+  },
   "VampireQuest_CurTag": {
     "Id": "VampireQuest_CurTag",
     "Text": "UIText.VampireQuest_CurTag.1"
@@ -11354,6 +11426,10 @@
   "JointDrill_Difficulty_Name_4": {
     "Id": "JointDrill_Difficulty_Name_4",
     "Text": "UIText.JointDrill_Difficulty_Name_4.1"
+  },
+  "JointDrill_Difficulty_Name_5": {
+    "Id": "JointDrill_Difficulty_Name_5",
+    "Text": "UIText.JointDrill_Difficulty_Name_5.1"
   },
   "JointDrill_Challenge_Time_Text": {
     "Id": "JointDrill_Challenge_Time_Text",
@@ -12019,6 +12095,18 @@
     "Id": "TowerDef_Team_Tips",
     "Text": "UIText.TowerDef_Team_Tips.1"
   },
+  "TowerDef_Tips_Title": {
+    "Id": "TowerDef_Tips_Title",
+    "Text": "UIText.TowerDef_Tips_Title.1"
+  },
+  "TowerDef_Empty": {
+    "Id": "TowerDef_Empty",
+    "Text": "UIText.TowerDef_Empty.1"
+  },
+  "TowerDef_SkillInfo": {
+    "Id": "TowerDef_SkillInfo",
+    "Text": "UIText.TowerDef_SkillInfo.1"
+  },
   "StartowerBook_NPCAffinityTitle": {
     "Id": "StartowerBook_NPCAffinityTitle",
     "Text": "UIText.StartowerBook_NPCAffinityTitle.1"
@@ -12143,9 +12231,17 @@
     "Id": "ActivityLevels_Adventure",
     "Text": "UIText.ActivityLevels_Adventure.1"
   },
+  "ActivityLevels_Lock_PreLevel": {
+    "Id": "ActivityLevels_Lock_PreLevel",
+    "Text": "UIText.ActivityLevels_Lock_PreLevel.1"
+  },
   "ActivityLevels_Lock_Day": {
     "Id": "ActivityLevels_Lock_Day",
     "Text": "UIText.ActivityLevels_Lock_Day.1"
+  },
+  "ActivityLevels_Lock_DayOpen": {
+    "Id": "ActivityLevels_Lock_DayOpen",
+    "Text": "UIText.ActivityLevels_Lock_DayOpen.1"
   },
   "ActivityLevels_Lock_Hour": {
     "Id": "ActivityLevels_Lock_Hour",
@@ -12174,6 +12270,22 @@
   "ActivityLevels_Lock_Sec_Color": {
     "Id": "ActivityLevels_Lock_Sec_Color",
     "Text": "UIText.ActivityLevels_Lock_Sec_Color.1"
+  },
+  "ActivityLevels_Lock_Day_Color_10101": {
+    "Id": "ActivityLevels_Lock_Day_Color_10101",
+    "Text": "UIText.ActivityLevels_Lock_Day_Color_10101.1"
+  },
+  "ActivityLevels_Lock_Hour_Color_10101": {
+    "Id": "ActivityLevels_Lock_Hour_Color_10101",
+    "Text": "UIText.ActivityLevels_Lock_Hour_Color_10101.1"
+  },
+  "ActivityLevels_Lock_Min_Color_10101": {
+    "Id": "ActivityLevels_Lock_Min_Color_10101",
+    "Text": "UIText.ActivityLevels_Lock_Min_Color_10101.1"
+  },
+  "ActivityLevels_Lock_Sec_Color_10101": {
+    "Id": "ActivityLevels_Lock_Sec_Color_10101",
+    "Text": "UIText.ActivityLevels_Lock_Sec_Color_10101.1"
   },
   "VampireEventTips_1": {
     "Id": "VampireEventTips_1",
@@ -12543,6 +12655,26 @@
     "Id": "StorySet_Chapter_Empty",
     "Text": "UIText.StorySet_Chapter_Empty.1"
   },
+  "StorySet_Chapter_Open_Day": {
+    "Id": "StorySet_Chapter_Open_Day",
+    "Text": "UIText.StorySet_Chapter_Open_Day.1"
+  },
+  "StorySet_Chapter_Open_Hour": {
+    "Id": "StorySet_Chapter_Open_Hour",
+    "Text": "UIText.StorySet_Chapter_Open_Hour.1"
+  },
+  "StorySet_Chapter_Open_Min": {
+    "Id": "StorySet_Chapter_Open_Min",
+    "Text": "UIText.StorySet_Chapter_Open_Min.1"
+  },
+  "StorySet_Chapter_Open_Sec": {
+    "Id": "StorySet_Chapter_Open_Sec",
+    "Text": "UIText.StorySet_Chapter_Open_Sec.1"
+  },
+  "StorySet_Chapter_Open_Time": {
+    "Id": "StorySet_Chapter_Open_Time",
+    "Text": "UIText.StorySet_Chapter_Open_Time.1"
+  },
   "StorySet_Title": {
     "Id": "StorySet_Title",
     "Text": "UIText.StorySet_Title.1"
@@ -12746,5 +12878,229 @@
   "BBSTitle": {
     "Id": "BBSTitle",
     "Text": "UIText.BBSTitle.1"
+  },
+  "Cookie_Act_GameStart": {
+    "Id": "Cookie_Act_GameStart",
+    "Text": "UIText.Cookie_Act_GameStart.1"
+  },
+  "Cookie_Act_Cookie_Count": {
+    "Id": "Cookie_Act_Cookie_Count",
+    "Text": "UIText.Cookie_Act_Cookie_Count.1"
+  },
+  "Cookie_Act_Box_Count": {
+    "Id": "Cookie_Act_Box_Count",
+    "Text": "UIText.Cookie_Act_Box_Count.1"
+  },
+  "Cookie_Act_Perfect_Count": {
+    "Id": "Cookie_Act_Perfect_Count",
+    "Text": "UIText.Cookie_Act_Perfect_Count.1"
+  },
+  "Cookie_Act_Level_Goal": {
+    "Id": "Cookie_Act_Level_Goal",
+    "Text": "UIText.Cookie_Act_Level_Goal.1"
+  },
+  "Cookie_Act_Level_HighScore": {
+    "Id": "Cookie_Act_Level_HighScore",
+    "Text": "UIText.Cookie_Act_Level_HighScore.1"
+  },
+  "Cookie_Act_Level_Reward": {
+    "Id": "Cookie_Act_Level_Reward",
+    "Text": "UIText.Cookie_Act_Level_Reward.1"
+  },
+  "Cookie_Act_Level_Go": {
+    "Id": "Cookie_Act_Level_Go",
+    "Text": "UIText.Cookie_Act_Level_Go.1"
+  },
+  "Cookie_Act_NightmareMode_Title": {
+    "Id": "Cookie_Act_NightmareMode_Title",
+    "Text": "UIText.Cookie_Act_NightmareMode_Title.1"
+  },
+  "Cookie_Act_Cookie_Count_Score": {
+    "Id": "Cookie_Act_Cookie_Count_Score",
+    "Text": "UIText.Cookie_Act_Cookie_Count_Score.1"
+  },
+  "Cookie_Act_Miss_Count": {
+    "Id": "Cookie_Act_Miss_Count",
+    "Text": "UIText.Cookie_Act_Miss_Count.1"
+  },
+  "Cookie_Act_Box_Count_Score": {
+    "Id": "Cookie_Act_Box_Count_Score",
+    "Text": "UIText.Cookie_Act_Box_Count_Score.1"
+  },
+  "Cookie_Act_Rhythm_Tip": {
+    "Id": "Cookie_Act_Rhythm_Tip",
+    "Text": "UIText.Cookie_Act_Rhythm_Tip.1"
+  },
+  "Cookie_Act_Score_Title": {
+    "Id": "Cookie_Act_Score_Title",
+    "Text": "UIText.Cookie_Act_Score_Title.1"
+  },
+  "Cookie_Act_Level_Goal_Desc": {
+    "Id": "Cookie_Act_Level_Goal_Desc",
+    "Text": "UIText.Cookie_Act_Level_Goal_Desc.1"
+  },
+  "Cookie_Act_Exit_Tip": {
+    "Id": "Cookie_Act_Exit_Tip",
+    "Text": "UIText.Cookie_Act_Exit_Tip.1"
+  },
+  "Cookie_Act_Level_Lock_Time": {
+    "Id": "Cookie_Act_Level_Lock_Time",
+    "Text": "UIText.Cookie_Act_Level_Lock_Time.1"
+  },
+  "Cookie_Act_Level_Lock_PreLevel": {
+    "Id": "Cookie_Act_Level_Lock_PreLevel",
+    "Text": "UIText.Cookie_Act_Level_Lock_PreLevel.1"
+  },
+  "Cookie_Act_Start_Tip": {
+    "Id": "Cookie_Act_Start_Tip",
+    "Text": "UIText.Cookie_Act_Start_Tip.1"
+  },
+  "Cookie_Act_Continue_Tip": {
+    "Id": "Cookie_Act_Continue_Tip",
+    "Text": "UIText.Cookie_Act_Continue_Tip.1"
+  },
+  "Activity_Mini_Game_10101": {
+    "Id": "Activity_Mini_Game_10101",
+    "Text": "UIText.Activity_Mini_Game_10101.1"
+  },
+  "Activity_Story_10101": {
+    "Id": "Activity_Story_10101",
+    "Text": "UIText.Activity_Story_10101.1"
+  },
+  "Activity_StoryChapter_10101": {
+    "Id": "Activity_StoryChapter_10101",
+    "Text": "UIText.Activity_StoryChapter_10101.1"
+  },
+  "Activity_Level_10101": {
+    "Id": "Activity_Level_10101",
+    "Text": "UIText.Activity_Level_10101.1"
+  },
+  "BdConvert_QuestTitle": {
+    "Id": "BdConvert_QuestTitle",
+    "Text": "UIText.BdConvert_QuestTitle.1"
+  },
+  "BdConvert_DesTitle": {
+    "Id": "BdConvert_DesTitle",
+    "Text": "UIText.BdConvert_DesTitle.1"
+  },
+  "BdConvert_EnterActivity": {
+    "Id": "BdConvert_EnterActivity",
+    "Text": "UIText.BdConvert_EnterActivity.1"
+  },
+  "BdConvert_RewardPre": {
+    "Id": "BdConvert_RewardPre",
+    "Text": "UIText.BdConvert_RewardPre.1"
+  },
+  "BdConvert_Score": {
+    "Id": "BdConvert_Score",
+    "Text": "UIText.BdConvert_Score.1"
+  },
+  "BdConvert_GetQuestReward": {
+    "Id": "BdConvert_GetQuestReward",
+    "Text": "UIText.BdConvert_GetQuestReward.1"
+  },
+  "BdConvert_QuestFinish": {
+    "Id": "BdConvert_QuestFinish",
+    "Text": "UIText.BdConvert_QuestFinish.1"
+  },
+  "BdConvert_RewardTips": {
+    "Id": "BdConvert_RewardTips",
+    "Text": "UIText.BdConvert_RewardTips.1"
+  },
+  "BdConvert_UnopenTips": {
+    "Id": "BdConvert_UnopenTips",
+    "Text": "UIText.BdConvert_UnopenTips.1"
+  },
+  "BdConvert_RewardTitle": {
+    "Id": "BdConvert_RewardTitle",
+    "Text": "UIText.BdConvert_RewardTitle.1"
+  },
+  "BdConvert_ToBuild": {
+    "Id": "BdConvert_ToBuild",
+    "Text": "UIText.BdConvert_ToBuild.1"
+  },
+  "BdConvert_Unopen": {
+    "Id": "BdConvert_Unopen",
+    "Text": "UIText.BdConvert_Unopen.1"
+  },
+  "BdConvert_BuildEmpty": {
+    "Id": "BdConvert_BuildEmpty",
+    "Text": "UIText.BdConvert_BuildEmpty.1"
+  },
+  "BdConvert_BuildTips": {
+    "Id": "BdConvert_BuildTips",
+    "Text": "UIText.BdConvert_BuildTips.1"
+  },
+  "BdConvert_Submit": {
+    "Id": "BdConvert_Submit",
+    "Text": "UIText.BdConvert_Submit.1"
+  },
+  "BdConvert_Selected": {
+    "Id": "BdConvert_Selected",
+    "Text": "UIText.BdConvert_Selected.1"
+  },
+  "BdConvert_BuildCountTips1": {
+    "Id": "BdConvert_BuildCountTips1",
+    "Text": "UIText.BdConvert_BuildCountTips1.1"
+  },
+  "BdConvert_BuildCountTips2": {
+    "Id": "BdConvert_BuildCountTips2",
+    "Text": "UIText.BdConvert_BuildCountTips2.1"
+  },
+  "BdConvert_GoToStarTower": {
+    "Id": "BdConvert_GoToStarTower",
+    "Text": "UIText.BdConvert_GoToStarTower.1"
+  },
+  "BdConvert_Finish": {
+    "Id": "BdConvert_Finish",
+    "Text": "UIText.BdConvert_Finish.1"
+  },
+  "BdConvert_DesTips": {
+    "Id": "BdConvert_DesTips",
+    "Text": "UIText.BdConvert_DesTips.1"
+  },
+  "Activity_Mini_Game_10102": {
+    "Id": "Activity_Mini_Game_10102",
+    "Text": "UIText.Activity_Mini_Game_10102.1"
+  },
+  "Activity_StoryChapter_10102": {
+    "Id": "Activity_StoryChapter_10102",
+    "Text": "UIText.Activity_StoryChapter_10102.1"
+  },
+  "VampireReconnnect_Hint": {
+    "Id": "VampireReconnnect_Hint",
+    "Text": "UIText.VampireReconnnect_Hint.1"
+  },
+  "BattlePass_RemainTimeTitle": {
+    "Id": "BattlePass_RemainTimeTitle",
+    "Text": "UIText.BattlePass_RemainTimeTitle.1"
+  },
+  "VampireReconnnect_Abandon": {
+    "Id": "VampireReconnnect_Abandon",
+    "Text": "UIText.VampireReconnnect_Abandon.1"
+  },
+  "NewTutorialsAct_Complete": {
+    "Id": "NewTutorialsAct_Complete",
+    "Text": "UIText.NewTutorialsAct_Complete.1"
+  },
+  "Activity_End_Exchange": {
+    "Id": "Activity_End_Exchange",
+    "Text": "UIText.Activity_End_Exchange.1"
+  },
+  "GachaHistory_Guarantee": {
+    "Id": "GachaHistory_Guarantee",
+    "Text": "UIText.GachaHistory_Guarantee.1"
+  },
+  "GachaHistory_History": {
+    "Id": "GachaHistory_History",
+    "Text": "UIText.GachaHistory_History.1"
+  },
+  "VampireReConnect_BuildDeleted": {
+    "Id": "VampireReConnect_BuildDeleted",
+    "Text": "UIText.VampireReConnect_BuildDeleted.1"
+  },
+  "Activity_Shop_10101": {
+    "Id": "Activity_Shop_10101",
+    "Text": "UIText.Activity_Shop_10101.1"
   }
 }

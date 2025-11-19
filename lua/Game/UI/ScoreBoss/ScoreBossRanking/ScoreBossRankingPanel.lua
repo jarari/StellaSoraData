@@ -1,18 +1,26 @@
 local ScoreBossRankingPanel = class("ScoreBossRankingPanel", BasePanel)
 ScoreBossRankingPanel._tbDefine = {
-    {sPrefabPath = "Play_ScoreBoss/ScoreBossRankingPanel.prefab", sCtrlName = "Game.UI.ScoreBoss.ScoreBossRanking.ScoreBossRankingCtrl"}
+{sPrefabPath = "Play_ScoreBoss/ScoreBossRankingPanel.prefab", sCtrlName = "Game.UI.ScoreBoss.ScoreBossRanking.ScoreBossRankingCtrl"}
 }
+ScoreBossRankingPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function ScoreBossRankingPanel:Awake()
+ScoreBossRankingPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
+ScoreBossRankingPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function ScoreBossRankingPanel:OnEnable()
+
+ScoreBossRankingPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function ScoreBossRankingPanel:OnDisable()
-end
-function ScoreBossRankingPanel:OnDestroy()
-end
-function ScoreBossRankingPanel:OnRelease()
+
+ScoreBossRankingPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
 
 return ScoreBossRankingPanel
+

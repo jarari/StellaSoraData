@@ -1,19 +1,23 @@
--- FriendPanel Panel
-
 local FriendPanel = class("FriendPanel", BasePanel)
--- Panel 定义
 FriendPanel._tbDefine = {
-    {sPrefabPath = "FriendEx/FriendPanel.prefab", sCtrlName = "Game.UI.FriendEx.FriendCtrl"},
+{sPrefabPath = "FriendEx/FriendPanel.prefab", sCtrlName = "Game.UI.FriendEx.FriendCtrl"}
 }
--------------------- base function --------------------
-function FriendPanel:Awake()
-    self.tbAddCache = {}
+FriendPanel.Awake = function(self)
+  -- function num : 0_0
+  self.tbAddCache = {}
 end
-function FriendPanel:OnEnable()
+
+FriendPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function FriendPanel:OnDisable()
+
+FriendPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function FriendPanel:OnDestroy()
+
+FriendPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return FriendPanel
+

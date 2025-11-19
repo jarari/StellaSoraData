@@ -1,20 +1,23 @@
--- MallPopupPanel Panel
-
 local MallPopupPanel = class("MallPopupPanel", BasePanel)
--- Panel 定义
 MallPopupPanel._bIsMainPanel = false
 MallPopupPanel._tbDefine = {
-    {sPrefabPath = "Mall/MallPopupPanel.prefab", sCtrlName = "Game.UI.Mall.MallPopupCtrl"},
+{sPrefabPath = "Mall/MallPopupPanel.prefab", sCtrlName = "Game.UI.Mall.MallPopupCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function MallPopupPanel:Awake()
+MallPopupPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function MallPopupPanel:OnEnable()
+
+MallPopupPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MallPopupPanel:OnDisable()
+
+MallPopupPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function MallPopupPanel:OnDestroy()
+
+MallPopupPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return MallPopupPanel
+

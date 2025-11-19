@@ -1,27 +1,32 @@
--- Panel 模板
-
 local MiningGamePanel = class("MiningGamePanel", BasePanel)
--- Panel 定义
 MiningGamePanel._bIsMainPanel = true
+MiningGamePanel._bAddToBackHistory = true
 MiningGamePanel._tbDefine = {
-    {sPrefabPath = "Play_Mining/MiningGamePanel.prefab", sCtrlName = "Game.UI.Play_Mining.MiningGameCtrl"}
+{sPrefabPath = "Play_Mining/MiningGamePanel.prefab", sCtrlName = "Game.UI.Play_Mining.MiningGameCtrl"}
 }
--------------------- local function --------------------
+MiningGamePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function MiningGamePanel:Awake()
-    -- self.nActId = nil
-    -- self.actData = nil
+MiningGamePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MiningGamePanel:OnEnable()
+
+MiningGamePanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function MiningGamePanel:OnAfterEnter()
+
+MiningGamePanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function MiningGamePanel:OnDisable()
+
+MiningGamePanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function MiningGamePanel:OnDestroy()
+
+MiningGamePanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function MiningGamePanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return MiningGamePanel
+

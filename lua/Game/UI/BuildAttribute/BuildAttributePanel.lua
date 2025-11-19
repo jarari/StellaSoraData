@@ -1,21 +1,24 @@
--- BuildAttributePanel Panel
-
 local BuildAttributePanel = class("BuildAttributePanel", BasePanel)
--- Panel 定义
 BuildAttributePanel._bIsMainPanel = false
-BuildAttributePanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+BuildAttributePanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 BuildAttributePanel._tbDefine = {
-    {sPrefabPath = "BuildAttribute/BuildAttributePanel.prefab", sCtrlName = "Game.UI.BuildAttribute.BuildAttributeCtrl"},
+{sPrefabPath = "BuildAttribute/BuildAttributePanel.prefab", sCtrlName = "Game.UI.BuildAttribute.BuildAttributeCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function BuildAttributePanel:Awake()
+BuildAttributePanel.Awake = function(self)
+  -- function num : 0_0
 end
-function BuildAttributePanel:OnEnable()
+
+BuildAttributePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BuildAttributePanel:OnDisable()
+
+BuildAttributePanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BuildAttributePanel:OnDestroy()
+
+BuildAttributePanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return BuildAttributePanel
+

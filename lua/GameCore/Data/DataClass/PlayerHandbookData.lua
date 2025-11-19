@@ -1,169 +1,241 @@
---图鉴数据
------------------------------- local ------------------------------
-
-
-
 local PlayerHandbookData = class("PlayerHandbookData")
+local GameResourceLoader = require("Game.Common.Resource.GameResourceLoader")
+local femaleSurfix = "_FP"
+local maleSurfix = "_MP"
+local HandbookSkinData = require("GameCore.Data.DataClass.HandBookData.HandbookSkinData")
+local HandbookDiscData = require("GameCore.Data.DataClass.HandBookData.HandbookDiscData")
+local HandbookPlotData = require("GameCore.Data.DataClass.HandBookData.HandbookPlotData")
+local HandbookStorySetData = require("GameCore.Data.DataClass.HandBookData.HandbookStorySetData")
+PlayerHandbookData.ParseBitMapData = function(self, bitMap)
+  -- function num : 0_0 , upvalues : _ENV
+  local bitMapData = {}
+  for k,v in ipairs(bitMap) do
+    for i = 1, 64 do
+      bitMapData[(k - 1) * 64 + i] = v & 1 << i - 1 ~= 0 and 1 or 0
+    end
+  end
+  return bitMapData
+end
 
-local HandbookSkinData = require "GameCore.Data.DataClass.HandBookData.HandbookSkinData"
-local HandbookDiscData = require "GameCore.Data.DataClass.HandBookData.HandbookDiscData"
-local HandbookPlotData = require "GameCore.Data.DataClass.HandBookData.HandbookPlotData"
+PlayerHandbookData.Init = function(self)
+  -- function num : 0_1
+  self.tbHandbookMsgData = {}
+  self.tbHandbookData = {}
+  self.tbHandbookCfgData = {}
+  self:InitHandbookTableData()
+end
 
+PlayerHandbookData.InitHandbookTableData = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  local func_ForEach = function(line)
+    -- function num : 0_2_0 , upvalues : self
+    local handbookData = self:CreateHandbook(line.Type, line.Id, 0)
+    -- DECOMPILER ERROR at PC8: Confused about usage of register: R2 in 'UnsetPending'
 
------------------------------- local -----------------------------
+    ;
+    (self.tbHandbookData)[line.Id] = handbookData
+    -- DECOMPILER ERROR at PC17: Confused about usage of register: R2 in 'UnsetPending'
 
-function PlayerHandbookData:ParseBitMapData(bitMap)
-    local bitMapData = {}
-    for k, v in ipairs(bitMap) do
-        for i = 1, 64 do
-            bitMapData[(k - 1) * 64 + i] = (v & (1 << (i - 1))) ~= 0 and 1 or 0
+    if (self.tbHandbookCfgData)[line.Type] == nil then
+      (self.tbHandbookCfgData)[line.Type] = {}
+    end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
+
+    ;
+    ((self.tbHandbookCfgData)[line.Type])[line.Index] = line.Id
+  end
+
+  ForEachTableLine(DataTable.Handbook, func_ForEach)
+end
+
+PlayerHandbookData.CreateHandbook = function(self, type, id, unlock)
+  -- function num : 0_3 , upvalues : _ENV, HandbookSkinData, HandbookDiscData, HandbookPlotData, HandbookStorySetData
+  local handbookData = nil
+  if type == (GameEnum.handbookType).SKIN then
+    handbookData = (HandbookSkinData.new)(id, unlock)
+  else
+    if type == (GameEnum.handbookType).OUTFIT then
+      handbookData = (HandbookDiscData.new)(id, unlock)
+    else
+      if type == (GameEnum.handbookType).PLOT then
+        handbookData = (HandbookPlotData.new)(id, unlock)
+      else
+        if type == (GameEnum.handbookType).StorySet then
+          handbookData = (HandbookStorySetData.new)(id, unlock)
         end
+      end
     end
-    return bitMapData
+  end
+  return handbookData
 end
 
------------------------------- public -----------------------------
-function PlayerHandbookData:Init()
-    self.tbHandbookMsgData = {}  --所有图鉴数据（解析用）
-    self.tbHandbookData = {}    --所有图鉴数据
-    self.tbHandbookCfgData = {}  --图鉴配表数据
-    self:InitHandbookTableData()
-end 
+PlayerHandbookData.UpdateHandbook = function(self, msgData)
+  -- function num : 0_4 , upvalues : _ENV
+  if not (self.tbHandbookMsgData)[msgData.Type] then
+    local tbLastData = {}
+  end
+  local tbData = (UTILS.ParseByteString)(msgData.Data)
+  local nByteTableLength = #tbData
+  local n64Count = (math.ceil)(nByteTableLength / 8)
+  for j = 1, n64Count do
+    for i = 1, 64 do
+      local nIndex = (j - 1) * 64 + i
+      local lastResult = (UTILS.IsBitSet)(tbLastData, nIndex)
+      local curResult = (UTILS.IsBitSet)(tbData, nIndex)
+      if lastResult ~= curResult and (self.tbHandbookCfgData)[msgData.Type] ~= nil then
+        local id = ((self.tbHandbookCfgData)[msgData.Type])[nIndex]
+        if (self.tbHandbookData)[id] == nil then
+          local handbookData = self:CreateHandbook(msgData.Type, id, 1)
+          -- DECOMPILER ERROR at PC57: Confused about usage of register: R19 in 'UnsetPending'
 
-function PlayerHandbookData:InitHandbookTableData()
-    local func_ForEach = function(line)
-        local handbookData = self:CreateHandbook(line.Type, line.Id, 0)
-        self.tbHandbookData[line.Id] = handbookData
-        
-        if nil == self.tbHandbookCfgData[line.Type] then
-            self.tbHandbookCfgData[line.Type] = {}
-        end
-        self.tbHandbookCfgData[line.Type][line.Index] = line.Id
-    end
+          ;
+          (self.tbHandbookData)[id] = handbookData
+        else
+          do
+            do
+              ;
+              ((self.tbHandbookData)[id]):UpdateUnlockState(1)
+              -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out DO_STMT
 
-    ForEachTableLine(DataTable.Handbook, func_ForEach)
-end
+              -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-function PlayerHandbookData:CreateHandbook(type, id, unlock)
-    local handbookData
-    if type == GameEnum.handbookType.SKIN then
-        handbookData = HandbookSkinData.new(id, unlock)
-    elseif type == GameEnum.handbookType.OUTFIT then
-        handbookData = HandbookDiscData.new(id, unlock)
-    elseif type == GameEnum.handbookType.PLOT then
-        handbookData = HandbookPlotData.new(id,unlock)
-    end
-    return handbookData
-end
+              -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_STMT
 
-function PlayerHandbookData:UpdateHandbook(msgData)
-    local tbLastData = self.tbHandbookMsgData[msgData.Type] or {}
-    local tbData = UTILS.ParseByteString(msgData.Data)
+              -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-    local nByteTableLength = #tbData
-    local n64Count = math.ceil(nByteTableLength / 8)
-    for j = 1, n64Count do
-        for i = 1, 64 do
-            --新解锁的图鉴index
-            local nIndex = (j - 1) * 64 + i
-            local lastResult = UTILS.IsBitSet(tbLastData, nIndex)
-            local curResult = UTILS.IsBitSet(tbData, nIndex)
-            if lastResult ~= curResult then
-                if nil ~= self.tbHandbookCfgData[msgData.Type] then
-                    local id = self.tbHandbookCfgData[msgData.Type][nIndex]
-                    if nil == self.tbHandbookData[id] then
-                        local handbookData = self:CreateHandbook(msgData.Type, id, 1)
-                        self.tbHandbookData[id] = handbookData
-                    else
-                        self.tbHandbookData[id]:UpdateUnlockState(1)
-                    end
-                end
+              -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_STMT
+
             end
+          end
         end
+      end
     end
-    self.tbHandbookMsgData[msgData.Type] = tbData
+  end
+  -- DECOMPILER ERROR at PC68: Confused about usage of register: R6 in 'UnsetPending'
+
+  ;
+  (self.tbHandbookMsgData)[msgData.Type] = tbData
 end
 
-function PlayerHandbookData:CacheHandbookData(mapMsgData)
-    for _, v in pairs(mapMsgData) do
-        self:UpdateHandbook(v)
+PlayerHandbookData.CacheHandbookData = function(self, mapMsgData)
+  -- function num : 0_5 , upvalues : _ENV
+  for _,v in pairs(mapMsgData) do
+    self:UpdateHandbook(v)
+  end
+  self:UpdateSkinData()
+end
+
+PlayerHandbookData.UpdateHandbookData = function(self, msgData)
+  -- function num : 0_6
+  self:UpdateHandbook(msgData)
+  self:UpdateSkinData()
+end
+
+PlayerHandbookData.UpdateSkinData = function(self)
+  -- function num : 0_7 , upvalues : _ENV
+  local tbSkinHandbook = self:GetUnlockHandbookByType((GameEnum.handbookType).SKIN)
+  local tbSkinCfgData = (self.tbHandbookCfgData)[(GameEnum.handbookType).SKIN]
+  if tbSkinCfgData ~= nil then
+    for idx,id in pairs(tbSkinCfgData) do
+      local cfgData = (ConfigTable.GetData)("Handbook", id)
+      local nUnlock = tbSkinHandbook[id] ~= nil and 1 or 0
+      ;
+      (PlayerData.CharSkin):UpdateSkinData(cfgData.SkinId, id, nUnlock)
     end
-    
-    self:UpdateSkinData()
+  end
 end
 
---更新图鉴数据
-function PlayerHandbookData:UpdateHandbookData(msgData)
-    self:UpdateHandbook(msgData)
-    self:UpdateSkinData()
-end
-
---更新皮肤数据
-function PlayerHandbookData:UpdateSkinData()
-    local tbSkinHandbook = self:GetUnlockHandbookByType(GameEnum.handbookType.SKIN)
-    local tbSkinCfgData = self.tbHandbookCfgData[GameEnum.handbookType.SKIN]
-    if nil ~= tbSkinCfgData then
-        for idx, id in pairs(tbSkinCfgData) do
-            local cfgData = ConfigTable.GetData("Handbook", id)
-            local nUnlock = nil ~= tbSkinHandbook[id] and 1 or 0
-            PlayerData.CharSkin:UpdateSkinData(cfgData.SkinId, id, nUnlock)
-        end
+PlayerHandbookData.GetUnlockHandbookByType = function(self, typeParam)
+  -- function num : 0_8 , upvalues : _ENV
+  local tbType = {}
+  if type(typeParam) ~= "table" then
+    (table.insert)(tbType, typeParam)
+  else
+    tbType = typeParam
+  end
+  local tbDataList = {}
+  for _,v in pairs(self.tbHandbookData) do
+    for _,nType in ipairs(tbType) do
+      if v:GetType() == nType and v:CheckUnlock() then
+        tbDataList[v:GetId()] = v
+      end
     end
+  end
+  return tbDataList
 end
 
-function PlayerHandbookData:GetUnlockHandbookByType(type)
-    local tbDataList = {}
-    for _, v in pairs(self.tbHandbookData) do
-        if v:GetType() == type and v:CheckUnlock() then
-            tbDataList[v:GetId()] = v
-        end
+PlayerHandbookData.GetHandbookDataById = function(self, id)
+  -- function num : 0_9
+  return (self.tbHandbookData)[id]
+end
+
+PlayerHandbookData.GetAllHandbookData = function(self)
+  -- function num : 0_10
+  return self.tbHandbookData
+end
+
+PlayerHandbookData.CheckHandbookUnlock = function(self, id)
+  -- function num : 0_11
+  local handbookData = self:GetHandbookDataById(id)
+  if handbookData == nil then
+    return false
+  end
+  return handbookData:CheckUnlock()
+end
+
+PlayerHandbookData.GetTempHandbookDataById = function(self, id)
+  -- function num : 0_12 , upvalues : _ENV
+  local cfgData = (ConfigTable.GetData)("Handbook", id)
+  if cfgData == nil then
+    printError("Get Handbook data fail!!! id = " .. id)
+    return self:GetTempHandbookDataById(410301)
+  end
+  local data = self:CreateHandbook(cfgData.Type, id, 1)
+  return data
+end
+
+PlayerHandbookData.GetBoardCharList = function(self)
+  -- function num : 0_13 , upvalues : _ENV
+  local tbCharList = {}
+  local tbUnlockSkinList = self:GetUnlockHandbookByType((GameEnum.handbookType).SKIN)
+  if tbUnlockSkinList ~= nil then
+    for id,data in pairs(tbUnlockSkinList) do
+      local charId = data:GetCharId()
+      if tbCharList[charId] == nil then
+        tbCharList[charId] = {}
+      end
+      ;
+      (table.insert)(tbCharList[charId], data)
     end
-    return tbDataList
-end
-
-function PlayerHandbookData:GetHandbookDataById(id)
-    return self.tbHandbookData[id]
-end
-
-function PlayerHandbookData:GetAllHandbookData()
-    return self.tbHandbookData
-end
-
-function PlayerHandbookData:CheckHandbookUnlock(id)
-    local handbookData = self:GetHandbookDataById(id)
-    if nil == handbookData then
-        return false
-    end
-    return handbookData:CheckUnlock()
-end
-
-function PlayerHandbookData:GetTempHandbookDataById(id)
-    local cfgData = ConfigTable.GetData("Handbook", id)
-    if nil == cfgData then
-        printError("Get Handbook data fail!!! id = ".. id)
-        --临时处理  避免有老账号默认看板id是角色id时进主界面黑屏问题
-        return self:GetTempHandbookDataById(410301)
-    end
-    
-    local data = self:CreateHandbook(cfgData.Type, id, 1)
-    return data
-end
-
---获取看板角色数据
-function PlayerHandbookData:GetBoardCharList()
-    local tbCharList = {}
-    local tbUnlockSkinList = self:GetUnlockHandbookByType(GameEnum.handbookType.SKIN)
-    if nil ~= tbUnlockSkinList then
-        for id, data in pairs(tbUnlockSkinList) do
-            local charId = data:GetCharId() 
-            if nil == tbCharList[charId] then
-                tbCharList[charId] = {}
-            end
-            table.insert(tbCharList[charId], data)
-        end
-    end
+  end
+  do
     return tbCharList
+  end
 end
 
+PlayerHandbookData.GetPlotResourcePath = function(self, nId)
+  -- function num : 0_14 , upvalues : _ENV, femaleSurfix, maleSurfix, GameResourceLoader
+  local bSecDiff = false
+  local mapCfg = (ConfigTable.GetData)("MainScreenCG", nId)
+  if mapCfg ~= nil then
+    local sFemale = Settings.AB_ROOT_PATH .. mapCfg.FullScreenImg .. femaleSurfix .. ".png"
+    local sMale = Settings.AB_ROOT_PATH .. mapCfg.FullScreenImg .. maleSurfix .. ".png"
+    if (GameResourceLoader.ExistsAsset)(sFemale) or (GameResourceLoader.ExistsAsset)(sMale) then
+      bSecDiff = true
+    end
+  end
+  do
+    local sSurfix = ""
+    do
+      if bSecDiff then
+        local bIsMale = (PlayerData.Base):GetPlayerSex()
+        sSurfix = bIsMale and maleSurfix or femaleSurfix
+      end
+      local tbResourcePath = {FullScreenImg = mapCfg.FullScreenImg .. (sSurfix), ListImg = mapCfg.ListImg .. (sSurfix), Icon = mapCfg.Icon .. (sSurfix)}
+      return tbResourcePath
+    end
+  end
+end
 
 return PlayerHandbookData
+

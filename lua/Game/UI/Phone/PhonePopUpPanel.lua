@@ -1,31 +1,41 @@
--- 手机弹窗界面
 local PhonePopUpPanel = class("PhonePopUpPanel", BasePanel)
 PhonePopUpPanel._bIsMainPanel = false
-
 PhonePopUpPanel._tbDefine = {
-    {sPrefabPath = "Phone/PhonePopUpPanel.prefab", sCtrlName = "Game.UI.Phone.PhonePopUpCtrl"},
+{sPrefabPath = "Phone/PhonePopUpPanel.prefab", sCtrlName = "Game.UI.Phone.PhonePopUpCtrl"}
 }
--------------------- local function --------------------
-function PhonePopUpPanel:GetAvgContactsData(sContactsId)
-    local tbContacts = PlayerData.Phone:GetAvgContactsData(sContactsId)
-    if tbContacts == nil then
-        return sContactsId
-    else
-        return tbContacts
-    end
+PhonePopUpPanel.GetAvgContactsData = function(self, sContactsId)
+  -- function num : 0_0 , upvalues : _ENV
+  local tbContacts = (PlayerData.Phone):GetAvgContactsData(sContactsId)
+  if tbContacts == nil then
+    return sContactsId
+  else
+    return tbContacts
+  end
 end
--------------------- base function --------------------
-function PhonePopUpPanel:Awake()
+
+PhonePopUpPanel.Awake = function(self)
+  -- function num : 0_1
 end
-function PhonePopUpPanel:OnEnable()
+
+PhonePopUpPanel.OnEnable = function(self)
+  -- function num : 0_2
 end
-function PhonePopUpPanel:OnAfterEnter()
+
+PhonePopUpPanel.OnAfterEnter = function(self)
+  -- function num : 0_3
 end
-function PhonePopUpPanel:OnDisable()
+
+PhonePopUpPanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function PhonePopUpPanel:OnDestroy()
+
+PhonePopUpPanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
-function PhonePopUpPanel:OnRelease()
+
+PhonePopUpPanel.OnRelease = function(self)
+  -- function num : 0_6
 end
--------------------- callback function --------------------
+
 return PhonePopUpPanel
+

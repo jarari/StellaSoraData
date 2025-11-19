@@ -1,0 +1,235 @@
+{
+  "8010301": {
+    "Id": 8010301,
+    "Name": "TowerDefenseCharacter.8010301.1",
+    "SkinId": 8010301,
+    "SearchTargetType": 1,
+    "SearchRadius": 75000,
+    "AIId": 8010301,
+    "NewPotential2": [
+      1030105
+    ],
+    "NewPotential3": [
+      1030106
+    ],
+    "NewPotential4": [
+      1030101,
+      1030102
+    ],
+    "NewPotential5": [
+      1030107
+    ],
+    "NewPotential6": [
+      1030103,
+      1030104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8010301,
+    "SkillId": 8010302,
+    "SkillCd": 80000,
+    "CdStartTime": true,
+    "Templete": 8010301,
+    "Icon": "Icon/Head/head_10301"
+  },
+  "8011101": {
+    "Id": 8011101,
+    "Name": "TowerDefenseCharacter.8011101.1",
+    "SkinId": 8011101,
+    "SearchTargetType": 1,
+    "SearchRadius": 75000,
+    "AIId": 8011101,
+    "NewPotential2": [
+      1110105
+    ],
+    "NewPotential3": [
+      1110106
+    ],
+    "NewPotential4": [
+      1110101,
+      1110102
+    ],
+    "NewPotential5": [
+      1110107
+    ],
+    "NewPotential6": [
+      1110103,
+      1110104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8011101,
+    "SkillId": 8011102,
+    "SkillCd": 150000,
+    "CdStartTime": true,
+    "Templete": 8011101,
+    "Icon": "Icon/Head/head_11101"
+  },
+  "8011201": {
+    "Id": 8011201,
+    "Name": "TowerDefenseCharacter.8011201.1",
+    "SkinId": 8011201,
+    "SearchTargetType": 1,
+    "SearchRadius": 45000,
+    "AIId": 8011201,
+    "NewPotential2": [
+      1120105
+    ],
+    "NewPotential3": [
+      1120106
+    ],
+    "NewPotential4": [
+      1120101,
+      1120102
+    ],
+    "NewPotential5": [
+      1120107
+    ],
+    "NewPotential6": [
+      1120103,
+      1120104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8011201,
+    "SkillId": 8011202,
+    "SkillCd": 100000,
+    "CdStartTime": true,
+    "Templete": 8011201,
+    "Icon": "Icon/Head/head_11201"
+  },
+  "8012701": {
+    "Id": 8012701,
+    "Name": "TowerDefenseCharacter.8012701.1",
+    "SkinId": 8012701,
+    "SearchTargetType": 1,
+    "SearchRadius": 45000,
+    "AIId": 8012701,
+    "NewPotential2": [
+      1270105
+    ],
+    "NewPotential3": [
+      1270106
+    ],
+    "NewPotential4": [
+      1270101,
+      1270102
+    ],
+    "NewPotential5": [
+      1270107
+    ],
+    "NewPotential6": [
+      1270103,
+      1270104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8012701,
+    "SkillId": 8012702,
+    "SkillCd": 100000,
+    "Templete": 8012701,
+    "Icon": "Icon/Head/head_12701"
+  },
+  "8013401": {
+    "Id": 8013401,
+    "Name": "TowerDefenseCharacter.8013401.1",
+    "SkinId": 8013401,
+    "SearchTargetType": 1,
+    "SearchRadius": 45000,
+    "AIId": 8013401,
+    "NewPotential2": [
+      1340105
+    ],
+    "NewPotential3": [
+      1340106
+    ],
+    "NewPotential4": [
+      1340101,
+      1340102
+    ],
+    "NewPotential5": [
+      1340107
+    ],
+    "NewPotential6": [
+      1340103,
+      1340104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8013401,
+    "SkillId": 8013402,
+    "SkillCd": 90000,
+    "CdStartTime": true,
+    "Templete": 8013401,
+    "Icon": "Icon/Head/head_13401"
+  },
+  "8015601": {
+    "Id": 8015601,
+    "Name": "TowerDefenseCharacter.8015601.1",
+    "SkinId": 8015601,
+    "SearchTargetType": 1,
+    "SearchRadius": 75000,
+    "AIId": 8015601,
+    "NewPotential2": [
+      1560105
+    ],
+    "NewPotential3": [
+      1560106
+    ],
+    "NewPotential4": [
+      1560101,
+      1560102
+    ],
+    "NewPotential5": [
+      1560107
+    ],
+    "NewPotential6": [
+      1560103,
+      1560104
+    ],
+    "PointNeeded": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "Faction": 1,
+    "NormalAtkId": 8015601,
+    "SkillId": 8015602,
+    "SkillCd": 90000,
+    "CdStartTime": true,
+    "Templete": 8015601,
+    "Icon": "Icon/Head/head_15601"
+  }
+}

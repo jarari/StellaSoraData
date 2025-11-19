@@ -1,25 +1,31 @@
--- Panel 模板
-
 local JointDrillRankUpPanel = class("JointDrillRankUpPanel", BasePanel)
 JointDrillRankUpPanel._bIsMainPanel = false
-
 JointDrillRankUpPanel._tbDefine = {
-    {sPrefabPath = "Play_JointDrill/JointDrillRankUpPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillRankUpCtrl"}
+{sPrefabPath = "Play_JointDrill/JointDrillRankUpPanel.prefab", sCtrlName = "Game.UI.JointDrill.JointDrillRankUpCtrl"}
 }
--------------------- local function --------------------
+JointDrillRankUpPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function JointDrillRankUpPanel:Awake()
+JointDrillRankUpPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function JointDrillRankUpPanel:OnEnable()
+
+JointDrillRankUpPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function JointDrillRankUpPanel:OnAfterEnter()
+
+JointDrillRankUpPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function JointDrillRankUpPanel:OnDisable()
+
+JointDrillRankUpPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function JointDrillRankUpPanel:OnDestroy()
+
+JointDrillRankUpPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function JointDrillRankUpPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return JointDrillRankUpPanel
+

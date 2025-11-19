@@ -1,22 +1,23 @@
-
 local DailyInstanceResultPanel = class("DailyInstanceResultPanel", BasePanel)
-
 DailyInstanceResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 DailyInstanceResultPanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.DailyInstanceResultCtrl"}
+{sPrefabPath = "BattleResult/BattleResultPanel.prefab", sCtrlName = "Game.UI.BattleResult.DailyInstanceResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+DailyInstanceResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function DailyInstanceResultPanel:Awake()
+DailyInstanceResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DailyInstanceResultPanel:OnEnable()
+
+DailyInstanceResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DailyInstanceResultPanel:OnDisable()
+
+DailyInstanceResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function DailyInstanceResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return DailyInstanceResultPanel
+

@@ -1,19 +1,22 @@
--- CharTalentPanel Panel
-
 local CharTalentTrialPanel = class("CharTalentTrialPanel", BasePanel)
--- Panel 定义
 CharTalentTrialPanel._tbDefine = {
-    {sPrefabPath = "CharacterInfoTrial/CharTalentTrialPanel.prefab", sCtrlName = "Game.UI.CharacterInfoTrial.CharTalentTrialCtrl"},
+{sPrefabPath = "CharacterInfoTrial/CharTalentTrialPanel.prefab", sCtrlName = "Game.UI.CharacterInfoTrial.CharTalentTrialCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function CharTalentTrialPanel:Awake()
+CharTalentTrialPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function CharTalentTrialPanel:OnEnable()
+
+CharTalentTrialPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function CharTalentTrialPanel:OnDisable()
+
+CharTalentTrialPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function CharTalentTrialPanel:OnDestroy()
+
+CharTalentTrialPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return CharTalentTrialPanel
+

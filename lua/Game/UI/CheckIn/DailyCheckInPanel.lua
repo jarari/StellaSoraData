@@ -1,20 +1,23 @@
--- DailyCheckInPanel Panel
-
 local DailyCheckInPanel = class("DailyCheckInPanel", BasePanel)
--- Panel 定义
 DailyCheckInPanel._bIsMainPanel = false
 DailyCheckInPanel._tbDefine = {
-    {sPrefabPath = "CheckIn/DailyCheckInPanel.prefab", sCtrlName = "Game.UI.CheckIn.DailyCheckInCtrl"},
+{sPrefabPath = "CheckIn/DailyCheckInPanel.prefab", sCtrlName = "Game.UI.CheckIn.DailyCheckInCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DailyCheckInPanel:Awake()
+DailyCheckInPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function DailyCheckInPanel:OnEnable()
+
+DailyCheckInPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DailyCheckInPanel:OnDisable()
+
+DailyCheckInPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DailyCheckInPanel:OnDestroy()
+
+DailyCheckInPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DailyCheckInPanel
+

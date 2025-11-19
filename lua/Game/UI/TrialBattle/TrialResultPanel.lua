@@ -1,22 +1,23 @@
-
 local TrialResultPanel = class("TrialResultPanel", BasePanel)
-
 TrialResultPanel._bAddToBackHistory = false
-
--- Panel 定义
 TrialResultPanel._tbDefine = {
-    {sPrefabPath = "Play_TrialBattle/TrialResultPanel.prefab", sCtrlName = "Game.UI.TrialBattle.TrialResultCtrl"}
+{sPrefabPath = "Play_TrialBattle/TrialResultPanel.prefab", sCtrlName = "Game.UI.TrialBattle.TrialResultCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
+TrialResultPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
-function TrialResultPanel:Awake()
+TrialResultPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TrialResultPanel:OnEnable()
+
+TrialResultPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function TrialResultPanel:OnDisable()
+
+TrialResultPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function TrialResultPanel:OnDestroy()
-end
--------------------- callback function --------------------
+
 return TrialResultPanel
+

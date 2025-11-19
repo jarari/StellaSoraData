@@ -1,21 +1,24 @@
--- NoteSkillPreviewPanel Panel
-
 local NoteSkillPreviewPanel = class("NoteSkillPreviewPanel", BasePanel)
--- Panel 定义
 NoteSkillPreviewPanel._bIsMainPanel = false
-NoteSkillPreviewPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
+NoteSkillPreviewPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 NoteSkillPreviewPanel._tbDefine = {
-    {sPrefabPath = "NoteSkill/NoteSkillPreviewPanel.prefab", sCtrlName = "Game.UI.NoteSkill.NoteSkillPreviewCtrl"},
+{sPrefabPath = "NoteSkill/NoteSkillPreviewPanel.prefab", sCtrlName = "Game.UI.NoteSkill.NoteSkillPreviewCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function NoteSkillPreviewPanel:Awake()
+NoteSkillPreviewPanel.Awake = function(self)
+  -- function num : 0_0
 end
-function NoteSkillPreviewPanel:OnEnable()
+
+NoteSkillPreviewPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function NoteSkillPreviewPanel:OnDisable()
+
+NoteSkillPreviewPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function NoteSkillPreviewPanel:OnDestroy()
+
+NoteSkillPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return NoteSkillPreviewPanel
+

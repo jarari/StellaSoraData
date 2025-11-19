@@ -1,25 +1,31 @@
--- Panel 模板
-
 local BattleDamagePanel = class("BattleDamagePanel", BasePanel)
 BattleDamagePanel._bIsMainPanel = false
-
 BattleDamagePanel._tbDefine = {
-    {sPrefabPath = "BattleResult/BattleDamagePanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleDamageCtrl"}
+{sPrefabPath = "BattleResult/BattleDamagePanel.prefab", sCtrlName = "Game.UI.BattleResult.BattleDamageCtrl"}
 }
--------------------- local function --------------------
+BattleDamagePanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function BattleDamagePanel:Awake()
+BattleDamagePanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BattleDamagePanel:OnEnable()
+
+BattleDamagePanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function BattleDamagePanel:OnAfterEnter()
+
+BattleDamagePanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function BattleDamagePanel:OnDisable()
+
+BattleDamagePanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function BattleDamagePanel:OnDestroy()
+
+BattleDamagePanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function BattleDamagePanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return BattleDamagePanel
+

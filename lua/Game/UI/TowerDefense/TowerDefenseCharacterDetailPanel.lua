@@ -1,34 +1,32 @@
--- Panel 模板
-
 local TowerDefenseCharacterDetailPanel = class("TowerDefenseCharacterDetailPanel", BasePanel)
 TowerDefenseCharacterDetailPanel._nSnapshotPrePanel = 1
 TowerDefenseCharacterDetailPanel._bIsMainPanel = false
--- Panel 定义
---[[
-TowerDefenseCharacterDetailPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-TowerDefenseCharacterDetailPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-TowerDefenseCharacterDetailPanel._bIsMainPanel = true
-TowerDefenseCharacterDetailPanel._bAddToBackHistory = true
-TowerDefenseCharacterDetailPanel._nSnapshotPrePanel = 0
-TowerDefenseCharacterDetailPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 TowerDefenseCharacterDetailPanel._tbDefine = {
-    {sPrefabPath = "Play_TowerDefence/TowerDefenseCharacterDetailPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseCharacterDetailCtrl"}
+{sPrefabPath = "Play_TowerDefence/TowerDefenseCharacterDetailPanel.prefab", sCtrlName = "Game.UI.TowerDefense.TowerDefenseCharacterDetailCtrl"}
 }
--------------------- local function --------------------
+TowerDefenseCharacterDetailPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function TowerDefenseCharacterDetailPanel:Awake()
+TowerDefenseCharacterDetailPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function TowerDefenseCharacterDetailPanel:OnEnable()
+
+TowerDefenseCharacterDetailPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function TowerDefenseCharacterDetailPanel:OnAfterEnter()
+
+TowerDefenseCharacterDetailPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function TowerDefenseCharacterDetailPanel:OnDisable()
+
+TowerDefenseCharacterDetailPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function TowerDefenseCharacterDetailPanel:OnDestroy()
+
+TowerDefenseCharacterDetailPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function TowerDefenseCharacterDetailPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return TowerDefenseCharacterDetailPanel
+

@@ -1567,5 +1567,77 @@
     "IgnoreCollision": true,
     "width": 5,
     "length": 1
+  },
+  "50912001": {
+    "Id": 50912001,
+    "Name": "弹射柱",
+    "FCId": 5091201,
+    "Model": "Actor/Monster/99072CircleAreaTrap/99072_CircleAreaTrap",
+    "ModelScale": 10000,
+    "BuffFXScale": 10000,
+    "ColliderScale": 10000,
+    "AttributeId": "1300101",
+    "Templete": 9100000,
+    "BuffIds": [
+      990010050,
+      990010100
+    ],
+    "InterruptSkill": true,
+    "SubType": 2,
+    "Faction": 4,
+    "Filter": [
+      2
+    ],
+    "IgnoreCollision": true,
+    "ShapeType": 1,
+    "radius": 99
+  },
+  "50931001": {
+    "Id": 50931001,
+    "Name": "毒草",
+    "FCId": 1002002,
+    "Model": "Actor/Monster/10020BanShenCao/10020BanShenCao_Actor",
+    "ModelScale": 20000,
+    "BuffFXScale": 10000,
+    "ColliderScale": 10000,
+    "AttributeId": "1300101",
+    "Templete": 3010101,
+    "BuffIds": [
+      990010050,
+      990010100
+    ],
+    "InterruptSkill": true,
+    "SubType": 2,
+    "Faction": 3,
+    "Filter": [
+      2
+    ],
+    "IgnoreCollision": true,
+    "ShapeType": 1,
+    "radius": 99
+  },
+  "50931002": {
+    "Id": 50931002,
+    "Name": "毒草（延迟）",
+    "FCId": 1002003,
+    "Model": "Actor/Monster/10020BanShenCao/10020BanShenCao_Actor",
+    "ModelScale": 20000,
+    "BuffFXScale": 10000,
+    "ColliderScale": 10000,
+    "AttributeId": "1300101",
+    "Templete": 3010101,
+    "BuffIds": [
+      990010050,
+      990010100
+    ],
+    "InterruptSkill": true,
+    "SubType": 2,
+    "Faction": 3,
+    "Filter": [
+      2
+    ],
+    "IgnoreCollision": true,
+    "ShapeType": 1,
+    "radius": 99
   }
 }

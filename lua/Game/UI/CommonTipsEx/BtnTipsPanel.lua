@@ -1,26 +1,29 @@
--- Panel 模板
-
 local BtnTipsPanel = class("BtnTipsPanel", BasePanel)
 BtnTipsPanel._bIsMainPanel = false
 BtnTipsPanel._bAddToBackHistory = false
-
-BtnTipsPanel._sSortingLayerName = AllEnum.SortingLayerName.UI_Top
--- Panel 定义
+BtnTipsPanel._sSortingLayerName = (AllEnum.SortingLayerName).UI_Top
 BtnTipsPanel._tbDefine = {
-    {sPrefabPath = "CommonTipsEx/ButtonTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.BtnTipsCtrl"}
+{sPrefabPath = "CommonTipsEx/ButtonTips.prefab", sCtrlName = "Game.UI.CommonTipsEx.BtnTipsCtrl"}
 }
--------------------- local function --------------------
+BtnTipsPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function BtnTipsPanel:Awake()
+BtnTipsPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function BtnTipsPanel:OnEnable()
+
+BtnTipsPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function BtnTipsPanel:OnDisable()
+
+BtnTipsPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function BtnTipsPanel:OnDestroy()
+
+BtnTipsPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function BtnTipsPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return BtnTipsPanel
+

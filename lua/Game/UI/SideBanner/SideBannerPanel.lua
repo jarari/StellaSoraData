@@ -1,21 +1,24 @@
--- SideBanner Panel
-
 local SideBanner = class("SideBanner", BasePanel)
--- Panel 定义
-SideBanner._sSortingLayerName = AllEnum.SortingLayerName.Overlay
+SideBanner._sSortingLayerName = (AllEnum.SortingLayerName).Overlay
 SideBanner._bAddToBackHistory = false
 SideBanner._tbDefine = {
-    {sPrefabPath = "SideBanner/SideBannerPanel.prefab", sCtrlName = "Game.UI.SideBanner.SideBannerCtrl"},
+{sPrefabPath = "SideBanner/SideBannerPanel.prefab", sCtrlName = "Game.UI.SideBanner.SideBannerCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function SideBanner:Awake()
+SideBanner.Awake = function(self)
+  -- function num : 0_0
 end
-function SideBanner:OnEnable()
+
+SideBanner.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SideBanner:OnDisable()
+
+SideBanner.OnDisable = function(self)
+  -- function num : 0_2
 end
-function SideBanner:OnDestroy()
+
+SideBanner.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return SideBanner
+

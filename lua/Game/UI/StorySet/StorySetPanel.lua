@@ -1,24 +1,30 @@
--- Panel 模板
-
 local StorySetPanel = class("StorySetPanel", BasePanel)
-
 StorySetPanel._tbDefine = {
-    {sPrefabPath = "Play_StorySet/StorySetPanel.prefab", sCtrlName = "Game.UI.StorySet.StorySetCtrl"}
+{sPrefabPath = "Play_StorySet/StorySetPanel.prefab", sCtrlName = "Game.UI.StorySet.StorySetCtrl"}
 }
--------------------- local function --------------------
+StorySetPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function StorySetPanel:Awake()
+StorySetPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function StorySetPanel:OnEnable()
+
+StorySetPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function StorySetPanel:OnAfterEnter()
+
+StorySetPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function StorySetPanel:OnDisable()
+
+StorySetPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function StorySetPanel:OnDestroy()
+
+StorySetPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function StorySetPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return StorySetPanel
+

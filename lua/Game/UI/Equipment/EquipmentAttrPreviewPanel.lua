@@ -1,25 +1,31 @@
 local EquipmentAttrPreviewPanel = class("EquipmentAttrPreviewPanel", BasePanel)
-
 EquipmentAttrPreviewPanel._bIsMainPanel = false
 EquipmentAttrPreviewPanel._tbDefine = {
-    {sPrefabPath = "Equipment/EquipmentAttrPreviewPanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentAttrPreviewCtrl"}
+{sPrefabPath = "Equipment/EquipmentAttrPreviewPanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentAttrPreviewCtrl"}
 }
--------------------- local function --------------------
+EquipmentAttrPreviewPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
+EquipmentAttrPreviewPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
--------------------- base function --------------------
-function EquipmentAttrPreviewPanel:Awake()
-    
+EquipmentAttrPreviewPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function EquipmentAttrPreviewPanel:OnEnable()
+
+EquipmentAttrPreviewPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function EquipmentAttrPreviewPanel:OnAfterEnter()
+
+EquipmentAttrPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function EquipmentAttrPreviewPanel:OnDisable()
+
+EquipmentAttrPreviewPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function EquipmentAttrPreviewPanel:OnDestroy()
-end
-function EquipmentAttrPreviewPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return EquipmentAttrPreviewPanel
+

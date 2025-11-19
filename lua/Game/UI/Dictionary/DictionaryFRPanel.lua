@@ -1,21 +1,24 @@
--- DictionaryFRPanel Panel
-
 local DictionaryFRPanel = class("DictionaryFRPanel", BasePanel)
--- Panel 定义
 DictionaryFRPanel._bIsMainPanel = false
 DictionaryFRPanel._tbDefine = {
-    {sPrefabPath = "Dictionary/DictionaryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryCtrl"},
+{sPrefabPath = "Dictionary/DictionaryPanel.prefab", sCtrlName = "Game.UI.Dictionary.DictionaryCtrl"}
 }
--------------------- local function --------------------
--------------------- base function --------------------
-function DictionaryFRPanel:Awake()
-    self.bStarTowerFastBattle = self:GetPanelParam()[1]
+DictionaryFRPanel.Awake = function(self)
+  -- function num : 0_0
+  self.bStarTowerFastBattle = (self:GetPanelParam())[1]
 end
-function DictionaryFRPanel:OnEnable()
+
+DictionaryFRPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DictionaryFRPanel:OnDisable()
+
+DictionaryFRPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function DictionaryFRPanel:OnDestroy()
+
+DictionaryFRPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
--------------------- callback function --------------------
+
 return DictionaryFRPanel
+

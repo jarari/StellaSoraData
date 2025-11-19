@@ -88,5 +88,17 @@
     "Name": "BoardNPC.9155.1",
     "Alias": "BoardNPC.9155.2",
     "DefaultSkinId": 915501
+  },
+  "8134": {
+    "Id": 8134,
+    "Name": "BoardNPC.8134.1",
+    "Alias": "BoardNPC.8134.2",
+    "DefaultSkinId": 813401
+  },
+  "8133": {
+    "Id": 8133,
+    "Name": "BoardNPC.8133.1",
+    "Alias": "BoardNPC.8133.2",
+    "DefaultSkinId": 813301
   }
 }

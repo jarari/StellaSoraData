@@ -1,5 +1,5 @@
 
-¶
+Å	
 roguelike_tempData.protonova.client.roguelike"Â
 Skill
 nCharId (RnCharId
@@ -22,12 +22,15 @@ SkillState
 nState (RnState
 
 nStateTime (R
-nStateTime"n
+nStateTime"»
 AmmoInfo
 nCurAmmo (RnCurAmmo
 nAmmo1 (RnAmmo1
 nAmmo2 (RnAmmo2
-nAmmo3 (RnAmmo3"ó
+nAmmo3 (RnAmmo3
+	nAmmoMax1 (R	nAmmoMax1
+	nAmmoMax2 (R	nAmmoMax2
+	nAmmoMax3 (R	nAmmoMax3"ó
 	Character
 nCharId (RnCharId9
 tbEffect (2.nova.client.roguelike.EffectRtbEffect7

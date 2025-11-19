@@ -897,6 +897,17 @@
     "ATK": 3,
     "DEF": 3
   },
+  "1100700": {
+    "Id": 1100700,
+    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
+    "Name": "MonsterManual.1100700.1",
+    "Desc": "MonsterManual.1100700.2",
+    "SkillDesc": "MonsterManual.1100700.3",
+    "EpicLv": 5,
+    "HP": 3,
+    "ATK": 2,
+    "DEF": 3
+  },
   "1001800": {
     "Id": 1001800,
     "Icon": "Icon/Monster/monsterhead_10018GaoYaGuo_Com_L",
@@ -1614,105 +1625,6 @@
     "HP": 2,
     "ATK": 2,
     "DEF": 3
-  },
-  "3020100": {
-    "Id": 3020100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3020100.1",
-    "Desc": "MonsterManual.3020100.2",
-    "SkillDesc": "MonsterManual.3020100.3",
-    "EpicLv": 5,
-    "HP": 2,
-    "ATK": 3,
-    "DEF": 3
-  },
-  "3021100": {
-    "Id": 3021100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3021100.1",
-    "Desc": "MonsterManual.3021100.2",
-    "SkillDesc": "MonsterManual.3021100.3",
-    "EpicLv": 5,
-    "HP": 3,
-    "ATK": 2,
-    "DEF": 3
-  },
-  "3022100": {
-    "Id": 3022100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3022100.1",
-    "Desc": "MonsterManual.3022100.2",
-    "SkillDesc": "MonsterManual.3022100.3",
-    "EpicLv": 5,
-    "HP": 3,
-    "ATK": 2,
-    "DEF": 3
-  },
-  "3023100": {
-    "Id": 3023100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3023100.1",
-    "Desc": "MonsterManual.3023100.2",
-    "SkillDesc": "MonsterManual.3023100.3",
-    "EpicLv": 5,
-    "HP": 3,
-    "ATK": 3,
-    "DEF": 3
-  },
-  "3024100": {
-    "Id": 3024100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3024100.1",
-    "Desc": "MonsterManual.3024100.2",
-    "SkillDesc": "MonsterManual.3024100.3",
-    "EpicLv": 4,
-    "HP": 2,
-    "ATK": 2,
-    "DEF": 3
-  },
-  "3025100": {
-    "Id": 3025100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3025100.1",
-    "Desc": "MonsterManual.3025100.2",
-    "SkillDesc": "MonsterManual.3025100.3",
-    "EpicLv": 4,
-    "HP": 2,
-    "ATK": 3,
-    "DEF": 2
-  },
-  "3026100": {
-    "Id": 3026100,
-    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
-    "Name": "MonsterManual.3026100.1",
-    "Desc": "MonsterManual.3026100.2",
-    "SkillDesc": "MonsterManual.3026100.3",
-    "EpicLv": 4,
-    "HP": 3,
-    "ATK": 2,
-    "DEF": 2
-  },
-  "3027100": {
-    "Id": 3027100,
-    "Icon": "Icon/Monster/monsterhead_00007Unknown_Com_L",
-    "Name": "MonsterManual.3027100.1",
-    "Desc": "MonsterManual.3027100.2",
-    "SkillDesc": "MonsterManual.3027100.3",
-    "EpicLv": 3,
-    "HP": 1,
-    "ATK": 3,
-    "DEF": 2
-  },
-  "3028105": {
-    "Id": 3028105,
-    "Icon": "Icon/Monster/monsterhead_00008Unknown_Com_L",
-    "Name": "MonsterManual.3028105.1",
-    "Desc": "MonsterManual.3028105.2",
-    "SkillDesc": "MonsterManual.3028105.3",
-    "EpicLv": 2,
-    "HP": 1,
-    "ATK": 1,
-    "DEF": 2
   },
   "5000100": {
     "Id": 5000100,
@@ -4997,6 +4909,23 @@
     "ATK": 2,
     "DEF": 2
   },
+  "5030166": {
+    "Id": 5030166,
+    "Icon": "Icon/Monster/monsterhead_00000Unknown_Com_L",
+    "Name": "MonsterManual.5030166.1",
+    "EET": [
+      6
+    ],
+    "WeakEET": [
+      5
+    ],
+    "Desc": "MonsterManual.5030166.2",
+    "SkillDesc": "MonsterManual.5030166.3",
+    "EpicLv": 3,
+    "HP": 3,
+    "ATK": 2,
+    "DEF": 2
+  },
   "5031116": {
     "Id": 5031116,
     "Icon": "Icon/Monster/monsterhead_50311DaWuGui_Earth_L",
@@ -5448,113 +5377,6 @@
     "HP": 3,
     "ATK": 2,
     "DEF": 3
-  },
-  "7002136": {
-    "Id": 7002136,
-    "Icon": "Icon/Monster/monsterhead_70021MaoYan_Fire_L",
-    "Name": "MonsterManual.7002136.1",
-    "EET": [
-      2
-    ],
-    "WeakEET": [
-      1
-    ],
-    "Desc": "MonsterManual.7002136.2",
-    "SkillDesc": "MonsterManual.7002136.3",
-    "EpicLv": 2,
-    "HP": 1,
-    "ATK": 1,
-    "DEF": 1
-  },
-  "7002246": {
-    "Id": 7002246,
-    "Icon": "Icon/Monster/monsterhead_70022HuaYuan_Wind_L",
-    "Name": "MonsterManual.7002246.1",
-    "EET": [
-      4
-    ],
-    "WeakEET": [
-      2
-    ],
-    "Desc": "MonsterManual.7002246.2",
-    "SkillDesc": "MonsterManual.7002246.3",
-    "EpicLv": 2,
-    "HP": 1,
-    "ATK": 1,
-    "DEF": 1
-  },
-  "7003156": {
-    "Id": 7003156,
-    "Icon": "Icon/Monster/monsterhead_70031HuoChui_Light_L",
-    "Name": "MonsterManual.7003156.1",
-    "EET": [
-      5
-    ],
-    "WeakEET": [
-      6
-    ],
-    "Desc": "MonsterManual.7003156.2",
-    "SkillDesc": "MonsterManual.7003156.3",
-    "EpicLv": 2,
-    "HP": 1,
-    "ATK": 1,
-    "DEF": 1
-  },
-  "9000100": {
-    "Id": 9000100,
-    "Icon": "Icon/Monster/monsterhead_90001SaoDiJiQiRen_Earth_L",
-    "Name": "MonsterManual.9000100.1",
-    "Desc": "MonsterManual.9000100.2",
-    "SkillDesc": "MonsterManual.9000100.3"
-  },
-  "9000200": {
-    "Id": 9000200,
-    "Icon": "Icon/Monster/monsterhead_90002WuRenJi_Wind_L",
-    "Name": "MonsterManual.9000200.1",
-    "Desc": "MonsterManual.9000200.2",
-    "SkillDesc": "MonsterManual.9000200.3"
-  },
-  "9000500": {
-    "Id": 9000500,
-    "Icon": "Icon/Monster/monsterhead_90005JiGuangXiaoDuiNan_Dark_L",
-    "Name": "MonsterManual.9000500.1",
-    "Desc": "MonsterManual.9000500.2",
-    "SkillDesc": "MonsterManual.9000500.3"
-  },
-  "9000600": {
-    "Id": 9000600,
-    "Icon": "Icon/Monster/monsterhead_90006JiGuangXiaoDuiNv_Dark_L",
-    "Name": "MonsterManual.9000600.1",
-    "Desc": "MonsterManual.9000600.2",
-    "SkillDesc": "MonsterManual.9000600.3"
-  },
-  "9000800": {
-    "Id": 9000800,
-    "Icon": "Icon/Monster/monsterhead_90008JiGuangXiaoDuiNv_Dark_L",
-    "Name": "MonsterManual.9000800.1",
-    "Desc": "MonsterManual.9000800.2",
-    "SkillDesc": "MonsterManual.9000800.3"
-  },
-  "9000900": {
-    "Id": 9000900,
-    "Icon": "Icon/Monster/monsterhead_90009JiGuangXiaoDuiNan_Dark_L",
-    "Name": "MonsterManual.9000900.1",
-    "Desc": "MonsterManual.9000900.2",
-    "SkillDesc": "MonsterManual.9000900.3"
-  },
-  "9001000": {
-    "Id": 9001000,
-    "Icon": "Icon/Monster/monsterhead_90010JiGuangXiaoDuiNv_Dark_L",
-    "Name": "MonsterManual.9001000.1",
-    "Desc": "MonsterManual.9001000.2",
-    "SkillDesc": "MonsterManual.9001000.3"
-  },
-  "9001300": {
-    "Id": 9001300,
-    "Icon": "Icon/Monster/monsterhead_90013WuRenJi_Wind_L",
-    "Name": "MonsterManual.9001300.1",
-    "Desc": "MonsterManual.9001300.2",
-    "SkillDesc": "MonsterManual.9001300.3"
   },
   "9912101": {
     "Id": 9912101,

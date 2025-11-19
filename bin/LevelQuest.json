@@ -126,29 +126,30 @@
     "Id": 1340101,
     "QuestName": "LevelQuest.1340101.1",
     "LevelQuestTargetIds": [
-      13401011
+      13401011,
+      13401021
     ]
   },
   "1340102": {
     "Id": 1340102,
     "QuestName": "LevelQuest.1340102.1",
     "LevelQuestTargetIds": [
-      13401021
+      13401031,
+      13401032
     ]
   },
   "1340103": {
     "Id": 1340103,
     "QuestName": "LevelQuest.1340103.1",
     "LevelQuestTargetIds": [
-      13401031,
-      13401032
+      13401041
     ]
   },
   "1340104": {
     "Id": 1340104,
     "QuestName": "LevelQuest.1340104.1",
     "LevelQuestTargetIds": [
-      13401041
+      13401051
     ]
   },
   "1340105": {
@@ -162,29 +163,30 @@
     "Id": 1340201,
     "QuestName": "LevelQuest.1340201.1",
     "LevelQuestTargetIds": [
-      13402011
+      13402011,
+      13402021
     ]
   },
   "1340202": {
     "Id": 1340202,
     "QuestName": "LevelQuest.1340202.1",
     "LevelQuestTargetIds": [
-      13402021
+      13402031,
+      13402032
     ]
   },
   "1340203": {
     "Id": 1340203,
     "QuestName": "LevelQuest.1340203.1",
     "LevelQuestTargetIds": [
-      13402031,
-      13402032
+      13402041
     ]
   },
   "1340204": {
     "Id": 1340204,
     "QuestName": "LevelQuest.1340204.1",
     "LevelQuestTargetIds": [
-      13402041
+      13402051
     ]
   },
   "1340205": {
@@ -198,58 +200,60 @@
     "Id": 1340301,
     "QuestName": "LevelQuest.1340301.1",
     "LevelQuestTargetIds": [
-      13403011
+      13403011,
+      13403021
     ]
   },
   "1340302": {
     "Id": 1340302,
     "QuestName": "LevelQuest.1340302.1",
     "LevelQuestTargetIds": [
-      13403021,
-      13403022
+      13403022,
+      13403031
     ]
   },
   "1340303": {
     "Id": 1340303,
     "QuestName": "LevelQuest.1340303.1",
     "LevelQuestTargetIds": [
-      13403031
+      13403041
     ]
   },
   "1340304": {
     "Id": 1340304,
     "QuestName": "LevelQuest.1340304.1",
     "LevelQuestTargetIds": [
-      13403041
+      13403051
     ]
   },
   "1340401": {
     "Id": 1340401,
     "QuestName": "LevelQuest.1340401.1",
     "LevelQuestTargetIds": [
-      13404011
+      13404011,
+      13404021
     ]
   },
   "1340402": {
     "Id": 1340402,
     "QuestName": "LevelQuest.1340402.1",
     "LevelQuestTargetIds": [
-      13404021,
-      13404022
+      13404022,
+      13404031
     ]
   },
   "1340403": {
     "Id": 1340403,
     "QuestName": "LevelQuest.1340403.1",
     "LevelQuestTargetIds": [
-      13404031
+      13404041
     ]
   },
   "1340404": {
     "Id": 1340404,
     "QuestName": "LevelQuest.1340404.1",
     "LevelQuestTargetIds": [
-      13404041
+      13404051
     ]
   },
   "1190101": {
@@ -606,6 +610,242 @@
     "QuestName": "LevelQuest.1250404.1",
     "LevelQuestTargetIds": [
       12504041
+    ]
+  },
+  "1490101": {
+    "Id": 1490101,
+    "QuestName": "LevelQuest.1490101.1",
+    "LevelQuestTargetIds": [
+      14901011,
+      14901022
+    ]
+  },
+  "1490102": {
+    "Id": 1490102,
+    "QuestName": "LevelQuest.1490102.1",
+    "LevelQuestTargetIds": [
+      14901031,
+      14901032
+    ]
+  },
+  "1490103": {
+    "Id": 1490103,
+    "QuestName": "LevelQuest.1490103.1",
+    "LevelQuestTargetIds": [
+      14901041
+    ]
+  },
+  "1490104": {
+    "Id": 1490104,
+    "QuestName": "LevelQuest.1490104.1",
+    "LevelQuestTargetIds": [
+      14901051
+    ]
+  },
+  "1490201": {
+    "Id": 1490201,
+    "QuestName": "LevelQuest.1490201.1",
+    "LevelQuestTargetIds": [
+      14902011,
+      14902022
+    ]
+  },
+  "1490202": {
+    "Id": 1490202,
+    "QuestName": "LevelQuest.1490202.1",
+    "LevelQuestTargetIds": [
+      14902031,
+      14902032
+    ]
+  },
+  "1490203": {
+    "Id": 1490203,
+    "QuestName": "LevelQuest.1490203.1",
+    "LevelQuestTargetIds": [
+      14902041
+    ]
+  },
+  "1490204": {
+    "Id": 1490204,
+    "QuestName": "LevelQuest.1490204.1",
+    "LevelQuestTargetIds": [
+      14902051
+    ]
+  },
+  "1490301": {
+    "Id": 1490301,
+    "QuestName": "LevelQuest.1490301.1",
+    "LevelQuestTargetIds": [
+      14903011,
+      14903021
+    ]
+  },
+  "1490302": {
+    "Id": 1490302,
+    "QuestName": "LevelQuest.1490302.1",
+    "LevelQuestTargetIds": [
+      14903022,
+      14903031
+    ]
+  },
+  "1490303": {
+    "Id": 1490303,
+    "QuestName": "LevelQuest.1490303.1",
+    "LevelQuestTargetIds": [
+      14903041
+    ]
+  },
+  "1490304": {
+    "Id": 1490304,
+    "QuestName": "LevelQuest.1490304.1",
+    "LevelQuestTargetIds": [
+      14903051
+    ]
+  },
+  "1490401": {
+    "Id": 1490401,
+    "QuestName": "LevelQuest.1490401.1",
+    "LevelQuestTargetIds": [
+      14904011,
+      14904021
+    ]
+  },
+  "1490402": {
+    "Id": 1490402,
+    "QuestName": "LevelQuest.1490402.1",
+    "LevelQuestTargetIds": [
+      14904022,
+      14904031
+    ]
+  },
+  "1490403": {
+    "Id": 1490403,
+    "QuestName": "LevelQuest.1490403.1",
+    "LevelQuestTargetIds": [
+      14904041
+    ]
+  },
+  "1490404": {
+    "Id": 1490404,
+    "QuestName": "LevelQuest.1490404.1",
+    "LevelQuestTargetIds": [
+      14904051
+    ]
+  },
+  "1330101": {
+    "Id": 1330101,
+    "QuestName": "LevelQuest.1330101.1",
+    "LevelQuestTargetIds": [
+      13301011
+    ]
+  },
+  "1330102": {
+    "Id": 1330102,
+    "QuestName": "LevelQuest.1330102.1",
+    "LevelQuestTargetIds": [
+      13301021,
+      13301022
+    ]
+  },
+  "1330103": {
+    "Id": 1330103,
+    "QuestName": "LevelQuest.1330103.1",
+    "LevelQuestTargetIds": [
+      13301031
+    ]
+  },
+  "1330104": {
+    "Id": 1330104,
+    "QuestName": "LevelQuest.1330104.1",
+    "LevelQuestTargetIds": [
+      13301041
+    ]
+  },
+  "1330201": {
+    "Id": 1330201,
+    "QuestName": "LevelQuest.1330201.1",
+    "LevelQuestTargetIds": [
+      13302011
+    ]
+  },
+  "1330202": {
+    "Id": 1330202,
+    "QuestName": "LevelQuest.1330202.1",
+    "LevelQuestTargetIds": [
+      13302021,
+      13302022
+    ]
+  },
+  "1330203": {
+    "Id": 1330203,
+    "QuestName": "LevelQuest.1330203.1",
+    "LevelQuestTargetIds": [
+      13302031
+    ]
+  },
+  "1330204": {
+    "Id": 1330204,
+    "QuestName": "LevelQuest.1330204.1",
+    "LevelQuestTargetIds": [
+      13302041
+    ]
+  },
+  "1330301": {
+    "Id": 1330301,
+    "QuestName": "LevelQuest.1330301.1",
+    "LevelQuestTargetIds": [
+      13303011
+    ]
+  },
+  "1330302": {
+    "Id": 1330302,
+    "QuestName": "LevelQuest.1330302.1",
+    "LevelQuestTargetIds": [
+      13303021,
+      13303022
+    ]
+  },
+  "1330303": {
+    "Id": 1330303,
+    "QuestName": "LevelQuest.1330303.1",
+    "LevelQuestTargetIds": [
+      13303031
+    ]
+  },
+  "1330304": {
+    "Id": 1330304,
+    "QuestName": "LevelQuest.1330304.1",
+    "LevelQuestTargetIds": [
+      13303041
+    ]
+  },
+  "1330401": {
+    "Id": 1330401,
+    "QuestName": "LevelQuest.1330401.1",
+    "LevelQuestTargetIds": [
+      13304011
+    ]
+  },
+  "1330402": {
+    "Id": 1330402,
+    "QuestName": "LevelQuest.1330402.1",
+    "LevelQuestTargetIds": [
+      13304021,
+      13304022
+    ]
+  },
+  "1330403": {
+    "Id": 1330403,
+    "QuestName": "LevelQuest.1330403.1",
+    "LevelQuestTargetIds": [
+      13304031
+    ]
+  },
+  "1330404": {
+    "Id": 1330404,
+    "QuestName": "LevelQuest.1330404.1",
+    "LevelQuestTargetIds": [
+      13304041
     ]
   },
   "1210101": {

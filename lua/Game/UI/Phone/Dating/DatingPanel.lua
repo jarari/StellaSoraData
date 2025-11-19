@@ -1,24 +1,32 @@
-local GameResourceLoader = require "Game.Common.Resource.GameResourceLoader"
+local GameResourceLoader = require("Game.Common.Resource.GameResourceLoader")
 local DatingPanel = class("DatingPanel", BasePanel)
 DatingPanel._tbDefine = {
-    {sPrefabPath = "Phone/DatingPanel.prefab", sCtrlName = "Game.UI.Phone.Dating.DatingCtrl"}
+{sPrefabPath = "Phone/DatingPanel.prefab", sCtrlName = "Game.UI.Phone.Dating.DatingCtrl"}
 }
--------------------- local function --------------------
+DatingPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function DatingPanel:Awake()
+DatingPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function DatingPanel:OnEnable()
+
+DatingPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function DatingPanel:OnAfterEnter()
+
+DatingPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function DatingPanel:OnDisable()
+
+DatingPanel.OnDestroy = function(self)
+  -- function num : 0_4 , upvalues : GameResourceLoader
+  (GameResourceLoader.Unload)("ImageAvg")
 end
-function DatingPanel:OnDestroy()
-    -- 卸载AVG资源
-    GameResourceLoader.Unload("ImageAvg")
+
+DatingPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function DatingPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return DatingPanel
+

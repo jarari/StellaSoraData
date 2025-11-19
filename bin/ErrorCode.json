@@ -119,6 +119,12 @@
     "Template": "ErrorCode.110110.1",
     "ShowType": 3
   },
+  "110111": {
+    "Id": 110111,
+    "Title": "ErrOperateTooFast",
+    "Template": "ErrorCode.110111.1",
+    "ShowType": 2
+  },
   "110201": {
     "Id": 110201,
     "Title": "ErrNickLenViolation",
@@ -958,6 +964,12 @@
     "Title": "ErrScoreBossNotOpen",
     "Template": "ErrorCode.112801.1",
     "ShowType": 2
+  },
+  "112901": {
+    "Id": 112901,
+    "Title": "ErrNickNameResetLimit",
+    "Template": "ErrorCode.112901.1",
+    "ShowType": 1
   },
   "119901": {
     "Id": 119901,

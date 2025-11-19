@@ -1,559 +1,564 @@
-local ConfigData = require "GameCore.Data.ConfigData"
+local ConfigData = require("GameCore.Data.ConfigData")
 local DiscData = class("DiscData")
-
----@diagnostic disable-next-line: duplicate-set-field
-function DiscData:ctor(mapDisc)
-    self.nId                     = nil -- 星盘Id
-
-    self.sName                   = nil -- 星盘名字
-    self.sDesc                   = nil -- 星盘描述
-    self.nRarity                 = nil -- 星盘品质
-    self.sIcon                   = nil -- 星盘Icon
-    self.bRead                   = nil -- 是否领取过故事奖励
-    self.bAvgRead                = nil -- 是否领取过Avg奖励
-    self.nCreateTime             = nil -- 星盘获取时间
-    self.nEET                    = nil -- 星盘元素
-    self.tbTag                   = nil -- 星盘标签
-
-    -- 等级相关
-    self.nLevel                  = nil -- 星盘等级(从1级开始)
-    self.nMaxLv                  = nil -- 最高等级(阶数决定)
-    self.nStrengthenGroupId      = nil -- 强化所需经验组索引
-    self.nAttrBaseGroupId        = nil -- 基础属性索引
-    self.nAttrExtraGroupId       = nil -- 额外属性索引
-    self.mapAttrBase             = nil -- 当前等级对应的属性（基础+额外）
-    self.mapAttrExtra            = nil -- 当前星数对应的额外属性
-
-    -- 经验相关
-    self.nExp                    = nil -- 当前经验(每级的累积经验值都从0开始)
-
-    -- 阶级相关
-    self.nPhase                  = nil -- 当前阶数(从0阶开始)
-    self.nMaxPhase               = nil -- 最高阶数(品质决定)
-    self.nPromoteGroupId         = nil -- 升阶所需材料组索引
-    self.nPromoteGoldReq         = nil -- 升至下一阶所需消耗的金币数量
-    self.tbPromoteItemInfoReq    = nil -- 升至下一阶所需材料的列表(ItemId, ItemCount)
-    self.bUnlockL2D              = nil -- 升阶后解锁l2d
-
-    -- 星级相关
-    self.nStar                   = nil -- 当前星数(突破次数,从0星开始)
-    self.nMaxStar                = nil -- 最高星级(材料组决定)
-    self.nTransformItemId        = nil -- 同卡转换id(突破也用这个)
-    self.mapMaxStarTransformItem = nil -- 满星时转换id(突破也用这个)
-
-    -- 技能相关
-    self.nMainSkillGroupId       = nil -- 星盘主技能组Id
-    self.nMainSkillId            = nil -- 星盘主技能Id
-    self.tbSubSkillGroupId       = nil -- 星盘副技能组Id
-    self.sSkillScript            = nil -- 星盘技能脚本
-
-    -- 音符相关
-    self.tbSubNoteSkills         = nil -- 初始属性音符
-    self.tbSkillNeedNote         = nil -- 激活技能所需音符
-    self.nSubNoteSkillGroupId    = nil -- 星盘属性音符组
-    self.nSubNoteSkillId         = nil -- 星盘属性音符id
-    self.tbShowNote              = nil -- 星盘携带音符
-
-    -- 音乐和故事相关
-    self.mapReadReward           = nil -- 阅读奖励
-    self.mapAvgReward            = nil -- 阅读奖励
-
-    self:Parse(mapDisc)
+DiscData.ctor = function(self, mapDisc)
+  -- function num : 0_0
+  self.nId = nil
+  self.sName = nil
+  self.sDesc = nil
+  self.nRarity = nil
+  self.sIcon = nil
+  self.bRead = nil
+  self.bAvgRead = nil
+  self.nCreateTime = nil
+  self.nEET = nil
+  self.tbTag = nil
+  self.nLevel = nil
+  self.nMaxLv = nil
+  self.nStrengthenGroupId = nil
+  self.nAttrBaseGroupId = nil
+  self.nAttrExtraGroupId = nil
+  self.mapAttrBase = nil
+  self.mapAttrExtra = nil
+  self.nExp = nil
+  self.nPhase = nil
+  self.nMaxPhase = nil
+  self.nPromoteGroupId = nil
+  self.nPromoteGoldReq = nil
+  self.tbPromoteItemInfoReq = nil
+  self.bUnlockL2D = nil
+  self.nStar = nil
+  self.nMaxStar = nil
+  self.nTransformItemId = nil
+  self.mapMaxStarTransformItem = nil
+  self.nMainSkillGroupId = nil
+  self.nMainSkillId = nil
+  self.tbSubSkillGroupId = nil
+  self.sSkillScript = nil
+  self.tbSubNoteSkills = nil
+  self.tbSkillNeedNote = nil
+  self.nSubNoteSkillGroupId = nil
+  self.nSubNoteSkillId = nil
+  self.tbShowNote = nil
+  self.mapReadReward = nil
+  self.mapAvgReward = nil
+  self:Parse(mapDisc)
 end
 
-function DiscData:Parse(mapDisc)
-    self.nId = mapDisc.Id
-
-    local mapItemCfgData = ConfigTable.GetData_Item(mapDisc.Id)
-    if not mapItemCfgData then
-        printError("星盘Id有误, 道具表中未找到数据, Id: " .. tostring(mapDisc.Id))
-        return
-    end
-
-    local mapDiscCfgData = ConfigTable.GetData("Disc", mapDisc.Id)
-    if mapDiscCfgData == nil then
-        printError("星盘Id有误, 未找到配置表数据, Id: " .. tostring(mapDisc.Id))
-        return
-    end
-    self:ParseConfigData(mapItemCfgData, mapDiscCfgData)
-    self:ParseServerData(mapDisc)
+DiscData.Parse = function(self, mapDisc)
+  -- function num : 0_1 , upvalues : _ENV
+  self.nId = mapDisc.Id
+  local mapItemCfgData = (ConfigTable.GetData_Item)(mapDisc.Id)
+  if not mapItemCfgData then
+    printError("星盘Id有误, 道具表中未找到数据, Id: " .. tostring(mapDisc.Id))
+    return 
+  end
+  local mapDiscCfgData = (ConfigTable.GetData)("Disc", mapDisc.Id)
+  if mapDiscCfgData == nil then
+    printError("星盘Id有误, 未找到配置表数据, Id: " .. tostring(mapDisc.Id))
+    return 
+  end
+  self:ParseConfigData(mapItemCfgData, mapDiscCfgData)
+  self:ParseServerData(mapDisc)
 end
 
--- 解析配表数据
-function DiscData:ParseConfigData(mapItemCfgData, mapDiscCfgData)
-    self.sName = mapItemCfgData.Title
-    self.sDesc = mapItemCfgData.Desc
-    self.nRarity = mapItemCfgData.Rarity
-    self.sIcon = mapItemCfgData.Icon
-    self.nEET = mapDiscCfgData.EET
-    self.tbTag = mapDiscCfgData.Tags
-
-    -- 等级相关
-    self.nStrengthenGroupId = mapDiscCfgData.StrengthenGroupId
-    self.nAttrBaseGroupId = mapDiscCfgData.AttrBaseGroupId
-    self.nAttrExtraGroupId = mapDiscCfgData.AttrExtraGroupId
-
-    -- 阶级相关
-    self.nPromoteGroupId = mapDiscCfgData.PromoteGroupId
-    self:ParseMaxPhase()
-
-    -- 星级相关
-    self.nTransformItemId = mapDiscCfgData.TransformItemId
-    self.mapMaxStarTransformItem = mapDiscCfgData.MaxStarTransformItem
-    self.nMaxStar = PlayerData.Disc:GetDiscMaxStar(self.nRarity)
-
-    -- 技能相关
-    self.nMainSkillGroupId = mapDiscCfgData.MainSkillGroupId
-    self.tbSubSkillGroupId = {}
-    if mapDiscCfgData.SecondarySkillGroupId1 > 0 then
-        table.insert(self.tbSubSkillGroupId, mapDiscCfgData.SecondarySkillGroupId1)
-    end
-    if mapDiscCfgData.SecondarySkillGroupId2 > 0 then
-        table.insert(self.tbSubSkillGroupId, mapDiscCfgData.SecondarySkillGroupId2)
-    end
-    self.sSkillScript = mapDiscCfgData.SkillScript
-
-    -- 音符相关
-    self.nSubNoteSkillGroupId = mapDiscCfgData.SubNoteSkillGroupId
-    self.tbSkillNeedNote = {}
-    local mapNote = {}
-    for _, nSkillGroupId in ipairs(self.tbSubSkillGroupId) do
-        local tbGroup = CacheTable.GetData("_SecondarySkill", nSkillGroupId)
-        if tbGroup and tbGroup[1] then -- 展示只展示第一级的
-            local tbActiveNote = decodeJson(tbGroup[1].NeedSubNoteSkills)
-            if tbActiveNote ~= nil then
-                for k, v in pairs(tbActiveNote) do
-                    local nNoteId = tonumber(k)
-                    local nNoteCount = tonumber(v)
-                    if nNoteId ~= nil and nNoteCount ~= nil then
-                        if  mapNote[nNoteId] == nil then
-                            mapNote[nNoteId] = 0
-                        end
-                        mapNote[nNoteId] = nNoteCount > mapNote[nNoteId] and nNoteCount or mapNote[nNoteId]
-                    end
-                end
+DiscData.ParseConfigData = function(self, mapItemCfgData, mapDiscCfgData)
+  -- function num : 0_2 , upvalues : _ENV
+  self.sName = mapItemCfgData.Title
+  self.sDesc = mapItemCfgData.Desc
+  self.nRarity = mapItemCfgData.Rarity
+  self.sIcon = mapItemCfgData.Icon
+  self.nEET = mapDiscCfgData.EET
+  self.tbTag = mapDiscCfgData.Tags
+  self.nStrengthenGroupId = mapDiscCfgData.StrengthenGroupId
+  self.nAttrBaseGroupId = mapDiscCfgData.AttrBaseGroupId
+  self.nAttrExtraGroupId = mapDiscCfgData.AttrExtraGroupId
+  self.nPromoteGroupId = mapDiscCfgData.PromoteGroupId
+  self:ParseMaxPhase()
+  self.nTransformItemId = mapDiscCfgData.TransformItemId
+  self.mapMaxStarTransformItem = mapDiscCfgData.MaxStarTransformItem
+  self.nMaxStar = (PlayerData.Disc):GetDiscMaxStar(self.nRarity)
+  self.nMainSkillGroupId = mapDiscCfgData.MainSkillGroupId
+  self.tbSubSkillGroupId = {}
+  if mapDiscCfgData.SecondarySkillGroupId1 > 0 then
+    (table.insert)(self.tbSubSkillGroupId, mapDiscCfgData.SecondarySkillGroupId1)
+  end
+  if mapDiscCfgData.SecondarySkillGroupId2 > 0 then
+    (table.insert)(self.tbSubSkillGroupId, mapDiscCfgData.SecondarySkillGroupId2)
+  end
+  self.sSkillScript = mapDiscCfgData.SkillScript
+  self.nSubNoteSkillGroupId = mapDiscCfgData.SubNoteSkillGroupId
+  self.tbSkillNeedNote = {}
+  local mapNote = {}
+  for _,nSkillGroupId in ipairs(self.tbSubSkillGroupId) do
+    local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSkillGroupId)
+    if tbGroup and tbGroup[1] then
+      local tbActiveNote = decodeJson((tbGroup[1]).NeedSubNoteSkills)
+      if tbActiveNote ~= nil then
+        for k,v in pairs(tbActiveNote) do
+          local nNoteId = tonumber(k)
+          local nNoteCount = tonumber(v)
+          if nNoteId ~= nil and nNoteCount ~= nil then
+            if mapNote[nNoteId] == nil then
+              mapNote[nNoteId] = 0
             end
-        end
+            if mapNote[nNoteId] >= nNoteCount or not nNoteCount then
+              do
+                mapNote[nNoteId] = mapNote[nNoteId]
+                -- DECOMPILER ERROR at PC104: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-    end
-    for nNoteId, nCount in pairs(mapNote) do
-        table.insert(self.tbSkillNeedNote,{nId = nNoteId, nCount = nCount})
-    end
+                -- DECOMPILER ERROR at PC104: LeaveBlock: unexpected jumping out IF_STMT
 
-    -- ip相关
-    self.mapReadReward = { nId = mapDiscCfgData.ReadReward[1], nCount = mapDiscCfgData.ReadReward[2] }
-    self.mapAvgReward = { nId = mapDiscCfgData.AVGReadReward[1], nCount = mapDiscCfgData.AVGReadReward[2] }
-end
+                -- DECOMPILER ERROR at PC104: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
--- 根据品质获取最高阶级
-function DiscData:ParseMaxPhase()
-    self.nMaxPhase = self.nMaxPhase or 0
-    local function foreachDiscPromoteLimit(mapData)
-        if mapData.Rarity == self.nRarity then
-            if tonumber(mapData.Phase) > self.nMaxPhase then
-                self.nMaxPhase = tonumber(mapData.Phase)
+                -- DECOMPILER ERROR at PC104: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
             end
+          end
         end
+      end
     end
-    ForEachTableLine(DataTable.DiscPromoteLimit, foreachDiscPromoteLimit)
+  end
+  for nNoteId,nCount in pairs(mapNote) do
+    (table.insert)(self.tbSkillNeedNote, {nId = nNoteId, nCount = nCount})
+  end
+  self.mapReadReward = {nId = (mapDiscCfgData.ReadReward)[1], nCount = (mapDiscCfgData.ReadReward)[2]}
+  self.mapAvgReward = {nId = (mapDiscCfgData.AVGReadReward)[1], nCount = (mapDiscCfgData.AVGReadReward)[2]}
 end
 
--- 解析服务器数据
-function DiscData:ParseServerData(mapDisc)
-    if not mapDisc then
-        printError("DiscData ParseServerData Failed")
-        return
+DiscData.ParseMaxPhase = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  self.nMaxPhase = self.nMaxPhase or 0
+  local foreachDiscPromoteLimit = function(mapData)
+    -- function num : 0_3_0 , upvalues : self, _ENV
+    if mapData.Rarity == self.nRarity and self.nMaxPhase < tonumber(mapData.Phase) then
+      self.nMaxPhase = tonumber(mapData.Phase)
     end
-    local bPhaseChange, bStarChange = false, false
-    if mapDisc.Phase ~= nil then
-        bPhaseChange = self.nPhase ~= mapDisc.Phase
-    end
-    if mapDisc.Star ~= nil then
-        bStarChange = self.nStar ~= mapDisc.Star
-    end
+  end
 
-    if mapDisc.Exp ~= nil then
+  ForEachTableLine(DataTable.DiscPromoteLimit, foreachDiscPromoteLimit)
+end
+
+DiscData.ParseServerData = function(self, mapDisc)
+  -- function num : 0_4 , upvalues : _ENV
+  if not mapDisc then
+    printError("DiscData ParseServerData Failed")
+    return 
+  end
+  local bPhaseChange, bStarChange = false, false
+  if self.nPhase == mapDisc.Phase then
+    bPhaseChange = mapDisc.Phase == nil
+    if self.nStar == mapDisc.Star then
+      bStarChange = mapDisc.Star == nil
+      if mapDisc.Exp ~= nil then
         self.nExp = mapDisc.Exp
-    end
-    if mapDisc.Level ~= nil then
+      end
+      if mapDisc.Level ~= nil then
         self.nLevel = mapDisc.Level
-    end
-    if mapDisc.Phase ~= nil then
+      end
+      if mapDisc.Phase ~= nil then
         self.nPhase = mapDisc.Phase
-    end
-    if mapDisc.Star ~= nil then
+      end
+      if mapDisc.Star ~= nil then
         self.nStar = mapDisc.Star
-    end
-    if mapDisc.Read ~= nil then
+      end
+      if mapDisc.Read ~= nil then
         self.bRead = mapDisc.Read
-    end
-    if mapDisc.Avg ~= nil then
+      end
+      if mapDisc.Avg ~= nil then
         self.bAvgRead = mapDisc.Avg
-    end
-    if mapDisc.CreateTime ~= nil then
+      end
+      if mapDisc.CreateTime ~= nil then
         self.nCreateTime = mapDisc.CreateTime
-    end
-
-    self:UpdateMaxLv()
-    self:UpdateAttr()
-    if bPhaseChange then
+      end
+      self:UpdateMaxLv()
+      self:UpdateAttr()
+      if bPhaseChange then
         self:UpdatePromoteGoldCountReq()
         self:UpdatePromoteItemInfoReq()
         self:UpdateNoteData()
         self:UpdateUnlockData()
-    end
-    if bStarChange then
+      end
+      if bStarChange then
         self:UpdateMainSkillData()
+      end
+      -- DECOMPILER ERROR: 13 unprocessed JMP targets
     end
+  end
 end
 
--- 更新最高等级(根据品质和阶级)
-function DiscData:UpdateMaxLv()
-    self.nMaxLv = self.nMaxLv or 1
-    local function foreachDiscPromoteLimit(mapData)
-        if mapData.Rarity == self.nRarity and tonumber(mapData.Phase) == self.nPhase then
-            if tonumber(mapData.Phase) == self.nPhase then
-                self.nMaxLv = tonumber(mapData.MaxLevel)
-            end
-        end
+DiscData.UpdateMaxLv = function(self)
+  -- function num : 0_5 , upvalues : _ENV
+  self.nMaxLv = self.nMaxLv or 1
+  local foreachDiscPromoteLimit = function(mapData)
+    -- function num : 0_5_0 , upvalues : self, _ENV
+    if mapData.Rarity == self.nRarity and tonumber(mapData.Phase) == self.nPhase and tonumber(mapData.Phase) == self.nPhase then
+      self.nMaxLv = tonumber(mapData.MaxLevel)
     end
-    ForEachTableLine(DataTable.DiscPromoteLimit, foreachDiscPromoteLimit)
+  end
+
+  ForEachTableLine(DataTable.DiscPromoteLimit, foreachDiscPromoteLimit)
 end
 
--- 更新当前等级对应的属性
-function DiscData:UpdateAttr()
-    self.mapAttrBase, self.mapAttrExtra = {}, {}
+DiscData.UpdateAttr = function(self)
+  -- function num : 0_6 , upvalues : _ENV, ConfigData
+  self.mapAttrExtra = {}
+  self.mapAttrBase = {}
+  for _,v in ipairs(AllEnum.AttachAttr) do
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R6 in 'UnsetPending'
 
-    for _, v in ipairs(AllEnum.AttachAttr) do
-        self.mapAttrExtra[v.sKey] = {
-            Key = v.sKey,
-            Value = 0,
-            CfgValue = 0
-        }
+    (self.mapAttrExtra)[v.sKey] = {Key = v.sKey, Value = 0, CfgValue = 0}
+  end
+  if self.nStar > 0 and self.nAttrExtraGroupId > 0 then
+    local nExtraId = (UTILS.GetDiscExtraAttributeId)(self.nAttrExtraGroupId, self.nStar)
+    local mapExtra = (ConfigTable.GetData)("DiscExtraAttribute", tostring(nExtraId))
+    if mapExtra and type(mapExtra) == "table" then
+      for _,v in ipairs(AllEnum.AttachAttr) do
+        local nParamValue = mapExtra[v.sKey] or 0
+        -- DECOMPILER ERROR at PC75: Confused about usage of register: R9 in 'UnsetPending'
+
+        ;
+        (self.mapAttrExtra)[v.sKey] = {Key = v.sKey, Value = v.bPercent and nParamValue * ConfigData.IntFloatPrecision * 100 or nParamValue, CfgValue = mapExtra[v.sKey] or 0}
+      end
     end
-
-    if self.nStar > 0 and self.nAttrExtraGroupId > 0 then
-        local nExtraId = UTILS.GetDiscExtraAttributeId(self.nAttrExtraGroupId, self.nStar)
-        local mapExtra = ConfigTable.GetData("DiscExtraAttribute", tostring(nExtraId))
-        if mapExtra and type(mapExtra) == "table" then
-            for _, v in ipairs(AllEnum.AttachAttr) do
-                local nParamValue = mapExtra[v.sKey] or 0
-                self.mapAttrExtra[v.sKey] = {
-                    Key = v.sKey,
-                    Value = v.bPercent and nParamValue * ConfigData.IntFloatPrecision * 100 or nParamValue,
-                    CfgValue = mapExtra[v.sKey] or 0
-                }
-            end
-        end
-    end
-
-    local nAttrBaseId = UTILS.GetDiscAttributeId(self.nAttrBaseGroupId, self.nPhase, self.nLevel)
-    local mapAttribute = ConfigTable.GetData_Attribute(tostring(nAttrBaseId))
+  end
+  do
+    local nAttrBaseId = (UTILS.GetDiscAttributeId)(self.nAttrBaseGroupId, self.nPhase, self.nLevel)
+    local mapAttribute = (ConfigTable.GetData_Attribute)(tostring(nAttrBaseId))
     if type(mapAttribute) == "table" then
-        for _, v in ipairs(AllEnum.AttachAttr) do
-            local nParamValue = mapAttribute[v.sKey] or 0
-            local nValue = v.bPercent and nParamValue * ConfigData.IntFloatPrecision * 100 or nParamValue
-            self.mapAttrBase[v.sKey] = {
-                Key = v.sKey,
-                Value = nValue + self.mapAttrExtra[v.sKey].Value,
-                CfgValue = nParamValue + self.mapAttrExtra[v.sKey].CfgValue,
-            }
-        end
+      for _,v in ipairs(AllEnum.AttachAttr) do
+        local nParamValue = mapAttribute[v.sKey] or 0
+        local nValue = v.bPercent and nParamValue * ConfigData.IntFloatPrecision * 100 or nParamValue
+        -- DECOMPILER ERROR at PC131: Confused about usage of register: R10 in 'UnsetPending'
+
+        ;
+        (self.mapAttrBase)[v.sKey] = {Key = v.sKey, Value = nValue + ((self.mapAttrExtra)[v.sKey]).Value, CfgValue = nParamValue + ((self.mapAttrExtra)[v.sKey]).CfgValue}
+      end
     else
+      do
         printError("星盘属性配置错误：" .. nAttrBaseId)
-        for _, v in ipairs(AllEnum.AttachAttr) do
-            self.mapAttrBase[v.sKey] = {
-                Key = v.sKey,
-                Value = 0,
-                CfgValue = 0
-            }
+        for _,v in ipairs(AllEnum.AttachAttr) do
+          -- DECOMPILER ERROR at PC152: Confused about usage of register: R8 in 'UnsetPending'
+
+          (self.mapAttrBase)[v.sKey] = {Key = v.sKey, Value = 0, CfgValue = 0}
         end
+      end
     end
+  end
 end
 
--- 更新升至下一阶所需消耗的金币数量
-function DiscData:UpdatePromoteGoldCountReq()
-    if self.nMaxPhase == self.nPhase then
-        self.nPromoteGoldReq = 0
-        return
-    end
-    if self.nPromoteGroupId == 0 then
-        printError("无星盘进阶组" .. self.nId)
-        self.nPromoteGoldReq = 0
-        return
-    end
-    local nDiscPromoteId = self.nPromoteGroupId * 1000 + (self.nPhase + 1)
-    local mapCfgData = ConfigTable.GetData("DiscPromote", nDiscPromoteId)
+DiscData.UpdatePromoteGoldCountReq = function(self)
+  -- function num : 0_7 , upvalues : _ENV
+  if self.nMaxPhase == self.nPhase then
     self.nPromoteGoldReq = 0
-    if type(mapCfgData) == "table" then
-        self.nPromoteGoldReq = mapCfgData.ExpenseGold
-    end
+    return 
+  end
+  if self.nPromoteGroupId == 0 then
+    printError("无星盘进阶组" .. self.nId)
+    self.nPromoteGoldReq = 0
+    return 
+  end
+  local nDiscPromoteId = self.nPromoteGroupId * 1000 + (self.nPhase + 1)
+  local mapCfgData = (ConfigTable.GetData)("DiscPromote", nDiscPromoteId)
+  self.nPromoteGoldReq = 0
+  if type(mapCfgData) == "table" then
+    self.nPromoteGoldReq = mapCfgData.ExpenseGold
+  end
 end
 
--- 更新升至下一阶所需消耗道具列表
-function DiscData:UpdatePromoteItemInfoReq()
-    if self.nMaxPhase == self.nPhase then
-        self.tbPromoteItemInfoReq = {}
-        return
-    end
+DiscData.UpdatePromoteItemInfoReq = function(self)
+  -- function num : 0_8 , upvalues : _ENV
+  if self.nMaxPhase == self.nPhase then
+    self.tbPromoteItemInfoReq = {}
+    return 
+  end
+  if not self.tbPromoteItemInfoReq then
+    self.tbPromoteItemInfoReq = {}
+  end
+  for index,_ in pairs(self.tbPromoteItemInfoReq) do
+    -- DECOMPILER ERROR at PC17: Confused about usage of register: R6 in 'UnsetPending'
 
-    if not self.tbPromoteItemInfoReq then
-        self.tbPromoteItemInfoReq = {}
+    (self.tbPromoteItemInfoReq)[index] = nil
+  end
+  if self.nPromoteGroupId == 0 then
+    printError("无星盘进阶组" .. self.nId)
+    return 
+  end
+  local nDiscPromoteId = self.nPromoteGroupId * 1000 + (self.nPhase + 1)
+  local mapCfgData = (ConfigTable.GetData)("DiscPromote", nDiscPromoteId)
+  if type(mapCfgData) == "table" then
+    for i = 1, 4 do
+      local item = {}
+      local nItemId = mapCfgData[(string.format)("ItemId%d", i)]
+      local nItemNum = mapCfgData[(string.format)("Num%d", i)]
+      if type(nItemId) == "number" and type(nItemNum) == "number" and nItemId > 0 and nItemNum > 0 then
+        item.nItemId = nItemId
+        item.nItemNum = nItemNum
+        ;
+        (table.insert)(self.tbPromoteItemInfoReq, item)
+      end
     end
-
-    for index, _ in pairs(self.tbPromoteItemInfoReq) do
-        self.tbPromoteItemInfoReq[index] = nil
-    end
-
-    if self.nPromoteGroupId == 0 then
-        printError("无星盘进阶组" .. self.nId)
-        return
-    end
-    local nDiscPromoteId = self.nPromoteGroupId * 1000 + (self.nPhase + 1)
-    local mapCfgData = ConfigTable.GetData("DiscPromote", nDiscPromoteId)
-    if type(mapCfgData) == "table" then
-        for i = 1, 4 do
-            local item = {}
-            local nItemId = mapCfgData[string.format("ItemId%d", i)]
-            local nItemNum = mapCfgData[string.format("Num%d", i)]
-            if type(nItemId) == "number" and type(nItemNum) == "number" then
-                if nItemId > 0 and nItemNum > 0 then
-                    item.nItemId = nItemId
-                    item.nItemNum = nItemNum
-                    table.insert(self.tbPromoteItemInfoReq, item)
-                end
-            end
-        end
-    end
+  end
 end
 
--- 更新技能数据
-function DiscData:UpdateMainSkillData()
-    if self.nMainSkillGroupId <= 0 then
-        return
+DiscData.UpdateMainSkillData = function(self)
+  -- function num : 0_9 , upvalues : _ENV
+  if self.nMainSkillGroupId <= 0 then
+    return 
+  end
+  local mapGroup = (CacheTable.GetData)("_MainSkill", self.nMainSkillGroupId)
+  if mapGroup then
+    local mapCfg = mapGroup[self.nStar + 1]
+    if not mapCfg then
+      printError("MainSkill缺失配置,GroupId:" .. self.nMainSkillGroupId .. " Level:" .. self.nStar + 1)
+      return 
     end
-    local mapGroup = CacheTable.GetData("_MainSkill", self.nMainSkillGroupId)
-    if mapGroup then
-        local mapCfg = mapGroup[self.nStar + 1]
-        if not mapCfg then
-            printError("MainSkill缺失配置,GroupId:" .. self.nMainSkillGroupId .. " Level:" .. self.nStar + 1)
-            return
-        end
-        self.nMainSkillId = mapCfg.Id
-    end
+    self.nMainSkillId = mapCfg.Id
+  end
 end
 
--- 更新音符数据
-function DiscData:UpdateNoteData()
-    self.tbSubNoteSkills = {}
-    self.tbShowNote = {}
-
-    if self.nSubNoteSkillGroupId <= 0 then
-        return
-    end
-    local mapGroup = CacheTable.GetData("_SubNoteSkillPromoteGroup", self.nSubNoteSkillGroupId)
-    if not mapGroup then
-        return
-    end
-
-    local nCurPhase = self.nPhase
-    local mapCfg = nil
-    while type(nCurPhase) == "number" and nCurPhase >= 0 do
+DiscData.UpdateNoteData = function(self)
+  -- function num : 0_10 , upvalues : _ENV
+  self.tbSubNoteSkills = {}
+  self.tbShowNote = {}
+  if self.nSubNoteSkillGroupId <= 0 then
+    return 
+  end
+  local mapGroup = (CacheTable.GetData)("_SubNoteSkillPromoteGroup", self.nSubNoteSkillGroupId)
+  if not mapGroup then
+    return 
+  end
+  local nCurPhase = self.nPhase
+  local mapCfg = nil
+  while 1 do
+    while 1 do
+      if type(nCurPhase) == "number" and nCurPhase >= 0 then
         mapCfg = mapGroup[nCurPhase]
         if mapCfg then
-            self.nSubNoteSkillId = mapCfg.Id
-            break
-        else
-            nCurPhase = nCurPhase - 1
-        end
-    end
-    if not mapCfg then
-        return
-    end
+          self.nSubNoteSkillId = mapCfg.Id
+          -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-    local tbNote = decodeJson(mapCfg.SubNoteSkills)
-    for k, v in pairs(tbNote) do
-        local nNoteId = tonumber(k)
-        local nNoteCount = tonumber(v)
-        if nNoteId then
-            table.insert(self.tbSubNoteSkills, {nId = nNoteId, nCount = nNoteCount})
-            table.insert(self.tbShowNote, nNoteId)
+          -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+          -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
         end
+      end
     end
+    nCurPhase = nCurPhase - 1
+  end
+  if not mapCfg then
+    return 
+  end
+  local tbNote = decodeJson(mapCfg.SubNoteSkills)
+  for k,v in pairs(tbNote) do
+    local nNoteId = tonumber(k)
+    local nNoteCount = tonumber(v)
+    if nNoteId then
+      (table.insert)(self.tbSubNoteSkills, {nId = nNoteId, nCount = nNoteCount})
+      ;
+      (table.insert)(self.tbShowNote, nNoteId)
+    end
+  end
 end
 
--- 更新解锁数据
-function DiscData:UpdateUnlockData()
-    self.bUnlockL2D = false
-    if self.nRarity == GameEnum.itemRarity.SSR then
-        --解锁l2d
-        local nLimit = ConfigTable.GetConfigNumber("DiscL2dUnlock")
-        if nLimit <= self.nPhase then
-            self.bUnlockL2D = true
-        end
+DiscData.UpdateUnlockData = function(self)
+  -- function num : 0_11 , upvalues : _ENV
+  self.bUnlockL2D = false
+  if self.nRarity == (GameEnum.itemRarity).SSR then
+    local nLimit = (ConfigTable.GetConfigNumber)("DiscL2dUnlock")
+    if nLimit <= self.nPhase then
+      self.bUnlockL2D = true
     end
+  end
 end
 
-function DiscData:CheckSubSkillActive(tbNote, mapCfg)
-    local tbActiveNote = decodeJson(mapCfg.NeedSubNoteSkills)
-    local tbNoteAble = {}
-    for k, v in pairs(tbActiveNote) do
-        local nNoteId = tonumber(k)
-        local nNoteCount = tonumber(v)
-        if nNoteId then
-            tbNoteAble[nNoteId] = false
-            local nHas = tbNote[nNoteId]
-            if nHas and nHas >= nNoteCount then
-                tbNoteAble[nNoteId] = true
-            end
-        end
+DiscData.CheckSubSkillActive = function(self, tbNote, mapCfg)
+  -- function num : 0_12 , upvalues : _ENV
+  local tbActiveNote = decodeJson(mapCfg.NeedSubNoteSkills)
+  local tbNoteAble = {}
+  for k,v in pairs(tbActiveNote) do
+    local nNoteId = tonumber(k)
+    local nNoteCount = tonumber(v)
+    if nNoteId then
+      tbNoteAble[nNoteId] = false
+      local nHas = tbNote[nNoteId]
+      if nHas and nNoteCount <= nHas then
+        tbNoteAble[nNoteId] = true
+      end
     end
-    local bActive = true
-    for _, v in pairs(tbNoteAble) do
-        if v == false then
-            bActive = false
-            break
-        end
+  end
+  local bActive = true
+  for _,v in pairs(tbNoteAble) do
+    if v == false then
+      bActive = false
+      break
     end
+  end
+  do
     if bActive and next(tbNoteAble) ~= nil then
-        return true
+      return true
     end
     return false
+  end
 end
 
-function DiscData:GetAllSubSkill(tbNote)
-    local tbSkill = {}
-    for _, nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
-        local tbGroup = CacheTable.GetData("_SecondarySkill", nSubSkillGroupId)
-        if tbGroup then
-            local nCurLayer = 1
-            local nMaxLayer = #tbGroup
-            for i = nMaxLayer, 1, -1 do
-                if tbGroup[i] then
-                    local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
-                    if bActive then
-                        nCurLayer = i
-                        break
-                    end
-                end
-            end
-            if tbGroup[nCurLayer] then
-                table.insert(tbSkill, tbGroup[nCurLayer].Id)
-            end
-        end
-    end
-    return tbSkill
-end
-
-function DiscData:GetSubSkillMaxLevel(nSubSkillGroupId)
-    local tbGroup = CacheTable.GetData("_SecondarySkill", nSubSkillGroupId)
-    if not tbGroup then
-        return 0
-    end
-
-    local nMaxLayer = #tbGroup
-    return nMaxLayer
-end
-
-function DiscData:GetSubSkillLevel(nSubSkillGroupId, tbNote)
-    local tbGroup = CacheTable.GetData("_SecondarySkill", nSubSkillGroupId)
-    if not tbGroup then
-        return 0, 0
-    end
-
-    local nCurLayer = 0
-    local nMaxLayer = #tbGroup
-    for i = nMaxLayer, 1, -1 do
+DiscData.GetAllSubSkill = function(self, tbNote)
+  -- function num : 0_13 , upvalues : _ENV
+  local tbSkill = {}
+  for _,nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
+    local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSubSkillGroupId)
+    if tbGroup then
+      local nCurLayer = 1
+      local nMaxLayer = #tbGroup
+      for i = nMaxLayer, 1, -1 do
         if tbGroup[i] then
-            local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
-            if bActive then
-                nCurLayer = i
-                break
-            end
+          local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
+          if bActive then
+            nCurLayer = i
+            break
+          end
         end
+      end
+      do
+        do
+          if tbGroup[nCurLayer] then
+            (table.insert)(tbSkill, (tbGroup[nCurLayer]).Id)
+          end
+          -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
     end
+  end
+  return tbSkill
+end
+
+DiscData.GetSubSkillMaxLevel = function(self, nSubSkillGroupId)
+  -- function num : 0_14 , upvalues : _ENV
+  local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSubSkillGroupId)
+  if not tbGroup then
+    return 0
+  end
+  local nMaxLayer = #tbGroup
+  return nMaxLayer
+end
+
+DiscData.GetSubSkillLevel = function(self, nSubSkillGroupId, tbNote)
+  -- function num : 0_15 , upvalues : _ENV
+  local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSubSkillGroupId)
+  if not tbGroup then
+    return 0, 0
+  end
+  local nCurLayer = 0
+  local nMaxLayer = #tbGroup
+  for i = nMaxLayer, 1, -1 do
+    if tbGroup[i] then
+      local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
+      if bActive then
+        nCurLayer = i
+        break
+      end
+    end
+  end
+  do
     return nCurLayer, nMaxLayer
+  end
 end
 
-function DiscData:GetSkillEffect(tbNote)
-    local tbEffectId = {}
-
-    local function add(tbEfId)
-        if not tbEfId then
-            return
-        end
-
-        for _, nEfId in pairs(tbEfId) do
-            if type(nEfId) == "number" and nEfId > 0 then
-                table.insert(tbEffectId, { nEfId, 0 })
-            end
-        end
+DiscData.GetSkillEffect = function(self, tbNote)
+  -- function num : 0_16 , upvalues : _ENV
+  local tbEffectId = {}
+  local add = function(tbEfId)
+    -- function num : 0_16_0 , upvalues : _ENV, tbEffectId
+    if not tbEfId then
+      return 
     end
-
-    local mapMainCfg = ConfigTable.GetData("MainSkill", self.nMainSkillId)
-    if mapMainCfg then
-        add(mapMainCfg.EffectId)
+    for _,nEfId in pairs(tbEfId) do
+      if type(nEfId) == "number" and nEfId > 0 then
+        (table.insert)(tbEffectId, {nEfId, 0})
+      end
     end
+  end
 
-    for _, nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
-        local tbGroup = CacheTable.GetData("_SecondarySkill", nSubSkillGroupId)
-        if tbGroup then
-            local nMaxLayer = #tbGroup
-            for i = nMaxLayer, 1, -1 do
-                if tbGroup[i] then
-                    local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
-                    if bActive then
-                        add(tbGroup[i].EffectId)
-                        break
-                    end
-                end
-            end
+  local mapMainCfg = (ConfigTable.GetData)("MainSkill", self.nMainSkillId)
+  if mapMainCfg then
+    add(mapMainCfg.EffectId)
+  end
+  for _,nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
+    local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSubSkillGroupId)
+    if tbGroup then
+      local nMaxLayer = #tbGroup
+      for i = nMaxLayer, 1, -1 do
+        if tbGroup[i] then
+          local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
+          if bActive then
+            add((tbGroup[i]).EffectId)
+            break
+          end
         end
+      end
     end
-
-    return tbEffectId
+  end
+  return tbEffectId
 end
 
-function DiscData:GetDiscInfo(tbNote)
-    local tbSkillInfo = {}
-
-    local skillInfoMain = CS.Lua2CSharpInfo_DiscSkillInfo()
-    skillInfoMain.skillId = self.nMainSkillId
-    skillInfoMain.skillLevel = 1 -- 默认激活
-    table.insert(tbSkillInfo, skillInfoMain)
-
-    for _, nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
-        local tbGroup = CacheTable.GetData("_SecondarySkill", nSubSkillGroupId)
-        if tbGroup then
-            local nLayer = 0
-            local nSubSkillId = tbGroup[1].Id
-            local nMaxLayer = #tbGroup
-            for i = nMaxLayer, 1, -1 do
-                if tbGroup[i] then
-                    local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
-                    if bActive then
-                        nLayer = i
-                        nSubSkillId = tbGroup[i].Id
-                        break
-                    end
-                end
-            end
-
-            if nLayer > 0 then
-                local skillInfo = CS.Lua2CSharpInfo_DiscSkillInfo()
-                skillInfo.skillId = nSubSkillId
-                skillInfo.skillLevel = nLayer
-                table.insert(tbSkillInfo, skillInfo)
-            end
+DiscData.GetDiscInfo = function(self, tbNote)
+  -- function num : 0_17 , upvalues : _ENV
+  local tbSkillInfo = {}
+  local skillInfoMain = (CS.Lua2CSharpInfo_DiscSkillInfo)()
+  skillInfoMain.skillId = self.nMainSkillId
+  skillInfoMain.skillLevel = 1
+  ;
+  (table.insert)(tbSkillInfo, skillInfoMain)
+  for _,nSubSkillGroupId in pairs(self.tbSubSkillGroupId) do
+    local tbGroup = (CacheTable.GetData)("_SecondarySkill", nSubSkillGroupId)
+    if tbGroup then
+      local nLayer = 0
+      local nSubSkillId = (tbGroup[1]).Id
+      local nMaxLayer = #tbGroup
+      for i = nMaxLayer, 1, -1 do
+        if tbGroup[i] then
+          local bActive = self:CheckSubSkillActive(tbNote, tbGroup[i])
+          if bActive then
+            nLayer = i
+            nSubSkillId = (tbGroup[i]).Id
+            break
+          end
         end
-    end
+      end
+      do
+        do
+          if nLayer > 0 then
+            local skillInfo = (CS.Lua2CSharpInfo_DiscSkillInfo)()
+            skillInfo.skillId = nSubSkillId
+            skillInfo.skillLevel = nLayer
+            ;
+            (table.insert)(tbSkillInfo, skillInfo)
+          end
+          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
 
-    local discInfo = CS.Lua2CSharpInfo_DiscInfo()
-    discInfo.discId = self.nId
-    discInfo.discScript = self.sSkillScript
-    discInfo.skillInfos = tbSkillInfo
-    discInfo.discLevel = self.nLevel
-    return discInfo
+          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
+  end
+  local discInfo = (CS.Lua2CSharpInfo_DiscInfo)()
+  discInfo.discId = self.nId
+  discInfo.discScript = self.sSkillScript
+  discInfo.skillInfos = tbSkillInfo
+  discInfo.discLevel = self.nLevel
+  return discInfo
 end
 
 return DiscData
+

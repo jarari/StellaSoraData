@@ -1,182 +1,222 @@
-local ActivityDataBase = require "GameCore.Data.DataClass.Activity.ActivityDataBase"
+local ActivityDataBase = require("GameCore.Data.DataClass.Activity.ActivityDataBase")
 local ActivityTaskData = class("ActivityTaskData", ActivityDataBase)
-local MAPSTATUS = { [0] = AllEnum.ActQuestStatus.UnComplete, [1] = AllEnum.ActQuestStatus.Complete, [2] = AllEnum.ActQuestStatus.Received } -- 服务器的任务状态 0未完成 1完成未领取 2已领取
-
-function ActivityTaskData:Init()
-    self.tbActivityTaskGroupIds = {} -- 已领取“组奖励”的组Id （ActivityTaskGroup.xlsx 表中的 Id）
-    self.tbActivityTaskIds = {} -- 任务Id数组
-    self.mapActivityTaskDatas = {} -- 任务详细数据
-    self.mapActivityTaskGroupData = {} -- 任务组数据
-    
-    self:InitConfig()
+local MAPSTATUS = {[0] = (AllEnum.ActQuestStatus).UnComplete, [1] = (AllEnum.ActQuestStatus).Complete, [2] = (AllEnum.ActQuestStatus).Received}
+ActivityTaskData.Init = function(self)
+  -- function num : 0_0
+  self.tbActivityTaskGroupIds = {}
+  self.tbActivityTaskIds = {}
+  self.mapActivityTaskDatas = {}
+  self.mapActivityTaskGroupData = {}
+  self:InitConfig()
 end
 
-function ActivityTaskData:InitConfig()
-    local function func_Parse_ActivityTaskGroup(mapData)
-        if mapData.ActivityId == self.nActId then
-            self.mapActivityTaskGroupData[mapData.Id] = {}
-        end
+ActivityTaskData.InitConfig = function(self)
+  -- function num : 0_1 , upvalues : _ENV
+  local func_Parse_ActivityTaskGroup = function(mapData)
+    -- function num : 0_1_0 , upvalues : self
+    -- DECOMPILER ERROR at PC7: Confused about usage of register: R1 in 'UnsetPending'
+
+    if mapData.ActivityId == self.nActId then
+      (self.mapActivityTaskGroupData)[mapData.Id] = {}
     end
-    ForEachTableLine(DataTable.ActivityTaskGroup, func_Parse_ActivityTaskGroup)
-    
-    local func_Parse_ActivityTask = function(mapData)
-        local nGroupId = mapData.ActivityTaskGroupId
-        local nTaskId = mapData.Id
-        if self.mapActivityTaskGroupData[nGroupId] ~= nil then
-            table.insert(self.mapActivityTaskGroupData[nGroupId], nTaskId)
-        end
+  end
+
+  ForEachTableLine(DataTable.ActivityTaskGroup, func_Parse_ActivityTaskGroup)
+  local func_Parse_ActivityTask = function(mapData)
+    -- function num : 0_1_1 , upvalues : self, _ENV
+    local nGroupId = mapData.ActivityTaskGroupId
+    local nTaskId = mapData.Id
+    if (self.mapActivityTaskGroupData)[nGroupId] ~= nil then
+      (table.insert)((self.mapActivityTaskGroupData)[nGroupId], nTaskId)
     end
-    ForEachTableLine(DataTable.ActivityTask, func_Parse_ActivityTask)
+  end
+
+  ForEachTableLine(DataTable.ActivityTask, func_Parse_ActivityTask)
 end
 
-function ActivityTaskData:CacheData(mapData) -- 详见 public.proto 中的 message ActivityTask
-    for _, nActivityTaskGroupId in ipairs(mapData.GroupIds) do
-        table.insert(self.tbActivityTaskGroupIds, nActivityTaskGroupId)
+ActivityTaskData.CacheData = function(self, mapData)
+  -- function num : 0_2 , upvalues : _ENV, MAPSTATUS
+  for _,nActivityTaskGroupId in ipairs(mapData.GroupIds) do
+    (table.insert)(self.tbActivityTaskGroupIds, nActivityTaskGroupId)
+  end
+  for _,Quest in ipairs((mapData.ActivityTasks).List) do
+    local nActivityTaskId = Quest.Id
+    if (table.indexof)(self.tbActivityTaskIds, nActivityTaskId) <= 0 then
+      (table.insert)(self.tbActivityTaskIds, nActivityTaskId)
     end
-    for _, Quest in ipairs(mapData.ActivityTasks.List) do
-        local nActivityTaskId = Quest.Id
-        if table.indexof(self.tbActivityTaskIds, nActivityTaskId) <= 0 then
-            table.insert(self.tbActivityTaskIds, nActivityTaskId)
-        end
-        local _nCur, _nMax = 0, 0
-        for __, QuestProgress in ipairs(Quest.Progress) do
-            _nCur = _nCur + QuestProgress.Cur
-            _nMax = _nMax + QuestProgress.Max
-        end
-        self.mapActivityTaskDatas[nActivityTaskId] = {
-            nStatus = MAPSTATUS[Quest.Status],
-            nExpire = Quest.Expire, -- 过期时间戳，客户端需要自行重置进度，主要用于日常和周常
-            -- nType = Quest.Type, -- （似乎没太大用处所以注掉不记录了）
-            nCur = (Quest.Status == 2) and _nMax or _nCur,
-            nMax = _nMax,
-        }
-    end
-    
-    self:RefreshTaskRedDot()
-    --[[ printLog("XIA: TEST activity task, CacheData")
-    printTable(self.tbActivityTaskGroupIds)
-    printTable(self.tbActivityTaskIds)
-    printTable(self.mapActivityTaskDatas) ]]
-end
-function ActivityTaskData:RefreshSingleQuest(questData)
-    if type(self.tbActivityTaskIds) ~= "table" or type(self.mapActivityTaskDatas) ~= "table" then
-        return
-    end
-    local nActivityTaskId = questData.Id
-    if table.indexof(self.tbActivityTaskIds, nActivityTaskId) <= 0 then
-        table.insert(self.tbActivityTaskIds, nActivityTaskId)
-    end
-    local data = self.mapActivityTaskDatas[nActivityTaskId]
-    if data == nil then
-        local _nCur, _nMax = 0, 0
-        for __, QuestProgress in ipairs(questData.Progress) do
-            _nCur = _nCur + QuestProgress.Cur
-            _nMax = _nMax + QuestProgress.Max
-        end
-        self.mapActivityTaskDatas[nActivityTaskId] = {
-            nStatus = MAPSTATUS[questData.Status],
-            nExpire = questData.Expire, -- 过期时间戳，客户端需要自行重置进度，主要用于日常和周常
-            -- nType = Quest.Type, -- （似乎没太大用处所以注掉不记录了）
-            nCur = (questData.Status == 2) and _nMax or _nCur,
-            nMax = _nMax,
-        }
-        data = self.mapActivityTaskDatas[nActivityTaskId]
-    end
-    data.nStatus = MAPSTATUS[questData.Status]
     local _nCur, _nMax = 0, 0
-    for __, QuestProgress in ipairs(questData.Progress) do
-        _nCur = _nCur + QuestProgress.Cur
-        _nMax = _nMax + QuestProgress.Max
+    for __,QuestProgress in ipairs(Quest.Progress) do
+      _nCur = _nCur + QuestProgress.Cur
+      _nMax = _nMax + QuestProgress.Max
     end
-    data.nCur = (questData.Status == 2) and _nMax or _nCur
-    data.nMax = _nMax
-    self:RefreshTaskRedDot()
-    --[[ printLog("XIA: TEST activity task, RefreshSingleQuest")
-    printTable(self.tbActivityTaskGroupIds)
-    printTable(self.tbActivityTaskIds)
-    printTable(self.mapActivityTaskDatas) ]]
-end
---刷新红点
-function ActivityTaskData:RefreshTaskRedDot()
-    local bActOpen = self:CheckActivityOpen()
-    for nGroupId, tbList in pairs(self.mapActivityTaskGroupData) do
-        local nAllCount = #tbList
-        local nReceivedCount = 0
-        local nCompleteCount = 0
-        for _, nTaskId in ipairs(tbList) do
-            local mapData = self.mapActivityTaskDatas[nTaskId]
-            if mapData ~= nil then
-                if mapData.nStatus == AllEnum.ActQuestStatus.Complete then
-                    nCompleteCount = nCompleteCount + 1
-                elseif mapData.nStatus == AllEnum.ActQuestStatus.Received then
-                    nReceivedCount = nReceivedCount + 1
-                end
-            end
-        end
-        local bTotalReceived = table.indexof(self.tbActivityTaskGroupIds, nGroupId) > 0
-        local bHasReward = false
-        --判断该任务组是否有组奖励
-        local mapGroupCfg = ConfigTable.GetData("ActivityTaskGroup", nGroupId)
-        if mapGroupCfg ~= nil then
-            for i = 1, 6 do
-                local nTid = mapGroupCfg["Reward" .. i]
-                local nCount = mapGroupCfg["RewardQty" .. i]
-                if nTid ~= 0 and nCount > 0 then
-                    bHasReward = true
-                    break
-                end
-            end
-        end
-        if bHasReward == false then
-            bTotalReceived = true
-        end
-        local bCanReceive = nCompleteCount > 0 or (nReceivedCount == nAllCount and not bTotalReceived )
-        local bInActGroup,nActGroupId = PlayerData.Activity:IsActivityInActivityGroup(self.nActId)
-        local bActGroupUnlock = true
-        if bInActGroup then
-            local actGroupData = PlayerData.Activity:GetActivityGroupDataById(nActGroupId)
-            bActGroupUnlock =  actGroupData:IsUnlock()
-        end
-        RedDotManager.SetValid(RedDotDefine.Activity_Group_Task_Group, {nActGroupId, self.nActId, nGroupId}, bCanReceive and bActOpen and bActGroupUnlock)
+    do
+      do
+        -- DECOMPILER ERROR at PC56: Confused about usage of register: R10 in 'UnsetPending'
+
+        ;
+        (self.mapActivityTaskDatas)[nActivityTaskId] = {nStatus = MAPSTATUS[Quest.Status], nExpire = Quest.Expire, nCur = Quest.Status == 2 and _nMax or _nCur, nMax = _nMax}
+        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
+
+      end
     end
-end
-function ActivityTaskData:SendMsg_ActivityTaskRewardReceiveReq(nActivityTaskGroupId, nActivityTaskId, nTabType, ui_ctrl_callback) -- 领取单个任务奖励
-    local mapSend = {}
-    mapSend.GroupId = nActivityTaskGroupId
-    mapSend.TabType = nTabType -- GameEnum.ActivityTaskTabType
-    mapSend.QuestId = nActivityTaskId
-    local succ_cb = function(_, mapData)
-        local function receiveCallback()
-            if type(ui_ctrl_callback) == "function" then ui_ctrl_callback() end
-        end
-        UTILS.OpenReceiveByChangeInfo(mapData, receiveCallback)
-    end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_task_reward_receive_req, mapSend, nil, succ_cb)
-end
-function ActivityTaskData:SendMsg_ActivityTaskGroupRewardReceiveReq(nActivityTaskGroupId, ui_ctrl_callback) -- 领取任务组（对应一个页签）奖励
-    local mapSend = {}
-    mapSend.Value = nActivityTaskGroupId
-    local succ_cb = function(_, mapData)
-        if table.indexof(self.tbActivityTaskGroupIds, nActivityTaskGroupId) <= 0 then table.insert(self.tbActivityTaskGroupIds, nActivityTaskGroupId) end
-        if type(ui_ctrl_callback) == "function" then ui_ctrl_callback() end
-        UTILS.OpenReceiveByChangeInfo(mapData)
-        --刷新红点
-        self:RefreshTaskRedDot()
-    end
-    HttpNetHandler.SendMsg(NetMsgId.Id.activity_task_group_reward_receive_req, mapSend, nil, succ_cb)
-end
-function ActivityTaskData:CalcTotalProgress()
-    local nDone = 0
-    local nTotal = 0
-    for k, v in pairs(self.mapActivityTaskDatas) do
-        nTotal = nTotal + 1
-        if v.nStatus == AllEnum.ActQuestStatus.Received then nDone = nDone + 1 end
-    end
-    -- printLog("XIA: " .. tostring(nDone) .. "," .. tostring(nTotal))
-    return nDone, nTotal
+  end
+  self:RefreshTaskRedDot()
 end
 
-function ActivityTaskData:GetAllTaskList()
-    return self.mapActivityTaskGroupData, self.mapActivityTaskDatas
+ActivityTaskData.RefreshSingleQuest = function(self, questData)
+  -- function num : 0_3 , upvalues : _ENV, MAPSTATUS
+  if type(self.tbActivityTaskIds) ~= "table" or type(self.mapActivityTaskDatas) ~= "table" then
+    return 
+  end
+  local nActivityTaskId = questData.Id
+  if (table.indexof)(self.tbActivityTaskIds, nActivityTaskId) <= 0 then
+    (table.insert)(self.tbActivityTaskIds, nActivityTaskId)
+  end
+  local data = (self.mapActivityTaskDatas)[nActivityTaskId]
+  if data == nil then
+    local _nCur, _nMax = 0, 0
+    for __,QuestProgress in ipairs(questData.Progress) do
+      _nCur = _nCur + QuestProgress.Cur
+      _nMax = _nMax + QuestProgress.Max
+    end
+    do
+      do
+        -- DECOMPILER ERROR at PC55: Confused about usage of register: R6 in 'UnsetPending'
+
+        ;
+        (self.mapActivityTaskDatas)[nActivityTaskId] = {nStatus = MAPSTATUS[questData.Status], nExpire = questData.Expire, nCur = questData.Status == 2 and _nMax or _nCur, nMax = _nMax}
+        data = (self.mapActivityTaskDatas)[nActivityTaskId]
+        data.nStatus = MAPSTATUS[questData.Status]
+        local _nCur, _nMax = 0, 0
+        for __,QuestProgress in ipairs(questData.Progress) do
+          _nCur = _nCur + QuestProgress.Cur
+          _nMax = _nMax + QuestProgress.Max
+        end
+        do
+          data.nCur = questData.Status == 2 and _nMax or _nCur
+          data.nMax = _nMax
+          self:RefreshTaskRedDot()
+        end
+      end
+    end
+  end
 end
+
+ActivityTaskData.RefreshTaskRedDot = function(self)
+  -- function num : 0_4 , upvalues : _ENV
+  local bActOpen = self:CheckActivityOpen()
+  for nGroupId,tbList in pairs(self.mapActivityTaskGroupData) do
+    local nAllCount = #tbList
+    local nReceivedCount = 0
+    local nCompleteCount = 0
+    for _,nTaskId in ipairs(tbList) do
+      local mapData = (self.mapActivityTaskDatas)[nTaskId]
+      if mapData ~= nil then
+        if mapData.nStatus == (AllEnum.ActQuestStatus).Complete then
+          nCompleteCount = nCompleteCount + 1
+        else
+          if mapData.nStatus == (AllEnum.ActQuestStatus).Received then
+            nReceivedCount = nReceivedCount + 1
+          end
+        end
+      end
+    end
+    local bTotalReceived = (table.indexof)(self.tbActivityTaskGroupIds, nGroupId) > 0
+    local bHasReward = false
+    local mapGroupCfg = (ConfigTable.GetData)("ActivityTaskGroup", nGroupId)
+    if mapGroupCfg ~= nil then
+      for i = 1, 6 do
+        local nTid = mapGroupCfg["Reward" .. i]
+        local nCount = mapGroupCfg["RewardQty" .. i]
+        if nTid ~= 0 and nCount > 0 then
+          bHasReward = true
+          break
+        end
+      end
+    end
+    if bHasReward == false then
+      bTotalReceived = true
+    end
+    local bCanReceive = nCompleteCount <= 0 and ((nReceivedCount == nAllCount and not bTotalReceived))
+    local bInActGroup, nActGroupId = (PlayerData.Activity):IsActivityInActivityGroup(self.nActId)
+    local bActGroupUnlock = true
+    do
+      do
+        if bInActGroup then
+          local actGroupData = (PlayerData.Activity):GetActivityGroupDataById(nActGroupId)
+          bActGroupUnlock = actGroupData:IsUnlock()
+        end
+        ;
+        (RedDotManager.SetValid)(RedDotDefine.Activity_Group_Task_Group, {nActGroupId, self.nActId, nGroupId}, not bCanReceive or not bActOpen or bActGroupUnlock)
+        -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out DO_STMT
+
+      end
+    end
+  end
+  -- DECOMPILER ERROR: 10 unprocessed JMP targets
+end
+
+ActivityTaskData.SendMsg_ActivityTaskRewardReceiveReq = function(self, nActivityTaskGroupId, nActivityTaskId, nTabType, ui_ctrl_callback)
+  -- function num : 0_5 , upvalues : _ENV
+  local mapSend = {}
+  mapSend.GroupId = nActivityTaskGroupId
+  mapSend.TabType = nTabType
+  mapSend.QuestId = nActivityTaskId
+  local succ_cb = function(_, mapData)
+    -- function num : 0_5_0 , upvalues : _ENV, ui_ctrl_callback
+    local receiveCallback = function()
+      -- function num : 0_5_0_0 , upvalues : _ENV, ui_ctrl_callback
+      if type(ui_ctrl_callback) == "function" then
+        ui_ctrl_callback()
+      end
+    end
+
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapData, receiveCallback)
+  end
+
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_task_reward_receive_req, mapSend, nil, succ_cb)
+end
+
+ActivityTaskData.SendMsg_ActivityTaskGroupRewardReceiveReq = function(self, nActivityTaskGroupId, ui_ctrl_callback)
+  -- function num : 0_6 , upvalues : _ENV
+  local mapSend = {}
+  mapSend.Value = nActivityTaskGroupId
+  local succ_cb = function(_, mapData)
+    -- function num : 0_6_0 , upvalues : _ENV, self, nActivityTaskGroupId, ui_ctrl_callback
+    if (table.indexof)(self.tbActivityTaskGroupIds, nActivityTaskGroupId) <= 0 then
+      (table.insert)(self.tbActivityTaskGroupIds, nActivityTaskGroupId)
+    end
+    if type(ui_ctrl_callback) == "function" then
+      ui_ctrl_callback()
+    end
+    ;
+    (UTILS.OpenReceiveByChangeInfo)(mapData)
+    self:RefreshTaskRedDot()
+  end
+
+  ;
+  (HttpNetHandler.SendMsg)((NetMsgId.Id).activity_task_group_reward_receive_req, mapSend, nil, succ_cb)
+end
+
+ActivityTaskData.CalcTotalProgress = function(self)
+  -- function num : 0_7 , upvalues : _ENV
+  local nDone = 0
+  local nTotal = 0
+  for k,v in pairs(self.mapActivityTaskDatas) do
+    nTotal = nTotal + 1
+    if v.nStatus == (AllEnum.ActQuestStatus).Received then
+      nDone = nDone + 1
+    end
+  end
+  return nDone, nTotal
+end
+
+ActivityTaskData.GetAllTaskList = function(self)
+  -- function num : 0_8
+  return self.mapActivityTaskGroupData, self.mapActivityTaskDatas
+end
+
 return ActivityTaskData
+

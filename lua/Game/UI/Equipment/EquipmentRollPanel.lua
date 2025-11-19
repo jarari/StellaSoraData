@@ -1,24 +1,30 @@
 local EquipmentRollPanel = class("EquipmentRollPanel", BasePanel)
-
 EquipmentRollPanel._tbDefine = {
-    {sPrefabPath = "Equipment/EquipmentRollPanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentRollCtrl"}
+{sPrefabPath = "Equipment/EquipmentRollPanel.prefab", sCtrlName = "Game.UI.Equipment.EquipmentRollCtrl"}
 }
--------------------- local function --------------------
+EquipmentRollPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
+EquipmentRollPanel.OnEnable = function(self)
+  -- function num : 0_1
+end
 
--------------------- base function --------------------
-function EquipmentRollPanel:Awake()
-    
+EquipmentRollPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function EquipmentRollPanel:OnEnable()
+
+EquipmentRollPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function EquipmentRollPanel:OnAfterEnter()
+
+EquipmentRollPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function EquipmentRollPanel:OnDisable()
+
+EquipmentRollPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function EquipmentRollPanel:OnDestroy()
-end
-function EquipmentRollPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return EquipmentRollPanel
+

@@ -1,22 +1,26 @@
--- Panel 模板
-
 local SkillInstanceLevelSelectPanel = class("SkillInstanceLevelSelectPanel", BasePanel)
-
 SkillInstanceLevelSelectPanel._tbDefine = {
-    {sPrefabPath = "SkillInstanceLevelSelect/SkillInstanceLevelSelect.prefab", sCtrlName = "Game.UI.SkillInstanceLevelSelect.SkillInstanceLevelSelectCtrl"}
+{sPrefabPath = "SkillInstanceLevelSelect/SkillInstanceLevelSelect.prefab", sCtrlName = "Game.UI.SkillInstanceLevelSelect.SkillInstanceLevelSelectCtrl"}
 }
--------------------- local function --------------------
+SkillInstanceLevelSelectPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function SkillInstanceLevelSelectPanel:Awake()
+SkillInstanceLevelSelectPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function SkillInstanceLevelSelectPanel:OnEnable()
+
+SkillInstanceLevelSelectPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function SkillInstanceLevelSelectPanel:OnDisable()
+
+SkillInstanceLevelSelectPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function SkillInstanceLevelSelectPanel:OnDestroy()
+
+SkillInstanceLevelSelectPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function SkillInstanceLevelSelectPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return SkillInstanceLevelSelectPanel
+

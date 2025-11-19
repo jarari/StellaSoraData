@@ -1,0 +1,422 @@
+{
+  "101": {
+    "Id": 101,
+    "Cond": 1,
+    "CondParams": [
+      4720
+    ],
+    "RequestDes": "BdConvertCondition.101.1"
+  },
+  "102": {
+    "Id": 102,
+    "Cond": 1,
+    "CondParams": [
+      5800
+    ],
+    "RequestDes": "BdConvertCondition.102.1"
+  },
+  "103": {
+    "Id": 103,
+    "Cond": 1,
+    "CondParams": [
+      7080
+    ],
+    "RequestDes": "BdConvertCondition.103.1"
+  },
+  "104": {
+    "Id": 104,
+    "Cond": 1,
+    "CondParams": [
+      8040
+    ],
+    "RequestDes": "BdConvertCondition.104.1"
+  },
+  "105": {
+    "Id": 105,
+    "Cond": 1,
+    "CondParams": [
+      9000
+    ],
+    "RequestDes": "BdConvertCondition.105.1"
+  },
+  "201": {
+    "Id": 201,
+    "Cond": 2,
+    "CondParams": [
+      10
+    ],
+    "RequestDes": "BdConvertCondition.201.1"
+  },
+  "202": {
+    "Id": 202,
+    "Cond": 2,
+    "CondParams": [
+      20
+    ],
+    "RequestDes": "BdConvertCondition.202.1"
+  },
+  "203": {
+    "Id": 203,
+    "Cond": 2,
+    "CondParams": [
+      30
+    ],
+    "RequestDes": "BdConvertCondition.203.1"
+  },
+  "204": {
+    "Id": 204,
+    "Cond": 2,
+    "CondParams": [
+      40
+    ],
+    "RequestDes": "BdConvertCondition.204.1"
+  },
+  "205": {
+    "Id": 205,
+    "Cond": 2,
+    "CondParams": [
+      50
+    ],
+    "RequestDes": "BdConvertCondition.205.1"
+  },
+  "301": {
+    "Id": 301,
+    "Cond": 4,
+    "CondParams": [
+      5
+    ],
+    "RequestDes": "BdConvertCondition.301.1"
+  },
+  "302": {
+    "Id": 302,
+    "Cond": 4,
+    "CondParams": [
+      15
+    ],
+    "RequestDes": "BdConvertCondition.302.1"
+  },
+  "303": {
+    "Id": 303,
+    "Cond": 4,
+    "CondParams": [
+      20
+    ],
+    "RequestDes": "BdConvertCondition.303.1"
+  },
+  "304": {
+    "Id": 304,
+    "Cond": 4,
+    "CondParams": [
+      30
+    ],
+    "RequestDes": "BdConvertCondition.304.1"
+  },
+  "305": {
+    "Id": 305,
+    "Cond": 4,
+    "CondParams": [
+      35
+    ],
+    "RequestDes": "BdConvertCondition.305.1"
+  },
+  "401": {
+    "Id": 401,
+    "Cond": 5,
+    "CondParams": [
+      2,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.401.1"
+  },
+  "402": {
+    "Id": 402,
+    "Cond": 5,
+    "CondParams": [
+      2,
+      3
+    ],
+    "RequestDes": "BdConvertCondition.402.1"
+  },
+  "403": {
+    "Id": 403,
+    "Cond": 5,
+    "CondParams": [
+      3,
+      3
+    ],
+    "RequestDes": "BdConvertCondition.403.1"
+  },
+  "404": {
+    "Id": 404,
+    "Cond": 5,
+    "CondParams": [
+      3,
+      4
+    ],
+    "RequestDes": "BdConvertCondition.404.1"
+  },
+  "405": {
+    "Id": 405,
+    "Cond": 5,
+    "CondParams": [
+      3,
+      5
+    ],
+    "RequestDes": "BdConvertCondition.405.1"
+  },
+  "501": {
+    "Id": 501,
+    "Cond": 9,
+    "CondParams": [
+      2,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.501.1"
+  },
+  "502": {
+    "Id": 502,
+    "Cond": 9,
+    "CondParams": [
+      3,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.502.1"
+  },
+  "503": {
+    "Id": 503,
+    "Cond": 9,
+    "CondParams": [
+      4,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.503.1"
+  },
+  "504": {
+    "Id": 504,
+    "Cond": 9,
+    "CondParams": [
+      2,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.504.1"
+  },
+  "505": {
+    "Id": 505,
+    "Cond": 9,
+    "CondParams": [
+      3,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.505.1"
+  },
+  "601": {
+    "Id": 601,
+    "Cond": 6,
+    "CondParams": [
+      1
+    ],
+    "RequestDes": "BdConvertCondition.601.1"
+  },
+  "602": {
+    "Id": 602,
+    "Cond": 6,
+    "CondParams": [
+      2
+    ],
+    "RequestDes": "BdConvertCondition.602.1"
+  },
+  "603": {
+    "Id": 603,
+    "Cond": 6,
+    "CondParams": [
+      3
+    ],
+    "RequestDes": "BdConvertCondition.603.1"
+  },
+  "604": {
+    "Id": 604,
+    "Cond": 6,
+    "CondParams": [
+      4
+    ],
+    "RequestDes": "BdConvertCondition.604.1"
+  },
+  "605": {
+    "Id": 605,
+    "Cond": 6,
+    "CondParams": [
+      5
+    ],
+    "RequestDes": "BdConvertCondition.605.1"
+  },
+  "606": {
+    "Id": 606,
+    "Cond": 6,
+    "CondParams": [
+      6
+    ],
+    "RequestDes": "BdConvertCondition.606.1"
+  },
+  "7011": {
+    "Id": 7011,
+    "Cond": 3,
+    "CondParams": [
+      90011,
+      10
+    ],
+    "RequestDes": "BdConvertCondition.7011.1"
+  },
+  "7012": {
+    "Id": 7012,
+    "Cond": 3,
+    "CondParams": [
+      90011,
+      15
+    ],
+    "RequestDes": "BdConvertCondition.7012.1"
+  },
+  "7013": {
+    "Id": 7013,
+    "Cond": 3,
+    "CondParams": [
+      90011,
+      20
+    ],
+    "RequestDes": "BdConvertCondition.7013.1"
+  },
+  "7021": {
+    "Id": 7021,
+    "Cond": 3,
+    "CondParams": [
+      90012,
+      10
+    ],
+    "RequestDes": "BdConvertCondition.7021.1"
+  },
+  "7022": {
+    "Id": 7022,
+    "Cond": 3,
+    "CondParams": [
+      90012,
+      15
+    ],
+    "RequestDes": "BdConvertCondition.7022.1"
+  },
+  "7023": {
+    "Id": 7023,
+    "Cond": 3,
+    "CondParams": [
+      90012,
+      20
+    ],
+    "RequestDes": "BdConvertCondition.7023.1"
+  },
+  "8011": {
+    "Id": 8011,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.8011.1"
+  },
+  "8012": {
+    "Id": 8012,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.8012.1"
+  },
+  "8013": {
+    "Id": 8013,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      3
+    ],
+    "RequestDes": "BdConvertCondition.8013.1"
+  },
+  "8021": {
+    "Id": 8021,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      4
+    ],
+    "RequestDes": "BdConvertCondition.8021.1"
+  },
+  "8022": {
+    "Id": 8022,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      5
+    ],
+    "RequestDes": "BdConvertCondition.8022.1"
+  },
+  "8023": {
+    "Id": 8023,
+    "Cond": 7,
+    "CondParams": [
+      3,
+      6
+    ],
+    "RequestDes": "BdConvertCondition.8023.1"
+  },
+  "9011": {
+    "Id": 9011,
+    "Cond": 8,
+    "CondParams": [
+      1,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.9011.1"
+  },
+  "9012": {
+    "Id": 9012,
+    "Cond": 8,
+    "CondParams": [
+      1,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.9012.1"
+  },
+  "9013": {
+    "Id": 9013,
+    "Cond": 8,
+    "CondParams": [
+      1,
+      3
+    ],
+    "RequestDes": "BdConvertCondition.9013.1"
+  },
+  "9021": {
+    "Id": 9021,
+    "Cond": 8,
+    "CondParams": [
+      2,
+      1
+    ],
+    "RequestDes": "BdConvertCondition.9021.1"
+  },
+  "9022": {
+    "Id": 9022,
+    "Cond": 8,
+    "CondParams": [
+      2,
+      2
+    ],
+    "RequestDes": "BdConvertCondition.9022.1"
+  },
+  "9023": {
+    "Id": 9023,
+    "Cond": 8,
+    "CondParams": [
+      2,
+      3
+    ],
+    "RequestDes": "BdConvertCondition.9023.1"
+  }
+}

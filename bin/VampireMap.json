@@ -1,7 +1,7 @@
 {
   "8100101": {
     "Id": 8100101,
-    "SceneName": "Levels/VampireSurvivor/VampireSurvivor_Scene_01a",
+    "SceneName": "Levels/VampireSurvivor/VS_Scene_01a",
     "ConfigPrefabName": "VampireSurvivor_01a",
     "Theme": 2,
     "BGM": "vampire_combatNormal_setState",
@@ -9,7 +9,7 @@
   },
   "8100201": {
     "Id": 8100201,
-    "SceneName": "Levels/VampireSurvivor/VampireSurvivor_Scene_02a",
+    "SceneName": "Levels/VampireSurvivor/VS_Scene_02a",
     "ConfigPrefabName": "VampireSurvivor_02a",
     "Theme": 302,
     "BGM": "vampireForest_combatNormal_setState",
@@ -17,7 +17,7 @@
   },
   "8100301": {
     "Id": 8100301,
-    "SceneName": "Levels/VampireSurvivor/VampireSurvivor_Scene_03a",
+    "SceneName": "Levels/VampireSurvivor/VS_Scene_03a",
     "ConfigPrefabName": "VampireSurvivor_03a",
     "Theme": 303,
     "BGM": "vampireRuins_combatNormal_setState",
@@ -25,7 +25,7 @@
   },
   "8100401": {
     "Id": 8100401,
-    "SceneName": "Levels/VampireSurvivor/VampireSurvivor_Scene_04a",
+    "SceneName": "Levels/VampireSurvivor/VS_Scene_04a",
     "ConfigPrefabName": "VampireSurvivor_04a",
     "Theme": 304,
     "BGM": "vampireRuins_combatNormal_setState",

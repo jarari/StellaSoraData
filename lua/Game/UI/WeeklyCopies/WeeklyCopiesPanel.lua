@@ -1,32 +1,30 @@
--- Panel 模板
 local WeeklyCopiesPanel = class("WeeklyCopiesPanel", BasePanel)
-
--- Panel 定义
---[[
-VampireLevelSelectPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-VampireLevelSelectPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-VampireLevelSelectPanel._bIsMainPanel = true
-VampireLevelSelectPanel._bAddToBackHistory = true
-VampireLevelSelectPanel._nSnapshotPrePanel = 0
-VampireLevelSelectPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 WeeklyCopiesPanel._tbDefine = {
-    {sPrefabPath = "WeeklyCopies/WeeklyCopiesPanel.prefab", sCtrlName = "Game.UI.WeeklyCopies.WeeklyCopiesCtrl"}
+{sPrefabPath = "WeeklyCopies/WeeklyCopiesPanel.prefab", sCtrlName = "Game.UI.WeeklyCopies.WeeklyCopiesCtrl"}
 }
--------------------- local function --------------------
+WeeklyCopiesPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function WeeklyCopiesPanel:Awake()
+WeeklyCopiesPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function WeeklyCopiesPanel:OnEnable()
+
+WeeklyCopiesPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function WeeklyCopiesPanel:OnAfterEnter()
+
+WeeklyCopiesPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function WeeklyCopiesPanel:OnDisable()
+
+WeeklyCopiesPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function WeeklyCopiesPanel:OnDestroy()
+
+WeeklyCopiesPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function WeeklyCopiesPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return WeeklyCopiesPanel
+

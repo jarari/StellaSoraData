@@ -101,6 +101,18 @@
     "EndSceneName": "Levels/Main/Forest_New/Forest_Main_2_5_Victory01",
     "BGM": "music_victory_setState_rogueLike"
   },
+  "18": {
+    "Id": 18,
+    "Theme": 18,
+    "EndSceneName": "Levels/Roguelike/Roguelike_3/Roguelike_3_Reward_001_Victory",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "19": {
+    "Id": 19,
+    "Theme": 19,
+    "EndSceneName": "Levels/Main/Forest_New/Forest_Main_2_5_Victory01",
+    "BGM": "music_victory_setState_rogueLike"
+  },
   "101": {
     "Id": 101,
     "Theme": 101,
@@ -203,6 +215,11 @@
     "EndSceneName": "Levels/Main/City/City_Main_1_2_Victory01",
     "BGM": "music_victory_setState_rogueLike"
   },
+  "118": {
+    "Id": 118,
+    "Theme": 118,
+    "BGM": "music_victory_setState_rogueLike"
+  },
   "201": {
     "Id": 201,
     "Theme": 201,
@@ -231,6 +248,11 @@
     "Id": 251,
     "Theme": 251,
     "EndSceneName": "Levels/JointDrill/JointDrill_01/JointDrill_01_JYMY_Victory01",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "252": {
+    "Id": 252,
+    "Theme": 252,
     "BGM": "music_victory_setState_rogueLike"
   },
   "301": {
@@ -278,6 +300,43 @@
   "416": {
     "Id": 416,
     "Theme": 416,
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "417": {
+    "Id": 417,
+    "Theme": 417,
+    "EndSceneName": "Levels/StoryActivity/StoryActivity_4/StoryActivity_4_Boss_TaLou_Victory.unity",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "418": {
+    "Id": 418,
+    "Theme": 418,
+    "EndSceneName": "Levels/StoryActivity/StoryActivity_4/StoryActivity_4_Boss_QiE_Victory.unity",
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "421": {
+    "Id": 421,
+    "Theme": 421,
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "426": {
+    "Id": 426,
+    "Theme": 426,
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "431": {
+    "Id": 431,
+    "Theme": 431,
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "436": {
+    "Id": 436,
+    "Theme": 436,
+    "BGM": "music_victory_setState_rogueLike"
+  },
+  "441": {
+    "Id": 441,
+    "Theme": 441,
     "BGM": "music_victory_setState_rogueLike"
   },
   "901": {

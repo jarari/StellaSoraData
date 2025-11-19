@@ -1,27 +1,31 @@
--- Panel 模板
-
 local MiningGameQuestPanel = class("MiningGamePanel", BasePanel)
--- Panel 定义
 MiningGameQuestPanel._bIsMainPanel = true
 MiningGameQuestPanel._tbDefine = {
-    {sPrefabPath = "Activity/Mining/MiningGameQuestPanel.prefab", sCtrlName = "Game.UI.Play_Mining.MiningGameQuestCtrl"}
+{sPrefabPath = "Activity/Mining/MiningGameQuestPanel.prefab", sCtrlName = "Game.UI.Play_Mining.MiningGameQuestCtrl"}
 }
--------------------- local function --------------------
+MiningGameQuestPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function MiningGameQuestPanel:Awake()
-    -- self.nActId = nil
-    -- self.actData = nil
+MiningGameQuestPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function MiningGameQuestPanel:OnEnable()
+
+MiningGameQuestPanel.OnAfterEnter = function(self)
+  -- function num : 0_2
 end
-function MiningGameQuestPanel:OnAfterEnter()
+
+MiningGameQuestPanel.OnDisable = function(self)
+  -- function num : 0_3
 end
-function MiningGameQuestPanel:OnDisable()
+
+MiningGameQuestPanel.OnDestroy = function(self)
+  -- function num : 0_4
 end
-function MiningGameQuestPanel:OnDestroy()
+
+MiningGameQuestPanel.OnRelease = function(self)
+  -- function num : 0_5
 end
-function MiningGameQuestPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return MiningGameQuestPanel
+

@@ -1,126 +1,165 @@
-local GameResourceLoader = require "Game.Common.Resource.GameResourceLoader"
-local TimerManager = require "GameCore.Timer.TimerManager"
+local GameResourceLoader = require("Game.Common.Resource.GameResourceLoader")
+local TimerManager = require("GameCore.Timer.TimerManager")
 local AvgManager = {}
-local objAvgPanel = nil
-local objAvgBubblePanel = nil   -- avg气泡
+local objAvgPanel, objAvgBubblePanel = nil, nil
 local nTransitionType = 0
-local bInAvg = false    -- 是否在播放avg剧情
-local function OnEvent_AvgBBEnd(_)
-    if objAvgBubblePanel ~= nil then
-        objAvgBubblePanel:_PreExit()
-        objAvgBubblePanel:_Exit()
-        objAvgBubblePanel:_Destroy()
-        objAvgBubblePanel = nil
-    end
+local bInAvg = false
+local OnEvent_AvgBBEnd = function(_)
+  -- function num : 0_0 , upvalues : objAvgBubblePanel
+  if objAvgBubblePanel ~= nil then
+    objAvgBubblePanel:_PreExit()
+    objAvgBubblePanel:_Exit()
+    objAvgBubblePanel:_Destroy()
+    objAvgBubblePanel = nil
+  end
 end
-local function OnEvent_AvgBBStart(_, sAvgId, sGroupId, sLanguage, sVoLan)
-    OnEvent_AvgBBEnd(_)
-    local AvgBubblePanel = require "Game.UI.AvgBubble.AvgBubblePanel"
-    if sLanguage == nil then sLanguage = Settings.sCurrentTxtLanguage end
-    if sVoLan == nil then sVoLan = Settings.sCurrentVoLanguage end
-    objAvgBubblePanel = AvgBubblePanel.new(AllEnum.UI_SORTING_ORDER.AVG_Bubble, PanelId.AvgBB, {sAvgId, sGroupId, sLanguage, sVoLan})
-    objAvgBubblePanel:_PreEnter()
-    objAvgBubblePanel:_Enter()
-end
-local function OnEvent_AvgSTStart(_, sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID, sTransStyle)
 
-    local nStyle = 11 -- 默认的转场效果
-    if type(sTransStyle) == "string" and sTransStyle ~= "" then
-        local sStyle = string.gsub(sTransStyle, "style_", "")
-        local _n = tonumber(sStyle)
-        if type(_n) == "number" then
-            nStyle = _n
-        end
+local OnEvent_AvgBBStart = function(_, sAvgId, sGroupId, sLanguage, sVoLan)
+  -- function num : 0_1 , upvalues : OnEvent_AvgBBEnd, _ENV, objAvgBubblePanel
+  OnEvent_AvgBBEnd(_)
+  local AvgBubblePanel = require("Game.UI.AvgBubble.AvgBubblePanel")
+  if sLanguage == nil then
+    sLanguage = Settings.sCurrentTxtLanguage
+  end
+  if sVoLan == nil then
+    sVoLan = Settings.sCurrentVoLanguage
+  end
+  objAvgBubblePanel = (AvgBubblePanel.new)((AllEnum.UI_SORTING_ORDER).AVG_Bubble, PanelId.AvgBB, {sAvgId, sGroupId, sLanguage, sVoLan})
+  objAvgBubblePanel:_PreEnter()
+  objAvgBubblePanel:_Enter()
+end
+
+local OnEvent_AvgSTStart = function(_, sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID, sTransStyle)
+  -- function num : 0_2 , upvalues : _ENV, bInAvg, OnEvent_AvgBBEnd, objAvgPanel, nTransitionType
+  local nStyle = 11
+  if type(sTransStyle) == "string" and sTransStyle ~= "" then
+    local sStyle = (string.gsub)(sTransStyle, "style_", "")
+    local _n = tonumber(sStyle)
+    if type(_n) == "number" then
+      nStyle = _n
     end
+  end
+  do
     bInAvg = true
     local func_DoStart = function()
-        if sLanguage == nil then sLanguage = Settings.sCurrentTxtLanguage end
-        if sVoLan == nil then sVoLan = Settings.sCurrentVoLanguage end
-        OnEvent_AvgBBEnd(_) -- BB 处于各功能优先级的低位，触发 ST 时可以强制结束。
-        local AvgPanel = require "Game.UI.Avg.AvgPanel"
-        objAvgPanel = AvgPanel.new(AllEnum.UI_SORTING_ORDER.AVG_ST, PanelId.AvgST, {sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID}) -- sLanguage 详见 AllEnum.Language
-        objAvgPanel:_PreEnter()
-        objAvgPanel:_Enter()
-        -- NovaAPI.SetScreenSleepTimeout(true) -- Avg演出里更细分的设置 (Auto On/Off + choice)
+    -- function num : 0_2_0 , upvalues : sLanguage, _ENV, sVoLan, OnEvent_AvgBBEnd, _, objAvgPanel, sAvgId, sGroupId, nStartCMDID
+    if sLanguage == nil then
+      sLanguage = Settings.sCurrentTxtLanguage
     end
+    if sVoLan == nil then
+      sVoLan = Settings.sCurrentVoLanguage
+    end
+    OnEvent_AvgBBEnd(_)
+    local AvgPanel = require("Game.UI.Avg.AvgPanel")
+    objAvgPanel = (AvgPanel.new)((AllEnum.UI_SORTING_ORDER).AVG_ST, PanelId.AvgST, {sAvgId, sLanguage, sVoLan, sGroupId, nStartCMDID})
+    objAvgPanel:_PreEnter()
+    objAvgPanel:_Enter()
+  end
 
-    local function func_OnEvent_TransAnimInClear()
-        EventManager.Hit(EventId.SetTransition)
-        func_DoStart() --TimerManager.Add(1, 0.25, AvgManager, func_DoStart, true, true, true, nil)
-    end
+    local func_OnEvent_TransAnimInClear = function()
+    -- function num : 0_2_1 , upvalues : _ENV, func_DoStart
+    (EventManager.Hit)(EventId.SetTransition)
+    func_DoStart()
+  end
 
     if AVG_EDITOR == true then
+      func_DoStart()
+    else
+      if sAvgId == Settings.sPrologueAvgId1 or sAvgId == Settings.sPrologueAvgId2 then
+        (EventManager.Hit)(EventId.HideProloguePanle, false)
+        ;
+        (EventManager.Hit)("__CloseLoadingView", nil, nil, 0.5)
         func_DoStart()
+      else
+        local sAvgIdHead = (string.sub)(sAvgId, 1, 2)
+        if sAvgIdHead ~= "DP" or not 12 then
+          nTransitionType = sAvgIdHead ~= "ST" and sAvgIdHead ~= "CG" and sAvgIdHead ~= "DP" or nStyle
+          ;
+          (EventManager.Hit)(EventId.SetTransition, nTransitionType, func_OnEvent_TransAnimInClear)
+          func_DoStart()
+        end
+      end
+    end
+  end
+end
+
+local OnEvent_AvgSTEnd = function(_)
+  -- function num : 0_3 , upvalues : _ENV, objAvgPanel, GameResourceLoader, bInAvg, nTransitionType
+  local func_DoEnd = function()
+    -- function num : 0_3_0 , upvalues : _ENV, objAvgPanel, GameResourceLoader, bInAvg
+    (NovaAPI.DispatchEventWithData)("StoryDialog_DialogEnd")
+    if objAvgPanel ~= nil then
+      objAvgPanel:_PreExit()
+      objAvgPanel:_Exit()
+      objAvgPanel:_Destroy()
+      objAvgPanel = nil
+      ;
+      (NovaAPI.SetScreenSleepTimeout)(false)
+    end
+    if AVG_EDITOR ~= true then
+      (GameResourceLoader.Unload)("UI", "ui_avg")
+    end
+    ;
+    (GameResourceLoader.Unload)("ImageAvg")
+    ;
+    (GameResourceLoader.Unload)("Actor2DAvg")
+    bInAvg = false
+  end
+
+  local func_OnEvent_TransAnimInClear = function()
+    -- function num : 0_3_1 , upvalues : _ENV, func_DoEnd
+    (EventManager.Hit)(EventId.SetTransition)
+    func_DoEnd()
+  end
+
+  if nTransitionType ~= 0 then
+    if nTransitionType == 12 then
+      func_DoEnd()
     else
-        if sAvgId == Settings.sPrologueAvgId1 or sAvgId == Settings.sPrologueAvgId2 then
-            EventManager.Hit(EventId.HideProloguePanle, false)
-            EventManager.Hit("__CloseLoadingView", nil, nil, 0.5)
-            func_DoStart()
-        else
-            local sAvgIdHead = string.sub(sAvgId, 1, 2)
-            if sAvgIdHead == "ST" or sAvgIdHead == "CG" or sAvgIdHead == "DP" then
-                nTransitionType = sAvgIdHead == "DP" and 12 or nStyle -- 类型12是派遣类演出专用的转场动画需要在派遣类演出结束时播
-                EventManager.Hit(EventId.SetTransition, nTransitionType, func_OnEvent_TransAnimInClear)
-            else
-                func_DoStart() -- 那些不需要转场动画的演出就直接开始播了
-            end
-        end
+      ;
+      (EventManager.Hit)(EventId.SetTransition, nTransitionType, func_OnEvent_TransAnimInClear)
     end
+    nTransitionType = 0
+  else
+    func_DoEnd()
+  end
 end
-local function OnEvent_AvgSTEnd(_)
 
-    local function func_DoEnd()
-        NovaAPI.DispatchEventWithData("StoryDialog_DialogEnd") -- 通知 C# 侧 AVG 播完了。
-        if objAvgPanel ~= nil then
-            objAvgPanel:_PreExit()
-            objAvgPanel:_Exit()
-            objAvgPanel:_Destroy()
-            objAvgPanel = nil
-            NovaAPI.SetScreenSleepTimeout(false)
-        end
-        if AVG_EDITOR ~= true then
-            GameResourceLoader.Unload("UI", "ui_avg") -- 卸载名为 ui_avg 的 AB（气泡表情、特效、等）
-        end
-        GameResourceLoader.Unload("ImageAvg") -- 卸载所有 AVG 用的背景图资源
-        GameResourceLoader.Unload("Actor2DAvg") -- 卸载所有 AVG 用的角色资源（png + live2d）
-        bInAvg = false
-    end
+local Uninit = function(_)
+  -- function num : 0_4 , upvalues : objAvgPanel, OnEvent_AvgSTEnd, _ENV, AvgManager, OnEvent_AvgSTStart, OnEvent_AvgBBEnd, OnEvent_AvgBBStart, Uninit
+  if objAvgPanel ~= nil then
+    OnEvent_AvgSTEnd(_)
+  end
+  ;
+  (EventManager.Remove)("StoryDialog_DialogStart", AvgManager, OnEvent_AvgSTStart)
+  ;
+  (EventManager.Remove)("StoryDialog_DialogEnd", AvgManager, OnEvent_AvgSTEnd)
+  OnEvent_AvgBBEnd(_)
+  ;
+  (EventManager.Remove)(EventId.AvgBubbleShow, AvgManager, OnEvent_AvgBBStart)
+  ;
+  (EventManager.Remove)(EventId.AvgBubbleExit, AvgManager, OnEvent_AvgBBEnd)
+  ;
+  (EventManager.Remove)(EventId.CSLuaManagerShutdown, AvgManager, Uninit)
+end
 
-    local function func_OnEvent_TransAnimInClear()
-        EventManager.Hit(EventId.SetTransition)
-        func_DoEnd()
-    end
+AvgManager.Init = function()
+  -- function num : 0_5 , upvalues : _ENV, AvgManager, OnEvent_AvgSTStart, OnEvent_AvgSTEnd, OnEvent_AvgBBStart, OnEvent_AvgBBEnd, Uninit
+  (EventManager.Add)("StoryDialog_DialogStart", AvgManager, OnEvent_AvgSTStart)
+  ;
+  (EventManager.Add)("StoryDialog_DialogEnd", AvgManager, OnEvent_AvgSTEnd)
+  ;
+  (EventManager.Add)(EventId.AvgBubbleShow, AvgManager, OnEvent_AvgBBStart)
+  ;
+  (EventManager.Add)(EventId.AvgBubbleExit, AvgManager, OnEvent_AvgBBEnd)
+  ;
+  (EventManager.Add)(EventId.CSLuaManagerShutdown, AvgManager, Uninit)
+end
 
-    if nTransitionType ~= 0 then
-        EventManager.Hit(EventId.SetTransition, nTransitionType, func_OnEvent_TransAnimInClear)
-        nTransitionType = 0
-    else
-        func_DoEnd()
-    end
+AvgManager.CheckInAvg = function()
+  -- function num : 0_6 , upvalues : bInAvg
+  return bInAvg
 end
-local function Uninit(_)
-    -- AvgST
-    if objAvgPanel ~= nil then OnEvent_AvgSTEnd(_) end
-    EventManager.Remove("StoryDialog_DialogStart", AvgManager, OnEvent_AvgSTStart)
-    EventManager.Remove("StoryDialog_DialogEnd", AvgManager, OnEvent_AvgSTEnd)
-    -- AvgBB
-    OnEvent_AvgBBEnd(_)
-    EventManager.Remove(EventId.AvgBubbleShow, AvgManager, OnEvent_AvgBBStart)
-    EventManager.Remove(EventId.AvgBubbleExit, AvgManager, OnEvent_AvgBBEnd)
-    -- 游戏app关闭
-    EventManager.Remove(EventId.CSLuaManagerShutdown, AvgManager, Uninit)
-end
-function AvgManager.Init()
-    -- AvgST
-    EventManager.Add("StoryDialog_DialogStart", AvgManager, OnEvent_AvgSTStart)
-    EventManager.Add("StoryDialog_DialogEnd", AvgManager, OnEvent_AvgSTEnd)
-    -- AvgBB
-    EventManager.Add(EventId.AvgBubbleShow, AvgManager, OnEvent_AvgBBStart)
-    EventManager.Add(EventId.AvgBubbleExit, AvgManager, OnEvent_AvgBBEnd)
-    -- 游戏app关闭
-    EventManager.Add(EventId.CSLuaManagerShutdown, AvgManager, Uninit)
-end
-function AvgManager.CheckInAvg()
-    return bInAvg
-end
+
 return AvgManager
+

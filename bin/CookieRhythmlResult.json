@@ -2,14 +2,18 @@
   "1": {
     "Id": 1,
     "ResultType": 1,
-    "ResultName": "Excellent"
+    "ResultName": "Excellent",
+    "AddScoreType": 2,
+    "AddScore": 100
   },
   "2": {
     "Id": 2,
     "ResultType": 2,
     "ResultName": "Perfect",
     "Range": 0.05,
-    "OtherCondition": "&"
+    "OtherCondition": "&",
+    "AddScoreType": 1,
+    "AddScore": 10
   },
   "3": {
     "Id": 3,

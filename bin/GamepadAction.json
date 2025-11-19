@@ -171,5 +171,23 @@
     "Id": "DpadRight",
     "XboxIcon": "Icon/Gamepad/XboxOne_Dpad_Right",
     "PlayStationIcon": "Icon/Gamepad/PS4_Dpad_Right"
+  },
+  "CookieLeft": {
+    "Id": "CookieLeft",
+    "XboxIcon": "Icon/Gamepad/XboxOne_X",
+    "PlayStationIcon": "Icon/Gamepad/PS4_Square",
+    "KeyboardIcon": "Icon/Gamepad/A"
+  },
+  "CookieUp": {
+    "Id": "CookieUp",
+    "XboxIcon": "Icon/Gamepad/XboxOne_Y",
+    "PlayStationIcon": "Icon/Gamepad/PS4_Triangle",
+    "KeyboardIcon": "Icon/Gamepad/S"
+  },
+  "CookieRight": {
+    "Id": "CookieRight",
+    "XboxIcon": "Icon/Gamepad/XboxOne_B",
+    "PlayStationIcon": "Icon/Gamepad/PS4_Circle",
+    "KeyboardIcon": "Icon/Gamepad/D"
   }
 }

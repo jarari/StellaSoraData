@@ -1,31 +1,27 @@
--- Panel 模板
-
 local GachaPreviewPanel = class("GachaPreviewPanel", BasePanel)
 GachaPreviewPanel._bIsMainPanel = false
--- Panel 定义
---[[
-GachaPreviewPanel._nFADEINTYPE = 1 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
-GachaPreviewPanel._nFadeInType = 1 -- 如果有初次入场动画需求，则配置0
-GachaPreviewPanel._bIsMainPanel = true
-GachaPreviewPanel._bAddToBackHistory = true
-GachaPreviewPanel._nSnapshotPrePanel = 0
-GachaPreviewPanel._sSortingLayerName = AllEnum.SortingLayerName.UI
-]]
 GachaPreviewPanel._tbDefine = {
-    {sPrefabPath = "GachaEx/GachaCharInfoPanel.prefab", sCtrlName = "Game.UI.GachaEx.GachaPreview.GachaPreviewCtrl"}
+{sPrefabPath = "GachaEx/GachaCharInfoPanel.prefab", sCtrlName = "Game.UI.GachaEx.GachaPreview.GachaPreviewCtrl"}
 }
--------------------- local function --------------------
+GachaPreviewPanel.Awake = function(self)
+  -- function num : 0_0
+end
 
--------------------- base function --------------------
-function GachaPreviewPanel:Awake()
+GachaPreviewPanel.OnEnable = function(self)
+  -- function num : 0_1
 end
-function GachaPreviewPanel:OnEnable()
+
+GachaPreviewPanel.OnDisable = function(self)
+  -- function num : 0_2
 end
-function GachaPreviewPanel:OnDisable()
+
+GachaPreviewPanel.OnDestroy = function(self)
+  -- function num : 0_3
 end
-function GachaPreviewPanel:OnDestroy()
+
+GachaPreviewPanel.OnRelease = function(self)
+  -- function num : 0_4
 end
-function GachaPreviewPanel:OnRelease()
-end
--------------------- callback function --------------------
+
 return GachaPreviewPanel
+

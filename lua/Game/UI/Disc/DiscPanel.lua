@@ -1,42 +1,55 @@
--- DiscPanel Panel
 local DiscPanel = class("DiscPanel", BasePanel)
--- Panel 定义
-DiscPanel._nFADEINTYPE = 2 -- (0:第一次进入动画,1:重复播进入动画,2:不播进入动画)
+DiscPanel._nFADEINTYPE = 2
 DiscPanel._tbDefine = {
-    {sPrefabPath = "Disc/DiscPanel.prefab", sCtrlName = "Game.UI.Disc.DiscCtrl"},
+{sPrefabPath = "Disc/DiscPanel.prefab", sCtrlName = "Game.UI.Disc.DiscCtrl"}
 }
--------------------- local function --------------------
-function DiscPanel:ChangeMatList(mapMat, bRemove)
-    if not bRemove then
-        self.tbMat[mapMat.nIndex] = mapMat
-    else
-        self.tbMat[mapMat.nIndex] = nil
-    end
+DiscPanel.ChangeMatList = function(self, mapMat, bRemove)
+  -- function num : 0_0
+  -- DECOMPILER ERROR at PC4: Confused about usage of register: R3 in 'UnsetPending'
+
+  if not bRemove then
+    (self.tbMat)[mapMat.nIndex] = mapMat
+  else
+    -- DECOMPILER ERROR at PC8: Confused about usage of register: R3 in 'UnsetPending'
+
+    ;
+    (self.tbMat)[mapMat.nIndex] = nil
+  end
 end
-function DiscPanel:ClearMatList()
-    self.tbMat = {}
+
+DiscPanel.ClearMatList = function(self)
+  -- function num : 0_1
+  self.tbMat = {}
 end
--------------------- base function --------------------
-function DiscPanel:Awake()
-    self.tbMat = {}
-    self.nId = nil
-    self.nCurTog = nil
-    self.bPause = false
-    self.bAvg = false
-    self.bGetAvgReward = false
-    self.mapAvgRewardData = {}
-    local tbParam = self:GetPanelParam()
-    if type(tbParam) == "table" then
-        self.nId = tbParam[1]
-        self.tbId = tbParam[2]
-        self.nCurTog = tbParam[3]
-    end
+
+DiscPanel.Awake = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  self.tbMat = {}
+  self.nId = nil
+  self.nCurTog = nil
+  self.bPause = false
+  self.bAvg = false
+  self.bGetAvgReward = false
+  self.mapAvgRewardData = {}
+  local tbParam = self:GetPanelParam()
+  if type(tbParam) == "table" then
+    self.nId = tbParam[1]
+    self.tbId = tbParam[2]
+    self.nCurTog = tbParam[3]
+  end
 end
-function DiscPanel:OnEnable()
+
+DiscPanel.OnEnable = function(self)
+  -- function num : 0_3
 end
-function DiscPanel:OnDisable()
+
+DiscPanel.OnDisable = function(self)
+  -- function num : 0_4
 end
-function DiscPanel:OnDestroy()
+
+DiscPanel.OnDestroy = function(self)
+  -- function num : 0_5
 end
--------------------- callback function --------------------
+
 return DiscPanel
+

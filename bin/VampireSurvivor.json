@@ -759,8 +759,8 @@
       4,
       5
     ],
-    "FHPreviewMonsterGroupId": 83007,
-    "SHPreviewMonsterGroupId": 83016,
+    "FHPreviewMonsterGroupId": 830101,
+    "SHPreviewMonsterGroupId": 830082,
     "CoverEpisode": "Icon/MapChallenge/zs_survivor_entrancepic_301",
     "Episode": "Icon/MapChallenge/zs_survivor_entrancepic_301_L1",
     "Episode2": "Icon/MapChallenge/zs_survivor_entrancepic_301_L2",
@@ -781,15 +781,16 @@
     "Name2": "VampireSurvivor.302.3",
     "EET": [
       2,
-      6
-    ],
-    "NotEET": [
-      4,
       5,
       1
     ],
+    "NotEET": [
+      4,
+      6,
+      3
+    ],
     "SuggestedPower": 70,
-    "RecommendBuildRank": 23,
+    "RecommendBuildRank": 25,
     "Mode": 2,
     "Type": 3,
     "PreLevelId": 201,
@@ -809,14 +810,14 @@
     "TimeLimit2": 800,
     "EETScore1": [
       2,
-      6
+      5
     ],
     "EETScore2": [
-      3,
-      2
+      2,
+      1
     ],
-    "FHPreviewMonsterGroupId": 83002,
-    "SHPreviewMonsterGroupId": 83014,
+    "FHPreviewMonsterGroupId": 830131,
+    "SHPreviewMonsterGroupId": 830152,
     "CoverEpisode": "Icon/MapChallenge/zs_survivor_entrancepic_302",
     "Episode": "Icon/MapChallenge/zs_survivor_entrancepic_302_L1",
     "Episode2": "Icon/MapChallenge/zs_survivor_entrancepic_302_L2",
@@ -827,7 +828,7 @@
       204,
       301
     ],
-    "SpeciaFateCard": "[[],[98637,98638,98639],[98658,98659,98660],[98613,98614,98615],[98616,98617,98618]]",
+    "SpeciaFateCard": "[[],[98628,98629,98630],[98619,98620,98621],[98613,98614,98615],[98616,98617,98618]]",
     "SpeciaFateCardParam": "[[],[3,6,6],[3,6,6],[3,6,6],[3,6,6]]"
   },
   "303": {
@@ -845,7 +846,7 @@
       6
     ],
     "SuggestedPower": 70,
-    "RecommendBuildRank": 23,
+    "RecommendBuildRank": 25,
     "Mode": 2,
     "Type": 3,
     "PreLevelId": 201,
@@ -871,8 +872,8 @@
       5,
       4
     ],
-    "FHPreviewMonsterGroupId": 83003,
-    "SHPreviewMonsterGroupId": 83016,
+    "FHPreviewMonsterGroupId": 830171,
+    "SHPreviewMonsterGroupId": 830182,
     "CoverEpisode": "Icon/MapChallenge/zs_survivor_entrancepic_301",
     "Episode": "Icon/MapChallenge/zs_survivor_entrancepic_301_L1",
     "Episode2": "Icon/MapChallenge/zs_survivor_entrancepic_301_L2",
